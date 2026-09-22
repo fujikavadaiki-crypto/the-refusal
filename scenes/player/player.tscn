@@ -1,9 +1,19 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=13 format=3]
 
 [ext_resource type="Script" path="res://scripts/player/player.gd" id="1_player"]
 [ext_resource type="Script" path="res://scripts/player/player_locomotion.gd" id="2_locomotion"]
 [ext_resource type="Script" path="res://scripts/player/player_state_machine.gd" id="3_state"]
 [ext_resource type="Script" path="res://scripts/player/player_camera.gd" id="4_camera"]
+
+[ext_resource type="Script" path="res://scripts/player/player_combat.gd" id="5_combat"]
+[ext_resource type="Script" path="res://scripts/combat/hitbox_2d.gd" id="6_hitbox"]
+[ext_resource type="Resource" path="res://data/attacks/light_1.tres" id="7_light1"]
+[ext_resource type="Resource" path="res://data/attacks/light_2.tres" id="8_light2"]
+[ext_resource type="Resource" path="res://data/attacks/light_3.tres" id="9_light3"]
+[ext_resource type="Resource" path="res://data/attacks/heavy.tres" id="10_heavy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sword"]
+size = Vector2(12, 5)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_body"]
 radius = 6.0
@@ -23,6 +33,40 @@ script = ExtResource("2_locomotion")
 
 [node name="StateMachine" type="Node" parent="."]
 script = ExtResource("3_state")
+
+[node name="Combat" type="Node" parent="."]
+script = ExtResource("5_combat")
+light_1 = ExtResource("7_light1")
+light_2 = ExtResource("8_light2")
+light_3 = ExtResource("9_light3")
+heavy = ExtResource("10_heavy")
+
+[node name="AttackPivot" type="Node2D" parent="."]
+position = Vector2(5, -2)
+z_index = 2
+
+[node name="SwordHandle" type="Polygon2D" parent="AttackPivot"]
+color = Color(0.28, 0.22, 0.17, 1)
+polygon = PackedVector2Array(1, -2, 7, -2, 7, 2, 1, 2)
+
+[node name="SwordBlade" type="Polygon2D" parent="AttackPivot"]
+color = Color(0.62, 0.66, 0.64, 1)
+polygon = PackedVector2Array(7, -1, 28, -1, 31, 0, 28, 1, 7, 1)
+
+[node name="ActiveMarker" type="Polygon2D" parent="AttackPivot"]
+visible = false
+color = Color(0.64, 0.75, 0.7, 0.45)
+polygon = PackedVector2Array(10, -4, 31, -4, 31, 4, 10, 4)
+
+[node name="Hitbox" type="Area2D" parent="AttackPivot"]
+collision_layer = 8
+collision_mask = 4
+monitorable = false
+script = ExtResource("6_hitbox")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackPivot/Hitbox"]
+shape = SubResource("RectangleShape2D_sword")
+disabled = true
 
 [node name="VisualRoot" type="Node2D" parent="."]
 

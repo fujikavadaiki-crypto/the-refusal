@@ -10,6 +10,10 @@ run/main_scene="res://scenes/test_room.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+HitStop="*res://scripts/combat/hit_stop.gd"
+
 [display]
 
 window/size/viewport_width=480
@@ -32,6 +36,19 @@ move_right={
 jump={
 "deadzone": 0.2,
 "events": [Object(InputEventKey,"physical_keycode":32), Object(InputEventJoypadButton,"button_index":0)]
+}
+
+attack_light={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":74), Object(InputEventJoypadButton,"button_index":2)]
+}
+attack_heavy={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":75), Object(InputEventJoypadButton,"button_index":3)]
+}
+reset_dummy={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":82)]
 }
 
 [physics]

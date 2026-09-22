@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=3]
+[gd_scene load_steps=6 format=3]
 
 [ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="1_player"]
+
+[ext_resource type="PackedScene" path="res://scenes/test/dummy.tscn" id="2_dummy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
 size = Vector2(2400, 42)
@@ -115,3 +117,6 @@ polygon = PackedVector2Array(0, 204, 1, 204, 1, 228, 0, 228)
 
 [node name="Player" parent="." instance=ExtResource("1_player")]
 position = Vector2(80, 170)
+
+[node name="Dummy" parent="." instance=ExtResource("2_dummy")]
+position = Vector2(400, 214)

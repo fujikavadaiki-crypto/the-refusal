@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="AttackData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/combat/attack_data.gd" id="1_attack"]
+
+[resource]
+script = ExtResource("1_attack")
+attack_id = &"light_3"
+base_damage = 28
+posture_damage = 14
+damage_type = &"physical"
+tags = PackedStringArray("physical", "melee", "light")
+windup_seconds = 0.13
+active_seconds = 0.12
+recovery_seconds = 0.28
+combo_queue_start_seconds = 0
+combo_wait_seconds = 0
+movement_multiplier = 0.4
+start_angle_degrees = -80
+end_angle_degrees = 60
+hitbox_center_x = 20
+hitbox_size = Vector2(14, 6)
+hit_stop_ms = 35
