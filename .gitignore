@@ -1,0 +1,18 @@
+# Godot generated caches
+.godot/
+.import/
+
+# Generated platform/export folders
+/android/
+/ios/
+/exports/
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.swp
+*~

@@ -1,0 +1,68 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/player/player.gd" id="1_player"]
+[ext_resource type="Script" path="res://scripts/player/player_locomotion.gd" id="2_locomotion"]
+[ext_resource type="Script" path="res://scripts/player/player_state_machine.gd" id="3_state"]
+[ext_resource type="Script" path="res://scripts/player/player_camera.gd" id="4_camera"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_body"]
+radius = 6.0
+height = 26.0
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 1
+motion_mode = 0
+script = ExtResource("1_player")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_body")
+
+[node name="Locomotion" type="Node" parent="."]
+script = ExtResource("2_locomotion")
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource("3_state")
+
+[node name="VisualRoot" type="Node2D" parent="."]
+
+[node name="LegBack" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.19, 0.21, 0.23, 1)
+polygon = PackedVector2Array(-4, 5, -1, 5, -1, 13, -5, 13)
+
+[node name="LegFront" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.27, 0.29, 0.3, 1)
+polygon = PackedVector2Array(1, 5, 5, 5, 5, 13, 1, 13)
+
+[node name="Body" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.24, 0.26, 0.27, 1)
+polygon = PackedVector2Array(-5, -6, 4, -6, 6, 7, -5, 7)
+
+[node name="Arm" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.35, 0.32, 0.29, 1)
+polygon = PackedVector2Array(3, -4, 6, -3, 7, 5, 4, 5)
+
+[node name="Head" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.58, 0.5, 0.42, 1)
+polygon = PackedVector2Array(-4, -14, 4, -14, 5, -7, -4, -7)
+
+[node name="Hair" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.13, 0.14, 0.15, 1)
+polygon = PackedVector2Array(-5, -14, 4, -14, 5, -11, -3, -12, -4, -8, -5, -8)
+
+[node name="Scarf" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.28, 0.42, 0.39, 1)
+polygon = PackedVector2Array(-5, -8, 5, -8, 5, -5, -5, -5)
+
+[node name="FaceDirection" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.1, 0.11, 0.12, 1)
+polygon = PackedVector2Array(2, -11, 3, -11, 3, -10, 2, -10)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -80)
+limit_left = 0
+limit_top = 0
+limit_right = 2400
+limit_bottom = 270
+position_smoothing_enabled = false
+script = ExtResource("4_camera")
