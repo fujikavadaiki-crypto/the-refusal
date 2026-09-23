@@ -106,7 +106,9 @@ func recover_from_fall() -> void:
     player.get_node("Combat").abort_attack()
     defense.mode = PlayerDefense.Mode.READY
     defense.elapsed = 0.0
-    defense.air_dash_available = true
+    # The safe point is on solid ground, but the charge returns only after
+    # CharacterBody2D confirms a real landing on the next movement step.
+    defense.air_dash_available = false
     player.global_position = safe_position
     player.velocity = Vector2.ZERO
     fall_recovery_count += 1

@@ -245,20 +245,20 @@ position = Vector2(5450, 0)
 script = ExtResource("2_encounter")
 
 [node name="Peregrino" parent="Encounters/PeregrinoCorvo" instance=ExtResource("6_peregrino")]
-position = Vector2(-95, 212)
+position = Vector2(95, 212)
 
 [node name="Corvo" parent="Encounters/PeregrinoCorvo" instance=ExtResource("7_corvo")]
-position = Vector2(95, 145)
+position = Vector2(-95, 145)
 
 [node name="PeregrinoRaiz" type="Node2D" parent="Encounters"]
 position = Vector2(7050, 0)
 script = ExtResource("2_encounter")
 
 [node name="Peregrino" parent="Encounters/PeregrinoRaiz" instance=ExtResource("6_peregrino")]
-position = Vector2(-95, 212)
+position = Vector2(95, 212)
 
 [node name="RaizFaminta" parent="Encounters/PeregrinoRaiz" instance=ExtResource("8_raiz")]
-position = Vector2(75, 219)
+position = Vector2(-75, 219)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

@@ -10,6 +10,7 @@ signal completed
 @onready var player: CharacterBody2D = get_node_or_null(player_path) as CharacterBody2D
 
 var enemies: Array[CharacterBody2D] = []
+var dead_body_exceptions: Dictionary = {}
 var is_active := false
 var is_completed := false
 
@@ -41,7 +42,12 @@ func _physics_process(_delta: float) -> void:
         for enemy in enemies:
             if enemy.get_node("Health").current_health > 0:
                 all_dead = false
-                break
+            elif not dead_body_exceptions.has(enemy):
+                # Keep floor collision so the corpse falls naturally, but do
+                # not let its body obstruct the Player on this stage.
+                enemy.add_collision_exception_with(player)
+                player.add_collision_exception_with(enemy)
+                dead_body_exceptions[enemy] = true
         if all_dead:
             is_completed = true
             completed.emit()
@@ -51,6 +57,10 @@ func reset_encounter() -> void:
     is_active = false
     is_completed = false
     for enemy in enemies:
+        if dead_body_exceptions.has(enemy):
+            enemy.remove_collision_exception_with(player)
+            player.remove_collision_exception_with(enemy)
+            dead_body_exceptions.erase(enemy)
         enemy.process_mode = Node.PROCESS_MODE_INHERIT
         enemy.reset_enemy()
         enemy.process_mode = Node.PROCESS_MODE_DISABLED
