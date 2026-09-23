@@ -5,6 +5,7 @@ extends Resource
 @export var attack_id: StringName
 @export var base_damage: int
 @export var posture_damage: int
+@export var parry_class: StringName = &"parryable"
 @export var damage_type: StringName = &"physical"
 @export var tags: PackedStringArray = PackedStringArray()
 @export var windup_seconds: float

@@ -1,0 +1,104 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://scripts/test/training_device.gd" id="1_device"]
+[ext_resource type="Script" path="res://scripts/combat/hitbox_2d.gd" id="2_hitbox"]
+[ext_resource type="Script" path="res://scripts/combat/hurtbox_2d.gd" id="3_hurtbox"]
+[ext_resource type="Script" path="res://scripts/combat/health_component.gd" id="4_health"]
+[ext_resource type="Script" path="res://scripts/combat/posture_component.gd" id="5_posture"]
+[ext_resource type="Script" path="res://scripts/combat/defense_stats.gd" id="6_stats"]
+[ext_resource type="Resource" path="res://data/attacks/training_parryable.tres" id="7_parryable"]
+[ext_resource type="Resource" path="res://data/attacks/training_heavy.tres" id="8_heavy"]
+[ext_resource type="AudioStream" path="res://assets/audio/heavy_cue_placeholder.wav" id="9_cue"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_body"]
+size = Vector2(16, 28)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hurt"]
+size = Vector2(18, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hit"]
+size = Vector2(28, 10)
+
+[node name="TrainingDevice" type="StaticBody2D"]
+collision_layer = 1
+collision_mask = 0
+script = ExtResource("1_device")
+parryable_attack = ExtResource("7_parryable")
+heavy_attack = ExtResource("8_heavy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_body")
+
+[node name="Body" type="Polygon2D" parent="."]
+color = Color(0.32, 0.37, 0.4, 1)
+polygon = PackedVector2Array(-8, -14, 8, -14, 8, 14, -8, 14)
+
+[node name="AttackPivot" type="Node2D" parent="."]
+position = Vector2(5, -2)
+z_index = 2
+
+[node name="Arm" type="Polygon2D" parent="AttackPivot"]
+color = Color(0.45, 0.48, 0.47, 1)
+polygon = PackedVector2Array(0, -2, 27, -2, 27, 2, 0, 2)
+
+[node name="Telegraph" type="Polygon2D" parent="AttackPivot"]
+visible = false
+color = Color(0.76, 0.91, 0.77, 0.75)
+polygon = PackedVector2Array(15, -5, 32, -5, 32, 5, 15, 5)
+
+[node name="Hitbox" type="Area2D" parent="AttackPivot"]
+collision_layer = 8
+collision_mask = 4
+monitorable = false
+script = ExtResource("2_hitbox")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackPivot/Hitbox"]
+shape = SubResource("RectangleShape2D_hit")
+disabled = true
+
+[node name="Posture" type="Node" parent="."]
+script = ExtResource("5_posture")
+max_posture = 40.0
+regen_delay_seconds = 2.0
+regen_per_second = 10.0
+rupture_duration_seconds = 2.0
+restore_fraction = 0.5
+break_protection_seconds = 0.0
+rupture_vulnerability_bonus = 0.2
+
+[node name="DefenseStats" type="Node" parent="."]
+script = ExtResource("6_stats")
+
+[node name="Health" type="Node" parent="."]
+script = ExtResource("4_health")
+max_health = 200
+posture_path = NodePath("../Posture")
+stats_path = NodePath("../DefenseStats")
+
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("3_hurtbox")
+receiver_path = NodePath("../Health")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = SubResource("RectangleShape2D_hurt")
+
+[node name="HeavyCueAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_cue")
+volume_db = -11.0
+
+[node name="StatusLabel" type="Label" parent="."]
+offset_left = -50.0
+offset_top = -40.0
+offset_right = 100.0
+offset_bottom = -25.0
+theme_override_font_sizes/font_size = 8
+
+[node name="FeedbackLabel" type="Label" parent="."]
+offset_left = -43.0
+offset_top = -56.0
+offset_right = 110.0
+offset_bottom = -40.0
+theme_override_colors/font_color = Color(1, 0.82, 0.51, 1)
+theme_override_font_sizes/font_size = 9

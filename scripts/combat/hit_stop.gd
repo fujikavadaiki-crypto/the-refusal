@@ -8,17 +8,21 @@ var end_tick_usec := 0
 var previous_time_scale := 1.0
 var request_count := 0
 var last_requested_ms := 0
+var active_priority := 0
 
 
 func _ready() -> void:
     process_mode = Node.PROCESS_MODE_ALWAYS
 
 
-func request_ms(duration_ms: int) -> void:
+func request_ms(duration_ms: int, priority := 1) -> void:
     if duration_ms <= 0:
+        return
+    if active and priority < active_priority:
         return
     request_count += 1
     last_requested_ms = duration_ms
+    active_priority = priority
     end_tick_usec = maxi(end_tick_usec, Time.get_ticks_usec() + duration_ms * 1000)
     if not active:
         previous_time_scale = Engine.time_scale
@@ -40,3 +44,4 @@ func _restore() -> void:
     Engine.time_scale = previous_time_scale
     active = false
     end_tick_usec = 0
+    active_priority = 0

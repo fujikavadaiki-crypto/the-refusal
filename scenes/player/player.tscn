@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3]
+[gd_scene load_steps=20 format=3]
 
 [ext_resource type="Script" path="res://scripts/player/player.gd" id="1_player"]
 [ext_resource type="Script" path="res://scripts/player/player_locomotion.gd" id="2_locomotion"]
@@ -11,6 +11,17 @@
 [ext_resource type="Resource" path="res://data/attacks/light_2.tres" id="8_light2"]
 [ext_resource type="Resource" path="res://data/attacks/light_3.tres" id="9_light3"]
 [ext_resource type="Resource" path="res://data/attacks/heavy.tres" id="10_heavy"]
+
+[ext_resource type="Script" path="res://scripts/combat/posture_component.gd" id="11_posture"]
+[ext_resource type="Script" path="res://scripts/combat/defense_stats.gd" id="12_stats"]
+[ext_resource type="Script" path="res://scripts/combat/health_component.gd" id="13_health"]
+[ext_resource type="Script" path="res://scripts/combat/hurtbox_2d.gd" id="14_hurtbox"]
+[ext_resource type="Script" path="res://scripts/player/player_defense.gd" id="15_defense"]
+[ext_resource type="AudioStream" path="res://assets/audio/parry_confirm_placeholder.wav" id="16_parry_audio"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hurt"]
+radius = 6.0
+height = 26.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sword"]
 size = Vector2(12, 5)
@@ -40,6 +51,55 @@ light_1 = ExtResource("7_light1")
 light_2 = ExtResource("8_light2")
 light_3 = ExtResource("9_light3")
 heavy = ExtResource("10_heavy")
+
+[node name="Posture" type="Node" parent="."]
+script = ExtResource("11_posture")
+max_posture = 100.0
+regen_delay_seconds = 1.5
+regen_per_second = 25.0
+rupture_duration_seconds = 0.8
+restore_fraction = 0.5
+break_protection_seconds = 0.35
+
+[node name="DefenseStats" type="Node" parent="."]
+script = ExtResource("12_stats")
+
+[node name="Health" type="Node" parent="."]
+script = ExtResource("13_health")
+max_health = 100
+posture_path = NodePath("../Posture")
+stats_path = NodePath("../DefenseStats")
+guard_path = NodePath("../Defense")
+
+[node name="Defense" type="Node" parent="."]
+script = ExtResource("15_defense")
+
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("14_hurtbox")
+receiver_path = NodePath("../Health")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = SubResource("CapsuleShape2D_hurt")
+
+[node name="ParrySpark" type="Polygon2D" parent="."]
+visible = false
+position = Vector2(12, -2)
+z_index = 3
+color = Color(0.97, 0.91, 0.61, 0.85)
+polygon = PackedVector2Array(-2, -2, 0, -7, 2, -2, 7, 0, 2, 2, 0, 7, -2, 2, -7, 0)
+
+[node name="ParryAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_parry_audio")
+volume_db = -6.0
+
+[node name="DebugLabel" type="Label" parent="."]
+offset_left = -52.0
+offset_top = -95.0
+offset_right = 100.0
+offset_bottom = -65.0
+theme_override_font_sizes/font_size = 8
 
 [node name="AttackPivot" type="Node2D" parent="."]
 position = Vector2(5, -2)

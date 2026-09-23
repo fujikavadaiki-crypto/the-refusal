@@ -6,7 +6,6 @@ signal attack_finished(attack: AttackData)
 signal hit_confirmed(context: HitContext)
 
 enum Phase { IDLE, WINDUP, ACTIVE, RECOVERY }
-static var next_action_uid := 1
 
 @export var light_1: AttackData
 @export var light_2: AttackData
@@ -14,6 +13,8 @@ static var next_action_uid := 1
 @export var heavy: AttackData
 
 @onready var player: CharacterBody2D = get_parent() as CharacterBody2D
+@onready var attacker_posture: PostureComponent = $"../Posture"
+@onready var attacker_stats: DefenseStats = $"../DefenseStats"
 @onready var pivot: Node2D = $"../AttackPivot"
 @onready var hitbox: Hitbox2D = $"../AttackPivot/Hitbox"
 @onready var blade: Polygon2D = $"../AttackPivot/SwordBlade"
@@ -28,6 +29,7 @@ var queued_next := false
 var combo_next_stage := 1
 var combo_wait_remaining := 0.0
 var confirmed_hit_count := 0
+var facing_direction := 1
 
 
 func _ready() -> void:
@@ -37,8 +39,11 @@ func _ready() -> void:
 
 
 func set_facing(direction: int) -> void:
+    facing_direction = direction
     pivot.scale.x = direction
     pivot.position.x = 5.0 * direction
+    if not is_busy():
+        pivot.rotation_degrees = 55.0 * direction
 
 
 func is_busy() -> bool:
@@ -47,6 +52,19 @@ func is_busy() -> bool:
 
 func movement_multiplier() -> float:
     return current_attack.movement_multiplier if is_busy() else 1.0
+
+
+func abort_attack() -> void:
+    if is_busy():
+        hitbox.disarm()
+        active_marker.visible = false
+        pivot.rotation_degrees = 55.0 * facing_direction
+    phase = Phase.IDLE
+    current_attack = null
+    current_light_stage = 0
+    queued_next = false
+    combo_next_stage = 1
+    combo_wait_remaining = 0.0
 
 
 func accept_inputs(light_pressed: bool, heavy_pressed: bool) -> void:
@@ -77,13 +95,13 @@ func tick(delta: float) -> void:
     var total := current_attack.total_seconds()
     if elapsed < active_start:
         phase = Phase.WINDUP
-        pivot.rotation_degrees = lerpf(55.0, current_attack.start_angle_degrees, elapsed / active_start)
+        pivot.rotation_degrees = lerpf(55.0, current_attack.start_angle_degrees, elapsed / active_start) * facing_direction
     elif elapsed < active_end:
         if phase != Phase.ACTIVE:
             phase = Phase.ACTIVE
             _arm_hitbox()
         var progress := (elapsed - active_start) / current_attack.active_seconds
-        pivot.rotation_degrees = lerpf(current_attack.start_angle_degrees, current_attack.end_angle_degrees, progress)
+        pivot.rotation_degrees = lerpf(current_attack.start_angle_degrees, current_attack.end_angle_degrees, progress) * facing_direction
         hitbox.scan_overlaps()
     elif elapsed < total:
         if phase == Phase.ACTIVE:
@@ -91,7 +109,7 @@ func tick(delta: float) -> void:
             active_marker.visible = false
         phase = Phase.RECOVERY
         var progress := (elapsed - active_end) / current_attack.recovery_seconds
-        pivot.rotation_degrees = lerpf(current_attack.end_angle_degrees, 55.0, progress)
+        pivot.rotation_degrees = lerpf(current_attack.end_angle_degrees, 55.0, progress) * facing_direction
     else:
         _finish()
 
@@ -109,13 +127,12 @@ func _light_data(stage: int) -> AttackData:
 func _begin(attack: AttackData, stage: int) -> void:
     current_attack = attack
     current_light_stage = stage
-    action_uid = next_action_uid
-    next_action_uid += 1
+    action_uid = HitContext.allocate_action_id()
     elapsed = 0.0
     queued_next = false
     combo_wait_remaining = 0.0
     phase = Phase.WINDUP
-    pivot.rotation_degrees = 55.0
+    pivot.rotation_degrees = 55.0 * facing_direction
     blade.color = Color(0.8, 0.79, 0.72, 1) if stage == 0 else Color(0.62, 0.66, 0.64, 1)
     attack_started.emit(attack, action_uid)
 
@@ -123,10 +140,13 @@ func _begin(attack: AttackData, stage: int) -> void:
 func _arm_hitbox() -> void:
     var context := HitContext.new()
     context.attacker = player
+    context.attacker_posture = attacker_posture
+    context.attacker_stats = attacker_stats
     context.attack_id = current_attack.attack_id
     context.action_uid = action_uid
     context.base_damage = current_attack.base_damage
     context.posture_damage = current_attack.posture_damage
+    context.parry_class = current_attack.parry_class
     context.damage_type = current_attack.damage_type
     context.tags = current_attack.tags.duplicate()
     hitbox.arm(context, current_attack)
@@ -137,7 +157,7 @@ func _arm_hitbox() -> void:
 func _finish() -> void:
     hitbox.disarm()
     active_marker.visible = false
-    pivot.rotation_degrees = 55.0
+    pivot.rotation_degrees = 55.0 * facing_direction
     var finished_attack := current_attack
     var finished_stage := current_light_stage
     var play_next := queued_next and finished_stage > 0 and finished_stage < 3
@@ -156,6 +176,8 @@ func _finish() -> void:
 
 
 func _on_hit_confirmed(context: HitContext) -> void:
+    if context.outcome != HitContext.Outcome.DAMAGED and context.outcome != HitContext.Outcome.DEAD:
+        return
     confirmed_hit_count += 1
     hit_confirmed.emit(context)
     get_node("/root/HitStop").request_ms(current_attack.hit_stop_ms)

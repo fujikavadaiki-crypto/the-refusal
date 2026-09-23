@@ -2,6 +2,7 @@ class_name Hitbox2D
 extends Area2D
 
 signal hit_confirmed(context: HitContext)
+static var next_hit_uid := 1
 
 @onready var collision_shape: CollisionShape2D = $CollisionShape2D
 
@@ -51,7 +52,8 @@ func _try_area(area: Area2D) -> void:
     if struck_targets.has(target_key):
         return
     struck_targets[target_key] = true
-    var context := template.for_target(area.get_parent() as Node2D, template.action_uid * 1000 + struck_targets.size())
+    var context := template.for_target(area.get_parent() as Node2D, next_hit_uid)
+    next_hit_uid += 1
     if area.receive_hit(context):
         hit_confirmed.emit(context)
     else:

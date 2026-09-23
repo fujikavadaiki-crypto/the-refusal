@@ -1,8 +1,11 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=8 format=3]
 
 [ext_resource type="Script" path="res://scripts/test/dummy.gd" id="1_dummy"]
 [ext_resource type="Script" path="res://scripts/combat/health_component.gd" id="2_health"]
 [ext_resource type="Script" path="res://scripts/combat/hurtbox_2d.gd" id="3_hurtbox"]
+
+[ext_resource type="Script" path="res://scripts/combat/posture_component.gd" id="4_posture"]
+[ext_resource type="Script" path="res://scripts/combat/defense_stats.gd" id="5_stats"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_body"]
 size = Vector2(16, 28)
@@ -31,8 +34,23 @@ visible = false
 color = Color(1, 0.86, 0.53, 0.65)
 polygon = PackedVector2Array(-10, -16, 10, -16, 10, 16, -10, 16)
 
+[node name="Posture" type="Node" parent="."]
+script = ExtResource("4_posture")
+max_posture = 40.0
+regen_delay_seconds = 2.0
+regen_per_second = 10.0
+rupture_duration_seconds = 2.0
+restore_fraction = 0.5
+break_protection_seconds = 0.0
+rupture_vulnerability_bonus = 0.2
+
+[node name="DefenseStats" type="Node" parent="."]
+script = ExtResource("5_stats")
+
 [node name="Health" type="Node" parent="."]
 script = ExtResource("2_health")
+posture_path = NodePath("../Posture")
+stats_path = NodePath("../DefenseStats")
 
 [node name="Hurtbox" type="Area2D" parent="."]
 collision_layer = 4
@@ -57,3 +75,11 @@ offset_right = 85.0
 offset_bottom = -41.0
 theme_override_colors/font_color = Color(1, 0.82, 0.49, 1)
 theme_override_font_sizes/font_size = 11
+
+[node name="PostureLabel" type="Label" parent="."]
+offset_left = -38.0
+offset_top = -24.0
+offset_right = 90.0
+offset_bottom = -7.0
+theme_override_colors/font_color = Color(0.83, 0.72, 0.52, 1)
+theme_override_font_sizes/font_size = 9
