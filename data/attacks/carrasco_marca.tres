@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="AttackData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/combat/attack_data.gd" id="1_attack"]
+
+[resource]
+script = ExtResource("1_attack")
+attack_id = &"carrasco_marca"
+base_damage = 0
+posture_damage = 0
+damage_type = &"physical"
+tags = PackedStringArray("physical", "melee", "skill", "mark")
+windup_seconds = 0.18
+active_seconds = 0.13
+recovery_seconds = 0.29
+combo_queue_start_seconds = 0
+combo_wait_seconds = 0
+movement_multiplier = 0.45
+start_angle_degrees = -70
+end_angle_degrees = 55
+hitbox_center_x = 22
+hitbox_size = Vector2(18, 8)
+hit_stop_ms = 0

@@ -66,6 +66,13 @@ func reset_posture() -> void:
     posture_changed.emit(current_posture, max_posture)
 
 
+func set_max_preserving_ratio(value: float) -> void:
+    var fraction := current_posture / maxf(1.0, max_posture)
+    max_posture = maxf(1.0, value)
+    current_posture = clampf(fraction * max_posture, 0.0, max_posture)
+    posture_changed.emit(current_posture, max_posture)
+
+
 func _end_rupture() -> void:
     broken = false
     current_posture = max_posture * restore_fraction

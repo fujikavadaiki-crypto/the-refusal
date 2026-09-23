@@ -22,6 +22,7 @@ enum Phase { IDLE, WINDUP, ACTIVE, RECOVERY }
 @onready var hitbox: Hitbox2D = $"../AttackPivot/Hitbox"
 @onready var blade: Polygon2D = $"../AttackPivot/SwordBlade"
 @onready var active_marker: Polygon2D = $"../AttackPivot/ActiveMarker"
+@onready var masks: MaskController = $"../MaskController"
 
 var phase := Phase.IDLE
 var current_attack: AttackData
@@ -39,6 +40,7 @@ func _ready() -> void:
     pivot.rotation_degrees = 55.0
     active_marker.visible = false
     hitbox.hit_confirmed.connect(_on_hit_confirmed)
+    hitbox.before_hit.connect(masks.prepare_hit)
 
 
 func set_facing(direction: int) -> void:
@@ -76,28 +78,42 @@ func accept_inputs(light_pressed: bool, heavy_pressed: bool, dash_mode := -1) ->
             if elapsed >= current_attack.combo_queue_start_seconds and elapsed <= current_attack.total_seconds():
                 queued_next = true
         return false
+    var mask := masks.active_data()
     if dash_mode == PlayerDefense.Mode.DODGING:
         if heavy_pressed:
-            _begin(heavy, 0)
+            _begin(mask.heavy if mask != null else heavy, 0)
         elif light_pressed:
-            _begin(dash_light, 0)
+            _begin(mask.post_dodge if mask != null else dash_light, 0)
         else:
             return false
     elif dash_mode == PlayerDefense.Mode.AIR_DASH or not player.is_on_floor():
         if heavy_pressed:
-            _begin(air_heavy, 0)
+            _begin(mask.air_heavy if mask != null else air_heavy, 0)
         elif light_pressed:
-            _begin(air_light, 0)
+            _begin(mask.air_light if mask != null else air_light, 0)
         else:
             return false
     elif heavy_pressed:
-        _begin(heavy, 0)
+        _begin(mask.heavy if mask != null else heavy, 0)
     elif light_pressed:
         var stage := combo_next_stage if combo_wait_remaining > 0.0 else 1
         _begin(_light_data(stage), stage)
     else:
         return false
     return true
+
+
+func start_special(attack: AttackData) -> bool:
+    if is_busy() or attack == null:
+        return false
+    _begin(attack, 0)
+    return true
+
+
+func reset_combo() -> void:
+    combo_next_stage = 1
+    combo_wait_remaining = 0.0
+    queued_next = false
 
 
 func tick(delta: float) -> void:
@@ -133,13 +149,14 @@ func tick(delta: float) -> void:
 
 
 func _light_data(stage: int) -> AttackData:
+    var mask := masks.active_data()
     match stage:
         2:
-            return light_2
+            return mask.light_2 if mask != null else light_2
         3:
-            return light_3
+            return mask.light_3 if mask != null else light_3
         _:
-            return light_1
+            return mask.light_1 if mask != null else light_1
 
 
 func _begin(attack: AttackData, stage: int) -> void:
@@ -205,8 +222,10 @@ func _finish() -> void:
 
 
 func _on_hit_confirmed(context: HitContext) -> void:
-    if context.outcome != HitContext.Outcome.DAMAGED and context.outcome != HitContext.Outcome.DEAD:
+    if context.outcome != HitContext.Outcome.DAMAGED and context.outcome != HitContext.Outcome.DEAD and context.outcome != HitContext.Outcome.CONTACT:
         return
     confirmed_hit_count += 1
+    masks.on_hit(context)
     hit_confirmed.emit(context)
-    get_node("/root/HitStop").request_ms(current_attack.hit_stop_ms)
+    if context.outcome != HitContext.Outcome.CONTACT:
+        get_node("/root/HitStop").request_ms(current_attack.hit_stop_ms)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3]
+[gd_scene load_steps=24 format=3]
 
 [ext_resource type="Script" path="res://scripts/player/player.gd" id="1_player"]
 [ext_resource type="Script" path="res://scripts/player/player_locomotion.gd" id="2_locomotion"]
@@ -21,6 +21,7 @@
 [ext_resource type="Resource" path="res://data/attacks/dash_light.tres" id="17_dash_light"]
 [ext_resource type="Resource" path="res://data/attacks/air_light.tres" id="18_air_light"]
 [ext_resource type="Resource" path="res://data/attacks/air_heavy.tres" id="19_air_heavy"]
+[ext_resource type="Script" path="res://scripts/masks/mask_controller.gd" id="20_masks"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hurt"]
 radius = 6.0
@@ -80,6 +81,9 @@ guard_path = NodePath("../Defense")
 [node name="Defense" type="Node" parent="."]
 script = ExtResource("15_defense")
 
+[node name="MaskController" type="Node" parent="."]
+script = ExtResource("20_masks")
+
 [node name="Hurtbox" type="Area2D" parent="."]
 collision_layer = 4
 collision_mask = 0
@@ -135,6 +139,12 @@ shape = SubResource("RectangleShape2D_sword")
 disabled = true
 
 [node name="VisualRoot" type="Node2D" parent="."]
+
+[node name="MaskBadge" type="Polygon2D" parent="VisualRoot"]
+visible = false
+position = Vector2(0, -18)
+color = Color(0.68, 0.28, 0.22, 1)
+polygon = PackedVector2Array(-5, -2, 5, -2, 4, 3, 0, 5, -4, 3)
 
 [node name="LegBack" type="Polygon2D" parent="VisualRoot"]
 color = Color(0.19, 0.21, 0.23, 1)

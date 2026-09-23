@@ -2,7 +2,7 @@ class_name HitContext
 extends RefCounted
 
 ## A single resolved contact. Future modifiers can read these fields without changing hit detection.
-enum Outcome { PENDING, DODGED, PARRIED, DAMAGED, DEAD }
+enum Outcome { PENDING, DODGED, PARRIED, DAMAGED, DEAD, CONTACT }
 static var next_action_uid := 1
 
 
@@ -23,6 +23,9 @@ var actual_damage: int
 var posture_damage: int
 var actual_posture_damage: int
 var posture_damage_multiplier := 1.0
+var physical_attack_bonus := 0.0
+var posture_attack_bonus := 0.0
+var caused_rupture := false
 var parry_posture_return := 0
 var parry_posture_return_override := 0
 var damage_type: StringName
@@ -48,6 +51,8 @@ func for_target(new_target: Node2D, new_hit_uid: int) -> HitContext:
     result.base_damage = base_damage
     result.posture_damage = posture_damage
     result.posture_damage_multiplier = posture_damage_multiplier
+    result.physical_attack_bonus = physical_attack_bonus
+    result.posture_attack_bonus = posture_attack_bonus
     result.parry_posture_return_override = parry_posture_return_override
     result.damage_type = damage_type
     result.parry_class = parry_class

@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="MaskData" load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://scripts/masks/mask_data.gd" id="1_data"]
+[ext_resource type="Script" path="res://scripts/masks/carrasco_runtime_state.gd" id="2_runtime"]
+[ext_resource type="Resource" path="res://data/attacks/carrasco_light_1.tres" id="3_l1"]
+[ext_resource type="Resource" path="res://data/attacks/carrasco_light_2.tres" id="4_l2"]
+[ext_resource type="Resource" path="res://data/attacks/carrasco_light_3.tres" id="5_l3"]
+[ext_resource type="Resource" path="res://data/attacks/carrasco_heavy.tres" id="6_heavy"]
+[ext_resource type="Resource" path="res://data/attacks/carrasco_post_dodge.tres" id="7_dodge"]
+[ext_resource type="Resource" path="res://data/attacks/carrasco_air_light.tres" id="8_air_l"]
+[ext_resource type="Resource" path="res://data/attacks/carrasco_air_heavy.tres" id="9_air_h"]
+[ext_resource type="Resource" path="res://data/attacks/carrasco_quebra_selos.tres" id="10_skill1"]
+[ext_resource type="Resource" path="res://data/attacks/carrasco_marca.tres" id="11_skill2"]
+
+[resource]
+script = ExtResource("1_data")
+mask_id = &"carrasco_base"
+display_name = "Carrasco — Base"
+runtime_script = ExtResource("2_runtime")
+physical_bonus = 0.2
+posture_bonus = 0.25
+move_speed_multiplier = 0.92
+parry_posture_multiplier = 1.2
+light_1 = ExtResource("3_l1")
+light_2 = ExtResource("4_l2")
+light_3 = ExtResource("5_l3")
+heavy = ExtResource("6_heavy")
+post_dodge = ExtResource("7_dodge")
+air_light = ExtResource("8_air_l")
+air_heavy = ExtResource("9_air_h")
+skill_1 = ExtResource("10_skill1")
+skill_2 = ExtResource("11_skill2")
+skill_1_cooldown = 8.0
+skill_2_cooldown = 10.0
+ultimate_duration = 8.0
+ultimate_cooldown = 30.0
+ultimate_physical_bonus = 0.3
+ultimate_posture_bonus = 0.4

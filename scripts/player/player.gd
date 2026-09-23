@@ -7,11 +7,17 @@ extends CharacterBody2D
 @onready var defense: PlayerDefense = $Defense
 @onready var visual_root: Node2D = $VisualRoot
 @onready var follow_camera: PlayerCamera = $Camera2D
+@onready var masks: MaskController = $MaskController
 
 var facing_direction := 1
 
 
 func _physics_process(delta: float) -> void:
+    masks.tick(delta)
+    if Input.is_action_just_pressed("mask_swap"):
+        masks.swap()
+    if Input.is_action_just_pressed("mask_ultimate"):
+        masks.use_ultimate()
     var direction := Input.get_axis("move_left", "move_right")
     var jump_pressed := Input.is_action_just_pressed("jump")
     if not is_zero_approx(direction) and not combat.is_busy() and not defense.is_locked():
@@ -28,7 +34,12 @@ func _physics_process(delta: float) -> void:
         if combat.accept_inputs(light_pressed, heavy_pressed, defense.mode):
             defense.cancel_dash_for_attack(heavy_pressed)
     elif not defense.is_locked():
-        combat.accept_inputs(light_pressed, heavy_pressed)
+        if Input.is_action_just_pressed("mask_skill_1"):
+            masks.use_skill(1)
+        elif Input.is_action_just_pressed("mask_skill_2"):
+            masks.use_skill(2)
+        else:
+            combat.accept_inputs(light_pressed, heavy_pressed)
     combat.tick(delta)
     var movement := defense.movement_axis(direction) * combat.movement_multiplier()
     locomotion.move(self, movement, jump_pressed and not combat.is_busy() and not defense.is_locked(), delta, defense.suspends_gravity())

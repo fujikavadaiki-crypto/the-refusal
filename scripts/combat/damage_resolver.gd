@@ -10,7 +10,8 @@ static func health_amount(context: HitContext, stats: DefenseStats, posture: Pos
         vulnerability += stats.magical_vulnerability_bonus
     if posture != null and posture.is_ruptured():
         vulnerability += posture.rupture_vulnerability_bonus
-    var raw := maxf(0.0, float(context.base_damage) * vulnerability)
+    var attack_factor := 1.0 + context.physical_attack_bonus if context.damage_type == &"physical" else 1.0
+    var raw := maxf(0.0, float(context.base_damage) * attack_factor * vulnerability)
     var defense_factor := 1.0 if context.bypass_defense or stats == null else 1.0 - stats.effective_defense()
     var resistance := stats.resistance_for(context.damage_type) if stats != null else 0.0
     var reduced := raw * defense_factor * (1.0 - clampf(resistance, 0.0, 1.0))
@@ -19,7 +20,7 @@ static func health_amount(context: HitContext, stats: DefenseStats, posture: Pos
 
 
 static func posture_amount(context: HitContext, stats: DefenseStats) -> int:
-    var pressure := maxf(0.0, float(context.posture_damage) * context.posture_damage_multiplier)
+    var pressure := maxf(0.0, float(context.posture_damage) * context.posture_damage_multiplier * (1.0 + context.posture_attack_bonus))
     if stats != null and context.tags.has("heavy") and not context.tags.has("air"):
         pressure *= stats.ground_heavy_posture_taken_multiplier
     var resistance := stats.posture_resistance if stats != null else 0.0

@@ -180,6 +180,7 @@ func try_defend(context: HitContext) -> bool:
     parry_consumed = true
     context.outcome = HitContext.Outcome.PARRIED
     if context.attacker_posture != null:
+        var was_ruptured := context.attacker_posture.is_ruptured()
         var pressure := float(context.posture_damage) * context.posture_damage_multiplier
         var returned := roundi(pressure * parry_posture_multiplier)
         if context.parry_posture_return_override > 0:
@@ -187,6 +188,7 @@ func try_defend(context: HitContext) -> bool:
         elif context.attacker_stats != null:
             returned = DamageResolver.parry_return_amount(pressure, parry_posture_multiplier, context.attacker_stats)
         context.parry_posture_return = context.attacker_posture.receive_damage(returned)
+        context.caused_rupture = not was_ruptured and context.attacker_posture.is_ruptured()
     spark_remaining = 0.16
     spark.visible = true
     parry_audio.play()
