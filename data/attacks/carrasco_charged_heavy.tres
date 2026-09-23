@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="AttackData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/combat/attack_data.gd" id="1_attack"]
+
+[resource]
+script = ExtResource("1_attack")
+attack_id = &"carrasco_charged_heavy"
+base_damage = 78
+posture_damage = 65
+damage_type = &"physical"
+tags = PackedStringArray("physical", "melee", "heavy", "charged")
+windup_seconds = 0.16
+active_seconds = 0.14
+recovery_seconds = 0.48
+combo_queue_start_seconds = 0.0
+combo_wait_seconds = 0.0
+movement_multiplier = 0.1
+start_angle_degrees = -130.0
+end_angle_degrees = 90.0
+hitbox_center_x = 26.0
+hitbox_size = Vector2(22, 10)
+hit_stop_ms = 75

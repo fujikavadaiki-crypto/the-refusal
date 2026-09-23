@@ -11,6 +11,7 @@ signal mask_changed(active: MaskData)
 @onready var health: HealthComponent = $"../Health"
 @onready var posture: PostureComponent = $"../Posture"
 @onready var badge: Polygon2D = $"../VisualRoot/MaskBadge"
+@onready var targeting: ExecutionTargeting = $"../ExecutionRange"
 
 var slots: Array[MaskRuntimeState] = [null, null]
 var active_slot := 0
@@ -39,6 +40,8 @@ func tick(delta: float) -> void:
 
 func equip(slot: int, data: MaskData) -> void:
     assert(slot >= 0 and slot < 2)
+    if slots[slot] != null:
+        slots[slot].dispose()
     var state: MaskRuntimeState = null
     if data != null:
         state = data.runtime_script.new() as MaskRuntimeState if data.runtime_script != null else MaskRuntimeState.new()
@@ -46,6 +49,12 @@ func equip(slot: int, data: MaskData) -> void:
     slots[slot] = state
     if slot == active_slot:
         _apply_active()
+
+
+func _exit_tree() -> void:
+    for state in slots:
+        if state != null:
+            state.dispose()
 
 
 func active_state() -> MaskRuntimeState:
@@ -58,7 +67,10 @@ func active_data() -> MaskData:
 
 
 func swap() -> bool:
-    if swap_cooldown_remaining > 0.0 or combat.is_busy() or defense.is_locked():
+    if swap_cooldown_remaining > 0.0 or defense.is_locked():
+        return false
+    combat.cancel_charge()
+    if combat.is_busy():
         return false
     var state := active_state()
     if state != null:
@@ -98,6 +110,17 @@ func use_ultimate() -> bool:
     state.ultimate_remaining = state.data.ultimate_duration
     state.ultimate_cooldown_remaining = state.data.ultimate_cooldown
     return true
+
+
+func try_execute() -> int:
+    var state := active_state() as CarrascoRuntimeState
+    if state == null or defense.is_locked():
+        return ExecutionResolver.Result.INELIGIBLE
+    var target := targeting.best_target(state, player)
+    if target == null:
+        return ExecutionResolver.Result.INELIGIBLE
+    combat.abort_attack()
+    return ExecutionResolver.execute(state, player, target)
 
 
 func prepare_hit(context: HitContext) -> void:

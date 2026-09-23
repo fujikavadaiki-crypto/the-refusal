@@ -19,6 +19,9 @@ extends Resource
 @export var hitbox_center_x: float = 19.0
 @export var hitbox_size: Vector2 = Vector2(12, 5)
 @export var hit_stop_ms: int = 30
+@export var charged_variant: AttackData
+@export var charge_threshold_seconds := 0.0
+@export var charge_move_multiplier := 0.45
 
 
 func total_seconds() -> float:

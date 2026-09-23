@@ -19,6 +19,10 @@ func end_ultimate() -> void:
     ultimate_remaining = 0.0
 
 
+func dispose() -> void:
+    pass
+
+
 func prepare_hit(context: HitContext) -> void:
     context.physical_attack_bonus += data.physical_bonus
     context.posture_attack_bonus += data.posture_bonus

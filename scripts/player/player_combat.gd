@@ -5,7 +5,7 @@ signal attack_started(attack: AttackData, action_uid: int)
 signal attack_finished(attack: AttackData)
 signal hit_confirmed(context: HitContext)
 
-enum Phase { IDLE, WINDUP, ACTIVE, RECOVERY }
+enum Phase { IDLE, WINDUP, ACTIVE, RECOVERY, CHARGING }
 
 @export var light_1: AttackData
 @export var light_2: AttackData
@@ -22,6 +22,7 @@ enum Phase { IDLE, WINDUP, ACTIVE, RECOVERY }
 @onready var hitbox: Hitbox2D = $"../AttackPivot/Hitbox"
 @onready var blade: Polygon2D = $"../AttackPivot/SwordBlade"
 @onready var active_marker: Polygon2D = $"../AttackPivot/ActiveMarker"
+@onready var charge_marker: Polygon2D = $"../AttackPivot/ChargeMarker"
 @onready var masks: MaskController = $"../MaskController"
 
 var phase := Phase.IDLE
@@ -34,13 +35,17 @@ var combo_next_stage := 1
 var combo_wait_remaining := 0.0
 var confirmed_hit_count := 0
 var facing_direction := 1
+var charge_source: AttackData
+var charge_elapsed := 0.0
 
 
 func _ready() -> void:
     pivot.rotation_degrees = 55.0
     active_marker.visible = false
+    charge_marker.visible = false
     hitbox.hit_confirmed.connect(_on_hit_confirmed)
     hitbox.before_hit.connect(masks.prepare_hit)
+    ($"../Health" as HealthComponent).damage_taken.connect(_on_player_damaged)
 
 
 func set_facing(direction: int) -> void:
@@ -55,7 +60,17 @@ func is_busy() -> bool:
     return phase != Phase.IDLE
 
 
+func is_charging() -> bool:
+    return phase == Phase.CHARGING
+
+
+func charge_ready() -> bool:
+    return is_charging() and charge_source != null and charge_elapsed >= charge_source.charge_threshold_seconds
+
+
 func movement_multiplier() -> float:
+    if is_charging():
+        return charge_source.charge_move_multiplier
     return current_attack.movement_multiplier if is_busy() else 1.0
 
 
@@ -64,12 +79,22 @@ func abort_attack() -> void:
         hitbox.disarm()
         active_marker.visible = false
         pivot.rotation_degrees = 55.0 * facing_direction
+    charge_marker.visible = false
+    charge_source = null
+    charge_elapsed = 0.0
     phase = Phase.IDLE
     current_attack = null
     current_light_stage = 0
     queued_next = false
     combo_next_stage = 1
     combo_wait_remaining = 0.0
+
+
+func cancel_charge() -> bool:
+    if not is_charging():
+        return false
+    abort_attack()
+    return true
 
 
 func accept_inputs(light_pressed: bool, heavy_pressed: bool, dash_mode := -1) -> bool:
@@ -94,7 +119,11 @@ func accept_inputs(light_pressed: bool, heavy_pressed: bool, dash_mode := -1) ->
         else:
             return false
     elif heavy_pressed:
-        _begin(mask.heavy if mask != null else heavy, 0)
+        var selected_heavy: AttackData = mask.heavy if mask != null else heavy
+        if selected_heavy.charged_variant != null and selected_heavy.charge_threshold_seconds > 0.0 and Input.is_action_pressed("attack_heavy"):
+            _start_charge(selected_heavy)
+        else:
+            _begin(selected_heavy, 0)
     elif light_pressed:
         var stage := combo_next_stage if combo_wait_remaining > 0.0 else 1
         _begin(_light_data(stage), stage)
@@ -117,6 +146,13 @@ func reset_combo() -> void:
 
 
 func tick(delta: float) -> void:
+    if is_charging():
+        charge_elapsed += delta
+        if charge_ready():
+            charge_marker.color = Color(1.0, 0.35, 0.19, 0.9)
+        if not Input.is_action_pressed("attack_heavy"):
+            _release_charge()
+        return
     if not is_busy():
         combo_wait_remaining = maxf(0.0, combo_wait_remaining - delta)
         if is_zero_approx(combo_wait_remaining):
@@ -160,6 +196,9 @@ func _light_data(stage: int) -> AttackData:
 
 
 func _begin(attack: AttackData, stage: int) -> void:
+    charge_marker.visible = false
+    charge_source = null
+    charge_elapsed = 0.0
     current_attack = attack
     current_light_stage = stage
     action_uid = HitContext.allocate_action_id()
@@ -178,6 +217,23 @@ func _begin(attack: AttackData, stage: int) -> void:
         _:
             blade.color = Color(0.8, 0.79, 0.72, 1) if stage == 0 else Color(0.62, 0.66, 0.64, 1)
     attack_started.emit(attack, action_uid)
+
+
+func _start_charge(attack: AttackData) -> void:
+    phase = Phase.CHARGING
+    current_attack = null
+    charge_source = attack
+    charge_elapsed = 0.0
+    combo_wait_remaining = 0.0
+    queued_next = false
+    charge_marker.visible = true
+    charge_marker.color = Color(0.8, 0.58, 0.29, 0.7)
+    pivot.rotation_degrees = -40.0 * facing_direction
+
+
+func _release_charge() -> void:
+    var chosen: AttackData = charge_source.charged_variant if charge_ready() else charge_source
+    _begin(chosen, 0)
 
 
 func _arm_hitbox() -> void:
@@ -229,3 +285,7 @@ func _on_hit_confirmed(context: HitContext) -> void:
     hit_confirmed.emit(context)
     if context.outcome != HitContext.Outcome.CONTACT:
         get_node("/root/HitStop").request_ms(current_attack.hit_stop_ms)
+
+
+func _on_player_damaged(_context: HitContext) -> void:
+    cancel_charge()

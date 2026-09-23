@@ -18,6 +18,8 @@ func _physics_process(delta: float) -> void:
         masks.swap()
     if Input.is_action_just_pressed("mask_ultimate"):
         masks.use_ultimate()
+    if Input.is_action_just_pressed("execute"):
+        masks.try_execute()
     var direction := Input.get_axis("move_left", "move_right")
     var jump_pressed := Input.is_action_just_pressed("jump")
     if not is_zero_approx(direction) and not combat.is_busy() and not defense.is_locked():
@@ -28,7 +30,10 @@ func _physics_process(delta: float) -> void:
 
     var light_pressed := Input.is_action_just_pressed("attack_light")
     var heavy_pressed := Input.is_action_just_pressed("attack_heavy")
-    defense.accept_inputs(Input.is_action_just_pressed("dodge"), Input.is_action_just_pressed("parry"), direction, facing_direction, combat.is_busy())
+    var dodge_pressed := Input.is_action_just_pressed("dodge")
+    if dodge_pressed:
+        combat.cancel_charge()
+    defense.accept_inputs(dodge_pressed, Input.is_action_just_pressed("parry"), direction, facing_direction, combat.is_busy())
     defense.tick(delta)
     if defense.can_cancel_dash_for_attack() and (light_pressed or heavy_pressed):
         if combat.accept_inputs(light_pressed, heavy_pressed, defense.mode):

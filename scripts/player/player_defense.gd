@@ -66,6 +66,8 @@ func _process(delta: float) -> void:
     var action_text := "AIR_DASH" if mode == Mode.AIR_DASH else ("GROUND_DODGE" if mode == Mode.DODGING else "-")
     if combat.current_attack != null:
         action_text = String(combat.current_attack.attack_id).to_upper()
+    elif combat.is_charging():
+        action_text = "CHARGED READY" if combat.charge_ready() else "HEAVY CHARGING"
     debug_label.text = "HP %d/%d  POST %d/%d\n%s  I:%s  P:%s\n%s  AIR DASH %s" % [health.current_health, health.max_health, roundi(posture.current_posture), roundi(posture.max_posture), regen_text, iframe_text, parry_text, action_text, "READY" if air_dash_available else "USED"]
 
 

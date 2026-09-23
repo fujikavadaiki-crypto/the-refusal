@@ -187,15 +187,20 @@ func run_checks() -> void:
     var victim_posture := victim.get_node("Posture") as PostureComponent
     state.add_stacks(victim, 3)
     victim_posture.broken = true
+    victim_posture.rupture_remaining = 2.0
     victim_health.current_health = 75
     check(not ExecutionResolver.is_eligible(state, victim), "32 common requires HP strictly below 15 percent")
     victim_health.current_health = 74
     check(ExecutionResolver.is_eligible(state, victim), "32 common eligible with HP<15, Rupture, 3 stacks")
+    player.global_position = Vector2(1060, 215)
+    player.velocity = Vector2.ZERO
+    await frames(2)
     check(ExecutionResolver.execute(state, player, victim) == ExecutionResolver.Result.COMMON_KILL and victim_health.current_health == 0, "33 technical common execution kills")
     victim.reset_dummy()
     victim.set_meta("execution_tier", &"elite")
     state.add_stacks(victim, 5)
     victim_posture.broken = true
+    victim_posture.rupture_remaining = 2.0
     var elite_before := victim_health.current_health
     check(ExecutionResolver.execute(state, player, victim) == ExecutionResolver.Result.STRIKE and victim_health.current_health > 0 and victim_health.current_health < elite_before, "34 elite receives strike, no forced kill")
     check(state.stacks_for(victim) == 2, "35 elite consumes three stacks")
