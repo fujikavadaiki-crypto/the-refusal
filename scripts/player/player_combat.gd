@@ -11,6 +11,9 @@ enum Phase { IDLE, WINDUP, ACTIVE, RECOVERY }
 @export var light_2: AttackData
 @export var light_3: AttackData
 @export var heavy: AttackData
+@export var dash_light: AttackData
+@export var air_light: AttackData
+@export var air_heavy: AttackData
 
 @onready var player: CharacterBody2D = get_parent() as CharacterBody2D
 @onready var attacker_posture: PostureComponent = $"../Posture"
@@ -67,19 +70,34 @@ func abort_attack() -> void:
     combo_wait_remaining = 0.0
 
 
-func accept_inputs(light_pressed: bool, heavy_pressed: bool) -> void:
+func accept_inputs(light_pressed: bool, heavy_pressed: bool, dash_mode := -1) -> bool:
     if is_busy():
         if light_pressed and current_light_stage > 0 and current_light_stage < 3:
             if elapsed >= current_attack.combo_queue_start_seconds and elapsed <= current_attack.total_seconds():
                 queued_next = true
-        return
-    if not player.is_on_floor():
-        return
-    if heavy_pressed:
+        return false
+    if dash_mode == PlayerDefense.Mode.DODGING:
+        if heavy_pressed:
+            _begin(heavy, 0)
+        elif light_pressed:
+            _begin(dash_light, 0)
+        else:
+            return false
+    elif dash_mode == PlayerDefense.Mode.AIR_DASH or not player.is_on_floor():
+        if heavy_pressed:
+            _begin(air_heavy, 0)
+        elif light_pressed:
+            _begin(air_light, 0)
+        else:
+            return false
+    elif heavy_pressed:
         _begin(heavy, 0)
     elif light_pressed:
         var stage := combo_next_stage if combo_wait_remaining > 0.0 else 1
         _begin(_light_data(stage), stage)
+    else:
+        return false
+    return true
 
 
 func tick(delta: float) -> void:
@@ -133,7 +151,15 @@ func _begin(attack: AttackData, stage: int) -> void:
     combo_wait_remaining = 0.0
     phase = Phase.WINDUP
     pivot.rotation_degrees = 55.0 * facing_direction
-    blade.color = Color(0.8, 0.79, 0.72, 1) if stage == 0 else Color(0.62, 0.66, 0.64, 1)
+    match attack.attack_id:
+        &"air_light":
+            blade.color = Color(0.58, 0.84, 0.85, 1)
+        &"air_heavy":
+            blade.color = Color(0.91, 0.75, 0.49, 1)
+        &"dash_light":
+            blade.color = Color(0.65, 0.79, 0.93, 1)
+        _:
+            blade.color = Color(0.8, 0.79, 0.72, 1) if stage == 0 else Color(0.62, 0.66, 0.64, 1)
     attack_started.emit(attack, action_uid)
 
 
@@ -151,7 +177,10 @@ func _arm_hitbox() -> void:
     context.tags = current_attack.tags.duplicate()
     hitbox.arm(context, current_attack)
     active_marker.visible = true
-    active_marker.color = Color(0.85, 0.77, 0.55, 0.55) if current_light_stage == 0 else Color(0.64, 0.75, 0.7, 0.45)
+    if current_attack == dash_light or current_attack == air_light or current_attack == air_heavy:
+        active_marker.color = Color(blade.color.r, blade.color.g, blade.color.b, 0.55)
+    else:
+        active_marker.color = Color(0.85, 0.77, 0.55, 0.55) if current_light_stage == 0 else Color(0.64, 0.75, 0.7, 0.45)
 
 
 func _finish() -> void:

@@ -6,7 +6,7 @@ signal state_changed(previous: State, current: State)
 signal action_state_changed(previous: ActionState, current: ActionState)
 
 enum State { GROUNDED, AIRBORNE }
-enum ActionState { FREE, ATTACKING, DODGING, PARRYING, STAGGERED, DEAD }
+enum ActionState { FREE, ATTACKING, DODGING, PARRYING, STAGGERED, DEAD, AIR_DASH, AIR_ATTACK }
 
 var current_state := State.AIRBORNE
 var current_action_state := ActionState.FREE
@@ -26,6 +26,8 @@ func sync_action(attacking: bool, defense_mode: int = 0) -> void:
     match defense_mode:
         PlayerDefense.Mode.DODGING:
             next_state = ActionState.DODGING
+        PlayerDefense.Mode.AIR_DASH:
+            next_state = ActionState.AIR_DASH
         PlayerDefense.Mode.PARRYING:
             next_state = ActionState.PARRYING
         PlayerDefense.Mode.STAGGERED:
@@ -34,7 +36,7 @@ func sync_action(attacking: bool, defense_mode: int = 0) -> void:
             next_state = ActionState.DEAD
         _:
             if attacking:
-                next_state = ActionState.ATTACKING
+                next_state = ActionState.AIR_ATTACK if current_state == State.AIRBORNE else ActionState.ATTACKING
     if next_state == current_action_state:
         return
     var previous := current_action_state

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="AttackData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/combat/attack_data.gd" id="1_attack"]
+
+[resource]
+script = ExtResource("1_attack")
+attack_id = &"air_heavy"
+base_damage = 32
+posture_damage = 28
+damage_type = &"physical"
+tags = PackedStringArray("physical", "melee", "air", "heavy", "direct")
+windup_seconds = 0.25
+active_seconds = 0.14
+recovery_seconds = 0.4
+movement_multiplier = 0.25
+start_angle_degrees = -105
+end_angle_degrees = 70
+hitbox_center_x = 22
+hitbox_size = Vector2(16, 8)
+hit_stop_ms = 55

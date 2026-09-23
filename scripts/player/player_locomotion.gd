@@ -10,9 +10,11 @@ extends Node
 @export var jump_velocity := -260.0
 
 
-func move(body: CharacterBody2D, direction: float, jump_pressed: bool, delta: float) -> void:
+func move(body: CharacterBody2D, direction: float, jump_pressed: bool, delta: float, suspend_gravity := false) -> void:
     var horizontal_rate := air_acceleration
-    if body.is_on_floor():
+    if suspend_gravity:
+        body.velocity.y = 0.0
+    elif body.is_on_floor():
         horizontal_rate = ground_acceleration if not is_zero_approx(direction) else ground_deceleration
         if jump_pressed:
             body.velocity.y = jump_velocity

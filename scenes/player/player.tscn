@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3]
+[gd_scene load_steps=23 format=3]
 
 [ext_resource type="Script" path="res://scripts/player/player.gd" id="1_player"]
 [ext_resource type="Script" path="res://scripts/player/player_locomotion.gd" id="2_locomotion"]
@@ -18,6 +18,9 @@
 [ext_resource type="Script" path="res://scripts/combat/hurtbox_2d.gd" id="14_hurtbox"]
 [ext_resource type="Script" path="res://scripts/player/player_defense.gd" id="15_defense"]
 [ext_resource type="AudioStream" path="res://assets/audio/parry_confirm_placeholder.wav" id="16_parry_audio"]
+[ext_resource type="Resource" path="res://data/attacks/dash_light.tres" id="17_dash_light"]
+[ext_resource type="Resource" path="res://data/attacks/air_light.tres" id="18_air_light"]
+[ext_resource type="Resource" path="res://data/attacks/air_heavy.tres" id="19_air_heavy"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hurt"]
 radius = 6.0
@@ -51,6 +54,9 @@ light_1 = ExtResource("7_light1")
 light_2 = ExtResource("8_light2")
 light_3 = ExtResource("9_light3")
 heavy = ExtResource("10_heavy")
+dash_light = ExtResource("17_dash_light")
+air_light = ExtResource("18_air_light")
+air_heavy = ExtResource("19_air_heavy")
 
 [node name="Posture" type="Node" parent="."]
 script = ExtResource("11_posture")
@@ -96,7 +102,7 @@ volume_db = -6.0
 
 [node name="DebugLabel" type="Label" parent="."]
 offset_left = -52.0
-offset_top = -95.0
+offset_top = -109.0
 offset_right = 100.0
 offset_bottom = -65.0
 theme_override_font_sizes/font_size = 8

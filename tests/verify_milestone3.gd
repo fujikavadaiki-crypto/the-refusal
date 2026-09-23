@@ -195,9 +195,9 @@ func run_checks() -> void:
 
     await reset_player(1000)
     await press(&"jump")
-    check(not player.is_on_floor(), "player is airborne before Air Dodge check")
+    check(not player.is_on_floor(), "player is airborne before Air Dash check")
     await press(&"dodge")
-    check(defense.mode == PlayerDefense.Mode.READY, "Air Dodge is unavailable in this milestone")
+    check(defense.mode == PlayerDefense.Mode.AIR_DASH and not defense.air_dash_available, "airborne Dodge now starts the one-use Air Dash")
 
     await reset_player()
     training.call("reset_device")
