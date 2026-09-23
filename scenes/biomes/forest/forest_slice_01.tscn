@@ -1,0 +1,271 @@
+[gd_scene load_steps=15 format=3]
+
+[ext_resource type="Script" path="res://scripts/biomes/forest/forest_slice_01.gd" id="1_slice"]
+[ext_resource type="Script" path="res://scripts/biomes/forest/forest_encounter.gd" id="2_encounter"]
+[ext_resource type="Script" path="res://scripts/biomes/forest/forest_backdrop.gd" id="3_backdrop"]
+[ext_resource type="Script" path="res://scripts/biomes/forest/forest_vegetation.gd" id="4_vegetation"]
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="5_player"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/peregrino.tscn" id="6_peregrino"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/corvo.tscn" id="7_corvo"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/raiz_faminta.tscn" id="8_raiz"]
+
+[sub_resource type="RectangleShape2D" id="FloorA"]
+size = Vector2(1900, 42)
+
+[sub_resource type="RectangleShape2D" id="FloorB"]
+size = Vector2(1340, 42)
+
+[sub_resource type="RectangleShape2D" id="FloorRaised"]
+size = Vector2(500, 42)
+
+[sub_resource type="RectangleShape2D" id="FloorC"]
+size = Vector2(4400, 42)
+
+[sub_resource type="RectangleShape2D" id="Platform"]
+size = Vector2(92, 8)
+
+[sub_resource type="RectangleShape2D" id="Boundary"]
+size = Vector2(16, 270)
+
+[node name="ForestSlice01" type="Node2D"]
+script = ExtResource("1_slice")
+
+[node name="Backdrop" type="Node2D" parent="."]
+z_index = -10
+script = ExtResource("3_backdrop")
+
+[node name="GroundA" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(950, 249)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundA"]
+shape = SubResource("FloorA")
+
+[node name="Visual" type="Polygon2D" parent="GroundA"]
+z_index = -2
+color = Color(0.23, 0.28, 0.25, 1)
+polygon = PackedVector2Array(-950, -21, 950, -21, 950, 21, -950, 21)
+
+[node name="GroundB" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(2630, 249)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundB"]
+shape = SubResource("FloorB")
+
+[node name="Visual" type="Polygon2D" parent="GroundB"]
+z_index = -2
+color = Color(0.23, 0.28, 0.25, 1)
+polygon = PackedVector2Array(-670, -21, 670, -21, 670, 21, -670, 21)
+
+[node name="GroundRaised" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(3550, 235)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundRaised"]
+shape = SubResource("FloorRaised")
+
+[node name="Visual" type="Polygon2D" parent="GroundRaised"]
+z_index = -2
+color = Color(0.25, 0.30, 0.26, 1)
+polygon = PackedVector2Array(-250, -21, 250, -21, 250, 35, -250, 35)
+
+[node name="GroundC" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(6000, 249)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundC"]
+shape = SubResource("FloorC")
+
+[node name="Visual" type="Polygon2D" parent="GroundC"]
+z_index = -2
+color = Color(0.23, 0.28, 0.25, 1)
+polygon = PackedVector2Array(-2200, -21, 2200, -21, 2200, 21, -2200, 21)
+
+[node name="LeftBoundary" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(-8, 135)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftBoundary"]
+shape = SubResource("Boundary")
+
+[node name="RightBoundary" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(8208, 135)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightBoundary"]
+shape = SubResource("Boundary")
+
+[node name="PlatformA" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(1680, 195)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformA"]
+shape = SubResource("Platform")
+one_way_collision = true
+
+[node name="Visual" type="Polygon2D" parent="PlatformA"]
+z_index = -2
+color = Color(0.30, 0.38, 0.30, 1)
+polygon = PackedVector2Array(-46, -4, 46, -4, 46, 4, -46, 4)
+
+[node name="PlatformB" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(1800, 174)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformB"]
+shape = SubResource("Platform")
+one_way_collision = true
+
+[node name="Visual" type="Polygon2D" parent="PlatformB"]
+z_index = -2
+color = Color(0.30, 0.38, 0.30, 1)
+polygon = PackedVector2Array(-46, -4, 46, -4, 46, 4, -46, 4)
+
+[node name="PlatformGap" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(1930, 188)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformGap"]
+shape = SubResource("Platform")
+one_way_collision = true
+
+[node name="Visual" type="Polygon2D" parent="PlatformGap"]
+z_index = -2
+color = Color(0.34, 0.40, 0.32, 1)
+polygon = PackedVector2Array(-46, -4, 46, -4, 46, 4, -46, 4)
+
+[node name="PlatformC" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(2040, 195)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformC"]
+shape = SubResource("Platform")
+one_way_collision = true
+
+[node name="Visual" type="Polygon2D" parent="PlatformC"]
+z_index = -2
+color = Color(0.30, 0.38, 0.30, 1)
+polygon = PackedVector2Array(-46, -4, 46, -4, 46, 4, -46, 4)
+
+[node name="PlatformStepA" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(3420, 186)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformStepA"]
+shape = SubResource("Platform")
+one_way_collision = true
+
+[node name="Visual" type="Polygon2D" parent="PlatformStepA"]
+z_index = -2
+color = Color(0.30, 0.38, 0.30, 1)
+polygon = PackedVector2Array(-46, -4, 46, -4, 46, 4, -46, 4)
+
+[node name="PlatformStepB" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(3540, 159)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformStepB"]
+shape = SubResource("Platform")
+one_way_collision = true
+
+[node name="Visual" type="Polygon2D" parent="PlatformStepB"]
+z_index = -2
+color = Color(0.30, 0.38, 0.30, 1)
+polygon = PackedVector2Array(-46, -4, 46, -4, 46, 4, -46, 4)
+
+[node name="PlatformTravel" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(4800, 191)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformTravel"]
+shape = SubResource("Platform")
+one_way_collision = true
+
+[node name="Visual" type="Polygon2D" parent="PlatformTravel"]
+z_index = -2
+color = Color(0.30, 0.38, 0.30, 1)
+polygon = PackedVector2Array(-46, -4, 46, -4, 46, 4, -46, 4)
+
+[node name="Vegetation" type="Node2D" parent="."]
+z_index = -1
+script = ExtResource("4_vegetation")
+
+[node name="StartMarker" type="Polygon2D" parent="."]
+position = Vector2(94, 205)
+color = Color(0.48, 0.46, 0.30, 1)
+polygon = PackedVector2Array(-2, -26, 2, -26, 2, 23, -2, 23)
+
+[node name="EndMarker" type="Polygon2D" parent="."]
+position = Vector2(8050, 198)
+color = Color(0.48, 0.45, 0.32, 1)
+polygon = PackedVector2Array(-12, 30, -12, -31, -5, -31, -5, 21, 5, 21, 5, -31, 12, -31, 12, 30)
+
+[node name="Player" parent="." instance=ExtResource("5_player")]
+position = Vector2(120, 215)
+
+[node name="Encounters" type="Node2D" parent="."]
+
+[node name="PeregrinoSolo" type="Node2D" parent="Encounters"]
+position = Vector2(1200, 0)
+script = ExtResource("2_encounter")
+
+[node name="Peregrino" parent="Encounters/PeregrinoSolo" instance=ExtResource("6_peregrino")]
+position = Vector2(0, 212)
+
+[node name="RaizSolo" type="Node2D" parent="Encounters"]
+position = Vector2(2750, 0)
+script = ExtResource("2_encounter")
+
+[node name="RaizFaminta" parent="Encounters/RaizSolo" instance=ExtResource("8_raiz")]
+position = Vector2(0, 219)
+
+[node name="CorvoSolo" type="Node2D" parent="Encounters"]
+position = Vector2(4220, 0)
+script = ExtResource("2_encounter")
+
+[node name="Corvo" parent="Encounters/CorvoSolo" instance=ExtResource("7_corvo")]
+position = Vector2(0, 145)
+
+[node name="PeregrinoCorvo" type="Node2D" parent="Encounters"]
+position = Vector2(5450, 0)
+script = ExtResource("2_encounter")
+
+[node name="Peregrino" parent="Encounters/PeregrinoCorvo" instance=ExtResource("6_peregrino")]
+position = Vector2(-95, 212)
+
+[node name="Corvo" parent="Encounters/PeregrinoCorvo" instance=ExtResource("7_corvo")]
+position = Vector2(95, 145)
+
+[node name="PeregrinoRaiz" type="Node2D" parent="Encounters"]
+position = Vector2(7050, 0)
+script = ExtResource("2_encounter")
+
+[node name="Peregrino" parent="Encounters/PeregrinoRaiz" instance=ExtResource("6_peregrino")]
+position = Vector2(-95, 212)
+
+[node name="RaizFaminta" parent="Encounters/PeregrinoRaiz" instance=ExtResource("8_raiz")]
+position = Vector2(75, 219)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Feedback" type="Label" parent="CanvasLayer"]
+visible = false
+offset_left = 86.0
+offset_top = 66.0
+offset_right = 417.0
+offset_bottom = 112.0
+theme_override_font_sizes/font_size = 15
