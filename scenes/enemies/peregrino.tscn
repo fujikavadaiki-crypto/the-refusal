@@ -1,0 +1,146 @@
+[gd_scene load_steps=19 format=3]
+
+[ext_resource type="Script" path="res://scripts/enemies/peregrino.gd" id="1_enemy"]
+[ext_resource type="Script" path="res://scripts/enemies/peregrino_brain.gd" id="2_brain"]
+[ext_resource type="Script" path="res://scripts/enemies/peregrino_attack.gd" id="3_attack"]
+[ext_resource type="Script" path="res://scripts/combat/hitbox_2d.gd" id="4_hitbox"]
+[ext_resource type="Script" path="res://scripts/combat/health_component.gd" id="5_health"]
+[ext_resource type="Script" path="res://scripts/combat/posture_component.gd" id="6_posture"]
+[ext_resource type="Script" path="res://scripts/combat/defense_stats.gd" id="7_stats"]
+[ext_resource type="Script" path="res://scripts/combat/hurtbox_2d.gd" id="8_hurtbox"]
+[ext_resource type="Resource" path="res://data/enemies/peregrino_tuning.tres" id="9_tuning"]
+[ext_resource type="Resource" path="res://data/attacks/peregrino_corte.tres" id="10_corte"]
+[ext_resource type="Resource" path="res://data/attacks/peregrino_estocada.tres" id="11_estocada"]
+[ext_resource type="Resource" path="res://data/attacks/peregrino_investida.tres" id="12_investida"]
+[ext_resource type="Resource" path="res://data/attacks/peregrino_corte_duplo_1.tres" id="13_duplo1"]
+[ext_resource type="Resource" path="res://data/attacks/peregrino_corte_duplo_2.tres" id="14_duplo2"]
+[ext_resource type="Resource" path="res://data/attacks/peregrino_penitencia.tres" id="15_penitencia"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_body"]
+radius = 7.0
+height = 31.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hurt"]
+radius = 7.0
+height = 31.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hit"]
+size = Vector2(18, 7)
+
+[node name="Peregrino" type="CharacterBody2D"]
+collision_layer = 1
+collision_mask = 3
+position = Vector2(1300, 212)
+script = ExtResource("1_enemy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_body")
+
+[node name="EdgeProbe" type="RayCast2D" parent="."]
+collision_mask = 1
+target_position = Vector2(11, 25)
+
+[node name="Brain" type="Node" parent="."]
+script = ExtResource("2_brain")
+tuning = ExtResource("9_tuning")
+
+[node name="Attack" type="Node" parent="."]
+script = ExtResource("3_attack")
+corte = ExtResource("10_corte")
+estocada = ExtResource("11_estocada")
+investida = ExtResource("12_investida")
+corte_duplo_1 = ExtResource("13_duplo1")
+corte_duplo_2 = ExtResource("14_duplo2")
+penitencia = ExtResource("15_penitencia")
+
+[node name="Posture" type="Node" parent="."]
+script = ExtResource("6_posture")
+max_posture = 40.0
+regen_delay_seconds = 2.0
+regen_per_second = 10.0
+rupture_duration_seconds = 2.0
+restore_fraction = 0.5
+break_protection_seconds = 0.35
+rupture_vulnerability_bonus = 0.2
+
+[node name="DefenseStats" type="Node" parent="."]
+script = ExtResource("7_stats")
+
+[node name="Health" type="Node" parent="."]
+script = ExtResource("5_health")
+max_health = 100
+posture_path = NodePath("../Posture")
+stats_path = NodePath("../DefenseStats")
+
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("8_hurtbox")
+receiver_path = NodePath("../Health")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = SubResource("CapsuleShape2D_hurt")
+
+[node name="VisualRoot" type="Node2D" parent="."]
+
+[node name="LegBack" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.16, 0.17, 0.15, 1)
+polygon = PackedVector2Array(-5, 5, -1, 5, -2, 15, -6, 15)
+
+[node name="LegFront" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.24, 0.22, 0.18, 1)
+polygon = PackedVector2Array(1, 5, 5, 5, 6, 15, 1, 15)
+
+[node name="Cloak" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.28, 0.27, 0.23, 1)
+polygon = PackedVector2Array(-5, -7, 5, -7, 8, 11, 3, 9, -2, 12, -8, 10)
+
+[node name="Hood" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.17, 0.19, 0.17, 1)
+polygon = PackedVector2Array(-7, -10, -5, -17, 2, -18, 6, -14, 6, -7, 2, -10, -5, -8)
+
+[node name="Face" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.53, 0.52, 0.43, 1)
+polygon = PackedVector2Array(1, -13, 5, -13, 4, -9, 1, -10)
+
+[node name="Moss" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.25, 0.36, 0.27, 1)
+polygon = PackedVector2Array(-6, -4, -3, -5, -2, 1, -5, 5, -8, 3)
+
+[node name="AttackPivot" type="Node2D" parent="."]
+position = Vector2(5, -3)
+z_index = 2
+
+[node name="Arm" type="Polygon2D" parent="AttackPivot"]
+color = Color(0.4, 0.38, 0.32, 1)
+polygon = PackedVector2Array(0, -2, 9, -2, 9, 2, 0, 2)
+
+[node name="Staff" type="Polygon2D" parent="AttackPivot"]
+color = Color(0.42, 0.31, 0.2, 1)
+polygon = PackedVector2Array(6, -2, 31, -2, 31, 1, 6, 1)
+
+[node name="Talismans" type="Polygon2D" parent="AttackPivot"]
+color = Color(0.49, 0.48, 0.31, 1)
+polygon = PackedVector2Array(22, 1, 27, 1, 26, 6, 23, 6)
+
+[node name="Telegraph" type="Polygon2D" parent="AttackPivot"]
+visible = false
+color = Color(0.8, 0.88, 0.61, 0.82)
+polygon = PackedVector2Array(17, -4, 32, -4, 32, 4, 17, 4)
+
+[node name="Hitbox" type="Area2D" parent="AttackPivot"]
+collision_layer = 8
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_hitbox")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackPivot/Hitbox"]
+shape = SubResource("RectangleShape2D_hit")
+disabled = true
+
+[node name="StatusLabel" type="Label" parent="."]
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 100.0
+offset_bottom = -38.0
+theme_override_font_sizes/font_size = 8

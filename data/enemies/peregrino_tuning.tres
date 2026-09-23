@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="PeregrinoTuning" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/enemies/peregrino_tuning.gd" id="1_tuning"]
+
+[resource]
+script = ExtResource("1_tuning")
+perception_range = 170.0
+perception_height = 45.0
+disengage_range = 230.0
+patrol_half_width = 56.0
+patrol_speed = 29.0
+chase_speed = 64.0
+acceleration = 420.0
+gravity = 800.0
+attack_distance = 32.0
+attack_tolerance = 5.0
+facing_deadzone = 8.0
+alert_seconds = 0.28
+idle_seconds = 0.55
+hurt_seconds = 0.10
+attack_cooldown_seconds = 0.42
+investida_speed = 88.0
+edge_probe_forward = 11.0
+edge_probe_down = 25.0

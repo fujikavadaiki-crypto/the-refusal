@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="AttackData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/combat/attack_data.gd" id="1_attack"]
+
+[resource]
+script = ExtResource("1_attack")
+attack_id = &"peregrino_investida"
+base_damage = 18
+posture_damage = 14
+parry_class = &"parryable"
+damage_type = &"physical"
+tags = PackedStringArray("physical", "melee", "peregrino")
+windup_seconds = 0.54
+active_seconds = 0.18
+recovery_seconds = 0.52
+start_angle_degrees = -25
+end_angle_degrees = 24
+hitbox_center_x = 24
+hitbox_size = Vector2(24, 8)
+hit_stop_ms = 45
