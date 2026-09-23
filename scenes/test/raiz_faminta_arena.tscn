@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/test/raiz_faminta_arena.gd" id="1_arena"]
+[ext_resource type="PackedScene" path="res://scenes/test_room.tscn" id="2_room"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/raiz_faminta.tscn" id="3_enemy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_platform"]
+size = Vector2(85, 8)
+
+[node name="RaizFamintaArena" type="Node2D"]
+script = ExtResource("1_arena")
+
+[node name="TestRoom" parent="." instance=ExtResource("2_room")]
+
+[node name="RaizFaminta" parent="." instance=ExtResource("3_enemy")]
+
+[node name="HighPlatform" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(1350, 182)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HighPlatform"]
+shape = SubResource("RectangleShape2D_platform")
+
+[node name="Visual" type="Polygon2D" parent="HighPlatform"]
+color = Color(0.39, 0.48, 0.39, 1)
+polygon = PackedVector2Array(-42, -4, 42, -4, 42, 4, -42, 4)

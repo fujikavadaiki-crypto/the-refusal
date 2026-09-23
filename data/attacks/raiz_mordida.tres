@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="AttackData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/combat/attack_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+attack_id = &"raiz_mordida"
+base_damage = 11
+posture_damage = 8
+parry_class = &"non_parryable"
+damage_type = &"physical"
+tags = PackedStringArray("physical", "melee", "raiz_faminta", "bite")
+windup_seconds = 0.33
+active_seconds = 0.11
+recovery_seconds = 0.39
+hitbox_center_x = 18.0
+hitbox_size = Vector2(18, 10)
+hit_stop_ms = 30

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="AttackData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/combat/attack_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+attack_id = &"raiz_garra_subterranea"
+base_damage = 14
+posture_damage = 10
+parry_class = &"non_parryable"
+damage_type = &"physical"
+tags = PackedStringArray("physical", "melee", "raiz_faminta", "emerge")
+windup_seconds = 0.68
+active_seconds = 0.12
+recovery_seconds = 0.62
+hitbox_center_x = 0.0
+hitbox_size = Vector2(20, 24)
+hit_stop_ms = 35

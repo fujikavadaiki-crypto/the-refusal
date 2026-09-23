@@ -8,6 +8,8 @@ extends Node
 @export_range(0.0, 1.0) var magical_resistance := 0.0
 @export_range(0.0, 1.0) var posture_resistance := 0.0
 @export var vulnerability_bonus := 0.0
+@export var magical_vulnerability_bonus := 0.0
+@export var ground_heavy_posture_taken_multiplier := 1.0
 
 
 func effective_defense() -> float:
