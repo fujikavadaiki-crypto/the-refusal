@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/test/corvo_arena.gd" id="1_arena"]
+[ext_resource type="PackedScene" path="res://scenes/test_room.tscn" id="2_room"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/corvo.tscn" id="3_corvo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_platform"]
+size = Vector2(92, 8)
+
+[node name="CorvoArena" type="Node2D"]
+script = ExtResource("1_arena")
+
+[node name="TestRoom" parent="." instance=ExtResource("2_room")]
+
+[node name="Corvo" parent="." instance=ExtResource("3_corvo")]
+
+[node name="HighPlatformA" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(1430, 181)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HighPlatformA"]
+shape = SubResource("RectangleShape2D_platform")
+
+[node name="Visual" type="Polygon2D" parent="HighPlatformA"]
+color = Color(0.42, 0.49, 0.44, 1)
+polygon = PackedVector2Array(-46, -4, 46, -4, 46, 4, -46, 4)

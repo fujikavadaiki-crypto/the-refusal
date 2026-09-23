@@ -182,7 +182,9 @@ func try_defend(context: HitContext) -> bool:
     if context.attacker_posture != null:
         var pressure := float(context.posture_damage) * context.posture_damage_multiplier
         var returned := roundi(pressure * parry_posture_multiplier)
-        if context.attacker_stats != null:
+        if context.parry_posture_return_override > 0:
+            returned = context.parry_posture_return_override
+        elif context.attacker_stats != null:
             returned = DamageResolver.parry_return_amount(pressure, parry_posture_multiplier, context.attacker_stats)
         context.parry_posture_return = context.attacker_posture.receive_damage(returned)
     spark_remaining = 0.16

@@ -24,6 +24,7 @@ var posture_damage: int
 var actual_posture_damage: int
 var posture_damage_multiplier := 1.0
 var parry_posture_return := 0
+var parry_posture_return_override := 0
 var damage_type: StringName
 var parry_class: StringName = &"parryable"
 var tags: PackedStringArray
@@ -47,6 +48,7 @@ func for_target(new_target: Node2D, new_hit_uid: int) -> HitContext:
     result.base_damage = base_damage
     result.posture_damage = posture_damage
     result.posture_damage_multiplier = posture_damage_multiplier
+    result.parry_posture_return_override = parry_posture_return_override
     result.damage_type = damage_type
     result.parry_class = parry_class
     result.tags = tags.duplicate()

@@ -1,0 +1,135 @@
+[gd_scene load_steps=17 format=3]
+
+[ext_resource type="Script" path="res://scripts/enemies/corvo.gd" id="1_bird"]
+[ext_resource type="Script" path="res://scripts/enemies/corvo_brain.gd" id="2_brain"]
+[ext_resource type="Script" path="res://scripts/enemies/corvo_flight.gd" id="3_flight"]
+[ext_resource type="Script" path="res://scripts/enemies/corvo_attack.gd" id="4_attack"]
+[ext_resource type="Script" path="res://scripts/combat/hitbox_2d.gd" id="5_hitbox"]
+[ext_resource type="Script" path="res://scripts/combat/health_component.gd" id="6_health"]
+[ext_resource type="Script" path="res://scripts/combat/posture_component.gd" id="7_posture"]
+[ext_resource type="Script" path="res://scripts/combat/defense_stats.gd" id="8_stats"]
+[ext_resource type="Script" path="res://scripts/combat/hurtbox_2d.gd" id="9_hurtbox"]
+[ext_resource type="Resource" path="res://data/enemies/corvo_tuning.tres" id="10_tuning"]
+[ext_resource type="Resource" path="res://data/attacks/corvo_rasante.tres" id="11_rasante"]
+[ext_resource type="Resource" path="res://data/attacks/corvo_cuspe.tres" id="12_cuspe"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/corvo_projectile.tscn" id="13_projectile"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_body"]
+radius = 8.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hurt"]
+radius = 9.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dive"]
+size = Vector2(17, 13)
+
+[node name="Corvo" type="CharacterBody2D"]
+collision_layer = 1
+collision_mask = 3
+position = Vector2(1215, 155)
+script = ExtResource("1_bird")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_body")
+
+[node name="Brain" type="Node" parent="."]
+script = ExtResource("2_brain")
+tuning = ExtResource("10_tuning")
+
+[node name="Flight" type="Node" parent="."]
+script = ExtResource("3_flight")
+
+[node name="Attack" type="Node" parent="."]
+script = ExtResource("4_attack")
+rasante = ExtResource("11_rasante")
+cuspe = ExtResource("12_cuspe")
+projectile_scene = ExtResource("13_projectile")
+
+[node name="Posture" type="Node" parent="."]
+script = ExtResource("7_posture")
+max_posture = 20.0
+regen_delay_seconds = 2.0
+regen_per_second = 10.0
+rupture_duration_seconds = 2.5
+restore_fraction = 0.5
+break_protection_seconds = 0.35
+rupture_vulnerability_bonus = 0.2
+
+[node name="DefenseStats" type="Node" parent="."]
+script = ExtResource("8_stats")
+
+[node name="Health" type="Node" parent="."]
+script = ExtResource("6_health")
+max_health = 65
+posture_path = NodePath("../Posture")
+stats_path = NodePath("../DefenseStats")
+
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("9_hurtbox")
+receiver_path = NodePath("../Health")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = SubResource("CircleShape2D_hurt")
+
+[node name="VisualRoot" type="Node2D" parent="."]
+
+[node name="LeftWing" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.19, 0.22, 0.19, 1)
+polygon = PackedVector2Array(-3, -4, -13, -13, -22, -17, -18, -6, -27, -4, -17, 3, -8, 5, -2, 2)
+
+[node name="RightWing" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.24, 0.26, 0.2, 1)
+polygon = PackedVector2Array(2, -4, 13, -14, 23, -18, 18, -7, 28, -3, 16, 3, 8, 5, 1, 2)
+
+[node name="Tail" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.18, 0.19, 0.18, 1)
+polygon = PackedVector2Array(-4, 4, 4, 4, 7, 12, 2, 10, -2, 14, -7, 11)
+
+[node name="Body" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.29, 0.31, 0.25, 1)
+polygon = PackedVector2Array(-6, -7, 5, -7, 9, 0, 4, 8, -5, 7, -9, 0)
+
+[node name="Head" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.22, 0.25, 0.2, 1)
+polygon = PackedVector2Array(-7, -9, 1, -11, 6, -7, 5, -1, -3, 0, -8, -4)
+
+[node name="Beak" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.55, 0.49, 0.3, 1)
+polygon = PackedVector2Array(-7, -6, -16, -4, -10, -2, -6, -3)
+
+[node name="Eye" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.75, 0.78, 0.38, 1)
+polygon = PackedVector2Array(-5, -6, -3, -6, -3, -4, -5, -4)
+
+[node name="Claws" type="Polygon2D" parent="VisualRoot"]
+color = Color(0.43, 0.41, 0.29, 1)
+polygon = PackedVector2Array(-4, 6, -4, 12, -8, 14, -3, 12, 0, 10, 2, 13, 6, 12, 3, 8)
+
+[node name="DiveTelegraph" type="Polygon2D" parent="."]
+visible = false
+color = Color(0.78, 0.89, 0.55, 0.7)
+polygon = PackedVector2Array(-12, 12, 0, 21, 12, 12, 0, 17)
+
+[node name="BeakTelegraph" type="Polygon2D" parent="."]
+visible = false
+color = Color(0.52, 0.77, 0.32, 0.85)
+polygon = PackedVector2Array(-10, -6, -23, -4, -12, -1)
+
+[node name="DiveHitbox" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 4
+monitorable = false
+script = ExtResource("5_hitbox")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DiveHitbox"]
+shape = SubResource("RectangleShape2D_dive")
+disabled = true
+
+[node name="StatusLabel" type="Label" parent="."]
+offset_left = -35.0
+offset_top = -69.0
+offset_right = 115.0
+offset_bottom = -45.0
+theme_override_font_sizes/font_size = 8

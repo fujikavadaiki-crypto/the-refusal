@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="AttackData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/combat/attack_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+attack_id = &"corvo_rasante"
+base_damage = 11
+posture_damage = 7
+parry_class = &"parryable"
+damage_type = &"physical"
+tags = PackedStringArray("physical", "melee", "corvo", "dive")
+windup_seconds = 0.53
+active_seconds = 0.39
+recovery_seconds = 0.56
+hitbox_center_x = 0.0
+hitbox_size = Vector2(17, 13)
+hit_stop_ms = 35

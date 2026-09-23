@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="AttackData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/combat/attack_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+attack_id = &"corvo_cuspe_pestilento"
+base_damage = 8
+posture_damage = 5
+parry_class = &"non_parryable"
+damage_type = &"physical"
+tags = PackedStringArray("projectile", "corvo", "plague_pending_status")
+windup_seconds = 0.58
+active_seconds = 0.04
+recovery_seconds = 0.7
+hitbox_center_x = 0.0
+hitbox_size = Vector2(8, 8)
+hit_stop_ms = 25
