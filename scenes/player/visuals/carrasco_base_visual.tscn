@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/player/visuals/carrasco_base_visual.gd" id="1_visual"]
+
+[node name="CarrascoBaseVisual" type="Node2D"]
+z_index = 1
+script = ExtResource("1_visual")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+centered = false
+texture_filter = 1

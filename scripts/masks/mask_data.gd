@@ -5,6 +5,7 @@ extends Resource
 @export var mask_id: StringName
 @export var display_name: String
 @export var runtime_script: Script
+@export var visual_scene: PackedScene
 @export var physical_bonus := 0.0
 @export var posture_bonus := 0.0
 @export var move_speed_multiplier := 1.0

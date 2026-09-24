@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="MaskData" load_steps=12 format=3]
+[gd_resource type="Resource" script_class="MaskData" load_steps=13 format=3]
 
 [ext_resource type="Script" path="res://scripts/masks/mask_data.gd" id="1_data"]
 [ext_resource type="Script" path="res://scripts/masks/carrasco_runtime_state.gd" id="2_runtime"]
@@ -11,12 +11,14 @@
 [ext_resource type="Resource" path="res://data/attacks/carrasco_air_heavy.tres" id="9_air_h"]
 [ext_resource type="Resource" path="res://data/attacks/carrasco_quebra_selos.tres" id="10_skill1"]
 [ext_resource type="Resource" path="res://data/attacks/carrasco_marca.tres" id="11_skill2"]
+[ext_resource type="PackedScene" path="res://scenes/player/visuals/carrasco_base_visual.tscn" id="12_visual"]
 
 [resource]
 script = ExtResource("1_data")
 mask_id = &"carrasco_base"
 display_name = "Carrasco — Base"
 runtime_script = ExtResource("2_runtime")
+visual_scene = ExtResource("12_visual")
 physical_bonus = 0.2
 posture_bonus = 0.25
 move_speed_multiplier = 0.92

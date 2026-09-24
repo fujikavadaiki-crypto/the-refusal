@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3]
+[gd_scene load_steps=27 format=3]
 
 [ext_resource type="Script" path="res://scripts/player/player.gd" id="1_player"]
 [ext_resource type="Script" path="res://scripts/player/player_locomotion.gd" id="2_locomotion"]
@@ -23,6 +23,7 @@
 [ext_resource type="Resource" path="res://data/attacks/air_heavy.tres" id="19_air_heavy"]
 [ext_resource type="Script" path="res://scripts/masks/mask_controller.gd" id="20_masks"]
 [ext_resource type="Script" path="res://scripts/masks/execution_targeting.gd" id="21_targeting"]
+[ext_resource type="Script" path="res://scripts/player/player_visual_controller.gd" id="22_visual"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hurt"]
 radius = 6.0
@@ -157,6 +158,7 @@ shape = SubResource("RectangleShape2D_sword")
 disabled = true
 
 [node name="VisualRoot" type="Node2D" parent="."]
+script = ExtResource("22_visual")
 
 [node name="MaskBadge" type="Polygon2D" parent="VisualRoot"]
 visible = false

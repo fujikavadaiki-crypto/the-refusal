@@ -2,6 +2,7 @@ class_name MaskController
 extends Node
 
 signal mask_changed(active: MaskData)
+signal execution_resolved(target: Node2D, result: int)
 
 @export var swap_cooldown_seconds := 10.0
 @onready var player: CharacterBody2D = get_parent() as CharacterBody2D
@@ -120,7 +121,10 @@ func try_execute() -> int:
     if target == null:
         return ExecutionResolver.Result.INELIGIBLE
     combat.abort_attack()
-    return ExecutionResolver.execute(state, player, target)
+    var result := ExecutionResolver.execute(state, player, target)
+    if result != ExecutionResolver.Result.INELIGIBLE:
+        execution_resolved.emit(target, result)
+    return result
 
 
 func prepare_hit(context: HitContext) -> void:
