@@ -6,6 +6,8 @@ Status: **direção de arte para avaliação**. A Bíblia Canônica e Técnica v
 
 - Prancha oficial do Carrasco Base: [`assets/reference/carrasco_base_official.png`](assets/reference/carrasco_base_official.png). Define o design da forma Base.
 - Prancha de poses aprovada: [`docs/art_reference/carrasco_approved_animation_board.png`](docs/art_reference/carrasco_approved_animation_board.png). Define a aparência e a linguagem de pose de Idle, Run e Heavy; os demais quadros não entram neste Golden Sample.
+- Master sprite aprovado: [`docs/art_reference/carrasco_master_gameplay.png`](docs/art_reference/carrasco_master_gameplay.png). É a referência principal para traduzir a riqueza visual do Carrasco Base ao gameplay. É uma ilustração isolada, não uma folha de animação.
+- Cena de leitura e escala: [`docs/art_reference/carrasco_human_scale_scene.png`](docs/art_reference/carrasco_human_scale_scene.png). Mostra o acabamento desejado no ambiente. A relação numérica humano/Carrasco de 110–115% continua sendo a regra aprovada; não inferir uma proporção nova da composição dessa imagem.
 - Prancha de evolução aprovada: [`docs/art_reference/carrasco_official_evolution_board.png`](docs/art_reference/carrasco_official_evolution_board.png). Usar apenas a coluna **Forma Base** nesta etapa. As evoluções permanecem fora de escopo.
 - Referência de qualidade de pixel art enviada em 24/09/2026: captura de outro jogo em `C:/Users/daiki/Downloads/Imagem do Codex 24 de set. de 2026, 11_43_12.jpg`. Serve só para aferir acabamento, leitura e integração personagem/cenário; nenhum design ou asset deve ser copiado. Não é incorporada ao repositório.
 
