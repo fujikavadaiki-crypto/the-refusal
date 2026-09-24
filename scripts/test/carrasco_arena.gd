@@ -7,6 +7,7 @@ const CARRASCO := preload("res://data/masks/carrasco_base.tres")
 @onready var pilgrim: Node2D = $Peregrino
 @onready var readout: Label = $TechnicalHUD/Panel/Readout
 var cues: Dictionary = {}
+var debug_hud_visible := true
 
 
 func _ready() -> void:
@@ -21,6 +22,14 @@ func _ready() -> void:
         cue.add_theme_color_override("font_color", Color(1.0, 0.58, 0.32))
         target.add_child(cue)
         cues[target] = cue
+
+
+func _unhandled_key_input(event: InputEvent) -> void:
+    if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_F3:
+        debug_hud_visible = not debug_hud_visible
+        $TechnicalHUD.visible = debug_hud_visible
+        for cue in cues.values():
+            cue.visible = debug_hud_visible
 
 
 func _process(_delta: float) -> void:

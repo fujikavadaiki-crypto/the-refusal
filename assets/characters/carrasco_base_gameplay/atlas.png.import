@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://q0rink2gjk8b"
-path="res://.godot/imported/run.png-e13cc2c75bd6652d97af167a14ac6da1.ctex"
+uid="uid://riqnw3d81md3"
+path="res://.godot/imported/atlas.png-efa323b3828f18a077a1bf4161792312.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/carrasco_base/run.png"
-dest_files=["res://.godot/imported/run.png-e13cc2c75bd6652d97af167a14ac6da1.ctex"]
+source_file="res://assets/characters/carrasco_base_gameplay/atlas.png"
+dest_files=["res://.godot/imported/atlas.png-efa323b3828f18a077a1bf4161792312.ctex"]
 
 [params]
 

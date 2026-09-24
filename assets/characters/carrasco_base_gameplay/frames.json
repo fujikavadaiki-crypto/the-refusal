@@ -1,0 +1,164 @@
+{
+  "animations": {
+    "air_dash": [
+      17,
+      18,
+      19
+    ],
+    "carrasco_air_heavy": [
+      61,
+      62,
+      63,
+      64,
+      65
+    ],
+    "carrasco_air_light": [
+      57,
+      58,
+      59,
+      60
+    ],
+    "carrasco_charged_heavy": [
+      47,
+      48,
+      49,
+      50,
+      51,
+      52
+    ],
+    "carrasco_heavy": [
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "carrasco_light_1": [
+      23,
+      24,
+      25,
+      26
+    ],
+    "carrasco_light_2": [
+      27,
+      28,
+      29,
+      30
+    ],
+    "carrasco_light_3": [
+      31,
+      32,
+      33,
+      34
+    ],
+    "carrasco_marca": [
+      71,
+      72,
+      73,
+      74
+    ],
+    "carrasco_post_dodge": [
+      53,
+      54,
+      55,
+      56
+    ],
+    "carrasco_quebra_selos": [
+      66,
+      67,
+      68,
+      69,
+      70
+    ],
+    "charge": [
+      41,
+      42,
+      43,
+      44
+    ],
+    "charge_ready": [
+      45,
+      46
+    ],
+    "death": [
+      99,
+      100,
+      101,
+      102,
+      103
+    ],
+    "execution": [
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86
+    ],
+    "execution_strike": [
+      87,
+      88,
+      89,
+      90,
+      91,
+      92
+    ],
+    "fall": [
+      12,
+      13
+    ],
+    "ground_dash": [
+      14,
+      15,
+      16
+    ],
+    "hit": [
+      93,
+      94,
+      95
+    ],
+    "idle": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "jump": [
+      10,
+      11
+    ],
+    "parry": [
+      20,
+      21,
+      22
+    ],
+    "run": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "ruptured": [
+      96,
+      97,
+      98
+    ],
+    "tribunal_activate": [
+      75,
+      76,
+      77,
+      78
+    ]
+  },
+  "body_height": 31,
+  "columns": 10,
+  "pivot_x": 17,
+  "pivot_y": 42,
+  "tile_height": 48,
+  "tile_width": 64
+}

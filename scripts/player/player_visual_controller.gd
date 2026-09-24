@@ -19,6 +19,8 @@ const IMPACT := preload("res://scenes/player/visuals/carrasco_impact.tscn")
 var form: Node2D
 var damage_remaining := 0.0
 var execution_remaining := 0.0
+var tribunal_activation_remaining := 0.0
+var execution_pose: StringName = &"execution"
 var tribunal_was_active := false
 func _ready() -> void:
     masks.mask_changed.connect(_on_mask_changed)
@@ -32,17 +34,28 @@ func _ready() -> void:
 func _process(delta: float) -> void:
     damage_remaining = maxf(0.0, damage_remaining - delta)
     execution_remaining = maxf(0.0, execution_remaining - delta)
+    tribunal_activation_remaining = maxf(0.0, tribunal_activation_remaining - delta)
     if form == null:
         return
     var runtime := masks.active_state()
     var tribunal := runtime != null and runtime.ultimate_remaining > 0.0
     if tribunal and not tribunal_was_active:
+        tribunal_activation_remaining = 0.24
         audio_cue_requested.emit(&"tribunal")
+    elif not tribunal:
+        tribunal_activation_remaining = 0.0
     tribunal_was_active = tribunal
     var visual_state := _state_name()
     var progress := 0.0
     if combat.current_attack != null:
-        progress = clampf(combat.elapsed / maxf(combat.current_attack.total_seconds(), 0.001), 0.0, 1.0)
+        var attack := combat.current_attack
+        match combat.phase:
+            PlayerCombat.Phase.WINDUP:
+                progress = combat.elapsed / maxf(attack.windup_seconds, 0.001)
+            PlayerCombat.Phase.ACTIVE:
+                progress = (combat.elapsed - attack.windup_seconds) / maxf(attack.active_seconds, 0.001)
+            PlayerCombat.Phase.RECOVERY:
+                progress = (combat.elapsed - attack.windup_seconds - attack.active_seconds) / maxf(attack.recovery_seconds, 0.001)
     form.call("set_pose", visual_state, combat.phase, progress, combat.charge_ready(), tribunal)
 
 
@@ -52,13 +65,15 @@ func _state_name() -> StringName:
     if defense.mode == PlayerDefense.Mode.STAGGERED:
         return &"ruptured"
     if execution_remaining > 0.0:
-        return &"execution"
+        return execution_pose
     if damage_remaining > 0.0:
         return &"hit"
     if combat.is_charging():
         return &"charge"
     if combat.current_attack != null:
         return combat.current_attack.attack_id
+    if tribunal_activation_remaining > 0.0:
+        return &"tribunal_activate"
     if defense.mode == PlayerDefense.Mode.AIR_DASH:
         return &"air_dash"
     if defense.mode == PlayerDefense.Mode.DODGING:
@@ -125,6 +140,7 @@ func _on_execution(target: Node2D, result: int) -> void:
     if form == null:
         return
     execution_remaining = 0.28
+    execution_pose = &"execution" if result == ExecutionResolver.Result.COMMON_KILL else &"execution_strike"
     _spawn_impact(target.global_position + Vector2(0, -14), &"execution" if result == ExecutionResolver.Result.COMMON_KILL else &"sentence")
     audio_cue_requested.emit(&"execution")
 
