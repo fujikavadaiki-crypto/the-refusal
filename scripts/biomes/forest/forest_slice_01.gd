@@ -44,6 +44,9 @@ func _ready() -> void:
     safe_position = slice_start
     if playtest_presentation:
         player.get_node("VisualRoot").approved_board_mode = true
+        # Board cells end at their visual feet while the collision capsule ends
+        # 13 px below the player origin. Align both without rescaling the art.
+        player.get_node("VisualRoot").position.y = 13.0
     if starting_mask != null:
         player.get_node("MaskController").equip(0, starting_mask)
     if playtest_presentation:
