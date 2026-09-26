@@ -1,0 +1,95 @@
+{
+  "description": "Direct extraction of user-approved GIF frames; transparent RGB normalized only where alpha=0.",
+  "animations": {
+    "idle": {
+      "source": "pixellab-The-hooded-warrior-stands-firm-1790392661119.gif",
+      "sha256": "d40b4db0fa0da2a60fed03713b4617a01a6fe6e83c40525ae6a085785c84132c",
+      "fps": 6,
+      "frames": 9,
+      "width": 56,
+      "height": 56,
+      "foot_y_by_frame": [
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54
+      ]
+    },
+    "walk_east": {
+      "source": "Idle_walking-6-frames_east.gif",
+      "sha256": "dee2b1d5d525ddd1456d1be4360ab538291ecd613b0eb86a993fbe5991dc62ca",
+      "fps": 8,
+      "frames": 6,
+      "width": 80,
+      "height": 80,
+      "foot_y_by_frame": [
+        66,
+        66,
+        66,
+        65,
+        65,
+        66
+      ]
+    },
+    "run_east": {
+      "source": "Idle_running-8-frames_east.gif",
+      "sha256": "d2ae95114cb8c065b0686e73627c06b90198a287467a28386b9be821c07be458",
+      "fps": 12,
+      "frames": 8,
+      "width": 80,
+      "height": 80,
+      "foot_y_by_frame": [
+        66,
+        66,
+        63,
+        63,
+        63,
+        64,
+        66,
+        66
+      ]
+    },
+    "run_west": {
+      "source": "Idle_running-8-frames_west.gif",
+      "sha256": "49a2daabdaf579921436803c3eed671d54c2599fbc362e760af7d1704f147090",
+      "fps": 12,
+      "frames": 8,
+      "width": 80,
+      "height": 80,
+      "foot_y_by_frame": [
+        66,
+        64,
+        65,
+        66,
+        66,
+        64,
+        64,
+        64
+      ]
+    },
+    "jump_east": {
+      "source": "Idle_jumping-1_east.gif",
+      "sha256": "70a3a4a8264e41d121526c4c2bd0c7581128c1570f4a0b93c08523ab435fe383",
+      "fps": 15,
+      "frames": 9,
+      "width": 80,
+      "height": 80,
+      "foot_y_by_frame": [
+        66,
+        66,
+        66,
+        63,
+        49,
+        51,
+        65,
+        65,
+        65
+      ]
+    }
+  }
+}

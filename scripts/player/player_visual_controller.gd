@@ -82,7 +82,9 @@ func _state_name() -> StringName:
         return &"parry"
     if not player.is_on_floor():
         return &"jump" if player.velocity.y < 0.0 else &"fall"
-    return &"run" if absf(player.velocity.x) > 5.0 else &"idle"
+    if absf(player.velocity.x) <= 5.0:
+        return &"idle"
+    return &"walk" if Input.is_action_pressed("walk") else &"run"
 
 
 func _on_mask_changed(data: MaskData) -> void:

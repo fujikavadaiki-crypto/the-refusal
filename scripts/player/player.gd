@@ -47,7 +47,7 @@ func _physics_process(delta: float) -> void:
             combat.accept_inputs(light_pressed, heavy_pressed)
     combat.tick(delta)
     var movement := defense.movement_axis(direction) * combat.movement_multiplier()
-    locomotion.move(self, movement, jump_pressed and not combat.is_busy() and not defense.is_locked(), delta, defense.suspends_gravity())
+    locomotion.move(self, movement, jump_pressed and not combat.is_busy() and not defense.is_locked(), delta, defense.suspends_gravity(), Input.is_action_pressed("walk"))
     defense.sync_grounding()
     state_machine.sync_with_body(self)
     state_machine.sync_action(combat.is_busy(), defense.mode)

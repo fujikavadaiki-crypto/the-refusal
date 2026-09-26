@@ -1,13 +1,17 @@
 extends Node2D
 
-## Native 64x48 tiles with a 31 px body. Animation only reads gameplay state.
+## Locomotion uses the approved GIF frames at native resolution. The original atlas
+## remains available for combat and every state without an approved GIF.
 const MARK := preload("res://scripts/player/visuals/condemnation_mark.gd")
 const ATLAS := preload("res://assets/characters/carrasco_base_gameplay/atlas.png")
 const MANIFEST_PATH := "res://assets/characters/carrasco_base_gameplay/frames.json"
+const GIF_ROOT := "res://assets/characters/carrasco_gif_test"
+const GIF_MANIFEST_PATH := GIF_ROOT + "/frames.json"
 const JUDGMENT := Color("#a4553e")
 const BONE := Color("#c7b9a0")
 
 @onready var sprite: Sprite2D = $Sprite
+@onready var player: CharacterBody2D = get_parent().get_parent() as CharacterBody2D
 
 var runtime: CarrascoRuntimeState
 var marks: Dictionary = {}
@@ -19,10 +23,15 @@ var tribunal := false
 var pose_clock := 0.0
 var clock := 0.0
 var frame_textures: Dictionary = {}
+var gif_frame_textures: Dictionary = {}
+var gif_fps: Dictionary = {}
+var gif_foot_y: Dictionary = {}
+var atlas_offset := Vector2.ZERO
 
 
 func _ready() -> void:
     _load_frames()
+    _load_gif_frames()
     _sync_sprite()
 
 
@@ -63,7 +72,8 @@ func _load_frames() -> void:
     var tile_width: int = parsed["tile_width"]
     var tile_height: int = parsed["tile_height"]
     var columns: int = parsed["columns"]
-    sprite.offset = Vector2(-int(parsed["pivot_x"]), -int(parsed["pivot_y"]))
+    atlas_offset = Vector2(-int(parsed["pivot_x"]), -int(parsed["pivot_y"]))
+    sprite.offset = atlas_offset
     sprite.position = Vector2(0, 13)
     for animation in parsed["animations"]:
         var textures: Array[AtlasTexture] = []
@@ -76,17 +86,65 @@ func _load_frames() -> void:
         frame_textures[animation] = textures
 
 
+func _load_gif_frames() -> void:
+    var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(GIF_MANIFEST_PATH))
+    if not parsed is Dictionary or not parsed.has("animations"):
+        push_error("Carrasco GIF frame manifest is missing or invalid")
+        return
+    for animation in parsed["animations"]:
+        var data: Dictionary = parsed["animations"][animation]
+        var textures: Array[Texture2D] = []
+        for index in range(int(data["frames"])):
+            var path := "%s/%s/frame_%02d.png" % [GIF_ROOT, animation, index]
+            var texture := load(path) as Texture2D
+            if texture == null:
+                push_error("Carrasco GIF frame missing: " + path)
+                return
+            textures.append(texture)
+        gif_frame_textures[animation] = textures
+        gif_fps[animation] = float(data["fps"])
+        gif_foot_y[animation] = data["foot_y_by_frame"]
+
+
 func _sync_sprite() -> void:
     var animation := String(pose)
     if pose == &"charge" and charged_ready:
         animation = "charge_ready"
+    if _sync_gif_sprite(animation):
+        return
     if not frame_textures.has(animation):
         animation = "idle"
     if not frame_textures.has(animation):
         return
     var textures: Array = frame_textures[animation]
     var frame := _frame_index(animation, textures.size())
+    sprite.scale.x = 1.0
+    sprite.offset = atlas_offset
     sprite.texture = textures[frame]
+
+
+func _sync_gif_sprite(animation: String) -> bool:
+    var clip := animation
+    match animation:
+        "run":
+            clip = "run_west" if player.facing_direction < 0 else "run_east"
+        "walk":
+            clip = "walk_east"
+        "jump", "fall":
+            clip = "jump_east"
+    if not gif_frame_textures.has(clip):
+        return false
+    var textures: Array = gif_frame_textures[clip]
+    var rate: float = gif_fps[clip]
+    var frame := int(pose_clock * rate) % textures.size()
+    if animation == "jump":
+        frame = mini(int(pose_clock * rate), 4)
+    elif animation == "fall":
+        frame = 5 + mini(int(pose_clock * rate), textures.size() - 6)
+    sprite.texture = textures[frame]
+    sprite.offset = Vector2(-sprite.texture.get_width() / 2.0, -float(gif_foot_y[clip][frame]))
+    sprite.scale.x = -1.0 if clip == "run_west" else 1.0
+    return true
 
 
 func _frame_index(animation: String, count: int) -> int:

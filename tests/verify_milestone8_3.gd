@@ -58,8 +58,8 @@ func run_checks() -> void:
     var masks := player.get_node("MaskController") as MaskController
     var dummy := arena.get_node("TestRoom/Dummy") as Node2D
     var sprite := visual.form.sprite as Sprite2D
-    check(sprite.scale == Vector2.ONE and sprite.texture_filter == CanvasItem.TEXTURE_FILTER_NEAREST and sprite.offset == Vector2(-17, -42) and sprite.position == Vector2(0, 13), "native art uses integer pixels and shares the body's ground plane")
-    check(sprite.texture is AtlasTexture and (sprite.texture as AtlasTexture).region.size == Vector2(64, 48), "runtime displays a native atlas cell")
+    check(sprite.scale == Vector2.ONE and sprite.texture_filter == CanvasItem.TEXTURE_FILTER_NEAREST and sprite.offset == Vector2(-28, -54) and sprite.position == Vector2(0, 13), "approved idle GIF uses native pixels and shares the body's ground plane")
+    check(sprite.texture is Texture2D and sprite.texture.get_size() == Vector2(56, 56), "runtime displays the native 56x56 idle frame")
     check(visual.form.frame_textures.size() == expected.size(), "all authored actions are available to the interchangeable Mask visual")
     check((player.get_node("CollisionShape2D") as CollisionShape2D).shape.height == 26.0, "body collider remains unchanged")
     check(not combat.hitbox.active, "hitbox starts inactive")
