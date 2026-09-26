@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="The Refusal"
-run/main_scene="res://scenes/test/carrasco_arena.tscn"
+run/main_scene="res://scenes/biomes/forest/forest_vertical_slice.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 

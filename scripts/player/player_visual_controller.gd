@@ -5,6 +5,8 @@ extends Node2D
 signal audio_cue_requested(cue: StringName)
 
 const IMPACT := preload("res://scenes/player/visuals/carrasco_impact.tscn")
+@export var slice_feedback_enabled := false
+@export var approved_board_mode := false
 
 @onready var player: CharacterBody2D = get_parent() as CharacterBody2D
 @onready var combat: PlayerCombat = $"../Combat"
@@ -22,12 +24,20 @@ var execution_remaining := 0.0
 var tribunal_activation_remaining := 0.0
 var execution_pose: StringName = &"execution"
 var tribunal_was_active := false
+var slash_remaining := 0.0
+var slash_heavy := false
+var dash_remaining := 0.0
+var landing_remaining := 0.0
+var previous_attack_phase := PlayerCombat.Phase.IDLE
+var was_airborne := false
 func _ready() -> void:
     masks.mask_changed.connect(_on_mask_changed)
     masks.execution_resolved.connect(_on_execution)
     combat.attack_started.connect(_on_attack_started)
     combat.hit_confirmed.connect(_on_hit_confirmed)
     health.damage_taken.connect(_on_damage_taken)
+    defense.dodge_started.connect(_on_dash_started)
+    defense.air_dash_started.connect(_on_dash_started)
     _on_mask_changed(masks.active_data())
 
 
@@ -35,6 +45,19 @@ func _process(delta: float) -> void:
     damage_remaining = maxf(0.0, damage_remaining - delta)
     execution_remaining = maxf(0.0, execution_remaining - delta)
     tribunal_activation_remaining = maxf(0.0, tribunal_activation_remaining - delta)
+    if slice_feedback_enabled:
+        if combat.phase == PlayerCombat.Phase.ACTIVE and previous_attack_phase != PlayerCombat.Phase.ACTIVE:
+            slash_remaining = 0.12
+            slash_heavy = combat.current_attack != null and combat.current_attack.tags.has("heavy")
+        previous_attack_phase = combat.phase
+        slash_remaining = maxf(0.0, slash_remaining - delta)
+        dash_remaining = maxf(0.0, dash_remaining - delta)
+        landing_remaining = maxf(0.0, landing_remaining - delta)
+        if was_airborne and player.is_on_floor():
+            landing_remaining = 0.12
+        was_airborne = not player.is_on_floor()
+        if slash_remaining > 0.0 or dash_remaining > 0.0 or landing_remaining > 0.0:
+            queue_redraw()
     if form == null:
         return
     var runtime := masks.active_state()
@@ -105,6 +128,8 @@ func _on_mask_changed(data: MaskData) -> void:
     if not masked:
         return
     form = data.visual_scene.instantiate() as Node2D
+    if approved_board_mode:
+        form.set("approved_board_mode", true)
     add_child(form)
     active_marker.modulate.a = 0.0
     charge_marker.modulate.a = 0.0
@@ -115,6 +140,32 @@ func _on_mask_changed(data: MaskData) -> void:
 func _on_attack_started(attack: AttackData, _action_uid: int) -> void:
     if form != null:
         audio_cue_requested.emit(attack.attack_id)
+
+
+func _on_dash_started(_direction: int) -> void:
+    if slice_feedback_enabled:
+        dash_remaining = 0.22
+
+
+func _draw() -> void:
+    if not slice_feedback_enabled or form == null:
+        return
+    if slash_remaining > 0.0:
+        var alpha := slash_remaining / 0.12
+        var radius := 34.0 if slash_heavy else 27.0
+        var points := PackedVector2Array()
+        for i in range(7):
+            var angle := -1.15 + float(i) * 0.36
+            points.append(Vector2(9.0 + cos(angle) * radius, -11.0 + sin(angle) * radius * 0.7))
+        draw_polyline(points, Color(0.95, 0.66, 0.40, alpha) if slash_heavy else Color(0.78, 0.83, 0.77, alpha), 2.0, false)
+    if dash_remaining > 0.0:
+        var alpha := dash_remaining / 0.22
+        for i in range(3):
+            draw_rect(Rect2(-16.0 - i * 7.0, -16.0 + i * 4.0, 6.0, 2.0), Color(0.56, 0.72, 0.70, alpha * (0.65 - i * 0.15)))
+    if landing_remaining > 0.0:
+        var alpha := landing_remaining / 0.12
+        draw_rect(Rect2(-13, 11, 4, 2), Color(0.48, 0.52, 0.45, alpha))
+        draw_rect(Rect2(10, 12, 3, 2), Color(0.48, 0.52, 0.45, alpha))
 
 
 func _on_hit_confirmed(context: HitContext) -> void:

@@ -1,0 +1,275 @@
+[gd_scene load_steps=18 format=3]
+
+[ext_resource type="Script" path="res://scripts/biomes/forest/forest_slice_01.gd" id="1_slice"]
+[ext_resource type="Script" path="res://scripts/biomes/forest/forest_encounter.gd" id="2_encounter"]
+[ext_resource type="Script" path="res://scripts/biomes/forest/forest_backdrop.gd" id="3_backdrop"]
+[ext_resource type="Script" path="res://scripts/biomes/forest/forest_vegetation.gd" id="4_vegetation"]
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="5_player"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/peregrino.tscn" id="6_peregrino"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/corvo.tscn" id="7_corvo"]
+[ext_resource type="Resource" path="res://data/masks/carrasco_base.tres" id="8_carrasco"]
+[ext_resource type="Texture2D" path="res://assets/biomes/forest/approved/bosque_a.jpg" id="9_approved_a"]
+[ext_resource type="Texture2D" path="res://assets/biomes/forest/approved/bosque_b.jpg" id="10_approved_b"]
+[ext_resource type="Texture2D" path="res://assets/biomes/forest/approved/bosque_c.jpg" id="11_approved_c"]
+
+[sub_resource type="RectangleShape2D" id="FloorA"]
+size = Vector2(950, 42)
+
+[sub_resource type="RectangleShape2D" id="FloorB"]
+size = Vector2(950, 42)
+
+[sub_resource type="RectangleShape2D" id="FloorRaised"]
+size = Vector2(450, 42)
+
+[sub_resource type="RectangleShape2D" id="FloorC"]
+size = Vector2(1450, 42)
+
+[sub_resource type="RectangleShape2D" id="Platform"]
+size = Vector2(88, 8)
+
+[sub_resource type="RectangleShape2D" id="Boundary"]
+size = Vector2(16, 270)
+
+[node name="ForestVerticalSlice" type="Node2D"]
+script = ExtResource("1_slice")
+slice_length = 3900.0
+slice_end_x = 3840.0
+slice_start = Vector2(120, 169)
+starting_mask = ExtResource("8_carrasco")
+playtest_presentation = true
+
+[node name="Backdrop" type="Node2D" parent="."]
+visible = false
+z_index = -10
+script = ExtResource("3_backdrop")
+world_length = 3900.0
+
+[node name="GroundA" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(475, 249)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundA"]
+shape = SubResource("FloorA")
+
+[node name="Visual" type="Polygon2D" parent="GroundA"]
+visible = false
+z_index = -2
+color = Color(0.23, 0.28, 0.25, 1)
+polygon = PackedVector2Array(-475, -21, 475, -21, 475, 21, -475, 21)
+
+[node name="GroundB" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(1525, 249)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundB"]
+shape = SubResource("FloorB")
+
+[node name="Visual" type="Polygon2D" parent="GroundB"]
+visible = false
+z_index = -2
+color = Color(0.23, 0.28, 0.25, 1)
+polygon = PackedVector2Array(-475, -21, 475, -21, 475, 21, -475, 21)
+
+[node name="GroundRaised" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(2225, 225)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundRaised"]
+shape = SubResource("FloorRaised")
+
+[node name="Visual" type="Polygon2D" parent="GroundRaised"]
+visible = false
+z_index = -2
+color = Color(0.27, 0.32, 0.28, 1)
+polygon = PackedVector2Array(-225, -21, 225, -21, 225, 45, -225, 45)
+
+[node name="GroundC" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(3175, 249)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundC"]
+shape = SubResource("FloorC")
+
+[node name="Visual" type="Polygon2D" parent="GroundC"]
+visible = false
+z_index = -2
+color = Color(0.23, 0.28, 0.25, 1)
+polygon = PackedVector2Array(-725, -21, 725, -21, 725, 21, -725, 21)
+
+[node name="LeftBoundary" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(-8, 135)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftBoundary"]
+shape = SubResource("Boundary")
+
+[node name="RightBoundary" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(3908, 135)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightBoundary"]
+shape = SubResource("Boundary")
+
+[node name="GapPlatform" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(1000, 194)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GapPlatform"]
+shape = SubResource("Platform")
+one_way_collision = true
+
+[node name="Visual" type="Polygon2D" parent="GapPlatform"]
+visible = false
+z_index = -2
+color = Color(0.33, 0.39, 0.31, 1)
+polygon = PackedVector2Array(-44, -4, 44, -4, 44, 4, -44, 4)
+
+[node name="StepPlatform" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(1970, 184)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StepPlatform"]
+shape = SubResource("Platform")
+one_way_collision = true
+
+[node name="Visual" type="Polygon2D" parent="StepPlatform"]
+visible = false
+z_index = -2
+color = Color(0.33, 0.39, 0.31, 1)
+polygon = PackedVector2Array(-44, -4, 44, -4, 44, 4, -44, 4)
+
+[node name="HighPlatform" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(2220, 161)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HighPlatform"]
+shape = SubResource("Platform")
+one_way_collision = true
+
+[node name="Visual" type="Polygon2D" parent="HighPlatform"]
+visible = false
+z_index = -2
+color = Color(0.33, 0.39, 0.31, 1)
+polygon = PackedVector2Array(-44, -4, 44, -4, 44, 4, -44, 4)
+
+[node name="TravelPlatform" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+position = Vector2(2630, 184)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TravelPlatform"]
+shape = SubResource("Platform")
+one_way_collision = true
+
+[node name="Visual" type="Polygon2D" parent="TravelPlatform"]
+visible = false
+z_index = -2
+color = Color(0.33, 0.39, 0.31, 1)
+polygon = PackedVector2Array(-44, -4, 44, -4, 44, 4, -44, 4)
+
+[node name="Vegetation" type="Node2D" parent="."]
+visible = false
+z_index = -1
+script = ExtResource("4_vegetation")
+world_length = 3900.0
+raised_start = 2000.0
+raised_end = 2450.0
+raised_ground_y = 204.0
+gap_start = 950.0
+gap_end = 1050.0
+
+[node name="StartMarker" type="Polygon2D" parent="."]
+visible = false
+position = Vector2(94, 205)
+color = Color(0.48, 0.46, 0.30, 1)
+polygon = PackedVector2Array(-2, -26, 2, -26, 2, 23, -2, 23)
+
+[node name="EndMarker" type="Polygon2D" parent="."]
+visible = false
+position = Vector2(3750, 198)
+color = Color(0.59, 0.50, 0.30, 1)
+polygon = PackedVector2Array(-12, 30, -12, -31, -5, -31, -5, 21, 5, 21, 5, -31, 12, -31, 12, 30)
+
+[node name="ApprovedBosqueA" type="Sprite2D" parent="."]
+position = Vector2(0, -45)
+scale = Vector2(0.684211, 0.684044)
+z_index = -10
+texture_filter = 1
+texture = ExtResource("9_approved_a")
+centered = false
+
+[node name="ApprovedBosqueB" type="Sprite2D" parent="."]
+position = Vector2(1300, -45)
+scale = Vector2(0.684211, 0.684044)
+z_index = -10
+texture_filter = 1
+texture = ExtResource("10_approved_b")
+centered = false
+
+[node name="ApprovedBosqueC" type="Sprite2D" parent="."]
+position = Vector2(2600, -45)
+scale = Vector2(0.684211, 0.684044)
+z_index = -10
+texture_filter = 1
+texture = ExtResource("11_approved_c")
+centered = false
+
+[node name="Player" parent="." instance=ExtResource("5_player")]
+position = Vector2(120, 169)
+
+[node name="Locomotion" parent="Player" index="1"]
+jump_velocity = -380.0
+
+[node name="Encounters" type="Node2D" parent="."]
+
+[node name="FirstEncounter" type="Node2D" parent="Encounters"]
+position = Vector2(1490, 0)
+script = ExtResource("2_encounter")
+
+[node name="Peregrino" parent="Encounters/FirstEncounter" instance=ExtResource("6_peregrino")]
+position = Vector2(0, 187)
+
+[node name="SecondEncounter" type="Node2D" parent="Encounters"]
+position = Vector2(3030, 0)
+script = ExtResource("2_encounter")
+
+[node name="Peregrino" parent="Encounters/SecondEncounter" instance=ExtResource("6_peregrino")]
+position = Vector2(60, 212)
+
+[node name="Corvo" parent="Encounters/SecondEncounter" instance=ExtResource("7_corvo")]
+position = Vector2(-80, 170)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Controls" type="Label" parent="CanvasLayer"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 290.0
+offset_bottom = 32.0
+theme_override_font_sizes/font_size = 9
+text = "A/D correr  Shift andar  Espaço pular  L dash\nJ combo  K pesado  I parry  R reiniciar"
+
+[node name="HealthLabel" type="Label" parent="CanvasLayer"]
+offset_left = 395.0
+offset_top = 8.0
+offset_right = 475.0
+offset_bottom = 28.0
+horizontal_alignment = 2
+theme_override_font_sizes/font_size = 9
+
+[node name="Feedback" type="Label" parent="CanvasLayer"]
+visible = false
+offset_left = 72.0
+offset_top = 58.0
+offset_right = 430.0
+offset_bottom = 112.0
+theme_override_font_sizes/font_size = 15

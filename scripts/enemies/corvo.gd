@@ -68,6 +68,8 @@ func reset_enemy() -> void:
 func _on_damage(context: HitContext) -> void:
     flash_remaining = 0.1
     brain.on_damage(context)
+    if context.attacker != null and health.current_health > 0:
+        velocity.x = signf(global_position.x - context.attacker.global_position.x) * 55.0
 
 
 func _on_death() -> void:

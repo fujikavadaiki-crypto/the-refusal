@@ -9,19 +9,38 @@ extends Node
 @export var air_acceleration := 650.0
 @export var gravity := 800.0
 @export var jump_velocity := -260.0
+@export var coyote_seconds := 0.10
+@export var jump_buffer_seconds := 0.12
+
+var coyote_remaining := 0.0
+var jump_buffer_remaining := 0.0
 
 
-func move(body: CharacterBody2D, direction: float, jump_pressed: bool, delta: float, suspend_gravity := false, walk_requested := false) -> void:
+func reset_assists() -> void:
+    coyote_remaining = 0.0
+    jump_buffer_remaining = 0.0
+
+
+func move(body: CharacterBody2D, direction: float, jump_pressed: bool, delta: float, suspend_gravity := false, walk_requested := false, jump_allowed := true) -> void:
+    coyote_remaining = coyote_seconds if body.is_on_floor() else maxf(0.0, coyote_remaining - delta)
+    jump_buffer_remaining = jump_buffer_seconds if jump_pressed else maxf(0.0, jump_buffer_remaining - delta)
     var horizontal_rate := air_acceleration
     if suspend_gravity:
         body.velocity.y = 0.0
     elif body.is_on_floor():
         horizontal_rate = ground_acceleration if not is_zero_approx(direction) else ground_deceleration
-        if jump_pressed:
-            body.velocity.y = jump_velocity
     else:
         body.velocity.y += gravity * delta
+
+    if jump_allowed and not suspend_gravity and jump_buffer_remaining > 0.0 and coyote_remaining > 0.0:
+        body.velocity.y = jump_velocity
+        jump_buffer_remaining = 0.0
+        coyote_remaining = 0.0
 
     var target_speed := run_speed * (walk_speed_ratio if walk_requested else 1.0)
     body.velocity.x = move_toward(body.velocity.x, direction * target_speed, horizontal_rate * delta)
     body.move_and_slide()
+    if body.is_on_floor() and jump_allowed and jump_buffer_remaining > 0.0 and not suspend_gravity:
+        body.velocity.y = jump_velocity
+        jump_buffer_remaining = 0.0
+        coyote_remaining = 0.0

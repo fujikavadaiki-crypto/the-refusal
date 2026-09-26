@@ -1,12 +1,14 @@
 extends Node2D
 
-## Locomotion uses the approved GIF frames at native resolution. The original atlas
-## remains available for combat and every state without an approved GIF.
+## Older rooms retain the GIF/atlas presentation; the playable Bosque uses the
+## explicitly approved Carrasco board for every visible pose.
 const MARK := preload("res://scripts/player/visuals/condemnation_mark.gd")
 const ATLAS := preload("res://assets/characters/carrasco_base_gameplay/atlas.png")
 const MANIFEST_PATH := "res://assets/characters/carrasco_base_gameplay/frames.json"
 const GIF_ROOT := "res://assets/characters/carrasco_gif_test"
 const GIF_MANIFEST_PATH := GIF_ROOT + "/frames.json"
+const APPROVED_SHEET := preload("res://assets/characters/carrasco_approved_board/sheet.png")
+const APPROVED_MANIFEST := "res://assets/characters/carrasco_approved_board/frames.json"
 const JUDGMENT := Color("#a4553e")
 const BONE := Color("#c7b9a0")
 
@@ -27,11 +29,17 @@ var gif_frame_textures: Dictionary = {}
 var gif_fps: Dictionary = {}
 var gif_foot_y: Dictionary = {}
 var atlas_offset := Vector2.ZERO
+var approved_board_mode := false
+var approved_frame_textures: Dictionary = {}
+var approved_offset := Vector2.ZERO
 
 
 func _ready() -> void:
-    _load_frames()
-    _load_gif_frames()
+    if approved_board_mode:
+        _load_approved_frames()
+    else:
+        _load_frames()
+        _load_gif_frames()
     _sync_sprite()
 
 
@@ -110,6 +118,9 @@ func _sync_sprite() -> void:
     var animation := String(pose)
     if pose == &"charge" and charged_ready:
         animation = "charge_ready"
+    if approved_board_mode:
+        _sync_approved_sprite(animation)
+        return
     if _sync_gif_sprite(animation):
         return
     if not frame_textures.has(animation):
@@ -121,6 +132,83 @@ func _sync_sprite() -> void:
     sprite.scale.x = 1.0
     sprite.offset = atlas_offset
     sprite.texture = textures[frame]
+
+
+func _load_approved_frames() -> void:
+    var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(APPROVED_MANIFEST))
+    if not parsed is Dictionary or not parsed.has("animations"):
+        push_error("Approved Carrasco board manifest is missing or invalid")
+        return
+    var cell_width: int = parsed["cell_width"]
+    var cell_height: int = parsed["cell_height"]
+    var columns: int = parsed["columns"]
+    approved_offset = Vector2(-int(parsed["pivot_x"]), -int(parsed["pivot_y"]))
+    for animation in parsed["animations"]:
+        var textures: Array[AtlasTexture] = []
+        for raw_index in parsed["animations"][animation]:
+            var index: int = raw_index
+            var texture := AtlasTexture.new()
+            texture.atlas = APPROVED_SHEET
+            texture.region = Rect2((index % columns) * cell_width, (index / columns) * cell_height, cell_width, cell_height)
+            textures.append(texture)
+        approved_frame_textures[animation] = textures
+
+
+func _sync_approved_sprite(animation: String) -> void:
+    var clip := animation
+    match animation:
+        "walk":
+            clip = "run"
+        "hit":
+            clip = "hurt"
+        "carrasco_light_1", "carrasco_marca":
+            clip = "light_1"
+        "carrasco_light_2":
+            clip = "light_2"
+        "carrasco_light_3", "carrasco_quebra_selos":
+            clip = "light_3"
+        "carrasco_heavy", "charge", "charge_ready":
+            clip = "heavy"
+        "carrasco_charged_heavy":
+            clip = "charged_heavy"
+        "carrasco_post_dodge", "carrasco_dash_light":
+            clip = "post_dodge"
+        "carrasco_air_light":
+            clip = "air_light"
+        "carrasco_air_heavy":
+            clip = "air_heavy"
+        "tribunal_activate", "execution", "execution_strike":
+            clip = "charged_heavy"
+    if not approved_frame_textures.has(clip):
+        clip = "idle"
+    var textures: Array = approved_frame_textures.get(clip, [])
+    if textures.is_empty():
+        return
+    var frame := 0
+    if animation.begins_with("carrasco_"):
+        var count := textures.size()
+        var windup := maxi(1, count / 3)
+        var active := maxi(1, count / 3)
+        var start := 0
+        var span := windup
+        if attack_phase == PlayerCombat.Phase.ACTIVE:
+            start = windup
+            span = active
+        elif attack_phase == PlayerCombat.Phase.RECOVERY:
+            start = windup + active
+            span = maxi(1, count - start)
+        frame = clampi(start + mini(int(attack_progress * span), span - 1), 0, count - 1)
+    elif clip == "idle":
+        frame = int(pose_clock * 4.0) % textures.size()
+    elif clip == "run":
+        frame = int(pose_clock * 12.0) % textures.size()
+    elif clip == "death" or clip == "hurt" or clip == "ruptured":
+        frame = mini(int(pose_clock * 9.0), textures.size() - 1)
+    else:
+        frame = int(pose_clock * 12.0) % textures.size()
+    sprite.texture = textures[frame]
+    sprite.offset = approved_offset
+    sprite.scale.x = 1.0
 
 
 func _sync_gif_sprite(animation: String) -> bool:
