@@ -1,6 +1,6 @@
 # THE REFUSAL — PROJECT STATUS
 
-Snapshot: **2026-09-28**, branch `main`. The repository root is this `the-refusal/` folder. The repository has local Git history (the audit found 10 prior commits) but no GitHub remote was configured at the time of this snapshot. The working checkout already contained the Bosque B/Player changes listed in the checkpoint; this documentation/LFS task did not change gameplay or Godot resources.
+Snapshot: **2026-09-28**, branch `main`. The repository root is this `the-refusal/` folder. GitHub remote `origin` points to `https://github.com/fujikavadaiki-crypto/the-refusal.git`; checkpoint `main` is published there. This asset-ingestion task does not change gameplay or Godot resources.
 
 ## Estado geral
 
@@ -53,7 +53,7 @@ The current working tree already included edits to `project.godot`, `scenes/play
 
 ## Pipeline 2D do Carrasco
 
-The earlier frame-by-frame AI/GIF workflow and the cutout/Skeleton2D puppet approach are **not the final character-animation direction**. Existing 2D experiments, legacy atlases, cutouts and modular assets stay in the project as history/fallback; do not delete or treat them as the approved 3D production pipeline.
+The earlier frame-by-frame AI/GIF workflow and the cutout/Skeleton2D puppet approach were **rejected as the final character-animation pipeline**. Existing 2D experiments, legacy atlases, cutouts and modular assets stay in the project as history/fallback; do not delete or treat them as the approved 3D production pipeline.
 
 ## Carrasco canônico
 
@@ -78,31 +78,37 @@ The portable **Blender 4.5.14 LTS** was previously validated outside this reposi
 
 ## Master 3D
 
-The Tripo candidate files currently exist outside the Godot repository:
+The high-poly visual master and experimental Blender prep remain outside the Godot repository. The current externally rigged candidate is now versioned in the repository at:
+
+- `assets/characters/carrasco_3d/source/carrasco_forma_base_rigged.glb`
+- `assets/characters/carrasco_3d/weapon/carrasco_weapon.fbx`
+
+The GLB is the current rigged Carrasco base candidate, in GLB format, with the externally supplied humanoid rig. The separate FBX is the approved Carrasco weapon. Both binary assets are tracked by Git LFS.
+
+Original candidate files used for this copy:
 
 - Original high-poly visual master: `%USERPROFILE%/Downloads/fantasy armored knight 3d model.glb` — approximately **1,949,518 triangles**.
-- Newer reduced, rigged candidate: `%USERPROFILE%/Downloads/fantasy+armored+knight+3d+model.glb` — **19,402 triangles**, 65 existing bones, no animation actions.
+- Newer reduced, rigged candidate: `%USERPROFILE%/Downloads/fantasy+armored+knight+3d+model.glb` — **19,402 triangles**, 65 existing bones, no animation actions. The repository copy preserves these source bytes unchanged.
 
 The newer candidate’s static appearance is close to the original, but its received weights make waist cloth/chains follow an elbow bend. Its hands remain closed fists. It is **not production rig-ready**. The candidate review, captures and Blender inspection files are in the separate Codex workspace at the separate Codex task workspace’s `outputs/tripo_candidate_02_validation/`, not in this game repository.
 
-The preserved high-poly and the previous reduced/prep work files are in the separate Codex task workspace’s `outputs/carrasco_rig_prep_01/`. `Carrasco_RIG_PREP.blend` there is explicitly marked experimental/defective; do **not** use it to generate animation or sprites. No GLB/GLTF/FBX/Blend character master is currently in the Godot repository.
+The preserved high-poly and the previous reduced/prep work files are in the separate Codex task workspace’s `outputs/carrasco_rig_prep_01/`. `Carrasco_RIG_PREP.blend` there is explicitly marked experimental/defective; do **not** use it to generate animation or sprites.
 
 ## Rig
 
-The 2D cutout rig is not the final animation pipeline. Validate the bones and weights on the received 3D candidate; do not replace a received rig automatically. The current 19,402-triangle candidate’s armature is only a starting point: fix weights and joint deformations, separate the rigid armor and secondary-motion pieces, and prepare the hand before making production animations.
+The 2D cutout rig was rejected as the final animation pipeline. Before creating another rig, import the repository GLB into Blender and validate its received humanoid skeleton, weights and joint deformations. Treat its armature as a starting point: fix only verified problems, including the cloth/chains following an elbow bend, and assess the closed hands before production animation. Do not create a replacement rig or animation before that validation.
 
 ## Arma
 
-The weapon must remain an independent asset, with an attachment/socket for the main hand and support for a second hand. The game repository contains the 2D reference/cutout `res://assets/characters/carrasco_base_official/weapon_source.png` and `parts/weapon.png`. The requested external weapon **FBX was not found** in the repository or the checked Downloads/Carrasco folders. A separate weapon reference image is present outside the project at `%USERPROFILE%/Downloads/Carrasco/MESHY/05_carrasco_arma_separada.png`.
+The approved weapon is available independently as `assets/characters/carrasco_3d/weapon/carrasco_weapon.fbx`. The existing 2D reference/cutout remains at `res://assets/characters/carrasco_base_official/weapon_source.png` and `parts/weapon.png`. Import the FBX into Blender with the GLB and validate scale, orientation and hand attachment; keep the source FBX unchanged.
 
 ## Próxima tarefa
 
-1. Work from the two preserved Tripo files; keep the high-poly original immutable.
-2. Correct and test the reduced candidate’s weights at elbow/shoulder and stop waist cloth/chains from following arm/finger bones.
-3. Prepare real hand articulation and an A-pose without losing the approved silhouette.
-4. Locate or receive the separate weapon model; prepare its attachment and second-hand support.
-5. Only after the master/rig review gate, make a first run animation and inspect it from the orthographic camera.
-6. Render transparent 2D sprites and then test them in Bosque B.
+1. Import the versioned GLB and FBX into Blender; keep both originals unchanged and preserve the high-poly master.
+2. Validate the GLB humanoid skeleton, weights and deformations, especially shoulders/elbows and cloth/chains; validate the weapon scale/orientation and attachment.
+3. Correct only verified issues in separate Blender working copies. Do not create another rig before validating the received skeleton.
+4. After the master and rig validation gate, produce and review the first 3D run animation.
+5. Do not integrate the model into Godot until validation is complete. Then render transparent 2D sprites and test them in Bosque B.
 
 ## NÃO REPETIR
 
