@@ -1,0 +1,1264 @@
+{
+  "id": "830e4a85-0aeb-4d69-a8c6-cef9aee98db3",
+  "name": "broken gothic arch ruin with ancient cracked",
+  "tileSize": {
+    "width": 32,
+    "height": 32
+  },
+  "baseTileIds": null,
+  "terrainMapping": {
+    "lower": 1,
+    "upper": 0
+  },
+  "lowerDescription": "decaying medieval stone wall with moderate surface cracking and gentle tonal variation, featuring soft moss patches and creeping vine tendrils rendered with medium depth shadows",
+  "upperDescription": "thin weathered stone ledge capping the platform with chipped block edges and gentle moss overgrowth, featuring soft highlights and shadows for moderate depth",
+  "user_id": "e85f9ec5-58c7-4302-8ca4-a6a80e99431c",
+  "lower_description": "decaying medieval stone wall with moderate surface cracking and gentle tonal variation, featuring soft moss patches and creeping vine tendrils rendered with medium depth shadows",
+  "upper_description": "thin weathered stone ledge capping the platform with chipped block edges and gentle moss overgrowth, featuring soft highlights and shadows for moderate depth",
+  "transition_description": null,
+  "tile_size": {
+    "width": 32,
+    "height": 32
+  },
+  "transition_size": 0,
+  "view": "side",
+  "style_settings": null,
+  "generation_parameters": null,
+  "base_tile_ids": {
+    "lower": "c4ad94a5-8b33-4f07-955c-eee70a5848f8",
+    "upper": "90bf2e8a-0100-44f9-934e-ed5aade1f5ca"
+  },
+  "tileset_data": {
+    "tiles": [
+      {
+        "id": "399823b2-6854-49f4-8bfb-1d99a3742122",
+        "name": "wang_13",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "c1b3662c-60fa-4d9a-99dc-0c3b3255db7d",
+            "c01703fe-595c-4bf2-bedf-766f877c99bc",
+            "e974c5a2-3947-4320-902a-cbca0e553683",
+            "816d4a7d-c303-4594-bbba-fca93846f20d"
+          ],
+          "west": [
+            "6b5f6573-c39d-43b1-8372-d9c04aa65265",
+            "e974c5a2-3947-4320-902a-cbca0e553683",
+            "b98a638e-9c92-438a-af66-ee3686d619ac",
+            "90bf2e8a-0100-44f9-934e-ed5aade1f5ca"
+          ],
+          "north": [
+            "c1b3662c-60fa-4d9a-99dc-0c3b3255db7d",
+            "5c2474f1-c7b7-436d-9de9-e6f48e77572e",
+            "816d4a7d-c303-4594-bbba-fca93846f20d",
+            "a964296c-a6ec-4879-90b4-2ac5162a7e58"
+          ],
+          "south": [
+            "f76cb653-b1cf-4d5c-942e-4dffbf9683a3",
+            "6b5f6573-c39d-43b1-8372-d9c04aa65265",
+            "a964296c-a6ec-4879-90b4-2ac5162a7e58",
+            "90bf2e8a-0100-44f9-934e-ed5aade1f5ca"
+          ]
+        },
+        "description": "transparent background and decaying medieval stone wall with moderate surface cracking and gentle tonal variation, featuring soft moss patches and creeping vine tendrils rendered with medium depth shadows - wang_13",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "a92c4049-27ed-4e86-a1b5-4eaf068c7ffe",
+        "name": "wang_10",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "3da67b58-abf1-49ef-9751-80e2addef5ed",
+            "b0fd5fb3-69c1-4e86-9cd3-430f9caf54ca",
+            "fe4e35cb-696c-425d-9978-c9db8f4f6cbc"
+          ],
+          "west": [
+            "6b5f6573-c39d-43b1-8372-d9c04aa65265",
+            "e974c5a2-3947-4320-902a-cbca0e553683",
+            "90bf2e8a-0100-44f9-934e-ed5aade1f5ca"
+          ],
+          "north": [
+            "c1b3662c-60fa-4d9a-99dc-0c3b3255db7d",
+            "5c2474f1-c7b7-436d-9de9-e6f48e77572e",
+            "816d4a7d-c303-4594-bbba-fca93846f20d",
+            "a964296c-a6ec-4879-90b4-2ac5162a7e58"
+          ],
+          "south": [
+            "c4ad94a5-8b33-4f07-955c-eee70a5848f8",
+            "e2a62a89-973b-4799-9512-38dca60c33b1",
+            "5c2474f1-c7b7-436d-9de9-e6f48e77572e",
+            "6ef6c4ea-23c7-4114-9efb-ad2ae37e802b"
+          ]
+        },
+        "description": "transparent background and decaying medieval stone wall with moderate surface cracking and gentle tonal variation, featuring soft moss patches and creeping vine tendrils rendered with medium depth shadows - wang_10",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "540e0dd4-f981-47d1-b6ef-574d290b849a",
+        "name": "wang_4",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "6ef6c4ea-23c7-4114-9efb-ad2ae37e802b",
+            "a964296c-a6ec-4879-90b4-2ac5162a7e58",
+            "90bf2e8a-0100-44f9-934e-ed5aade1f5ca"
+          ],
+          "west": [
+            "e2a62a89-973b-4799-9512-38dca60c33b1",
+            "816d4a7d-c303-4594-bbba-fca93846f20d",
+            "fe4e35cb-696c-425d-9978-c9db8f4f6cbc"
+          ],
+          "north": [
+            "c4ad94a5-8b33-4f07-955c-eee70a5848f8",
+            "3da67b58-abf1-49ef-9751-80e2addef5ed",
+            "6b5f6573-c39d-43b1-8372-d9c04aa65265",
+            "b98a638e-9c92-438a-af66-ee3686d619ac"
+          ],
+          "south": [
+            "c1b3662c-60fa-4d9a-99dc-0c3b3255db7d",
+            "e974c5a2-3947-4320-902a-cbca0e553683",
+            "b98a638e-9c92-438a-af66-ee3686d619ac",
+            "b0fd5fb3-69c1-4e86-9cd3-430f9caf54ca"
+          ]
+        },
+        "description": "transparent background and decaying medieval stone wall with moderate surface cracking and gentle tonal variation, featuring soft moss patches and creeping vine tendrils rendered with medium depth shadows - wang_4",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "c7efb70e-43ae-41ac-b9d4-dde95a50c228",
+        "name": "wang_12",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "c1b3662c-60fa-4d9a-99dc-0c3b3255db7d",
+            "c01703fe-595c-4bf2-bedf-766f877c99bc",
+            "e974c5a2-3947-4320-902a-cbca0e553683",
+            "816d4a7d-c303-4594-bbba-fca93846f20d"
+          ],
+          "west": [
+            "e2a62a89-973b-4799-9512-38dca60c33b1",
+            "5c2474f1-c7b7-436d-9de9-e6f48e77572e",
+            "816d4a7d-c303-4594-bbba-fca93846f20d",
+            "fe4e35cb-696c-425d-9978-c9db8f4f6cbc"
+          ],
+          "north": [
+            "e2a62a89-973b-4799-9512-38dca60c33b1",
+            "f76cb653-b1cf-4d5c-942e-4dffbf9683a3",
+            "b0fd5fb3-69c1-4e86-9cd3-430f9caf54ca",
+            "fe4e35cb-696c-425d-9978-c9db8f4f6cbc"
+          ],
+          "south": [
+            "c1b3662c-60fa-4d9a-99dc-0c3b3255db7d",
+            "e974c5a2-3947-4320-902a-cbca0e553683",
+            "b98a638e-9c92-438a-af66-ee3686d619ac",
+            "b0fd5fb3-69c1-4e86-9cd3-430f9caf54ca"
+          ]
+        },
+        "description": "transparent background and decaying medieval stone wall with moderate surface cracking and gentle tonal variation, featuring soft moss patches and creeping vine tendrils rendered with medium depth shadows - wang_12",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 5,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "1639e39e-29fa-4e4c-8dad-8ff31b409393",
+        "name": "wang_6",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "c1b3662c-60fa-4d9a-99dc-0c3b3255db7d",
+            "c01703fe-595c-4bf2-bedf-766f877c99bc",
+            "e974c5a2-3947-4320-902a-cbca0e553683",
+            "816d4a7d-c303-4594-bbba-fca93846f20d"
+          ],
+          "west": [
+            "c4ad94a5-8b33-4f07-955c-eee70a5848f8",
+            "3da67b58-abf1-49ef-9751-80e2addef5ed",
+            "6ef6c4ea-23c7-4114-9efb-ad2ae37e802b",
+            "c01703fe-595c-4bf2-bedf-766f877c99bc"
+          ],
+          "north": [
+            "e2a62a89-973b-4799-9512-38dca60c33b1",
+            "b0fd5fb3-69c1-4e86-9cd3-430f9caf54ca",
+            "fe4e35cb-696c-425d-9978-c9db8f4f6cbc"
+          ],
+          "south": [
+            "6b5f6573-c39d-43b1-8372-d9c04aa65265",
+            "a964296c-a6ec-4879-90b4-2ac5162a7e58",
+            "90bf2e8a-0100-44f9-934e-ed5aade1f5ca"
+          ]
+        },
+        "description": "transparent background and decaying medieval stone wall with moderate surface cracking and gentle tonal variation, featuring soft moss patches and creeping vine tendrils rendered with medium depth shadows - wang_6",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 5
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "56e05e63-a1b6-475b-87a2-f0258b46ace3",
+        "name": "wang_8",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "c4ad94a5-8b33-4f07-955c-eee70a5848f8",
+            "e2a62a89-973b-4799-9512-38dca60c33b1",
+            "f76cb653-b1cf-4d5c-942e-4dffbf9683a3",
+            "6b5f6573-c39d-43b1-8372-d9c04aa65265"
+          ],
+          "west": [
+            "c1b3662c-60fa-4d9a-99dc-0c3b3255db7d",
+            "f76cb653-b1cf-4d5c-942e-4dffbf9683a3",
+            "a964296c-a6ec-4879-90b4-2ac5162a7e58",
+            "b0fd5fb3-69c1-4e86-9cd3-430f9caf54ca"
+          ],
+          "north": [
+            "6ef6c4ea-23c7-4114-9efb-ad2ae37e802b",
+            "e974c5a2-3947-4320-902a-cbca0e553683",
+            "90bf2e8a-0100-44f9-934e-ed5aade1f5ca"
+          ],
+          "south": [
+            "3da67b58-abf1-49ef-9751-80e2addef5ed",
+            "816d4a7d-c303-4594-bbba-fca93846f20d",
+            "fe4e35cb-696c-425d-9978-c9db8f4f6cbc"
+          ]
+        },
+        "description": "transparent background and decaying medieval stone wall with moderate surface cracking and gentle tonal variation, featuring soft moss patches and creeping vine tendrils rendered with medium depth shadows - wang_8",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "c4ad94a5-8b33-4f07-955c-eee70a5848f8",
+        "name": "wang_0",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "e2a62a89-973b-4799-9512-38dca60c33b1",
+            "f76cb653-b1cf-4d5c-942e-4dffbf9683a3",
+            "6b5f6573-c39d-43b1-8372-d9c04aa65265"
+          ],
+          "west": [
+            "3da67b58-abf1-49ef-9751-80e2addef5ed",
+            "6ef6c4ea-23c7-4114-9efb-ad2ae37e802b",
+            "c01703fe-595c-4bf2-bedf-766f877c99bc"
+          ],
+          "north": [
+            "3da67b58-abf1-49ef-9751-80e2addef5ed",
+            "6b5f6573-c39d-43b1-8372-d9c04aa65265",
+            "b98a638e-9c92-438a-af66-ee3686d619ac"
+          ],
+          "south": [
+            "e2a62a89-973b-4799-9512-38dca60c33b1",
+            "5c2474f1-c7b7-436d-9de9-e6f48e77572e",
+            "6ef6c4ea-23c7-4114-9efb-ad2ae37e802b"
+          ]
+        },
+        "description": "transparent background and decaying medieval stone wall with moderate surface cracking and gentle tonal variation, featuring soft moss patches and creeping vine tendrils rendered with medium depth shadows - wang_0",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 6
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "d22cfa65-7477-4372-9d97-90887bbaac8f",
+        "name": "wang_1",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "c01703fe-595c-4bf2-bedf-766f877c99bc",
+            "e974c5a2-3947-4320-902a-cbca0e553683",
+            "816d4a7d-c303-4594-bbba-fca93846f20d"
+          ],
+          "west": [
+            "f76cb653-b1cf-4d5c-942e-4dffbf9683a3",
+            "a964296c-a6ec-4879-90b4-2ac5162a7e58",
+            "b0fd5fb3-69c1-4e86-9cd3-430f9caf54ca"
+          ],
+          "north": [
+            "5c2474f1-c7b7-436d-9de9-e6f48e77572e",
+            "816d4a7d-c303-4594-bbba-fca93846f20d",
+            "a964296c-a6ec-4879-90b4-2ac5162a7e58"
+          ],
+          "south": [
+            "e974c5a2-3947-4320-902a-cbca0e553683",
+            "b98a638e-9c92-438a-af66-ee3686d619ac",
+            "b0fd5fb3-69c1-4e86-9cd3-430f9caf54ca"
+          ]
+        },
+        "description": "transparent background and decaying medieval stone wall with moderate surface cracking and gentle tonal variation, featuring soft moss patches and creeping vine tendrils rendered with medium depth shadows - wang_1",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "6eb49932-e5d5-4dad-a590-48770748daf5",
+        "name": "wang_11",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "5c2474f1-c7b7-436d-9de9-e6f48e77572e",
+            "6ef6c4ea-23c7-4114-9efb-ad2ae37e802b",
+            "a964296c-a6ec-4879-90b4-2ac5162a7e58",
+            "90bf2e8a-0100-44f9-934e-ed5aade1f5ca"
+          ],
+          "west": [
+            "c1b3662c-60fa-4d9a-99dc-0c3b3255db7d",
+            "f76cb653-b1cf-4d5c-942e-4dffbf9683a3",
+            "a964296c-a6ec-4879-90b4-2ac5162a7e58",
+            "b0fd5fb3-69c1-4e86-9cd3-430f9caf54ca"
+          ],
+          "north": [
+            "6ef6c4ea-23c7-4114-9efb-ad2ae37e802b",
+            "c01703fe-595c-4bf2-bedf-766f877c99bc",
+            "e974c5a2-3947-4320-902a-cbca0e553683",
+            "90bf2e8a-0100-44f9-934e-ed5aade1f5ca"
+          ],
+          "south": [
+            "c1b3662c-60fa-4d9a-99dc-0c3b3255db7d",
+            "e974c5a2-3947-4320-902a-cbca0e553683",
+            "b98a638e-9c92-438a-af66-ee3686d619ac",
+            "b0fd5fb3-69c1-4e86-9cd3-430f9caf54ca"
+          ]
+        },
+        "description": "transparent background and decaying medieval stone wall with moderate surface cracking and gentle tonal variation, featuring soft moss patches and creeping vine tendrils rendered with medium depth shadows - wang_11",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "fc457495-e932-4f58-b74d-aaee27053068",
+        "name": "wang_3",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "5c2474f1-c7b7-436d-9de9-e6f48e77572e",
+            "6ef6c4ea-23c7-4114-9efb-ad2ae37e802b",
+            "a964296c-a6ec-4879-90b4-2ac5162a7e58",
+            "90bf2e8a-0100-44f9-934e-ed5aade1f5ca"
+          ],
+          "west": [
+            "c4ad94a5-8b33-4f07-955c-eee70a5848f8",
+            "3da67b58-abf1-49ef-9751-80e2addef5ed",
+            "6ef6c4ea-23c7-4114-9efb-ad2ae37e802b",
+            "c01703fe-595c-4bf2-bedf-766f877c99bc"
+          ],
+          "north": [
+            "c4ad94a5-8b33-4f07-955c-eee70a5848f8",
+            "3da67b58-abf1-49ef-9751-80e2addef5ed",
+            "6b5f6573-c39d-43b1-8372-d9c04aa65265",
+            "b98a638e-9c92-438a-af66-ee3686d619ac"
+          ],
+          "south": [
+            "f76cb653-b1cf-4d5c-942e-4dffbf9683a3",
+            "6b5f6573-c39d-43b1-8372-d9c04aa65265",
+            "a964296c-a6ec-4879-90b4-2ac5162a7e58",
+            "90bf2e8a-0100-44f9-934e-ed5aade1f5ca"
+          ]
+        },
+        "description": "transparent background and decaying medieval stone wall with moderate surface cracking and gentle tonal variation, featuring soft moss patches and creeping vine tendrils rendered with medium depth shadows - wang_3",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "c8ae24cf-d802-42bc-a32f-bef409d1540a",
+        "name": "wang_2",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "c4ad94a5-8b33-4f07-955c-eee70a5848f8",
+            "e2a62a89-973b-4799-9512-38dca60c33b1",
+            "f76cb653-b1cf-4d5c-942e-4dffbf9683a3",
+            "6b5f6573-c39d-43b1-8372-d9c04aa65265"
+          ],
+          "west": [
+            "6b5f6573-c39d-43b1-8372-d9c04aa65265",
+            "e974c5a2-3947-4320-902a-cbca0e553683",
+            "b98a638e-9c92-438a-af66-ee3686d619ac",
+            "90bf2e8a-0100-44f9-934e-ed5aade1f5ca"
+          ],
+          "north": [
+            "6ef6c4ea-23c7-4114-9efb-ad2ae37e802b",
+            "c01703fe-595c-4bf2-bedf-766f877c99bc",
+            "e974c5a2-3947-4320-902a-cbca0e553683",
+            "90bf2e8a-0100-44f9-934e-ed5aade1f5ca"
+          ],
+          "south": [
+            "c4ad94a5-8b33-4f07-955c-eee70a5848f8",
+            "e2a62a89-973b-4799-9512-38dca60c33b1",
+            "5c2474f1-c7b7-436d-9de9-e6f48e77572e",
+            "6ef6c4ea-23c7-4114-9efb-ad2ae37e802b"
+          ]
+        },
+        "description": "transparent background and decaying medieval stone wall with moderate surface cracking and gentle tonal variation, featuring soft moss patches and creeping vine tendrils rendered with medium depth shadows - wang_2",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "aac17af8-8b21-4f18-a55d-5821fc2aa495",
+        "name": "wang_5",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "c4ad94a5-8b33-4f07-955c-eee70a5848f8",
+            "e2a62a89-973b-4799-9512-38dca60c33b1",
+            "f76cb653-b1cf-4d5c-942e-4dffbf9683a3",
+            "6b5f6573-c39d-43b1-8372-d9c04aa65265"
+          ],
+          "west": [
+            "e2a62a89-973b-4799-9512-38dca60c33b1",
+            "5c2474f1-c7b7-436d-9de9-e6f48e77572e",
+            "816d4a7d-c303-4594-bbba-fca93846f20d",
+            "fe4e35cb-696c-425d-9978-c9db8f4f6cbc"
+          ],
+          "north": [
+            "c4ad94a5-8b33-4f07-955c-eee70a5848f8",
+            "3da67b58-abf1-49ef-9751-80e2addef5ed",
+            "6b5f6573-c39d-43b1-8372-d9c04aa65265",
+            "b98a638e-9c92-438a-af66-ee3686d619ac"
+          ],
+          "south": [
+            "3da67b58-abf1-49ef-9751-80e2addef5ed",
+            "c01703fe-595c-4bf2-bedf-766f877c99bc",
+            "816d4a7d-c303-4594-bbba-fca93846f20d",
+            "fe4e35cb-696c-425d-9978-c9db8f4f6cbc"
+          ]
+        },
+        "description": "transparent background and decaying medieval stone wall with moderate surface cracking and gentle tonal variation, featuring soft moss patches and creeping vine tendrils rendered with medium depth shadows - wang_5",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "90bf2e8a-0100-44f9-934e-ed5aade1f5ca",
+        "name": "wang_15",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "3da67b58-abf1-49ef-9751-80e2addef5ed",
+            "b98a638e-9c92-438a-af66-ee3686d619ac",
+            "b0fd5fb3-69c1-4e86-9cd3-430f9caf54ca",
+            "fe4e35cb-696c-425d-9978-c9db8f4f6cbc"
+          ],
+          "west": [
+            "e2a62a89-973b-4799-9512-38dca60c33b1",
+            "5c2474f1-c7b7-436d-9de9-e6f48e77572e",
+            "816d4a7d-c303-4594-bbba-fca93846f20d",
+            "fe4e35cb-696c-425d-9978-c9db8f4f6cbc"
+          ],
+          "north": [
+            "e2a62a89-973b-4799-9512-38dca60c33b1",
+            "f76cb653-b1cf-4d5c-942e-4dffbf9683a3",
+            "b0fd5fb3-69c1-4e86-9cd3-430f9caf54ca",
+            "fe4e35cb-696c-425d-9978-c9db8f4f6cbc"
+          ],
+          "south": [
+            "3da67b58-abf1-49ef-9751-80e2addef5ed",
+            "c01703fe-595c-4bf2-bedf-766f877c99bc",
+            "816d4a7d-c303-4594-bbba-fca93846f20d",
+            "fe4e35cb-696c-425d-9978-c9db8f4f6cbc"
+          ]
+        },
+        "description": "transparent background and decaying medieval stone wall with moderate surface cracking and gentle tonal variation, featuring soft moss patches and creeping vine tendrils rendered with medium depth shadows - wang_15",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "f08df808-9ed0-4734-b411-1e68b8b08616",
+        "name": "wang_14",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "5c2474f1-c7b7-436d-9de9-e6f48e77572e",
+            "6ef6c4ea-23c7-4114-9efb-ad2ae37e802b",
+            "a964296c-a6ec-4879-90b4-2ac5162a7e58",
+            "90bf2e8a-0100-44f9-934e-ed5aade1f5ca"
+          ],
+          "west": [
+            "6b5f6573-c39d-43b1-8372-d9c04aa65265",
+            "e974c5a2-3947-4320-902a-cbca0e553683",
+            "b98a638e-9c92-438a-af66-ee3686d619ac",
+            "90bf2e8a-0100-44f9-934e-ed5aade1f5ca"
+          ],
+          "north": [
+            "6ef6c4ea-23c7-4114-9efb-ad2ae37e802b",
+            "c01703fe-595c-4bf2-bedf-766f877c99bc",
+            "e974c5a2-3947-4320-902a-cbca0e553683",
+            "90bf2e8a-0100-44f9-934e-ed5aade1f5ca"
+          ],
+          "south": [
+            "f76cb653-b1cf-4d5c-942e-4dffbf9683a3",
+            "6b5f6573-c39d-43b1-8372-d9c04aa65265",
+            "a964296c-a6ec-4879-90b4-2ac5162a7e58",
+            "90bf2e8a-0100-44f9-934e-ed5aade1f5ca"
+          ]
+        },
+        "description": "transparent background and decaying medieval stone wall with moderate surface cracking and gentle tonal variation, featuring soft moss patches and creeping vine tendrils rendered with medium depth shadows - wang_14",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "f63daa58-1b66-44f0-9389-90f9e11936a5",
+        "name": "wang_9",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "3da67b58-abf1-49ef-9751-80e2addef5ed",
+            "b98a638e-9c92-438a-af66-ee3686d619ac",
+            "b0fd5fb3-69c1-4e86-9cd3-430f9caf54ca",
+            "fe4e35cb-696c-425d-9978-c9db8f4f6cbc"
+          ],
+          "west": [
+            "c1b3662c-60fa-4d9a-99dc-0c3b3255db7d",
+            "f76cb653-b1cf-4d5c-942e-4dffbf9683a3",
+            "a964296c-a6ec-4879-90b4-2ac5162a7e58",
+            "b0fd5fb3-69c1-4e86-9cd3-430f9caf54ca"
+          ],
+          "north": [
+            "c1b3662c-60fa-4d9a-99dc-0c3b3255db7d",
+            "5c2474f1-c7b7-436d-9de9-e6f48e77572e",
+            "816d4a7d-c303-4594-bbba-fca93846f20d",
+            "a964296c-a6ec-4879-90b4-2ac5162a7e58"
+          ],
+          "south": [
+            "3da67b58-abf1-49ef-9751-80e2addef5ed",
+            "c01703fe-595c-4bf2-bedf-766f877c99bc",
+            "816d4a7d-c303-4594-bbba-fca93846f20d",
+            "fe4e35cb-696c-425d-9978-c9db8f4f6cbc"
+          ]
+        },
+        "description": "transparent background and decaying medieval stone wall with moderate surface cracking and gentle tonal variation, featuring soft moss patches and creeping vine tendrils rendered with medium depth shadows - wang_9",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "f4dca807-98c2-4029-81e7-91b6461e6169",
+        "name": "wang_7",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "3da67b58-abf1-49ef-9751-80e2addef5ed",
+            "b98a638e-9c92-438a-af66-ee3686d619ac",
+            "b0fd5fb3-69c1-4e86-9cd3-430f9caf54ca",
+            "fe4e35cb-696c-425d-9978-c9db8f4f6cbc"
+          ],
+          "west": [
+            "c4ad94a5-8b33-4f07-955c-eee70a5848f8",
+            "3da67b58-abf1-49ef-9751-80e2addef5ed",
+            "6ef6c4ea-23c7-4114-9efb-ad2ae37e802b",
+            "c01703fe-595c-4bf2-bedf-766f877c99bc"
+          ],
+          "north": [
+            "e2a62a89-973b-4799-9512-38dca60c33b1",
+            "f76cb653-b1cf-4d5c-942e-4dffbf9683a3",
+            "b0fd5fb3-69c1-4e86-9cd3-430f9caf54ca",
+            "fe4e35cb-696c-425d-9978-c9db8f4f6cbc"
+          ],
+          "south": [
+            "c4ad94a5-8b33-4f07-955c-eee70a5848f8",
+            "e2a62a89-973b-4799-9512-38dca60c33b1",
+            "5c2474f1-c7b7-436d-9de9-e6f48e77572e",
+            "6ef6c4ea-23c7-4114-9efb-ad2ae37e802b"
+          ]
+        },
+        "description": "transparent background and decaying medieval stone wall with moderate surface cracking and gentle tonal variation, featuring soft moss patches and creeping vine tendrils rendered with medium depth shadows - wang_7",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      }
+    ],
+    "tile_size": {
+      "width": 32,
+      "height": 32
+    },
+    "total_tiles": 16,
+    "tileset_type": "sidescroller",
+    "terrain_types": [
+      "central",
+      "background"
+    ],
+    "spritesheet_url": "https://backblaze.pixellab.ai/file/pixellab-tiles/e85f9ec5-58c7-4302-8ca4-a6a80e99431c/830e4a85-0aeb-4d69-a8c6-cef9aee98db3/spritesheet.png",
+    "spritesheet_grid": {
+      "cols": 4,
+      "rows": 4
+    },
+    "spritesheet_layout": "tileset15_4x4"
+  },
+  "metadata": {
+    "user_prompts": {
+      "lower": "broken gothic arch ruin with ancient cracked stone, hanging moss, creeping vines and dark forest decay, ruined medieval architecture, detailed pixel art, desaturated palette",
+      "upper": "partial ruined stone arch from a forgotten gothic forest, chipped blocks, moss and vine overgrowth, atmospheric detailed pixel art",
+      "transition": ""
+    },
+    "terrain_prompts": {
+      "lower": "decaying medieval stone wall with moderate surface cracking and gentle tonal variation, featuring soft moss patches and creeping vine tendrils rendered with medium depth shadows",
+      "upper": "transparent background",
+      "transition": "thin weathered stone ledge capping the platform with chipped block edges and gentle moss overgrowth, featuring soft highlights and shadows for moderate depth"
+    }
+  },
+  "created_at": "2026-09-26T17:17:45.524805+00:00",
+  "updated_at": "2026-09-26T17:18:21.663806+00:00",
+  "status": "completed",
+  "format": "tileset15",
+  "layout": {
+    "type": "tileset15",
+    "description": "4x4 grid of 16 unique Wang tiles",
+    "grid_size": {
+      "width": 4,
+      "height": 4
+    },
+    "tile_count": 16
+  },
+  "pattern_system": {
+    "type": "4x4_wildcard",
+    "description": "4\u00d74 patterns with wildcards for flexible tile matching",
+    "wildcard_value": 255,
+    "pattern_layout": {
+      "description": "4\u00d74 grid where center 2\u00d72 matches tile corners, outer ring uses wildcards",
+      "example": {
+        "row_0": "All wildcards (*)",
+        "row_1": "Wildcard + NW corner + NE corner + Wildcard",
+        "row_2": "Wildcard + SW corner + SE corner + Wildcard",
+        "row_3": "All wildcards (*)"
+      }
+    },
+    "terrain_encoding": {
+      "lower": 0,
+      "upper": 1,
+      "transition": 2,
+      "wildcard": 255
+    },
+    "usage": {
+      "description": "Sample 4\u00d74 terrain around tile position, encode as pattern key, lookup in cache",
+      "benefits": [
+        "O(1) lookup performance",
+        "Flexible edge matching",
+        "Unified pattern system"
+      ]
+    }
+  },
+  "tileset_image": {
+    "filename": "tileset_830e4a85-0aeb-4d69-a8c6-cef9aee98db3.png",
+    "format": "PNG",
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    }
+  }
+}

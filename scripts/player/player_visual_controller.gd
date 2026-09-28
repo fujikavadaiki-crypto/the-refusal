@@ -5,8 +5,12 @@ extends Node2D
 signal audio_cue_requested(cue: StringName)
 
 const IMPACT := preload("res://scenes/player/visuals/carrasco_impact.tscn")
+const MODULAR_CARRASCO := preload("res://scenes/player/visuals/carrasco_modular.tscn")
+const OFFICIAL_CARRASCO := preload("res://scenes/player/visuals/carrasco_base_official.tscn")
 @export var slice_feedback_enabled := false
 @export var approved_board_mode := false
+@export var modular_carrasco_enabled := true
+@export var official_base_enabled := true
 
 @onready var player: CharacterBody2D = get_parent() as CharacterBody2D
 @onready var combat: PlayerCombat = $"../Combat"
@@ -127,8 +131,11 @@ func _on_mask_changed(data: MaskData) -> void:
     tribunal_was_active = false
     if not masked:
         return
-    form = data.visual_scene.instantiate() as Node2D
-    if approved_board_mode:
+    var visual_scene: PackedScene = data.visual_scene
+    if data.mask_id == &"carrasco_base" and modular_carrasco_enabled:
+        visual_scene = OFFICIAL_CARRASCO if official_base_enabled else MODULAR_CARRASCO
+    form = visual_scene.instantiate() as Node2D
+    if approved_board_mode and visual_scene == data.visual_scene:
         form.set("approved_board_mode", true)
     add_child(form)
     active_marker.modulate.a = 0.0

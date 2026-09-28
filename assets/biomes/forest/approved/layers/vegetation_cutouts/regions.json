@@ -1,0 +1,282 @@
+[
+  {
+    "name": "arch_leaf_left_tip",
+    "group": "canopy",
+    "pivot": [
+      80,
+      149
+    ],
+    "box": [
+      53,
+      121,
+      88,
+      156
+    ]
+  },
+  {
+    "name": "arch_leaf_right_tip",
+    "group": "canopy",
+    "pivot": [
+      206,
+      153
+    ],
+    "box": [
+      199,
+      125,
+      239,
+      164
+    ]
+  },
+  {
+    "name": "tree_leaf_left_tip",
+    "group": "canopy",
+    "pivot": [
+      352,
+      283
+    ],
+    "box": [
+      326,
+      252,
+      362,
+      292
+    ]
+  },
+  {
+    "name": "tree_leaf_top_tip",
+    "group": "canopy",
+    "pivot": [
+      396,
+      244
+    ],
+    "box": [
+      377,
+      216,
+      412,
+      251
+    ]
+  },
+  {
+    "name": "tree_leaf_right_tip",
+    "group": "canopy",
+    "pivot": [
+      438,
+      288
+    ],
+    "box": [
+      432,
+      260,
+      470,
+      299
+    ]
+  },
+  {
+    "name": "far_tree_left_tip",
+    "group": "canopy",
+    "pivot": [
+      1676,
+      254
+    ],
+    "box": [
+      1648,
+      221,
+      1687,
+      261
+    ]
+  },
+  {
+    "name": "far_tree_top_tip",
+    "group": "canopy",
+    "pivot": [
+      1740,
+      194
+    ],
+    "box": [
+      1723,
+      163,
+      1759,
+      202
+    ]
+  },
+  {
+    "name": "far_tree_right_tip",
+    "group": "canopy",
+    "pivot": [
+      1800,
+      244
+    ],
+    "box": [
+      1794,
+      213,
+      1832,
+      253
+    ]
+  },
+  {
+    "name": "arch_vine_center_tail",
+    "group": "vine",
+    "pivot": [
+      148,
+      190
+    ],
+    "box": [
+      139,
+      184,
+      157,
+      261
+    ]
+  },
+  {
+    "name": "arch_vine_right_tail",
+    "group": "vine",
+    "pivot": [
+      165,
+      176
+    ],
+    "box": [
+      157,
+      170,
+      176,
+      232
+    ]
+  },
+  {
+    "name": "trunk_vine_tail",
+    "group": "vine",
+    "pivot": [
+      781,
+      169
+    ],
+    "box": [
+      772,
+      163,
+      791,
+      216
+    ]
+  },
+  {
+    "name": "entrance_moss_tip",
+    "group": "moss",
+    "pivot": [
+      221,
+      332
+    ],
+    "box": [
+      211,
+      327,
+      234,
+      366
+    ]
+  },
+  {
+    "name": "early_edge_moss_tip",
+    "group": "moss",
+    "pivot": [
+      484,
+      418
+    ],
+    "box": [
+      475,
+      413,
+      496,
+      446
+    ]
+  },
+  {
+    "name": "floating_moss_left_tip",
+    "group": "moss",
+    "pivot": [
+      732,
+      333
+    ],
+    "box": [
+      723,
+      328,
+      743,
+      367
+    ]
+  },
+  {
+    "name": "floating_moss_middle_tip",
+    "group": "moss",
+    "pivot": [
+      758,
+      334
+    ],
+    "box": [
+      749,
+      329,
+      768,
+      360
+    ]
+  },
+  {
+    "name": "floating_moss_right_tip",
+    "group": "moss",
+    "pivot": [
+      807,
+      333
+    ],
+    "box": [
+      798,
+      327,
+      817,
+      360
+    ]
+  },
+  {
+    "name": "waterfall_moss_tip",
+    "group": "moss",
+    "pivot": [
+      1509,
+      419
+    ],
+    "box": [
+      1500,
+      414,
+      1520,
+      446
+    ]
+  },
+  {
+    "name": "right_ledge_moss_tip",
+    "group": "moss",
+    "pivot": [
+      1807,
+      295
+    ],
+    "box": [
+      1797,
+      290,
+      1818,
+      324
+    ]
+  },
+  {
+    "name": "near_leaf_left_tip",
+    "group": "near",
+    "pivot": [
+      162,
+      43
+    ],
+    "box": [
+      147,
+      33,
+      180,
+      73
+    ]
+  },
+  {
+    "name": "near_leaf_mid_tip",
+    "group": "near",
+    "pivot": [
+      940,
+      43
+    ],
+    "box": [
+      925,
+      33,
+      958,
+      72
+    ]
+  }
+]

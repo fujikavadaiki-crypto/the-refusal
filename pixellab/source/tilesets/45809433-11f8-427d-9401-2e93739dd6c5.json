@@ -1,0 +1,1264 @@
+{
+  "id": "45809433-11f8-427d-9401-2e93739dd6c5",
+  "name": "broken gothic stone pillar covered with moss and",
+  "tileSize": {
+    "width": 32,
+    "height": 32
+  },
+  "baseTileIds": null,
+  "terrainMapping": {
+    "lower": 4,
+    "upper": 0
+  },
+  "lowerDescription": "dark weathered gothic stone pillar with creeping moss and damp decay featuring soft mossy highlights and gentle shadowy crevices",
+  "upperDescription": "chipped medieval gothic column rim top surface with mossy patches and atmospheric weathering showing soft rounded depth",
+  "user_id": "e85f9ec5-58c7-4302-8ca4-a6a80e99431c",
+  "lower_description": "dark weathered gothic stone pillar with creeping moss and damp decay featuring soft mossy highlights and gentle shadowy crevices",
+  "upper_description": "chipped medieval gothic column rim top surface with mossy patches and atmospheric weathering showing soft rounded depth",
+  "transition_description": null,
+  "tile_size": {
+    "width": 32,
+    "height": 32
+  },
+  "transition_size": 0,
+  "view": "side",
+  "style_settings": null,
+  "generation_parameters": null,
+  "base_tile_ids": {
+    "lower": "5a54ea1a-228f-4af3-b1f1-00197cde6e74",
+    "upper": "9eb50479-7f8e-401a-9d9c-834d88a512f1"
+  },
+  "tileset_data": {
+    "tiles": [
+      {
+        "id": "9967574a-8134-477d-8b51-79810ab797ad",
+        "name": "wang_13",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "da1a621c-b00b-4fee-bd9f-f9f0421e42cb",
+            "f550dea2-d8e0-4ffe-a9d9-236562d4c905",
+            "c4c72c97-6158-4b7e-9f2b-a9bfb2c00761",
+            "0016383b-3351-4588-814d-a8851235bc47"
+          ],
+          "west": [
+            "0be67113-f813-4a56-b194-be6669f233a8",
+            "c4c72c97-6158-4b7e-9f2b-a9bfb2c00761",
+            "b600568b-49f7-4a01-aece-dcb6b27db6ea",
+            "9eb50479-7f8e-401a-9d9c-834d88a512f1"
+          ],
+          "north": [
+            "da1a621c-b00b-4fee-bd9f-f9f0421e42cb",
+            "41919755-de31-4c39-bb41-b2c1def5942f",
+            "0016383b-3351-4588-814d-a8851235bc47",
+            "82fbb82c-4c24-4ad6-9214-f01ed64063fc"
+          ],
+          "south": [
+            "944cf5e4-764c-4c72-98e8-e7fff4b79e36",
+            "0be67113-f813-4a56-b194-be6669f233a8",
+            "82fbb82c-4c24-4ad6-9214-f01ed64063fc",
+            "9eb50479-7f8e-401a-9d9c-834d88a512f1"
+          ]
+        },
+        "description": "transparent background and dark weathered gothic stone pillar with creeping moss and damp decay featuring soft mossy highlights and gentle shadowy crevices - wang_13",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "20eaafff-ca7c-494e-b436-487ee11f0a4d",
+        "name": "wang_10",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "7cbc549f-44c2-4032-9da1-98b4799d426d",
+            "0b6f4d8c-a55b-48d8-8201-a9acf88649d6",
+            "3fc797a1-55ed-43ef-b85a-483565d1ee3c"
+          ],
+          "west": [
+            "0be67113-f813-4a56-b194-be6669f233a8",
+            "c4c72c97-6158-4b7e-9f2b-a9bfb2c00761",
+            "9eb50479-7f8e-401a-9d9c-834d88a512f1"
+          ],
+          "north": [
+            "da1a621c-b00b-4fee-bd9f-f9f0421e42cb",
+            "41919755-de31-4c39-bb41-b2c1def5942f",
+            "0016383b-3351-4588-814d-a8851235bc47",
+            "82fbb82c-4c24-4ad6-9214-f01ed64063fc"
+          ],
+          "south": [
+            "5a54ea1a-228f-4af3-b1f1-00197cde6e74",
+            "04df44e2-496b-427c-9592-e3eed9185788",
+            "41919755-de31-4c39-bb41-b2c1def5942f",
+            "6d6b76f9-c1ef-4227-b6d3-a56ff8d58384"
+          ]
+        },
+        "description": "transparent background and dark weathered gothic stone pillar with creeping moss and damp decay featuring soft mossy highlights and gentle shadowy crevices - wang_10",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "7121e9b7-b8dd-42a4-898e-734bd828380a",
+        "name": "wang_4",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "6d6b76f9-c1ef-4227-b6d3-a56ff8d58384",
+            "82fbb82c-4c24-4ad6-9214-f01ed64063fc",
+            "9eb50479-7f8e-401a-9d9c-834d88a512f1"
+          ],
+          "west": [
+            "04df44e2-496b-427c-9592-e3eed9185788",
+            "0016383b-3351-4588-814d-a8851235bc47",
+            "3fc797a1-55ed-43ef-b85a-483565d1ee3c"
+          ],
+          "north": [
+            "5a54ea1a-228f-4af3-b1f1-00197cde6e74",
+            "7cbc549f-44c2-4032-9da1-98b4799d426d",
+            "0be67113-f813-4a56-b194-be6669f233a8",
+            "b600568b-49f7-4a01-aece-dcb6b27db6ea"
+          ],
+          "south": [
+            "da1a621c-b00b-4fee-bd9f-f9f0421e42cb",
+            "c4c72c97-6158-4b7e-9f2b-a9bfb2c00761",
+            "b600568b-49f7-4a01-aece-dcb6b27db6ea",
+            "0b6f4d8c-a55b-48d8-8201-a9acf88649d6"
+          ]
+        },
+        "description": "transparent background and dark weathered gothic stone pillar with creeping moss and damp decay featuring soft mossy highlights and gentle shadowy crevices - wang_4",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "60835712-2824-457e-99b2-b442ede8011b",
+        "name": "wang_12",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "da1a621c-b00b-4fee-bd9f-f9f0421e42cb",
+            "f550dea2-d8e0-4ffe-a9d9-236562d4c905",
+            "c4c72c97-6158-4b7e-9f2b-a9bfb2c00761",
+            "0016383b-3351-4588-814d-a8851235bc47"
+          ],
+          "west": [
+            "04df44e2-496b-427c-9592-e3eed9185788",
+            "41919755-de31-4c39-bb41-b2c1def5942f",
+            "0016383b-3351-4588-814d-a8851235bc47",
+            "3fc797a1-55ed-43ef-b85a-483565d1ee3c"
+          ],
+          "north": [
+            "04df44e2-496b-427c-9592-e3eed9185788",
+            "944cf5e4-764c-4c72-98e8-e7fff4b79e36",
+            "0b6f4d8c-a55b-48d8-8201-a9acf88649d6",
+            "3fc797a1-55ed-43ef-b85a-483565d1ee3c"
+          ],
+          "south": [
+            "da1a621c-b00b-4fee-bd9f-f9f0421e42cb",
+            "c4c72c97-6158-4b7e-9f2b-a9bfb2c00761",
+            "b600568b-49f7-4a01-aece-dcb6b27db6ea",
+            "0b6f4d8c-a55b-48d8-8201-a9acf88649d6"
+          ]
+        },
+        "description": "transparent background and dark weathered gothic stone pillar with creeping moss and damp decay featuring soft mossy highlights and gentle shadowy crevices - wang_12",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 5,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "ee6ba9a7-0081-4448-9d2c-9139a89cd19c",
+        "name": "wang_6",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "da1a621c-b00b-4fee-bd9f-f9f0421e42cb",
+            "f550dea2-d8e0-4ffe-a9d9-236562d4c905",
+            "c4c72c97-6158-4b7e-9f2b-a9bfb2c00761",
+            "0016383b-3351-4588-814d-a8851235bc47"
+          ],
+          "west": [
+            "5a54ea1a-228f-4af3-b1f1-00197cde6e74",
+            "7cbc549f-44c2-4032-9da1-98b4799d426d",
+            "6d6b76f9-c1ef-4227-b6d3-a56ff8d58384",
+            "f550dea2-d8e0-4ffe-a9d9-236562d4c905"
+          ],
+          "north": [
+            "04df44e2-496b-427c-9592-e3eed9185788",
+            "0b6f4d8c-a55b-48d8-8201-a9acf88649d6",
+            "3fc797a1-55ed-43ef-b85a-483565d1ee3c"
+          ],
+          "south": [
+            "0be67113-f813-4a56-b194-be6669f233a8",
+            "82fbb82c-4c24-4ad6-9214-f01ed64063fc",
+            "9eb50479-7f8e-401a-9d9c-834d88a512f1"
+          ]
+        },
+        "description": "transparent background and dark weathered gothic stone pillar with creeping moss and damp decay featuring soft mossy highlights and gentle shadowy crevices - wang_6",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 5
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "4a5147bb-d334-4d57-bd72-28f337db8e3e",
+        "name": "wang_8",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "5a54ea1a-228f-4af3-b1f1-00197cde6e74",
+            "04df44e2-496b-427c-9592-e3eed9185788",
+            "944cf5e4-764c-4c72-98e8-e7fff4b79e36",
+            "0be67113-f813-4a56-b194-be6669f233a8"
+          ],
+          "west": [
+            "da1a621c-b00b-4fee-bd9f-f9f0421e42cb",
+            "944cf5e4-764c-4c72-98e8-e7fff4b79e36",
+            "82fbb82c-4c24-4ad6-9214-f01ed64063fc",
+            "0b6f4d8c-a55b-48d8-8201-a9acf88649d6"
+          ],
+          "north": [
+            "6d6b76f9-c1ef-4227-b6d3-a56ff8d58384",
+            "c4c72c97-6158-4b7e-9f2b-a9bfb2c00761",
+            "9eb50479-7f8e-401a-9d9c-834d88a512f1"
+          ],
+          "south": [
+            "7cbc549f-44c2-4032-9da1-98b4799d426d",
+            "0016383b-3351-4588-814d-a8851235bc47",
+            "3fc797a1-55ed-43ef-b85a-483565d1ee3c"
+          ]
+        },
+        "description": "transparent background and dark weathered gothic stone pillar with creeping moss and damp decay featuring soft mossy highlights and gentle shadowy crevices - wang_8",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "5a54ea1a-228f-4af3-b1f1-00197cde6e74",
+        "name": "wang_0",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "04df44e2-496b-427c-9592-e3eed9185788",
+            "944cf5e4-764c-4c72-98e8-e7fff4b79e36",
+            "0be67113-f813-4a56-b194-be6669f233a8"
+          ],
+          "west": [
+            "7cbc549f-44c2-4032-9da1-98b4799d426d",
+            "6d6b76f9-c1ef-4227-b6d3-a56ff8d58384",
+            "f550dea2-d8e0-4ffe-a9d9-236562d4c905"
+          ],
+          "north": [
+            "7cbc549f-44c2-4032-9da1-98b4799d426d",
+            "0be67113-f813-4a56-b194-be6669f233a8",
+            "b600568b-49f7-4a01-aece-dcb6b27db6ea"
+          ],
+          "south": [
+            "04df44e2-496b-427c-9592-e3eed9185788",
+            "41919755-de31-4c39-bb41-b2c1def5942f",
+            "6d6b76f9-c1ef-4227-b6d3-a56ff8d58384"
+          ]
+        },
+        "description": "transparent background and dark weathered gothic stone pillar with creeping moss and damp decay featuring soft mossy highlights and gentle shadowy crevices - wang_0",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 6
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "d58e5282-d5c2-4447-9bf2-fdd13676b431",
+        "name": "wang_1",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "f550dea2-d8e0-4ffe-a9d9-236562d4c905",
+            "c4c72c97-6158-4b7e-9f2b-a9bfb2c00761",
+            "0016383b-3351-4588-814d-a8851235bc47"
+          ],
+          "west": [
+            "944cf5e4-764c-4c72-98e8-e7fff4b79e36",
+            "82fbb82c-4c24-4ad6-9214-f01ed64063fc",
+            "0b6f4d8c-a55b-48d8-8201-a9acf88649d6"
+          ],
+          "north": [
+            "41919755-de31-4c39-bb41-b2c1def5942f",
+            "0016383b-3351-4588-814d-a8851235bc47",
+            "82fbb82c-4c24-4ad6-9214-f01ed64063fc"
+          ],
+          "south": [
+            "c4c72c97-6158-4b7e-9f2b-a9bfb2c00761",
+            "b600568b-49f7-4a01-aece-dcb6b27db6ea",
+            "0b6f4d8c-a55b-48d8-8201-a9acf88649d6"
+          ]
+        },
+        "description": "transparent background and dark weathered gothic stone pillar with creeping moss and damp decay featuring soft mossy highlights and gentle shadowy crevices - wang_1",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "517b4fef-5b93-4426-a5e6-a91f402fe4d7",
+        "name": "wang_11",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "41919755-de31-4c39-bb41-b2c1def5942f",
+            "6d6b76f9-c1ef-4227-b6d3-a56ff8d58384",
+            "82fbb82c-4c24-4ad6-9214-f01ed64063fc",
+            "9eb50479-7f8e-401a-9d9c-834d88a512f1"
+          ],
+          "west": [
+            "da1a621c-b00b-4fee-bd9f-f9f0421e42cb",
+            "944cf5e4-764c-4c72-98e8-e7fff4b79e36",
+            "82fbb82c-4c24-4ad6-9214-f01ed64063fc",
+            "0b6f4d8c-a55b-48d8-8201-a9acf88649d6"
+          ],
+          "north": [
+            "6d6b76f9-c1ef-4227-b6d3-a56ff8d58384",
+            "f550dea2-d8e0-4ffe-a9d9-236562d4c905",
+            "c4c72c97-6158-4b7e-9f2b-a9bfb2c00761",
+            "9eb50479-7f8e-401a-9d9c-834d88a512f1"
+          ],
+          "south": [
+            "da1a621c-b00b-4fee-bd9f-f9f0421e42cb",
+            "c4c72c97-6158-4b7e-9f2b-a9bfb2c00761",
+            "b600568b-49f7-4a01-aece-dcb6b27db6ea",
+            "0b6f4d8c-a55b-48d8-8201-a9acf88649d6"
+          ]
+        },
+        "description": "transparent background and dark weathered gothic stone pillar with creeping moss and damp decay featuring soft mossy highlights and gentle shadowy crevices - wang_11",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "4a962fba-db7f-4b31-933a-429a8eb8361a",
+        "name": "wang_3",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "41919755-de31-4c39-bb41-b2c1def5942f",
+            "6d6b76f9-c1ef-4227-b6d3-a56ff8d58384",
+            "82fbb82c-4c24-4ad6-9214-f01ed64063fc",
+            "9eb50479-7f8e-401a-9d9c-834d88a512f1"
+          ],
+          "west": [
+            "5a54ea1a-228f-4af3-b1f1-00197cde6e74",
+            "7cbc549f-44c2-4032-9da1-98b4799d426d",
+            "6d6b76f9-c1ef-4227-b6d3-a56ff8d58384",
+            "f550dea2-d8e0-4ffe-a9d9-236562d4c905"
+          ],
+          "north": [
+            "5a54ea1a-228f-4af3-b1f1-00197cde6e74",
+            "7cbc549f-44c2-4032-9da1-98b4799d426d",
+            "0be67113-f813-4a56-b194-be6669f233a8",
+            "b600568b-49f7-4a01-aece-dcb6b27db6ea"
+          ],
+          "south": [
+            "944cf5e4-764c-4c72-98e8-e7fff4b79e36",
+            "0be67113-f813-4a56-b194-be6669f233a8",
+            "82fbb82c-4c24-4ad6-9214-f01ed64063fc",
+            "9eb50479-7f8e-401a-9d9c-834d88a512f1"
+          ]
+        },
+        "description": "transparent background and dark weathered gothic stone pillar with creeping moss and damp decay featuring soft mossy highlights and gentle shadowy crevices - wang_3",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "ea81515b-ff3e-4412-8d7e-0556b605921f",
+        "name": "wang_2",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "5a54ea1a-228f-4af3-b1f1-00197cde6e74",
+            "04df44e2-496b-427c-9592-e3eed9185788",
+            "944cf5e4-764c-4c72-98e8-e7fff4b79e36",
+            "0be67113-f813-4a56-b194-be6669f233a8"
+          ],
+          "west": [
+            "0be67113-f813-4a56-b194-be6669f233a8",
+            "c4c72c97-6158-4b7e-9f2b-a9bfb2c00761",
+            "b600568b-49f7-4a01-aece-dcb6b27db6ea",
+            "9eb50479-7f8e-401a-9d9c-834d88a512f1"
+          ],
+          "north": [
+            "6d6b76f9-c1ef-4227-b6d3-a56ff8d58384",
+            "f550dea2-d8e0-4ffe-a9d9-236562d4c905",
+            "c4c72c97-6158-4b7e-9f2b-a9bfb2c00761",
+            "9eb50479-7f8e-401a-9d9c-834d88a512f1"
+          ],
+          "south": [
+            "5a54ea1a-228f-4af3-b1f1-00197cde6e74",
+            "04df44e2-496b-427c-9592-e3eed9185788",
+            "41919755-de31-4c39-bb41-b2c1def5942f",
+            "6d6b76f9-c1ef-4227-b6d3-a56ff8d58384"
+          ]
+        },
+        "description": "transparent background and dark weathered gothic stone pillar with creeping moss and damp decay featuring soft mossy highlights and gentle shadowy crevices - wang_2",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "6845d0b8-176a-4dc2-8ae6-9c04d714988e",
+        "name": "wang_5",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "5a54ea1a-228f-4af3-b1f1-00197cde6e74",
+            "04df44e2-496b-427c-9592-e3eed9185788",
+            "944cf5e4-764c-4c72-98e8-e7fff4b79e36",
+            "0be67113-f813-4a56-b194-be6669f233a8"
+          ],
+          "west": [
+            "04df44e2-496b-427c-9592-e3eed9185788",
+            "41919755-de31-4c39-bb41-b2c1def5942f",
+            "0016383b-3351-4588-814d-a8851235bc47",
+            "3fc797a1-55ed-43ef-b85a-483565d1ee3c"
+          ],
+          "north": [
+            "5a54ea1a-228f-4af3-b1f1-00197cde6e74",
+            "7cbc549f-44c2-4032-9da1-98b4799d426d",
+            "0be67113-f813-4a56-b194-be6669f233a8",
+            "b600568b-49f7-4a01-aece-dcb6b27db6ea"
+          ],
+          "south": [
+            "7cbc549f-44c2-4032-9da1-98b4799d426d",
+            "f550dea2-d8e0-4ffe-a9d9-236562d4c905",
+            "0016383b-3351-4588-814d-a8851235bc47",
+            "3fc797a1-55ed-43ef-b85a-483565d1ee3c"
+          ]
+        },
+        "description": "transparent background and dark weathered gothic stone pillar with creeping moss and damp decay featuring soft mossy highlights and gentle shadowy crevices - wang_5",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "9eb50479-7f8e-401a-9d9c-834d88a512f1",
+        "name": "wang_15",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "7cbc549f-44c2-4032-9da1-98b4799d426d",
+            "b600568b-49f7-4a01-aece-dcb6b27db6ea",
+            "0b6f4d8c-a55b-48d8-8201-a9acf88649d6",
+            "3fc797a1-55ed-43ef-b85a-483565d1ee3c"
+          ],
+          "west": [
+            "04df44e2-496b-427c-9592-e3eed9185788",
+            "41919755-de31-4c39-bb41-b2c1def5942f",
+            "0016383b-3351-4588-814d-a8851235bc47",
+            "3fc797a1-55ed-43ef-b85a-483565d1ee3c"
+          ],
+          "north": [
+            "04df44e2-496b-427c-9592-e3eed9185788",
+            "944cf5e4-764c-4c72-98e8-e7fff4b79e36",
+            "0b6f4d8c-a55b-48d8-8201-a9acf88649d6",
+            "3fc797a1-55ed-43ef-b85a-483565d1ee3c"
+          ],
+          "south": [
+            "7cbc549f-44c2-4032-9da1-98b4799d426d",
+            "f550dea2-d8e0-4ffe-a9d9-236562d4c905",
+            "0016383b-3351-4588-814d-a8851235bc47",
+            "3fc797a1-55ed-43ef-b85a-483565d1ee3c"
+          ]
+        },
+        "description": "transparent background and dark weathered gothic stone pillar with creeping moss and damp decay featuring soft mossy highlights and gentle shadowy crevices - wang_15",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "8e30438c-d14d-44e4-ae40-d913feb54311",
+        "name": "wang_14",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "41919755-de31-4c39-bb41-b2c1def5942f",
+            "6d6b76f9-c1ef-4227-b6d3-a56ff8d58384",
+            "82fbb82c-4c24-4ad6-9214-f01ed64063fc",
+            "9eb50479-7f8e-401a-9d9c-834d88a512f1"
+          ],
+          "west": [
+            "0be67113-f813-4a56-b194-be6669f233a8",
+            "c4c72c97-6158-4b7e-9f2b-a9bfb2c00761",
+            "b600568b-49f7-4a01-aece-dcb6b27db6ea",
+            "9eb50479-7f8e-401a-9d9c-834d88a512f1"
+          ],
+          "north": [
+            "6d6b76f9-c1ef-4227-b6d3-a56ff8d58384",
+            "f550dea2-d8e0-4ffe-a9d9-236562d4c905",
+            "c4c72c97-6158-4b7e-9f2b-a9bfb2c00761",
+            "9eb50479-7f8e-401a-9d9c-834d88a512f1"
+          ],
+          "south": [
+            "944cf5e4-764c-4c72-98e8-e7fff4b79e36",
+            "0be67113-f813-4a56-b194-be6669f233a8",
+            "82fbb82c-4c24-4ad6-9214-f01ed64063fc",
+            "9eb50479-7f8e-401a-9d9c-834d88a512f1"
+          ]
+        },
+        "description": "transparent background and dark weathered gothic stone pillar with creeping moss and damp decay featuring soft mossy highlights and gentle shadowy crevices - wang_14",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "dbca167f-5f82-4e37-8801-5748a5f2f946",
+        "name": "wang_9",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "7cbc549f-44c2-4032-9da1-98b4799d426d",
+            "b600568b-49f7-4a01-aece-dcb6b27db6ea",
+            "0b6f4d8c-a55b-48d8-8201-a9acf88649d6",
+            "3fc797a1-55ed-43ef-b85a-483565d1ee3c"
+          ],
+          "west": [
+            "da1a621c-b00b-4fee-bd9f-f9f0421e42cb",
+            "944cf5e4-764c-4c72-98e8-e7fff4b79e36",
+            "82fbb82c-4c24-4ad6-9214-f01ed64063fc",
+            "0b6f4d8c-a55b-48d8-8201-a9acf88649d6"
+          ],
+          "north": [
+            "da1a621c-b00b-4fee-bd9f-f9f0421e42cb",
+            "41919755-de31-4c39-bb41-b2c1def5942f",
+            "0016383b-3351-4588-814d-a8851235bc47",
+            "82fbb82c-4c24-4ad6-9214-f01ed64063fc"
+          ],
+          "south": [
+            "7cbc549f-44c2-4032-9da1-98b4799d426d",
+            "f550dea2-d8e0-4ffe-a9d9-236562d4c905",
+            "0016383b-3351-4588-814d-a8851235bc47",
+            "3fc797a1-55ed-43ef-b85a-483565d1ee3c"
+          ]
+        },
+        "description": "transparent background and dark weathered gothic stone pillar with creeping moss and damp decay featuring soft mossy highlights and gentle shadowy crevices - wang_9",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "3fa4b4b3-9314-482a-a9a4-a790036fbfaf",
+        "name": "wang_7",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "7cbc549f-44c2-4032-9da1-98b4799d426d",
+            "b600568b-49f7-4a01-aece-dcb6b27db6ea",
+            "0b6f4d8c-a55b-48d8-8201-a9acf88649d6",
+            "3fc797a1-55ed-43ef-b85a-483565d1ee3c"
+          ],
+          "west": [
+            "5a54ea1a-228f-4af3-b1f1-00197cde6e74",
+            "7cbc549f-44c2-4032-9da1-98b4799d426d",
+            "6d6b76f9-c1ef-4227-b6d3-a56ff8d58384",
+            "f550dea2-d8e0-4ffe-a9d9-236562d4c905"
+          ],
+          "north": [
+            "04df44e2-496b-427c-9592-e3eed9185788",
+            "944cf5e4-764c-4c72-98e8-e7fff4b79e36",
+            "0b6f4d8c-a55b-48d8-8201-a9acf88649d6",
+            "3fc797a1-55ed-43ef-b85a-483565d1ee3c"
+          ],
+          "south": [
+            "5a54ea1a-228f-4af3-b1f1-00197cde6e74",
+            "04df44e2-496b-427c-9592-e3eed9185788",
+            "41919755-de31-4c39-bb41-b2c1def5942f",
+            "6d6b76f9-c1ef-4227-b6d3-a56ff8d58384"
+          ]
+        },
+        "description": "transparent background and dark weathered gothic stone pillar with creeping moss and damp decay featuring soft mossy highlights and gentle shadowy crevices - wang_7",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      }
+    ],
+    "tile_size": {
+      "width": 32,
+      "height": 32
+    },
+    "total_tiles": 16,
+    "tileset_type": "sidescroller",
+    "terrain_types": [
+      "central",
+      "background"
+    ],
+    "spritesheet_url": "https://backblaze.pixellab.ai/file/pixellab-tiles/e85f9ec5-58c7-4302-8ca4-a6a80e99431c/45809433-11f8-427d-9401-2e93739dd6c5/spritesheet.png",
+    "spritesheet_grid": {
+      "cols": 4,
+      "rows": 4
+    },
+    "spritesheet_layout": "tileset15_4x4"
+  },
+  "metadata": {
+    "user_prompts": {
+      "lower": "broken gothic stone pillar covered with moss and creeping vegetation, ancient weathered ruin, cracked dark stone, desaturated green gray and brown palette, detailed pixel art, forgotten forest style",
+      "upper": "ruined medieval gothic column fragment with chipped stone, moss growth and damp forest decay, dark atmospheric pixel art",
+      "transition": ""
+    },
+    "terrain_prompts": {
+      "lower": "dark weathered gothic stone pillar with creeping moss and damp decay featuring soft mossy highlights and gentle shadowy crevices",
+      "upper": "transparent background",
+      "transition": "chipped medieval gothic column rim top surface with mossy patches and atmospheric weathering showing soft rounded depth"
+    }
+  },
+  "created_at": "2026-09-26T17:17:17.633918+00:00",
+  "updated_at": "2026-09-26T17:18:35.384486+00:00",
+  "status": "completed",
+  "format": "tileset15",
+  "layout": {
+    "type": "tileset15",
+    "description": "4x4 grid of 16 unique Wang tiles",
+    "grid_size": {
+      "width": 4,
+      "height": 4
+    },
+    "tile_count": 16
+  },
+  "pattern_system": {
+    "type": "4x4_wildcard",
+    "description": "4\u00d74 patterns with wildcards for flexible tile matching",
+    "wildcard_value": 255,
+    "pattern_layout": {
+      "description": "4\u00d74 grid where center 2\u00d72 matches tile corners, outer ring uses wildcards",
+      "example": {
+        "row_0": "All wildcards (*)",
+        "row_1": "Wildcard + NW corner + NE corner + Wildcard",
+        "row_2": "Wildcard + SW corner + SE corner + Wildcard",
+        "row_3": "All wildcards (*)"
+      }
+    },
+    "terrain_encoding": {
+      "lower": 0,
+      "upper": 1,
+      "transition": 2,
+      "wildcard": 255
+    },
+    "usage": {
+      "description": "Sample 4\u00d74 terrain around tile position, encode as pattern key, lookup in cache",
+      "benefits": [
+        "O(1) lookup performance",
+        "Flexible edge matching",
+        "Unified pattern system"
+      ]
+    }
+  },
+  "tileset_image": {
+    "filename": "tileset_45809433-11f8-427d-9401-2e93739dd6c5.png",
+    "format": "PNG",
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    }
+  }
+}

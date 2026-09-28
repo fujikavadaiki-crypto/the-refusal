@@ -1,0 +1,1264 @@
+{
+  "id": "dc6dd63c-8811-43ac-9d7e-35dfc6b09077",
+  "name": "irregular dark rock cluster with moss, dead",
+  "tileSize": {
+    "width": 32,
+    "height": 32
+  },
+  "baseTileIds": null,
+  "terrainMapping": {
+    "lower": 3,
+    "upper": 0
+  },
+  "lowerDescription": "jagged dark stone cluster embedded with damp forest moss, sparse dead grass tufts, broken twigs, and subtle earthy decay, rendered in a desaturated green, brown, and gray palette with soft organic highlights and shadows",
+  "upperDescription": "thin mossy forest stone top surface strip scattered with dead weeds and twig fragments, featuring soft medium depth shading and natural woodland weathering",
+  "user_id": "e85f9ec5-58c7-4302-8ca4-a6a80e99431c",
+  "lower_description": "jagged dark stone cluster embedded with damp forest moss, sparse dead grass tufts, broken twigs, and subtle earthy decay, rendered in a desaturated green, brown, and gray palette with soft organic highlights and shadows",
+  "upper_description": "thin mossy forest stone top surface strip scattered with dead weeds and twig fragments, featuring soft medium depth shading and natural woodland weathering",
+  "transition_description": null,
+  "tile_size": {
+    "width": 32,
+    "height": 32
+  },
+  "transition_size": 0,
+  "view": "side",
+  "style_settings": null,
+  "generation_parameters": null,
+  "base_tile_ids": {
+    "lower": "50569e3f-df7a-4778-b11a-b917b064e941",
+    "upper": "d7da169f-a2a6-4dae-8179-ef9261662e45"
+  },
+  "tileset_data": {
+    "tiles": [
+      {
+        "id": "6ac54cdc-d65f-4b6b-9ea9-41ac772287c0",
+        "name": "wang_13",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "b4799e37-4f71-43f8-aba7-d6e74bb93543",
+            "cafa66d9-1e67-4b19-950a-3afd09dead9b",
+            "6f349fd6-cc1d-4fa3-9f9e-c92e7ba2a1ab",
+            "aa6a6464-0e55-4e7d-8767-86a01ef90d56"
+          ],
+          "west": [
+            "9e39a2d8-c0e5-4026-87bf-9f76b9fe92e5",
+            "6f349fd6-cc1d-4fa3-9f9e-c92e7ba2a1ab",
+            "9dbebe29-8973-4550-acc3-cd9775658390",
+            "d7da169f-a2a6-4dae-8179-ef9261662e45"
+          ],
+          "north": [
+            "b4799e37-4f71-43f8-aba7-d6e74bb93543",
+            "37f2aad8-71f8-4be0-bd47-23a0965ad538",
+            "aa6a6464-0e55-4e7d-8767-86a01ef90d56",
+            "769a5f81-4a7a-4166-a143-18030c8190ad"
+          ],
+          "south": [
+            "e0b453aa-b4d2-4320-b026-341d91681c4e",
+            "9e39a2d8-c0e5-4026-87bf-9f76b9fe92e5",
+            "769a5f81-4a7a-4166-a143-18030c8190ad",
+            "d7da169f-a2a6-4dae-8179-ef9261662e45"
+          ]
+        },
+        "description": "transparent background and jagged dark stone cluster embedded with damp forest moss, sparse dead grass tufts, broken twigs, and subtle earthy decay, rendered in a desaturated green, brown, and gray palette with soft organic highlights and shadows - wang_13",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "96ec6db0-3102-4025-b935-c021335f46e5",
+        "name": "wang_10",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "1914d5d8-d844-454c-896d-e72b53da4889",
+            "5e32f869-1d73-4812-8fd5-204719c7de4d",
+            "10be2877-72fa-415a-997c-a0d0ae8b943e"
+          ],
+          "west": [
+            "9e39a2d8-c0e5-4026-87bf-9f76b9fe92e5",
+            "6f349fd6-cc1d-4fa3-9f9e-c92e7ba2a1ab",
+            "d7da169f-a2a6-4dae-8179-ef9261662e45"
+          ],
+          "north": [
+            "b4799e37-4f71-43f8-aba7-d6e74bb93543",
+            "37f2aad8-71f8-4be0-bd47-23a0965ad538",
+            "aa6a6464-0e55-4e7d-8767-86a01ef90d56",
+            "769a5f81-4a7a-4166-a143-18030c8190ad"
+          ],
+          "south": [
+            "50569e3f-df7a-4778-b11a-b917b064e941",
+            "743bea02-b494-462d-b9d2-d1ec7360e44a",
+            "37f2aad8-71f8-4be0-bd47-23a0965ad538",
+            "2514ec61-57f5-4a66-83bc-de1f9d6d819e"
+          ]
+        },
+        "description": "transparent background and jagged dark stone cluster embedded with damp forest moss, sparse dead grass tufts, broken twigs, and subtle earthy decay, rendered in a desaturated green, brown, and gray palette with soft organic highlights and shadows - wang_10",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "91f1c231-fb14-40b7-a653-3255521d976c",
+        "name": "wang_4",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "2514ec61-57f5-4a66-83bc-de1f9d6d819e",
+            "769a5f81-4a7a-4166-a143-18030c8190ad",
+            "d7da169f-a2a6-4dae-8179-ef9261662e45"
+          ],
+          "west": [
+            "743bea02-b494-462d-b9d2-d1ec7360e44a",
+            "aa6a6464-0e55-4e7d-8767-86a01ef90d56",
+            "10be2877-72fa-415a-997c-a0d0ae8b943e"
+          ],
+          "north": [
+            "50569e3f-df7a-4778-b11a-b917b064e941",
+            "1914d5d8-d844-454c-896d-e72b53da4889",
+            "9e39a2d8-c0e5-4026-87bf-9f76b9fe92e5",
+            "9dbebe29-8973-4550-acc3-cd9775658390"
+          ],
+          "south": [
+            "b4799e37-4f71-43f8-aba7-d6e74bb93543",
+            "6f349fd6-cc1d-4fa3-9f9e-c92e7ba2a1ab",
+            "9dbebe29-8973-4550-acc3-cd9775658390",
+            "5e32f869-1d73-4812-8fd5-204719c7de4d"
+          ]
+        },
+        "description": "transparent background and jagged dark stone cluster embedded with damp forest moss, sparse dead grass tufts, broken twigs, and subtle earthy decay, rendered in a desaturated green, brown, and gray palette with soft organic highlights and shadows - wang_4",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "8e0714e6-e284-4d0b-9c56-fb63a0ab2baa",
+        "name": "wang_12",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "b4799e37-4f71-43f8-aba7-d6e74bb93543",
+            "cafa66d9-1e67-4b19-950a-3afd09dead9b",
+            "6f349fd6-cc1d-4fa3-9f9e-c92e7ba2a1ab",
+            "aa6a6464-0e55-4e7d-8767-86a01ef90d56"
+          ],
+          "west": [
+            "743bea02-b494-462d-b9d2-d1ec7360e44a",
+            "37f2aad8-71f8-4be0-bd47-23a0965ad538",
+            "aa6a6464-0e55-4e7d-8767-86a01ef90d56",
+            "10be2877-72fa-415a-997c-a0d0ae8b943e"
+          ],
+          "north": [
+            "743bea02-b494-462d-b9d2-d1ec7360e44a",
+            "e0b453aa-b4d2-4320-b026-341d91681c4e",
+            "5e32f869-1d73-4812-8fd5-204719c7de4d",
+            "10be2877-72fa-415a-997c-a0d0ae8b943e"
+          ],
+          "south": [
+            "b4799e37-4f71-43f8-aba7-d6e74bb93543",
+            "6f349fd6-cc1d-4fa3-9f9e-c92e7ba2a1ab",
+            "9dbebe29-8973-4550-acc3-cd9775658390",
+            "5e32f869-1d73-4812-8fd5-204719c7de4d"
+          ]
+        },
+        "description": "transparent background and jagged dark stone cluster embedded with damp forest moss, sparse dead grass tufts, broken twigs, and subtle earthy decay, rendered in a desaturated green, brown, and gray palette with soft organic highlights and shadows - wang_12",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 5,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "34d37176-5de5-45b1-ba9f-4ca868c7c139",
+        "name": "wang_6",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "b4799e37-4f71-43f8-aba7-d6e74bb93543",
+            "cafa66d9-1e67-4b19-950a-3afd09dead9b",
+            "6f349fd6-cc1d-4fa3-9f9e-c92e7ba2a1ab",
+            "aa6a6464-0e55-4e7d-8767-86a01ef90d56"
+          ],
+          "west": [
+            "50569e3f-df7a-4778-b11a-b917b064e941",
+            "1914d5d8-d844-454c-896d-e72b53da4889",
+            "2514ec61-57f5-4a66-83bc-de1f9d6d819e",
+            "cafa66d9-1e67-4b19-950a-3afd09dead9b"
+          ],
+          "north": [
+            "743bea02-b494-462d-b9d2-d1ec7360e44a",
+            "5e32f869-1d73-4812-8fd5-204719c7de4d",
+            "10be2877-72fa-415a-997c-a0d0ae8b943e"
+          ],
+          "south": [
+            "9e39a2d8-c0e5-4026-87bf-9f76b9fe92e5",
+            "769a5f81-4a7a-4166-a143-18030c8190ad",
+            "d7da169f-a2a6-4dae-8179-ef9261662e45"
+          ]
+        },
+        "description": "transparent background and jagged dark stone cluster embedded with damp forest moss, sparse dead grass tufts, broken twigs, and subtle earthy decay, rendered in a desaturated green, brown, and gray palette with soft organic highlights and shadows - wang_6",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 5
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "95435e71-6667-4fd5-934e-0466964dafb3",
+        "name": "wang_8",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "50569e3f-df7a-4778-b11a-b917b064e941",
+            "743bea02-b494-462d-b9d2-d1ec7360e44a",
+            "e0b453aa-b4d2-4320-b026-341d91681c4e",
+            "9e39a2d8-c0e5-4026-87bf-9f76b9fe92e5"
+          ],
+          "west": [
+            "b4799e37-4f71-43f8-aba7-d6e74bb93543",
+            "e0b453aa-b4d2-4320-b026-341d91681c4e",
+            "769a5f81-4a7a-4166-a143-18030c8190ad",
+            "5e32f869-1d73-4812-8fd5-204719c7de4d"
+          ],
+          "north": [
+            "2514ec61-57f5-4a66-83bc-de1f9d6d819e",
+            "6f349fd6-cc1d-4fa3-9f9e-c92e7ba2a1ab",
+            "d7da169f-a2a6-4dae-8179-ef9261662e45"
+          ],
+          "south": [
+            "1914d5d8-d844-454c-896d-e72b53da4889",
+            "aa6a6464-0e55-4e7d-8767-86a01ef90d56",
+            "10be2877-72fa-415a-997c-a0d0ae8b943e"
+          ]
+        },
+        "description": "transparent background and jagged dark stone cluster embedded with damp forest moss, sparse dead grass tufts, broken twigs, and subtle earthy decay, rendered in a desaturated green, brown, and gray palette with soft organic highlights and shadows - wang_8",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "50569e3f-df7a-4778-b11a-b917b064e941",
+        "name": "wang_0",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "743bea02-b494-462d-b9d2-d1ec7360e44a",
+            "e0b453aa-b4d2-4320-b026-341d91681c4e",
+            "9e39a2d8-c0e5-4026-87bf-9f76b9fe92e5"
+          ],
+          "west": [
+            "1914d5d8-d844-454c-896d-e72b53da4889",
+            "2514ec61-57f5-4a66-83bc-de1f9d6d819e",
+            "cafa66d9-1e67-4b19-950a-3afd09dead9b"
+          ],
+          "north": [
+            "1914d5d8-d844-454c-896d-e72b53da4889",
+            "9e39a2d8-c0e5-4026-87bf-9f76b9fe92e5",
+            "9dbebe29-8973-4550-acc3-cd9775658390"
+          ],
+          "south": [
+            "743bea02-b494-462d-b9d2-d1ec7360e44a",
+            "37f2aad8-71f8-4be0-bd47-23a0965ad538",
+            "2514ec61-57f5-4a66-83bc-de1f9d6d819e"
+          ]
+        },
+        "description": "transparent background and jagged dark stone cluster embedded with damp forest moss, sparse dead grass tufts, broken twigs, and subtle earthy decay, rendered in a desaturated green, brown, and gray palette with soft organic highlights and shadows - wang_0",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 6
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "3002aa2e-322d-47df-98e7-b812966d7865",
+        "name": "wang_1",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "cafa66d9-1e67-4b19-950a-3afd09dead9b",
+            "6f349fd6-cc1d-4fa3-9f9e-c92e7ba2a1ab",
+            "aa6a6464-0e55-4e7d-8767-86a01ef90d56"
+          ],
+          "west": [
+            "e0b453aa-b4d2-4320-b026-341d91681c4e",
+            "769a5f81-4a7a-4166-a143-18030c8190ad",
+            "5e32f869-1d73-4812-8fd5-204719c7de4d"
+          ],
+          "north": [
+            "37f2aad8-71f8-4be0-bd47-23a0965ad538",
+            "aa6a6464-0e55-4e7d-8767-86a01ef90d56",
+            "769a5f81-4a7a-4166-a143-18030c8190ad"
+          ],
+          "south": [
+            "6f349fd6-cc1d-4fa3-9f9e-c92e7ba2a1ab",
+            "9dbebe29-8973-4550-acc3-cd9775658390",
+            "5e32f869-1d73-4812-8fd5-204719c7de4d"
+          ]
+        },
+        "description": "transparent background and jagged dark stone cluster embedded with damp forest moss, sparse dead grass tufts, broken twigs, and subtle earthy decay, rendered in a desaturated green, brown, and gray palette with soft organic highlights and shadows - wang_1",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "34e0bb22-7623-4ad2-9b72-c1af21c8ca60",
+        "name": "wang_11",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "37f2aad8-71f8-4be0-bd47-23a0965ad538",
+            "2514ec61-57f5-4a66-83bc-de1f9d6d819e",
+            "769a5f81-4a7a-4166-a143-18030c8190ad",
+            "d7da169f-a2a6-4dae-8179-ef9261662e45"
+          ],
+          "west": [
+            "b4799e37-4f71-43f8-aba7-d6e74bb93543",
+            "e0b453aa-b4d2-4320-b026-341d91681c4e",
+            "769a5f81-4a7a-4166-a143-18030c8190ad",
+            "5e32f869-1d73-4812-8fd5-204719c7de4d"
+          ],
+          "north": [
+            "2514ec61-57f5-4a66-83bc-de1f9d6d819e",
+            "cafa66d9-1e67-4b19-950a-3afd09dead9b",
+            "6f349fd6-cc1d-4fa3-9f9e-c92e7ba2a1ab",
+            "d7da169f-a2a6-4dae-8179-ef9261662e45"
+          ],
+          "south": [
+            "b4799e37-4f71-43f8-aba7-d6e74bb93543",
+            "6f349fd6-cc1d-4fa3-9f9e-c92e7ba2a1ab",
+            "9dbebe29-8973-4550-acc3-cd9775658390",
+            "5e32f869-1d73-4812-8fd5-204719c7de4d"
+          ]
+        },
+        "description": "transparent background and jagged dark stone cluster embedded with damp forest moss, sparse dead grass tufts, broken twigs, and subtle earthy decay, rendered in a desaturated green, brown, and gray palette with soft organic highlights and shadows - wang_11",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "bd0adae1-36c7-41a1-8f1a-348d991c2bf3",
+        "name": "wang_3",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "37f2aad8-71f8-4be0-bd47-23a0965ad538",
+            "2514ec61-57f5-4a66-83bc-de1f9d6d819e",
+            "769a5f81-4a7a-4166-a143-18030c8190ad",
+            "d7da169f-a2a6-4dae-8179-ef9261662e45"
+          ],
+          "west": [
+            "50569e3f-df7a-4778-b11a-b917b064e941",
+            "1914d5d8-d844-454c-896d-e72b53da4889",
+            "2514ec61-57f5-4a66-83bc-de1f9d6d819e",
+            "cafa66d9-1e67-4b19-950a-3afd09dead9b"
+          ],
+          "north": [
+            "50569e3f-df7a-4778-b11a-b917b064e941",
+            "1914d5d8-d844-454c-896d-e72b53da4889",
+            "9e39a2d8-c0e5-4026-87bf-9f76b9fe92e5",
+            "9dbebe29-8973-4550-acc3-cd9775658390"
+          ],
+          "south": [
+            "e0b453aa-b4d2-4320-b026-341d91681c4e",
+            "9e39a2d8-c0e5-4026-87bf-9f76b9fe92e5",
+            "769a5f81-4a7a-4166-a143-18030c8190ad",
+            "d7da169f-a2a6-4dae-8179-ef9261662e45"
+          ]
+        },
+        "description": "transparent background and jagged dark stone cluster embedded with damp forest moss, sparse dead grass tufts, broken twigs, and subtle earthy decay, rendered in a desaturated green, brown, and gray palette with soft organic highlights and shadows - wang_3",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "e3cdb372-0498-41f3-a6fb-9f7ebb6889fd",
+        "name": "wang_2",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "50569e3f-df7a-4778-b11a-b917b064e941",
+            "743bea02-b494-462d-b9d2-d1ec7360e44a",
+            "e0b453aa-b4d2-4320-b026-341d91681c4e",
+            "9e39a2d8-c0e5-4026-87bf-9f76b9fe92e5"
+          ],
+          "west": [
+            "9e39a2d8-c0e5-4026-87bf-9f76b9fe92e5",
+            "6f349fd6-cc1d-4fa3-9f9e-c92e7ba2a1ab",
+            "9dbebe29-8973-4550-acc3-cd9775658390",
+            "d7da169f-a2a6-4dae-8179-ef9261662e45"
+          ],
+          "north": [
+            "2514ec61-57f5-4a66-83bc-de1f9d6d819e",
+            "cafa66d9-1e67-4b19-950a-3afd09dead9b",
+            "6f349fd6-cc1d-4fa3-9f9e-c92e7ba2a1ab",
+            "d7da169f-a2a6-4dae-8179-ef9261662e45"
+          ],
+          "south": [
+            "50569e3f-df7a-4778-b11a-b917b064e941",
+            "743bea02-b494-462d-b9d2-d1ec7360e44a",
+            "37f2aad8-71f8-4be0-bd47-23a0965ad538",
+            "2514ec61-57f5-4a66-83bc-de1f9d6d819e"
+          ]
+        },
+        "description": "transparent background and jagged dark stone cluster embedded with damp forest moss, sparse dead grass tufts, broken twigs, and subtle earthy decay, rendered in a desaturated green, brown, and gray palette with soft organic highlights and shadows - wang_2",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "0ee3675a-5ed8-40bf-995e-d07b22f9c85f",
+        "name": "wang_5",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "50569e3f-df7a-4778-b11a-b917b064e941",
+            "743bea02-b494-462d-b9d2-d1ec7360e44a",
+            "e0b453aa-b4d2-4320-b026-341d91681c4e",
+            "9e39a2d8-c0e5-4026-87bf-9f76b9fe92e5"
+          ],
+          "west": [
+            "743bea02-b494-462d-b9d2-d1ec7360e44a",
+            "37f2aad8-71f8-4be0-bd47-23a0965ad538",
+            "aa6a6464-0e55-4e7d-8767-86a01ef90d56",
+            "10be2877-72fa-415a-997c-a0d0ae8b943e"
+          ],
+          "north": [
+            "50569e3f-df7a-4778-b11a-b917b064e941",
+            "1914d5d8-d844-454c-896d-e72b53da4889",
+            "9e39a2d8-c0e5-4026-87bf-9f76b9fe92e5",
+            "9dbebe29-8973-4550-acc3-cd9775658390"
+          ],
+          "south": [
+            "1914d5d8-d844-454c-896d-e72b53da4889",
+            "cafa66d9-1e67-4b19-950a-3afd09dead9b",
+            "aa6a6464-0e55-4e7d-8767-86a01ef90d56",
+            "10be2877-72fa-415a-997c-a0d0ae8b943e"
+          ]
+        },
+        "description": "transparent background and jagged dark stone cluster embedded with damp forest moss, sparse dead grass tufts, broken twigs, and subtle earthy decay, rendered in a desaturated green, brown, and gray palette with soft organic highlights and shadows - wang_5",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "d7da169f-a2a6-4dae-8179-ef9261662e45",
+        "name": "wang_15",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "1914d5d8-d844-454c-896d-e72b53da4889",
+            "9dbebe29-8973-4550-acc3-cd9775658390",
+            "5e32f869-1d73-4812-8fd5-204719c7de4d",
+            "10be2877-72fa-415a-997c-a0d0ae8b943e"
+          ],
+          "west": [
+            "743bea02-b494-462d-b9d2-d1ec7360e44a",
+            "37f2aad8-71f8-4be0-bd47-23a0965ad538",
+            "aa6a6464-0e55-4e7d-8767-86a01ef90d56",
+            "10be2877-72fa-415a-997c-a0d0ae8b943e"
+          ],
+          "north": [
+            "743bea02-b494-462d-b9d2-d1ec7360e44a",
+            "e0b453aa-b4d2-4320-b026-341d91681c4e",
+            "5e32f869-1d73-4812-8fd5-204719c7de4d",
+            "10be2877-72fa-415a-997c-a0d0ae8b943e"
+          ],
+          "south": [
+            "1914d5d8-d844-454c-896d-e72b53da4889",
+            "cafa66d9-1e67-4b19-950a-3afd09dead9b",
+            "aa6a6464-0e55-4e7d-8767-86a01ef90d56",
+            "10be2877-72fa-415a-997c-a0d0ae8b943e"
+          ]
+        },
+        "description": "transparent background and jagged dark stone cluster embedded with damp forest moss, sparse dead grass tufts, broken twigs, and subtle earthy decay, rendered in a desaturated green, brown, and gray palette with soft organic highlights and shadows - wang_15",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "983f756b-3434-468f-8abe-456f6139ac02",
+        "name": "wang_14",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "37f2aad8-71f8-4be0-bd47-23a0965ad538",
+            "2514ec61-57f5-4a66-83bc-de1f9d6d819e",
+            "769a5f81-4a7a-4166-a143-18030c8190ad",
+            "d7da169f-a2a6-4dae-8179-ef9261662e45"
+          ],
+          "west": [
+            "9e39a2d8-c0e5-4026-87bf-9f76b9fe92e5",
+            "6f349fd6-cc1d-4fa3-9f9e-c92e7ba2a1ab",
+            "9dbebe29-8973-4550-acc3-cd9775658390",
+            "d7da169f-a2a6-4dae-8179-ef9261662e45"
+          ],
+          "north": [
+            "2514ec61-57f5-4a66-83bc-de1f9d6d819e",
+            "cafa66d9-1e67-4b19-950a-3afd09dead9b",
+            "6f349fd6-cc1d-4fa3-9f9e-c92e7ba2a1ab",
+            "d7da169f-a2a6-4dae-8179-ef9261662e45"
+          ],
+          "south": [
+            "e0b453aa-b4d2-4320-b026-341d91681c4e",
+            "9e39a2d8-c0e5-4026-87bf-9f76b9fe92e5",
+            "769a5f81-4a7a-4166-a143-18030c8190ad",
+            "d7da169f-a2a6-4dae-8179-ef9261662e45"
+          ]
+        },
+        "description": "transparent background and jagged dark stone cluster embedded with damp forest moss, sparse dead grass tufts, broken twigs, and subtle earthy decay, rendered in a desaturated green, brown, and gray palette with soft organic highlights and shadows - wang_14",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "6a2df6c7-7089-4590-a0e8-41d25cba7492",
+        "name": "wang_9",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "1914d5d8-d844-454c-896d-e72b53da4889",
+            "9dbebe29-8973-4550-acc3-cd9775658390",
+            "5e32f869-1d73-4812-8fd5-204719c7de4d",
+            "10be2877-72fa-415a-997c-a0d0ae8b943e"
+          ],
+          "west": [
+            "b4799e37-4f71-43f8-aba7-d6e74bb93543",
+            "e0b453aa-b4d2-4320-b026-341d91681c4e",
+            "769a5f81-4a7a-4166-a143-18030c8190ad",
+            "5e32f869-1d73-4812-8fd5-204719c7de4d"
+          ],
+          "north": [
+            "b4799e37-4f71-43f8-aba7-d6e74bb93543",
+            "37f2aad8-71f8-4be0-bd47-23a0965ad538",
+            "aa6a6464-0e55-4e7d-8767-86a01ef90d56",
+            "769a5f81-4a7a-4166-a143-18030c8190ad"
+          ],
+          "south": [
+            "1914d5d8-d844-454c-896d-e72b53da4889",
+            "cafa66d9-1e67-4b19-950a-3afd09dead9b",
+            "aa6a6464-0e55-4e7d-8767-86a01ef90d56",
+            "10be2877-72fa-415a-997c-a0d0ae8b943e"
+          ]
+        },
+        "description": "transparent background and jagged dark stone cluster embedded with damp forest moss, sparse dead grass tufts, broken twigs, and subtle earthy decay, rendered in a desaturated green, brown, and gray palette with soft organic highlights and shadows - wang_9",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "7e13994a-eeaa-4be8-9096-086c29da5d4d",
+        "name": "wang_7",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "1914d5d8-d844-454c-896d-e72b53da4889",
+            "9dbebe29-8973-4550-acc3-cd9775658390",
+            "5e32f869-1d73-4812-8fd5-204719c7de4d",
+            "10be2877-72fa-415a-997c-a0d0ae8b943e"
+          ],
+          "west": [
+            "50569e3f-df7a-4778-b11a-b917b064e941",
+            "1914d5d8-d844-454c-896d-e72b53da4889",
+            "2514ec61-57f5-4a66-83bc-de1f9d6d819e",
+            "cafa66d9-1e67-4b19-950a-3afd09dead9b"
+          ],
+          "north": [
+            "743bea02-b494-462d-b9d2-d1ec7360e44a",
+            "e0b453aa-b4d2-4320-b026-341d91681c4e",
+            "5e32f869-1d73-4812-8fd5-204719c7de4d",
+            "10be2877-72fa-415a-997c-a0d0ae8b943e"
+          ],
+          "south": [
+            "50569e3f-df7a-4778-b11a-b917b064e941",
+            "743bea02-b494-462d-b9d2-d1ec7360e44a",
+            "37f2aad8-71f8-4be0-bd47-23a0965ad538",
+            "2514ec61-57f5-4a66-83bc-de1f9d6d819e"
+          ]
+        },
+        "description": "transparent background and jagged dark stone cluster embedded with damp forest moss, sparse dead grass tufts, broken twigs, and subtle earthy decay, rendered in a desaturated green, brown, and gray palette with soft organic highlights and shadows - wang_7",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      }
+    ],
+    "tile_size": {
+      "width": 32,
+      "height": 32
+    },
+    "total_tiles": 16,
+    "tileset_type": "sidescroller",
+    "terrain_types": [
+      "central",
+      "background"
+    ],
+    "spritesheet_url": "https://backblaze.pixellab.ai/file/pixellab-tiles/e85f9ec5-58c7-4302-8ca4-a6a80e99431c/dc6dd63c-8811-43ac-9d7e-35dfc6b09077/spritesheet.png",
+    "spritesheet_grid": {
+      "cols": 4,
+      "rows": 4
+    },
+    "spritesheet_layout": "tileset15_4x4"
+  },
+  "metadata": {
+    "user_prompts": {
+      "lower": "irregular dark rock cluster with moss, dead grass, small branches and damp forest vegetation, desaturated green brown and gray palette, detailed pixel art, gothic forest environment asset",
+      "upper": "mossy forest stones with dead weeds, broken twigs and subtle decay, dark ruined woodland style, detailed pixel art",
+      "transition": ""
+    },
+    "terrain_prompts": {
+      "lower": "jagged dark stone cluster embedded with damp forest moss, sparse dead grass tufts, broken twigs, and subtle earthy decay, rendered in a desaturated green, brown, and gray palette with soft organic highlights and shadows",
+      "upper": "transparent background",
+      "transition": "thin mossy forest stone top surface strip scattered with dead weeds and twig fragments, featuring soft medium depth shading and natural woodland weathering"
+    }
+  },
+  "created_at": "2026-09-26T17:18:35.145205+00:00",
+  "updated_at": "2026-09-26T17:20:21.708015+00:00",
+  "status": "completed",
+  "format": "tileset15",
+  "layout": {
+    "type": "tileset15",
+    "description": "4x4 grid of 16 unique Wang tiles",
+    "grid_size": {
+      "width": 4,
+      "height": 4
+    },
+    "tile_count": 16
+  },
+  "pattern_system": {
+    "type": "4x4_wildcard",
+    "description": "4\u00d74 patterns with wildcards for flexible tile matching",
+    "wildcard_value": 255,
+    "pattern_layout": {
+      "description": "4\u00d74 grid where center 2\u00d72 matches tile corners, outer ring uses wildcards",
+      "example": {
+        "row_0": "All wildcards (*)",
+        "row_1": "Wildcard + NW corner + NE corner + Wildcard",
+        "row_2": "Wildcard + SW corner + SE corner + Wildcard",
+        "row_3": "All wildcards (*)"
+      }
+    },
+    "terrain_encoding": {
+      "lower": 0,
+      "upper": 1,
+      "transition": 2,
+      "wildcard": 255
+    },
+    "usage": {
+      "description": "Sample 4\u00d74 terrain around tile position, encode as pattern key, lookup in cache",
+      "benefits": [
+        "O(1) lookup performance",
+        "Flexible edge matching",
+        "Unified pattern system"
+      ]
+    }
+  },
+  "tileset_image": {
+    "filename": "tileset_dc6dd63c-8811-43ac-9d7e-35dfc6b09077.png",
+    "format": "PNG",
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    }
+  }
+}

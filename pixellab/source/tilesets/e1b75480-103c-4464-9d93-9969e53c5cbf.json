@@ -1,0 +1,1264 @@
+{
+  "id": "e1b75480-103c-4464-9d93-9969e53c5cbf",
+  "name": "weathered wooden bridge planks for a dark gothic",
+  "tileSize": {
+    "width": 32,
+    "height": 32
+  },
+  "baseTileIds": null,
+  "terrainMapping": {
+    "lower": 7,
+    "upper": 0
+  },
+  "lowerDescription": "weathered wooden bridge planks showing damp old wood, worn edges, broken boards, rope bindings, and slight moss growth in a desaturated brown and gray palette with soft highlights and shadows",
+  "upperDescription": "thin low surface strip of cracked planks, decayed support beams, damp moss, and subtle rope details in a dark forgotten forest atmosphere with moderate depth and soft lighting",
+  "user_id": "e85f9ec5-58c7-4302-8ca4-a6a80e99431c",
+  "lower_description": "weathered wooden bridge planks showing damp old wood, worn edges, broken boards, rope bindings, and slight moss growth in a desaturated brown and gray palette with soft highlights and shadows",
+  "upper_description": "thin low surface strip of cracked planks, decayed support beams, damp moss, and subtle rope details in a dark forgotten forest atmosphere with moderate depth and soft lighting",
+  "transition_description": null,
+  "tile_size": {
+    "width": 32,
+    "height": 32
+  },
+  "transition_size": 0,
+  "view": "side",
+  "style_settings": null,
+  "generation_parameters": null,
+  "base_tile_ids": {
+    "lower": "80d91ce4-6451-4bee-97e0-7dfe04c5f8b2",
+    "upper": "8acaedb1-2b96-43c7-995a-a4a45f9ba5a7"
+  },
+  "tileset_data": {
+    "tiles": [
+      {
+        "id": "3869db67-4026-4060-9bed-571f6a2219a0",
+        "name": "wang_13",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "70401acd-ad5e-4c87-840a-7804c50c5790",
+            "3c4140a4-f3e9-4064-8d21-4a8ced6ada3b",
+            "62df067b-b4cc-4e66-8d4e-175b9ffeb713",
+            "b46a534d-341e-40f2-baeb-329471adb564"
+          ],
+          "west": [
+            "b0c26cd8-e5a1-4807-92e5-5da8a43bdc66",
+            "62df067b-b4cc-4e66-8d4e-175b9ffeb713",
+            "c44159a0-3c47-4d74-9cd3-9c4f3bc617a7",
+            "8acaedb1-2b96-43c7-995a-a4a45f9ba5a7"
+          ],
+          "north": [
+            "70401acd-ad5e-4c87-840a-7804c50c5790",
+            "d90f9947-a185-4a7c-a0d3-0da0e8749443",
+            "b46a534d-341e-40f2-baeb-329471adb564",
+            "9123fd1a-6ec4-4a9f-8053-46877d4b0a56"
+          ],
+          "south": [
+            "0711280b-15a0-4ea4-8ef4-a194b31f591e",
+            "b0c26cd8-e5a1-4807-92e5-5da8a43bdc66",
+            "9123fd1a-6ec4-4a9f-8053-46877d4b0a56",
+            "8acaedb1-2b96-43c7-995a-a4a45f9ba5a7"
+          ]
+        },
+        "description": "transparent background and weathered wooden bridge planks showing damp old wood, worn edges, broken boards, rope bindings, and slight moss growth in a desaturated brown and gray palette with soft highlights and shadows - wang_13",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "3f2e43e2-4b96-43fc-be5a-8d88128d1d8b",
+        "name": "wang_10",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "7576e1e2-5ed5-4a91-adf1-03340b28e4f3",
+            "009fd909-c804-4644-9016-3a967354acca",
+            "a31322a9-cb26-4d38-858e-f00b37a53a53"
+          ],
+          "west": [
+            "b0c26cd8-e5a1-4807-92e5-5da8a43bdc66",
+            "62df067b-b4cc-4e66-8d4e-175b9ffeb713",
+            "8acaedb1-2b96-43c7-995a-a4a45f9ba5a7"
+          ],
+          "north": [
+            "70401acd-ad5e-4c87-840a-7804c50c5790",
+            "d90f9947-a185-4a7c-a0d3-0da0e8749443",
+            "b46a534d-341e-40f2-baeb-329471adb564",
+            "9123fd1a-6ec4-4a9f-8053-46877d4b0a56"
+          ],
+          "south": [
+            "80d91ce4-6451-4bee-97e0-7dfe04c5f8b2",
+            "6c352323-8e90-47ae-a7ce-5b0733e021b7",
+            "d90f9947-a185-4a7c-a0d3-0da0e8749443",
+            "220cf71a-58e3-40e7-9be2-a7d09c4e0c46"
+          ]
+        },
+        "description": "transparent background and weathered wooden bridge planks showing damp old wood, worn edges, broken boards, rope bindings, and slight moss growth in a desaturated brown and gray palette with soft highlights and shadows - wang_10",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "e50b6069-8630-49db-8a3c-0738b4323f94",
+        "name": "wang_4",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "220cf71a-58e3-40e7-9be2-a7d09c4e0c46",
+            "9123fd1a-6ec4-4a9f-8053-46877d4b0a56",
+            "8acaedb1-2b96-43c7-995a-a4a45f9ba5a7"
+          ],
+          "west": [
+            "6c352323-8e90-47ae-a7ce-5b0733e021b7",
+            "b46a534d-341e-40f2-baeb-329471adb564",
+            "a31322a9-cb26-4d38-858e-f00b37a53a53"
+          ],
+          "north": [
+            "80d91ce4-6451-4bee-97e0-7dfe04c5f8b2",
+            "7576e1e2-5ed5-4a91-adf1-03340b28e4f3",
+            "b0c26cd8-e5a1-4807-92e5-5da8a43bdc66",
+            "c44159a0-3c47-4d74-9cd3-9c4f3bc617a7"
+          ],
+          "south": [
+            "70401acd-ad5e-4c87-840a-7804c50c5790",
+            "62df067b-b4cc-4e66-8d4e-175b9ffeb713",
+            "c44159a0-3c47-4d74-9cd3-9c4f3bc617a7",
+            "009fd909-c804-4644-9016-3a967354acca"
+          ]
+        },
+        "description": "transparent background and weathered wooden bridge planks showing damp old wood, worn edges, broken boards, rope bindings, and slight moss growth in a desaturated brown and gray palette with soft highlights and shadows - wang_4",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "f5af1b58-266d-4231-8161-75cb4570968c",
+        "name": "wang_12",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "70401acd-ad5e-4c87-840a-7804c50c5790",
+            "3c4140a4-f3e9-4064-8d21-4a8ced6ada3b",
+            "62df067b-b4cc-4e66-8d4e-175b9ffeb713",
+            "b46a534d-341e-40f2-baeb-329471adb564"
+          ],
+          "west": [
+            "6c352323-8e90-47ae-a7ce-5b0733e021b7",
+            "d90f9947-a185-4a7c-a0d3-0da0e8749443",
+            "b46a534d-341e-40f2-baeb-329471adb564",
+            "a31322a9-cb26-4d38-858e-f00b37a53a53"
+          ],
+          "north": [
+            "6c352323-8e90-47ae-a7ce-5b0733e021b7",
+            "0711280b-15a0-4ea4-8ef4-a194b31f591e",
+            "009fd909-c804-4644-9016-3a967354acca",
+            "a31322a9-cb26-4d38-858e-f00b37a53a53"
+          ],
+          "south": [
+            "70401acd-ad5e-4c87-840a-7804c50c5790",
+            "62df067b-b4cc-4e66-8d4e-175b9ffeb713",
+            "c44159a0-3c47-4d74-9cd3-9c4f3bc617a7",
+            "009fd909-c804-4644-9016-3a967354acca"
+          ]
+        },
+        "description": "transparent background and weathered wooden bridge planks showing damp old wood, worn edges, broken boards, rope bindings, and slight moss growth in a desaturated brown and gray palette with soft highlights and shadows - wang_12",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 5,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "aab21dba-b352-4392-ab9c-cd647f37e0e1",
+        "name": "wang_6",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "70401acd-ad5e-4c87-840a-7804c50c5790",
+            "3c4140a4-f3e9-4064-8d21-4a8ced6ada3b",
+            "62df067b-b4cc-4e66-8d4e-175b9ffeb713",
+            "b46a534d-341e-40f2-baeb-329471adb564"
+          ],
+          "west": [
+            "80d91ce4-6451-4bee-97e0-7dfe04c5f8b2",
+            "7576e1e2-5ed5-4a91-adf1-03340b28e4f3",
+            "220cf71a-58e3-40e7-9be2-a7d09c4e0c46",
+            "3c4140a4-f3e9-4064-8d21-4a8ced6ada3b"
+          ],
+          "north": [
+            "6c352323-8e90-47ae-a7ce-5b0733e021b7",
+            "009fd909-c804-4644-9016-3a967354acca",
+            "a31322a9-cb26-4d38-858e-f00b37a53a53"
+          ],
+          "south": [
+            "b0c26cd8-e5a1-4807-92e5-5da8a43bdc66",
+            "9123fd1a-6ec4-4a9f-8053-46877d4b0a56",
+            "8acaedb1-2b96-43c7-995a-a4a45f9ba5a7"
+          ]
+        },
+        "description": "transparent background and weathered wooden bridge planks showing damp old wood, worn edges, broken boards, rope bindings, and slight moss growth in a desaturated brown and gray palette with soft highlights and shadows - wang_6",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 5
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "b8b76155-051f-43df-9eb7-d2f422606cf8",
+        "name": "wang_8",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "80d91ce4-6451-4bee-97e0-7dfe04c5f8b2",
+            "6c352323-8e90-47ae-a7ce-5b0733e021b7",
+            "0711280b-15a0-4ea4-8ef4-a194b31f591e",
+            "b0c26cd8-e5a1-4807-92e5-5da8a43bdc66"
+          ],
+          "west": [
+            "70401acd-ad5e-4c87-840a-7804c50c5790",
+            "0711280b-15a0-4ea4-8ef4-a194b31f591e",
+            "9123fd1a-6ec4-4a9f-8053-46877d4b0a56",
+            "009fd909-c804-4644-9016-3a967354acca"
+          ],
+          "north": [
+            "220cf71a-58e3-40e7-9be2-a7d09c4e0c46",
+            "62df067b-b4cc-4e66-8d4e-175b9ffeb713",
+            "8acaedb1-2b96-43c7-995a-a4a45f9ba5a7"
+          ],
+          "south": [
+            "7576e1e2-5ed5-4a91-adf1-03340b28e4f3",
+            "b46a534d-341e-40f2-baeb-329471adb564",
+            "a31322a9-cb26-4d38-858e-f00b37a53a53"
+          ]
+        },
+        "description": "transparent background and weathered wooden bridge planks showing damp old wood, worn edges, broken boards, rope bindings, and slight moss growth in a desaturated brown and gray palette with soft highlights and shadows - wang_8",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "80d91ce4-6451-4bee-97e0-7dfe04c5f8b2",
+        "name": "wang_0",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "6c352323-8e90-47ae-a7ce-5b0733e021b7",
+            "0711280b-15a0-4ea4-8ef4-a194b31f591e",
+            "b0c26cd8-e5a1-4807-92e5-5da8a43bdc66"
+          ],
+          "west": [
+            "7576e1e2-5ed5-4a91-adf1-03340b28e4f3",
+            "220cf71a-58e3-40e7-9be2-a7d09c4e0c46",
+            "3c4140a4-f3e9-4064-8d21-4a8ced6ada3b"
+          ],
+          "north": [
+            "7576e1e2-5ed5-4a91-adf1-03340b28e4f3",
+            "b0c26cd8-e5a1-4807-92e5-5da8a43bdc66",
+            "c44159a0-3c47-4d74-9cd3-9c4f3bc617a7"
+          ],
+          "south": [
+            "6c352323-8e90-47ae-a7ce-5b0733e021b7",
+            "d90f9947-a185-4a7c-a0d3-0da0e8749443",
+            "220cf71a-58e3-40e7-9be2-a7d09c4e0c46"
+          ]
+        },
+        "description": "transparent background and weathered wooden bridge planks showing damp old wood, worn edges, broken boards, rope bindings, and slight moss growth in a desaturated brown and gray palette with soft highlights and shadows - wang_0",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 6
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "61a67e8c-dd92-43dd-945d-3d9a4d596616",
+        "name": "wang_1",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "3c4140a4-f3e9-4064-8d21-4a8ced6ada3b",
+            "62df067b-b4cc-4e66-8d4e-175b9ffeb713",
+            "b46a534d-341e-40f2-baeb-329471adb564"
+          ],
+          "west": [
+            "0711280b-15a0-4ea4-8ef4-a194b31f591e",
+            "9123fd1a-6ec4-4a9f-8053-46877d4b0a56",
+            "009fd909-c804-4644-9016-3a967354acca"
+          ],
+          "north": [
+            "d90f9947-a185-4a7c-a0d3-0da0e8749443",
+            "b46a534d-341e-40f2-baeb-329471adb564",
+            "9123fd1a-6ec4-4a9f-8053-46877d4b0a56"
+          ],
+          "south": [
+            "62df067b-b4cc-4e66-8d4e-175b9ffeb713",
+            "c44159a0-3c47-4d74-9cd3-9c4f3bc617a7",
+            "009fd909-c804-4644-9016-3a967354acca"
+          ]
+        },
+        "description": "transparent background and weathered wooden bridge planks showing damp old wood, worn edges, broken boards, rope bindings, and slight moss growth in a desaturated brown and gray palette with soft highlights and shadows - wang_1",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "cb220298-9fd5-440d-87ec-baa5d49109a0",
+        "name": "wang_11",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "d90f9947-a185-4a7c-a0d3-0da0e8749443",
+            "220cf71a-58e3-40e7-9be2-a7d09c4e0c46",
+            "9123fd1a-6ec4-4a9f-8053-46877d4b0a56",
+            "8acaedb1-2b96-43c7-995a-a4a45f9ba5a7"
+          ],
+          "west": [
+            "70401acd-ad5e-4c87-840a-7804c50c5790",
+            "0711280b-15a0-4ea4-8ef4-a194b31f591e",
+            "9123fd1a-6ec4-4a9f-8053-46877d4b0a56",
+            "009fd909-c804-4644-9016-3a967354acca"
+          ],
+          "north": [
+            "220cf71a-58e3-40e7-9be2-a7d09c4e0c46",
+            "3c4140a4-f3e9-4064-8d21-4a8ced6ada3b",
+            "62df067b-b4cc-4e66-8d4e-175b9ffeb713",
+            "8acaedb1-2b96-43c7-995a-a4a45f9ba5a7"
+          ],
+          "south": [
+            "70401acd-ad5e-4c87-840a-7804c50c5790",
+            "62df067b-b4cc-4e66-8d4e-175b9ffeb713",
+            "c44159a0-3c47-4d74-9cd3-9c4f3bc617a7",
+            "009fd909-c804-4644-9016-3a967354acca"
+          ]
+        },
+        "description": "transparent background and weathered wooden bridge planks showing damp old wood, worn edges, broken boards, rope bindings, and slight moss growth in a desaturated brown and gray palette with soft highlights and shadows - wang_11",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "fe7ed72a-1e87-4115-8fe5-88276dba3a41",
+        "name": "wang_3",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "d90f9947-a185-4a7c-a0d3-0da0e8749443",
+            "220cf71a-58e3-40e7-9be2-a7d09c4e0c46",
+            "9123fd1a-6ec4-4a9f-8053-46877d4b0a56",
+            "8acaedb1-2b96-43c7-995a-a4a45f9ba5a7"
+          ],
+          "west": [
+            "80d91ce4-6451-4bee-97e0-7dfe04c5f8b2",
+            "7576e1e2-5ed5-4a91-adf1-03340b28e4f3",
+            "220cf71a-58e3-40e7-9be2-a7d09c4e0c46",
+            "3c4140a4-f3e9-4064-8d21-4a8ced6ada3b"
+          ],
+          "north": [
+            "80d91ce4-6451-4bee-97e0-7dfe04c5f8b2",
+            "7576e1e2-5ed5-4a91-adf1-03340b28e4f3",
+            "b0c26cd8-e5a1-4807-92e5-5da8a43bdc66",
+            "c44159a0-3c47-4d74-9cd3-9c4f3bc617a7"
+          ],
+          "south": [
+            "0711280b-15a0-4ea4-8ef4-a194b31f591e",
+            "b0c26cd8-e5a1-4807-92e5-5da8a43bdc66",
+            "9123fd1a-6ec4-4a9f-8053-46877d4b0a56",
+            "8acaedb1-2b96-43c7-995a-a4a45f9ba5a7"
+          ]
+        },
+        "description": "transparent background and weathered wooden bridge planks showing damp old wood, worn edges, broken boards, rope bindings, and slight moss growth in a desaturated brown and gray palette with soft highlights and shadows - wang_3",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "b0024974-d95a-4913-81fd-80615ae1f64e",
+        "name": "wang_2",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "80d91ce4-6451-4bee-97e0-7dfe04c5f8b2",
+            "6c352323-8e90-47ae-a7ce-5b0733e021b7",
+            "0711280b-15a0-4ea4-8ef4-a194b31f591e",
+            "b0c26cd8-e5a1-4807-92e5-5da8a43bdc66"
+          ],
+          "west": [
+            "b0c26cd8-e5a1-4807-92e5-5da8a43bdc66",
+            "62df067b-b4cc-4e66-8d4e-175b9ffeb713",
+            "c44159a0-3c47-4d74-9cd3-9c4f3bc617a7",
+            "8acaedb1-2b96-43c7-995a-a4a45f9ba5a7"
+          ],
+          "north": [
+            "220cf71a-58e3-40e7-9be2-a7d09c4e0c46",
+            "3c4140a4-f3e9-4064-8d21-4a8ced6ada3b",
+            "62df067b-b4cc-4e66-8d4e-175b9ffeb713",
+            "8acaedb1-2b96-43c7-995a-a4a45f9ba5a7"
+          ],
+          "south": [
+            "80d91ce4-6451-4bee-97e0-7dfe04c5f8b2",
+            "6c352323-8e90-47ae-a7ce-5b0733e021b7",
+            "d90f9947-a185-4a7c-a0d3-0da0e8749443",
+            "220cf71a-58e3-40e7-9be2-a7d09c4e0c46"
+          ]
+        },
+        "description": "transparent background and weathered wooden bridge planks showing damp old wood, worn edges, broken boards, rope bindings, and slight moss growth in a desaturated brown and gray palette with soft highlights and shadows - wang_2",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "7786ed98-a002-404e-a780-26d9647bdf01",
+        "name": "wang_5",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "80d91ce4-6451-4bee-97e0-7dfe04c5f8b2",
+            "6c352323-8e90-47ae-a7ce-5b0733e021b7",
+            "0711280b-15a0-4ea4-8ef4-a194b31f591e",
+            "b0c26cd8-e5a1-4807-92e5-5da8a43bdc66"
+          ],
+          "west": [
+            "6c352323-8e90-47ae-a7ce-5b0733e021b7",
+            "d90f9947-a185-4a7c-a0d3-0da0e8749443",
+            "b46a534d-341e-40f2-baeb-329471adb564",
+            "a31322a9-cb26-4d38-858e-f00b37a53a53"
+          ],
+          "north": [
+            "80d91ce4-6451-4bee-97e0-7dfe04c5f8b2",
+            "7576e1e2-5ed5-4a91-adf1-03340b28e4f3",
+            "b0c26cd8-e5a1-4807-92e5-5da8a43bdc66",
+            "c44159a0-3c47-4d74-9cd3-9c4f3bc617a7"
+          ],
+          "south": [
+            "7576e1e2-5ed5-4a91-adf1-03340b28e4f3",
+            "3c4140a4-f3e9-4064-8d21-4a8ced6ada3b",
+            "b46a534d-341e-40f2-baeb-329471adb564",
+            "a31322a9-cb26-4d38-858e-f00b37a53a53"
+          ]
+        },
+        "description": "transparent background and weathered wooden bridge planks showing damp old wood, worn edges, broken boards, rope bindings, and slight moss growth in a desaturated brown and gray palette with soft highlights and shadows - wang_5",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "8acaedb1-2b96-43c7-995a-a4a45f9ba5a7",
+        "name": "wang_15",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "7576e1e2-5ed5-4a91-adf1-03340b28e4f3",
+            "c44159a0-3c47-4d74-9cd3-9c4f3bc617a7",
+            "009fd909-c804-4644-9016-3a967354acca",
+            "a31322a9-cb26-4d38-858e-f00b37a53a53"
+          ],
+          "west": [
+            "6c352323-8e90-47ae-a7ce-5b0733e021b7",
+            "d90f9947-a185-4a7c-a0d3-0da0e8749443",
+            "b46a534d-341e-40f2-baeb-329471adb564",
+            "a31322a9-cb26-4d38-858e-f00b37a53a53"
+          ],
+          "north": [
+            "6c352323-8e90-47ae-a7ce-5b0733e021b7",
+            "0711280b-15a0-4ea4-8ef4-a194b31f591e",
+            "009fd909-c804-4644-9016-3a967354acca",
+            "a31322a9-cb26-4d38-858e-f00b37a53a53"
+          ],
+          "south": [
+            "7576e1e2-5ed5-4a91-adf1-03340b28e4f3",
+            "3c4140a4-f3e9-4064-8d21-4a8ced6ada3b",
+            "b46a534d-341e-40f2-baeb-329471adb564",
+            "a31322a9-cb26-4d38-858e-f00b37a53a53"
+          ]
+        },
+        "description": "transparent background and weathered wooden bridge planks showing damp old wood, worn edges, broken boards, rope bindings, and slight moss growth in a desaturated brown and gray palette with soft highlights and shadows - wang_15",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "797bf7b8-8e3a-4d75-b7a8-18aa5932ca12",
+        "name": "wang_14",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "d90f9947-a185-4a7c-a0d3-0da0e8749443",
+            "220cf71a-58e3-40e7-9be2-a7d09c4e0c46",
+            "9123fd1a-6ec4-4a9f-8053-46877d4b0a56",
+            "8acaedb1-2b96-43c7-995a-a4a45f9ba5a7"
+          ],
+          "west": [
+            "b0c26cd8-e5a1-4807-92e5-5da8a43bdc66",
+            "62df067b-b4cc-4e66-8d4e-175b9ffeb713",
+            "c44159a0-3c47-4d74-9cd3-9c4f3bc617a7",
+            "8acaedb1-2b96-43c7-995a-a4a45f9ba5a7"
+          ],
+          "north": [
+            "220cf71a-58e3-40e7-9be2-a7d09c4e0c46",
+            "3c4140a4-f3e9-4064-8d21-4a8ced6ada3b",
+            "62df067b-b4cc-4e66-8d4e-175b9ffeb713",
+            "8acaedb1-2b96-43c7-995a-a4a45f9ba5a7"
+          ],
+          "south": [
+            "0711280b-15a0-4ea4-8ef4-a194b31f591e",
+            "b0c26cd8-e5a1-4807-92e5-5da8a43bdc66",
+            "9123fd1a-6ec4-4a9f-8053-46877d4b0a56",
+            "8acaedb1-2b96-43c7-995a-a4a45f9ba5a7"
+          ]
+        },
+        "description": "transparent background and weathered wooden bridge planks showing damp old wood, worn edges, broken boards, rope bindings, and slight moss growth in a desaturated brown and gray palette with soft highlights and shadows - wang_14",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "21d176ee-5a94-47d3-8da6-f4e5b2184f94",
+        "name": "wang_9",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "7576e1e2-5ed5-4a91-adf1-03340b28e4f3",
+            "c44159a0-3c47-4d74-9cd3-9c4f3bc617a7",
+            "009fd909-c804-4644-9016-3a967354acca",
+            "a31322a9-cb26-4d38-858e-f00b37a53a53"
+          ],
+          "west": [
+            "70401acd-ad5e-4c87-840a-7804c50c5790",
+            "0711280b-15a0-4ea4-8ef4-a194b31f591e",
+            "9123fd1a-6ec4-4a9f-8053-46877d4b0a56",
+            "009fd909-c804-4644-9016-3a967354acca"
+          ],
+          "north": [
+            "70401acd-ad5e-4c87-840a-7804c50c5790",
+            "d90f9947-a185-4a7c-a0d3-0da0e8749443",
+            "b46a534d-341e-40f2-baeb-329471adb564",
+            "9123fd1a-6ec4-4a9f-8053-46877d4b0a56"
+          ],
+          "south": [
+            "7576e1e2-5ed5-4a91-adf1-03340b28e4f3",
+            "3c4140a4-f3e9-4064-8d21-4a8ced6ada3b",
+            "b46a534d-341e-40f2-baeb-329471adb564",
+            "a31322a9-cb26-4d38-858e-f00b37a53a53"
+          ]
+        },
+        "description": "transparent background and weathered wooden bridge planks showing damp old wood, worn edges, broken boards, rope bindings, and slight moss growth in a desaturated brown and gray palette with soft highlights and shadows - wang_9",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "2fa9a1ff-0b30-4860-9884-46ff63747f78",
+        "name": "wang_7",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "7576e1e2-5ed5-4a91-adf1-03340b28e4f3",
+            "c44159a0-3c47-4d74-9cd3-9c4f3bc617a7",
+            "009fd909-c804-4644-9016-3a967354acca",
+            "a31322a9-cb26-4d38-858e-f00b37a53a53"
+          ],
+          "west": [
+            "80d91ce4-6451-4bee-97e0-7dfe04c5f8b2",
+            "7576e1e2-5ed5-4a91-adf1-03340b28e4f3",
+            "220cf71a-58e3-40e7-9be2-a7d09c4e0c46",
+            "3c4140a4-f3e9-4064-8d21-4a8ced6ada3b"
+          ],
+          "north": [
+            "6c352323-8e90-47ae-a7ce-5b0733e021b7",
+            "0711280b-15a0-4ea4-8ef4-a194b31f591e",
+            "009fd909-c804-4644-9016-3a967354acca",
+            "a31322a9-cb26-4d38-858e-f00b37a53a53"
+          ],
+          "south": [
+            "80d91ce4-6451-4bee-97e0-7dfe04c5f8b2",
+            "6c352323-8e90-47ae-a7ce-5b0733e021b7",
+            "d90f9947-a185-4a7c-a0d3-0da0e8749443",
+            "220cf71a-58e3-40e7-9be2-a7d09c4e0c46"
+          ]
+        },
+        "description": "transparent background and weathered wooden bridge planks showing damp old wood, worn edges, broken boards, rope bindings, and slight moss growth in a desaturated brown and gray palette with soft highlights and shadows - wang_7",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      }
+    ],
+    "tile_size": {
+      "width": 32,
+      "height": 32
+    },
+    "total_tiles": 16,
+    "tileset_type": "sidescroller",
+    "terrain_types": [
+      "central",
+      "background"
+    ],
+    "spritesheet_url": "https://backblaze.pixellab.ai/file/pixellab-tiles/e85f9ec5-58c7-4302-8ca4-a6a80e99431c/e1b75480-103c-4464-9d93-9969e53c5cbf/spritesheet.png",
+    "spritesheet_grid": {
+      "cols": 4,
+      "rows": 4
+    },
+    "spritesheet_layout": "tileset15_4x4"
+  },
+  "metadata": {
+    "user_prompts": {
+      "lower": "weathered wooden bridge planks for a dark gothic forest, damp old wood, worn edges, broken boards, rope bindings, slight moss growth, desaturated brown and gray palette, detailed pixel art, sidescroller platform tile",
+      "upper": "old ruined wooden bridge tile with cracked planks, decayed support beams, damp moss and subtle rope details, dark forgotten forest atmosphere, detailed pixel art",
+      "transition": ""
+    },
+    "terrain_prompts": {
+      "lower": "weathered wooden bridge planks showing damp old wood, worn edges, broken boards, rope bindings, and slight moss growth in a desaturated brown and gray palette with soft highlights and shadows",
+      "upper": "transparent background",
+      "transition": "thin low surface strip of cracked planks, decayed support beams, damp moss, and subtle rope details in a dark forgotten forest atmosphere with moderate depth and soft lighting"
+    }
+  },
+  "created_at": "2026-09-26T17:17:01.333326+00:00",
+  "updated_at": "2026-09-26T17:17:56.863029+00:00",
+  "status": "completed",
+  "format": "tileset15",
+  "layout": {
+    "type": "tileset15",
+    "description": "4x4 grid of 16 unique Wang tiles",
+    "grid_size": {
+      "width": 4,
+      "height": 4
+    },
+    "tile_count": 16
+  },
+  "pattern_system": {
+    "type": "4x4_wildcard",
+    "description": "4\u00d74 patterns with wildcards for flexible tile matching",
+    "wildcard_value": 255,
+    "pattern_layout": {
+      "description": "4\u00d74 grid where center 2\u00d72 matches tile corners, outer ring uses wildcards",
+      "example": {
+        "row_0": "All wildcards (*)",
+        "row_1": "Wildcard + NW corner + NE corner + Wildcard",
+        "row_2": "Wildcard + SW corner + SE corner + Wildcard",
+        "row_3": "All wildcards (*)"
+      }
+    },
+    "terrain_encoding": {
+      "lower": 0,
+      "upper": 1,
+      "transition": 2,
+      "wildcard": 255
+    },
+    "usage": {
+      "description": "Sample 4\u00d74 terrain around tile position, encode as pattern key, lookup in cache",
+      "benefits": [
+        "O(1) lookup performance",
+        "Flexible edge matching",
+        "Unified pattern system"
+      ]
+    }
+  },
+  "tileset_image": {
+    "filename": "tileset_e1b75480-103c-4464-9d93-9969e53c5cbf.png",
+    "format": "PNG",
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    }
+  }
+}

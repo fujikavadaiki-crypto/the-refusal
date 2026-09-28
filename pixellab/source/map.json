@@ -1,0 +1,283 @@
+{
+  "version": "1.0.0",
+  "name": "Bosque dos Esquecidos \u2014 Trecho 01",
+  "exportDate": "2026-09-26T19:17:21.045217Z",
+  "engine": "pixellab-map-editor",
+  "mapConfig": {
+    "tileSize": 32,
+    "dimensions": {
+      "width": 60,
+      "height": 20,
+      "pixelWidth": 1920,
+      "pixelHeight": 640
+    },
+    "boundingBox": {
+      "maxX": 59,
+      "maxY": 29,
+      "minX": 0,
+      "minY": 10
+    }
+  },
+  "terrains": [
+    {
+      "id": 3,
+      "name": "thin mossy forest stone top surface strip scattered with dead weeds and twig fragments, featuring soft medium depth shading and natural woodland weathering",
+      "color": "#15803d",
+      "baseTileId": "50569e3f-df7a-4778-b11a-b917b064e941",
+      "walkable": null
+    },
+    {
+      "id": 8,
+      "name": "a shallow top surface strip of gnarled forest roots crossing cracked ruin stones with soft moss patches, featuring gentle depth and moderate surface texture",
+      "color": "#15803d",
+      "baseTileId": "cd32cf7e-bb7d-418d-979c-813f7d1194e8",
+      "walkable": null
+    },
+    {
+      "id": 4,
+      "name": "chipped medieval gothic column rim top surface with mossy patches and atmospheric weathering showing soft rounded depth",
+      "color": "#9ca3af",
+      "baseTileId": "5a54ea1a-228f-4af3-b1f1-00197cde6e74",
+      "walkable": null
+    },
+    {
+      "id": 1,
+      "name": "thin weathered stone ledge capping the platform with chipped block edges and gentle moss overgrowth, featuring soft highlights and shadows for moderate depth",
+      "color": "#9ca3af",
+      "baseTileId": "c4ad94a5-8b33-4f07-955c-eee70a5848f8",
+      "walkable": null
+    },
+    {
+      "id": 7,
+      "name": "thin low surface strip of cracked planks, decayed support beams, damp moss, and subtle rope details in a dark forgotten forest atmosphere with moderate depth and soft lighting",
+      "color": "#15803d",
+      "baseTileId": "80d91ce4-6451-4bee-97e0-7dfe04c5f8b2",
+      "walkable": null
+    },
+    {
+      "id": 9,
+      "name": "narrow uneven platform top covered in mossy overgrowth and cracked stone fragments with moderate depth and soft shadows",
+      "color": "#9ca3af",
+      "baseTileId": "d052e9f4-c4a3-408a-a62c-fa1ab46e3c67",
+      "walkable": null
+    },
+    {
+      "id": 5,
+      "name": "thin platform surface strip with short overgrown grass, small protruding roots, and a weathered stone lip, featuring soft medium depth lighting",
+      "color": "#22c55e",
+      "baseTileId": "16622d50-5fb5-4db9-add1-c87c63835171",
+      "walkable": null
+    },
+    {
+      "id": 6,
+      "name": "dark gothic forest floor capping the platform edge with weathered grey stone slabs and damp moss, featuring soft highlights and moderate atmospheric depth",
+      "color": "#15803d",
+      "baseTileId": "54ed12c8-bf62-4a39-b33d-64a641bfe934",
+      "walkable": null
+    },
+    {
+      "id": 2,
+      "name": "thin shallow surface rim of dark moss, dead grass blades, twisted root fibers, sparse pale fungi, and small thorny growths over the stone in desaturated greens with gentle depth and soft shadows",
+      "color": "#22c55e",
+      "baseTileId": "0ace86c0-ac04-49ee-916c-1fae60282c01",
+      "walkable": null
+    },
+    {
+      "id": 10,
+      "name": "mossy overgrown platform top surface strip with short grass tufts, damp moss, tiny roots, scattered pebbles, dark ruined forest ground featuring soft highlights and shadows of moderate depth",
+      "color": "#22c55e",
+      "baseTileId": "f0f92658-c331-475f-a467-11596d5530aa",
+      "walkable": null
+    }
+  ],
+  "tilesets": [
+    {
+      "id": "830e4a85-0aeb-4d69-a8c6-cef9aee98db3",
+      "filename": "thin weathered stone ledge capping the platform with chipped block edges and gentle moss ov-9b389a57.png",
+      "lowerTerrain": "thin weathered stone ledge capping the platform with chipped block edges and gentle moss overgrowth, featuring soft highlights and shadows for moderate depth",
+      "upperTerrain": "Empty",
+      "lowerTerrainId": 1,
+      "upperTerrainId": 0,
+      "transitionSize": 0,
+      "transitionDescription": null,
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "side",
+      "tilesetType": "sidescroller",
+      "metadataFilename": "830e4a85-0aeb-4d69-a8c6-cef9aee98db3.json"
+    },
+    {
+      "id": "309ed34b-6ec0-4cdb-a2dc-17eb3c930c16",
+      "filename": "thin shallow surface rim of dark moss, dead grass blades, twisted root fibers, sparse pale-0972c093.png",
+      "lowerTerrain": "thin shallow surface rim of dark moss, dead grass blades, twisted root fibers, sparse pale fungi, and small thorny growths over the stone in desaturated greens with gentle depth and soft shadows",
+      "upperTerrain": "Empty",
+      "lowerTerrainId": 2,
+      "upperTerrainId": 0,
+      "transitionSize": 0,
+      "transitionDescription": null,
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "side",
+      "tilesetType": "sidescroller",
+      "metadataFilename": "309ed34b-6ec0-4cdb-a2dc-17eb3c930c16.json"
+    },
+    {
+      "id": "dc6dd63c-8811-43ac-9d7e-35dfc6b09077",
+      "filename": "thin mossy forest stone top surface strip scattered with dead weeds and twig fragments, fea-2f28185d.png",
+      "lowerTerrain": "thin mossy forest stone top surface strip scattered with dead weeds and twig fragments, featuring soft medium depth shading and natural woodland weathering",
+      "upperTerrain": "Empty",
+      "lowerTerrainId": 3,
+      "upperTerrainId": 0,
+      "transitionSize": 0,
+      "transitionDescription": null,
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "side",
+      "tilesetType": "sidescroller",
+      "metadataFilename": "dc6dd63c-8811-43ac-9d7e-35dfc6b09077.json"
+    },
+    {
+      "id": "45809433-11f8-427d-9401-2e93739dd6c5",
+      "filename": "chipped medieval gothic column rim top surface with mossy patches and atmospheric weatherin-1f9a4f37.png",
+      "lowerTerrain": "chipped medieval gothic column rim top surface with mossy patches and atmospheric weathering showing soft rounded depth",
+      "upperTerrain": "Empty",
+      "lowerTerrainId": 4,
+      "upperTerrainId": 0,
+      "transitionSize": 0,
+      "transitionDescription": null,
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "side",
+      "tilesetType": "sidescroller",
+      "metadataFilename": "45809433-11f8-427d-9401-2e93739dd6c5.json"
+    },
+    {
+      "id": "f66501d0-67d0-44bc-8fe4-0ce26060e7cc",
+      "filename": "thin platform surface strip with short overgrown grass, small protruding roots, and a weath-fa4e1dc6.png",
+      "lowerTerrain": "thin platform surface strip with short overgrown grass, small protruding roots, and a weathered stone lip, featuring soft medium depth lighting",
+      "upperTerrain": "Empty",
+      "lowerTerrainId": 5,
+      "upperTerrainId": 0,
+      "transitionSize": 0,
+      "transitionDescription": null,
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "side",
+      "tilesetType": "sidescroller",
+      "metadataFilename": "f66501d0-67d0-44bc-8fe4-0ce26060e7cc.json"
+    },
+    {
+      "id": "dc123861-1b8c-4493-9573-e200c09d87aa",
+      "filename": "dark gothic forest floor capping the platform edge with weathered grey stone slabs and damp-fc2ac3c0.png",
+      "lowerTerrain": "dark gothic forest floor capping the platform edge with weathered grey stone slabs and damp moss, featuring soft highlights and moderate atmospheric depth",
+      "upperTerrain": "Empty",
+      "lowerTerrainId": 6,
+      "upperTerrainId": 0,
+      "transitionSize": 0,
+      "transitionDescription": null,
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "side",
+      "tilesetType": "sidescroller",
+      "metadataFilename": "dc123861-1b8c-4493-9573-e200c09d87aa.json"
+    },
+    {
+      "id": "e1b75480-103c-4464-9d93-9969e53c5cbf",
+      "filename": "thin low surface strip of cracked planks, decayed support beams, damp moss, and subtle rope-165c3532.png",
+      "lowerTerrain": "thin low surface strip of cracked planks, decayed support beams, damp moss, and subtle rope details in a dark forgotten forest atmosphere with moderate depth and soft lighting",
+      "upperTerrain": "Empty",
+      "lowerTerrainId": 7,
+      "upperTerrainId": 0,
+      "transitionSize": 0,
+      "transitionDescription": null,
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "side",
+      "tilesetType": "sidescroller",
+      "metadataFilename": "e1b75480-103c-4464-9d93-9969e53c5cbf.json"
+    },
+    {
+      "id": "918f9765-f16e-4454-9fb7-e33a8413faf3",
+      "filename": "a shallow top surface strip of gnarled forest roots crossing cracked ruin stones with soft-01028ff5.png",
+      "lowerTerrain": "a shallow top surface strip of gnarled forest roots crossing cracked ruin stones with soft moss patches, featuring gentle depth and moderate surface texture",
+      "upperTerrain": "Empty",
+      "lowerTerrainId": 8,
+      "upperTerrainId": 0,
+      "transitionSize": 0,
+      "transitionDescription": null,
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "side",
+      "tilesetType": "sidescroller",
+      "metadataFilename": "918f9765-f16e-4454-9fb7-e33a8413faf3.json"
+    },
+    {
+      "id": "ad94bbd9-f257-4ee7-b7bd-404b10c3c574",
+      "filename": "narrow uneven platform top covered in mossy overgrowth and cracked stone fragments with mod-4fa99867.png",
+      "lowerTerrain": "narrow uneven platform top covered in mossy overgrowth and cracked stone fragments with moderate depth and soft shadows",
+      "upperTerrain": "Empty",
+      "lowerTerrainId": 9,
+      "upperTerrainId": 0,
+      "transitionSize": 0,
+      "transitionDescription": null,
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "side",
+      "tilesetType": "sidescroller",
+      "metadataFilename": "ad94bbd9-f257-4ee7-b7bd-404b10c3c574.json"
+    },
+    {
+      "id": "8f237647-19a0-4d8a-9300-3127e6bafc34",
+      "filename": "mossy overgrown platform top surface strip with short grass tufts, damp moss, tiny roots, s-5bd83126.png",
+      "lowerTerrain": "mossy overgrown platform top surface strip with short grass tufts, damp moss, tiny roots, scattered pebbles, dark ruined forest ground featuring soft highlights and shadows of moderate depth",
+      "upperTerrain": "Empty",
+      "lowerTerrainId": 10,
+      "upperTerrainId": 0,
+      "transitionSize": 0,
+      "transitionDescription": null,
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "side",
+      "tilesetType": "sidescroller",
+      "metadataFilename": "8f237647-19a0-4d8a-9300-3127e6bafc34.json"
+    }
+  ],
+  "overlays": [],
+  "background": {
+    "type": "custom",
+    "name": "Bosque A",
+    "repeatX": true,
+    "repeatY": false,
+    "worldCoordinates": {
+      "x": 0.0,
+      "y": 317.5
+    },
+    "dimensions": {
+      "width": 1900,
+      "height": 633
+    },
+    "presetId": null,
+    "assetPath": null,
+    "verticalExtend": {
+      "enabled": false,
+      "topHeight": 0,
+      "bottomHeight": 0
+    },
+    "filename": "backgrounds/bosque_a.jpg"
+  },
+  "mapId": "72bc922a-adc5-4002-a71e-ec5a3e798be1",
+  "gameplayAnnotations": {
+    "version": "1.0.0",
+    "file": "annotations.json"
+  }
+}

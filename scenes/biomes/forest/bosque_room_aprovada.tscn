@@ -1,0 +1,305 @@
+[gd_scene load_steps=15 format=3]
+
+[ext_resource type="Script" path="res://scripts/biomes/forest/bosque_room_aprovada.gd" id="1_room"]
+[ext_resource type="Texture2D" path="res://assets/biomes/forest/approved/bosque_b.jpg" id="2_art"]
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="3_player"]
+[ext_resource type="Script" path="res://scripts/biomes/forest/bosque_room_atmosphere.gd" id="4_atmosphere"]
+[ext_resource type="Script" path="res://scripts/biomes/forest/bosque_contact_shadow.gd" id="5_shadow"]
+[ext_resource type="Script" path="res://scripts/biomes/forest/bosque_water_life.gd" id="6_water"]
+[ext_resource type="Script" path="res://scripts/biomes/forest/bosque_vegetation_sway.gd" id="7_vegetation"]
+[ext_resource type="Script" path="res://scripts/biomes/forest/bosque_surface_accents.gd" id="8_surfaces"]
+[ext_resource type="Script" path="res://scripts/biomes/forest/bosque_canopy_light.gd" id="9_canopy_light"]
+[ext_resource type="Script" path="res://scripts/biomes/forest/bosque_wind.gd" id="10_wind"]
+[ext_resource type="Script" path="res://scripts/biomes/forest/bosque_b_environment_layer.gd" id="11_layers"]
+[ext_resource type="Shader" path="res://shaders/bosque_b_video_loop.gdshader" id="12_water_shader"]
+[ext_resource type="VideoStream" path="res://assets/biomes/forest/approved/bosque_b_firefly_background.ogv" id="13_video"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_water"]
+shader = ExtResource("12_water_shader")
+shader_parameter/loop_phase = 0.0
+
+[node name="BosqueRoomAprovada" type="Node2D"]
+script = ExtResource("1_room")
+
+[node name="WindSystem" type="Node" parent="."]
+script = ExtResource("10_wind")
+
+[node name="BACKGROUND_VIDEO" type="Node2D" parent="."]
+z_index = -10
+position = Vector2(0, -125)
+scale = Vector2(0.677083, 0.677083)
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="BACKGROUND_VIDEO"]
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+texture_filter = 2
+stream = ExtResource("13_video")
+volume_db = -80.0
+autoplay = true
+expand = true
+loop = true
+
+[node name="BACKGROUND" type="Node2D" parent="."]
+process_mode = 4
+visible = false
+z_index = -10
+
+[node name="ApprovedComposition" type="Sprite2D" parent="BACKGROUND"]
+material = SubResource("ShaderMaterial_water")
+position = Vector2(0, -45)
+scale = Vector2(0.684211, 0.684211)
+texture_filter = 1
+texture = ExtResource("2_art")
+centered = false
+
+[node name="DistantParallax" type="Node2D" parent="BACKGROUND"]
+position = Vector2(0, -45)
+scale = Vector2(0.684211, 0.684211)
+
+[node name="FarForestAndArch" type="Polygon2D" parent="BACKGROUND/DistantParallax"]
+modulate = Color(1, 1, 1, 0.28)
+texture_filter = 1
+texture = ExtResource("2_art")
+polygon = PackedVector2Array(600, 206, 617, 192, 651, 185, 691, 190, 714, 210, 708, 294, 696, 323, 641, 340, 601, 321, 588, 275)
+uv = PackedVector2Array(600, 206, 617, 192, 651, 185, 691, 190, 714, 210, 708, 294, 696, 323, 641, 340, 601, 321, 588, 275)
+
+[node name="DistantHaze" type="Node2D" parent="BACKGROUND"]
+process_mode = 4
+visible = false
+script = ExtResource("4_atmosphere")
+distant = true
+
+[node name="MIDGROUND" type="Node2D" parent="."]
+process_mode = 4
+visible = false
+z_index = -6
+
+[node name="OrganicAtmosphere" type="Node2D" parent="MIDGROUND"]
+process_mode = 4
+visible = false
+script = ExtResource("4_atmosphere")
+
+[node name="CanopyLight" type="Node2D" parent="MIDGROUND"]
+process_mode = 4
+visible = false
+script = ExtResource("9_canopy_light")
+
+[node name="AnimatedCanopyCutouts" type="Node2D" parent="MIDGROUND"]
+process_mode = 4
+visible = false
+position = Vector2(0, -45)
+scale = Vector2(0.684211, 0.684211)
+script = ExtResource("7_vegetation")
+foreground_pass = false
+
+[node name="WaterfallLife" type="Node2D" parent="MIDGROUND"]
+process_mode = 4
+visible = false
+position = Vector2(0, -45)
+scale = Vector2(0.684211, 0.684211)
+script = ExtResource("6_water")
+
+[node name="PaintedElements" type="Node2D" parent="MIDGROUND"]
+position = Vector2(0, -45)
+scale = Vector2(0.684211, 0.684211)
+
+[node name="CentralTreeTrunk" type="Polygon2D" parent="MIDGROUND/PaintedElements"]
+texture_filter = 1
+texture = ExtResource("2_art")
+polygon = PackedVector2Array(875, 0, 1060, 0, 1045, 70, 1030, 130, 1045, 193, 1068, 255, 1114, 327, 1160, 385, 1070, 397, 1014, 368, 965, 309, 947, 243, 958, 160, 924, 96)
+uv = PackedVector2Array(875, 0, 1060, 0, 1045, 70, 1030, 130, 1045, 193, 1068, 255, 1114, 327, 1160, 385, 1070, 397, 1014, 368, 965, 309, 947, 243, 958, 160, 924, 96)
+
+[node name="RuinedShrine" type="Polygon2D" parent="MIDGROUND/PaintedElements"]
+texture_filter = 1
+texture = ExtResource("2_art")
+polygon = PackedVector2Array(1143, 286, 1152, 263, 1172, 245, 1200, 243, 1220, 260, 1230, 289, 1230, 346, 1213, 357, 1152, 356, 1142, 341)
+uv = PackedVector2Array(1143, 286, 1152, 263, 1172, 245, 1200, 243, 1220, 260, 1230, 289, 1230, 346, 1213, 357, 1152, 356, 1142, 341)
+
+[node name="SurfaceAccents" type="Node2D" parent="MIDGROUND"]
+position = Vector2(0, -45)
+scale = Vector2(0.684211, 0.684211)
+script = ExtResource("8_surfaces")
+
+[node name="WaterfallLayer" type="Node2D" parent="MIDGROUND"]
+position = Vector2(0, -45)
+scale = Vector2(0.684211, 0.684211)
+script = ExtResource("11_layers")
+
+[node name="LowerWaterLayer" type="Node2D" parent="MIDGROUND"]
+position = Vector2(0, -45)
+scale = Vector2(0.684211, 0.684211)
+script = ExtResource("11_layers")
+layer_mode = 1
+
+[node name="VegetationSwayMasks" type="Node2D" parent="MIDGROUND"]
+position = Vector2(0, -45)
+scale = Vector2(0.684211, 0.684211)
+script = ExtResource("11_layers")
+layer_mode = 2
+
+[node name="MistLayer" type="Node2D" parent="MIDGROUND"]
+position = Vector2(0, -45)
+scale = Vector2(0.684211, 0.684211)
+script = ExtResource("11_layers")
+layer_mode = 4
+
+[node name="LightShafts" type="Node2D" parent="MIDGROUND"]
+position = Vector2(0, -45)
+scale = Vector2(0.684211, 0.684211)
+script = ExtResource("11_layers")
+layer_mode = 5
+
+[node name="GAMEPLAY" type="Node2D" parent="."]
+position = Vector2(0, -45)
+scale = Vector2(0.684211, 0.684211)
+
+[node name="EntranceTrail" type="StaticBody2D" parent="GAMEPLAY"]
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GAMEPLAY/EntranceTrail"]
+polygon = PackedVector2Array(0, 320, 80, 321, 160, 322, 166, 322, 166, 390, 340, 390, 340, 402, 154, 402, 154, 334, 80, 333, 0, 332)
+
+[node name="MiddleTrail" type="StaticBody2D" parent="GAMEPLAY"]
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GAMEPLAY/MiddleTrail"]
+polygon = PackedVector2Array(340, 390, 410, 401, 500, 410, 610, 414, 720, 417, 850, 420, 850, 432, 720, 429, 610, 426, 500, 422, 410, 413, 340, 402)
+
+[node name="RuinTrail" type="StaticBody2D" parent="GAMEPLAY"]
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GAMEPLAY/RuinTrail"]
+polygon = PackedVector2Array(850, 420, 940, 423, 1050, 425, 1150, 433, 1250, 445, 1340, 447, 1340, 459, 1250, 457, 1150, 445, 1050, 437, 940, 435, 850, 432)
+
+[node name="WaterfallApproach" type="StaticBody2D" parent="GAMEPLAY"]
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GAMEPLAY/WaterfallApproach"]
+polygon = PackedVector2Array(1340, 447, 1430, 444, 1500, 442, 1568, 445, 1568, 457, 1500, 454, 1430, 456, 1340, 459)
+
+[node name="WaterfallLanding" type="StaticBody2D" parent="GAMEPLAY"]
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GAMEPLAY/WaterfallLanding"]
+polygon = PackedVector2Array(1732, 473, 1780, 471, 1840, 470, 1900, 469, 1900, 481, 1840, 482, 1780, 483, 1732, 485)
+
+[node name="FloatingStone" type="StaticBody2D" parent="GAMEPLAY"]
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GAMEPLAY/FloatingStone"]
+one_way_collision = true
+polygon = PackedVector2Array(719, 317, 760, 315, 819, 316, 819, 327, 760, 326, 719, 328)
+
+[node name="RaisedRuin" type="StaticBody2D" parent="GAMEPLAY"]
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GAMEPLAY/RaisedRuin"]
+one_way_collision = true
+polygon = PackedVector2Array(930, 381, 977, 376, 1020, 375, 1068, 378, 1068, 389, 1020, 387, 977, 388, 930, 393)
+
+[node name="StatueShelf" type="StaticBody2D" parent="GAMEPLAY"]
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GAMEPLAY/StatueShelf"]
+one_way_collision = true
+polygon = PackedVector2Array(1245, 322, 1293, 320, 1293, 331, 1245, 333)
+
+[node name="BrokenColumn" type="StaticBody2D" parent="GAMEPLAY"]
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GAMEPLAY/BrokenColumn"]
+one_way_collision = true
+polygon = PackedVector2Array(1350, 345, 1435, 345, 1435, 357, 1350, 357)
+
+[node name="WaterfallStone" type="StaticBody2D" parent="GAMEPLAY"]
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GAMEPLAY/WaterfallStone"]
+one_way_collision = true
+polygon = PackedVector2Array(1450, 411, 1500, 409, 1555, 410, 1555, 422, 1500, 421, 1450, 423)
+
+[node name="HighRightRuin" type="StaticBody2D" parent="GAMEPLAY"]
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GAMEPLAY/HighRightRuin"]
+one_way_collision = true
+polygon = PackedVector2Array(1750, 286, 1810, 287, 1900, 285, 1900, 297, 1810, 299, 1750, 298)
+
+[node name="FOREGROUND" type="Node2D" parent="."]
+process_mode = 4
+visible = false
+z_index = 16
+
+[node name="PaintedElements" type="Node2D" parent="FOREGROUND"]
+position = Vector2(0, -45)
+scale = Vector2(0.684211, 0.684211)
+
+[node name="MossedPillar" type="Polygon2D" parent="FOREGROUND/PaintedElements"]
+texture_filter = 1
+texture = ExtResource("2_art")
+polygon = PackedVector2Array(1351, 347, 1362, 341, 1409, 339, 1427, 346, 1434, 365, 1431, 426, 1420, 450, 1390, 458, 1362, 450, 1349, 429)
+uv = PackedVector2Array(1351, 347, 1362, 341, 1409, 339, 1427, 346, 1434, 365, 1431, 426, 1420, 450, 1390, 458, 1362, 450, 1349, 429)
+
+[node name="WaterfallCliffLip" type="Polygon2D" parent="FOREGROUND/PaintedElements"]
+texture_filter = 1
+texture = ExtResource("2_art")
+polygon = PackedVector2Array(1451, 412, 1470, 407, 1523, 405, 1556, 411, 1564, 444, 1552, 468, 1508, 461, 1460, 452)
+uv = PackedVector2Array(1451, 412, 1470, 407, 1523, 405, 1556, 411, 1564, 444, 1552, 468, 1508, 461, 1460, 452)
+
+[node name="VegetationSway" type="Node2D" parent="FOREGROUND"]
+process_mode = 4
+visible = false
+position = Vector2(0, -45)
+scale = Vector2(0.684211, 0.684211)
+script = ExtResource("7_vegetation")
+
+[node name="WaterfallSpray" type="Node2D" parent="FOREGROUND"]
+process_mode = 4
+visible = false
+position = Vector2(0, -45)
+scale = Vector2(0.684211, 0.684211)
+script = ExtResource("6_water")
+foreground_spray = true
+
+[node name="NearLeavesAndDust" type="Node2D" parent="FOREGROUND"]
+process_mode = 4
+visible = false
+script = ExtResource("4_atmosphere")
+foreground = true
+
+[node name="LeafParticles" type="Node2D" parent="FOREGROUND"]
+position = Vector2(0, -45)
+scale = Vector2(0.684211, 0.684211)
+script = ExtResource("11_layers")
+layer_mode = 3
+
+[node name="WaterfallDroplets" type="Node2D" parent="FOREGROUND"]
+position = Vector2(0, -45)
+scale = Vector2(0.684211, 0.684211)
+script = ExtResource("11_layers")
+layer_mode = 6
+
+[node name="Start" type="Marker2D" parent="."]
+position = Vector2(82, 161)
+
+[node name="Exit" type="Marker2D" parent="."]
+position = Vector2(1268, 267)
+
+[node name="ContactShadow" type="Node2D" parent="."]
+z_index = -1
+script = ExtResource("5_shadow")
+
+[node name="Player" parent="." instance=ExtResource("3_player")]
+position = Vector2(82, 161)

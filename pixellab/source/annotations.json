@@ -1,0 +1,113 @@
+{
+  "version": "1.0.0",
+  "layers": [
+    {
+      "id": "72ca9de2-36d6-41e6-9a9d-167264a8cec6",
+      "name": "Superf\u00edcies jog\u00e1veis",
+      "geometryType": "rectArea",
+      "visible": true,
+      "locked": false,
+      "color": "#ffd93d",
+      "tags": [],
+      "defaultProperties": {},
+      "terrainSource": {
+        "terrainIds": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          9
+        ],
+        "terrainNames": [
+          "thin weathered stone ledge capping the platform with chipped block edges and gentle moss overgrowth, featuring soft highlights and shadows for moderate depth",
+          "thin shallow surface rim of dark moss, dead grass blades, twisted root fibers, sparse pale fungi, and small thorny growths over the stone in desaturated greens with gentle depth and soft shadows",
+          "thin mossy forest stone top surface strip scattered with dead weeds and twig fragments, featuring soft medium depth shading and natural woodland weathering",
+          "thin platform surface strip with short overgrown grass, small protruding roots, and a weathered stone lip, featuring soft medium depth lighting",
+          "dark gothic forest floor capping the platform edge with weathered grey stone slabs and damp moss, featuring soft highlights and moderate atmospheric depth",
+          "thin low surface strip of cracked planks, decayed support beams, damp moss, and subtle rope details in a dark forgotten forest atmosphere with moderate depth and soft lighting",
+          "narrow uneven platform top covered in mossy overgrowth and cracked stone fragments with moderate depth and soft shadows"
+        ]
+      },
+      "rects": [
+        {
+          "id": "72ca9de2-36d6-41e6-9a9d-167264a8cec6-mask-0",
+          "x": 304,
+          "y": 688,
+          "width": 160,
+          "height": 32
+        },
+        {
+          "id": "72ca9de2-36d6-41e6-9a9d-167264a8cec6-mask-1",
+          "x": 880,
+          "y": 688,
+          "width": 96,
+          "height": 32
+        },
+        {
+          "id": "72ca9de2-36d6-41e6-9a9d-167264a8cec6-mask-2",
+          "x": 1584,
+          "y": 688,
+          "width": 96,
+          "height": 32
+        },
+        {
+          "id": "72ca9de2-36d6-41e6-9a9d-167264a8cec6-mask-3",
+          "x": 16,
+          "y": 784,
+          "width": 576,
+          "height": 160
+        },
+        {
+          "id": "72ca9de2-36d6-41e6-9a9d-167264a8cec6-mask-4",
+          "x": 752,
+          "y": 784,
+          "width": 480,
+          "height": 160
+        },
+        {
+          "id": "72ca9de2-36d6-41e6-9a9d-167264a8cec6-mask-5",
+          "x": 1392,
+          "y": 784,
+          "width": 512,
+          "height": 160
+        }
+      ]
+    },
+    {
+      "id": "3f113464-5628-4ffc-84c9-15df38b1c90f",
+      "name": "Entrada do Carrasco",
+      "geometryType": "point",
+      "visible": true,
+      "locked": false,
+      "color": "#ff6b6b",
+      "tags": [],
+      "defaultProperties": {},
+      "points": [
+        {
+          "id": "0cfe90b1-0b3f-4aa5-bdd0-f805be4c671a",
+          "x": 109,
+          "y": 757
+        }
+      ]
+    },
+    {
+      "id": "50e3d52d-9d92-4333-8d6e-b4a93626cd46",
+      "name": "Sa\u00edda do trecho",
+      "geometryType": "point",
+      "visible": true,
+      "locked": false,
+      "color": "#00d2d3",
+      "tags": [],
+      "defaultProperties": {},
+      "points": [
+        {
+          "id": "f93e74c8-94f4-4d7d-876d-0e7e5f12942b",
+          "x": 1814,
+          "y": 757
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+[gd_scene load_steps=4 format=3]
+[ext_resource type="Script" path="res://scripts/pixellab_map_builder.gd" id="Script_builder"]
+[ext_resource type="Texture2D" path="res://pixellab/source/backgrounds/bosque_a.jpg" id="Texture_background_0"]
+[ext_resource type="Script" path="res://scripts/pixellab_background_renderer.gd" id="Script_background"]
+
+[node name="Bosque dos Esquecidos — Trecho 01" type="Node2D"]
+metadata/pixellab_format = "pixellab-engine-map"
+metadata/pixellab_version = "2.1.0"
+script = ExtResource("Script_builder")
+
+[node name="Background" type="Node2D" parent="."]
+script = ExtResource("Script_background")
+texture = ExtResource("Texture_background_0")
+map_size = Vector2(1920, 640)
+image_size = Vector2(1900, 633)
+anchor_x = 0
+anchor_y = -2.5
+repeat_x = true
+vertical_extend_enabled = false
+top_height = 0
+bottom_height = 0
+z_index = -4096
+metadata/pixellab_source = "{\"type\":\"custom\",\"name\":\"Bosque A\",\"repeatX\":true,\"repeatY\":false,\"worldCoordinates\":{\"x\":0.0,\"y\":317.5},\"dimensions\":{\"width\":1900,\"height\":633},\"presetId\":null,\"assetPath\":null,\"verticalExtend\":{\"enabled\":false,\"topHeight\":0,\"bottomHeight\":0},\"filename\":\"backgrounds/bosque_a.jpg\"}"
+
+[node name="Objects" type="Node2D" parent="."]
+
+[node name="Gameplay" type="Node2D" parent="."]
+position = Vector2(16, 16)
+
+[node name="Superfícies jogáveis 1" type="Node2D" parent="Gameplay"]
+metadata/pixellab_id = "72ca9de2-36d6-41e6-9a9d-167264a8cec6"
+metadata/pixellab_role = "data"
+metadata/pixellab_source = "{\"id\":\"72ca9de2-36d6-41e6-9a9d-167264a8cec6\",\"name\":\"Superfícies jogáveis\",\"geometryType\":\"rectArea\",\"visible\":true,\"locked\":false,\"color\":\"#ffd93d\",\"tags\":[],\"defaultProperties\":{},\"terrainSource\":{\"terrainIds\":[1,2,3,5,6,7,9],\"terrainNames\":[\"thin weathered stone ledge capping the platform with chipped block edges and gentle moss overgrowth, featuring soft highlights and shadows for moderate depth\",\"thin shallow surface rim of dark moss, dead grass blades, twisted root fibers, sparse pale fungi, and small thorny growths over the stone in desaturated greens with gentle depth and soft shadows\",\"thin mossy forest stone top surface strip scattered with dead weeds and twig fragments, featuring soft medium depth shading and natural woodland weathering\",\"thin platform surface strip with short overgrown grass, small protruding roots, and a weathered stone lip, featuring soft medium depth lighting\",\"dark gothic forest floor capping the platform edge with weathered grey stone slabs and damp moss, featuring soft highlights and moderate atmospheric depth\",\"thin low surface strip of cracked planks, decayed support beams, damp moss, and subtle rope details in a dark forgotten forest atmosphere with moderate depth and soft lighting\",\"narrow uneven platform top covered in mossy overgrowth and cracked stone fragments with moderate depth and soft shadows\"]},\"rects\":[{\"id\":\"72ca9de2-36d6-41e6-9a9d-167264a8cec6-mask-0\",\"x\":304,\"y\":688,\"width\":160,\"height\":32},{\"id\":\"72ca9de2-36d6-41e6-9a9d-167264a8cec6-mask-1\",\"x\":880,\"y\":688,\"width\":96,\"height\":32},{\"id\":\"72ca9de2-36d6-41e6-9a9d-167264a8cec6-mask-2\",\"x\":1584,\"y\":688,\"width\":96,\"height\":32},{\"id\":\"72ca9de2-36d6-41e6-9a9d-167264a8cec6-mask-3\",\"x\":16,\"y\":784,\"width\":576,\"height\":160},{\"id\":\"72ca9de2-36d6-41e6-9a9d-167264a8cec6-mask-4\",\"x\":752,\"y\":784,\"width\":480,\"height\":160},{\"id\":\"72ca9de2-36d6-41e6-9a9d-167264a8cec6-mask-5\",\"x\":1392,\"y\":784,\"width\":512,\"height\":160}]}"
+
+[node name="Data Composite" type="Area2D" parent="Gameplay/Superfícies jogáveis 1"]
+metadata/pixellab_id = "72ca9de2-36d6-41e6-9a9d-167264a8cec6"
+metadata/pixellab_role = "data"
+metadata/pixellab_composite = true
+metadata/pixellab_rect_count = 6
+collision_layer = 2
+collision_mask = 1
+
+[node name="CollisionPolygon2D 1" type="CollisionPolygon2D" parent="Gameplay/Superfícies jogáveis 1/Data Composite"]
+polygon = PackedVector2Array(304, 368, 464, 368, 464, 400, 304, 400)
+
+[node name="CollisionPolygon2D 2" type="CollisionPolygon2D" parent="Gameplay/Superfícies jogáveis 1/Data Composite"]
+polygon = PackedVector2Array(880, 368, 976, 368, 976, 400, 880, 400)
+
+[node name="CollisionPolygon2D 3" type="CollisionPolygon2D" parent="Gameplay/Superfícies jogáveis 1/Data Composite"]
+polygon = PackedVector2Array(1584, 368, 1680, 368, 1680, 400, 1584, 400)
+
+[node name="CollisionPolygon2D 4" type="CollisionPolygon2D" parent="Gameplay/Superfícies jogáveis 1/Data Composite"]
+polygon = PackedVector2Array(16, 464, 592, 464, 592, 624, 16, 624)
+
+[node name="CollisionPolygon2D 5" type="CollisionPolygon2D" parent="Gameplay/Superfícies jogáveis 1/Data Composite"]
+polygon = PackedVector2Array(752, 464, 1232, 464, 1232, 624, 752, 624)
+
+[node name="CollisionPolygon2D 6" type="CollisionPolygon2D" parent="Gameplay/Superfícies jogáveis 1/Data Composite"]
+polygon = PackedVector2Array(1392, 464, 1904, 464, 1904, 624, 1392, 624)
+
+[node name="Entrada do Carrasco 2" type="Marker2D" parent="Gameplay"]
+position = Vector2(109, 437)
+metadata/pixellab_annotationLayerId = "3f113464-5628-4ffc-84c9-15df38b1c90f"
+metadata/pixellab_id = "0cfe90b1-0b3f-4aa5-bdd0-f805be4c671a"
+metadata/pixellab_role = "data"
+metadata/pixellab_source = "{\"id\":\"0cfe90b1-0b3f-4aa5-bdd0-f805be4c671a\",\"x\":109,\"y\":757}"
+metadata/pixellab_layerSource = "{\"id\":\"3f113464-5628-4ffc-84c9-15df38b1c90f\",\"name\":\"Entrada do Carrasco\",\"geometryType\":\"point\",\"visible\":true,\"locked\":false,\"color\":\"#ff6b6b\",\"tags\":[],\"defaultProperties\":{},\"points\":[{\"id\":\"0cfe90b1-0b3f-4aa5-bdd0-f805be4c671a\",\"x\":109,\"y\":757}]}"
+
+[node name="Saída do trecho 3" type="Marker2D" parent="Gameplay"]
+position = Vector2(1814, 437)
+metadata/pixellab_annotationLayerId = "50e3d52d-9d92-4333-8d6e-b4a93626cd46"
+metadata/pixellab_id = "f93e74c8-94f4-4d7d-876d-0e7e5f12942b"
+metadata/pixellab_role = "data"
+metadata/pixellab_source = "{\"id\":\"f93e74c8-94f4-4d7d-876d-0e7e5f12942b\",\"x\":1814,\"y\":757}"
+metadata/pixellab_layerSource = "{\"id\":\"50e3d52d-9d92-4333-8d6e-b4a93626cd46\",\"name\":\"Saída do trecho\",\"geometryType\":\"point\",\"visible\":true,\"locked\":false,\"color\":\"#00d2d3\",\"tags\":[],\"defaultProperties\":{},\"points\":[{\"id\":\"f93e74c8-94f4-4d7d-876d-0e7e5f12942b\",\"x\":1814,\"y\":757}]}"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 320)
+enabled = true

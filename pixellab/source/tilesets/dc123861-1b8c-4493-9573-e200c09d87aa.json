@@ -1,0 +1,1264 @@
+{
+  "id": "dc123861-1b8c-4493-9573-e200c09d87aa",
+  "name": "ancient forest",
+  "tileSize": {
+    "width": 32,
+    "height": 32
+  },
+  "baseTileIds": null,
+  "terrainMapping": {
+    "lower": 6,
+    "upper": 0
+  },
+  "lowerDescription": "ancient forest floor composed of dense packed dark earth and tangled rotting roots with soft mossy patches, rendered with moderate surface texture and gentle medium-depth shadows",
+  "upperDescription": "dark gothic forest floor capping the platform edge with weathered grey stone slabs and damp moss, featuring soft highlights and moderate atmospheric depth",
+  "user_id": "e85f9ec5-58c7-4302-8ca4-a6a80e99431c",
+  "lower_description": "ancient forest floor composed of dense packed dark earth and tangled rotting roots with soft mossy patches, rendered with moderate surface texture and gentle medium-depth shadows",
+  "upper_description": "dark gothic forest floor capping the platform edge with weathered grey stone slabs and damp moss, featuring soft highlights and moderate atmospheric depth",
+  "transition_description": null,
+  "tile_size": {
+    "width": 32,
+    "height": 32
+  },
+  "transition_size": 0,
+  "view": "side",
+  "style_settings": null,
+  "generation_parameters": null,
+  "base_tile_ids": {
+    "lower": "54ed12c8-bf62-4a39-b33d-64a641bfe934",
+    "upper": "9e719348-94df-45c9-8d8c-e7e564ac0f7f"
+  },
+  "tileset_data": {
+    "tiles": [
+      {
+        "id": "784df1d7-7bc6-4465-8094-b37cc161d80d",
+        "name": "wang_13",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "4eedcea7-7f41-4268-b9ad-c0911d286352",
+            "9a3b390e-593e-459a-9ce6-7c4db2a44608",
+            "710df3a0-3c02-40a5-8c20-a982dd5a46e6",
+            "62b49315-8903-4df9-888d-8893ebd2ad78"
+          ],
+          "west": [
+            "c30dd411-fdd0-46e9-a18a-fd8cfd59659d",
+            "710df3a0-3c02-40a5-8c20-a982dd5a46e6",
+            "65ddb40c-9f3c-4db9-b95a-55b14d0d8b26",
+            "9e719348-94df-45c9-8d8c-e7e564ac0f7f"
+          ],
+          "north": [
+            "4eedcea7-7f41-4268-b9ad-c0911d286352",
+            "278c69cb-7658-4665-8fb3-913269a18fc6",
+            "62b49315-8903-4df9-888d-8893ebd2ad78",
+            "8df75e55-c0e6-41a5-8ab0-721d65e950bf"
+          ],
+          "south": [
+            "f63016ac-4c97-4acc-a727-2e9c14fcf12e",
+            "c30dd411-fdd0-46e9-a18a-fd8cfd59659d",
+            "8df75e55-c0e6-41a5-8ab0-721d65e950bf",
+            "9e719348-94df-45c9-8d8c-e7e564ac0f7f"
+          ]
+        },
+        "description": "transparent background and ancient forest floor composed of dense packed dark earth and tangled rotting roots with soft mossy patches, rendered with moderate surface texture and gentle medium-depth shadows - wang_13",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "b48c1031-ec30-44b7-9855-302971b6cf93",
+        "name": "wang_10",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "ee095db5-9362-4d2c-8f6d-96ef3f5157ff",
+            "e99e527e-50df-40f0-b0a1-c4605cd5f023",
+            "1a537af9-3715-4f07-9401-da00c209f8e6"
+          ],
+          "west": [
+            "c30dd411-fdd0-46e9-a18a-fd8cfd59659d",
+            "710df3a0-3c02-40a5-8c20-a982dd5a46e6",
+            "9e719348-94df-45c9-8d8c-e7e564ac0f7f"
+          ],
+          "north": [
+            "4eedcea7-7f41-4268-b9ad-c0911d286352",
+            "278c69cb-7658-4665-8fb3-913269a18fc6",
+            "62b49315-8903-4df9-888d-8893ebd2ad78",
+            "8df75e55-c0e6-41a5-8ab0-721d65e950bf"
+          ],
+          "south": [
+            "54ed12c8-bf62-4a39-b33d-64a641bfe934",
+            "c274a5eb-c5b1-44bd-94d2-90a63e20e293",
+            "278c69cb-7658-4665-8fb3-913269a18fc6",
+            "02882b5b-5a16-474a-a79a-469014f2f62b"
+          ]
+        },
+        "description": "transparent background and ancient forest floor composed of dense packed dark earth and tangled rotting roots with soft mossy patches, rendered with moderate surface texture and gentle medium-depth shadows - wang_10",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "703f8a40-6090-4a1c-8c19-c6a4a04936e2",
+        "name": "wang_4",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "02882b5b-5a16-474a-a79a-469014f2f62b",
+            "8df75e55-c0e6-41a5-8ab0-721d65e950bf",
+            "9e719348-94df-45c9-8d8c-e7e564ac0f7f"
+          ],
+          "west": [
+            "c274a5eb-c5b1-44bd-94d2-90a63e20e293",
+            "62b49315-8903-4df9-888d-8893ebd2ad78",
+            "1a537af9-3715-4f07-9401-da00c209f8e6"
+          ],
+          "north": [
+            "54ed12c8-bf62-4a39-b33d-64a641bfe934",
+            "ee095db5-9362-4d2c-8f6d-96ef3f5157ff",
+            "c30dd411-fdd0-46e9-a18a-fd8cfd59659d",
+            "65ddb40c-9f3c-4db9-b95a-55b14d0d8b26"
+          ],
+          "south": [
+            "4eedcea7-7f41-4268-b9ad-c0911d286352",
+            "710df3a0-3c02-40a5-8c20-a982dd5a46e6",
+            "65ddb40c-9f3c-4db9-b95a-55b14d0d8b26",
+            "e99e527e-50df-40f0-b0a1-c4605cd5f023"
+          ]
+        },
+        "description": "transparent background and ancient forest floor composed of dense packed dark earth and tangled rotting roots with soft mossy patches, rendered with moderate surface texture and gentle medium-depth shadows - wang_4",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "fa4d4cbb-13c2-4e90-b47d-4c30a3d7cbd0",
+        "name": "wang_12",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "4eedcea7-7f41-4268-b9ad-c0911d286352",
+            "9a3b390e-593e-459a-9ce6-7c4db2a44608",
+            "710df3a0-3c02-40a5-8c20-a982dd5a46e6",
+            "62b49315-8903-4df9-888d-8893ebd2ad78"
+          ],
+          "west": [
+            "c274a5eb-c5b1-44bd-94d2-90a63e20e293",
+            "278c69cb-7658-4665-8fb3-913269a18fc6",
+            "62b49315-8903-4df9-888d-8893ebd2ad78",
+            "1a537af9-3715-4f07-9401-da00c209f8e6"
+          ],
+          "north": [
+            "c274a5eb-c5b1-44bd-94d2-90a63e20e293",
+            "f63016ac-4c97-4acc-a727-2e9c14fcf12e",
+            "e99e527e-50df-40f0-b0a1-c4605cd5f023",
+            "1a537af9-3715-4f07-9401-da00c209f8e6"
+          ],
+          "south": [
+            "4eedcea7-7f41-4268-b9ad-c0911d286352",
+            "710df3a0-3c02-40a5-8c20-a982dd5a46e6",
+            "65ddb40c-9f3c-4db9-b95a-55b14d0d8b26",
+            "e99e527e-50df-40f0-b0a1-c4605cd5f023"
+          ]
+        },
+        "description": "transparent background and ancient forest floor composed of dense packed dark earth and tangled rotting roots with soft mossy patches, rendered with moderate surface texture and gentle medium-depth shadows - wang_12",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 5,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "6c50b0f9-8b54-4c33-a8ed-39a8505d0190",
+        "name": "wang_6",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "4eedcea7-7f41-4268-b9ad-c0911d286352",
+            "9a3b390e-593e-459a-9ce6-7c4db2a44608",
+            "710df3a0-3c02-40a5-8c20-a982dd5a46e6",
+            "62b49315-8903-4df9-888d-8893ebd2ad78"
+          ],
+          "west": [
+            "54ed12c8-bf62-4a39-b33d-64a641bfe934",
+            "ee095db5-9362-4d2c-8f6d-96ef3f5157ff",
+            "02882b5b-5a16-474a-a79a-469014f2f62b",
+            "9a3b390e-593e-459a-9ce6-7c4db2a44608"
+          ],
+          "north": [
+            "c274a5eb-c5b1-44bd-94d2-90a63e20e293",
+            "e99e527e-50df-40f0-b0a1-c4605cd5f023",
+            "1a537af9-3715-4f07-9401-da00c209f8e6"
+          ],
+          "south": [
+            "c30dd411-fdd0-46e9-a18a-fd8cfd59659d",
+            "8df75e55-c0e6-41a5-8ab0-721d65e950bf",
+            "9e719348-94df-45c9-8d8c-e7e564ac0f7f"
+          ]
+        },
+        "description": "transparent background and ancient forest floor composed of dense packed dark earth and tangled rotting roots with soft mossy patches, rendered with moderate surface texture and gentle medium-depth shadows - wang_6",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 5
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "000e501d-34f5-42d3-b4e1-e51e90772265",
+        "name": "wang_8",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "54ed12c8-bf62-4a39-b33d-64a641bfe934",
+            "c274a5eb-c5b1-44bd-94d2-90a63e20e293",
+            "f63016ac-4c97-4acc-a727-2e9c14fcf12e",
+            "c30dd411-fdd0-46e9-a18a-fd8cfd59659d"
+          ],
+          "west": [
+            "4eedcea7-7f41-4268-b9ad-c0911d286352",
+            "f63016ac-4c97-4acc-a727-2e9c14fcf12e",
+            "8df75e55-c0e6-41a5-8ab0-721d65e950bf",
+            "e99e527e-50df-40f0-b0a1-c4605cd5f023"
+          ],
+          "north": [
+            "02882b5b-5a16-474a-a79a-469014f2f62b",
+            "710df3a0-3c02-40a5-8c20-a982dd5a46e6",
+            "9e719348-94df-45c9-8d8c-e7e564ac0f7f"
+          ],
+          "south": [
+            "ee095db5-9362-4d2c-8f6d-96ef3f5157ff",
+            "62b49315-8903-4df9-888d-8893ebd2ad78",
+            "1a537af9-3715-4f07-9401-da00c209f8e6"
+          ]
+        },
+        "description": "transparent background and ancient forest floor composed of dense packed dark earth and tangled rotting roots with soft mossy patches, rendered with moderate surface texture and gentle medium-depth shadows - wang_8",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "54ed12c8-bf62-4a39-b33d-64a641bfe934",
+        "name": "wang_0",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "c274a5eb-c5b1-44bd-94d2-90a63e20e293",
+            "f63016ac-4c97-4acc-a727-2e9c14fcf12e",
+            "c30dd411-fdd0-46e9-a18a-fd8cfd59659d"
+          ],
+          "west": [
+            "ee095db5-9362-4d2c-8f6d-96ef3f5157ff",
+            "02882b5b-5a16-474a-a79a-469014f2f62b",
+            "9a3b390e-593e-459a-9ce6-7c4db2a44608"
+          ],
+          "north": [
+            "ee095db5-9362-4d2c-8f6d-96ef3f5157ff",
+            "c30dd411-fdd0-46e9-a18a-fd8cfd59659d",
+            "65ddb40c-9f3c-4db9-b95a-55b14d0d8b26"
+          ],
+          "south": [
+            "c274a5eb-c5b1-44bd-94d2-90a63e20e293",
+            "278c69cb-7658-4665-8fb3-913269a18fc6",
+            "02882b5b-5a16-474a-a79a-469014f2f62b"
+          ]
+        },
+        "description": "transparent background and ancient forest floor composed of dense packed dark earth and tangled rotting roots with soft mossy patches, rendered with moderate surface texture and gentle medium-depth shadows - wang_0",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 6
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "ea070246-b7a4-41c8-ba91-b349a2aa8f7c",
+        "name": "wang_1",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "9a3b390e-593e-459a-9ce6-7c4db2a44608",
+            "710df3a0-3c02-40a5-8c20-a982dd5a46e6",
+            "62b49315-8903-4df9-888d-8893ebd2ad78"
+          ],
+          "west": [
+            "f63016ac-4c97-4acc-a727-2e9c14fcf12e",
+            "8df75e55-c0e6-41a5-8ab0-721d65e950bf",
+            "e99e527e-50df-40f0-b0a1-c4605cd5f023"
+          ],
+          "north": [
+            "278c69cb-7658-4665-8fb3-913269a18fc6",
+            "62b49315-8903-4df9-888d-8893ebd2ad78",
+            "8df75e55-c0e6-41a5-8ab0-721d65e950bf"
+          ],
+          "south": [
+            "710df3a0-3c02-40a5-8c20-a982dd5a46e6",
+            "65ddb40c-9f3c-4db9-b95a-55b14d0d8b26",
+            "e99e527e-50df-40f0-b0a1-c4605cd5f023"
+          ]
+        },
+        "description": "transparent background and ancient forest floor composed of dense packed dark earth and tangled rotting roots with soft mossy patches, rendered with moderate surface texture and gentle medium-depth shadows - wang_1",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "bf4e5af2-cc1d-4507-8232-af32091373fe",
+        "name": "wang_11",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "278c69cb-7658-4665-8fb3-913269a18fc6",
+            "02882b5b-5a16-474a-a79a-469014f2f62b",
+            "8df75e55-c0e6-41a5-8ab0-721d65e950bf",
+            "9e719348-94df-45c9-8d8c-e7e564ac0f7f"
+          ],
+          "west": [
+            "4eedcea7-7f41-4268-b9ad-c0911d286352",
+            "f63016ac-4c97-4acc-a727-2e9c14fcf12e",
+            "8df75e55-c0e6-41a5-8ab0-721d65e950bf",
+            "e99e527e-50df-40f0-b0a1-c4605cd5f023"
+          ],
+          "north": [
+            "02882b5b-5a16-474a-a79a-469014f2f62b",
+            "9a3b390e-593e-459a-9ce6-7c4db2a44608",
+            "710df3a0-3c02-40a5-8c20-a982dd5a46e6",
+            "9e719348-94df-45c9-8d8c-e7e564ac0f7f"
+          ],
+          "south": [
+            "4eedcea7-7f41-4268-b9ad-c0911d286352",
+            "710df3a0-3c02-40a5-8c20-a982dd5a46e6",
+            "65ddb40c-9f3c-4db9-b95a-55b14d0d8b26",
+            "e99e527e-50df-40f0-b0a1-c4605cd5f023"
+          ]
+        },
+        "description": "transparent background and ancient forest floor composed of dense packed dark earth and tangled rotting roots with soft mossy patches, rendered with moderate surface texture and gentle medium-depth shadows - wang_11",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "f8401d5d-cf91-46a1-9ac2-ec65a4bda050",
+        "name": "wang_3",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "278c69cb-7658-4665-8fb3-913269a18fc6",
+            "02882b5b-5a16-474a-a79a-469014f2f62b",
+            "8df75e55-c0e6-41a5-8ab0-721d65e950bf",
+            "9e719348-94df-45c9-8d8c-e7e564ac0f7f"
+          ],
+          "west": [
+            "54ed12c8-bf62-4a39-b33d-64a641bfe934",
+            "ee095db5-9362-4d2c-8f6d-96ef3f5157ff",
+            "02882b5b-5a16-474a-a79a-469014f2f62b",
+            "9a3b390e-593e-459a-9ce6-7c4db2a44608"
+          ],
+          "north": [
+            "54ed12c8-bf62-4a39-b33d-64a641bfe934",
+            "ee095db5-9362-4d2c-8f6d-96ef3f5157ff",
+            "c30dd411-fdd0-46e9-a18a-fd8cfd59659d",
+            "65ddb40c-9f3c-4db9-b95a-55b14d0d8b26"
+          ],
+          "south": [
+            "f63016ac-4c97-4acc-a727-2e9c14fcf12e",
+            "c30dd411-fdd0-46e9-a18a-fd8cfd59659d",
+            "8df75e55-c0e6-41a5-8ab0-721d65e950bf",
+            "9e719348-94df-45c9-8d8c-e7e564ac0f7f"
+          ]
+        },
+        "description": "transparent background and ancient forest floor composed of dense packed dark earth and tangled rotting roots with soft mossy patches, rendered with moderate surface texture and gentle medium-depth shadows - wang_3",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "76feedca-a686-4cc3-aba6-a2b0b47e13ed",
+        "name": "wang_2",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "54ed12c8-bf62-4a39-b33d-64a641bfe934",
+            "c274a5eb-c5b1-44bd-94d2-90a63e20e293",
+            "f63016ac-4c97-4acc-a727-2e9c14fcf12e",
+            "c30dd411-fdd0-46e9-a18a-fd8cfd59659d"
+          ],
+          "west": [
+            "c30dd411-fdd0-46e9-a18a-fd8cfd59659d",
+            "710df3a0-3c02-40a5-8c20-a982dd5a46e6",
+            "65ddb40c-9f3c-4db9-b95a-55b14d0d8b26",
+            "9e719348-94df-45c9-8d8c-e7e564ac0f7f"
+          ],
+          "north": [
+            "02882b5b-5a16-474a-a79a-469014f2f62b",
+            "9a3b390e-593e-459a-9ce6-7c4db2a44608",
+            "710df3a0-3c02-40a5-8c20-a982dd5a46e6",
+            "9e719348-94df-45c9-8d8c-e7e564ac0f7f"
+          ],
+          "south": [
+            "54ed12c8-bf62-4a39-b33d-64a641bfe934",
+            "c274a5eb-c5b1-44bd-94d2-90a63e20e293",
+            "278c69cb-7658-4665-8fb3-913269a18fc6",
+            "02882b5b-5a16-474a-a79a-469014f2f62b"
+          ]
+        },
+        "description": "transparent background and ancient forest floor composed of dense packed dark earth and tangled rotting roots with soft mossy patches, rendered with moderate surface texture and gentle medium-depth shadows - wang_2",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "d6d753e6-0427-41b9-a3d3-30c45a69d95f",
+        "name": "wang_5",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "54ed12c8-bf62-4a39-b33d-64a641bfe934",
+            "c274a5eb-c5b1-44bd-94d2-90a63e20e293",
+            "f63016ac-4c97-4acc-a727-2e9c14fcf12e",
+            "c30dd411-fdd0-46e9-a18a-fd8cfd59659d"
+          ],
+          "west": [
+            "c274a5eb-c5b1-44bd-94d2-90a63e20e293",
+            "278c69cb-7658-4665-8fb3-913269a18fc6",
+            "62b49315-8903-4df9-888d-8893ebd2ad78",
+            "1a537af9-3715-4f07-9401-da00c209f8e6"
+          ],
+          "north": [
+            "54ed12c8-bf62-4a39-b33d-64a641bfe934",
+            "ee095db5-9362-4d2c-8f6d-96ef3f5157ff",
+            "c30dd411-fdd0-46e9-a18a-fd8cfd59659d",
+            "65ddb40c-9f3c-4db9-b95a-55b14d0d8b26"
+          ],
+          "south": [
+            "ee095db5-9362-4d2c-8f6d-96ef3f5157ff",
+            "9a3b390e-593e-459a-9ce6-7c4db2a44608",
+            "62b49315-8903-4df9-888d-8893ebd2ad78",
+            "1a537af9-3715-4f07-9401-da00c209f8e6"
+          ]
+        },
+        "description": "transparent background and ancient forest floor composed of dense packed dark earth and tangled rotting roots with soft mossy patches, rendered with moderate surface texture and gentle medium-depth shadows - wang_5",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "9e719348-94df-45c9-8d8c-e7e564ac0f7f",
+        "name": "wang_15",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "ee095db5-9362-4d2c-8f6d-96ef3f5157ff",
+            "65ddb40c-9f3c-4db9-b95a-55b14d0d8b26",
+            "e99e527e-50df-40f0-b0a1-c4605cd5f023",
+            "1a537af9-3715-4f07-9401-da00c209f8e6"
+          ],
+          "west": [
+            "c274a5eb-c5b1-44bd-94d2-90a63e20e293",
+            "278c69cb-7658-4665-8fb3-913269a18fc6",
+            "62b49315-8903-4df9-888d-8893ebd2ad78",
+            "1a537af9-3715-4f07-9401-da00c209f8e6"
+          ],
+          "north": [
+            "c274a5eb-c5b1-44bd-94d2-90a63e20e293",
+            "f63016ac-4c97-4acc-a727-2e9c14fcf12e",
+            "e99e527e-50df-40f0-b0a1-c4605cd5f023",
+            "1a537af9-3715-4f07-9401-da00c209f8e6"
+          ],
+          "south": [
+            "ee095db5-9362-4d2c-8f6d-96ef3f5157ff",
+            "9a3b390e-593e-459a-9ce6-7c4db2a44608",
+            "62b49315-8903-4df9-888d-8893ebd2ad78",
+            "1a537af9-3715-4f07-9401-da00c209f8e6"
+          ]
+        },
+        "description": "transparent background and ancient forest floor composed of dense packed dark earth and tangled rotting roots with soft mossy patches, rendered with moderate surface texture and gentle medium-depth shadows - wang_15",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "9d1665dc-df27-41ac-be6e-98e0ac72a976",
+        "name": "wang_14",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "278c69cb-7658-4665-8fb3-913269a18fc6",
+            "02882b5b-5a16-474a-a79a-469014f2f62b",
+            "8df75e55-c0e6-41a5-8ab0-721d65e950bf",
+            "9e719348-94df-45c9-8d8c-e7e564ac0f7f"
+          ],
+          "west": [
+            "c30dd411-fdd0-46e9-a18a-fd8cfd59659d",
+            "710df3a0-3c02-40a5-8c20-a982dd5a46e6",
+            "65ddb40c-9f3c-4db9-b95a-55b14d0d8b26",
+            "9e719348-94df-45c9-8d8c-e7e564ac0f7f"
+          ],
+          "north": [
+            "02882b5b-5a16-474a-a79a-469014f2f62b",
+            "9a3b390e-593e-459a-9ce6-7c4db2a44608",
+            "710df3a0-3c02-40a5-8c20-a982dd5a46e6",
+            "9e719348-94df-45c9-8d8c-e7e564ac0f7f"
+          ],
+          "south": [
+            "f63016ac-4c97-4acc-a727-2e9c14fcf12e",
+            "c30dd411-fdd0-46e9-a18a-fd8cfd59659d",
+            "8df75e55-c0e6-41a5-8ab0-721d65e950bf",
+            "9e719348-94df-45c9-8d8c-e7e564ac0f7f"
+          ]
+        },
+        "description": "transparent background and ancient forest floor composed of dense packed dark earth and tangled rotting roots with soft mossy patches, rendered with moderate surface texture and gentle medium-depth shadows - wang_14",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "8f4d5286-2ae6-424a-b563-dd2570dc1780",
+        "name": "wang_9",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "ee095db5-9362-4d2c-8f6d-96ef3f5157ff",
+            "65ddb40c-9f3c-4db9-b95a-55b14d0d8b26",
+            "e99e527e-50df-40f0-b0a1-c4605cd5f023",
+            "1a537af9-3715-4f07-9401-da00c209f8e6"
+          ],
+          "west": [
+            "4eedcea7-7f41-4268-b9ad-c0911d286352",
+            "f63016ac-4c97-4acc-a727-2e9c14fcf12e",
+            "8df75e55-c0e6-41a5-8ab0-721d65e950bf",
+            "e99e527e-50df-40f0-b0a1-c4605cd5f023"
+          ],
+          "north": [
+            "4eedcea7-7f41-4268-b9ad-c0911d286352",
+            "278c69cb-7658-4665-8fb3-913269a18fc6",
+            "62b49315-8903-4df9-888d-8893ebd2ad78",
+            "8df75e55-c0e6-41a5-8ab0-721d65e950bf"
+          ],
+          "south": [
+            "ee095db5-9362-4d2c-8f6d-96ef3f5157ff",
+            "9a3b390e-593e-459a-9ce6-7c4db2a44608",
+            "62b49315-8903-4df9-888d-8893ebd2ad78",
+            "1a537af9-3715-4f07-9401-da00c209f8e6"
+          ]
+        },
+        "description": "transparent background and ancient forest floor composed of dense packed dark earth and tangled rotting roots with soft mossy patches, rendered with moderate surface texture and gentle medium-depth shadows - wang_9",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "cc7e842c-f6a0-412f-8160-f2134800fbd1",
+        "name": "wang_7",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "ee095db5-9362-4d2c-8f6d-96ef3f5157ff",
+            "65ddb40c-9f3c-4db9-b95a-55b14d0d8b26",
+            "e99e527e-50df-40f0-b0a1-c4605cd5f023",
+            "1a537af9-3715-4f07-9401-da00c209f8e6"
+          ],
+          "west": [
+            "54ed12c8-bf62-4a39-b33d-64a641bfe934",
+            "ee095db5-9362-4d2c-8f6d-96ef3f5157ff",
+            "02882b5b-5a16-474a-a79a-469014f2f62b",
+            "9a3b390e-593e-459a-9ce6-7c4db2a44608"
+          ],
+          "north": [
+            "c274a5eb-c5b1-44bd-94d2-90a63e20e293",
+            "f63016ac-4c97-4acc-a727-2e9c14fcf12e",
+            "e99e527e-50df-40f0-b0a1-c4605cd5f023",
+            "1a537af9-3715-4f07-9401-da00c209f8e6"
+          ],
+          "south": [
+            "54ed12c8-bf62-4a39-b33d-64a641bfe934",
+            "c274a5eb-c5b1-44bd-94d2-90a63e20e293",
+            "278c69cb-7658-4665-8fb3-913269a18fc6",
+            "02882b5b-5a16-474a-a79a-469014f2f62b"
+          ]
+        },
+        "description": "transparent background and ancient forest floor composed of dense packed dark earth and tangled rotting roots with soft mossy patches, rendered with moderate surface texture and gentle medium-depth shadows - wang_7",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      }
+    ],
+    "tile_size": {
+      "width": 32,
+      "height": 32
+    },
+    "total_tiles": 16,
+    "tileset_type": "sidescroller",
+    "terrain_types": [
+      "central",
+      "background"
+    ],
+    "spritesheet_url": "https://backblaze.pixellab.ai/file/pixellab-tiles/e85f9ec5-58c7-4302-8ca4-a6a80e99431c/dc123861-1b8c-4493-9573-e200c09d87aa/spritesheet.png",
+    "spritesheet_grid": {
+      "cols": 4,
+      "rows": 4
+    },
+    "spritesheet_layout": "tileset15_4x4"
+  },
+  "metadata": {
+    "user_prompts": {
+      "lower": "ancient forest",
+      "upper": "dark gothic forgotten forest, ancient ruined stone, damp moss, exposed roots, desaturated green, brown and gray palette, weathered medieval ruins, gloomy atmosphere, detailed pixel art, sidescroller game asset, matching the Bosque dos Esquecidos visual style",
+      "transition": ""
+    },
+    "terrain_prompts": {
+      "lower": "ancient forest floor composed of dense packed dark earth and tangled rotting roots with soft mossy patches, rendered with moderate surface texture and gentle medium-depth shadows",
+      "upper": "transparent background",
+      "transition": "dark gothic forest floor capping the platform edge with weathered grey stone slabs and damp moss, featuring soft highlights and moderate atmospheric depth"
+    }
+  },
+  "created_at": "2026-09-26T17:01:39.812932+00:00",
+  "updated_at": "2026-09-26T17:02:35.629731+00:00",
+  "status": "completed",
+  "format": "tileset15",
+  "layout": {
+    "type": "tileset15",
+    "description": "4x4 grid of 16 unique Wang tiles",
+    "grid_size": {
+      "width": 4,
+      "height": 4
+    },
+    "tile_count": 16
+  },
+  "pattern_system": {
+    "type": "4x4_wildcard",
+    "description": "4\u00d74 patterns with wildcards for flexible tile matching",
+    "wildcard_value": 255,
+    "pattern_layout": {
+      "description": "4\u00d74 grid where center 2\u00d72 matches tile corners, outer ring uses wildcards",
+      "example": {
+        "row_0": "All wildcards (*)",
+        "row_1": "Wildcard + NW corner + NE corner + Wildcard",
+        "row_2": "Wildcard + SW corner + SE corner + Wildcard",
+        "row_3": "All wildcards (*)"
+      }
+    },
+    "terrain_encoding": {
+      "lower": 0,
+      "upper": 1,
+      "transition": 2,
+      "wildcard": 255
+    },
+    "usage": {
+      "description": "Sample 4\u00d74 terrain around tile position, encode as pattern key, lookup in cache",
+      "benefits": [
+        "O(1) lookup performance",
+        "Flexible edge matching",
+        "Unified pattern system"
+      ]
+    }
+  },
+  "tileset_image": {
+    "filename": "tileset_dc123861-1b8c-4493-9573-e200c09d87aa.png",
+    "format": "PNG",
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    }
+  }
+}

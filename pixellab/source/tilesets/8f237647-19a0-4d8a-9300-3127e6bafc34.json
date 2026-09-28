@@ -1,0 +1,1264 @@
+{
+  "id": "8f237647-19a0-4d8a-9300-3127e6bafc34",
+  "name": "ancient dark weathered stone and compact forest",
+  "tileSize": {
+    "width": 32,
+    "height": 32
+  },
+  "baseTileIds": null,
+  "terrainMapping": {
+    "lower": 10,
+    "upper": 0
+  },
+  "lowerDescription": "ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette featuring soft highlights and shadows of moderate depth",
+  "upperDescription": "mossy overgrown platform top surface strip with short grass tufts, damp moss, tiny roots, scattered pebbles, dark ruined forest ground featuring soft highlights and shadows of moderate depth",
+  "user_id": "e85f9ec5-58c7-4302-8ca4-a6a80e99431c",
+  "lower_description": "ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette featuring soft highlights and shadows of moderate depth",
+  "upper_description": "mossy overgrown platform top surface strip with short grass tufts, damp moss, tiny roots, scattered pebbles, dark ruined forest ground featuring soft highlights and shadows of moderate depth",
+  "transition_description": null,
+  "tile_size": {
+    "width": 32,
+    "height": 32
+  },
+  "transition_size": 0,
+  "view": "side",
+  "style_settings": null,
+  "generation_parameters": null,
+  "base_tile_ids": {
+    "lower": "f0f92658-c331-475f-a467-11596d5530aa",
+    "upper": "26099315-a2e9-4e15-831b-5b8cf010d860"
+  },
+  "tileset_data": {
+    "tiles": [
+      {
+        "id": "6130d20c-240e-410c-a5a8-7c10825d27e6",
+        "name": "wang_13",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "c1355491-6ae8-4974-b29b-a12b0a6e5d2a",
+            "b48a9c68-8e73-4ed6-aefd-480cae0b4616",
+            "cff2608c-28dd-44a1-865b-a2aad307a9b5",
+            "23bf9318-9ed2-4f67-a396-d29f5d85389d"
+          ],
+          "west": [
+            "f74015a4-73fb-4eec-922f-9bbb1fb575c7",
+            "cff2608c-28dd-44a1-865b-a2aad307a9b5",
+            "7f4f5bc9-9285-4830-8912-3e7a0ab8be32",
+            "26099315-a2e9-4e15-831b-5b8cf010d860"
+          ],
+          "north": [
+            "c1355491-6ae8-4974-b29b-a12b0a6e5d2a",
+            "5dc7b33b-20e0-4bd9-afcc-ad7d813f18ca",
+            "23bf9318-9ed2-4f67-a396-d29f5d85389d",
+            "7e4f1d04-03a2-45bf-a71b-1688987ebf51"
+          ],
+          "south": [
+            "0d6c449f-c8f6-496c-bbaa-b0b85ed8cb26",
+            "f74015a4-73fb-4eec-922f-9bbb1fb575c7",
+            "7e4f1d04-03a2-45bf-a71b-1688987ebf51",
+            "26099315-a2e9-4e15-831b-5b8cf010d860"
+          ]
+        },
+        "description": "transparent background and ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette featuring soft highlights and shadows of moderate depth - wang_13",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "6465c8e5-0f9d-49e6-b5ee-2585539687dd",
+        "name": "wang_10",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "fbbd4c0a-fd38-4789-8e0a-1bcaceabae26",
+            "3f78a725-d728-4137-9234-94f7902c0611",
+            "1ecceaa2-65e2-4308-982a-854173e337f9"
+          ],
+          "west": [
+            "f74015a4-73fb-4eec-922f-9bbb1fb575c7",
+            "cff2608c-28dd-44a1-865b-a2aad307a9b5",
+            "26099315-a2e9-4e15-831b-5b8cf010d860"
+          ],
+          "north": [
+            "c1355491-6ae8-4974-b29b-a12b0a6e5d2a",
+            "5dc7b33b-20e0-4bd9-afcc-ad7d813f18ca",
+            "23bf9318-9ed2-4f67-a396-d29f5d85389d",
+            "7e4f1d04-03a2-45bf-a71b-1688987ebf51"
+          ],
+          "south": [
+            "f0f92658-c331-475f-a467-11596d5530aa",
+            "a8d266f9-62ad-459b-98ce-52910bcba484",
+            "5dc7b33b-20e0-4bd9-afcc-ad7d813f18ca",
+            "0f643c73-168b-4ed5-8f9c-416fd32e06f4"
+          ]
+        },
+        "description": "transparent background and ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette featuring soft highlights and shadows of moderate depth - wang_10",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "cdcfdd07-67d1-48ad-9bda-8e8a7473d0ed",
+        "name": "wang_4",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "0f643c73-168b-4ed5-8f9c-416fd32e06f4",
+            "7e4f1d04-03a2-45bf-a71b-1688987ebf51",
+            "26099315-a2e9-4e15-831b-5b8cf010d860"
+          ],
+          "west": [
+            "a8d266f9-62ad-459b-98ce-52910bcba484",
+            "23bf9318-9ed2-4f67-a396-d29f5d85389d",
+            "1ecceaa2-65e2-4308-982a-854173e337f9"
+          ],
+          "north": [
+            "f0f92658-c331-475f-a467-11596d5530aa",
+            "fbbd4c0a-fd38-4789-8e0a-1bcaceabae26",
+            "f74015a4-73fb-4eec-922f-9bbb1fb575c7",
+            "7f4f5bc9-9285-4830-8912-3e7a0ab8be32"
+          ],
+          "south": [
+            "c1355491-6ae8-4974-b29b-a12b0a6e5d2a",
+            "cff2608c-28dd-44a1-865b-a2aad307a9b5",
+            "7f4f5bc9-9285-4830-8912-3e7a0ab8be32",
+            "3f78a725-d728-4137-9234-94f7902c0611"
+          ]
+        },
+        "description": "transparent background and ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette featuring soft highlights and shadows of moderate depth - wang_4",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "020172d5-3427-4aea-993f-c6307e947984",
+        "name": "wang_12",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "c1355491-6ae8-4974-b29b-a12b0a6e5d2a",
+            "b48a9c68-8e73-4ed6-aefd-480cae0b4616",
+            "cff2608c-28dd-44a1-865b-a2aad307a9b5",
+            "23bf9318-9ed2-4f67-a396-d29f5d85389d"
+          ],
+          "west": [
+            "a8d266f9-62ad-459b-98ce-52910bcba484",
+            "5dc7b33b-20e0-4bd9-afcc-ad7d813f18ca",
+            "23bf9318-9ed2-4f67-a396-d29f5d85389d",
+            "1ecceaa2-65e2-4308-982a-854173e337f9"
+          ],
+          "north": [
+            "a8d266f9-62ad-459b-98ce-52910bcba484",
+            "0d6c449f-c8f6-496c-bbaa-b0b85ed8cb26",
+            "3f78a725-d728-4137-9234-94f7902c0611",
+            "1ecceaa2-65e2-4308-982a-854173e337f9"
+          ],
+          "south": [
+            "c1355491-6ae8-4974-b29b-a12b0a6e5d2a",
+            "cff2608c-28dd-44a1-865b-a2aad307a9b5",
+            "7f4f5bc9-9285-4830-8912-3e7a0ab8be32",
+            "3f78a725-d728-4137-9234-94f7902c0611"
+          ]
+        },
+        "description": "transparent background and ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette featuring soft highlights and shadows of moderate depth - wang_12",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 5,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "163d6bed-e1b9-4eb9-a819-9116f81555a0",
+        "name": "wang_6",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "c1355491-6ae8-4974-b29b-a12b0a6e5d2a",
+            "b48a9c68-8e73-4ed6-aefd-480cae0b4616",
+            "cff2608c-28dd-44a1-865b-a2aad307a9b5",
+            "23bf9318-9ed2-4f67-a396-d29f5d85389d"
+          ],
+          "west": [
+            "f0f92658-c331-475f-a467-11596d5530aa",
+            "fbbd4c0a-fd38-4789-8e0a-1bcaceabae26",
+            "0f643c73-168b-4ed5-8f9c-416fd32e06f4",
+            "b48a9c68-8e73-4ed6-aefd-480cae0b4616"
+          ],
+          "north": [
+            "a8d266f9-62ad-459b-98ce-52910bcba484",
+            "3f78a725-d728-4137-9234-94f7902c0611",
+            "1ecceaa2-65e2-4308-982a-854173e337f9"
+          ],
+          "south": [
+            "f74015a4-73fb-4eec-922f-9bbb1fb575c7",
+            "7e4f1d04-03a2-45bf-a71b-1688987ebf51",
+            "26099315-a2e9-4e15-831b-5b8cf010d860"
+          ]
+        },
+        "description": "transparent background and ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette featuring soft highlights and shadows of moderate depth - wang_6",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 5
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "0d52a963-631f-4016-8cf3-1cd6db43fb47",
+        "name": "wang_8",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "f0f92658-c331-475f-a467-11596d5530aa",
+            "a8d266f9-62ad-459b-98ce-52910bcba484",
+            "0d6c449f-c8f6-496c-bbaa-b0b85ed8cb26",
+            "f74015a4-73fb-4eec-922f-9bbb1fb575c7"
+          ],
+          "west": [
+            "c1355491-6ae8-4974-b29b-a12b0a6e5d2a",
+            "0d6c449f-c8f6-496c-bbaa-b0b85ed8cb26",
+            "7e4f1d04-03a2-45bf-a71b-1688987ebf51",
+            "3f78a725-d728-4137-9234-94f7902c0611"
+          ],
+          "north": [
+            "0f643c73-168b-4ed5-8f9c-416fd32e06f4",
+            "cff2608c-28dd-44a1-865b-a2aad307a9b5",
+            "26099315-a2e9-4e15-831b-5b8cf010d860"
+          ],
+          "south": [
+            "fbbd4c0a-fd38-4789-8e0a-1bcaceabae26",
+            "23bf9318-9ed2-4f67-a396-d29f5d85389d",
+            "1ecceaa2-65e2-4308-982a-854173e337f9"
+          ]
+        },
+        "description": "transparent background and ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette featuring soft highlights and shadows of moderate depth - wang_8",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "f0f92658-c331-475f-a467-11596d5530aa",
+        "name": "wang_0",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "a8d266f9-62ad-459b-98ce-52910bcba484",
+            "0d6c449f-c8f6-496c-bbaa-b0b85ed8cb26",
+            "f74015a4-73fb-4eec-922f-9bbb1fb575c7"
+          ],
+          "west": [
+            "fbbd4c0a-fd38-4789-8e0a-1bcaceabae26",
+            "0f643c73-168b-4ed5-8f9c-416fd32e06f4",
+            "b48a9c68-8e73-4ed6-aefd-480cae0b4616"
+          ],
+          "north": [
+            "fbbd4c0a-fd38-4789-8e0a-1bcaceabae26",
+            "f74015a4-73fb-4eec-922f-9bbb1fb575c7",
+            "7f4f5bc9-9285-4830-8912-3e7a0ab8be32"
+          ],
+          "south": [
+            "a8d266f9-62ad-459b-98ce-52910bcba484",
+            "5dc7b33b-20e0-4bd9-afcc-ad7d813f18ca",
+            "0f643c73-168b-4ed5-8f9c-416fd32e06f4"
+          ]
+        },
+        "description": "transparent background and ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette featuring soft highlights and shadows of moderate depth - wang_0",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 6
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "7e3804a3-abd7-4728-b13d-3fc2be2fa5c7",
+        "name": "wang_1",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "b48a9c68-8e73-4ed6-aefd-480cae0b4616",
+            "cff2608c-28dd-44a1-865b-a2aad307a9b5",
+            "23bf9318-9ed2-4f67-a396-d29f5d85389d"
+          ],
+          "west": [
+            "0d6c449f-c8f6-496c-bbaa-b0b85ed8cb26",
+            "7e4f1d04-03a2-45bf-a71b-1688987ebf51",
+            "3f78a725-d728-4137-9234-94f7902c0611"
+          ],
+          "north": [
+            "5dc7b33b-20e0-4bd9-afcc-ad7d813f18ca",
+            "23bf9318-9ed2-4f67-a396-d29f5d85389d",
+            "7e4f1d04-03a2-45bf-a71b-1688987ebf51"
+          ],
+          "south": [
+            "cff2608c-28dd-44a1-865b-a2aad307a9b5",
+            "7f4f5bc9-9285-4830-8912-3e7a0ab8be32",
+            "3f78a725-d728-4137-9234-94f7902c0611"
+          ]
+        },
+        "description": "transparent background and ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette featuring soft highlights and shadows of moderate depth - wang_1",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "b57d59e7-f00b-4d12-a685-35ec269b1411",
+        "name": "wang_11",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "5dc7b33b-20e0-4bd9-afcc-ad7d813f18ca",
+            "0f643c73-168b-4ed5-8f9c-416fd32e06f4",
+            "7e4f1d04-03a2-45bf-a71b-1688987ebf51",
+            "26099315-a2e9-4e15-831b-5b8cf010d860"
+          ],
+          "west": [
+            "c1355491-6ae8-4974-b29b-a12b0a6e5d2a",
+            "0d6c449f-c8f6-496c-bbaa-b0b85ed8cb26",
+            "7e4f1d04-03a2-45bf-a71b-1688987ebf51",
+            "3f78a725-d728-4137-9234-94f7902c0611"
+          ],
+          "north": [
+            "0f643c73-168b-4ed5-8f9c-416fd32e06f4",
+            "b48a9c68-8e73-4ed6-aefd-480cae0b4616",
+            "cff2608c-28dd-44a1-865b-a2aad307a9b5",
+            "26099315-a2e9-4e15-831b-5b8cf010d860"
+          ],
+          "south": [
+            "c1355491-6ae8-4974-b29b-a12b0a6e5d2a",
+            "cff2608c-28dd-44a1-865b-a2aad307a9b5",
+            "7f4f5bc9-9285-4830-8912-3e7a0ab8be32",
+            "3f78a725-d728-4137-9234-94f7902c0611"
+          ]
+        },
+        "description": "transparent background and ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette featuring soft highlights and shadows of moderate depth - wang_11",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "2fd59246-3e7d-4e6c-ac7a-34dda5f7d818",
+        "name": "wang_3",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "5dc7b33b-20e0-4bd9-afcc-ad7d813f18ca",
+            "0f643c73-168b-4ed5-8f9c-416fd32e06f4",
+            "7e4f1d04-03a2-45bf-a71b-1688987ebf51",
+            "26099315-a2e9-4e15-831b-5b8cf010d860"
+          ],
+          "west": [
+            "f0f92658-c331-475f-a467-11596d5530aa",
+            "fbbd4c0a-fd38-4789-8e0a-1bcaceabae26",
+            "0f643c73-168b-4ed5-8f9c-416fd32e06f4",
+            "b48a9c68-8e73-4ed6-aefd-480cae0b4616"
+          ],
+          "north": [
+            "f0f92658-c331-475f-a467-11596d5530aa",
+            "fbbd4c0a-fd38-4789-8e0a-1bcaceabae26",
+            "f74015a4-73fb-4eec-922f-9bbb1fb575c7",
+            "7f4f5bc9-9285-4830-8912-3e7a0ab8be32"
+          ],
+          "south": [
+            "0d6c449f-c8f6-496c-bbaa-b0b85ed8cb26",
+            "f74015a4-73fb-4eec-922f-9bbb1fb575c7",
+            "7e4f1d04-03a2-45bf-a71b-1688987ebf51",
+            "26099315-a2e9-4e15-831b-5b8cf010d860"
+          ]
+        },
+        "description": "transparent background and ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette featuring soft highlights and shadows of moderate depth - wang_3",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "4b88f5d8-d50a-4157-8285-779012da1ebe",
+        "name": "wang_2",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "f0f92658-c331-475f-a467-11596d5530aa",
+            "a8d266f9-62ad-459b-98ce-52910bcba484",
+            "0d6c449f-c8f6-496c-bbaa-b0b85ed8cb26",
+            "f74015a4-73fb-4eec-922f-9bbb1fb575c7"
+          ],
+          "west": [
+            "f74015a4-73fb-4eec-922f-9bbb1fb575c7",
+            "cff2608c-28dd-44a1-865b-a2aad307a9b5",
+            "7f4f5bc9-9285-4830-8912-3e7a0ab8be32",
+            "26099315-a2e9-4e15-831b-5b8cf010d860"
+          ],
+          "north": [
+            "0f643c73-168b-4ed5-8f9c-416fd32e06f4",
+            "b48a9c68-8e73-4ed6-aefd-480cae0b4616",
+            "cff2608c-28dd-44a1-865b-a2aad307a9b5",
+            "26099315-a2e9-4e15-831b-5b8cf010d860"
+          ],
+          "south": [
+            "f0f92658-c331-475f-a467-11596d5530aa",
+            "a8d266f9-62ad-459b-98ce-52910bcba484",
+            "5dc7b33b-20e0-4bd9-afcc-ad7d813f18ca",
+            "0f643c73-168b-4ed5-8f9c-416fd32e06f4"
+          ]
+        },
+        "description": "transparent background and ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette featuring soft highlights and shadows of moderate depth - wang_2",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "08e5900b-eaac-43ba-8d9a-5b23c7901eb0",
+        "name": "wang_5",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "f0f92658-c331-475f-a467-11596d5530aa",
+            "a8d266f9-62ad-459b-98ce-52910bcba484",
+            "0d6c449f-c8f6-496c-bbaa-b0b85ed8cb26",
+            "f74015a4-73fb-4eec-922f-9bbb1fb575c7"
+          ],
+          "west": [
+            "a8d266f9-62ad-459b-98ce-52910bcba484",
+            "5dc7b33b-20e0-4bd9-afcc-ad7d813f18ca",
+            "23bf9318-9ed2-4f67-a396-d29f5d85389d",
+            "1ecceaa2-65e2-4308-982a-854173e337f9"
+          ],
+          "north": [
+            "f0f92658-c331-475f-a467-11596d5530aa",
+            "fbbd4c0a-fd38-4789-8e0a-1bcaceabae26",
+            "f74015a4-73fb-4eec-922f-9bbb1fb575c7",
+            "7f4f5bc9-9285-4830-8912-3e7a0ab8be32"
+          ],
+          "south": [
+            "fbbd4c0a-fd38-4789-8e0a-1bcaceabae26",
+            "b48a9c68-8e73-4ed6-aefd-480cae0b4616",
+            "23bf9318-9ed2-4f67-a396-d29f5d85389d",
+            "1ecceaa2-65e2-4308-982a-854173e337f9"
+          ]
+        },
+        "description": "transparent background and ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette featuring soft highlights and shadows of moderate depth - wang_5",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "26099315-a2e9-4e15-831b-5b8cf010d860",
+        "name": "wang_15",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "fbbd4c0a-fd38-4789-8e0a-1bcaceabae26",
+            "7f4f5bc9-9285-4830-8912-3e7a0ab8be32",
+            "3f78a725-d728-4137-9234-94f7902c0611",
+            "1ecceaa2-65e2-4308-982a-854173e337f9"
+          ],
+          "west": [
+            "a8d266f9-62ad-459b-98ce-52910bcba484",
+            "5dc7b33b-20e0-4bd9-afcc-ad7d813f18ca",
+            "23bf9318-9ed2-4f67-a396-d29f5d85389d",
+            "1ecceaa2-65e2-4308-982a-854173e337f9"
+          ],
+          "north": [
+            "a8d266f9-62ad-459b-98ce-52910bcba484",
+            "0d6c449f-c8f6-496c-bbaa-b0b85ed8cb26",
+            "3f78a725-d728-4137-9234-94f7902c0611",
+            "1ecceaa2-65e2-4308-982a-854173e337f9"
+          ],
+          "south": [
+            "fbbd4c0a-fd38-4789-8e0a-1bcaceabae26",
+            "b48a9c68-8e73-4ed6-aefd-480cae0b4616",
+            "23bf9318-9ed2-4f67-a396-d29f5d85389d",
+            "1ecceaa2-65e2-4308-982a-854173e337f9"
+          ]
+        },
+        "description": "transparent background and ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette featuring soft highlights and shadows of moderate depth - wang_15",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "803f1538-ec17-46cf-9279-aa530f759221",
+        "name": "wang_14",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "5dc7b33b-20e0-4bd9-afcc-ad7d813f18ca",
+            "0f643c73-168b-4ed5-8f9c-416fd32e06f4",
+            "7e4f1d04-03a2-45bf-a71b-1688987ebf51",
+            "26099315-a2e9-4e15-831b-5b8cf010d860"
+          ],
+          "west": [
+            "f74015a4-73fb-4eec-922f-9bbb1fb575c7",
+            "cff2608c-28dd-44a1-865b-a2aad307a9b5",
+            "7f4f5bc9-9285-4830-8912-3e7a0ab8be32",
+            "26099315-a2e9-4e15-831b-5b8cf010d860"
+          ],
+          "north": [
+            "0f643c73-168b-4ed5-8f9c-416fd32e06f4",
+            "b48a9c68-8e73-4ed6-aefd-480cae0b4616",
+            "cff2608c-28dd-44a1-865b-a2aad307a9b5",
+            "26099315-a2e9-4e15-831b-5b8cf010d860"
+          ],
+          "south": [
+            "0d6c449f-c8f6-496c-bbaa-b0b85ed8cb26",
+            "f74015a4-73fb-4eec-922f-9bbb1fb575c7",
+            "7e4f1d04-03a2-45bf-a71b-1688987ebf51",
+            "26099315-a2e9-4e15-831b-5b8cf010d860"
+          ]
+        },
+        "description": "transparent background and ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette featuring soft highlights and shadows of moderate depth - wang_14",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "07f815f0-bf6a-489d-9903-3e99538382a8",
+        "name": "wang_9",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "fbbd4c0a-fd38-4789-8e0a-1bcaceabae26",
+            "7f4f5bc9-9285-4830-8912-3e7a0ab8be32",
+            "3f78a725-d728-4137-9234-94f7902c0611",
+            "1ecceaa2-65e2-4308-982a-854173e337f9"
+          ],
+          "west": [
+            "c1355491-6ae8-4974-b29b-a12b0a6e5d2a",
+            "0d6c449f-c8f6-496c-bbaa-b0b85ed8cb26",
+            "7e4f1d04-03a2-45bf-a71b-1688987ebf51",
+            "3f78a725-d728-4137-9234-94f7902c0611"
+          ],
+          "north": [
+            "c1355491-6ae8-4974-b29b-a12b0a6e5d2a",
+            "5dc7b33b-20e0-4bd9-afcc-ad7d813f18ca",
+            "23bf9318-9ed2-4f67-a396-d29f5d85389d",
+            "7e4f1d04-03a2-45bf-a71b-1688987ebf51"
+          ],
+          "south": [
+            "fbbd4c0a-fd38-4789-8e0a-1bcaceabae26",
+            "b48a9c68-8e73-4ed6-aefd-480cae0b4616",
+            "23bf9318-9ed2-4f67-a396-d29f5d85389d",
+            "1ecceaa2-65e2-4308-982a-854173e337f9"
+          ]
+        },
+        "description": "transparent background and ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette featuring soft highlights and shadows of moderate depth - wang_9",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "07190da3-17b7-497d-bda3-b6b52a9acfe2",
+        "name": "wang_7",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "fbbd4c0a-fd38-4789-8e0a-1bcaceabae26",
+            "7f4f5bc9-9285-4830-8912-3e7a0ab8be32",
+            "3f78a725-d728-4137-9234-94f7902c0611",
+            "1ecceaa2-65e2-4308-982a-854173e337f9"
+          ],
+          "west": [
+            "f0f92658-c331-475f-a467-11596d5530aa",
+            "fbbd4c0a-fd38-4789-8e0a-1bcaceabae26",
+            "0f643c73-168b-4ed5-8f9c-416fd32e06f4",
+            "b48a9c68-8e73-4ed6-aefd-480cae0b4616"
+          ],
+          "north": [
+            "a8d266f9-62ad-459b-98ce-52910bcba484",
+            "0d6c449f-c8f6-496c-bbaa-b0b85ed8cb26",
+            "3f78a725-d728-4137-9234-94f7902c0611",
+            "1ecceaa2-65e2-4308-982a-854173e337f9"
+          ],
+          "south": [
+            "f0f92658-c331-475f-a467-11596d5530aa",
+            "a8d266f9-62ad-459b-98ce-52910bcba484",
+            "5dc7b33b-20e0-4bd9-afcc-ad7d813f18ca",
+            "0f643c73-168b-4ed5-8f9c-416fd32e06f4"
+          ]
+        },
+        "description": "transparent background and ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette featuring soft highlights and shadows of moderate depth - wang_7",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      }
+    ],
+    "tile_size": {
+      "width": 32,
+      "height": 32
+    },
+    "total_tiles": 16,
+    "tileset_type": "sidescroller",
+    "terrain_types": [
+      "central",
+      "background"
+    ],
+    "spritesheet_url": "https://backblaze.pixellab.ai/file/pixellab-tiles/e85f9ec5-58c7-4302-8ca4-a6a80e99431c/8f237647-19a0-4d8a-9300-3127e6bafc34/spritesheet.png",
+    "spritesheet_grid": {
+      "cols": 4,
+      "rows": 4
+    },
+    "spritesheet_layout": "tileset15_4x4"
+  },
+  "metadata": {
+    "user_prompts": {
+      "lower": "ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette, detailed pixel art, gloomy forgotten forest",
+      "upper": "mossy overgrown platform top with short grass tufts, damp moss, tiny roots, scattered pebbles, dark ruined forest ground, detailed pixel art",
+      "transition": ""
+    },
+    "terrain_prompts": {
+      "lower": "ancient dark weathered stone and compact forest soil with cracked rock blocks, damp moss patches, exposed roots, ruined gothic fragments, desaturated green brown and gray palette featuring soft highlights and shadows of moderate depth",
+      "upper": "transparent background",
+      "transition": "mossy overgrown platform top surface strip with short grass tufts, damp moss, tiny roots, scattered pebbles, dark ruined forest ground featuring soft highlights and shadows of moderate depth"
+    }
+  },
+  "created_at": "2026-09-26T17:14:34.040209+00:00",
+  "updated_at": "2026-09-26T17:15:43.017565+00:00",
+  "status": "completed",
+  "format": "tileset15",
+  "layout": {
+    "type": "tileset15",
+    "description": "4x4 grid of 16 unique Wang tiles",
+    "grid_size": {
+      "width": 4,
+      "height": 4
+    },
+    "tile_count": 16
+  },
+  "pattern_system": {
+    "type": "4x4_wildcard",
+    "description": "4\u00d74 patterns with wildcards for flexible tile matching",
+    "wildcard_value": 255,
+    "pattern_layout": {
+      "description": "4\u00d74 grid where center 2\u00d72 matches tile corners, outer ring uses wildcards",
+      "example": {
+        "row_0": "All wildcards (*)",
+        "row_1": "Wildcard + NW corner + NE corner + Wildcard",
+        "row_2": "Wildcard + SW corner + SE corner + Wildcard",
+        "row_3": "All wildcards (*)"
+      }
+    },
+    "terrain_encoding": {
+      "lower": 0,
+      "upper": 1,
+      "transition": 2,
+      "wildcard": 255
+    },
+    "usage": {
+      "description": "Sample 4\u00d74 terrain around tile position, encode as pattern key, lookup in cache",
+      "benefits": [
+        "O(1) lookup performance",
+        "Flexible edge matching",
+        "Unified pattern system"
+      ]
+    }
+  },
+  "tileset_image": {
+    "filename": "tileset_8f237647-19a0-4d8a-9300-3127e6bafc34.png",
+    "format": "PNG",
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    }
+  }
+}

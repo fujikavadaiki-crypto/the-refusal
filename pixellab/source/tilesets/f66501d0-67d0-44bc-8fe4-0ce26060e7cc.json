@@ -1,0 +1,1264 @@
+{
+  "id": "f66501d0-67d0-44bc-8fe4-0ce26060e7cc",
+  "name": "narrow ancient stone platform made of dark",
+  "tileSize": {
+    "width": 32,
+    "height": 32
+  },
+  "baseTileIds": null,
+  "terrainMapping": {
+    "lower": 5,
+    "upper": 0
+  },
+  "lowerDescription": "narrow dark stone ruin blocks with visible mortar cracks, gentle moss patches, and exposed roots, rendered with soft medium depth highlights and shadows",
+  "upperDescription": "thin platform surface strip with short overgrown grass, small protruding roots, and a weathered stone lip, featuring soft medium depth lighting",
+  "user_id": "e85f9ec5-58c7-4302-8ca4-a6a80e99431c",
+  "lower_description": "narrow dark stone ruin blocks with visible mortar cracks, gentle moss patches, and exposed roots, rendered with soft medium depth highlights and shadows",
+  "upper_description": "thin platform surface strip with short overgrown grass, small protruding roots, and a weathered stone lip, featuring soft medium depth lighting",
+  "transition_description": null,
+  "tile_size": {
+    "width": 32,
+    "height": 32
+  },
+  "transition_size": 0,
+  "view": "side",
+  "style_settings": null,
+  "generation_parameters": null,
+  "base_tile_ids": {
+    "lower": "16622d50-5fb5-4db9-add1-c87c63835171",
+    "upper": "9e638187-2c83-4c76-8cc2-e70683631446"
+  },
+  "tileset_data": {
+    "tiles": [
+      {
+        "id": "25fd2235-9b8e-464f-ae47-2c03f6723975",
+        "name": "wang_13",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "8d0edd67-5d93-4299-93d0-de159596ef96",
+            "7d0b21e7-2e33-455a-b23a-4be4594357f7",
+            "f1849b22-43a6-41d7-bb7a-91ecef869fcf",
+            "e4536aae-baad-47d1-9e17-14f8f4097612"
+          ],
+          "west": [
+            "e06f900e-542c-4f5a-811a-8c98c7e91082",
+            "f1849b22-43a6-41d7-bb7a-91ecef869fcf",
+            "63426171-8558-4b01-bb3f-f63328cf924c",
+            "9e638187-2c83-4c76-8cc2-e70683631446"
+          ],
+          "north": [
+            "8d0edd67-5d93-4299-93d0-de159596ef96",
+            "12381cd3-5a5b-40cb-9fb4-75c9ba8193ac",
+            "e4536aae-baad-47d1-9e17-14f8f4097612",
+            "5ad9706b-ec10-4150-9ac0-0ff8f4650d7c"
+          ],
+          "south": [
+            "74bcddea-c2b0-4040-a639-1b1b429d1f45",
+            "e06f900e-542c-4f5a-811a-8c98c7e91082",
+            "5ad9706b-ec10-4150-9ac0-0ff8f4650d7c",
+            "9e638187-2c83-4c76-8cc2-e70683631446"
+          ]
+        },
+        "description": "transparent background and narrow dark stone ruin blocks with visible mortar cracks, gentle moss patches, and exposed roots, rendered with soft medium depth highlights and shadows - wang_13",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "3aa70379-6942-440d-a210-d03da4fab859",
+        "name": "wang_10",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "fa0af437-ab12-4627-93b8-e8693b52f60d",
+            "afd8c734-f2b2-48f8-a2e1-e026555fc1a7",
+            "0ce688b5-35fd-4f81-9f09-9b10e3a39215"
+          ],
+          "west": [
+            "e06f900e-542c-4f5a-811a-8c98c7e91082",
+            "f1849b22-43a6-41d7-bb7a-91ecef869fcf",
+            "9e638187-2c83-4c76-8cc2-e70683631446"
+          ],
+          "north": [
+            "8d0edd67-5d93-4299-93d0-de159596ef96",
+            "12381cd3-5a5b-40cb-9fb4-75c9ba8193ac",
+            "e4536aae-baad-47d1-9e17-14f8f4097612",
+            "5ad9706b-ec10-4150-9ac0-0ff8f4650d7c"
+          ],
+          "south": [
+            "16622d50-5fb5-4db9-add1-c87c63835171",
+            "3906d0e7-96bd-45d2-a772-42ed73a8fbfe",
+            "12381cd3-5a5b-40cb-9fb4-75c9ba8193ac",
+            "4f066f33-83bc-42fb-a3e7-085e1465d190"
+          ]
+        },
+        "description": "transparent background and narrow dark stone ruin blocks with visible mortar cracks, gentle moss patches, and exposed roots, rendered with soft medium depth highlights and shadows - wang_10",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "67b62cea-c0c9-44c0-a173-b6f0091c99cb",
+        "name": "wang_4",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "4f066f33-83bc-42fb-a3e7-085e1465d190",
+            "5ad9706b-ec10-4150-9ac0-0ff8f4650d7c",
+            "9e638187-2c83-4c76-8cc2-e70683631446"
+          ],
+          "west": [
+            "3906d0e7-96bd-45d2-a772-42ed73a8fbfe",
+            "e4536aae-baad-47d1-9e17-14f8f4097612",
+            "0ce688b5-35fd-4f81-9f09-9b10e3a39215"
+          ],
+          "north": [
+            "16622d50-5fb5-4db9-add1-c87c63835171",
+            "fa0af437-ab12-4627-93b8-e8693b52f60d",
+            "e06f900e-542c-4f5a-811a-8c98c7e91082",
+            "63426171-8558-4b01-bb3f-f63328cf924c"
+          ],
+          "south": [
+            "8d0edd67-5d93-4299-93d0-de159596ef96",
+            "f1849b22-43a6-41d7-bb7a-91ecef869fcf",
+            "63426171-8558-4b01-bb3f-f63328cf924c",
+            "afd8c734-f2b2-48f8-a2e1-e026555fc1a7"
+          ]
+        },
+        "description": "transparent background and narrow dark stone ruin blocks with visible mortar cracks, gentle moss patches, and exposed roots, rendered with soft medium depth highlights and shadows - wang_4",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "08767859-c450-48c2-b2ed-e0b5e1e74321",
+        "name": "wang_12",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "8d0edd67-5d93-4299-93d0-de159596ef96",
+            "7d0b21e7-2e33-455a-b23a-4be4594357f7",
+            "f1849b22-43a6-41d7-bb7a-91ecef869fcf",
+            "e4536aae-baad-47d1-9e17-14f8f4097612"
+          ],
+          "west": [
+            "3906d0e7-96bd-45d2-a772-42ed73a8fbfe",
+            "12381cd3-5a5b-40cb-9fb4-75c9ba8193ac",
+            "e4536aae-baad-47d1-9e17-14f8f4097612",
+            "0ce688b5-35fd-4f81-9f09-9b10e3a39215"
+          ],
+          "north": [
+            "3906d0e7-96bd-45d2-a772-42ed73a8fbfe",
+            "74bcddea-c2b0-4040-a639-1b1b429d1f45",
+            "afd8c734-f2b2-48f8-a2e1-e026555fc1a7",
+            "0ce688b5-35fd-4f81-9f09-9b10e3a39215"
+          ],
+          "south": [
+            "8d0edd67-5d93-4299-93d0-de159596ef96",
+            "f1849b22-43a6-41d7-bb7a-91ecef869fcf",
+            "63426171-8558-4b01-bb3f-f63328cf924c",
+            "afd8c734-f2b2-48f8-a2e1-e026555fc1a7"
+          ]
+        },
+        "description": "transparent background and narrow dark stone ruin blocks with visible mortar cracks, gentle moss patches, and exposed roots, rendered with soft medium depth highlights and shadows - wang_12",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 5,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "479ff6de-37e8-464e-a18b-4a6f6184ed52",
+        "name": "wang_6",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "8d0edd67-5d93-4299-93d0-de159596ef96",
+            "7d0b21e7-2e33-455a-b23a-4be4594357f7",
+            "f1849b22-43a6-41d7-bb7a-91ecef869fcf",
+            "e4536aae-baad-47d1-9e17-14f8f4097612"
+          ],
+          "west": [
+            "16622d50-5fb5-4db9-add1-c87c63835171",
+            "fa0af437-ab12-4627-93b8-e8693b52f60d",
+            "4f066f33-83bc-42fb-a3e7-085e1465d190",
+            "7d0b21e7-2e33-455a-b23a-4be4594357f7"
+          ],
+          "north": [
+            "3906d0e7-96bd-45d2-a772-42ed73a8fbfe",
+            "afd8c734-f2b2-48f8-a2e1-e026555fc1a7",
+            "0ce688b5-35fd-4f81-9f09-9b10e3a39215"
+          ],
+          "south": [
+            "e06f900e-542c-4f5a-811a-8c98c7e91082",
+            "5ad9706b-ec10-4150-9ac0-0ff8f4650d7c",
+            "9e638187-2c83-4c76-8cc2-e70683631446"
+          ]
+        },
+        "description": "transparent background and narrow dark stone ruin blocks with visible mortar cracks, gentle moss patches, and exposed roots, rendered with soft medium depth highlights and shadows - wang_6",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 5
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "d16e7478-9a12-4b2c-87bf-ac9ec9729c65",
+        "name": "wang_8",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "16622d50-5fb5-4db9-add1-c87c63835171",
+            "3906d0e7-96bd-45d2-a772-42ed73a8fbfe",
+            "74bcddea-c2b0-4040-a639-1b1b429d1f45",
+            "e06f900e-542c-4f5a-811a-8c98c7e91082"
+          ],
+          "west": [
+            "8d0edd67-5d93-4299-93d0-de159596ef96",
+            "74bcddea-c2b0-4040-a639-1b1b429d1f45",
+            "5ad9706b-ec10-4150-9ac0-0ff8f4650d7c",
+            "afd8c734-f2b2-48f8-a2e1-e026555fc1a7"
+          ],
+          "north": [
+            "4f066f33-83bc-42fb-a3e7-085e1465d190",
+            "f1849b22-43a6-41d7-bb7a-91ecef869fcf",
+            "9e638187-2c83-4c76-8cc2-e70683631446"
+          ],
+          "south": [
+            "fa0af437-ab12-4627-93b8-e8693b52f60d",
+            "e4536aae-baad-47d1-9e17-14f8f4097612",
+            "0ce688b5-35fd-4f81-9f09-9b10e3a39215"
+          ]
+        },
+        "description": "transparent background and narrow dark stone ruin blocks with visible mortar cracks, gentle moss patches, and exposed roots, rendered with soft medium depth highlights and shadows - wang_8",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "16622d50-5fb5-4db9-add1-c87c63835171",
+        "name": "wang_0",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "3906d0e7-96bd-45d2-a772-42ed73a8fbfe",
+            "74bcddea-c2b0-4040-a639-1b1b429d1f45",
+            "e06f900e-542c-4f5a-811a-8c98c7e91082"
+          ],
+          "west": [
+            "fa0af437-ab12-4627-93b8-e8693b52f60d",
+            "4f066f33-83bc-42fb-a3e7-085e1465d190",
+            "7d0b21e7-2e33-455a-b23a-4be4594357f7"
+          ],
+          "north": [
+            "fa0af437-ab12-4627-93b8-e8693b52f60d",
+            "e06f900e-542c-4f5a-811a-8c98c7e91082",
+            "63426171-8558-4b01-bb3f-f63328cf924c"
+          ],
+          "south": [
+            "3906d0e7-96bd-45d2-a772-42ed73a8fbfe",
+            "12381cd3-5a5b-40cb-9fb4-75c9ba8193ac",
+            "4f066f33-83bc-42fb-a3e7-085e1465d190"
+          ]
+        },
+        "description": "transparent background and narrow dark stone ruin blocks with visible mortar cracks, gentle moss patches, and exposed roots, rendered with soft medium depth highlights and shadows - wang_0",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 6
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "7752f20d-55b2-436b-b128-45dd0ed54e30",
+        "name": "wang_1",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "7d0b21e7-2e33-455a-b23a-4be4594357f7",
+            "f1849b22-43a6-41d7-bb7a-91ecef869fcf",
+            "e4536aae-baad-47d1-9e17-14f8f4097612"
+          ],
+          "west": [
+            "74bcddea-c2b0-4040-a639-1b1b429d1f45",
+            "5ad9706b-ec10-4150-9ac0-0ff8f4650d7c",
+            "afd8c734-f2b2-48f8-a2e1-e026555fc1a7"
+          ],
+          "north": [
+            "12381cd3-5a5b-40cb-9fb4-75c9ba8193ac",
+            "e4536aae-baad-47d1-9e17-14f8f4097612",
+            "5ad9706b-ec10-4150-9ac0-0ff8f4650d7c"
+          ],
+          "south": [
+            "f1849b22-43a6-41d7-bb7a-91ecef869fcf",
+            "63426171-8558-4b01-bb3f-f63328cf924c",
+            "afd8c734-f2b2-48f8-a2e1-e026555fc1a7"
+          ]
+        },
+        "description": "transparent background and narrow dark stone ruin blocks with visible mortar cracks, gentle moss patches, and exposed roots, rendered with soft medium depth highlights and shadows - wang_1",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "4fa31925-a7cf-4a23-bc60-949bcdee0ef6",
+        "name": "wang_11",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "12381cd3-5a5b-40cb-9fb4-75c9ba8193ac",
+            "4f066f33-83bc-42fb-a3e7-085e1465d190",
+            "5ad9706b-ec10-4150-9ac0-0ff8f4650d7c",
+            "9e638187-2c83-4c76-8cc2-e70683631446"
+          ],
+          "west": [
+            "8d0edd67-5d93-4299-93d0-de159596ef96",
+            "74bcddea-c2b0-4040-a639-1b1b429d1f45",
+            "5ad9706b-ec10-4150-9ac0-0ff8f4650d7c",
+            "afd8c734-f2b2-48f8-a2e1-e026555fc1a7"
+          ],
+          "north": [
+            "4f066f33-83bc-42fb-a3e7-085e1465d190",
+            "7d0b21e7-2e33-455a-b23a-4be4594357f7",
+            "f1849b22-43a6-41d7-bb7a-91ecef869fcf",
+            "9e638187-2c83-4c76-8cc2-e70683631446"
+          ],
+          "south": [
+            "8d0edd67-5d93-4299-93d0-de159596ef96",
+            "f1849b22-43a6-41d7-bb7a-91ecef869fcf",
+            "63426171-8558-4b01-bb3f-f63328cf924c",
+            "afd8c734-f2b2-48f8-a2e1-e026555fc1a7"
+          ]
+        },
+        "description": "transparent background and narrow dark stone ruin blocks with visible mortar cracks, gentle moss patches, and exposed roots, rendered with soft medium depth highlights and shadows - wang_11",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "d058564d-ac76-481b-b229-a9bbe48c7949",
+        "name": "wang_3",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "12381cd3-5a5b-40cb-9fb4-75c9ba8193ac",
+            "4f066f33-83bc-42fb-a3e7-085e1465d190",
+            "5ad9706b-ec10-4150-9ac0-0ff8f4650d7c",
+            "9e638187-2c83-4c76-8cc2-e70683631446"
+          ],
+          "west": [
+            "16622d50-5fb5-4db9-add1-c87c63835171",
+            "fa0af437-ab12-4627-93b8-e8693b52f60d",
+            "4f066f33-83bc-42fb-a3e7-085e1465d190",
+            "7d0b21e7-2e33-455a-b23a-4be4594357f7"
+          ],
+          "north": [
+            "16622d50-5fb5-4db9-add1-c87c63835171",
+            "fa0af437-ab12-4627-93b8-e8693b52f60d",
+            "e06f900e-542c-4f5a-811a-8c98c7e91082",
+            "63426171-8558-4b01-bb3f-f63328cf924c"
+          ],
+          "south": [
+            "74bcddea-c2b0-4040-a639-1b1b429d1f45",
+            "e06f900e-542c-4f5a-811a-8c98c7e91082",
+            "5ad9706b-ec10-4150-9ac0-0ff8f4650d7c",
+            "9e638187-2c83-4c76-8cc2-e70683631446"
+          ]
+        },
+        "description": "transparent background and narrow dark stone ruin blocks with visible mortar cracks, gentle moss patches, and exposed roots, rendered with soft medium depth highlights and shadows - wang_3",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "2fc2bc5b-5e8d-4a2b-948a-0b454513ae4b",
+        "name": "wang_2",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "16622d50-5fb5-4db9-add1-c87c63835171",
+            "3906d0e7-96bd-45d2-a772-42ed73a8fbfe",
+            "74bcddea-c2b0-4040-a639-1b1b429d1f45",
+            "e06f900e-542c-4f5a-811a-8c98c7e91082"
+          ],
+          "west": [
+            "e06f900e-542c-4f5a-811a-8c98c7e91082",
+            "f1849b22-43a6-41d7-bb7a-91ecef869fcf",
+            "63426171-8558-4b01-bb3f-f63328cf924c",
+            "9e638187-2c83-4c76-8cc2-e70683631446"
+          ],
+          "north": [
+            "4f066f33-83bc-42fb-a3e7-085e1465d190",
+            "7d0b21e7-2e33-455a-b23a-4be4594357f7",
+            "f1849b22-43a6-41d7-bb7a-91ecef869fcf",
+            "9e638187-2c83-4c76-8cc2-e70683631446"
+          ],
+          "south": [
+            "16622d50-5fb5-4db9-add1-c87c63835171",
+            "3906d0e7-96bd-45d2-a772-42ed73a8fbfe",
+            "12381cd3-5a5b-40cb-9fb4-75c9ba8193ac",
+            "4f066f33-83bc-42fb-a3e7-085e1465d190"
+          ]
+        },
+        "description": "transparent background and narrow dark stone ruin blocks with visible mortar cracks, gentle moss patches, and exposed roots, rendered with soft medium depth highlights and shadows - wang_2",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "316b3d4e-37e2-4e29-886a-fd7af51623d6",
+        "name": "wang_5",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "16622d50-5fb5-4db9-add1-c87c63835171",
+            "3906d0e7-96bd-45d2-a772-42ed73a8fbfe",
+            "74bcddea-c2b0-4040-a639-1b1b429d1f45",
+            "e06f900e-542c-4f5a-811a-8c98c7e91082"
+          ],
+          "west": [
+            "3906d0e7-96bd-45d2-a772-42ed73a8fbfe",
+            "12381cd3-5a5b-40cb-9fb4-75c9ba8193ac",
+            "e4536aae-baad-47d1-9e17-14f8f4097612",
+            "0ce688b5-35fd-4f81-9f09-9b10e3a39215"
+          ],
+          "north": [
+            "16622d50-5fb5-4db9-add1-c87c63835171",
+            "fa0af437-ab12-4627-93b8-e8693b52f60d",
+            "e06f900e-542c-4f5a-811a-8c98c7e91082",
+            "63426171-8558-4b01-bb3f-f63328cf924c"
+          ],
+          "south": [
+            "fa0af437-ab12-4627-93b8-e8693b52f60d",
+            "7d0b21e7-2e33-455a-b23a-4be4594357f7",
+            "e4536aae-baad-47d1-9e17-14f8f4097612",
+            "0ce688b5-35fd-4f81-9f09-9b10e3a39215"
+          ]
+        },
+        "description": "transparent background and narrow dark stone ruin blocks with visible mortar cracks, gentle moss patches, and exposed roots, rendered with soft medium depth highlights and shadows - wang_5",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "9e638187-2c83-4c76-8cc2-e70683631446",
+        "name": "wang_15",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "fa0af437-ab12-4627-93b8-e8693b52f60d",
+            "63426171-8558-4b01-bb3f-f63328cf924c",
+            "afd8c734-f2b2-48f8-a2e1-e026555fc1a7",
+            "0ce688b5-35fd-4f81-9f09-9b10e3a39215"
+          ],
+          "west": [
+            "3906d0e7-96bd-45d2-a772-42ed73a8fbfe",
+            "12381cd3-5a5b-40cb-9fb4-75c9ba8193ac",
+            "e4536aae-baad-47d1-9e17-14f8f4097612",
+            "0ce688b5-35fd-4f81-9f09-9b10e3a39215"
+          ],
+          "north": [
+            "3906d0e7-96bd-45d2-a772-42ed73a8fbfe",
+            "74bcddea-c2b0-4040-a639-1b1b429d1f45",
+            "afd8c734-f2b2-48f8-a2e1-e026555fc1a7",
+            "0ce688b5-35fd-4f81-9f09-9b10e3a39215"
+          ],
+          "south": [
+            "fa0af437-ab12-4627-93b8-e8693b52f60d",
+            "7d0b21e7-2e33-455a-b23a-4be4594357f7",
+            "e4536aae-baad-47d1-9e17-14f8f4097612",
+            "0ce688b5-35fd-4f81-9f09-9b10e3a39215"
+          ]
+        },
+        "description": "transparent background and narrow dark stone ruin blocks with visible mortar cracks, gentle moss patches, and exposed roots, rendered with soft medium depth highlights and shadows - wang_15",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "6d5ad54d-484f-47be-8377-9168a8023b74",
+        "name": "wang_14",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "12381cd3-5a5b-40cb-9fb4-75c9ba8193ac",
+            "4f066f33-83bc-42fb-a3e7-085e1465d190",
+            "5ad9706b-ec10-4150-9ac0-0ff8f4650d7c",
+            "9e638187-2c83-4c76-8cc2-e70683631446"
+          ],
+          "west": [
+            "e06f900e-542c-4f5a-811a-8c98c7e91082",
+            "f1849b22-43a6-41d7-bb7a-91ecef869fcf",
+            "63426171-8558-4b01-bb3f-f63328cf924c",
+            "9e638187-2c83-4c76-8cc2-e70683631446"
+          ],
+          "north": [
+            "4f066f33-83bc-42fb-a3e7-085e1465d190",
+            "7d0b21e7-2e33-455a-b23a-4be4594357f7",
+            "f1849b22-43a6-41d7-bb7a-91ecef869fcf",
+            "9e638187-2c83-4c76-8cc2-e70683631446"
+          ],
+          "south": [
+            "74bcddea-c2b0-4040-a639-1b1b429d1f45",
+            "e06f900e-542c-4f5a-811a-8c98c7e91082",
+            "5ad9706b-ec10-4150-9ac0-0ff8f4650d7c",
+            "9e638187-2c83-4c76-8cc2-e70683631446"
+          ]
+        },
+        "description": "transparent background and narrow dark stone ruin blocks with visible mortar cracks, gentle moss patches, and exposed roots, rendered with soft medium depth highlights and shadows - wang_14",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "43b61695-ab5a-4a02-a0dc-b2cc318385ef",
+        "name": "wang_9",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "fa0af437-ab12-4627-93b8-e8693b52f60d",
+            "63426171-8558-4b01-bb3f-f63328cf924c",
+            "afd8c734-f2b2-48f8-a2e1-e026555fc1a7",
+            "0ce688b5-35fd-4f81-9f09-9b10e3a39215"
+          ],
+          "west": [
+            "8d0edd67-5d93-4299-93d0-de159596ef96",
+            "74bcddea-c2b0-4040-a639-1b1b429d1f45",
+            "5ad9706b-ec10-4150-9ac0-0ff8f4650d7c",
+            "afd8c734-f2b2-48f8-a2e1-e026555fc1a7"
+          ],
+          "north": [
+            "8d0edd67-5d93-4299-93d0-de159596ef96",
+            "12381cd3-5a5b-40cb-9fb4-75c9ba8193ac",
+            "e4536aae-baad-47d1-9e17-14f8f4097612",
+            "5ad9706b-ec10-4150-9ac0-0ff8f4650d7c"
+          ],
+          "south": [
+            "fa0af437-ab12-4627-93b8-e8693b52f60d",
+            "7d0b21e7-2e33-455a-b23a-4be4594357f7",
+            "e4536aae-baad-47d1-9e17-14f8f4097612",
+            "0ce688b5-35fd-4f81-9f09-9b10e3a39215"
+          ]
+        },
+        "description": "transparent background and narrow dark stone ruin blocks with visible mortar cracks, gentle moss patches, and exposed roots, rendered with soft medium depth highlights and shadows - wang_9",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "7473b0d5-564a-446a-93dc-d7f4bbb48df2",
+        "name": "wang_7",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "fa0af437-ab12-4627-93b8-e8693b52f60d",
+            "63426171-8558-4b01-bb3f-f63328cf924c",
+            "afd8c734-f2b2-48f8-a2e1-e026555fc1a7",
+            "0ce688b5-35fd-4f81-9f09-9b10e3a39215"
+          ],
+          "west": [
+            "16622d50-5fb5-4db9-add1-c87c63835171",
+            "fa0af437-ab12-4627-93b8-e8693b52f60d",
+            "4f066f33-83bc-42fb-a3e7-085e1465d190",
+            "7d0b21e7-2e33-455a-b23a-4be4594357f7"
+          ],
+          "north": [
+            "3906d0e7-96bd-45d2-a772-42ed73a8fbfe",
+            "74bcddea-c2b0-4040-a639-1b1b429d1f45",
+            "afd8c734-f2b2-48f8-a2e1-e026555fc1a7",
+            "0ce688b5-35fd-4f81-9f09-9b10e3a39215"
+          ],
+          "south": [
+            "16622d50-5fb5-4db9-add1-c87c63835171",
+            "3906d0e7-96bd-45d2-a772-42ed73a8fbfe",
+            "12381cd3-5a5b-40cb-9fb4-75c9ba8193ac",
+            "4f066f33-83bc-42fb-a3e7-085e1465d190"
+          ]
+        },
+        "description": "transparent background and narrow dark stone ruin blocks with visible mortar cracks, gentle moss patches, and exposed roots, rendered with soft medium depth highlights and shadows - wang_7",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      }
+    ],
+    "tile_size": {
+      "width": 32,
+      "height": 32
+    },
+    "total_tiles": 16,
+    "tileset_type": "sidescroller",
+    "terrain_types": [
+      "central",
+      "background"
+    ],
+    "spritesheet_url": "https://backblaze.pixellab.ai/file/pixellab-tiles/e85f9ec5-58c7-4302-8ca4-a6a80e99431c/f66501d0-67d0-44bc-8fe4-0ce26060e7cc/spritesheet.png",
+    "spritesheet_grid": {
+      "cols": 4,
+      "rows": 4
+    },
+    "spritesheet_layout": "tileset15_4x4"
+  },
+  "metadata": {
+    "user_prompts": {
+      "lower": "narrow ancient stone platform made of dark cracked ruin blocks with moss and exposed roots, suspended platform for a gothic forest sidescroller, detailed pixel art",
+      "upper": "thin mossy platform top with overgrown grass, small roots and weathered stone edge, detailed pixel art",
+      "transition": ""
+    },
+    "terrain_prompts": {
+      "lower": "narrow dark stone ruin blocks with visible mortar cracks, gentle moss patches, and exposed roots, rendered with soft medium depth highlights and shadows",
+      "upper": "transparent background",
+      "transition": "thin platform surface strip with short overgrown grass, small protruding roots, and a weathered stone lip, featuring soft medium depth lighting"
+    }
+  },
+  "created_at": "2026-09-26T17:15:30.293719+00:00",
+  "updated_at": "2026-09-26T17:16:17.914943+00:00",
+  "status": "completed",
+  "format": "tileset15",
+  "layout": {
+    "type": "tileset15",
+    "description": "4x4 grid of 16 unique Wang tiles",
+    "grid_size": {
+      "width": 4,
+      "height": 4
+    },
+    "tile_count": 16
+  },
+  "pattern_system": {
+    "type": "4x4_wildcard",
+    "description": "4\u00d74 patterns with wildcards for flexible tile matching",
+    "wildcard_value": 255,
+    "pattern_layout": {
+      "description": "4\u00d74 grid where center 2\u00d72 matches tile corners, outer ring uses wildcards",
+      "example": {
+        "row_0": "All wildcards (*)",
+        "row_1": "Wildcard + NW corner + NE corner + Wildcard",
+        "row_2": "Wildcard + SW corner + SE corner + Wildcard",
+        "row_3": "All wildcards (*)"
+      }
+    },
+    "terrain_encoding": {
+      "lower": 0,
+      "upper": 1,
+      "transition": 2,
+      "wildcard": 255
+    },
+    "usage": {
+      "description": "Sample 4\u00d74 terrain around tile position, encode as pattern key, lookup in cache",
+      "benefits": [
+        "O(1) lookup performance",
+        "Flexible edge matching",
+        "Unified pattern system"
+      ]
+    }
+  },
+  "tileset_image": {
+    "filename": "tileset_f66501d0-67d0-44bc-8fe4-0ce26060e7cc.png",
+    "format": "PNG",
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    }
+  }
+}

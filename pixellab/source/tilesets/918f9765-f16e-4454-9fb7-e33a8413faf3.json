@@ -1,0 +1,1264 @@
+{
+  "id": "918f9765-f16e-4454-9fb7-e33a8413faf3",
+  "name": "thick exposed tree roots wrapping over ancient",
+  "tileSize": {
+    "width": 32,
+    "height": 32
+  },
+  "baseTileIds": null,
+  "terrainMapping": {
+    "lower": 8,
+    "upper": 0
+  },
+  "lowerDescription": "ancient stone blocks tightly bound by thick tangled tree roots covered in damp green moss and dark decaying forest debris, rendered with soft highlights and gentle shadows showing moderate surface texture",
+  "upperDescription": "a shallow top surface strip of gnarled forest roots crossing cracked ruin stones with soft moss patches, featuring gentle depth and moderate surface texture",
+  "user_id": "e85f9ec5-58c7-4302-8ca4-a6a80e99431c",
+  "lower_description": "ancient stone blocks tightly bound by thick tangled tree roots covered in damp green moss and dark decaying forest debris, rendered with soft highlights and gentle shadows showing moderate surface texture",
+  "upper_description": "a shallow top surface strip of gnarled forest roots crossing cracked ruin stones with soft moss patches, featuring gentle depth and moderate surface texture",
+  "transition_description": null,
+  "tile_size": {
+    "width": 32,
+    "height": 32
+  },
+  "transition_size": 0,
+  "view": "side",
+  "style_settings": null,
+  "generation_parameters": null,
+  "base_tile_ids": {
+    "lower": "cd32cf7e-bb7d-418d-979c-813f7d1194e8",
+    "upper": "2566f0b4-9236-4177-8792-a2926173c578"
+  },
+  "tileset_data": {
+    "tiles": [
+      {
+        "id": "f26fb262-838d-4391-a0b5-797e3be82f10",
+        "name": "wang_13",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "5a166784-dc46-4bdc-9fcf-aaa1b71d2778",
+            "1a7ce111-2395-4fca-8d1e-1bdf2a8bed07",
+            "fad5dec9-e144-438b-9416-8f4bc5f807cd",
+            "d5652044-cfdd-4b87-ae26-f4ab1afc8d0d"
+          ],
+          "west": [
+            "9e06834a-4fa0-469a-9ce4-309dcdb7d633",
+            "fad5dec9-e144-438b-9416-8f4bc5f807cd",
+            "d088476e-71aa-48b2-962f-5afbc78e2bb4",
+            "2566f0b4-9236-4177-8792-a2926173c578"
+          ],
+          "north": [
+            "5a166784-dc46-4bdc-9fcf-aaa1b71d2778",
+            "bd9ed988-d0a3-4c02-b5ed-36aa6fa95d62",
+            "d5652044-cfdd-4b87-ae26-f4ab1afc8d0d",
+            "eb76f223-0260-4c5a-8c2d-e7609ad19852"
+          ],
+          "south": [
+            "aaf2cb72-bc6a-4591-8d2e-b71a33970d6d",
+            "9e06834a-4fa0-469a-9ce4-309dcdb7d633",
+            "eb76f223-0260-4c5a-8c2d-e7609ad19852",
+            "2566f0b4-9236-4177-8792-a2926173c578"
+          ]
+        },
+        "description": "transparent background and ancient stone blocks tightly bound by thick tangled tree roots covered in damp green moss and dark decaying forest debris, rendered with soft highlights and gentle shadows showing moderate surface texture - wang_13",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "db11b3bd-e00c-4b86-912c-458819a609b5",
+        "name": "wang_10",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "0c06e3d2-a546-46ba-8925-7174d7eca31f",
+            "b2fef9ae-ff2a-43ba-a4c3-5d26c0fb02fc",
+            "a86a4f2c-87af-4f90-883a-217f2c8e2a2d"
+          ],
+          "west": [
+            "9e06834a-4fa0-469a-9ce4-309dcdb7d633",
+            "fad5dec9-e144-438b-9416-8f4bc5f807cd",
+            "2566f0b4-9236-4177-8792-a2926173c578"
+          ],
+          "north": [
+            "5a166784-dc46-4bdc-9fcf-aaa1b71d2778",
+            "bd9ed988-d0a3-4c02-b5ed-36aa6fa95d62",
+            "d5652044-cfdd-4b87-ae26-f4ab1afc8d0d",
+            "eb76f223-0260-4c5a-8c2d-e7609ad19852"
+          ],
+          "south": [
+            "cd32cf7e-bb7d-418d-979c-813f7d1194e8",
+            "70d51999-f5f9-4291-8364-14b7a922fc66",
+            "bd9ed988-d0a3-4c02-b5ed-36aa6fa95d62",
+            "bc255c57-dd47-4bcf-9405-9ae04abf1471"
+          ]
+        },
+        "description": "transparent background and ancient stone blocks tightly bound by thick tangled tree roots covered in damp green moss and dark decaying forest debris, rendered with soft highlights and gentle shadows showing moderate surface texture - wang_10",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "70d0da4a-8692-44eb-9291-486613852c77",
+        "name": "wang_4",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "bc255c57-dd47-4bcf-9405-9ae04abf1471",
+            "eb76f223-0260-4c5a-8c2d-e7609ad19852",
+            "2566f0b4-9236-4177-8792-a2926173c578"
+          ],
+          "west": [
+            "70d51999-f5f9-4291-8364-14b7a922fc66",
+            "d5652044-cfdd-4b87-ae26-f4ab1afc8d0d",
+            "a86a4f2c-87af-4f90-883a-217f2c8e2a2d"
+          ],
+          "north": [
+            "cd32cf7e-bb7d-418d-979c-813f7d1194e8",
+            "0c06e3d2-a546-46ba-8925-7174d7eca31f",
+            "9e06834a-4fa0-469a-9ce4-309dcdb7d633",
+            "d088476e-71aa-48b2-962f-5afbc78e2bb4"
+          ],
+          "south": [
+            "5a166784-dc46-4bdc-9fcf-aaa1b71d2778",
+            "fad5dec9-e144-438b-9416-8f4bc5f807cd",
+            "d088476e-71aa-48b2-962f-5afbc78e2bb4",
+            "b2fef9ae-ff2a-43ba-a4c3-5d26c0fb02fc"
+          ]
+        },
+        "description": "transparent background and ancient stone blocks tightly bound by thick tangled tree roots covered in damp green moss and dark decaying forest debris, rendered with soft highlights and gentle shadows showing moderate surface texture - wang_4",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "f9321587-83a7-4a52-bb59-58caed08a7d3",
+        "name": "wang_12",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "5a166784-dc46-4bdc-9fcf-aaa1b71d2778",
+            "1a7ce111-2395-4fca-8d1e-1bdf2a8bed07",
+            "fad5dec9-e144-438b-9416-8f4bc5f807cd",
+            "d5652044-cfdd-4b87-ae26-f4ab1afc8d0d"
+          ],
+          "west": [
+            "70d51999-f5f9-4291-8364-14b7a922fc66",
+            "bd9ed988-d0a3-4c02-b5ed-36aa6fa95d62",
+            "d5652044-cfdd-4b87-ae26-f4ab1afc8d0d",
+            "a86a4f2c-87af-4f90-883a-217f2c8e2a2d"
+          ],
+          "north": [
+            "70d51999-f5f9-4291-8364-14b7a922fc66",
+            "aaf2cb72-bc6a-4591-8d2e-b71a33970d6d",
+            "b2fef9ae-ff2a-43ba-a4c3-5d26c0fb02fc",
+            "a86a4f2c-87af-4f90-883a-217f2c8e2a2d"
+          ],
+          "south": [
+            "5a166784-dc46-4bdc-9fcf-aaa1b71d2778",
+            "fad5dec9-e144-438b-9416-8f4bc5f807cd",
+            "d088476e-71aa-48b2-962f-5afbc78e2bb4",
+            "b2fef9ae-ff2a-43ba-a4c3-5d26c0fb02fc"
+          ]
+        },
+        "description": "transparent background and ancient stone blocks tightly bound by thick tangled tree roots covered in damp green moss and dark decaying forest debris, rendered with soft highlights and gentle shadows showing moderate surface texture - wang_12",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 5,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "92b074c2-6df8-4893-b9f6-b6d73ef83833",
+        "name": "wang_6",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "5a166784-dc46-4bdc-9fcf-aaa1b71d2778",
+            "1a7ce111-2395-4fca-8d1e-1bdf2a8bed07",
+            "fad5dec9-e144-438b-9416-8f4bc5f807cd",
+            "d5652044-cfdd-4b87-ae26-f4ab1afc8d0d"
+          ],
+          "west": [
+            "cd32cf7e-bb7d-418d-979c-813f7d1194e8",
+            "0c06e3d2-a546-46ba-8925-7174d7eca31f",
+            "bc255c57-dd47-4bcf-9405-9ae04abf1471",
+            "1a7ce111-2395-4fca-8d1e-1bdf2a8bed07"
+          ],
+          "north": [
+            "70d51999-f5f9-4291-8364-14b7a922fc66",
+            "b2fef9ae-ff2a-43ba-a4c3-5d26c0fb02fc",
+            "a86a4f2c-87af-4f90-883a-217f2c8e2a2d"
+          ],
+          "south": [
+            "9e06834a-4fa0-469a-9ce4-309dcdb7d633",
+            "eb76f223-0260-4c5a-8c2d-e7609ad19852",
+            "2566f0b4-9236-4177-8792-a2926173c578"
+          ]
+        },
+        "description": "transparent background and ancient stone blocks tightly bound by thick tangled tree roots covered in damp green moss and dark decaying forest debris, rendered with soft highlights and gentle shadows showing moderate surface texture - wang_6",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 5
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "93131d3f-72c6-4062-9c6c-413c42edadd6",
+        "name": "wang_8",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "cd32cf7e-bb7d-418d-979c-813f7d1194e8",
+            "70d51999-f5f9-4291-8364-14b7a922fc66",
+            "aaf2cb72-bc6a-4591-8d2e-b71a33970d6d",
+            "9e06834a-4fa0-469a-9ce4-309dcdb7d633"
+          ],
+          "west": [
+            "5a166784-dc46-4bdc-9fcf-aaa1b71d2778",
+            "aaf2cb72-bc6a-4591-8d2e-b71a33970d6d",
+            "eb76f223-0260-4c5a-8c2d-e7609ad19852",
+            "b2fef9ae-ff2a-43ba-a4c3-5d26c0fb02fc"
+          ],
+          "north": [
+            "bc255c57-dd47-4bcf-9405-9ae04abf1471",
+            "fad5dec9-e144-438b-9416-8f4bc5f807cd",
+            "2566f0b4-9236-4177-8792-a2926173c578"
+          ],
+          "south": [
+            "0c06e3d2-a546-46ba-8925-7174d7eca31f",
+            "d5652044-cfdd-4b87-ae26-f4ab1afc8d0d",
+            "a86a4f2c-87af-4f90-883a-217f2c8e2a2d"
+          ]
+        },
+        "description": "transparent background and ancient stone blocks tightly bound by thick tangled tree roots covered in damp green moss and dark decaying forest debris, rendered with soft highlights and gentle shadows showing moderate surface texture - wang_8",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "cd32cf7e-bb7d-418d-979c-813f7d1194e8",
+        "name": "wang_0",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "70d51999-f5f9-4291-8364-14b7a922fc66",
+            "aaf2cb72-bc6a-4591-8d2e-b71a33970d6d",
+            "9e06834a-4fa0-469a-9ce4-309dcdb7d633"
+          ],
+          "west": [
+            "0c06e3d2-a546-46ba-8925-7174d7eca31f",
+            "bc255c57-dd47-4bcf-9405-9ae04abf1471",
+            "1a7ce111-2395-4fca-8d1e-1bdf2a8bed07"
+          ],
+          "north": [
+            "0c06e3d2-a546-46ba-8925-7174d7eca31f",
+            "9e06834a-4fa0-469a-9ce4-309dcdb7d633",
+            "d088476e-71aa-48b2-962f-5afbc78e2bb4"
+          ],
+          "south": [
+            "70d51999-f5f9-4291-8364-14b7a922fc66",
+            "bd9ed988-d0a3-4c02-b5ed-36aa6fa95d62",
+            "bc255c57-dd47-4bcf-9405-9ae04abf1471"
+          ]
+        },
+        "description": "transparent background and ancient stone blocks tightly bound by thick tangled tree roots covered in damp green moss and dark decaying forest debris, rendered with soft highlights and gentle shadows showing moderate surface texture - wang_0",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 6
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "85aa173e-544f-406e-818e-cbfb1fe6630e",
+        "name": "wang_1",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "1a7ce111-2395-4fca-8d1e-1bdf2a8bed07",
+            "fad5dec9-e144-438b-9416-8f4bc5f807cd",
+            "d5652044-cfdd-4b87-ae26-f4ab1afc8d0d"
+          ],
+          "west": [
+            "aaf2cb72-bc6a-4591-8d2e-b71a33970d6d",
+            "eb76f223-0260-4c5a-8c2d-e7609ad19852",
+            "b2fef9ae-ff2a-43ba-a4c3-5d26c0fb02fc"
+          ],
+          "north": [
+            "bd9ed988-d0a3-4c02-b5ed-36aa6fa95d62",
+            "d5652044-cfdd-4b87-ae26-f4ab1afc8d0d",
+            "eb76f223-0260-4c5a-8c2d-e7609ad19852"
+          ],
+          "south": [
+            "fad5dec9-e144-438b-9416-8f4bc5f807cd",
+            "d088476e-71aa-48b2-962f-5afbc78e2bb4",
+            "b2fef9ae-ff2a-43ba-a4c3-5d26c0fb02fc"
+          ]
+        },
+        "description": "transparent background and ancient stone blocks tightly bound by thick tangled tree roots covered in damp green moss and dark decaying forest debris, rendered with soft highlights and gentle shadows showing moderate surface texture - wang_1",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "eea9b582-fcf5-4397-92e4-6af6a837f763",
+        "name": "wang_11",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "bd9ed988-d0a3-4c02-b5ed-36aa6fa95d62",
+            "bc255c57-dd47-4bcf-9405-9ae04abf1471",
+            "eb76f223-0260-4c5a-8c2d-e7609ad19852",
+            "2566f0b4-9236-4177-8792-a2926173c578"
+          ],
+          "west": [
+            "5a166784-dc46-4bdc-9fcf-aaa1b71d2778",
+            "aaf2cb72-bc6a-4591-8d2e-b71a33970d6d",
+            "eb76f223-0260-4c5a-8c2d-e7609ad19852",
+            "b2fef9ae-ff2a-43ba-a4c3-5d26c0fb02fc"
+          ],
+          "north": [
+            "bc255c57-dd47-4bcf-9405-9ae04abf1471",
+            "1a7ce111-2395-4fca-8d1e-1bdf2a8bed07",
+            "fad5dec9-e144-438b-9416-8f4bc5f807cd",
+            "2566f0b4-9236-4177-8792-a2926173c578"
+          ],
+          "south": [
+            "5a166784-dc46-4bdc-9fcf-aaa1b71d2778",
+            "fad5dec9-e144-438b-9416-8f4bc5f807cd",
+            "d088476e-71aa-48b2-962f-5afbc78e2bb4",
+            "b2fef9ae-ff2a-43ba-a4c3-5d26c0fb02fc"
+          ]
+        },
+        "description": "transparent background and ancient stone blocks tightly bound by thick tangled tree roots covered in damp green moss and dark decaying forest debris, rendered with soft highlights and gentle shadows showing moderate surface texture - wang_11",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "d66eb532-8cb1-4d77-8e57-8a87669f4f99",
+        "name": "wang_3",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "bd9ed988-d0a3-4c02-b5ed-36aa6fa95d62",
+            "bc255c57-dd47-4bcf-9405-9ae04abf1471",
+            "eb76f223-0260-4c5a-8c2d-e7609ad19852",
+            "2566f0b4-9236-4177-8792-a2926173c578"
+          ],
+          "west": [
+            "cd32cf7e-bb7d-418d-979c-813f7d1194e8",
+            "0c06e3d2-a546-46ba-8925-7174d7eca31f",
+            "bc255c57-dd47-4bcf-9405-9ae04abf1471",
+            "1a7ce111-2395-4fca-8d1e-1bdf2a8bed07"
+          ],
+          "north": [
+            "cd32cf7e-bb7d-418d-979c-813f7d1194e8",
+            "0c06e3d2-a546-46ba-8925-7174d7eca31f",
+            "9e06834a-4fa0-469a-9ce4-309dcdb7d633",
+            "d088476e-71aa-48b2-962f-5afbc78e2bb4"
+          ],
+          "south": [
+            "aaf2cb72-bc6a-4591-8d2e-b71a33970d6d",
+            "9e06834a-4fa0-469a-9ce4-309dcdb7d633",
+            "eb76f223-0260-4c5a-8c2d-e7609ad19852",
+            "2566f0b4-9236-4177-8792-a2926173c578"
+          ]
+        },
+        "description": "transparent background and ancient stone blocks tightly bound by thick tangled tree roots covered in damp green moss and dark decaying forest debris, rendered with soft highlights and gentle shadows showing moderate surface texture - wang_3",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "9ae0d7b0-7bae-40b0-a908-a3737a10551f",
+        "name": "wang_2",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "cd32cf7e-bb7d-418d-979c-813f7d1194e8",
+            "70d51999-f5f9-4291-8364-14b7a922fc66",
+            "aaf2cb72-bc6a-4591-8d2e-b71a33970d6d",
+            "9e06834a-4fa0-469a-9ce4-309dcdb7d633"
+          ],
+          "west": [
+            "9e06834a-4fa0-469a-9ce4-309dcdb7d633",
+            "fad5dec9-e144-438b-9416-8f4bc5f807cd",
+            "d088476e-71aa-48b2-962f-5afbc78e2bb4",
+            "2566f0b4-9236-4177-8792-a2926173c578"
+          ],
+          "north": [
+            "bc255c57-dd47-4bcf-9405-9ae04abf1471",
+            "1a7ce111-2395-4fca-8d1e-1bdf2a8bed07",
+            "fad5dec9-e144-438b-9416-8f4bc5f807cd",
+            "2566f0b4-9236-4177-8792-a2926173c578"
+          ],
+          "south": [
+            "cd32cf7e-bb7d-418d-979c-813f7d1194e8",
+            "70d51999-f5f9-4291-8364-14b7a922fc66",
+            "bd9ed988-d0a3-4c02-b5ed-36aa6fa95d62",
+            "bc255c57-dd47-4bcf-9405-9ae04abf1471"
+          ]
+        },
+        "description": "transparent background and ancient stone blocks tightly bound by thick tangled tree roots covered in damp green moss and dark decaying forest debris, rendered with soft highlights and gentle shadows showing moderate surface texture - wang_2",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "fed0b1ef-cba7-40e6-821f-04783a2637de",
+        "name": "wang_5",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "cd32cf7e-bb7d-418d-979c-813f7d1194e8",
+            "70d51999-f5f9-4291-8364-14b7a922fc66",
+            "aaf2cb72-bc6a-4591-8d2e-b71a33970d6d",
+            "9e06834a-4fa0-469a-9ce4-309dcdb7d633"
+          ],
+          "west": [
+            "70d51999-f5f9-4291-8364-14b7a922fc66",
+            "bd9ed988-d0a3-4c02-b5ed-36aa6fa95d62",
+            "d5652044-cfdd-4b87-ae26-f4ab1afc8d0d",
+            "a86a4f2c-87af-4f90-883a-217f2c8e2a2d"
+          ],
+          "north": [
+            "cd32cf7e-bb7d-418d-979c-813f7d1194e8",
+            "0c06e3d2-a546-46ba-8925-7174d7eca31f",
+            "9e06834a-4fa0-469a-9ce4-309dcdb7d633",
+            "d088476e-71aa-48b2-962f-5afbc78e2bb4"
+          ],
+          "south": [
+            "0c06e3d2-a546-46ba-8925-7174d7eca31f",
+            "1a7ce111-2395-4fca-8d1e-1bdf2a8bed07",
+            "d5652044-cfdd-4b87-ae26-f4ab1afc8d0d",
+            "a86a4f2c-87af-4f90-883a-217f2c8e2a2d"
+          ]
+        },
+        "description": "transparent background and ancient stone blocks tightly bound by thick tangled tree roots covered in damp green moss and dark decaying forest debris, rendered with soft highlights and gentle shadows showing moderate surface texture - wang_5",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "2566f0b4-9236-4177-8792-a2926173c578",
+        "name": "wang_15",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "0c06e3d2-a546-46ba-8925-7174d7eca31f",
+            "d088476e-71aa-48b2-962f-5afbc78e2bb4",
+            "b2fef9ae-ff2a-43ba-a4c3-5d26c0fb02fc",
+            "a86a4f2c-87af-4f90-883a-217f2c8e2a2d"
+          ],
+          "west": [
+            "70d51999-f5f9-4291-8364-14b7a922fc66",
+            "bd9ed988-d0a3-4c02-b5ed-36aa6fa95d62",
+            "d5652044-cfdd-4b87-ae26-f4ab1afc8d0d",
+            "a86a4f2c-87af-4f90-883a-217f2c8e2a2d"
+          ],
+          "north": [
+            "70d51999-f5f9-4291-8364-14b7a922fc66",
+            "aaf2cb72-bc6a-4591-8d2e-b71a33970d6d",
+            "b2fef9ae-ff2a-43ba-a4c3-5d26c0fb02fc",
+            "a86a4f2c-87af-4f90-883a-217f2c8e2a2d"
+          ],
+          "south": [
+            "0c06e3d2-a546-46ba-8925-7174d7eca31f",
+            "1a7ce111-2395-4fca-8d1e-1bdf2a8bed07",
+            "d5652044-cfdd-4b87-ae26-f4ab1afc8d0d",
+            "a86a4f2c-87af-4f90-883a-217f2c8e2a2d"
+          ]
+        },
+        "description": "transparent background and ancient stone blocks tightly bound by thick tangled tree roots covered in damp green moss and dark decaying forest debris, rendered with soft highlights and gentle shadows showing moderate surface texture - wang_15",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "f847599f-5b32-4224-9eb0-b2536304c470",
+        "name": "wang_14",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "bd9ed988-d0a3-4c02-b5ed-36aa6fa95d62",
+            "bc255c57-dd47-4bcf-9405-9ae04abf1471",
+            "eb76f223-0260-4c5a-8c2d-e7609ad19852",
+            "2566f0b4-9236-4177-8792-a2926173c578"
+          ],
+          "west": [
+            "9e06834a-4fa0-469a-9ce4-309dcdb7d633",
+            "fad5dec9-e144-438b-9416-8f4bc5f807cd",
+            "d088476e-71aa-48b2-962f-5afbc78e2bb4",
+            "2566f0b4-9236-4177-8792-a2926173c578"
+          ],
+          "north": [
+            "bc255c57-dd47-4bcf-9405-9ae04abf1471",
+            "1a7ce111-2395-4fca-8d1e-1bdf2a8bed07",
+            "fad5dec9-e144-438b-9416-8f4bc5f807cd",
+            "2566f0b4-9236-4177-8792-a2926173c578"
+          ],
+          "south": [
+            "aaf2cb72-bc6a-4591-8d2e-b71a33970d6d",
+            "9e06834a-4fa0-469a-9ce4-309dcdb7d633",
+            "eb76f223-0260-4c5a-8c2d-e7609ad19852",
+            "2566f0b4-9236-4177-8792-a2926173c578"
+          ]
+        },
+        "description": "transparent background and ancient stone blocks tightly bound by thick tangled tree roots covered in damp green moss and dark decaying forest debris, rendered with soft highlights and gentle shadows showing moderate surface texture - wang_14",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "9db4a67c-07b0-409a-81d4-58a9e62eca08",
+        "name": "wang_9",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "0c06e3d2-a546-46ba-8925-7174d7eca31f",
+            "d088476e-71aa-48b2-962f-5afbc78e2bb4",
+            "b2fef9ae-ff2a-43ba-a4c3-5d26c0fb02fc",
+            "a86a4f2c-87af-4f90-883a-217f2c8e2a2d"
+          ],
+          "west": [
+            "5a166784-dc46-4bdc-9fcf-aaa1b71d2778",
+            "aaf2cb72-bc6a-4591-8d2e-b71a33970d6d",
+            "eb76f223-0260-4c5a-8c2d-e7609ad19852",
+            "b2fef9ae-ff2a-43ba-a4c3-5d26c0fb02fc"
+          ],
+          "north": [
+            "5a166784-dc46-4bdc-9fcf-aaa1b71d2778",
+            "bd9ed988-d0a3-4c02-b5ed-36aa6fa95d62",
+            "d5652044-cfdd-4b87-ae26-f4ab1afc8d0d",
+            "eb76f223-0260-4c5a-8c2d-e7609ad19852"
+          ],
+          "south": [
+            "0c06e3d2-a546-46ba-8925-7174d7eca31f",
+            "1a7ce111-2395-4fca-8d1e-1bdf2a8bed07",
+            "d5652044-cfdd-4b87-ae26-f4ab1afc8d0d",
+            "a86a4f2c-87af-4f90-883a-217f2c8e2a2d"
+          ]
+        },
+        "description": "transparent background and ancient stone blocks tightly bound by thick tangled tree roots covered in damp green moss and dark decaying forest debris, rendered with soft highlights and gentle shadows showing moderate surface texture - wang_9",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "b9ad0f45-821a-48cc-be92-1e74ff5b2e36",
+        "name": "wang_7",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "0c06e3d2-a546-46ba-8925-7174d7eca31f",
+            "d088476e-71aa-48b2-962f-5afbc78e2bb4",
+            "b2fef9ae-ff2a-43ba-a4c3-5d26c0fb02fc",
+            "a86a4f2c-87af-4f90-883a-217f2c8e2a2d"
+          ],
+          "west": [
+            "cd32cf7e-bb7d-418d-979c-813f7d1194e8",
+            "0c06e3d2-a546-46ba-8925-7174d7eca31f",
+            "bc255c57-dd47-4bcf-9405-9ae04abf1471",
+            "1a7ce111-2395-4fca-8d1e-1bdf2a8bed07"
+          ],
+          "north": [
+            "70d51999-f5f9-4291-8364-14b7a922fc66",
+            "aaf2cb72-bc6a-4591-8d2e-b71a33970d6d",
+            "b2fef9ae-ff2a-43ba-a4c3-5d26c0fb02fc",
+            "a86a4f2c-87af-4f90-883a-217f2c8e2a2d"
+          ],
+          "south": [
+            "cd32cf7e-bb7d-418d-979c-813f7d1194e8",
+            "70d51999-f5f9-4291-8364-14b7a922fc66",
+            "bd9ed988-d0a3-4c02-b5ed-36aa6fa95d62",
+            "bc255c57-dd47-4bcf-9405-9ae04abf1471"
+          ]
+        },
+        "description": "transparent background and ancient stone blocks tightly bound by thick tangled tree roots covered in damp green moss and dark decaying forest debris, rendered with soft highlights and gentle shadows showing moderate surface texture - wang_7",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      }
+    ],
+    "tile_size": {
+      "width": 32,
+      "height": 32
+    },
+    "total_tiles": 16,
+    "tileset_type": "sidescroller",
+    "terrain_types": [
+      "central",
+      "background"
+    ],
+    "spritesheet_url": "https://backblaze.pixellab.ai/file/pixellab-tiles/e85f9ec5-58c7-4302-8ca4-a6a80e99431c/918f9765-f16e-4454-9fb7-e33a8413faf3/spritesheet.png",
+    "spritesheet_grid": {
+      "cols": 4,
+      "rows": 4
+    },
+    "spritesheet_layout": "tileset15_4x4"
+  },
+  "metadata": {
+    "user_prompts": {
+      "lower": "thick exposed tree roots wrapping over ancient stone blocks, damp moss, forest decay, dark ruined gothic atmosphere, detailed pixel art, sidescroller environment asset",
+      "upper": "gnarled forest roots crossing cracked ruin stones with moss and small vegetation, gloomy forgotten forest, detailed pixel art",
+      "transition": ""
+    },
+    "terrain_prompts": {
+      "lower": "ancient stone blocks tightly bound by thick tangled tree roots covered in damp green moss and dark decaying forest debris, rendered with soft highlights and gentle shadows showing moderate surface texture",
+      "upper": "transparent background",
+      "transition": "a shallow top surface strip of gnarled forest roots crossing cracked ruin stones with soft moss patches, featuring gentle depth and moderate surface texture"
+    }
+  },
+  "created_at": "2026-09-26T17:18:00.016646+00:00",
+  "updated_at": "2026-09-26T17:19:06.955056+00:00",
+  "status": "completed",
+  "format": "tileset15",
+  "layout": {
+    "type": "tileset15",
+    "description": "4x4 grid of 16 unique Wang tiles",
+    "grid_size": {
+      "width": 4,
+      "height": 4
+    },
+    "tile_count": 16
+  },
+  "pattern_system": {
+    "type": "4x4_wildcard",
+    "description": "4\u00d74 patterns with wildcards for flexible tile matching",
+    "wildcard_value": 255,
+    "pattern_layout": {
+      "description": "4\u00d74 grid where center 2\u00d72 matches tile corners, outer ring uses wildcards",
+      "example": {
+        "row_0": "All wildcards (*)",
+        "row_1": "Wildcard + NW corner + NE corner + Wildcard",
+        "row_2": "Wildcard + SW corner + SE corner + Wildcard",
+        "row_3": "All wildcards (*)"
+      }
+    },
+    "terrain_encoding": {
+      "lower": 0,
+      "upper": 1,
+      "transition": 2,
+      "wildcard": 255
+    },
+    "usage": {
+      "description": "Sample 4\u00d74 terrain around tile position, encode as pattern key, lookup in cache",
+      "benefits": [
+        "O(1) lookup performance",
+        "Flexible edge matching",
+        "Unified pattern system"
+      ]
+    }
+  },
+  "tileset_image": {
+    "filename": "tileset_918f9765-f16e-4454-9fb7-e33a8413faf3.png",
+    "format": "PNG",
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    }
+  }
+}

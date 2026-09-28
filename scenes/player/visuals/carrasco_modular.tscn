@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/player/visuals/carrasco_modular.gd" id="1_rig"]
+
+[node name="CarrascoModular" type="Node2D"]
+scale = Vector2(0.36, 0.36)
+z_index = 13
+texture_filter = 1
+script = ExtResource("1_rig")
+
+[node name="Skeleton2D" type="Skeleton2D" parent="."]
+position = Vector2(-128, -225)
+
+[node name="Pelvis" type="Bone2D" parent="Skeleton2D"]
+position = Vector2(128, 128)
+
+[node name="Torso" type="Bone2D" parent="Skeleton2D/Pelvis"]
+position = Vector2(1, -34)
+
+[node name="Head" type="Bone2D" parent="Skeleton2D/Pelvis/Torso"]
+position = Vector2(3, -35)
+
+[node name="ArmLeft" type="Bone2D" parent="Skeleton2D/Pelvis/Torso"]
+position = Vector2(-28, -18)
+
+[node name="ForearmLeft" type="Bone2D" parent="Skeleton2D/Pelvis/Torso/ArmLeft"]
+position = Vector2(-10, 26)
+
+[node name="HandLeft" type="Bone2D" parent="Skeleton2D/Pelvis/Torso/ArmLeft/ForearmLeft"]
+position = Vector2(-3, 22)
+
+[node name="ArmRight" type="Bone2D" parent="Skeleton2D/Pelvis/Torso"]
+position = Vector2(25, -3)
+
+[node name="ForearmRight" type="Bone2D" parent="Skeleton2D/Pelvis/Torso/ArmRight"]
+position = Vector2(4, 20)
+
+[node name="HandRight" type="Bone2D" parent="Skeleton2D/Pelvis/Torso/ArmRight/ForearmRight"]
+position = Vector2(2, 18)
+
+[node name="CapeLeft" type="Bone2D" parent="Skeleton2D/Pelvis/Torso"]
+position = Vector2(-32, 4)
+
+[node name="CapeRight" type="Bone2D" parent="Skeleton2D/Pelvis/Torso"]
+position = Vector2(25, 9)
+
+[node name="ChainLeft" type="Bone2D" parent="Skeleton2D/Pelvis/Torso"]
+position = Vector2(-12, 23)
+
+[node name="ChainRight" type="Bone2D" parent="Skeleton2D/Pelvis/Torso"]
+position = Vector2(17, 27)
+
+[node name="AxeBack" type="Bone2D" parent="Skeleton2D/Pelvis/Torso"]
+position = Vector2(-41, 26)
+
+[node name="FrontCloth" type="Bone2D" parent="Skeleton2D/Pelvis"]
+position = Vector2(2, -13)
+
+[node name="ThighLeft" type="Bone2D" parent="Skeleton2D/Pelvis"]
+position = Vector2(-17, 4)
+
+[node name="ShinLeft" type="Bone2D" parent="Skeleton2D/Pelvis/ThighLeft"]
+position = Vector2(-7, 42)
+
+[node name="BootLeft" type="Bone2D" parent="Skeleton2D/Pelvis/ThighLeft/ShinLeft"]
+position = Vector2(-14, 35)
+
+[node name="ThighRight" type="Bone2D" parent="Skeleton2D/Pelvis"]
+position = Vector2(17, 7)
+
+[node name="ShinRight" type="Bone2D" parent="Skeleton2D/Pelvis/ThighRight"]
+position = Vector2(5, 41)
+
+[node name="BootRight" type="Bone2D" parent="Skeleton2D/Pelvis/ThighRight/ShinRight"]
+position = Vector2(-1, 34)

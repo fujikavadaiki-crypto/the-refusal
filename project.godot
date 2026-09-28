@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="The Refusal"
-run/main_scene="res://scenes/biomes/forest/forest_vertical_slice.tscn"
+run/main_scene="res://scenes/biomes/forest/bosque_room_aprovada.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -21,8 +21,8 @@ HitStop="*res://scripts/combat/hit_stop.gd"
 
 [display]
 
-window/size/viewport_width=480
-window/size/viewport_height=270
+window/size/viewport_width=960
+window/size/viewport_height=540
 window/size/window_width_override=960
 window/size/window_height_override=540
 window/stretch/mode="canvas_items"

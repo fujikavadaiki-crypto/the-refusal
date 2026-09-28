@@ -13,6 +13,15 @@
 .DS_Store
 Thumbs.db
 *.tmp
+*.log
 *.bak
 *.swp
 *~
+
+# Python helper-script caches
+__pycache__/
+*.py[cod]
+
+# Blender recovery backups (the .blend source files remain versioned)
+*.blend1
+*.blend2

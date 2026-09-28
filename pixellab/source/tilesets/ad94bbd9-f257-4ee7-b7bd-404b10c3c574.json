@@ -1,0 +1,1264 @@
+{
+  "id": "ad94bbd9-f257-4ee7-b7bd-404b10c3c574",
+  "name": "broken ruined stone platform with fractured",
+  "tileSize": {
+    "width": 32,
+    "height": 32
+  },
+  "baseTileIds": null,
+  "terrainMapping": {
+    "lower": 9,
+    "upper": 0
+  },
+  "lowerDescription": "fractured gothic stone blocks with chipped edges, damp moss patches, and soft weathering under gentle ambient light",
+  "upperDescription": "narrow uneven platform top covered in mossy overgrowth and cracked stone fragments with moderate depth and soft shadows",
+  "user_id": "e85f9ec5-58c7-4302-8ca4-a6a80e99431c",
+  "lower_description": "fractured gothic stone blocks with chipped edges, damp moss patches, and soft weathering under gentle ambient light",
+  "upper_description": "narrow uneven platform top covered in mossy overgrowth and cracked stone fragments with moderate depth and soft shadows",
+  "transition_description": null,
+  "tile_size": {
+    "width": 32,
+    "height": 32
+  },
+  "transition_size": 0,
+  "view": "side",
+  "style_settings": null,
+  "generation_parameters": null,
+  "base_tile_ids": {
+    "lower": "d052e9f4-c4a3-408a-a62c-fa1ab46e3c67",
+    "upper": "6f0ede6a-28a7-4dc1-863c-8a0900f5d91a"
+  },
+  "tileset_data": {
+    "tiles": [
+      {
+        "id": "226ce534-f935-42ed-9e97-93e6a02b89e2",
+        "name": "wang_13",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "f1f68ee7-f5c5-4aa5-94fe-7ba3152bb7cf",
+            "8dcf605d-3c0f-4acf-8701-3290344c23e0",
+            "77d82441-66b3-4588-933b-88c07ffbf2b5",
+            "cd56861d-a5d3-45fe-81bc-471d0e731dd5"
+          ],
+          "west": [
+            "509495a3-4bf8-4448-8802-6414916b2ddb",
+            "77d82441-66b3-4588-933b-88c07ffbf2b5",
+            "76f052ab-c22e-4c2a-9d74-18044117802b",
+            "6f0ede6a-28a7-4dc1-863c-8a0900f5d91a"
+          ],
+          "north": [
+            "f1f68ee7-f5c5-4aa5-94fe-7ba3152bb7cf",
+            "d7e18a0f-ba5c-46cf-8d94-8f3db9cb57f5",
+            "cd56861d-a5d3-45fe-81bc-471d0e731dd5",
+            "33cd139c-6dec-4692-b444-1b44d34de5de"
+          ],
+          "south": [
+            "ae1e021b-fab4-45b1-adcf-fbbd01788637",
+            "509495a3-4bf8-4448-8802-6414916b2ddb",
+            "33cd139c-6dec-4692-b444-1b44d34de5de",
+            "6f0ede6a-28a7-4dc1-863c-8a0900f5d91a"
+          ]
+        },
+        "description": "transparent background and fractured gothic stone blocks with chipped edges, damp moss patches, and soft weathering under gentle ambient light - wang_13",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "059f60bd-1d0a-442f-8231-7d265a86ad08",
+        "name": "wang_10",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "3ce75507-dced-45fb-811b-825ba233199b",
+            "b173f422-6c2c-48f1-b6d2-5e7a8f4eb0d2",
+            "bc178e4f-dbdc-4618-b79e-312743735369"
+          ],
+          "west": [
+            "509495a3-4bf8-4448-8802-6414916b2ddb",
+            "77d82441-66b3-4588-933b-88c07ffbf2b5",
+            "6f0ede6a-28a7-4dc1-863c-8a0900f5d91a"
+          ],
+          "north": [
+            "f1f68ee7-f5c5-4aa5-94fe-7ba3152bb7cf",
+            "d7e18a0f-ba5c-46cf-8d94-8f3db9cb57f5",
+            "cd56861d-a5d3-45fe-81bc-471d0e731dd5",
+            "33cd139c-6dec-4692-b444-1b44d34de5de"
+          ],
+          "south": [
+            "d052e9f4-c4a3-408a-a62c-fa1ab46e3c67",
+            "ca00d962-b2ab-4a28-858e-999290de3f6e",
+            "d7e18a0f-ba5c-46cf-8d94-8f3db9cb57f5",
+            "4fd62053-34e5-45cc-bd4b-68251e35383f"
+          ]
+        },
+        "description": "transparent background and fractured gothic stone blocks with chipped edges, damp moss patches, and soft weathering under gentle ambient light - wang_10",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "628acce0-3f5f-4609-9ab2-eaadab08cbf8",
+        "name": "wang_4",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "4fd62053-34e5-45cc-bd4b-68251e35383f",
+            "33cd139c-6dec-4692-b444-1b44d34de5de",
+            "6f0ede6a-28a7-4dc1-863c-8a0900f5d91a"
+          ],
+          "west": [
+            "ca00d962-b2ab-4a28-858e-999290de3f6e",
+            "cd56861d-a5d3-45fe-81bc-471d0e731dd5",
+            "bc178e4f-dbdc-4618-b79e-312743735369"
+          ],
+          "north": [
+            "d052e9f4-c4a3-408a-a62c-fa1ab46e3c67",
+            "3ce75507-dced-45fb-811b-825ba233199b",
+            "509495a3-4bf8-4448-8802-6414916b2ddb",
+            "76f052ab-c22e-4c2a-9d74-18044117802b"
+          ],
+          "south": [
+            "f1f68ee7-f5c5-4aa5-94fe-7ba3152bb7cf",
+            "77d82441-66b3-4588-933b-88c07ffbf2b5",
+            "76f052ab-c22e-4c2a-9d74-18044117802b",
+            "b173f422-6c2c-48f1-b6d2-5e7a8f4eb0d2"
+          ]
+        },
+        "description": "transparent background and fractured gothic stone blocks with chipped edges, damp moss patches, and soft weathering under gentle ambient light - wang_4",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "f026640a-8975-4b7e-bcaa-47e0c7ba40af",
+        "name": "wang_12",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "f1f68ee7-f5c5-4aa5-94fe-7ba3152bb7cf",
+            "8dcf605d-3c0f-4acf-8701-3290344c23e0",
+            "77d82441-66b3-4588-933b-88c07ffbf2b5",
+            "cd56861d-a5d3-45fe-81bc-471d0e731dd5"
+          ],
+          "west": [
+            "ca00d962-b2ab-4a28-858e-999290de3f6e",
+            "d7e18a0f-ba5c-46cf-8d94-8f3db9cb57f5",
+            "cd56861d-a5d3-45fe-81bc-471d0e731dd5",
+            "bc178e4f-dbdc-4618-b79e-312743735369"
+          ],
+          "north": [
+            "ca00d962-b2ab-4a28-858e-999290de3f6e",
+            "ae1e021b-fab4-45b1-adcf-fbbd01788637",
+            "b173f422-6c2c-48f1-b6d2-5e7a8f4eb0d2",
+            "bc178e4f-dbdc-4618-b79e-312743735369"
+          ],
+          "south": [
+            "f1f68ee7-f5c5-4aa5-94fe-7ba3152bb7cf",
+            "77d82441-66b3-4588-933b-88c07ffbf2b5",
+            "76f052ab-c22e-4c2a-9d74-18044117802b",
+            "b173f422-6c2c-48f1-b6d2-5e7a8f4eb0d2"
+          ]
+        },
+        "description": "transparent background and fractured gothic stone blocks with chipped edges, damp moss patches, and soft weathering under gentle ambient light - wang_12",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 5,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "c87ee084-3844-4fd6-b8ee-44043612d556",
+        "name": "wang_6",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "f1f68ee7-f5c5-4aa5-94fe-7ba3152bb7cf",
+            "8dcf605d-3c0f-4acf-8701-3290344c23e0",
+            "77d82441-66b3-4588-933b-88c07ffbf2b5",
+            "cd56861d-a5d3-45fe-81bc-471d0e731dd5"
+          ],
+          "west": [
+            "d052e9f4-c4a3-408a-a62c-fa1ab46e3c67",
+            "3ce75507-dced-45fb-811b-825ba233199b",
+            "4fd62053-34e5-45cc-bd4b-68251e35383f",
+            "8dcf605d-3c0f-4acf-8701-3290344c23e0"
+          ],
+          "north": [
+            "ca00d962-b2ab-4a28-858e-999290de3f6e",
+            "b173f422-6c2c-48f1-b6d2-5e7a8f4eb0d2",
+            "bc178e4f-dbdc-4618-b79e-312743735369"
+          ],
+          "south": [
+            "509495a3-4bf8-4448-8802-6414916b2ddb",
+            "33cd139c-6dec-4692-b444-1b44d34de5de",
+            "6f0ede6a-28a7-4dc1-863c-8a0900f5d91a"
+          ]
+        },
+        "description": "transparent background and fractured gothic stone blocks with chipped edges, damp moss patches, and soft weathering under gentle ambient light - wang_6",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 5
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "a80420bf-6c20-4513-b60f-2a239ba8599f",
+        "name": "wang_8",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "d052e9f4-c4a3-408a-a62c-fa1ab46e3c67",
+            "ca00d962-b2ab-4a28-858e-999290de3f6e",
+            "ae1e021b-fab4-45b1-adcf-fbbd01788637",
+            "509495a3-4bf8-4448-8802-6414916b2ddb"
+          ],
+          "west": [
+            "f1f68ee7-f5c5-4aa5-94fe-7ba3152bb7cf",
+            "ae1e021b-fab4-45b1-adcf-fbbd01788637",
+            "33cd139c-6dec-4692-b444-1b44d34de5de",
+            "b173f422-6c2c-48f1-b6d2-5e7a8f4eb0d2"
+          ],
+          "north": [
+            "4fd62053-34e5-45cc-bd4b-68251e35383f",
+            "77d82441-66b3-4588-933b-88c07ffbf2b5",
+            "6f0ede6a-28a7-4dc1-863c-8a0900f5d91a"
+          ],
+          "south": [
+            "3ce75507-dced-45fb-811b-825ba233199b",
+            "cd56861d-a5d3-45fe-81bc-471d0e731dd5",
+            "bc178e4f-dbdc-4618-b79e-312743735369"
+          ]
+        },
+        "description": "transparent background and fractured gothic stone blocks with chipped edges, damp moss patches, and soft weathering under gentle ambient light - wang_8",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "d052e9f4-c4a3-408a-a62c-fa1ab46e3c67",
+        "name": "wang_0",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "ca00d962-b2ab-4a28-858e-999290de3f6e",
+            "ae1e021b-fab4-45b1-adcf-fbbd01788637",
+            "509495a3-4bf8-4448-8802-6414916b2ddb"
+          ],
+          "west": [
+            "3ce75507-dced-45fb-811b-825ba233199b",
+            "4fd62053-34e5-45cc-bd4b-68251e35383f",
+            "8dcf605d-3c0f-4acf-8701-3290344c23e0"
+          ],
+          "north": [
+            "3ce75507-dced-45fb-811b-825ba233199b",
+            "509495a3-4bf8-4448-8802-6414916b2ddb",
+            "76f052ab-c22e-4c2a-9d74-18044117802b"
+          ],
+          "south": [
+            "ca00d962-b2ab-4a28-858e-999290de3f6e",
+            "d7e18a0f-ba5c-46cf-8d94-8f3db9cb57f5",
+            "4fd62053-34e5-45cc-bd4b-68251e35383f"
+          ]
+        },
+        "description": "transparent background and fractured gothic stone blocks with chipped edges, damp moss patches, and soft weathering under gentle ambient light - wang_0",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 6
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "b23007cb-8dd0-4b49-b88a-9f1f9e32820e",
+        "name": "wang_1",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "8dcf605d-3c0f-4acf-8701-3290344c23e0",
+            "77d82441-66b3-4588-933b-88c07ffbf2b5",
+            "cd56861d-a5d3-45fe-81bc-471d0e731dd5"
+          ],
+          "west": [
+            "ae1e021b-fab4-45b1-adcf-fbbd01788637",
+            "33cd139c-6dec-4692-b444-1b44d34de5de",
+            "b173f422-6c2c-48f1-b6d2-5e7a8f4eb0d2"
+          ],
+          "north": [
+            "d7e18a0f-ba5c-46cf-8d94-8f3db9cb57f5",
+            "cd56861d-a5d3-45fe-81bc-471d0e731dd5",
+            "33cd139c-6dec-4692-b444-1b44d34de5de"
+          ],
+          "south": [
+            "77d82441-66b3-4588-933b-88c07ffbf2b5",
+            "76f052ab-c22e-4c2a-9d74-18044117802b",
+            "b173f422-6c2c-48f1-b6d2-5e7a8f4eb0d2"
+          ]
+        },
+        "description": "transparent background and fractured gothic stone blocks with chipped edges, damp moss patches, and soft weathering under gentle ambient light - wang_1",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "da798a2b-cacd-4852-8940-5c42c2462803",
+        "name": "wang_11",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "d7e18a0f-ba5c-46cf-8d94-8f3db9cb57f5",
+            "4fd62053-34e5-45cc-bd4b-68251e35383f",
+            "33cd139c-6dec-4692-b444-1b44d34de5de",
+            "6f0ede6a-28a7-4dc1-863c-8a0900f5d91a"
+          ],
+          "west": [
+            "f1f68ee7-f5c5-4aa5-94fe-7ba3152bb7cf",
+            "ae1e021b-fab4-45b1-adcf-fbbd01788637",
+            "33cd139c-6dec-4692-b444-1b44d34de5de",
+            "b173f422-6c2c-48f1-b6d2-5e7a8f4eb0d2"
+          ],
+          "north": [
+            "4fd62053-34e5-45cc-bd4b-68251e35383f",
+            "8dcf605d-3c0f-4acf-8701-3290344c23e0",
+            "77d82441-66b3-4588-933b-88c07ffbf2b5",
+            "6f0ede6a-28a7-4dc1-863c-8a0900f5d91a"
+          ],
+          "south": [
+            "f1f68ee7-f5c5-4aa5-94fe-7ba3152bb7cf",
+            "77d82441-66b3-4588-933b-88c07ffbf2b5",
+            "76f052ab-c22e-4c2a-9d74-18044117802b",
+            "b173f422-6c2c-48f1-b6d2-5e7a8f4eb0d2"
+          ]
+        },
+        "description": "transparent background and fractured gothic stone blocks with chipped edges, damp moss patches, and soft weathering under gentle ambient light - wang_11",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "f8c0c833-f966-4197-9a05-4b1dfcc6c09f",
+        "name": "wang_3",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "d7e18a0f-ba5c-46cf-8d94-8f3db9cb57f5",
+            "4fd62053-34e5-45cc-bd4b-68251e35383f",
+            "33cd139c-6dec-4692-b444-1b44d34de5de",
+            "6f0ede6a-28a7-4dc1-863c-8a0900f5d91a"
+          ],
+          "west": [
+            "d052e9f4-c4a3-408a-a62c-fa1ab46e3c67",
+            "3ce75507-dced-45fb-811b-825ba233199b",
+            "4fd62053-34e5-45cc-bd4b-68251e35383f",
+            "8dcf605d-3c0f-4acf-8701-3290344c23e0"
+          ],
+          "north": [
+            "d052e9f4-c4a3-408a-a62c-fa1ab46e3c67",
+            "3ce75507-dced-45fb-811b-825ba233199b",
+            "509495a3-4bf8-4448-8802-6414916b2ddb",
+            "76f052ab-c22e-4c2a-9d74-18044117802b"
+          ],
+          "south": [
+            "ae1e021b-fab4-45b1-adcf-fbbd01788637",
+            "509495a3-4bf8-4448-8802-6414916b2ddb",
+            "33cd139c-6dec-4692-b444-1b44d34de5de",
+            "6f0ede6a-28a7-4dc1-863c-8a0900f5d91a"
+          ]
+        },
+        "description": "transparent background and fractured gothic stone blocks with chipped edges, damp moss patches, and soft weathering under gentle ambient light - wang_3",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "7a5a43ad-e5ad-4ba2-af76-fb84b9bdc242",
+        "name": "wang_2",
+        "corners": {
+          "NE": "lower",
+          "NW": "lower",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "d052e9f4-c4a3-408a-a62c-fa1ab46e3c67",
+            "ca00d962-b2ab-4a28-858e-999290de3f6e",
+            "ae1e021b-fab4-45b1-adcf-fbbd01788637",
+            "509495a3-4bf8-4448-8802-6414916b2ddb"
+          ],
+          "west": [
+            "509495a3-4bf8-4448-8802-6414916b2ddb",
+            "77d82441-66b3-4588-933b-88c07ffbf2b5",
+            "76f052ab-c22e-4c2a-9d74-18044117802b",
+            "6f0ede6a-28a7-4dc1-863c-8a0900f5d91a"
+          ],
+          "north": [
+            "4fd62053-34e5-45cc-bd4b-68251e35383f",
+            "8dcf605d-3c0f-4acf-8701-3290344c23e0",
+            "77d82441-66b3-4588-933b-88c07ffbf2b5",
+            "6f0ede6a-28a7-4dc1-863c-8a0900f5d91a"
+          ],
+          "south": [
+            "d052e9f4-c4a3-408a-a62c-fa1ab46e3c67",
+            "ca00d962-b2ab-4a28-858e-999290de3f6e",
+            "d7e18a0f-ba5c-46cf-8d94-8f3db9cb57f5",
+            "4fd62053-34e5-45cc-bd4b-68251e35383f"
+          ]
+        },
+        "description": "transparent background and fractured gothic stone blocks with chipped edges, damp moss patches, and soft weathering under gentle ambient light - wang_2",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 3,
+          "row": 1
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "55d45b12-0895-4446-a72a-7ac1796ccaf2",
+        "name": "wang_5",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "d052e9f4-c4a3-408a-a62c-fa1ab46e3c67",
+            "ca00d962-b2ab-4a28-858e-999290de3f6e",
+            "ae1e021b-fab4-45b1-adcf-fbbd01788637",
+            "509495a3-4bf8-4448-8802-6414916b2ddb"
+          ],
+          "west": [
+            "ca00d962-b2ab-4a28-858e-999290de3f6e",
+            "d7e18a0f-ba5c-46cf-8d94-8f3db9cb57f5",
+            "cd56861d-a5d3-45fe-81bc-471d0e731dd5",
+            "bc178e4f-dbdc-4618-b79e-312743735369"
+          ],
+          "north": [
+            "d052e9f4-c4a3-408a-a62c-fa1ab46e3c67",
+            "3ce75507-dced-45fb-811b-825ba233199b",
+            "509495a3-4bf8-4448-8802-6414916b2ddb",
+            "76f052ab-c22e-4c2a-9d74-18044117802b"
+          ],
+          "south": [
+            "3ce75507-dced-45fb-811b-825ba233199b",
+            "8dcf605d-3c0f-4acf-8701-3290344c23e0",
+            "cd56861d-a5d3-45fe-81bc-471d0e731dd5",
+            "bc178e4f-dbdc-4618-b79e-312743735369"
+          ]
+        },
+        "description": "transparent background and fractured gothic stone blocks with chipped edges, damp moss patches, and soft weathering under gentle ambient light - wang_5",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 64,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "6f0ede6a-28a7-4dc1-863c-8a0900f5d91a",
+        "name": "wang_15",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "3ce75507-dced-45fb-811b-825ba233199b",
+            "76f052ab-c22e-4c2a-9d74-18044117802b",
+            "b173f422-6c2c-48f1-b6d2-5e7a8f4eb0d2",
+            "bc178e4f-dbdc-4618-b79e-312743735369"
+          ],
+          "west": [
+            "ca00d962-b2ab-4a28-858e-999290de3f6e",
+            "d7e18a0f-ba5c-46cf-8d94-8f3db9cb57f5",
+            "cd56861d-a5d3-45fe-81bc-471d0e731dd5",
+            "bc178e4f-dbdc-4618-b79e-312743735369"
+          ],
+          "north": [
+            "ca00d962-b2ab-4a28-858e-999290de3f6e",
+            "ae1e021b-fab4-45b1-adcf-fbbd01788637",
+            "b173f422-6c2c-48f1-b6d2-5e7a8f4eb0d2",
+            "bc178e4f-dbdc-4618-b79e-312743735369"
+          ],
+          "south": [
+            "3ce75507-dced-45fb-811b-825ba233199b",
+            "8dcf605d-3c0f-4acf-8701-3290344c23e0",
+            "cd56861d-a5d3-45fe-81bc-471d0e731dd5",
+            "bc178e4f-dbdc-4618-b79e-312743735369"
+          ]
+        },
+        "description": "transparent background and fractured gothic stone blocks with chipped edges, damp moss patches, and soft weathering under gentle ambient light - wang_15",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "6d6c17b1-ca7c-455d-9d3d-1a05c3769d41",
+        "name": "wang_14",
+        "corners": {
+          "NE": "upper",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "d7e18a0f-ba5c-46cf-8d94-8f3db9cb57f5",
+            "4fd62053-34e5-45cc-bd4b-68251e35383f",
+            "33cd139c-6dec-4692-b444-1b44d34de5de",
+            "6f0ede6a-28a7-4dc1-863c-8a0900f5d91a"
+          ],
+          "west": [
+            "509495a3-4bf8-4448-8802-6414916b2ddb",
+            "77d82441-66b3-4588-933b-88c07ffbf2b5",
+            "76f052ab-c22e-4c2a-9d74-18044117802b",
+            "6f0ede6a-28a7-4dc1-863c-8a0900f5d91a"
+          ],
+          "north": [
+            "4fd62053-34e5-45cc-bd4b-68251e35383f",
+            "8dcf605d-3c0f-4acf-8701-3290344c23e0",
+            "77d82441-66b3-4588-933b-88c07ffbf2b5",
+            "6f0ede6a-28a7-4dc1-863c-8a0900f5d91a"
+          ],
+          "south": [
+            "ae1e021b-fab4-45b1-adcf-fbbd01788637",
+            "509495a3-4bf8-4448-8802-6414916b2ddb",
+            "33cd139c-6dec-4692-b444-1b44d34de5de",
+            "6f0ede6a-28a7-4dc1-863c-8a0900f5d91a"
+          ]
+        },
+        "description": "transparent background and fractured gothic stone blocks with chipped edges, damp moss patches, and soft weathering under gentle ambient light - wang_14",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "3512a85d-a241-4124-a359-05c522e45344",
+        "name": "wang_9",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "connections": {
+          "east": [
+            "3ce75507-dced-45fb-811b-825ba233199b",
+            "76f052ab-c22e-4c2a-9d74-18044117802b",
+            "b173f422-6c2c-48f1-b6d2-5e7a8f4eb0d2",
+            "bc178e4f-dbdc-4618-b79e-312743735369"
+          ],
+          "west": [
+            "f1f68ee7-f5c5-4aa5-94fe-7ba3152bb7cf",
+            "ae1e021b-fab4-45b1-adcf-fbbd01788637",
+            "33cd139c-6dec-4692-b444-1b44d34de5de",
+            "b173f422-6c2c-48f1-b6d2-5e7a8f4eb0d2"
+          ],
+          "north": [
+            "f1f68ee7-f5c5-4aa5-94fe-7ba3152bb7cf",
+            "d7e18a0f-ba5c-46cf-8d94-8f3db9cb57f5",
+            "cd56861d-a5d3-45fe-81bc-471d0e731dd5",
+            "33cd139c-6dec-4692-b444-1b44d34de5de"
+          ],
+          "south": [
+            "3ce75507-dced-45fb-811b-825ba233199b",
+            "8dcf605d-3c0f-4acf-8701-3290344c23e0",
+            "cd56861d-a5d3-45fe-81bc-471d0e731dd5",
+            "bc178e4f-dbdc-4618-b79e-312743735369"
+          ]
+        },
+        "description": "transparent background and fractured gothic stone blocks with chipped edges, damp moss patches, and soft weathering under gentle ambient light - wang_9",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "d4297cc0-1348-49d9-bb8a-42fa4de4d5ba",
+        "name": "wang_7",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "upper"
+        },
+        "connections": {
+          "east": [
+            "3ce75507-dced-45fb-811b-825ba233199b",
+            "76f052ab-c22e-4c2a-9d74-18044117802b",
+            "b173f422-6c2c-48f1-b6d2-5e7a8f4eb0d2",
+            "bc178e4f-dbdc-4618-b79e-312743735369"
+          ],
+          "west": [
+            "d052e9f4-c4a3-408a-a62c-fa1ab46e3c67",
+            "3ce75507-dced-45fb-811b-825ba233199b",
+            "4fd62053-34e5-45cc-bd4b-68251e35383f",
+            "8dcf605d-3c0f-4acf-8701-3290344c23e0"
+          ],
+          "north": [
+            "ca00d962-b2ab-4a28-858e-999290de3f6e",
+            "ae1e021b-fab4-45b1-adcf-fbbd01788637",
+            "b173f422-6c2c-48f1-b6d2-5e7a8f4eb0d2",
+            "bc178e4f-dbdc-4618-b79e-312743735369"
+          ],
+          "south": [
+            "d052e9f4-c4a3-408a-a62c-fa1ab46e3c67",
+            "ca00d962-b2ab-4a28-858e-999290de3f6e",
+            "d7e18a0f-ba5c-46cf-8d94-8f3db9cb57f5",
+            "4fd62053-34e5-45cc-bd4b-68251e35383f"
+          ]
+        },
+        "description": "transparent background and fractured gothic stone blocks with chipped edges, damp moss patches, and soft weathering under gentle ambient light - wang_7",
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 2
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      }
+    ],
+    "tile_size": {
+      "width": 32,
+      "height": 32
+    },
+    "total_tiles": 16,
+    "tileset_type": "sidescroller",
+    "terrain_types": [
+      "central",
+      "background"
+    ],
+    "spritesheet_url": "https://backblaze.pixellab.ai/file/pixellab-tiles/e85f9ec5-58c7-4302-8ca4-a6a80e99431c/ad94bbd9-f257-4ee7-b7bd-404b10c3c574/spritesheet.png",
+    "spritesheet_grid": {
+      "cols": 4,
+      "rows": 4
+    },
+    "spritesheet_layout": "tileset15_4x4"
+  },
+  "metadata": {
+    "user_prompts": {
+      "lower": "broken ruined stone platform with fractured gothic blocks, chipped edges, missing pieces, moss and damp decay, dark forest ruin style, detailed pixel art",
+      "upper": "uneven broken platform top with moss, weeds, chipped stone edges and small cracks, detailed pixel art",
+      "transition": ""
+    },
+    "terrain_prompts": {
+      "lower": "fractured gothic stone blocks with chipped edges, damp moss patches, and soft weathering under gentle ambient light",
+      "upper": "transparent background",
+      "transition": "narrow uneven platform top covered in mossy overgrowth and cracked stone fragments with moderate depth and soft shadows"
+    }
+  },
+  "created_at": "2026-09-26T17:16:25.531913+00:00",
+  "updated_at": "2026-09-26T17:17:17.920017+00:00",
+  "status": "completed",
+  "format": "tileset15",
+  "layout": {
+    "type": "tileset15",
+    "description": "4x4 grid of 16 unique Wang tiles",
+    "grid_size": {
+      "width": 4,
+      "height": 4
+    },
+    "tile_count": 16
+  },
+  "pattern_system": {
+    "type": "4x4_wildcard",
+    "description": "4\u00d74 patterns with wildcards for flexible tile matching",
+    "wildcard_value": 255,
+    "pattern_layout": {
+      "description": "4\u00d74 grid where center 2\u00d72 matches tile corners, outer ring uses wildcards",
+      "example": {
+        "row_0": "All wildcards (*)",
+        "row_1": "Wildcard + NW corner + NE corner + Wildcard",
+        "row_2": "Wildcard + SW corner + SE corner + Wildcard",
+        "row_3": "All wildcards (*)"
+      }
+    },
+    "terrain_encoding": {
+      "lower": 0,
+      "upper": 1,
+      "transition": 2,
+      "wildcard": 255
+    },
+    "usage": {
+      "description": "Sample 4\u00d74 terrain around tile position, encode as pattern key, lookup in cache",
+      "benefits": [
+        "O(1) lookup performance",
+        "Flexible edge matching",
+        "Unified pattern system"
+      ]
+    }
+  },
+  "tileset_image": {
+    "filename": "tileset_ad94bbd9-f257-4ee7-b7bd-404b10c3c574.png",
+    "format": "PNG",
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    }
+  }
+}

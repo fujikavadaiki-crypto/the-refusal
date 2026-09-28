@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/biomes/forest/bosque_b_video_loop.gd" id="1_loop"]
+[ext_resource type="Texture2D" path="res://assets/biomes/forest/approved/bosque_b.jpg" id="2_art"]
+[ext_resource type="Shader" path="res://shaders/bosque_b_video_loop.gdshader" id="3_water"]
+[ext_resource type="Script" path="res://scripts/biomes/forest/bosque_b_loop_ambient.gd" id="4_ambient"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_water"]
+shader = ExtResource("3_water")
+shader_parameter/loop_phase = 0.0
+
+[node name="BosqueBVideoLoop" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_loop")
+
+[node name="BACKGROUND" type="Node2D" parent="."]
+
+[node name="ApprovedComposition" type="Sprite2D" parent="BACKGROUND"]
+material = SubResource("ShaderMaterial_water")
+texture_filter = 1
+texture = ExtResource("2_art")
+centered = false
+
+[node name="AMBIENT" type="Node2D" parent="."]
+script = ExtResource("4_ambient")

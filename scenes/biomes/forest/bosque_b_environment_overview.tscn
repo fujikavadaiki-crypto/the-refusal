@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/biomes/forest/approved/bosque_b.jpg" id="1_art"]
+[ext_resource type="Script" path="res://scripts/biomes/forest/bosque_b_environment_layer.gd" id="2_layer"]
+[ext_resource type="Script" path="res://scripts/biomes/forest/bosque_wind.gd" id="3_wind"]
+[ext_resource type="Shader" path="res://shaders/bosque_b_video_loop.gdshader" id="4_water_shader"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_water"]
+shader = ExtResource("4_water_shader")
+shader_parameter/loop_phase = 0.0
+
+[node name="BosqueBEnvironmentOverview" type="Node2D"]
+texture_filter = 1
+
+[node name="WindSystem" type="Node" parent="."]
+script = ExtResource("3_wind")
+
+[node name="BACKGROUND" type="Node2D" parent="."]
+z_index = -10
+
+[node name="ApprovedComposition" type="Sprite2D" parent="BACKGROUND"]
+material = SubResource("ShaderMaterial_water")
+texture_filter = 1
+texture = ExtResource("1_art")
+centered = false
+
+[node name="MIDGROUND" type="Node2D" parent="."]
+z_index = -6
+
+[node name="WaterfallLayer" type="Node2D" parent="MIDGROUND"]
+script = ExtResource("2_layer")
+
+[node name="LowerWaterLayer" type="Node2D" parent="MIDGROUND"]
+script = ExtResource("2_layer")
+layer_mode = 1
+
+[node name="VegetationSwayMasks" type="Node2D" parent="MIDGROUND"]
+script = ExtResource("2_layer")
+layer_mode = 2
+
+[node name="MistLayer" type="Node2D" parent="MIDGROUND"]
+script = ExtResource("2_layer")
+layer_mode = 4
+
+[node name="LightShafts" type="Node2D" parent="MIDGROUND"]
+script = ExtResource("2_layer")
+layer_mode = 5
+
+[node name="FOREGROUND" type="Node2D" parent="."]
+z_index = 16
+
+[node name="LeafParticles" type="Node2D" parent="FOREGROUND"]
+script = ExtResource("2_layer")
+layer_mode = 3
+
+[node name="WaterfallDroplets" type="Node2D" parent="FOREGROUND"]
+script = ExtResource("2_layer")
+layer_mode = 6
