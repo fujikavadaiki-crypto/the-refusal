@@ -7,17 +7,19 @@
 - Sala principal: `res://scenes/biomes/forest/bosque_room_aprovada.tscn`
 - Status completo: [`PROJECT_STATUS.md`](../PROJECT_STATUS.md)
 
-Remote `origin` aponta para `https://github.com/fujikavadaiki-crypto/the-refusal.git`; branch `main` e tag do checkpoint foram publicadas. Os novos assets desta etapa devem ser publicados em `main` após o commit.
+Remote `origin` aponta para `https://github.com/fujikavadaiki-crypto/the-refusal.git`; o checkpoint e a tag estão publicados. A entrega atual do Carrasco fica isolada em `feature/carrasco-animation-current`, sem merge em `main`.
 
 ## Estado
 
-Bosque B está na sala aprovada com o OGV em loop e **11 colisões `CollisionPolygon2D`**. Câmera: zoom 0,9, viewport 960×540. O checkout tinha alterações existentes do Bosque/Player; elas foram preservadas para o checkpoint e não foram produzidas por esta tarefa.
+Bosque B permanece na sala aprovada com o OGV em loop e **11 colisões `CollisionPolygon2D`**. Câmera: zoom 0,9, viewport 960×540. Player/controller, câmera, cenário e gameplay não foram alterados nesta etapa.
 
-O 3D é a direção atual do Carrasco. O GLB reduzido com rig humanoide externo está agora versionado em `assets/characters/carrasco_3d/source/carrasco_forma_base_rigged.glb` (**19.402 triângulos, 65 ossos, sem actions de animação**). O candidato preserva bem a aparência, mas os pesos deformam tecido/correntes indevidamente e as mãos seguem fechadas. Ele precisa ser validado no Blender antes de criar outro rig. A arma oficial está separada em `assets/characters/carrasco_3d/weapon/carrasco_weapon.fbx`. A revisão completa e renders de defeito estão na pasta externa the separate Codex task workspace’s `outputs/tripo_candidate_02_validation/`. Os `.blend` experimentais na pasta irmã `outputs/carrasco_rig_prep_01/` incluem um `Carrasco_RIG_PREP.blend` marcado como defeituoso; não usar como rig pronto.
+O pipeline 3D → Blender → sprites 2D → Godot segue ativo. O GLB do Carrasco mantém seu rig humanoide Mixamo de **65 bones**; a arma oficial continua em FBX. A entrega técnica mais recente está em `work/carrasco_animation/current/`, incluindo `Carrasco_RUN_V2_CORRECTED.blend`, vídeos, capturas, relatório e dados de verificação.
+
+RUN_V2_CORRECTED inclui um reparo geométrico local para a continuidade das pernas, ajustes na pose das mãos/arma e maior inclinação do tronco. **A corrida ainda não está aprovada visualmente; a biomecânica continua parecendo artificial.** Não continuar refinando manualmente esse ciclo como solução final. Preservar o rig atual, `WeaponSocket` e o reparo das pernas.
 
 ## Próxima ação
 
-Importar o GLB e o FBX versionados no Blender. Validar o skeleton e os weights, deformações de ombros/cotovelos/joelhos, tecido/correntes, escala e attachment da arma. Corrigir somente defeitos confirmados em cópias de trabalho separadas, sem alterar os originais. Depois da validação do master, produzir a primeira corrida 3D. Ainda não integrar ao Godot antes dessa validação. O pipeline de personagem por cutout 2D foi rejeitado; não retomá-lo como solução final.
+Usar uma animação humanoide de corrida já validada como base e retargetar para o rig Mixamo atual. Depois adaptar a postura, o peso e o porte da arma ao Carrasco, mantendo `WeaponSocket` e o reparo das pernas. O ciclo RUN_V2_CORRECTED serve como registro/comparação, não como solução biomecânica final. Preservar o pipeline Blender → sprites 2D → Godot e o Bosque B aprovado. O pipeline por cutout 2D/Skeleton2D foi rejeitado como solução final.
 
 ## Inventário real
 

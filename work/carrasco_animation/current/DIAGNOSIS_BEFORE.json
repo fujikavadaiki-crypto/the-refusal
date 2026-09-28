@@ -1,0 +1,432 @@
+{
+  "materials": {
+    "tripo_789e8118_8a11_4c7f_9aea_d9bea75513f9": {
+      "diffuse": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "surface_render_method": "DITHERED",
+      "backface_culling": false,
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "BSDF_PRINCIPLED",
+          "inputs": {
+            "Alpha": {
+              "value": 1.0,
+              "linked": false
+            },
+            "Transmission Weight": {
+              "value": 0.0,
+              "linked": false
+            }
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL"
+        },
+        {
+          "name": "Normal Map",
+          "type": "NORMAL_MAP"
+        }
+      ]
+    },
+    "tripo_mat_6c3bc4c1-b258-4782-b1a3-e1c02986d5b4": {
+      "diffuse": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "surface_render_method": "DITHERED",
+      "backface_culling": false,
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "BSDF_PRINCIPLED",
+          "inputs": {
+            "Alpha": {
+              "value": 1.0,
+              "linked": false
+            },
+            "Transmission Weight": {
+              "value": 0.0,
+              "linked": false
+            }
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL"
+        },
+        {
+          "name": "Image Texture",
+          "type": "TEX_IMAGE",
+          "image": "fantasy_armored_knight_3d_model_basecolor",
+          "size": [
+            4096,
+            4096
+          ],
+          "channels": 4,
+          "alpha_range": [
+            1.0,
+            1.0
+          ],
+          "alpha_less_0999": 0
+        },
+        {
+          "name": "Separate Color",
+          "type": "SEPARATE_COLOR"
+        },
+        {
+          "name": "Image Texture.001",
+          "type": "TEX_IMAGE",
+          "image": "fantasy_armored_knight_3d_model_rm",
+          "size": [
+            2048,
+            2048
+          ],
+          "channels": 4,
+          "alpha_range": [
+            1.0,
+            1.0
+          ],
+          "alpha_less_0999": 0
+        },
+        {
+          "name": "Normal Map",
+          "type": "NORMAL_MAP"
+        },
+        {
+          "name": "Image Texture.002",
+          "type": "TEX_IMAGE",
+          "image": "fantasy_armored_knight_3d_model_normal",
+          "size": [
+            2048,
+            2048
+          ],
+          "channels": 4,
+          "alpha_range": [
+            1.0,
+            1.0
+          ],
+          "alpha_less_0999": 0
+        }
+      ]
+    },
+    "VALIDATION_Ground_Neutral": {
+      "diffuse": [
+        0.15000000596046448,
+        0.17000000178813934,
+        0.20000000298023224,
+        1.0
+      ],
+      "surface_render_method": "DITHERED",
+      "backface_culling": false,
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "BSDF_PRINCIPLED",
+          "inputs": {
+            "Alpha": {
+              "value": 1.0,
+              "linked": false
+            },
+            "Transmission Weight": {
+              "value": 0.0,
+              "linked": false
+            }
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL"
+        }
+      ]
+    }
+  },
+  "render": {
+    "engine": "CYCLES",
+    "film_transparent": false,
+    "compositor": false,
+    "view_transform": "AgX"
+  },
+  "meshes": {
+    "Carrasco_RIG_Mesh": {
+      "vertices": 21885,
+      "physical_positions": 7437,
+      "triangles": 14545,
+      "boundary_edges": 407,
+      "nonmanifold_edges": 14,
+      "lower_boundary_edges": 397,
+      "lower_boundary_bounds": [
+        [
+          -0.156281,
+          -0.112183,
+          0.053711
+        ],
+        [
+          0.185059,
+          0.11026,
+          0.519653
+        ]
+      ],
+      "visible_camera": true,
+      "hide_render": false,
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Carrasco_Mantle_Deform": {
+      "vertices": 6453,
+      "physical_positions": 2594,
+      "triangles": 4623,
+      "boundary_edges": 741,
+      "nonmanifold_edges": 20,
+      "lower_boundary_edges": 741,
+      "lower_boundary_bounds": [
+        [
+          -0.156281,
+          -0.127518,
+          0.053711
+        ],
+        [
+          0.173554,
+          0.11026,
+          0.519653
+        ]
+      ],
+      "visible_camera": true,
+      "hide_render": false,
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Carrasco_Chains_Rigid": {
+      "vertices": 498,
+      "physical_positions": 284,
+      "triangles": 234,
+      "boundary_edges": 333,
+      "nonmanifold_edges": 1,
+      "lower_boundary_edges": 333,
+      "lower_boundary_bounds": [
+        [
+          -0.148605,
+          -0.121765,
+          0.314484
+        ],
+        [
+          0.096848,
+          -0.068077,
+          0.492828
+        ]
+      ],
+      "visible_camera": true,
+      "hide_render": false,
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Carrasco_Weapon_FBX": {
+      "vertices": 5250,
+      "physical_positions": 5250,
+      "triangles": 9658,
+      "boundary_edges": 775,
+      "nonmanifold_edges": 3,
+      "lower_boundary_edges": 775,
+      "lower_boundary_bounds": [
+        [
+          -0.235564,
+          -0.155825,
+          0.23016
+        ],
+        [
+          -0.202048,
+          0.443222,
+          0.497695
+        ]
+      ],
+      "visible_camera": true,
+      "hide_render": false,
+      "modifiers": []
+    }
+  },
+  "weapon_grip": [
+    {
+      "frame": 1,
+      "palm_bone_head": [
+        -0.21343208849430084,
+        -0.11066015064716339,
+        0.6331115365028381
+      ],
+      "hand_tip": [
+        -0.21424002945423126,
+        -0.13196633756160736,
+        0.6367571353912354
+      ],
+      "grip": [
+        -0.22511236369609833,
+        -0.14923341572284698,
+        0.6317138671875
+      ],
+      "grip_to_wrist_m": 0.04032715077999892,
+      "handle_axis": [
+        -0.06846705824136734,
+        -0.42164361476898193,
+        -0.9041731357574463
+      ],
+      "right_arm_joints": {
+        "Arm": [
+          -0.12438276410102844,
+          -0.026662126183509827,
+          0.7414849400520325
+        ],
+        "ForeArm": [
+          -0.17981475591659546,
+          0.015988802537322044,
+          0.5988696813583374
+        ],
+        "Hand": [
+          -0.21343208849430084,
+          -0.11066015064716339,
+          0.6331115365028381
+        ]
+      }
+    },
+    {
+      "frame": 7,
+      "palm_bone_head": [
+        -0.2297116219997406,
+        -0.11868751049041748,
+        0.642290472984314
+      ],
+      "hand_tip": [
+        -0.2315729260444641,
+        -0.13941986858844757,
+        0.6481727957725525
+      ],
+      "grip": [
+        -0.2433551847934723,
+        -0.1565382182598114,
+        0.6450209617614746
+      ],
+      "grip_to_wrist_m": 0.04032714315147555,
+      "handle_axis": [
+        -0.09778022021055222,
+        -0.5105855464935303,
+        -0.8542490601539612
+      ],
+      "right_arm_joints": {
+        "Arm": [
+          -0.13512666523456573,
+          -0.020525768399238586,
+          0.7421268224716187
+        ],
+        "ForeArm": [
+          -0.1899813562631607,
+          0.001736510545015335,
+          0.5947285294532776
+        ],
+        "Hand": [
+          -0.2297116219997406,
+          -0.11868751049041748,
+          0.642290472984314
+        ]
+      }
+    },
+    {
+      "frame": 13,
+      "palm_bone_head": [
+        -0.20980136096477509,
+        -0.1405603289604187,
+        0.6561139822006226
+      ],
+      "hand_tip": [
+        -0.2108716368675232,
+        -0.15970216691493988,
+        0.6661310195922852
+      ],
+      "grip": [
+        -0.22164972126483917,
+        -0.17774678766727448,
+        0.6662659049034119
+      ],
+      "grip_to_wrist_m": 0.040327136419429345,
+      "handle_axis": [
+        -0.03705926984548569,
+        -0.6807665228843689,
+        -0.7315624952316284
+      ],
+      "right_arm_joints": {
+        "Arm": [
+          -0.12437617778778076,
+          -0.026662126183509827,
+          0.7364879846572876
+        ],
+        "ForeArm": [
+          -0.17417456209659576,
+          -0.030489962548017502,
+          0.585702121257782
+        ],
+        "Hand": [
+          -0.20980136096477509,
+          -0.1405603289604187,
+          0.6561139822006226
+        ]
+      }
+    },
+    {
+      "frame": 19,
+      "palm_bone_head": [
+        -0.19290313124656677,
+        -0.13435856997966766,
+        0.6454850435256958
+      ],
+      "hand_tip": [
+        -0.19287899136543274,
+        -0.1544637382030487,
+        0.6534649133682251
+      ],
+      "grip": [
+        -0.2026350349187851,
+        -0.1729973554611206,
+        0.6516989469528198
+      ],
+      "grip_to_wrist_m": 0.0403271405691665,
+      "handle_axis": [
+        -0.0010416543809697032,
+        -0.6024317741394043,
+        -0.7981696128845215
+      ],
+      "right_arm_joints": {
+        "Arm": [
+          -0.11329332739114761,
+          -0.0327707901597023,
+          0.7366363406181335
+        ],
+        "ForeArm": [
+          -0.16364948451519012,
+          -0.015782715752720833,
+          0.5869480967521667
+        ],
+        "Hand": [
+          -0.19290313124656677,
+          -0.13435856997966766,
+          0.6454850435256958
+        ]
+      }
+    }
+  ]
+}

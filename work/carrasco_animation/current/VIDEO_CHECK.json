@@ -1,0 +1,62 @@
+[
+  {
+    "file": "Carrasco_Legs_Before_After.mp4",
+    "decode_exit_code": 0,
+    "decoded_frames": 288,
+    "duration_seconds": 9.6,
+    "fps": 30,
+    "audio_present": false,
+    "resolution": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "file": "Carrasco_Legs_Solid_Diagnostic.mp4",
+    "decode_exit_code": 0,
+    "decoded_frames": 288,
+    "duration_seconds": 9.6,
+    "fps": 30,
+    "audio_present": false,
+    "resolution": [
+      1280,
+      720
+    ]
+  },
+  {
+    "file": "Carrasco_RUN_Before_After.mp4",
+    "decode_exit_code": 0,
+    "decoded_frames": 288,
+    "duration_seconds": 9.6,
+    "fps": 30,
+    "audio_present": false,
+    "resolution": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "file": "Carrasco_RUN_Corrected.mp4",
+    "decode_exit_code": 0,
+    "decoded_frames": 288,
+    "duration_seconds": 9.6,
+    "fps": 30,
+    "audio_present": false,
+    "resolution": [
+      1280,
+      720
+    ]
+  },
+  {
+    "file": "Carrasco_RUN_Corrected_Slow_05x.mp4",
+    "decode_exit_code": 0,
+    "decoded_frames": 576,
+    "duration_seconds": 19.2,
+    "fps": 30,
+    "audio_present": false,
+    "resolution": [
+      1280,
+      720
+    ]
+  }
+]

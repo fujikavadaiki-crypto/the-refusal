@@ -96,7 +96,7 @@ The preserved high-poly and the previous reduced/prep work files are in the sepa
 
 ## Rig
 
-The 2D cutout rig was rejected as the final animation pipeline. Before creating another rig, import the repository GLB into Blender and validate its received humanoid skeleton, weights and joint deformations. Treat its armature as a starting point: fix only verified problems, including the cloth/chains following an elbow bend, and assess the closed hands before production animation. Do not create a replacement rig or animation before that validation.
+The 2D cutout rig was rejected as the final animation pipeline. The external Mixamo armature on the repository GLB was validated and retained with **65 bones**. The current Blender work and its evaluation are documented below under **RUN_V2_CORRECTED**. Keep that rig, `WeaponSocket`, the leg continuity repair, and the existing Blender → 2D sprites → Godot pipeline.
 
 ## Arma
 
@@ -104,11 +104,21 @@ The approved weapon is available independently as `assets/characters/carrasco_3d
 
 ## Próxima tarefa
 
-1. Import the versioned GLB and FBX into Blender; keep both originals unchanged and preserve the high-poly master.
-2. Validate the GLB humanoid skeleton, weights and deformations, especially shoulders/elbows and cloth/chains; validate the weapon scale/orientation and attachment.
-3. Correct only verified issues in separate Blender working copies. Do not create another rig before validating the received skeleton.
-4. After the master and rig validation gate, produce and review the first 3D run animation.
-5. Do not integrate the model into Godot until validation is complete. Then render transparent 2D sprites and test them in Bosque B.
+1. Do not keep manually refining RUN_V2 as the final biomechanical solution; its run remains visually unapproved and reads artificially.
+2. Start from a humanoid run animation that has already been validated, then retarget it to the current 65-bone Mixamo rig.
+3. Adapt the retargeted motion for Carrasco's weight, forward posture, and weapon carry. Preserve `WeaponSocket` and the leg continuity repair.
+4. Continue the existing Blender → transparent 2D sprites → Godot pipeline. Keep the Godot integration and gameplay intact while validating the animation.
+
+## RUN_V2_CORRECTED — estado corrente
+
+The current Blender delivery and review material are in `work/carrasco_animation/current/` on branch `feature/carrasco-animation-current`.
+
+- `RUN_V2_CORRECTED` exists as a separate action and Blender working file. The original RUN_V2 action, 65-bone Mixamo rig, `WeaponSocket`, ground point, and original GLB/FBX remain preserved.
+- A local opaque inner surface repairs the visible leg openings. The pose of the arms, hands, and carried weapon was adjusted, and the torso received a modest increase in forward lean.
+- **The run is not visually approved. Its biomechanics still look artificial.** Do not continue manual polishing of this run as the final solution.
+- Recommended next step: retarget a previously validated humanoid run to the existing rig, then adapt posture, weight, and weapon carry.
+- The delivery includes the Blender file, before/after videos, captures, report, and verification data. See `work/carrasco_animation/current/RUN_CORRECTION_REPORT.md` and `RUN_CORRECTION_REVIEW.html`.
+- This work did not change Godot, Bosque B, Player/controller, camera, collisions, or gameplay.
 
 ## NÃO REPETIR
 

@@ -1,0 +1,167 @@
+[
+  {
+    "file": "CANDIDATE_B.json",
+    "bytes": 10574,
+    "sha256": "0bd463cee2f6265ff9979711b56eed087ec3f53e53fd5af80e1845d2e92fb21a"
+  },
+  {
+    "file": "captures/before_grip_07.png",
+    "bytes": 1182276,
+    "sha256": "945fcd971d85234c8d15d457af2ba2d882a3317c070d3dfc39a15d11746bfda7"
+  },
+  {
+    "file": "captures/before_rest_body_solid.png",
+    "bytes": 888409,
+    "sha256": "2ce34dd5504340f98ec5a6df42d889deea2e9cb84ecd742cbb4c4f8d1ea50eec"
+  },
+  {
+    "file": "captures/before_solid_legs_19.png",
+    "bytes": 841555,
+    "sha256": "d3de093135aef21c3ec5c3d280690ae0a62a8a13bf2c63c9882c4f321e30bf88"
+  },
+  {
+    "file": "captures/fix_B_grip_07.png",
+    "bytes": 1042911,
+    "sha256": "e321632c3461553225232177b376c0b244aa2582328330fa05558b3c3f3702c1"
+  },
+  {
+    "file": "captures/fix_B_legs_19.png",
+    "bytes": 1003573,
+    "sha256": "a0e8bf13a63f48ae4e93181694d667a6e5255ed42b59e58056490551b2fb63d1"
+  },
+  {
+    "file": "captures/full34_before_after_01.png",
+    "bytes": 1211868,
+    "sha256": "2b6fdb4773b2b42b7335f00ad31be8d4fd8df326f6b0bfe22b4e236b45f0a11e"
+  },
+  {
+    "file": "captures/full34_before_after_07.png",
+    "bytes": 1217514,
+    "sha256": "72c28929aa1f92cbcee83946d593d7b604f66625dbd58a60930e3a233e04e033"
+  },
+  {
+    "file": "captures/full34_before_after_13.png",
+    "bytes": 1202366,
+    "sha256": "f24580918100fe036a8ded45e65a503c110c1b8cb047395ad1f86e148d502c2d"
+  },
+  {
+    "file": "captures/full34_before_after_19.png",
+    "bytes": 1206392,
+    "sha256": "30c2b3073c86039196258dfbace5c3dcb8d1979ac6262d2fcd26fa1d615ac117"
+  },
+  {
+    "file": "captures/HAND_WEAPON_before_after.png",
+    "bytes": 1958402,
+    "sha256": "dbaef956a16e5bd0a95d44686cb44d1b18908998210e076435c3310b181ee065"
+  },
+  {
+    "file": "captures/legs_before_after_01.png",
+    "bytes": 976894,
+    "sha256": "584429a1c7e8d8aa1c3c6983cbbd3fad8390d75ab089c5459cf2ee6b7b5a6760"
+  },
+  {
+    "file": "captures/legs_before_after_07.png",
+    "bytes": 968861,
+    "sha256": "2fc81ebdffde9e9129e5281cb56e15dc5991a44e265aeb8aaa1c7c64a66751b3"
+  },
+  {
+    "file": "captures/legs_before_after_13.png",
+    "bytes": 993609,
+    "sha256": "8a86e82461ec7d3d3354b76dd531fa98d8c9f36c08f1ff79f00942e569d7fa64"
+  },
+  {
+    "file": "captures/legs_before_after_19.png",
+    "bytes": 977869,
+    "sha256": "9b50b5d2dfcb7604e1159d099a44fd76f76d533d942c0660b0f39eb07fa401e7"
+  },
+  {
+    "file": "captures/LEGS_SOLID_24_frames.png",
+    "bytes": 2533796,
+    "sha256": "87bba1139746c74f6e1d1903741955302136fa8735e894d3bfea207350ebb10f"
+  },
+  {
+    "file": "captures/REVIEW_LEGS_01_06.png",
+    "bytes": 660619,
+    "sha256": "5eadef93c05a75916ff2f94d3d2bb56c6f3f1c9e4b2b160971b196e72439b10c"
+  },
+  {
+    "file": "captures/REVIEW_LEGS_07_12.png",
+    "bytes": 696296,
+    "sha256": "686fb7a47337f59273fbcc67c426984d5704b29d3ad0155062bc563dc06fdc8d"
+  },
+  {
+    "file": "captures/REVIEW_LEGS_13_18.png",
+    "bytes": 659878,
+    "sha256": "429bed2c6feccba996065133421d986495bf0de9482be5610e73b9274aaa1987"
+  },
+  {
+    "file": "captures/REVIEW_LEGS_19_24.png",
+    "bytes": 693413,
+    "sha256": "9ea362712a77bef826896f46e53d7064f0574dcbdb4c933e1c99c4e53cec521c"
+  },
+  {
+    "file": "captures/RUN_CORRECTED_24_frames.png",
+    "bytes": 3329126,
+    "sha256": "70897ceb7eba8da83eb1f07803298fc5386bf771bac1925e422875f71589f242"
+  },
+  {
+    "file": "Carrasco_Legs_Before_After.mp4",
+    "bytes": 18418587,
+    "sha256": "520a333fb665ba6000d0af6407c77e24cb8d0444448d6cb6414f94b45eea09e1"
+  },
+  {
+    "file": "Carrasco_Legs_Solid_Diagnostic.mp4",
+    "bytes": 8383804,
+    "sha256": "173164455e43da9f78485362ad7ce253ceda7777eaf5d299732c8882b50a7089"
+  },
+  {
+    "file": "Carrasco_RUN_Before_After.mp4",
+    "bytes": 18620597,
+    "sha256": "ff1335975ff65ca0b91f0ffc0f68ced062dc20a7195c1bd84f688468b3396cbb"
+  },
+  {
+    "file": "Carrasco_RUN_Corrected.mp4",
+    "bytes": 11017337,
+    "sha256": "b7628e27963035a0a7d0cedc67b17dafe831a5e9b3cc0d8878d75527a2ce8bc8"
+  },
+  {
+    "file": "Carrasco_RUN_Corrected_Slow_05x.mp4",
+    "bytes": 11326301,
+    "sha256": "0eb59c77e95e6bacaa41a4415f8dfbe31e96477ebf972de23eae89793e3e4de9"
+  },
+  {
+    "file": "Carrasco_RUN_V2_CORRECTED.blend",
+    "bytes": 11477122,
+    "sha256": "ace32a347b8acd42bf2d9c4bfc4fb1bd1f9d9609db927411b272aaa032c84fcb"
+  },
+  {
+    "file": "CORRECTION_VERIFICATION.json",
+    "bytes": 62380,
+    "sha256": "94f27777cf8fe8bf14c3945ae643584e270e86f6255b491b83fb3cdc70c136c6"
+  },
+  {
+    "file": "DIAGNOSIS_BEFORE.json",
+    "bytes": 10025,
+    "sha256": "4f9f344c278013e1b6c0206a601fb1a990064e567255f974d5eb114aaefe27a2"
+  },
+  {
+    "file": "GODOT_UNCHANGED.json",
+    "bytes": 569,
+    "sha256": "b7c02dbfc32d6effd0fb362a888284c948a234c4a224001252890e0a0c123218"
+  },
+  {
+    "file": "RUN_CORRECTION_REPORT.md",
+    "bytes": 10588,
+    "sha256": "c7f7a099fa5f8f596018ee7eefa5f303356a870de25c58683bfa9d7936cc2243"
+  },
+  {
+    "file": "RUN_CORRECTION_REVIEW.html",
+    "bytes": 3889,
+    "sha256": "2039e21445fc85ab65d71b6a0cdc008e74805e5425e582ada14faccec8e748a0"
+  },
+  {
+    "file": "VIDEO_CHECK.json",
+    "bytes": 1215,
+    "sha256": "b525ff8f8fd46a1452a07a6a8f28d309765ee22643ceef536944d6c61b31829e"
+  }
+]
