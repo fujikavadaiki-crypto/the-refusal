@@ -1,0 +1,18 @@
+{
+  "antes_suites_pass": 16,
+  "depois_suites_pass": 16,
+  "suites_total": 19,
+  "falhas_preexistentes": [
+    "verify_carrasco_gif_test.gd",
+    "verify_milestone8_2.gd",
+    "verify_vertical_slice.gd"
+  ],
+  "novas_falhas": [],
+  "checks_pass_antes": 567,
+  "checks_pass_depois": 567,
+  "integracao_nova": {
+    "pass": 228,
+    "fail": 0
+  },
+  "nota": "Resultado final combina rodada completa posterior e retestes completos apos ajustar apenas timing de fixtures. Logs iniciais preservados."
+}

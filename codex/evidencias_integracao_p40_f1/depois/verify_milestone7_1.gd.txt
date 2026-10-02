@@ -1,0 +1,45 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+
+
+ERROR: Failed to read the root certificate store.
+
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+
+PASS: Corvo inicia o par ao aproximar pelo oeste
+
+PASS: Peregrino ainda não cobre a entrada do Corvo
+
+PASS: Peregrino entra depois, sem ocultar o Corvo
+
+PASS: Raiz sinaliza sua entrada antes do Peregrino
+
+PASS: entrada do par Raiz não é bloqueada pelo Peregrino
+
+PASS: Peregrino entra no segundo par
+
+PASS: Corvo morto conserva colisão com o solo, mas libera o Player
+
+PASS: Player atravessa a posição do Corvo morto
+
+PASS: reinício restaura colisão com o Player e vida do Corvo
+
+PASS: recuperação não devolve Air Dash antes da aterrissagem
+
+PASS: recuperação retorna ao solo seguro sem dano
+
+PASS: aterrissagem válida recarrega um Air Dash
+
+PASS: queda não reinicia nem duplica os encontros
+
+PASS: Air Dash não ultrapassa o limite direito ou a câmera
+
+PASS: Air Dash não sai pela parte superior da fase
+
+PASS: Air Dash não ultrapassa o limite esquerdo ou a câmera
+
+PASS: plataforma alta recebe o Player sem atravessar o chão
+
+PASS: Air Dash da plataforma alta permanece na fase e no enquadramento
+
+MILESTONE 7.1: PASS

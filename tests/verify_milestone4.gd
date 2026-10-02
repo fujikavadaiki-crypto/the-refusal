@@ -47,6 +47,7 @@ func reset_pair(player_x := 1270.0) -> void:
     defense.mode = PlayerDefense.Mode.READY
     defense.elapsed = 0.0
     defense.dodge_cooldown = 0.0
+    defense.dash_speed = 320.0 / 0.9
     player.get_node("Locomotion").run_speed = 120.0
     player.global_position = Vector2(player_x, 215)
     player.velocity = Vector2.ZERO
@@ -115,6 +116,7 @@ func run_checks() -> void:
 
     await reset_pair()
     player.get_node("Locomotion").run_speed = 0.0
+    defense.dash_speed = 0.0 # Stationary contact fixture; dash no longer derives from run speed.
     attack.start(attack.corte)
     await wait_frames(16)
     defense.accept_inputs(true, false, 0.0, -1, false)

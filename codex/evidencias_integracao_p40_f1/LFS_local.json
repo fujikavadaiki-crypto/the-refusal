@@ -1,0 +1,10 @@
+{
+  "materializados_sem_rede": [
+    "assets/audio/heavy_cue_placeholder.wav",
+    "assets/audio/parry_confirm_placeholder.wav",
+    "assets/biomes/forest/approved/bosque_b_firefly_background.ogv",
+    "assets/characters/carrasco_3d/source/carrasco_forma_base_rigged.glb",
+    "assets/characters/carrasco_3d/weapon/carrasco_weapon.fbx"
+  ],
+  "indisponiveis": []
+}

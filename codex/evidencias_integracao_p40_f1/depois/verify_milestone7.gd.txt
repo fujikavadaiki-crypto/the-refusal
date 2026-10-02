@@ -1,0 +1,97 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+
+
+ERROR: Failed to read the root certificate store.
+
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+
+PASS: Player começa seguro e no chão
+
+PASS: fatia artesanal longa com cinco encontros
+
+PASS: IA de Peregrino aponta para o Player da fatia
+
+PASS: IA de RaizFaminta aponta para o Player da fatia
+
+PASS: IA de Corvo aponta para o Player da fatia
+
+PASS: IA de Peregrino aponta para o Player da fatia
+
+PASS: IA de Corvo aponta para o Player da fatia
+
+PASS: IA de Peregrino aponta para o Player da fatia
+
+PASS: IA de RaizFaminta aponta para o Player da fatia
+
+PASS: ordem: Peregrino, Raiz, Corvo, duas combinações
+
+PASS: entrada segura; inimigos distantes não agroam
+
+PASS: primeiro encontro ativa isoladamente
+
+PASS: Peregrino percebe e reage no cenário
+
+PASS: safe position não atualiza dentro do espaço de inimigo vivo
+
+PASS: Raiz detecta com marca visível no cenário
+
+PASS: aviso subterrâneo continua legível
+
+PASS: Corvo detecta no espaço vertical
+
+PASS: câmera permanece na faixa vertical estável
+
+PASS: câmera segue Player, não Corvo
+
+PASS: Peregrino e Corvo ativam no mesmo encontro
+
+PASS: duas IAs independentes reagem ao jogador
+
+PASS: Peregrino e Raiz ativam no último encontro
+
+PASS: ameaças humana e subterrânea coexistem
+
+PASS: primeira plataforma alcançável por pulo normal
+
+PASS: safe position não atualiza na borda insegura
+
+PASS: safe position não atualiza no ar
+
+PASS: queda no vão retorna à posição segura recente
+
+PASS: recuperação de queda não retira HP
+
+PASS: Air Dash cruza o vão sem quebrar limites da fase
+
+PASS: pulo normal oferece rota pelo vão
+
+PASS: marcador final mostra feedback sem mudar de cena
+
+PASS: saída não carrega outro bioma
+
+PASS: Corvo combinado pode lançar projétil
+
+PASS: R reinicia Player, HP e Postura
+
+PASS: R restaura encontros, ambush, projéteis e Air Dash
+
+PASS: encontro conclui quando todos os seus inimigos morrem
+
+PASS: morte do Player usa reset técnico provisório
+
+PASS: três minutos de Peregrino+Corvo: dois ataques, limites e projéteis finitos
+
+PASS: reset após simulação remove projéteis
+
+PASS: um minuto de Peregrino+Raiz: emboscada, mordida e chão estáveis
+
+PASS: travessia contínua alcança saída com pulo e pequeno desnível
+
+PASS: câmera respeita limites durante o corredor longo
+
+TRAVESSIA SEM COMBATE: 45.7 s
+
+PASS: fatia não cria loot ou sistemas futuros
+
+MILESTONE 7: PASS

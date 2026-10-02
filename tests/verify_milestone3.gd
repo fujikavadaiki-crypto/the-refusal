@@ -91,7 +91,7 @@ func run_checks() -> void:
     check(InputMap.action_get_events("dodge").size() == 2 and InputMap.action_get_events("parry").size() == 2, "Dodge and Parry keyboard/controller mappings")
     check(player_health.max_health == 100 and player_posture.max_posture == 100.0, "canonical player HP and Posture")
     check(is_equal_approx(player_posture.regen_delay_seconds, 1.5) and is_equal_approx(player_posture.regen_per_second, 25.0), "configured player Posture recovery")
-    check(is_equal_approx(defense.dodge_total_seconds, .4) and is_equal_approx(defense.iframe_end_seconds - defense.iframe_start_seconds, .18), "Dodge and i-frame durations")
+    check(is_equal_approx(defense.dodge_total_seconds, .35) and is_equal_approx(defense.iframe_end_seconds - defense.iframe_start_seconds, .1575), "P40 Dodge and proportional i-frame durations")
     check(is_equal_approx(defense.parry_active_seconds, .16) and is_equal_approx(defense.parry_total_seconds, .38), "Parry window and recovery")
 
     var stats := DefenseStats.new()

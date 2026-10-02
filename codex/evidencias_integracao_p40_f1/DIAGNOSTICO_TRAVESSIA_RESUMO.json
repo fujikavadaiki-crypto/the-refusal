@@ -1,0 +1,176 @@
+{
+  "diagnostico": "O roteiro espacial antigo antecipa AirDash na segunda travessia após aumentar run_speed; não há necessidade de alterar pulo ou terreno.",
+  "original": {
+    "dash_points": [
+      1180.0,
+      2405.0,
+      3700.0
+    ],
+    "dash_speed": 355.555555555556,
+    "dashes": [
+      true,
+      true,
+      false
+    ],
+    "elapsed_seconds": 14.9333333333337,
+    "falls": 1,
+    "finished": false,
+    "gravity": 800.0,
+    "jump_points": [
+      1135.0,
+      2368.0,
+      3645.0
+    ],
+    "jump_velocity": -380.0,
+    "jumps": [
+      true,
+      true,
+      false
+    ],
+    "passed_three_crossings": false,
+    "run_speed": 160.0,
+    "variant": "old",
+    "x": 2367.24877929688,
+    "y": 234.38720703125
+  },
+  "original_primeiro_contato_parede": {
+    "colliders": [
+      "ApprovedBosqueGround2"
+    ],
+    "dash_elapsed": 0.25,
+    "falls": 0,
+    "feet_y": 178.833984375,
+    "kind": "frame",
+    "mode": "AIR_DASH",
+    "on_floor": false,
+    "on_wall": true,
+    "route": 0,
+    "t": 14.1500000000003,
+    "vx": 0.0,
+    "vy": 0.0,
+    "x": 2492.99487304688,
+    "y": 165.833984375
+  },
+  "original_segundo_air_dash": {
+    "colliders": [],
+    "dash_elapsed": 0.0166666666666667,
+    "falls": 0,
+    "feet_y": 178.833984375,
+    "kind": "transition",
+    "mode": "AIR_DASH",
+    "on_floor": false,
+    "on_wall": false,
+    "route": 0,
+    "t": 13.9166666666669,
+    "vx": 355.555541992188,
+    "vy": 0.0,
+    "x": 2415.58618164063,
+    "y": 165.833984375
+  },
+  "altura_da_borda_seguinte": 164.0,
+  "deficit_altura_antigo_world_u": 14.833984375,
+  "terceira_travessia_antiga": "Nunca alcançada; flags dos inputs da segunda travessia ficam consumidas após a queda.",
+  "retimed": {
+    "dash_points": [
+      1200.21739130435,
+      2421.6231884058,
+      3724.71014492754
+    ],
+    "dash_speed": 355.555555555556,
+    "dashes": [
+      true,
+      true,
+      true
+    ],
+    "elapsed_seconds": 22.1166666666667,
+    "falls": 0,
+    "finished": true,
+    "gravity": 800.0,
+    "jump_points": [
+      1135.0,
+      2368.0,
+      3645.0
+    ],
+    "jump_velocity": -380.0,
+    "jumps": [
+      true,
+      true,
+      true
+    ],
+    "passed_three_crossings": true,
+    "run_speed": 160.0,
+    "variant": "retimed",
+    "x": 3892.48852539063,
+    "y": 144.933441162109
+  },
+  "retimed_air_dash_starts": [
+    {
+      "colliders": [],
+      "dash_elapsed": 0.0166666666666667,
+      "falls": 0,
+      "feet_y": 148.103118896484,
+      "kind": "transition",
+      "mode": "AIR_DASH",
+      "on_floor": false,
+      "on_wall": false,
+      "route": 0,
+      "t": 6.89999999999998,
+      "vx": 355.555541992188,
+      "vy": 0.0,
+      "x": 1209.00012207031,
+      "y": 135.103118896484
+    },
+    {
+      "colliders": [],
+      "dash_elapsed": 0.0166666666666667,
+      "falls": 0,
+      "feet_y": 162.85481262207,
+      "kind": "transition",
+      "mode": "AIR_DASH",
+      "on_floor": false,
+      "on_wall": false,
+      "route": 0,
+      "t": 14.0000000000003,
+      "vx": 355.555541992188,
+      "vy": 0.0,
+      "x": 2430.6328125,
+      "y": 149.85481262207
+    },
+    {
+      "colliders": [],
+      "dash_elapsed": 0.0166666666666667,
+      "falls": 0,
+      "feet_y": 148.610137939453,
+      "kind": "transition",
+      "mode": "AIR_DASH",
+      "on_floor": false,
+      "on_wall": false,
+      "route": 0,
+      "t": 21.6333333333334,
+      "vx": 355.555541992188,
+      "vy": 0.0,
+      "x": 3735.12768554688,
+      "y": 135.610137939453
+    }
+  ],
+  "retimed_contatos_parede": 0,
+  "patch_proposto_apenas_teste": {
+    "arquivo": "tests/verify_vertical_slice.gd",
+    "apos": "var dash_points := [1180.0, 2405.0, 3700.0]",
+    "inserir": [
+      "# Preserve the previous jump-to-dash delay after the P40 run-speed change.",
+      "for index in range(3):",
+      "    dash_points[index] = jump_points[index] + (dash_points[index] - jump_points[index]) * locomotion.run_speed / 110.4"
+    ]
+  },
+  "preservado": [
+    "jump_points",
+    "3 saltos + 3 AirDash + fim + zero quedas",
+    "gravity=800",
+    "jump_velocity=-380",
+    "terreno",
+    "arte",
+    "scripts de produção",
+    "Teste original não foi editado pelo agente de diagnóstico; root aplicou separadamente o patch de timing proposto."
+  ]
+}

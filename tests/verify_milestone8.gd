@@ -93,7 +93,7 @@ func run_checks() -> void:
     state.prepare_hit(probe)
     check(DamageResolver.health_amount(probe, null, null) == 36, "11 +20 percent physical")
     check(DamageResolver.posture_amount(probe, null) == 20, "12 +25 percent Posture")
-    check(is_equal_approx(locomotion.run_speed, 110.4), "13 movement -8 percent")
+    check(is_equal_approx(locomotion.run_speed, 160.0) and is_equal_approx(locomotion.run_speed, masks.base_speed * CARRASCO.move_speed_multiplier), "13 Carrasco P40 = 160 with movement -8 percent")
     check(is_equal_approx(defense.parry_active_seconds, 0.16) and is_equal_approx(defense.parry_posture_multiplier, 1.2), "canonical Parry window and Carrasco return")
     check(health.current_health < hp_before and health.max_health == 100 and posture.max_posture == 100.0, "Carrasco does not add HP or Posture")
 

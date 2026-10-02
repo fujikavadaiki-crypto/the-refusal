@@ -1,0 +1,11 @@
+[
+  {
+    "teste": "verify_milestone6.gd",
+    "exit": 0,
+    "pass": 51,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 198.31,
+    "aprovado": true
+  }
+]

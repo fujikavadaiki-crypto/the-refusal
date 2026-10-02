@@ -57,6 +57,7 @@ func reset_player(x := 1000.0, y := 215.0) -> void:
     defense.mode = PlayerDefense.Mode.READY
     defense.elapsed = 0.0
     defense.dodge_cooldown = 0.0
+    defense.dash_speed = 320.0 / 0.9
     defense.air_dash_available = true
     locomotion.run_speed = 120.0
     player.global_position = Vector2(x, y)
@@ -100,8 +101,8 @@ func run_checks() -> void:
     check(combat.dash_light.base_damage == 22 and combat.dash_light.posture_damage == 10, "pós-esquiva canônico 22/10")
     check(combat.air_light.base_damage == 18 and combat.air_light.posture_damage == 7, "Air Light canônico 18/7")
     check(combat.air_heavy.base_damage == 32 and combat.air_heavy.posture_damage == 28, "Air Heavy canônico 32/28")
-    check(is_equal_approx(defense.dodge_total_seconds, 0.4) and is_equal_approx(defense.air_dash_total_seconds, 0.4), "dash terrestre e aéreo duram 400 ms")
-    check(is_equal_approx(defense.iframe_start_seconds, 0.07) and is_equal_approx(defense.iframe_end_seconds, 0.25), "i-frames permanecem entre 70 e 250 ms")
+    check(is_equal_approx(defense.dodge_total_seconds, 0.35) and is_equal_approx(defense.air_dash_total_seconds, 0.35), "dash terrestre e aéreo P40 duram 350 ms")
+    check(is_equal_approx(defense.iframe_start_seconds, 0.06125) and is_equal_approx(defense.iframe_end_seconds, 0.21875), "i-frames proporcionais entre 61,25 e 218,75 ms")
 
     await reset_player()
     await press(&"dodge")
@@ -292,6 +293,7 @@ func run_checks() -> void:
     player.global_position = Vector2(1270, 200)
     player.velocity = Vector2.ZERO
     locomotion.run_speed = 0.0
+    defense.dash_speed = 0.0 # Stationary enemy-contact fixture, independent of run speed.
     await wait_frames(2)
     await press(&"dodge")
     await wait_frames(15)

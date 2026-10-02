@@ -225,7 +225,12 @@ func run_checks() -> void:
     await fixture(Vector2(1100, 219), Vector2(1090, 215))
     brain.state = RaizFamintaBrain.State.GROUND_CHASE
     attack.begin_bite()
-    await wait_frames(11)
+    # Keep the real bite contact inside the shorter P40 i-frame window.
+    # Inject at elapsed .10 with about .08 s left before the enemy becomes ACTIVE.
+    for _i in range(30):
+        if attack.elapsed >= attack.mordida.windup_seconds - 0.08:
+            break
+        await wait_frames(1)
     defense.mode = PlayerDefense.Mode.DODGING
     defense.elapsed = 0.10
     defense.dodge_direction = 1

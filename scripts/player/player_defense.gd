@@ -9,13 +9,13 @@ signal stagger_started
 
 enum Mode { READY, DODGING, PARRYING, STAGGERED, DEAD, AIR_DASH }
 
-@export var dodge_total_seconds := 0.40
-@export var iframe_start_seconds := 0.07
-@export var iframe_end_seconds := 0.25
+@export var dodge_total_seconds := 0.35
+@export var iframe_start_seconds := 0.35 * (0.07 / 0.40)
+@export var iframe_end_seconds := 0.35 * (0.25 / 0.40)
 @export var dodge_repeat_delay_seconds := 0.28
-@export var dodge_speed_multiplier := 2.0
-@export var air_dash_total_seconds := 0.40
-@export var air_dash_speed_multiplier := 2.0
+## 3.5 m / 0.35 s at the fixed P40 reference scale (32 px/m, zoom 0.9).
+@export var dash_speed := 320.0 / 0.9
+@export var air_dash_total_seconds := 0.35
 @export var dash_attack_cancel_start_seconds := 0.08
 @export var ground_dash_attack_momentum_fraction := 0.45
 @export var air_light_momentum_fraction := 0.65
@@ -93,8 +93,7 @@ func _start_dash(airborne: bool, axis: float, facing: int) -> void:
     dodge_direction = facing if is_zero_approx(axis) else (-1 if axis < 0.0 else 1)
     mode = Mode.AIR_DASH if airborne else Mode.DODGING
     elapsed = 0.0
-    var multiplier := air_dash_speed_multiplier if airborne else dodge_speed_multiplier
-    player.velocity.x = locomotion.run_speed * multiplier * dodge_direction
+    player.velocity.x = dash_speed * dodge_direction
     if airborne:
         air_dash_available = false
         player.velocity.y = 0.0
@@ -164,7 +163,7 @@ func is_parry_active() -> bool:
 func movement_axis(input_axis: float) -> float:
     match mode:
         Mode.DODGING, Mode.AIR_DASH:
-            return dodge_direction * (air_dash_speed_multiplier if mode == Mode.AIR_DASH else dodge_speed_multiplier)
+            return dodge_direction
         Mode.PARRYING:
             return input_axis * 0.25
         Mode.STAGGERED, Mode.DEAD:

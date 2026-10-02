@@ -1,0 +1,111 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+
+
+ERROR: Failed to read the root certificate store.
+
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+
+PASS: Raiz usa 85 HP e 35 Postura canônicos
+
+PASS: estado enterrado mantém sinal visível
+
+PASS: enterrada não ataca instantaneamente
+
+PASS: Garra Subterrânea canônica 14/10 não aparável
+
+PASS: Mordida 11/8 canônicos e classe não aparável provisória
+
+PASS: IA visita DETECT
+
+PASS: IA visita BURROW_MOVE
+
+PASS: IA visita EMERGE_WINDUP
+
+PASS: IA visita EMERGE_ATTACK
+
+PASS: IA visita EMERGE_RECOVERY
+
+PASS: IA visita GROUND_CHASE
+
+PASS: IA visita BITE_WINDUP
+
+PASS: IA visita BITE_ACTIVE
+
+PASS: IA visita BITE_RECOVERY
+
+PASS: emboscada anuncia posição antes do ACTIVE
+
+PASS: ponto do surgimento não segue o jogador durante o Windup
+
+PASS: IA não trava em estado por três minutos
+
+PASS: cadência de ataques finita, sem spam de contato
+
+PASS: um contato por ação ofensiva
+
+PASS: surgimento tem windup legível sem dano antecipado
+
+PASS: Garra causa 14 HP/10 Postura uma vez
+
+PASS: surgimento termina em recuperação
+
+PASS: mordida avisa antes de atingir
+
+PASS: Mordida curta causa 11 HP/8 Postura uma vez
+
+PASS: mordida entra em recuperação
+
+PASS: Heavy terrestre real causa 35 HP e ~31 Postura, sem romper sozinho
+
+PASS: Heavy terrestre acerta uma vez
+
+PASS: combo Light real acerta a silhueta baixa três vezes: 70 HP/31 Postura
+
+PASS: Air Light real causa 18 HP/7 Postura na Raiz
+
+PASS: Air Heavy real causa 32 HP/28 Postura sem romper sozinho
+
+PASS: i-frame evita Garra real
+
+PASS: i-frame evita Mordida real
+
+PASS: Parry não bloqueia Garra não aparável
+
+PASS: Parry não bloqueia Mordida não aparável
+
+PASS: salto e Air Dash usam mobilidade existente
+
+PASS: Air Dash escapa da emboscada comprometida
+
+PASS: perseguição rasteja em direção ao jogador sem sair do chão
+
+PASS: Light repetido não reinicia Hurt indefinidamente
+
+PASS: Hurt comum termina sem loop de stun
+
+PASS: morte durante Windup cancela ataque e desliga hitbox
+
+PASS: quebra de Postura interrompe ataque e expõe Ruptura
+
+PASS: Ruptura concede +20% de dano
+
+PASS: Raiz recupera da Ruptura de ~3 s
+
+PASS: vulnerabilidade mágica canônica +15% aplica via resolver compartilhado
+
+PASS: Ruptura enterrada vira colapso visível sem ataque
+
+PASS: Morte prevalece sobre Ruptura no mesmo impacto
+
+PASS: morte enterrada deixa corpo exposto
+
+PASS: reset restaura posição, enterramento e ataque
+
+PASS: reset restaura HP e Postura
+
+PASS: tecla de reset restaura Raiz fora do alcance do jogador
+
+PASS: IA lê mundo, sem ler comandos
+
+MILESTONE 6: PASS

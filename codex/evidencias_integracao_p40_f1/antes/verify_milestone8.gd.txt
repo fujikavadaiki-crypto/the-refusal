@@ -1,0 +1,141 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+
+
+PASS: 01 two slots
+
+PASS: 02 empty reserve
+
+PASS: 03 switch to empty slot
+
+PASS: swap does not carry combo stage across movesets
+
+PASS: 04 global swap cooldown
+
+PASS: 05 swap does not heal
+
+PASS: 06 swap preserves Posture
+
+PASS: 07 swap grants no i-frame
+
+PASS: swap preserves Air Dash availability
+
+PASS: 08 inactive cooldown ticks
+
+PASS: 09 Ultimate ends on swap; cooldown remains
+
+PASS: 10 modifiers do not stack; HP ratio remains
+
+PASS: 11 +20 percent physical
+
+PASS: 12 +25 percent Posture
+
+PASS: 13 movement -8 percent
+
+PASS: canonical Parry window and Carrasco return
+
+PASS: Carrasco does not add HP or Posture
+
+PASS: 14 Condemnation cap 5
+
+PASS: 15 valid Heavy +1
+
+PASS: 16 perfect Parry binds the correct attacker
+
+PASS: 17 Carrasco-caused Rupture +2
+
+PASS: 18 Mark +2
+
+PASS: 19 new application refreshes timer
+
+PASS: 20 timer freezes during target Rupture
+
+PASS: 21 timer resumes after Rupture
+
+PASS: 22 timer runs while Carrasco is reserve
+
+PASS: 23 mock mask receives no Condemnation bonus
+
+PASS: future mask max HP/Posture changes preserve percentages
+
+PASS: base maxima return without stacking
+
+PASS: same configuration creates independent slot state
+
+PASS: 24 three stacks give +9 percent on top of Carrasco +25
+
+PASS: 25 Seal Break 50/70, 8s
+
+PASS: Seal Break bonus only on explicit protection
+
+PASS: 26 Mark only applies on hit
+
+PASS: 27 Mark +20 percent is target-specific
+
+PASS: 28 Tribunal 8s
+
+PASS: 29 Tribunal +30 percent physical
+
+PASS: 30 Tribunal +40 percent Posture
+
+PASS: 31 Tribunal Heavy +2
+
+PASS: 32 common requires HP strictly below 15 percent
+
+PASS: 32 common eligible with HP<15, Rupture, 3 stacks
+
+PASS: 33 technical common execution kills
+
+PASS: 34 elite receives strike, no forced kill
+
+PASS: 35 elite consumes three stacks
+
+PASS: 36 lethal damage suppresses Rupture
+
+PASS: 37 Carrasco has no Phase Dash collision exception
+
+PASS: InputMap Skill 1 routes into PlayerCombat
+
+PASS: InputMap Skill 2 routes into PlayerCombat
+
+PASS: Carrasco Light 2 routes through existing combo
+
+PASS: Carrasco Light 3 routes through existing combo
+
+PASS: Carrasco Heavy replaces human Heavy
+
+PASS: Carrasco Post-Dodge uses universal Dash attack path
+
+PASS: Carrasco Air Light uses universal air path
+
+PASS: Carrasco Air Heavy uses universal air path
+
+PASS: InputMap swap routes into two-slot controller
+
+PASS: real Carrasco Light starts
+
+PASS: Carrasco Light resolves through existing hitbox
+
+PASS: real Mark starts
+
+PASS: real Mark contact applies stacks without invented damage
+
+PASS: real Carrasco Heavy starts
+
+PASS: real Heavy causing Rupture adds 1+2 exactly once
+
+PASS: 37 real Dash remains blocked by solid opponent body
+
+PASS: successful PlayerDefense Parry adds stack to actual attacker
+
+PASS: InputMap Ultimate routes into mask runtime
+
+PASS: Carrasco moves and camera tracks through original Player
+
+PASS: Carrasco retains universal jump
+
+MILESTONE 8: PASS
+
+ERROR: Failed to read the root certificate store.
+
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)

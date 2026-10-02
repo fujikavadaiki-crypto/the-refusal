@@ -1,0 +1,14 @@
+[
+  {
+    "teste": "verify_vertical_slice.gd",
+    "exit": 1,
+    "pass": 12,
+    "fail": 1,
+    "falhas": [
+      "FAIL: Carrasco aprovado nasce sobre o piso pintado",
+      "VERTICAL SLICE: FAIL"
+    ],
+    "segundos": 28.01,
+    "aprovado": false
+  }
+]

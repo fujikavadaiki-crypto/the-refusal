@@ -75,7 +75,7 @@ func _physics_process(delta: float) -> void:
                 light_buffer_remaining = 0.0
     combat.tick(delta)
     var movement := defense.movement_axis(direction) * combat.movement_multiplier()
-    locomotion.move(self, movement, jump_pressed, delta, defense.suspends_gravity(), Input.is_action_pressed("walk") and not defense.is_dashing(), not combat.is_busy() and not defense.is_locked())
+    locomotion.move(self, movement, jump_pressed, delta, defense.suspends_gravity(), Input.is_action_pressed("walk") and not defense.is_dashing(), not combat.is_busy() and not defense.is_locked(), defense.dash_speed if defense.is_dashing() else -1.0)
     defense.sync_grounding()
     state_machine.sync_with_body(self)
     state_machine.sync_action(combat.is_busy(), defense.mode)
