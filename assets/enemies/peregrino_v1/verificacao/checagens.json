@@ -1,0 +1,8 @@
+{
+ "cores_dentro_da_paleta": true,
+ "quadros": 102,
+ "animacoes": 12,
+ "tempos_de_ataque_conferem_com_tres": true,
+ "nenhum_pixel_abaixo_do_chao_em_animacoes_de_solo": true,
+ "altura_idle_px": 50
+}

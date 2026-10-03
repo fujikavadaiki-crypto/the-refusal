@@ -1,0 +1,663 @@
+{
+ "n_cores": 44,
+ "travada": true,
+ "versao": "C5.1 (travada na C5.2)",
+ "origem": "paleta C5 com quase-pretos fundidos (dE Lab<3) + tons medios de couro novos",
+ "cores": [
+  {
+   "rgb": [
+    22,
+    19,
+    21
+   ],
+   "familia": "carvao",
+   "celulas": 315,
+   "papel": "carvao",
+   "L": 0.078,
+   "rampa": 1,
+   "id": 0
+  },
+  {
+   "rgb": [
+    38,
+    31,
+    33
+   ],
+   "familia": "carvao",
+   "celulas": 129,
+   "papel": "carvao",
+   "L": 0.128,
+   "rampa": 2,
+   "id": 1
+  },
+  {
+   "rgb": [
+    59,
+    47,
+    49
+   ],
+   "familia": "carvao",
+   "celulas": 126,
+   "papel": "carvao",
+   "L": 0.195,
+   "rampa": 3,
+   "id": 2
+  },
+  {
+   "rgb": [
+    7,
+    4,
+    5
+   ],
+   "familia": "couro",
+   "celulas": 6618,
+   "papel": "contorno",
+   "tambem": "sombra de contato",
+   "L": 0.018,
+   "rampa": 1,
+   "id": 3
+  },
+  {
+   "rgb": [
+    25,
+    1,
+    2
+   ],
+   "familia": "couro",
+   "celulas": 169,
+   "papel": "couro",
+   "L": 0.024,
+   "rampa": 2,
+   "id": 4
+  },
+  {
+   "rgb": [
+    20,
+    4,
+    4
+   ],
+   "familia": "couro",
+   "celulas": 251,
+   "papel": "couro",
+   "L": 0.029,
+   "rampa": 3,
+   "id": 5
+  },
+  {
+   "rgb": [
+    42,
+    6,
+    8
+   ],
+   "familia": "couro",
+   "celulas": 645,
+   "papel": "couro",
+   "L": 0.054,
+   "rampa": 4,
+   "id": 6
+  },
+  {
+   "rgb": [
+    34,
+    17,
+    17
+   ],
+   "familia": "couro",
+   "celulas": 3020,
+   "papel": "couro",
+   "L": 0.081,
+   "rampa": 5,
+   "id": 7
+  },
+  {
+   "rgb": [
+    60,
+    38,
+    37
+   ],
+   "familia": "couro",
+   "celulas": 679,
+   "papel": "couro",
+   "L": 0.167,
+   "rampa": 6,
+   "id": 8
+  },
+  {
+   "rgb": [
+    77,
+    47,
+    52
+   ],
+   "familia": "couro",
+   "celulas": 0,
+   "papel": "couro medio (C5.1)",
+   "L": 0.211,
+   "rampa": 7,
+   "id": 9
+  },
+  {
+   "rgb": [
+    85,
+    55,
+    53
+   ],
+   "familia": "couro",
+   "celulas": 483,
+   "papel": "couro",
+   "L": 0.24,
+   "rampa": 8,
+   "id": 10
+  },
+  {
+   "rgb": [
+    99,
+    65,
+    58
+   ],
+   "familia": "couro",
+   "celulas": 0,
+   "papel": "couro medio (C5.1)",
+   "L": 0.281,
+   "rampa": 9,
+   "id": 11
+  },
+  {
+   "rgb": [
+    118,
+    75,
+    70
+   ],
+   "familia": "couro",
+   "celulas": 343,
+   "papel": "couro",
+   "L": 0.329,
+   "rampa": 10,
+   "id": 12
+  },
+  {
+   "rgb": [
+    129,
+    76,
+    58
+   ],
+   "familia": "couro",
+   "celulas": 68,
+   "papel": "couro",
+   "L": 0.337,
+   "rampa": 11,
+   "id": 13
+  },
+  {
+   "rgb": [
+    88,
+    71,
+    72
+   ],
+   "familia": "aco",
+   "celulas": 36,
+   "papel": "aco",
+   "L": 0.293,
+   "rampa": 1,
+   "id": 14
+  },
+  {
+   "rgb": [
+    128,
+    107,
+    108
+   ],
+   "familia": "aco",
+   "celulas": 8,
+   "papel": "aco",
+   "L": 0.437,
+   "rampa": 2,
+   "id": 15
+  },
+  {
+   "rgb": [
+    179,
+    153,
+    148
+   ],
+   "familia": "aco",
+   "celulas": 18,
+   "papel": "aco",
+   "L": 0.62,
+   "rampa": 3,
+   "id": 16
+  },
+  {
+   "rgb": [
+    216,
+    186,
+    179
+   ],
+   "familia": "aco",
+   "celulas": 25,
+   "papel": "aco",
+   "L": 0.752,
+   "rampa": 4,
+   "id": 17
+  },
+  {
+   "rgb": [
+    243,
+    232,
+    224
+   ],
+   "familia": "aco",
+   "celulas": 78,
+   "papel": "aco",
+   "L": 0.917,
+   "rampa": 5,
+   "id": 18
+  },
+  {
+   "rgb": [
+    67,
+    4,
+    7
+   ],
+   "familia": "sangue",
+   "celulas": 438,
+   "papel": "sangue",
+   "L": 0.069,
+   "rampa": 1,
+   "id": 19
+  },
+  {
+   "rgb": [
+    86,
+    3,
+    6
+   ],
+   "familia": "sangue",
+   "celulas": 459,
+   "papel": "sangue",
+   "L": 0.082,
+   "rampa": 2,
+   "id": 20
+  },
+  {
+   "rgb": [
+    64,
+    11,
+    14
+   ],
+   "familia": "sangue",
+   "celulas": 393,
+   "papel": "sangue",
+   "L": 0.088,
+   "rampa": 3,
+   "id": 21
+  },
+  {
+   "rgb": [
+    116,
+    3,
+    6
+   ],
+   "familia": "sangue",
+   "celulas": 268,
+   "papel": "sangue",
+   "L": 0.107,
+   "rampa": 4,
+   "id": 22
+  },
+  {
+   "rgb": [
+    64,
+    21,
+    24
+   ],
+   "familia": "sangue",
+   "celulas": 492,
+   "papel": "sangue",
+   "L": 0.119,
+   "rampa": 5,
+   "id": 23
+  },
+  {
+   "rgb": [
+    61,
+    29,
+    27
+   ],
+   "familia": "sangue",
+   "celulas": 664,
+   "papel": "sangue",
+   "L": 0.14,
+   "rampa": 6,
+   "id": 24
+  },
+  {
+   "rgb": [
+    110,
+    21,
+    26
+   ],
+   "familia": "sangue",
+   "celulas": 395,
+   "papel": "sangue",
+   "L": 0.158,
+   "rampa": 7,
+   "id": 25
+  },
+  {
+   "rgb": [
+    174,
+    9,
+    16
+   ],
+   "familia": "sangue",
+   "celulas": 176,
+   "papel": "olho/sangue vivo",
+   "L": 0.175,
+   "rampa": 8,
+   "id": 26
+  },
+  {
+   "rgb": [
+    150,
+    20,
+    28
+   ],
+   "familia": "sangue",
+   "celulas": 316,
+   "papel": "sangue",
+   "L": 0.189,
+   "rampa": 9,
+   "id": 27
+  },
+  {
+   "rgb": [
+    105,
+    35,
+    37
+   ],
+   "familia": "sangue",
+   "celulas": 323,
+   "papel": "sangue",
+   "L": 0.196,
+   "rampa": 10,
+   "id": 28
+  },
+  {
+   "rgb": [
+    88,
+    43,
+    37
+   ],
+   "familia": "sangue",
+   "celulas": 561,
+   "papel": "sangue",
+   "L": 0.204,
+   "rampa": 11,
+   "id": 29
+  },
+  {
+   "rgb": [
+    124,
+    62,
+    54
+   ],
+   "familia": "sangue",
+   "celulas": 349,
+   "papel": "sangue",
+   "L": 0.293,
+   "rampa": 12,
+   "id": 30
+  },
+  {
+   "rgb": [
+    187,
+    54,
+    56
+   ],
+   "familia": "sangue",
+   "celulas": 130,
+   "papel": "sangue",
+   "L": 0.323,
+   "rampa": 13,
+   "id": 31
+  },
+  {
+   "rgb": [
+    185,
+    94,
+    81
+   ],
+   "familia": "sangue",
+   "celulas": 148,
+   "papel": "sangue",
+   "L": 0.441,
+   "rampa": 14,
+   "id": 32
+  },
+  {
+   "rgb": [
+    157,
+    98,
+    89
+   ],
+   "familia": "pele",
+   "celulas": 157,
+   "papel": "pele",
+   "L": 0.431,
+   "rampa": 1,
+   "id": 33
+  },
+  {
+   "rgb": [
+    166,
+    124,
+    114
+   ],
+   "familia": "pele",
+   "celulas": 63,
+   "papel": "pele",
+   "L": 0.518,
+   "rampa": 2,
+   "id": 34
+  },
+  {
+   "rgb": [
+    188,
+    122,
+    101
+   ],
+   "familia": "pele",
+   "celulas": 55,
+   "papel": "pele",
+   "L": 0.528,
+   "rampa": 3,
+   "id": 35
+  },
+  {
+   "rgb": [
+    217,
+    128,
+    126
+   ],
+   "familia": "pele",
+   "celulas": 33,
+   "papel": "pele",
+   "L": 0.576,
+   "rampa": 4,
+   "id": 36
+  },
+  {
+   "rgb": [
+    231,
+    157,
+    131
+   ],
+   "familia": "pele",
+   "celulas": 50,
+   "papel": "pele",
+   "L": 0.67,
+   "rampa": 5,
+   "id": 37
+  },
+  {
+   "rgb": [
+    212,
+    162,
+    152
+   ],
+   "familia": "pele",
+   "celulas": 49,
+   "papel": "pele",
+   "L": 0.674,
+   "rampa": 6,
+   "id": 38
+  },
+  {
+   "rgb": [
+    242,
+    199,
+    174
+   ],
+   "familia": "pele",
+   "celulas": 28,
+   "papel": "pele",
+   "L": 0.809,
+   "rampa": 7,
+   "id": 39
+  },
+  {
+   "rgb": [
+    120,
+    22,
+    24
+   ],
+   "familia": "rosto",
+   "celulas": 0,
+   "papel": "rosto C3.1",
+   "L": 0.169,
+   "rampa": 1,
+   "id": 40
+  },
+  {
+   "rgb": [
+    238,
+    40,
+    36
+   ],
+   "familia": "rosto",
+   "celulas": 0,
+   "papel": "rosto C3.1",
+   "L": 0.321,
+   "rampa": 2,
+   "id": 41
+  },
+  {
+   "rgb": [
+    98,
+    84,
+    75
+   ],
+   "familia": "rosto",
+   "celulas": 0,
+   "papel": "rosto C3.1",
+   "L": 0.339,
+   "rampa": 3,
+   "id": 42
+  },
+  {
+   "rgb": [
+    146,
+    129,
+    111
+   ],
+   "familia": "rosto",
+   "celulas": 0,
+   "papel": "rosto C3.1",
+   "L": 0.515,
+   "rampa": 4,
+   "id": 43
+  }
+ ],
+ "fusoes": [
+  {
+   "de": 1.0,
+   "a": [
+    0,
+    0,
+    0
+   ],
+   "b": [
+    4,
+    2,
+    3
+   ]
+  },
+  {
+   "de": 1.5,
+   "a": [
+    12,
+    2,
+    4
+   ],
+   "b": [
+    14,
+    7,
+    8
+   ]
+  },
+  {
+   "de": 1.7,
+   "a": [
+    11,
+    10,
+    11
+   ],
+   "b": [
+    7,
+    12,
+    13
+   ]
+  },
+  {
+   "de": 2.3,
+   "a": [
+    13,
+    6,
+    7
+   ],
+   "b": [
+    10,
+    10,
+    11
+   ]
+  },
+  {
+   "de": 2.2,
+   "a": [
+    3,
+    1,
+    2
+   ],
+   "b": [
+    13,
+    6,
+    8
+   ]
+  },
+  {
+   "de": 2.9,
+   "a": [
+    42,
+    3,
+    4
+   ],
+   "b": [
+    42,
+    9,
+    13
+   ]
+  }
+ ],
+ "n_fundidas": 6,
+ "nota": "Paleta de 44 cores TRAVADA por decisao do usuario (2026-10-01). Nenhuma cor nova sem aprovacao."
+}

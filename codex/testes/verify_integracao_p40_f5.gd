@@ -195,7 +195,7 @@ func presentation_checks() -> void:
     var pack := PACKAGE.load_package(FAKE)
     check(pack.valid and pack.anims.size() == 4, "pacote FALSO mínimo lê animacoes[] sem exigir animações do Carrasco")
     check(not PACKAGE.load_package("res://../escape").valid, "raiz externa rejeitada")
-    check(not PACKAGE.load_package("res://assets/enemies/peregrino_v1/").valid, "pacote ausente preserva fallback")
+    check(not PACKAGE.load_package("res://assets/enemies/pacote_ausente_fixture/").valid, "pacote ausente preserva fallback")
     var root_enemy: CharacterBody2D = room.enemies[2]
     root_enemy.brain.state = RaizFamintaBrain.State.HIDDEN
     root_enemy._apply_state(root_enemy.brain.state)
@@ -203,7 +203,10 @@ func presentation_checks() -> void:
     check(not root_enemy.visual.visible and root_enemy.mound.visible, "fallback mantém Raiz enterrada conforme IA original")
     var enemy: CharacterBody2D = room.enemies[0]
     var presenter: Node2D = enemy.get_node("ApresentadorPacote")
-    check(not presenter.active and enemy.visual.visible, "inimigo real ainda usa arte provisória")
+    presenter.bind_actor(enemy, MAP)
+    presenter.package = PACKAGE.load_package("res://assets/enemies/pacote_ausente_fixture/")
+    presenter._process(0)
+    check(not presenter.active and enemy.visual.visible, "inimigo sem pacote usa arte provisória")
     enemy.reset_enemy()
     presenter.bind_actor(enemy, MAP)
     enemy.attack.abort()
@@ -273,6 +276,7 @@ func presentation_checks() -> void:
     root.get_node("HitStop")._restore()
     p.get_node("SensacaoAlvo").reset()
     presenter.bind_actor(enemy, "res://data/enemies/peregrino_mapa.json")
+    presenter.package = PACKAGE.load_package("res://assets/enemies/pacote_ausente_fixture/")
     enemy.attack.start(data)
     enemy.attack._arm()
     check(not enemy.attack.hitbox.frame_override_active, "ataque sem pacote usa retângulo/pivô existente")

@@ -249,7 +249,7 @@ Consulta `intersect_shape` sobre hurtboxes não verifica terreno intermediário 
 
 ## 4. Sequência de integração e critérios de saída
 
-Cada passo registra seus testes. **Fases 1–4 aprovadas. Tarefa 4.4 entrega o passo 12 (sensação) e prepara pacotes de inimigo.** Avaliação ampliada e balanceamento continuam futuros.
+Cada passo registra seus testes. **Fases 1–4 e Tarefa 4.4 aprovadas. Tarefa 4.5 equipa o primeiro pacote real de inimigo (Peregrino).** Avaliação ampliada e balanceamento continuam futuros.
 
 | Passo e fase | Alteração delimitada | Critério de saída |
 |---|---|---|
@@ -339,3 +339,14 @@ Medição nova a 60 Hz: toque curto 1,000400 m, ápice 13 ticks; segurado 2,3149
 Projéteis têm animação/âncora dedicada opcional em `projeteis`; caixas do disparo junto ao bico não são deslocadas para a bala. Sem esse dado, o projétil conserva core/área/velocidade/vida/parry originais. Pacote falso mínimo é restrito à suíte de teste. Os pacotes finais de Peregrino/Corvo ainda não foram entregues; não substituí-los por arte inventada. Contrato completo em `CONTRATO_PACOTE_INIMIGO.md`.
 
 Backup remoto inicial: `feature/integracao-p40@68807ee8bbcada0bfd3e6dec59b6da7e99661181`. Esta tarefa autoriza commit/push somente deste branch. Nenhum push ou merge do main. Relatório e testes atuais ficam na fase F5; registros F1–F4 permanecem históricos.
+
+
+## 8. Tarefa 4.5 — Peregrino Profanado
+
+Pacote aprovado `pacote_inimigo_peregrino_v1.zip`, só leitura, 160 arquivos copiados intactos para `assets/enemies/peregrino_v1/`. Não usar o Corvo humanoide como inimigo: pertence à máscara jogável Corvo; ave e Raiz seguem provisórias.
+
+Mapa do Peregrino liga IDLE/PATROL/ALERT/CHASE/HURT/RUPTURE/DEATH às animações próprias e os seis IDs de ataque aos cinco golpes. A lista `ataque[]` separa as duas partes do corte duplo, mantendo os tempos e UIDs originais. Efeitos respeitam camada/fase; aviso pálido nos golpes aparáveis, vermelho na penitência. A arma provisória fica oculta só com apresentação nova ativa. Ruptura toca a entrada uma vez e repete quadros 3–6; morte segura o quadro 7 sem rotação legada.
+
+Hurtbox fixa sugerida: raio 7/altura 44 px → raio 7,777778/altura 48,888889 unidades; centro Y=−8,944444, base Y=15,5. Vale somente para Peregrinos equipados com pacote válido, em ambas as salas. Colisor de locomoção de 7/31 unidades, IA, tuning, dano e física do jogador intocados. A sugestão alternativa de 34 px na ruptura permanece desativada; morte desliga a área pelo caminho original.
+
+F3: hurtbox em ciano, âncora dos pés, animação/quadro/fase e peças de dano ACTIVE. A etapa futura **balanceamento de inimigos** deve considerar os 31 contatos alterados em 108 ensaios (42 → 45 acertos totais): maior alcance frontal, folga de três golpes no ensaio colado de 8 px e ataques altos. Não reajustar IA nesta entrega. Também reavaliar leitura de ruptura/morte em ×1 e a regeneração preexistente da postura após a morte. Relatório/testes/prints/clipe em F6; evidências anteriores preservadas. Commit e push somente de `feature/integracao-p40`, sem merge.

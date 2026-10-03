@@ -273,6 +273,9 @@ func attack_trial(kind: String, action: String, carrasco: bool, distance: float,
         for _i in range(ceili(data.active_seconds / STEP)):
             await frames()
             attack.tick(STEP, player, 5.0)
+            # The fixture freezes owner physics: reproduce the production query
+            # after resolved movement rather than omitting profiled contacts.
+            attack.resolve_frame_contact()
             root.get_node("HitStop")._restore()
     elif kind == "raiz_faminta":
         if action == "mordida":

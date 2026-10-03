@@ -1,0 +1,76 @@
+{
+  "suites_antes": 24,
+  "aprovadas_antes": 22,
+  "pass_antes": 1865,
+  "suites_depois": 24,
+  "aprovadas_depois": 22,
+  "pass_depois": 1865,
+  "falhas_antes": [
+    {
+      "teste": "tests/verify_carrasco_gif_test.gd",
+      "exit": -2,
+      "pass": 1,
+      "fail": 0,
+      "falhas": [
+        "SCRIPT ERROR: Invalid access to property or key 'texture_filter' on a base object of type 'null instance'."
+      ],
+      "segundos": 4.02,
+      "aprovado": false
+    },
+    {
+      "teste": "tests/verify_milestone8_2.gd",
+      "exit": -2,
+      "pass": 1,
+      "fail": 0,
+      "falhas": [
+        "SCRIPT ERROR: Invalid access to property or key 'sprite' on a base object of type 'Node2D (carrasco_base_official.gd)'."
+      ],
+      "segundos": 3.92,
+      "aprovado": false
+    }
+  ],
+  "falhas_depois": [
+    {
+      "teste": "tests/verify_carrasco_gif_test.gd",
+      "exit": -2,
+      "pass": 1,
+      "fail": 0,
+      "falhas": [
+        "SCRIPT ERROR: Invalid access to property or key 'texture_filter' on a base object of type 'null instance'."
+      ],
+      "segundos": 4.33,
+      "aprovado": false
+    },
+    {
+      "teste": "tests/verify_milestone8_2.gd",
+      "exit": -2,
+      "pass": 1,
+      "fail": 0,
+      "falhas": [
+        "SCRIPT ERROR: Invalid access to property or key 'sprite' on a base object of type 'Node2D (carrasco_base_official.gd)'."
+      ],
+      "segundos": 4.22,
+      "aprovado": false
+    }
+  ],
+  "pacote_real": {
+    "teste": "codex/testes/verify_integracao_p40_f6.gd",
+    "exit": 0,
+    "pass": 204,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 79.55,
+    "aprovado": true
+  },
+  "revisao_fixture_f2": "Congela física do owner; agora chama resolve_frame_contact como a produção. Primeira execução com quatro falhas retida em TESTES_primeira_execucao.json. Sem alteração de IA/tuning/dano.",
+  "zip_sha256": "5649f946e9c03dcc63461136844a545afee8c8b5b1ee7a6f507308ade987c013",
+  "preservacao_aprovada": true,
+  "video": {
+    "quadros_decodificados": 600,
+    "duracao_s": 20,
+    "fps": 30,
+    "sha256": "903e0ee7aecb562bfab15cda616da716ef6dea36a4e12ca92d5e32927df0e16e",
+    "erros": "",
+    "framehash_sha256": "d094fa1a48a0faad471d191356ab85afb21f82ba97be2fd7aa1e9ba262fff366"
+  }
+}

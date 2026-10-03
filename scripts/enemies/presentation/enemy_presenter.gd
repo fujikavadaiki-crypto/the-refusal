@@ -17,6 +17,10 @@ var feet_local := Vector2.ZERO
 var fallback_reason := ""
 var idle_ms := 0.0
 var last_state := -1
+var warning_class := ""
+var original_hurt: Shape2D
+var original_hurt_position := Vector2.ZERO
+var hurt_node: CollisionShape2D
 
 func _ready() -> void:
     top_level = true
@@ -24,7 +28,7 @@ func _ready() -> void:
     texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
     body.centered = false
     shadow.centered = false
-    shadow.z_index = -1
+    shadow.z_index = -2
     add_child(shadow)
     add_child(body)
     add_child(fx_root)
@@ -32,6 +36,18 @@ func _ready() -> void:
 
 func bind_actor(owner_actor: CharacterBody2D, map_path: String) -> void:
     actor = owner_actor
+    package = {"valid": false, "anims": {}}
+    mapping = {}
+    fallback_reason = ""
+    hurt_node = actor.get_node_or_null("Hurtbox/CollisionShape2D") as CollisionShape2D
+    if hurt_node != null:
+        if original_hurt == null:
+            original_hurt = hurt_node.shape
+            original_hurt_position = hurt_node.position
+        hurt_node.shape = original_hurt
+        hurt_node.position = original_hurt_position
+    idle_ms = 0
+    last_state = -1
     var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(map_path)) if FileAccess.file_exists(map_path) else null
     if not parsed is Dictionary:
         fallback_reason = "mapeamento ausente/invalido"
@@ -46,6 +62,12 @@ func bind_actor(owner_actor: CharacterBody2D, map_path: String) -> void:
     feet_local = Vector2(float(feet[0]), float(feet[1]))
     package = PACKAGE.load_package(String(mapping.get("pacote", "")))
     fallback_reason = "; ".join(package.get("errors", []))
+    if package.valid and mapping.get("aplicar_hurtbox_sugerida", false) and hurt_node != null and not package.hurtbox.is_empty():
+        var capsule := CapsuleShape2D.new()
+        capsule.radius = float(package.hurtbox.raio_px) / ZOOM
+        capsule.height = float(package.hurtbox.altura_px) / ZOOM
+        hurt_node.shape = capsule
+        hurt_node.position = feet_local - Vector2(0,capsule.height*.5)
 
 func attack_sample(data: AttackData, elapsed: float) -> Dictionary:
     if not package.valid or data == null: return {}
@@ -99,7 +121,7 @@ func _process(delta: float) -> void:
         var id := String(mapping.get("estados", {}).get(key, mapping.get("padrao", "idle")))
         if package.anims.has(id):
             var anim: Dictionary = package.anims[id]
-            var index := CORE.frame_at_ms(anim.frames, idle_ms, anim.loop)
+            var index := PACKAGE.state_frame(anim, idle_ms)
             sample = {"anim": id, "index": index, "frame": anim.frames[index], "phase": "ALL"}
     var was_active := active
     active = not sample.is_empty()
@@ -107,9 +129,17 @@ func _process(delta: float) -> void:
     if not active:
         if was_active:
             actor.get_node("VisualRoot").visible = true
+            var pivot := actor.get_node_or_null("AttackPivot")
+            if pivot != null: pivot.visible = true
             if actor.has_method("_apply_state"): actor._apply_state(brain.state)
         return # Fallback never overrides the original hidden/death presentation.
     actor.get_node("VisualRoot").visible = false
+    var legacy_weapon := actor.get_node_or_null("AttackPivot")
+    if legacy_weapon != null: legacy_weapon.visible = false
+    warning_class = ""
+    var attack_node: Node = actor.get_node("Attack")
+    if sample.phase == "WINDUP" and "current_attack" in attack_node and attack_node.current_attack != null:
+        warning_class = String(attack_node.current_attack.parry_class)
     current_anim = sample.anim
     frame_index = sample.index
     current_phase = sample.phase
@@ -125,11 +155,15 @@ func _process(delta: float) -> void:
     for child in fx_root.get_children(): child.free()
     for effect: Dictionary in frame.efeitos:
         if effect.fase not in ["ALL", current_phase]: continue
+        if effect.warning and current_phase != "WINDUP": continue
         var sprite := Sprite2D.new()
         sprite.centered = false
+        sprite.z_index = -1 if effect.camada == "atras_do_corpo" else 1
+        sprite.set_meta("warning",effect.warning)
         fx_root.add_child(sprite)
         _pose(sprite, effect.tex, effect.ancora, left)
     _shadow(frame.sombra, left)
+    queue_redraw()
 
 func _pose(sprite: Sprite2D, texture: Texture2D, anchor: Vector2, left: bool) -> void:
     sprite.texture = texture
@@ -168,3 +202,30 @@ func _shadow(spec: Dictionary, left: bool) -> void:
     shadow.position = (at - (local_anchor * shadow.scale).round()).round()
     shadow.offset = Vector2.ZERO
     shadow.modulate.a = factor
+
+func _draw() -> void:
+    if not active or not get_node("/root/Sensacao").debug_controls: return
+    var canvas := get_viewport().get_canvas_transform()
+    if hurt_node != null and not hurt_node.disabled and hurt_node.shape is CapsuleShape2D:
+        var center := to_local(hurt_node.global_position)
+        var radius: float = hurt_node.shape.radius * canvas.x.length()
+        var half: float = hurt_node.shape.height * canvas.y.length()*.5-radius
+        var cyan := Color(.2,1,1,.95)
+        draw_arc(center-Vector2(0,half),radius,PI,TAU,16,cyan,1)
+        draw_arc(center+Vector2(0,half),radius,0,PI,16,cyan,1)
+        for sign_ in [-1,1]: draw_line(center+Vector2(sign_*radius,-half),center+Vector2(sign_*radius,half),cyan,1)
+    draw_circle(Vector2.ZERO,2,Color.CYAN)
+    var room: Node = get_tree().current_scene
+    # Cemetery already draws the common melee polygons; add them here in Bosque.
+    if room == null or not "debug_geometry" in room or not room.debug_geometry:
+        var box: Hitbox2D = actor.get_node("Attack").hitbox
+        for part: PackedVector2Array in box.current_world_parts():
+            var points := PackedVector2Array()
+            for p in part: points.append(to_local(p))
+            draw_colored_polygon(points,Color(.6,.2,1,.25))
+            points.append(points[0])
+            draw_polyline(points,Color(.8,.5,1),1)
+    var text := "%s f%d %s" % [current_anim,frame_index,current_phase]
+    var font := ThemeDB.fallback_font
+    draw_string_outline(font,Vector2(-40,-88),text,HORIZONTAL_ALIGNMENT_LEFT,-1,10,3,Color.BLACK)
+    draw_string(font,Vector2(-40,-88),text,HORIZONTAL_ALIGNMENT_LEFT,-1,10,Color.WHITE)

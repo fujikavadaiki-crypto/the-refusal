@@ -7,22 +7,23 @@
   ],
   "estados": {
     "IDLE": "idle",
-    "PATROL": "run",
-    "ALERT": "idle",
-    "CHASE": "run",
+    "PATROL": "patrulha",
+    "ALERT": "alerta",
+    "CHASE": "perseguicao",
     "ATTACK_WINDUP": "idle",
     "ATTACK_ACTIVE": "idle",
     "ATTACK_RECOVERY": "idle",
-    "HURT": "hurt",
-    "RUPTURE": "hurt",
-    "DEATH": "death"
+    "HURT": "dano",
+    "RUPTURE": "ruptura",
+    "DEATH": "morte"
   },
   "ataques": {
-    "peregrino_corte": "corte",
-    "peregrino_corte_duplo_1": "corte_duplo_1",
-    "peregrino_corte_duplo_2": "corte_duplo_2",
-    "peregrino_estocada": "estocada",
-    "peregrino_investida": "investida",
-    "peregrino_penitencia": "penitencia"
-  }
+    "peregrino_corte": "ataque_corte",
+    "peregrino_corte_duplo_1": "ataque_corte_duplo",
+    "peregrino_corte_duplo_2": "ataque_corte_duplo",
+    "peregrino_estocada": "ataque_estocada",
+    "peregrino_investida": "ataque_investida",
+    "peregrino_penitencia": "ataque_penitencia"
+  },
+  "aplicar_hurtbox_sugerida": true
 }

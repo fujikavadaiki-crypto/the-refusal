@@ -1,0 +1,1012 @@
+{
+  "attacks": [],
+  "checks": 0,
+  "contacts": [
+    {
+      "attack": "corte",
+      "damage": 12,
+      "distance_m": 0.25,
+      "distance_px": 8.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "distance_m": 0.5625,
+      "distance_px": 18.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "distance_m": 0.9375,
+      "distance_px": 30.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "corte",
+      "damage": 0,
+      "distance_m": 1.25,
+      "distance_px": 40.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "corte",
+      "damage": 0,
+      "distance_m": 1.5625,
+      "distance_px": 50.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "corte",
+      "damage": 0,
+      "distance_m": 2.03125,
+      "distance_px": 65.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "distance_m": 0.25,
+      "distance_px": 8.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "distance_m": 0.5625,
+      "distance_px": 18.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "distance_m": 0.9375,
+      "distance_px": 30.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "corte",
+      "damage": 0,
+      "distance_m": 1.25,
+      "distance_px": 40.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "corte",
+      "damage": 0,
+      "distance_m": 1.5625,
+      "distance_px": 50.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "corte",
+      "damage": 0,
+      "distance_m": 2.03125,
+      "distance_px": 65.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "corte",
+      "damage": 0,
+      "distance_m": 0.25,
+      "distance_px": 8.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "distance_m": 0.5625,
+      "distance_px": 18.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "corte",
+      "damage": 0,
+      "distance_m": 0.9375,
+      "distance_px": 30.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "corte",
+      "damage": 0,
+      "distance_m": 1.25,
+      "distance_px": 40.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "corte",
+      "damage": 0,
+      "distance_m": 1.5625,
+      "distance_px": 50.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "corte",
+      "damage": 0,
+      "distance_m": 2.03125,
+      "distance_px": 65.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "distance_m": 0.25,
+      "distance_px": 8.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "distance_m": 0.5625,
+      "distance_px": 18.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "distance_m": 0.9375,
+      "distance_px": 30.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "distance_m": 1.25,
+      "distance_px": 40.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "distance_m": 1.5625,
+      "distance_px": 50.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "distance_m": 2.03125,
+      "distance_px": 65.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "distance_m": 0.25,
+      "distance_px": 8.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "distance_m": 0.5625,
+      "distance_px": 18.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "distance_m": 0.9375,
+      "distance_px": 30.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "distance_m": 1.25,
+      "distance_px": 40.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "distance_m": 1.5625,
+      "distance_px": 50.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "distance_m": 2.03125,
+      "distance_px": 65.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "distance_m": 0.25,
+      "distance_px": 8.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "distance_m": 0.5625,
+      "distance_px": 18.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "distance_m": 0.9375,
+      "distance_px": 30.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "distance_m": 1.25,
+      "distance_px": 40.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "distance_m": 1.5625,
+      "distance_px": 50.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "distance_m": 2.03125,
+      "distance_px": 65.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "corte_duplo_1",
+      "damage": 10,
+      "distance_m": 0.25,
+      "distance_px": 8.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "corte_duplo_1",
+      "damage": 10,
+      "distance_m": 0.5625,
+      "distance_px": 18.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "corte_duplo_1",
+      "damage": 10,
+      "distance_m": 0.9375,
+      "distance_px": 30.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "corte_duplo_1",
+      "damage": 0,
+      "distance_m": 1.25,
+      "distance_px": 40.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "corte_duplo_1",
+      "damage": 0,
+      "distance_m": 1.5625,
+      "distance_px": 50.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "corte_duplo_1",
+      "damage": 0,
+      "distance_m": 2.03125,
+      "distance_px": 65.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "corte_duplo_1",
+      "damage": 10,
+      "distance_m": 0.25,
+      "distance_px": 8.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "corte_duplo_1",
+      "damage": 10,
+      "distance_m": 0.5625,
+      "distance_px": 18.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "corte_duplo_1",
+      "damage": 10,
+      "distance_m": 0.9375,
+      "distance_px": 30.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "corte_duplo_1",
+      "damage": 0,
+      "distance_m": 1.25,
+      "distance_px": 40.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "corte_duplo_1",
+      "damage": 0,
+      "distance_m": 1.5625,
+      "distance_px": 50.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "corte_duplo_1",
+      "damage": 0,
+      "distance_m": 2.03125,
+      "distance_px": 65.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "corte_duplo_1",
+      "damage": 0,
+      "distance_m": 0.25,
+      "distance_px": 8.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "corte_duplo_1",
+      "damage": 0,
+      "distance_m": 0.5625,
+      "distance_px": 18.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "corte_duplo_1",
+      "damage": 0,
+      "distance_m": 0.9375,
+      "distance_px": 30.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "corte_duplo_1",
+      "damage": 0,
+      "distance_m": 1.25,
+      "distance_px": 40.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "corte_duplo_1",
+      "damage": 0,
+      "distance_m": 1.5625,
+      "distance_px": 50.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "corte_duplo_1",
+      "damage": 0,
+      "distance_m": 2.03125,
+      "distance_px": 65.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "corte_duplo_2",
+      "damage": 12,
+      "distance_m": 0.25,
+      "distance_px": 8.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "corte_duplo_2",
+      "damage": 12,
+      "distance_m": 0.5625,
+      "distance_px": 18.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "corte_duplo_2",
+      "damage": 12,
+      "distance_m": 0.9375,
+      "distance_px": 30.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "corte_duplo_2",
+      "damage": 0,
+      "distance_m": 1.25,
+      "distance_px": 40.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "corte_duplo_2",
+      "damage": 0,
+      "distance_m": 1.5625,
+      "distance_px": 50.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "corte_duplo_2",
+      "damage": 0,
+      "distance_m": 2.03125,
+      "distance_px": 65.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "corte_duplo_2",
+      "damage": 12,
+      "distance_m": 0.25,
+      "distance_px": 8.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "corte_duplo_2",
+      "damage": 12,
+      "distance_m": 0.5625,
+      "distance_px": 18.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "corte_duplo_2",
+      "damage": 12,
+      "distance_m": 0.9375,
+      "distance_px": 30.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "corte_duplo_2",
+      "damage": 0,
+      "distance_m": 1.25,
+      "distance_px": 40.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "corte_duplo_2",
+      "damage": 0,
+      "distance_m": 1.5625,
+      "distance_px": 50.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "corte_duplo_2",
+      "damage": 0,
+      "distance_m": 2.03125,
+      "distance_px": 65.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "corte_duplo_2",
+      "damage": 0,
+      "distance_m": 0.25,
+      "distance_px": 8.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "corte_duplo_2",
+      "damage": 0,
+      "distance_m": 0.5625,
+      "distance_px": 18.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "corte_duplo_2",
+      "damage": 0,
+      "distance_m": 0.9375,
+      "distance_px": 30.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "corte_duplo_2",
+      "damage": 0,
+      "distance_m": 1.25,
+      "distance_px": 40.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "corte_duplo_2",
+      "damage": 0,
+      "distance_m": 1.5625,
+      "distance_px": 50.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "corte_duplo_2",
+      "damage": 0,
+      "distance_m": 2.03125,
+      "distance_px": 65.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "investida",
+      "damage": 18,
+      "distance_m": 0.25,
+      "distance_px": 8.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "investida",
+      "damage": 18,
+      "distance_m": 0.5625,
+      "distance_px": 18.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "investida",
+      "damage": 18,
+      "distance_m": 0.9375,
+      "distance_px": 30.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "investida",
+      "damage": 18,
+      "distance_m": 1.25,
+      "distance_px": 40.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "investida",
+      "damage": 0,
+      "distance_m": 1.5625,
+      "distance_px": 50.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "investida",
+      "damage": 0,
+      "distance_m": 2.03125,
+      "distance_px": 65.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "investida",
+      "damage": 18,
+      "distance_m": 0.25,
+      "distance_px": 8.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "investida",
+      "damage": 18,
+      "distance_m": 0.5625,
+      "distance_px": 18.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "investida",
+      "damage": 18,
+      "distance_m": 0.9375,
+      "distance_px": 30.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "investida",
+      "damage": 18,
+      "distance_m": 1.25,
+      "distance_px": 40.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "investida",
+      "damage": 0,
+      "distance_m": 1.5625,
+      "distance_px": 50.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "investida",
+      "damage": 0,
+      "distance_m": 2.03125,
+      "distance_px": 65.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "investida",
+      "damage": 0,
+      "distance_m": 0.25,
+      "distance_px": 8.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "investida",
+      "damage": 0,
+      "distance_m": 0.5625,
+      "distance_px": 18.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "investida",
+      "damage": 0,
+      "distance_m": 0.9375,
+      "distance_px": 30.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "investida",
+      "damage": 0,
+      "distance_m": 1.25,
+      "distance_px": 40.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "investida",
+      "damage": 0,
+      "distance_m": 1.5625,
+      "distance_px": 50.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "investida",
+      "damage": 0,
+      "distance_m": 2.03125,
+      "distance_px": 65.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "penitencia",
+      "damage": 25,
+      "distance_m": 0.25,
+      "distance_px": 8.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "penitencia",
+      "damage": 25,
+      "distance_m": 0.5625,
+      "distance_px": 18.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "penitencia",
+      "damage": 25,
+      "distance_m": 0.9375,
+      "distance_px": 30.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "penitencia",
+      "damage": 0,
+      "distance_m": 1.25,
+      "distance_px": 40.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "penitencia",
+      "damage": 0,
+      "distance_m": 1.5625,
+      "distance_px": 50.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "penitencia",
+      "damage": 0,
+      "distance_m": 2.03125,
+      "distance_px": 65.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 0.0
+    },
+    {
+      "attack": "penitencia",
+      "damage": 25,
+      "distance_m": 0.25,
+      "distance_px": 8.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "penitencia",
+      "damage": 25,
+      "distance_m": 0.5625,
+      "distance_px": 18.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "penitencia",
+      "damage": 25,
+      "distance_m": 0.9375,
+      "distance_px": 30.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "penitencia",
+      "damage": 0,
+      "distance_m": 1.25,
+      "distance_px": 40.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "penitencia",
+      "damage": 0,
+      "distance_m": 1.5625,
+      "distance_px": 50.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "penitencia",
+      "damage": 0,
+      "distance_m": 2.03125,
+      "distance_px": 65.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 24.0
+    },
+    {
+      "attack": "penitencia",
+      "damage": 25,
+      "distance_m": 0.25,
+      "distance_px": 8.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "penitencia",
+      "damage": 25,
+      "distance_m": 0.5625,
+      "distance_px": 18.0,
+      "facing": 1,
+      "hit": true,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "penitencia",
+      "damage": 0,
+      "distance_m": 0.9375,
+      "distance_px": 30.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "penitencia",
+      "damage": 0,
+      "distance_m": 1.25,
+      "distance_px": 40.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "penitencia",
+      "damage": 0,
+      "distance_m": 1.5625,
+      "distance_px": 50.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    },
+    {
+      "attack": "penitencia",
+      "damage": 0,
+      "distance_m": 2.03125,
+      "distance_px": 65.0,
+      "facing": 1,
+      "hit": false,
+      "raised_px": 48.0
+    }
+  ],
+  "failures": 0,
+  "hurt": {
+    "body_height_world": 31.0,
+    "center_y_world": 0.0,
+    "feet_y_world": 15.5,
+    "height_world": 31.0,
+    "radius_world": 7.0
+  },
+  "hurt_points": [
+    {
+      "hit": true,
+      "y_px": -8.0
+    },
+    {
+      "hit": true,
+      "y_px": -24.0
+    },
+    {
+      "hit": false,
+      "y_px": -30.0
+    },
+    {
+      "hit": false,
+      "y_px": -36.0
+    },
+    {
+      "hit": false,
+      "y_px": -43.0
+    },
+    {
+      "hit": false,
+      "y_px": -47.0
+    }
+  ]
+}

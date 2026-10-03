@@ -1,0 +1,8571 @@
+{
+ "pacote": "pacote_inimigo_peregrino_v1",
+ "versao": "Peregrino Profanado v1 (lote E1) - mesmo pixel do Carrasco pequeno A",
+ "personagem": "Peregrino Profanado (substitui o Peregrino)",
+ "data": "2026-10-03",
+ "status": "TESTE para avaliacao (nao aprovado). Conceito: referencias/elenco/elenco_inimigos_v1.png e evolucao_corvo.png. Desenho 100 % novo, rig desenhado, IA e tempos lidos do jogo (so leitura).",
+ "formato": "mesmo do pequeno A: animacoes[] com quadros (arquivo, ms, ancora), sombra em arquivo proprio, efeitos em camadas separadas (atras_do_corpo / frente_do_corpo), paleta travada; hitbox por quadro ATIVO (recortada a frente do corpo); animacoes de ataque trazem `ataque` (fases e soma = .tres)",
+ "cores": "SAIDA: todo pixel opaco e uma das cores da paleta C5.1; NENHUMA cor nova",
+ "paleta": {
+  "arquivo": "paleta/carrasco_c51_travada.gpl",
+  "cores": 44,
+  "travada": true,
+  "sha256": "6d3acc7dc9fc7f516d29abea3d9be2b024f868bad8a24158eea230089fe1b4ce"
+ },
+ "cores_usadas": {
+  "quantidade": 22,
+  "indices": [
+   3,
+   5,
+   7,
+   8,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   22,
+   26,
+   27,
+   29,
+   35,
+   37,
+   41
+  ],
+  "rgb": [
+   [
+    7,
+    4,
+    5
+   ],
+   [
+    20,
+    4,
+    4
+   ],
+   [
+    34,
+    17,
+    17
+   ],
+   [
+    60,
+    38,
+    37
+   ],
+   [
+    85,
+    55,
+    53
+   ],
+   [
+    99,
+    65,
+    58
+   ],
+   [
+    118,
+    75,
+    70
+   ],
+   [
+    129,
+    76,
+    58
+   ],
+   [
+    88,
+    71,
+    72
+   ],
+   [
+    128,
+    107,
+    108
+   ],
+   [
+    179,
+    153,
+    148
+   ],
+   [
+    216,
+    186,
+    179
+   ],
+   [
+    243,
+    232,
+    224
+   ],
+   [
+    67,
+    4,
+    7
+   ],
+   [
+    86,
+    3,
+    6
+   ],
+   [
+    116,
+    3,
+    6
+   ],
+   [
+    174,
+    9,
+    16
+   ],
+   [
+    150,
+    20,
+    28
+   ],
+   [
+    88,
+    43,
+    37
+   ],
+   [
+    188,
+    122,
+    101
+   ],
+   [
+    231,
+    157,
+    131
+   ],
+   [
+    238,
+    40,
+    36
+   ]
+  ]
+ },
+ "proporcao": {
+  "altura_idle_px": 50,
+  "altura_vs_carrasco_48": 1.04,
+  "cabeca_px": 22,
+  "carrasco_pequeno_a_px": 48,
+  "nota": "faixa pedida 0,9x-1,2x (43-58 px); idle 50 px = 1,04x; em ataque a lamina erguida chega a ~70 px (so a arma)"
+ },
+ "ancora_convencao": "ancora = pixel (x,y) do quadro nos pes, na linha logo abaixo da sola (corpo termina em y-1, sombra ocupa y e y+1). Todos os quadros de UMA animacao compartilham canvas e ancora; x = centro do tronco. Inimigo olha para a DIREITA no desenho (espelhar para a esquerda).",
+ "hurtbox_sugerida": {
+  "forma": "capsula vertical",
+  "raio_px": 7,
+  "altura_px": 44,
+  "base": "na linha dos pes (ancora), eixo no x da ancora (centro do tronco)",
+  "jogo_atual": "CapsuleShape2D 7 x 31 (peregrino.tscn) - 13 px menor que o sprite; ajustar para 7 x 44 ao trocar o visual",
+  "por_animacao": {
+   "ruptura": {
+    "altura_px": 34,
+    "nota": "ajoelhado: capsula 7 x 34"
+   },
+   "morte": {
+    "hurtbox": "desligada (o motor ja faz hurt_shape.disabled)"
+   }
+  }
+ },
+ "animacoes": [
+  {
+   "id": "idle",
+   "tipo": "animacao",
+   "estado_ia": [
+    "IDLE"
+   ],
+   "loop": true,
+   "quadros_n": 6,
+   "duracao_total_ms": 780.0,
+   "nota_tempo": "IDLE (idle_seconds 0,55 s, depois PATRULHA): respiracao 6 q x 130 ms em laco, capa viva, ponta da lamina oscilando",
+   "quadros": [
+    {
+     "arquivo": "quadros/idle/idle_f0.png",
+     "largura": 57,
+     "altura": 54,
+     "ancora": [
+      22,
+      52
+     ],
+     "pivo": [
+      22,
+      52
+     ],
+     "ms": 130.0,
+     "sha256": "e4249ffe824ba71010f3227439086b6d95d7872ae642457beada1ebd63fe1edb",
+     "nome_origem": "e1_peregrino_idle_f0",
+     "corpo_bbox": [
+      1,
+      2,
+      55,
+      51
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/idle_sombra.png",
+      "ancora": [
+       22,
+       52
+      ],
+      "largura": 57,
+      "altura": 54,
+      "pixels": 44,
+      "sha256": "527e020e2cf7b1cdcc9b73930030aea8f3bda1ec2ea0c1ed1d12ae016b2a116a"
+     }
+    },
+    {
+     "arquivo": "quadros/idle/idle_f1.png",
+     "largura": 57,
+     "altura": 54,
+     "ancora": [
+      22,
+      52
+     ],
+     "pivo": [
+      22,
+      52
+     ],
+     "ms": 130.0,
+     "sha256": "79791c9a6ed69d2eeb7c64261a51d38d43a972bbb6099fc4e635d7a775386af7",
+     "nome_origem": "e1_peregrino_idle_f1",
+     "corpo_bbox": [
+      1,
+      2,
+      54,
+      51
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/idle_sombra.png",
+      "ancora": [
+       22,
+       52
+      ],
+      "largura": 57,
+      "altura": 54,
+      "pixels": 44,
+      "sha256": "527e020e2cf7b1cdcc9b73930030aea8f3bda1ec2ea0c1ed1d12ae016b2a116a"
+     }
+    },
+    {
+     "arquivo": "quadros/idle/idle_f2.png",
+     "largura": 57,
+     "altura": 54,
+     "ancora": [
+      22,
+      52
+     ],
+     "pivo": [
+      22,
+      52
+     ],
+     "ms": 130.0,
+     "sha256": "4e0cc0b6bbbe3a71776b2c59c5f08c0b59d15f739ebbe2738d3f990b44643c66",
+     "nome_origem": "e1_peregrino_idle_f2",
+     "corpo_bbox": [
+      1,
+      1,
+      53,
+      51
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/idle_sombra.png",
+      "ancora": [
+       22,
+       52
+      ],
+      "largura": 57,
+      "altura": 54,
+      "pixels": 44,
+      "sha256": "527e020e2cf7b1cdcc9b73930030aea8f3bda1ec2ea0c1ed1d12ae016b2a116a"
+     }
+    },
+    {
+     "arquivo": "quadros/idle/idle_f3.png",
+     "largura": 57,
+     "altura": 54,
+     "ancora": [
+      22,
+      52
+     ],
+     "pivo": [
+      22,
+      52
+     ],
+     "ms": 130.0,
+     "sha256": "9f4c04609f3137b754364863f40ae1cde0d1f17a3a4f4919f9b8e8d4e4c5a118",
+     "nome_origem": "e1_peregrino_idle_f3",
+     "corpo_bbox": [
+      1,
+      2,
+      53,
+      51
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/idle_sombra.png",
+      "ancora": [
+       22,
+       52
+      ],
+      "largura": 57,
+      "altura": 54,
+      "pixels": 44,
+      "sha256": "527e020e2cf7b1cdcc9b73930030aea8f3bda1ec2ea0c1ed1d12ae016b2a116a"
+     }
+    },
+    {
+     "arquivo": "quadros/idle/idle_f4.png",
+     "largura": 57,
+     "altura": 54,
+     "ancora": [
+      22,
+      52
+     ],
+     "pivo": [
+      22,
+      52
+     ],
+     "ms": 130.0,
+     "sha256": "76c47ab296ae8afe1f741050aa0c29fe3c2fad05dad5638ae1e0a0a2591f4631",
+     "nome_origem": "e1_peregrino_idle_f4",
+     "corpo_bbox": [
+      1,
+      3,
+      54,
+      51
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/idle_sombra.png",
+      "ancora": [
+       22,
+       52
+      ],
+      "largura": 57,
+      "altura": 54,
+      "pixels": 44,
+      "sha256": "527e020e2cf7b1cdcc9b73930030aea8f3bda1ec2ea0c1ed1d12ae016b2a116a"
+     }
+    },
+    {
+     "arquivo": "quadros/idle/idle_f5.png",
+     "largura": 57,
+     "altura": 54,
+     "ancora": [
+      22,
+      52
+     ],
+     "pivo": [
+      22,
+      52
+     ],
+     "ms": 130.0,
+     "sha256": "5f6ad3dfe3bd7213bc878179857c2d85d9b19b4b517deef38313c244d647fc78",
+     "nome_origem": "e1_peregrino_idle_f5",
+     "corpo_bbox": [
+      1,
+      2,
+      55,
+      51
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/idle_sombra.png",
+      "ancora": [
+       22,
+       52
+      ],
+      "largura": 57,
+      "altura": 54,
+      "pixels": 44,
+      "sha256": "527e020e2cf7b1cdcc9b73930030aea8f3bda1ec2ea0c1ed1d12ae016b2a116a"
+     }
+    }
+   ],
+   "efeitos": [],
+   "camadas": "ORDEM DE TRAS PARA FRENTE: efeitos atras_do_corpo -> corpo (capa/asas ja no quadro) -> efeitos frente_do_corpo (brilho de aviso, atordoamento). Sombra em arquivo proprio.",
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/idle_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao"
+   }
+  },
+  {
+   "id": "patrulha",
+   "tipo": "animacao",
+   "estado_ia": [
+    "PATROL"
+   ],
+   "loop": true,
+   "quadros_n": 8,
+   "duracao_total_ms": 827.6,
+   "nota_tempo": "PATRULHA a 29 px/s (patrol_speed): 8 q de 103,45 ms = 3 px por quadro, ciclo de 24 px; pes no chao 5 q sem deslizar",
+   "quadros": [
+    {
+     "arquivo": "quadros/patrulha/patrulha_f0.png",
+     "largura": 57,
+     "altura": 53,
+     "ancora": [
+      22,
+      51
+     ],
+     "pivo": [
+      22,
+      51
+     ],
+     "ms": 103.45,
+     "sha256": "e5bdc0838347eb91c15f71b485a7e27960e1f21ae20583ce3195d691ef406c9b",
+     "nome_origem": "e1_peregrino_patrulha_f0",
+     "corpo_bbox": [
+      1,
+      2,
+      55,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/patrulha_sombra.png",
+      "ancora": [
+       22,
+       51
+      ],
+      "largura": 57,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "d24610c9fd8f54ddbd9fe9fcc62a65bf45f083037d346a46d7bf144644a4a0a1"
+     }
+    },
+    {
+     "arquivo": "quadros/patrulha/patrulha_f1.png",
+     "largura": 57,
+     "altura": 53,
+     "ancora": [
+      22,
+      51
+     ],
+     "pivo": [
+      22,
+      51
+     ],
+     "ms": 103.45,
+     "sha256": "e335fa3754aa59ed797537dc4baf0d08e35447d51a32e8011246ed757b56f3f9",
+     "nome_origem": "e1_peregrino_patrulha_f1",
+     "corpo_bbox": [
+      1,
+      1,
+      55,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/patrulha_sombra.png",
+      "ancora": [
+       22,
+       51
+      ],
+      "largura": 57,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "d24610c9fd8f54ddbd9fe9fcc62a65bf45f083037d346a46d7bf144644a4a0a1"
+     }
+    },
+    {
+     "arquivo": "quadros/patrulha/patrulha_f2.png",
+     "largura": 57,
+     "altura": 53,
+     "ancora": [
+      22,
+      51
+     ],
+     "pivo": [
+      22,
+      51
+     ],
+     "ms": 103.45,
+     "sha256": "a12d601db13a58b5765603212b4ffa45ee2e0afeb46b892886c41f07d8849d96",
+     "nome_origem": "e1_peregrino_patrulha_f2",
+     "corpo_bbox": [
+      1,
+      1,
+      55,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/patrulha_sombra.png",
+      "ancora": [
+       22,
+       51
+      ],
+      "largura": 57,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "d24610c9fd8f54ddbd9fe9fcc62a65bf45f083037d346a46d7bf144644a4a0a1"
+     }
+    },
+    {
+     "arquivo": "quadros/patrulha/patrulha_f3.png",
+     "largura": 57,
+     "altura": 53,
+     "ancora": [
+      22,
+      51
+     ],
+     "pivo": [
+      22,
+      51
+     ],
+     "ms": 103.45,
+     "sha256": "5cd32afd1f9ef33cf2206c32373c4d7ebfe147981168a07fc26da2c46aadde7d",
+     "nome_origem": "e1_peregrino_patrulha_f3",
+     "corpo_bbox": [
+      1,
+      2,
+      55,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/patrulha_sombra.png",
+      "ancora": [
+       22,
+       51
+      ],
+      "largura": 57,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "d24610c9fd8f54ddbd9fe9fcc62a65bf45f083037d346a46d7bf144644a4a0a1"
+     }
+    },
+    {
+     "arquivo": "quadros/patrulha/patrulha_f4.png",
+     "largura": 57,
+     "altura": 53,
+     "ancora": [
+      22,
+      51
+     ],
+     "pivo": [
+      22,
+      51
+     ],
+     "ms": 103.45,
+     "sha256": "8d17828a16ea7541e657e76081dacc397a353d077956c8e95b30d8f388f4132d",
+     "nome_origem": "e1_peregrino_patrulha_f4",
+     "corpo_bbox": [
+      1,
+      2,
+      55,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/patrulha_sombra.png",
+      "ancora": [
+       22,
+       51
+      ],
+      "largura": 57,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "d24610c9fd8f54ddbd9fe9fcc62a65bf45f083037d346a46d7bf144644a4a0a1"
+     }
+    },
+    {
+     "arquivo": "quadros/patrulha/patrulha_f5.png",
+     "largura": 57,
+     "altura": 53,
+     "ancora": [
+      22,
+      51
+     ],
+     "pivo": [
+      22,
+      51
+     ],
+     "ms": 103.45,
+     "sha256": "1025153e66093f5c1b5af2a201c7c5f5ecaa11bce42eda38b3c56bb098500058",
+     "nome_origem": "e1_peregrino_patrulha_f5",
+     "corpo_bbox": [
+      1,
+      1,
+      55,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/patrulha_sombra.png",
+      "ancora": [
+       22,
+       51
+      ],
+      "largura": 57,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "d24610c9fd8f54ddbd9fe9fcc62a65bf45f083037d346a46d7bf144644a4a0a1"
+     }
+    },
+    {
+     "arquivo": "quadros/patrulha/patrulha_f6.png",
+     "largura": 57,
+     "altura": 53,
+     "ancora": [
+      22,
+      51
+     ],
+     "pivo": [
+      22,
+      51
+     ],
+     "ms": 103.45,
+     "sha256": "e8c0eb7a12225bba0a31f886184e4bec6a4fd986cf6b599d8375c7fbac555c1b",
+     "nome_origem": "e1_peregrino_patrulha_f6",
+     "corpo_bbox": [
+      1,
+      1,
+      55,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/patrulha_sombra.png",
+      "ancora": [
+       22,
+       51
+      ],
+      "largura": 57,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "d24610c9fd8f54ddbd9fe9fcc62a65bf45f083037d346a46d7bf144644a4a0a1"
+     }
+    },
+    {
+     "arquivo": "quadros/patrulha/patrulha_f7.png",
+     "largura": 57,
+     "altura": 53,
+     "ancora": [
+      22,
+      51
+     ],
+     "pivo": [
+      22,
+      51
+     ],
+     "ms": 103.45,
+     "sha256": "2c5873d7b19ac5f87d89fa6cd83eba9e05d1f8c31ee8c8b3319cd11dce0e1555",
+     "nome_origem": "e1_peregrino_patrulha_f7",
+     "corpo_bbox": [
+      1,
+      2,
+      55,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/patrulha_sombra.png",
+      "ancora": [
+       22,
+       51
+      ],
+      "largura": 57,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "d24610c9fd8f54ddbd9fe9fcc62a65bf45f083037d346a46d7bf144644a4a0a1"
+     }
+    }
+   ],
+   "efeitos": [],
+   "camadas": "ORDEM DE TRAS PARA FRENTE: efeitos atras_do_corpo -> corpo (capa/asas ja no quadro) -> efeitos frente_do_corpo (brilho de aviso, atordoamento). Sombra em arquivo proprio.",
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/patrulha_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao"
+   },
+   "px_por_quadro": 3,
+   "velocidade_px_s": 29,
+   "ms_por_quadro": 103.45,
+   "apoios": [
+    0,
+    4
+   ]
+  },
+  {
+   "id": "alerta",
+   "tipo": "animacao",
+   "estado_ia": [
+    "ALERT"
+   ],
+   "loop": false,
+   "quadros_n": 3,
+   "duracao_total_ms": 280.0,
+   "nota_tempo": "PERCEBER/ALERTA (alert_seconds 0,28 s): 3 q (93/93/94 ms) - recua, mandibula abre, olhos vermelhos, lamina sobe; depois CHASE",
+   "quadros": [
+    {
+     "arquivo": "quadros/alerta/alerta_f0.png",
+     "largura": 66,
+     "altura": 57,
+     "ancora": [
+      26,
+      55
+     ],
+     "pivo": [
+      26,
+      55
+     ],
+     "ms": 93.0,
+     "sha256": "67046b928de71a01aa544eadfe6a060b39a8562233cb5d56b85a180631bc86cc",
+     "nome_origem": "e1_peregrino_alerta_f0",
+     "corpo_bbox": [
+      2,
+      3,
+      60,
+      54
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/alerta_sombra.png",
+      "ancora": [
+       26,
+       55
+      ],
+      "largura": 66,
+      "altura": 57,
+      "pixels": 44,
+      "sha256": "a7514f388f9bda9f1fcb7b37014320e04dc0e383995875c9dbd87411df01f698"
+     }
+    },
+    {
+     "arquivo": "quadros/alerta/alerta_f1.png",
+     "largura": 66,
+     "altura": 57,
+     "ancora": [
+      26,
+      55
+     ],
+     "pivo": [
+      26,
+      55
+     ],
+     "ms": 93.0,
+     "sha256": "831cc01082191774425a0d03e1f2ffb98b05664b37a5dc58a0c067259d89fc41",
+     "nome_origem": "e1_peregrino_alerta_f1",
+     "corpo_bbox": [
+      1,
+      1,
+      64,
+      54
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/alerta_sombra.png",
+      "ancora": [
+       26,
+       55
+      ],
+      "largura": 66,
+      "altura": 57,
+      "pixels": 44,
+      "sha256": "a7514f388f9bda9f1fcb7b37014320e04dc0e383995875c9dbd87411df01f698"
+     }
+    },
+    {
+     "arquivo": "quadros/alerta/alerta_f2.png",
+     "largura": 66,
+     "altura": 57,
+     "ancora": [
+      26,
+      55
+     ],
+     "pivo": [
+      26,
+      55
+     ],
+     "ms": 94.0,
+     "sha256": "edddc7af1e8c45bd33ccf2bc5ceacc0de661ee3a1c22d3f44227e97d945d6fe8",
+     "nome_origem": "e1_peregrino_alerta_f2",
+     "corpo_bbox": [
+      6,
+      5,
+      57,
+      54
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/alerta_sombra.png",
+      "ancora": [
+       26,
+       55
+      ],
+      "largura": 66,
+      "altura": 57,
+      "pixels": 44,
+      "sha256": "a7514f388f9bda9f1fcb7b37014320e04dc0e383995875c9dbd87411df01f698"
+     }
+    }
+   ],
+   "efeitos": [],
+   "camadas": "ORDEM DE TRAS PARA FRENTE: efeitos atras_do_corpo -> corpo (capa/asas ja no quadro) -> efeitos frente_do_corpo (brilho de aviso, atordoamento). Sombra em arquivo proprio.",
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/alerta_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao"
+   }
+  },
+  {
+   "id": "perseguicao",
+   "tipo": "animacao",
+   "estado_ia": [
+    "CHASE"
+   ],
+   "loop": true,
+   "quadros_n": 8,
+   "duracao_total_ms": 500.0,
+   "nota_tempo": "PERSEGUICAO a 64 px/s (chase_speed; x1,15 se HP < 30 %: tocar a 87 % da duracao): 8 q de 62,5 ms = 4 px por quadro, ciclo de 32 px; tronco inclinado, lamina arrastando atras",
+   "quadros": [
+    {
+     "arquivo": "quadros/perseguicao/perseguicao_f0.png",
+     "largura": 45,
+     "altura": 51,
+     "ancora": [
+      23,
+      49
+     ],
+     "pivo": [
+      23,
+      49
+     ],
+     "ms": 62.5,
+     "sha256": "6d68f0d14249a9687f3918f3a81fce6a9b8f69ebd281fc362b513e0571b8cbdf",
+     "nome_origem": "e1_peregrino_perseguicao_f0",
+     "corpo_bbox": [
+      1,
+      2,
+      43,
+      48
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/perseguicao_sombra.png",
+      "ancora": [
+       23,
+       49
+      ],
+      "largura": 45,
+      "altura": 51,
+      "pixels": 44,
+      "sha256": "59e92fa59b31f34e5ca4dc782451554b90aeadfc3ea96539fcba17a21b3be6d3"
+     }
+    },
+    {
+     "arquivo": "quadros/perseguicao/perseguicao_f1.png",
+     "largura": 45,
+     "altura": 51,
+     "ancora": [
+      23,
+      49
+     ],
+     "pivo": [
+      23,
+      49
+     ],
+     "ms": 62.5,
+     "sha256": "9acb94e8c37d8b753717390e52e26b1fcf91a29b106dfd7faa172e2f91f4b3b7",
+     "nome_origem": "e1_peregrino_perseguicao_f1",
+     "corpo_bbox": [
+      1,
+      1,
+      43,
+      48
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/perseguicao_sombra.png",
+      "ancora": [
+       23,
+       49
+      ],
+      "largura": 45,
+      "altura": 51,
+      "pixels": 44,
+      "sha256": "59e92fa59b31f34e5ca4dc782451554b90aeadfc3ea96539fcba17a21b3be6d3"
+     }
+    },
+    {
+     "arquivo": "quadros/perseguicao/perseguicao_f2.png",
+     "largura": 45,
+     "altura": 51,
+     "ancora": [
+      23,
+      49
+     ],
+     "pivo": [
+      23,
+      49
+     ],
+     "ms": 62.5,
+     "sha256": "3b6ffbe322ed00c6e20fcf99a34e5e34b7f54127fa34a213e023d30624ee3e2f",
+     "nome_origem": "e1_peregrino_perseguicao_f2",
+     "corpo_bbox": [
+      1,
+      2,
+      43,
+      48
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/perseguicao_sombra.png",
+      "ancora": [
+       23,
+       49
+      ],
+      "largura": 45,
+      "altura": 51,
+      "pixels": 44,
+      "sha256": "59e92fa59b31f34e5ca4dc782451554b90aeadfc3ea96539fcba17a21b3be6d3"
+     }
+    },
+    {
+     "arquivo": "quadros/perseguicao/perseguicao_f3.png",
+     "largura": 45,
+     "altura": 51,
+     "ancora": [
+      23,
+      49
+     ],
+     "pivo": [
+      23,
+      49
+     ],
+     "ms": 62.5,
+     "sha256": "89683a9fd06ff147360ce82e09020e3b64c26fe2b84480ddcd082e6d8a581357",
+     "nome_origem": "e1_peregrino_perseguicao_f3",
+     "corpo_bbox": [
+      1,
+      3,
+      43,
+      48
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/perseguicao_sombra.png",
+      "ancora": [
+       23,
+       49
+      ],
+      "largura": 45,
+      "altura": 51,
+      "pixels": 44,
+      "sha256": "59e92fa59b31f34e5ca4dc782451554b90aeadfc3ea96539fcba17a21b3be6d3"
+     }
+    },
+    {
+     "arquivo": "quadros/perseguicao/perseguicao_f4.png",
+     "largura": 45,
+     "altura": 51,
+     "ancora": [
+      23,
+      49
+     ],
+     "pivo": [
+      23,
+      49
+     ],
+     "ms": 62.5,
+     "sha256": "ba75f5789354d5e59feb24de32181eaf0bdf8b06359a10889ec74d9ded37efd6",
+     "nome_origem": "e1_peregrino_perseguicao_f4",
+     "corpo_bbox": [
+      1,
+      2,
+      43,
+      48
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/perseguicao_sombra.png",
+      "ancora": [
+       23,
+       49
+      ],
+      "largura": 45,
+      "altura": 51,
+      "pixels": 44,
+      "sha256": "59e92fa59b31f34e5ca4dc782451554b90aeadfc3ea96539fcba17a21b3be6d3"
+     }
+    },
+    {
+     "arquivo": "quadros/perseguicao/perseguicao_f5.png",
+     "largura": 45,
+     "altura": 51,
+     "ancora": [
+      23,
+      49
+     ],
+     "pivo": [
+      23,
+      49
+     ],
+     "ms": 62.5,
+     "sha256": "d6317b2f52045e867a98c063ad7fcef0d6e7173abf9af5c5d0ede3a2d3642301",
+     "nome_origem": "e1_peregrino_perseguicao_f5",
+     "corpo_bbox": [
+      2,
+      1,
+      43,
+      48
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/perseguicao_sombra.png",
+      "ancora": [
+       23,
+       49
+      ],
+      "largura": 45,
+      "altura": 51,
+      "pixels": 44,
+      "sha256": "59e92fa59b31f34e5ca4dc782451554b90aeadfc3ea96539fcba17a21b3be6d3"
+     }
+    },
+    {
+     "arquivo": "quadros/perseguicao/perseguicao_f6.png",
+     "largura": 45,
+     "altura": 51,
+     "ancora": [
+      23,
+      49
+     ],
+     "pivo": [
+      23,
+      49
+     ],
+     "ms": 62.5,
+     "sha256": "bc2c2d0273b074ea3ef049b1888d991ee2d358dc6fbc979748d766f5c4383ea3",
+     "nome_origem": "e1_peregrino_perseguicao_f6",
+     "corpo_bbox": [
+      1,
+      2,
+      43,
+      48
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/perseguicao_sombra.png",
+      "ancora": [
+       23,
+       49
+      ],
+      "largura": 45,
+      "altura": 51,
+      "pixels": 44,
+      "sha256": "59e92fa59b31f34e5ca4dc782451554b90aeadfc3ea96539fcba17a21b3be6d3"
+     }
+    },
+    {
+     "arquivo": "quadros/perseguicao/perseguicao_f7.png",
+     "largura": 45,
+     "altura": 51,
+     "ancora": [
+      23,
+      49
+     ],
+     "pivo": [
+      23,
+      49
+     ],
+     "ms": 62.5,
+     "sha256": "fb14127ae182a77d0350b6d481689e568cad9ccd7b009036b6f99fd6d1c64dfa",
+     "nome_origem": "e1_peregrino_perseguicao_f7",
+     "corpo_bbox": [
+      1,
+      3,
+      43,
+      48
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/perseguicao_sombra.png",
+      "ancora": [
+       23,
+       49
+      ],
+      "largura": 45,
+      "altura": 51,
+      "pixels": 44,
+      "sha256": "59e92fa59b31f34e5ca4dc782451554b90aeadfc3ea96539fcba17a21b3be6d3"
+     }
+    }
+   ],
+   "efeitos": [],
+   "camadas": "ORDEM DE TRAS PARA FRENTE: efeitos atras_do_corpo -> corpo (capa/asas ja no quadro) -> efeitos frente_do_corpo (brilho de aviso, atordoamento). Sombra em arquivo proprio.",
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/perseguicao_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao"
+   },
+   "px_por_quadro": 4,
+   "velocidade_px_s": 64,
+   "ms_por_quadro": 62.5,
+   "apoios": [
+    0,
+    4
+   ]
+  },
+  {
+   "id": "ataque_corte",
+   "tipo": "animacao",
+   "estado_ia": [
+    "ATTACK_WINDUP",
+    "ATTACK_ACTIVE",
+    "ATTACK_RECOVERY"
+   ],
+   "loop": false,
+   "quadros_n": 9,
+   "duracao_total_ms": 830.0,
+   "nota_tempo": "CORTE (aparavel): prep 4 q (360) / arco de cima para baixo -65..55 graus 2 q (110) / recup 3 q (360) = 830 ms",
+   "quadros": [
+    {
+     "arquivo": "quadros/ataque_corte/ataque_corte_f0.png",
+     "largura": 71,
+     "altura": 77,
+     "ancora": [
+      26,
+      75
+     ],
+     "pivo": [
+      26,
+      75
+     ],
+     "ms": 90.0,
+     "sha256": "3798eac9a540188cb5fbfa6fb1deb428f6331e6120798b32edd3ab6d57bd8f12",
+     "nome_origem": "e1_peregrino_ataque_corte_f0",
+     "corpo_bbox": [
+      4,
+      26,
+      58,
+      74
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_sombra.png",
+      "ancora": [
+       26,
+       75
+      ],
+      "largura": 71,
+      "altura": 77,
+      "pixels": 44,
+      "sha256": "e29cd9642240d925cc30f2fa996c7cf91ee757b02ca47e5f6d336d3c9a865ee7"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte/ataque_corte_f1.png",
+     "largura": 71,
+     "altura": 77,
+     "ancora": [
+      26,
+      75
+     ],
+     "pivo": [
+      26,
+      75
+     ],
+     "ms": 90.0,
+     "sha256": "9cc854522c9a98a5134212b1f0817782d93bf17fb21688b49a42ff91a490f5a2",
+     "nome_origem": "e1_peregrino_ataque_corte_f1",
+     "corpo_bbox": [
+      3,
+      18,
+      48,
+      74
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_sombra.png",
+      "ancora": [
+       26,
+       75
+      ],
+      "largura": 71,
+      "altura": 77,
+      "pixels": 44,
+      "sha256": "e29cd9642240d925cc30f2fa996c7cf91ee757b02ca47e5f6d336d3c9a865ee7"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte/ataque_corte_f2.png",
+     "largura": 71,
+     "altura": 77,
+     "ancora": [
+      26,
+      75
+     ],
+     "pivo": [
+      26,
+      75
+     ],
+     "ms": 90.0,
+     "sha256": "6e53d99f64ac089b800460322676d4d2f3aa799440895c78eefd7fdc43c444e2",
+     "nome_origem": "e1_peregrino_ataque_corte_f2",
+     "corpo_bbox": [
+      2,
+      5,
+      39,
+      74
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_sombra.png",
+      "ancora": [
+       26,
+       75
+      ],
+      "largura": 71,
+      "altura": 77,
+      "pixels": 44,
+      "sha256": "e29cd9642240d925cc30f2fa996c7cf91ee757b02ca47e5f6d336d3c9a865ee7"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte/ataque_corte_f3.png",
+     "largura": 71,
+     "altura": 77,
+     "ancora": [
+      26,
+      75
+     ],
+     "pivo": [
+      26,
+      75
+     ],
+     "ms": 90.0,
+     "sha256": "4523052f32401de13ea10849e2ad0cc6d75b0be3598c1a1d6f49fab5a7433968",
+     "nome_origem": "e1_peregrino_ataque_corte_f3",
+     "corpo_bbox": [
+      1,
+      4,
+      40,
+      74
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_sombra.png",
+      "ancora": [
+       26,
+       75
+      ],
+      "largura": 71,
+      "altura": 77,
+      "pixels": 44,
+      "sha256": "e29cd9642240d925cc30f2fa996c7cf91ee757b02ca47e5f6d336d3c9a865ee7"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte/ataque_corte_f4.png",
+     "largura": 71,
+     "altura": 77,
+     "ancora": [
+      26,
+      75
+     ],
+     "pivo": [
+      26,
+      75
+     ],
+     "ms": 55.0,
+     "sha256": "6234634bc7de4a5c8d20b1de8049049db8a4c32086c557fef8dd6b85489db4a2",
+     "nome_origem": "e1_peregrino_ataque_corte_f4",
+     "corpo_bbox": [
+      6,
+      26,
+      63,
+      74
+     ],
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       0,
+       -72,
+       45,
+       39
+      ],
+      "espelha_com_a_direcao": "inverter x quando o inimigo olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         0.0,
+         -71.4
+        ],
+        [
+         3.8,
+         -71.5
+        ],
+        [
+         7.8,
+         -71.2
+        ],
+        [
+         11.7,
+         -70.6
+        ],
+        [
+         15.6,
+         -69.5
+        ],
+        [
+         19.3,
+         -68.2
+        ],
+        [
+         22.9,
+         -66.4
+        ],
+        [
+         26.3,
+         -64.3
+        ],
+        [
+         29.5,
+         -61.9
+        ],
+        [
+         32.5,
+         -59.2
+        ],
+        [
+         35.2,
+         -56.2
+        ],
+        [
+         37.5,
+         -53.0
+        ],
+        [
+         39.6,
+         -49.6
+        ],
+        [
+         41.3,
+         -45.9
+        ],
+        [
+         42.7,
+         -42.2
+        ],
+        [
+         43.7,
+         -38.3
+        ],
+        [
+         44.3,
+         -34.3
+        ],
+        [
+         41.8,
+         -34.1
+        ],
+        [
+         38.5,
+         -37.2
+        ],
+        [
+         35.8,
+         -40.1
+        ],
+        [
+         33.1,
+         -42.5
+        ],
+        [
+         30.4,
+         -44.6
+        ],
+        [
+         27.8,
+         -46.5
+        ],
+        [
+         25.3,
+         -48.1
+        ],
+        [
+         22.8,
+         -49.6
+        ],
+        [
+         20.5,
+         -51.0
+        ],
+        [
+         18.2,
+         -52.4
+        ],
+        [
+         16.0,
+         -53.7
+        ],
+        [
+         13.8,
+         -55.2
+        ],
+        [
+         11.5,
+         -56.7
+        ],
+        [
+         9.1,
+         -58.4
+        ],
+        [
+         6.5,
+         -60.2
+        ],
+        [
+         3.6,
+         -62.2
+        ],
+        [
+         0.3,
+         -64.6
+        ],
+        [
+         0.0,
+         -64.9
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         12.8,
+         -35.8
+        ],
+        [
+         14.0,
+         -36.8
+        ],
+        [
+         15.2,
+         -37.7
+        ],
+        [
+         16.5,
+         -38.6
+        ],
+        [
+         17.7,
+         -39.6
+        ],
+        [
+         19.0,
+         -40.4
+        ],
+        [
+         20.3,
+         -41.2
+        ],
+        [
+         21.7,
+         -41.8
+        ],
+        [
+         23.2,
+         -42.3
+        ],
+        [
+         24.6,
+         -42.8
+        ],
+        [
+         26.1,
+         -43.3
+        ],
+        [
+         27.6,
+         -43.8
+        ],
+        [
+         29.1,
+         -43.9
+        ],
+        [
+         30.7,
+         -43.9
+        ],
+        [
+         32.3,
+         -43.9
+        ],
+        [
+         33.8,
+         -43.7
+        ],
+        [
+         35.4,
+         -43.5
+        ],
+        [
+         37.0,
+         -43.2
+        ],
+        [
+         37.1,
+         -42.3
+        ],
+        [
+         35.8,
+         -41.5
+        ],
+        [
+         34.5,
+         -40.8
+        ],
+        [
+         33.2,
+         -40.0
+        ],
+        [
+         31.9,
+         -39.2
+        ],
+        [
+         30.7,
+         -38.4
+        ],
+        [
+         29.4,
+         -37.8
+        ],
+        [
+         28.0,
+         -37.4
+        ],
+        [
+         26.7,
+         -37.0
+        ],
+        [
+         25.4,
+         -36.5
+        ],
+        [
+         24.0,
+         -36.0
+        ],
+        [
+         22.7,
+         -35.5
+        ],
+        [
+         21.4,
+         -35.1
+        ],
+        [
+         20.0,
+         -34.8
+        ],
+        [
+         18.6,
+         -34.4
+        ],
+        [
+         17.1,
+         -34.1
+        ],
+        [
+         15.7,
+         -33.6
+        ],
+        [
+         14.3,
+         -33.2
+        ]
+       ]
+      }
+     },
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_sombra.png",
+      "ancora": [
+       26,
+       75
+      ],
+      "largura": 71,
+      "altura": 77,
+      "pixels": 44,
+      "sha256": "e29cd9642240d925cc30f2fa996c7cf91ee757b02ca47e5f6d336d3c9a865ee7"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte/ataque_corte_f5.png",
+     "largura": 71,
+     "altura": 77,
+     "ancora": [
+      26,
+      75
+     ],
+     "pivo": [
+      26,
+      75
+     ],
+     "ms": 55.0,
+     "sha256": "ae60de3b97e494e0626bf56c11ce374b92b023a0a9ccd7795bb28ef593a26f66",
+     "nome_origem": "e1_peregrino_ataque_corte_f5",
+     "corpo_bbox": [
+      8,
+      26,
+      59,
+      74
+     ],
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       0,
+       -73,
+       46,
+       73
+      ],
+      "espelha_com_a_direcao": "inverter x quando o inimigo olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         0.0,
+         -72.3
+        ],
+        [
+         2.3,
+         -72.5
+        ],
+        [
+         9.1,
+         -72.1
+        ],
+        [
+         15.7,
+         -70.6
+        ],
+        [
+         21.9,
+         -68.0
+        ],
+        [
+         27.7,
+         -64.6
+        ],
+        [
+         32.9,
+         -60.2
+        ],
+        [
+         37.3,
+         -55.1
+        ],
+        [
+         40.8,
+         -49.3
+        ],
+        [
+         43.4,
+         -43.1
+        ],
+        [
+         45.0,
+         -36.5
+        ],
+        [
+         45.5,
+         -29.8
+        ],
+        [
+         44.9,
+         -23.1
+        ],
+        [
+         43.3,
+         -16.5
+        ],
+        [
+         40.6,
+         -10.3
+        ],
+        [
+         37.0,
+         -4.6
+        ],
+        [
+         33.0,
+         0.0
+        ],
+        [
+         27.0,
+         0.0
+        ],
+        [
+         28.5,
+         -3.7
+        ],
+        [
+         30.3,
+         -9.6
+        ],
+        [
+         31.3,
+         -15.2
+        ],
+        [
+         31.5,
+         -20.4
+        ],
+        [
+         31.1,
+         -25.3
+        ],
+        [
+         30.1,
+         -29.9
+        ],
+        [
+         28.8,
+         -34.0
+        ],
+        [
+         27.2,
+         -37.8
+        ],
+        [
+         25.3,
+         -41.4
+        ],
+        [
+         23.2,
+         -44.8
+        ],
+        [
+         20.9,
+         -48.1
+        ],
+        [
+         18.3,
+         -51.4
+        ],
+        [
+         15.3,
+         -54.6
+        ],
+        [
+         11.7,
+         -57.9
+        ],
+        [
+         7.5,
+         -61.2
+        ],
+        [
+         2.5,
+         -64.6
+        ],
+        [
+         0.0,
+         -66.4
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         18.3,
+         -21.3
+        ],
+        [
+         19.6,
+         -20.5
+        ],
+        [
+         20.9,
+         -19.7
+        ],
+        [
+         22.2,
+         -18.9
+        ],
+        [
+         23.5,
+         -18.1
+        ],
+        [
+         24.8,
+         -17.2
+        ],
+        [
+         26.0,
+         -16.2
+        ],
+        [
+         27.0,
+         -15.1
+        ],
+        [
+         28.1,
+         -14.0
+        ],
+        [
+         29.1,
+         -12.8
+        ],
+        [
+         30.0,
+         -11.6
+        ],
+        [
+         31.0,
+         -10.4
+        ],
+        [
+         31.7,
+         -9.0
+        ],
+        [
+         32.3,
+         -7.6
+        ],
+        [
+         32.8,
+         -6.0
+        ],
+        [
+         33.2,
+         -4.5
+        ],
+        [
+         33.5,
+         -3.0
+        ],
+        [
+         33.8,
+         -1.4
+        ],
+        [
+         33.1,
+         -0.9
+        ],
+        [
+         31.9,
+         -1.9
+        ],
+        [
+         30.7,
+         -2.8
+        ],
+        [
+         29.5,
+         -3.8
+        ],
+        [
+         28.3,
+         -4.7
+        ],
+        [
+         27.1,
+         -5.6
+        ],
+        [
+         26.1,
+         -6.6
+        ],
+        [
+         25.2,
+         -7.7
+        ],
+        [
+         24.3,
+         -8.8
+        ],
+        [
+         23.4,
+         -9.8
+        ],
+        [
+         22.5,
+         -10.9
+        ],
+        [
+         21.5,
+         -11.9
+        ],
+        [
+         20.7,
+         -13.1
+        ],
+        [
+         19.9,
+         -14.3
+        ],
+        [
+         19.1,
+         -15.5
+        ],
+        [
+         18.2,
+         -16.6
+        ],
+        [
+         17.3,
+         -17.8
+        ],
+        [
+         16.4,
+         -18.9
+        ]
+       ]
+      }
+     },
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_sombra.png",
+      "ancora": [
+       26,
+       75
+      ],
+      "largura": 71,
+      "altura": 77,
+      "pixels": 44,
+      "sha256": "e29cd9642240d925cc30f2fa996c7cf91ee757b02ca47e5f6d336d3c9a865ee7"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte/ataque_corte_f6.png",
+     "largura": 71,
+     "altura": 77,
+     "ancora": [
+      26,
+      75
+     ],
+     "pivo": [
+      26,
+      75
+     ],
+     "ms": 120.0,
+     "sha256": "d403245abb4edd11cb55580e8fbc14571e8d7ae5f0f74069f3e15fa4af1b1fba",
+     "nome_origem": "e1_peregrino_ataque_corte_f6",
+     "corpo_bbox": [
+      8,
+      26,
+      61,
+      74
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_sombra.png",
+      "ancora": [
+       26,
+       75
+      ],
+      "largura": 71,
+      "altura": 77,
+      "pixels": 44,
+      "sha256": "e29cd9642240d925cc30f2fa996c7cf91ee757b02ca47e5f6d336d3c9a865ee7"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte/ataque_corte_f7.png",
+     "largura": 71,
+     "altura": 77,
+     "ancora": [
+      26,
+      75
+     ],
+     "pivo": [
+      26,
+      75
+     ],
+     "ms": 120.0,
+     "sha256": "3d1c922dd202af29c384f877fc31669fcf43399a130da124f811985dcd960046",
+     "nome_origem": "e1_peregrino_ataque_corte_f7",
+     "corpo_bbox": [
+      7,
+      26,
+      60,
+      74
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_sombra.png",
+      "ancora": [
+       26,
+       75
+      ],
+      "largura": 71,
+      "altura": 77,
+      "pixels": 44,
+      "sha256": "e29cd9642240d925cc30f2fa996c7cf91ee757b02ca47e5f6d336d3c9a865ee7"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte/ataque_corte_f8.png",
+     "largura": 71,
+     "altura": 77,
+     "ancora": [
+      26,
+      75
+     ],
+     "pivo": [
+      26,
+      75
+     ],
+     "ms": 120.0,
+     "sha256": "10b2cf0d1aff5e6d67d55c5874518cff2c6e353e7c13bc57cd2998ae36cc07de",
+     "nome_origem": "e1_peregrino_ataque_corte_f8",
+     "corpo_bbox": [
+      6,
+      25,
+      59,
+      74
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_sombra.png",
+      "ancora": [
+       26,
+       75
+      ],
+      "largura": 71,
+      "altura": 77,
+      "pixels": 44,
+      "sha256": "e29cd9642240d925cc30f2fa996c7cf91ee757b02ca47e5f6d336d3c9a865ee7"
+     }
+    }
+   ],
+   "efeitos": [
+    {
+     "quadro": 1,
+     "arquivo": "efeitos/ataque_corte_brilho_f1.png",
+     "ancora": [
+      26,
+      75
+     ],
+     "largura": 71,
+     "altura": 77,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 24,
+     "sha256": "7dd1b699ec442a114e3582bcc943fcecd2c01d06cd322e23b1bba09366539503"
+    },
+    {
+     "quadro": 2,
+     "arquivo": "efeitos/ataque_corte_brilho_f2.png",
+     "ancora": [
+      26,
+      75
+     ],
+     "largura": 71,
+     "altura": 77,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 81,
+     "sha256": "6fcb8874032e99811c60fe05f5b4c803fba5b780ec8b07c6a54289006c4dea39"
+    },
+    {
+     "quadro": 3,
+     "arquivo": "efeitos/ataque_corte_brilho_f3.png",
+     "ancora": [
+      26,
+      75
+     ],
+     "largura": 71,
+     "altura": 77,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 162,
+     "sha256": "a446b0eb29c86fbb750bbcab073fd7006464c2d6606e82329c42a831b388467c"
+    },
+    {
+     "quadro": 4,
+     "arquivo": "efeitos/ataque_corte_fx_f4.png",
+     "ancora": [
+      26,
+      75
+     ],
+     "largura": 71,
+     "altura": 77,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 471,
+     "sha256": "6496a947ca22a5dc349670c27110e338b528b01e6570492a948feabfec8111b2"
+    },
+    {
+     "quadro": 5,
+     "arquivo": "efeitos/ataque_corte_fx_f5.png",
+     "ancora": [
+      26,
+      75
+     ],
+     "largura": 71,
+     "altura": 77,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 977,
+     "sha256": "a1df299e2eba457b1aa101c0bc7e7a15cd176b0c781f7574a56358e5db2bba36"
+    }
+   ],
+   "camadas": "ORDEM DE TRAS PARA FRENTE: efeitos atras_do_corpo -> corpo (capa/asas ja no quadro) -> efeitos frente_do_corpo (brilho de aviso, atordoamento). Sombra em arquivo proprio.",
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/ataque_corte_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao"
+   },
+   "ataque": {
+    "attack_id": "peregrino_corte",
+    "tres": {
+     "windup_ms": 360.0,
+     "active_ms": 110.0,
+     "recovery_ms": 360.0,
+     "base_damage": 12,
+     "posture_damage": 8,
+     "parry_class": "parryable",
+     "hit_stop_ms": 30,
+     "hitbox_jogo": {
+      "tamanho_px": [
+       18.0,
+       7.0
+      ],
+      "centro_x": 19.0,
+      "angulo_inicio": -65.0,
+      "angulo_fim": 55.0
+     }
+    },
+    "fases": {
+     "PREPARACAO": {
+      "quadros": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ms": 360
+     },
+     "ATIVO": {
+      "quadros": [
+       4,
+       5
+      ],
+      "ms": 110
+     },
+     "RECUPERACAO": {
+      "quadros": [
+       6,
+       7,
+       8
+      ],
+      "ms": 360
+     }
+    },
+    "soma_confere_com_tres": true,
+    "aviso": {
+     "classe": "aparavel",
+     "cor": "PALIDO (indices 18/16, igual a luz do parry do Carrasco) = pode aparar",
+     "quadros_com_brilho": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "regra": "o brilho cresce quadro a quadro na PREPARACAO (aura 1 px -> 3 px) e some no ATIVO; o motor pode pulsar a camada frente_do_corpo; no Corvo o cuspe tambem acumula uma bola roxa na boca"
+    }
+   }
+  },
+  {
+   "id": "ataque_estocada",
+   "tipo": "animacao",
+   "estado_ia": [
+    "ATTACK_WINDUP",
+    "ATTACK_ACTIVE",
+    "ATTACK_RECOVERY"
+   ],
+   "loop": false,
+   "quadros_n": 11,
+   "duracao_total_ms": 950.0,
+   "nota_tempo": "ESTOCADA (aparavel): prep 5 q (430) / lente reta 2 q (100) / recup 4 q (420) = 950 ms",
+   "quadros": [
+    {
+     "arquivo": "quadros/ataque_estocada/ataque_estocada_f0.png",
+     "largura": 77,
+     "altura": 53,
+     "ancora": [
+      27,
+      51
+     ],
+     "pivo": [
+      27,
+      51
+     ],
+     "ms": 90.0,
+     "sha256": "7e644c7d5610e54edebde1711dd62454e5317425be84cf2a16abda6e96518ce4",
+     "nome_origem": "e1_peregrino_ataque_estocada_f0",
+     "corpo_bbox": [
+      4,
+      2,
+      55,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_estocada_sombra.png",
+      "ancora": [
+       27,
+       51
+      ],
+      "largura": 77,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "023f1028a20231e0c8f2adb4ed3b1d52cdf63e11d9263c9101a44eb9f92ea0b5"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_estocada/ataque_estocada_f1.png",
+     "largura": 77,
+     "altura": 53,
+     "ancora": [
+      27,
+      51
+     ],
+     "pivo": [
+      27,
+      51
+     ],
+     "ms": 90.0,
+     "sha256": "5f17d3f97fb5ecf6ccbe9f9d8bf0da0a692387d8cd116f040cfda38e9ddadf6c",
+     "nome_origem": "e1_peregrino_ataque_estocada_f1",
+     "corpo_bbox": [
+      3,
+      3,
+      56,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_estocada_sombra.png",
+      "ancora": [
+       27,
+       51
+      ],
+      "largura": 77,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "023f1028a20231e0c8f2adb4ed3b1d52cdf63e11d9263c9101a44eb9f92ea0b5"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_estocada/ataque_estocada_f2.png",
+     "largura": 77,
+     "altura": 53,
+     "ancora": [
+      27,
+      51
+     ],
+     "pivo": [
+      27,
+      51
+     ],
+     "ms": 90.0,
+     "sha256": "bd490221bdd2e6bccc4fd3a20fbd3732eca14f38acf46fdd4e423a5b7c6e53f7",
+     "nome_origem": "e1_peregrino_ataque_estocada_f2",
+     "corpo_bbox": [
+      2,
+      3,
+      54,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_estocada_sombra.png",
+      "ancora": [
+       27,
+       51
+      ],
+      "largura": 77,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "023f1028a20231e0c8f2adb4ed3b1d52cdf63e11d9263c9101a44eb9f92ea0b5"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_estocada/ataque_estocada_f3.png",
+     "largura": 77,
+     "altura": 53,
+     "ancora": [
+      27,
+      51
+     ],
+     "pivo": [
+      27,
+      51
+     ],
+     "ms": 80.0,
+     "sha256": "2a9fee815a4e468fd576a4473b6c4752ed735a3052d7ebfd9d44e2d6216d4104",
+     "nome_origem": "e1_peregrino_ataque_estocada_f3",
+     "corpo_bbox": [
+      2,
+      4,
+      53,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_estocada_sombra.png",
+      "ancora": [
+       27,
+       51
+      ],
+      "largura": 77,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "023f1028a20231e0c8f2adb4ed3b1d52cdf63e11d9263c9101a44eb9f92ea0b5"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_estocada/ataque_estocada_f4.png",
+     "largura": 77,
+     "altura": 53,
+     "ancora": [
+      27,
+      51
+     ],
+     "pivo": [
+      27,
+      51
+     ],
+     "ms": 80.0,
+     "sha256": "455b83d64d28321d7db96b738d5fcccd40e0b8d93d3cde96b19a104423b0fe63",
+     "nome_origem": "e1_peregrino_ataque_estocada_f4",
+     "corpo_bbox": [
+      1,
+      4,
+      51,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_estocada_sombra.png",
+      "ancora": [
+       27,
+       51
+      ],
+      "largura": 77,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "023f1028a20231e0c8f2adb4ed3b1d52cdf63e11d9263c9101a44eb9f92ea0b5"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_estocada/ataque_estocada_f5.png",
+     "largura": 77,
+     "altura": 53,
+     "ancora": [
+      27,
+      51
+     ],
+     "pivo": [
+      27,
+      51
+     ],
+     "ms": 50.0,
+     "sha256": "cc2f791e41408528989352a752ff1087c196c9fbdbde20a3505a645b180710f2",
+     "nome_origem": "e1_peregrino_ataque_estocada_f5",
+     "corpo_bbox": [
+      9,
+      3,
+      72,
+      50
+     ],
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       6,
+       -38,
+       40,
+       17
+      ],
+      "espelha_com_a_direcao": "inverter x quando o inimigo olha para a esquerda",
+      "lente": {
+       "poligono": [
+        [
+         6.2,
+         -32.4
+        ],
+        [
+         8.1,
+         -33.5
+        ],
+        [
+         10.1,
+         -34.5
+        ],
+        [
+         12.1,
+         -35.3
+        ],
+        [
+         14.2,
+         -36.1
+        ],
+        [
+         16.4,
+         -36.6
+        ],
+        [
+         18.5,
+         -37.1
+        ],
+        [
+         20.7,
+         -37.3
+        ],
+        [
+         22.9,
+         -37.5
+        ],
+        [
+         25.1,
+         -37.5
+        ],
+        [
+         27.3,
+         -37.3
+        ],
+        [
+         29.5,
+         -37.1
+        ],
+        [
+         31.6,
+         -36.6
+        ],
+        [
+         33.8,
+         -36.1
+        ],
+        [
+         35.9,
+         -35.3
+        ],
+        [
+         37.9,
+         -34.5
+        ],
+        [
+         39.9,
+         -33.5
+        ],
+        [
+         41.8,
+         -32.4
+        ],
+        [
+         40.5,
+         -30.3
+        ],
+        [
+         37.3,
+         -28.6
+        ],
+        [
+         34.7,
+         -27.4
+        ],
+        [
+         32.4,
+         -26.2
+        ],
+        [
+         30.5,
+         -25.1
+        ],
+        [
+         28.7,
+         -24.1
+        ],
+        [
+         27.2,
+         -23.3
+        ],
+        [
+         25.9,
+         -22.6
+        ],
+        [
+         24.6,
+         -22.2
+        ],
+        [
+         23.4,
+         -22.0
+        ],
+        [
+         22.2,
+         -22.0
+        ],
+        [
+         20.9,
+         -22.3
+        ],
+        [
+         19.5,
+         -22.9
+        ],
+        [
+         17.9,
+         -23.7
+        ],
+        [
+         16.1,
+         -24.8
+        ],
+        [
+         13.9,
+         -26.1
+        ],
+        [
+         11.3,
+         -27.6
+        ],
+        [
+         7.5,
+         -30.3
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         21.0,
+         -28.5
+        ],
+        [
+         22.5,
+         -28.8
+        ],
+        [
+         24.0,
+         -29.0
+        ],
+        [
+         25.5,
+         -29.3
+        ],
+        [
+         27.0,
+         -29.5
+        ],
+        [
+         28.5,
+         -29.7
+        ],
+        [
+         30.0,
+         -29.8
+        ],
+        [
+         31.5,
+         -29.8
+        ],
+        [
+         33.0,
+         -29.7
+        ],
+        [
+         34.5,
+         -29.5
+        ],
+        [
+         35.9,
+         -29.4
+        ],
+        [
+         37.4,
+         -29.3
+        ],
+        [
+         38.9,
+         -28.9
+        ],
+        [
+         40.3,
+         -28.3
+        ],
+        [
+         41.8,
+         -27.7
+        ],
+        [
+         43.2,
+         -27.0
+        ],
+        [
+         44.6,
+         -26.3
+        ],
+        [
+         46.0,
+         -25.6
+        ],
+        [
+         45.8,
+         -24.7
+        ],
+        [
+         44.3,
+         -24.4
+        ],
+        [
+         42.8,
+         -24.1
+        ],
+        [
+         41.3,
+         -23.7
+        ],
+        [
+         39.8,
+         -23.5
+        ],
+        [
+         38.3,
+         -23.2
+        ],
+        [
+         36.9,
+         -23.1
+        ],
+        [
+         35.4,
+         -23.2
+        ],
+        [
+         34.0,
+         -23.4
+        ],
+        [
+         32.6,
+         -23.5
+        ],
+        [
+         31.1,
+         -23.6
+        ],
+        [
+         29.7,
+         -23.7
+        ],
+        [
+         28.2,
+         -23.9
+        ],
+        [
+         26.8,
+         -24.3
+        ],
+        [
+         25.4,
+         -24.6
+        ],
+        [
+         23.9,
+         -24.9
+        ],
+        [
+         22.5,
+         -25.2
+        ],
+        [
+         21.0,
+         -25.5
+        ]
+       ]
+      }
+     },
+     "sombra": {
+      "arquivo": "sombras/ataque_estocada_sombra.png",
+      "ancora": [
+       27,
+       51
+      ],
+      "largura": 77,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "023f1028a20231e0c8f2adb4ed3b1d52cdf63e11d9263c9101a44eb9f92ea0b5"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_estocada/ataque_estocada_f6.png",
+     "largura": 77,
+     "altura": 53,
+     "ancora": [
+      27,
+      51
+     ],
+     "pivo": [
+      27,
+      51
+     ],
+     "ms": 50.0,
+     "sha256": "3eb2e96fec6c1eb6dfc2479cad3d4ea843fffaa8eedf1a7a696e35afe7afbb00",
+     "nome_origem": "e1_peregrino_ataque_estocada_f6",
+     "corpo_bbox": [
+      11,
+      3,
+      75,
+      50
+     ],
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       5,
+       -37,
+       44,
+       20
+      ],
+      "espelha_com_a_direcao": "inverter x quando o inimigo olha para a esquerda",
+      "lente": {
+       "poligono": [
+        [
+         5.2,
+         -30.3
+        ],
+        [
+         7.6,
+         -31.6
+        ],
+        [
+         10.0,
+         -32.8
+        ],
+        [
+         12.5,
+         -33.9
+        ],
+        [
+         15.0,
+         -34.7
+        ],
+        [
+         17.6,
+         -35.4
+        ],
+        [
+         20.3,
+         -36.0
+        ],
+        [
+         23.0,
+         -36.3
+        ],
+        [
+         25.7,
+         -36.5
+        ],
+        [
+         28.3,
+         -36.5
+        ],
+        [
+         31.0,
+         -36.3
+        ],
+        [
+         33.7,
+         -36.0
+        ],
+        [
+         36.4,
+         -35.4
+        ],
+        [
+         39.0,
+         -34.7
+        ],
+        [
+         41.5,
+         -33.9
+        ],
+        [
+         44.0,
+         -32.8
+        ],
+        [
+         46.4,
+         -31.6
+        ],
+        [
+         48.8,
+         -30.3
+        ],
+        [
+         47.5,
+         -28.2
+        ],
+        [
+         43.5,
+         -26.1
+        ],
+        [
+         40.3,
+         -24.6
+        ],
+        [
+         37.5,
+         -23.2
+        ],
+        [
+         35.1,
+         -21.8
+        ],
+        [
+         32.9,
+         -20.6
+        ],
+        [
+         31.0,
+         -19.6
+        ],
+        [
+         29.3,
+         -18.8
+        ],
+        [
+         27.8,
+         -18.2
+        ],
+        [
+         26.3,
+         -18.0
+        ],
+        [
+         24.7,
+         -18.0
+        ],
+        [
+         23.2,
+         -18.4
+        ],
+        [
+         21.4,
+         -19.1
+        ],
+        [
+         19.4,
+         -20.1
+        ],
+        [
+         17.1,
+         -21.4
+        ],
+        [
+         14.4,
+         -23.0
+        ],
+        [
+         11.1,
+         -24.9
+        ],
+        [
+         6.5,
+         -28.2
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         24.1,
+         -27.3
+        ],
+        [
+         25.6,
+         -27.5
+        ],
+        [
+         27.1,
+         -27.6
+        ],
+        [
+         28.6,
+         -27.7
+        ],
+        [
+         30.1,
+         -27.9
+        ],
+        [
+         31.6,
+         -28.0
+        ],
+        [
+         33.1,
+         -28.0
+        ],
+        [
+         34.6,
+         -27.8
+        ],
+        [
+         36.1,
+         -27.6
+        ],
+        [
+         37.6,
+         -27.4
+        ],
+        [
+         39.1,
+         -27.2
+        ],
+        [
+         40.5,
+         -26.9
+        ],
+        [
+         42.0,
+         -26.4
+        ],
+        [
+         43.4,
+         -25.8
+        ],
+        [
+         44.8,
+         -25.1
+        ],
+        [
+         46.1,
+         -24.3
+        ],
+        [
+         47.5,
+         -23.5
+        ],
+        [
+         48.8,
+         -22.7
+        ],
+        [
+         48.6,
+         -21.8
+        ],
+        [
+         47.1,
+         -21.5
+        ],
+        [
+         45.5,
+         -21.3
+        ],
+        [
+         44.0,
+         -21.1
+        ],
+        [
+         42.5,
+         -20.9
+        ],
+        [
+         41.0,
+         -20.8
+        ],
+        [
+         39.6,
+         -20.8
+        ],
+        [
+         38.1,
+         -21.0
+        ],
+        [
+         36.7,
+         -21.3
+        ],
+        [
+         35.3,
+         -21.5
+        ],
+        [
+         33.8,
+         -21.7
+        ],
+        [
+         32.4,
+         -21.8
+        ],
+        [
+         31.0,
+         -22.2
+        ],
+        [
+         29.6,
+         -22.6
+        ],
+        [
+         28.2,
+         -23.1
+        ],
+        [
+         26.7,
+         -23.5
+        ],
+        [
+         25.3,
+         -23.9
+        ],
+        [
+         23.9,
+         -24.3
+        ]
+       ]
+      }
+     },
+     "sombra": {
+      "arquivo": "sombras/ataque_estocada_sombra.png",
+      "ancora": [
+       27,
+       51
+      ],
+      "largura": 77,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "023f1028a20231e0c8f2adb4ed3b1d52cdf63e11d9263c9101a44eb9f92ea0b5"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_estocada/ataque_estocada_f7.png",
+     "largura": 77,
+     "altura": 53,
+     "ancora": [
+      27,
+      51
+     ],
+     "pivo": [
+      27,
+      51
+     ],
+     "ms": 105.0,
+     "sha256": "73b8229d122f064f899b0c5dc6264e5b814e87e5e170cadec9ad9f39b59ef2ae",
+     "nome_origem": "e1_peregrino_ataque_estocada_f7",
+     "corpo_bbox": [
+      10,
+      3,
+      73,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_estocada_sombra.png",
+      "ancora": [
+       27,
+       51
+      ],
+      "largura": 77,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "023f1028a20231e0c8f2adb4ed3b1d52cdf63e11d9263c9101a44eb9f92ea0b5"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_estocada/ataque_estocada_f8.png",
+     "largura": 77,
+     "altura": 53,
+     "ancora": [
+      27,
+      51
+     ],
+     "pivo": [
+      27,
+      51
+     ],
+     "ms": 105.0,
+     "sha256": "7ef7ccd8df68d90e658f5b7f68b60cf7583f19c4761cc43aea2544e07a7e3879",
+     "nome_origem": "e1_peregrino_ataque_estocada_f8",
+     "corpo_bbox": [
+      8,
+      3,
+      66,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_estocada_sombra.png",
+      "ancora": [
+       27,
+       51
+      ],
+      "largura": 77,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "023f1028a20231e0c8f2adb4ed3b1d52cdf63e11d9263c9101a44eb9f92ea0b5"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_estocada/ataque_estocada_f9.png",
+     "largura": 77,
+     "altura": 53,
+     "ancora": [
+      27,
+      51
+     ],
+     "pivo": [
+      27,
+      51
+     ],
+     "ms": 105.0,
+     "sha256": "399b72c12366a4c1d1fe8f10053b28a3120d0bb8e3d0209cea5a7727408f5fa3",
+     "nome_origem": "e1_peregrino_ataque_estocada_f9",
+     "corpo_bbox": [
+      7,
+      2,
+      60,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_estocada_sombra.png",
+      "ancora": [
+       27,
+       51
+      ],
+      "largura": 77,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "023f1028a20231e0c8f2adb4ed3b1d52cdf63e11d9263c9101a44eb9f92ea0b5"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_estocada/ataque_estocada_f10.png",
+     "largura": 77,
+     "altura": 53,
+     "ancora": [
+      27,
+      51
+     ],
+     "pivo": [
+      27,
+      51
+     ],
+     "ms": 105.0,
+     "sha256": "9ed8b91ba893a662aae75d917a60cb5b3f90969e788d807b57da4fca899e9b86",
+     "nome_origem": "e1_peregrino_ataque_estocada_f10",
+     "corpo_bbox": [
+      6,
+      1,
+      60,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_estocada_sombra.png",
+      "ancora": [
+       27,
+       51
+      ],
+      "largura": 77,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "023f1028a20231e0c8f2adb4ed3b1d52cdf63e11d9263c9101a44eb9f92ea0b5"
+     }
+    }
+   ],
+   "efeitos": [
+    {
+     "quadro": 1,
+     "arquivo": "efeitos/ataque_estocada_brilho_f1.png",
+     "ancora": [
+      27,
+      51
+     ],
+     "largura": 77,
+     "altura": 53,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 29,
+     "sha256": "54004def04bc255c805d60add74978d9e36468c574e06dc4bc8dd4035f154816"
+    },
+    {
+     "quadro": 2,
+     "arquivo": "efeitos/ataque_estocada_brilho_f2.png",
+     "ancora": [
+      27,
+      51
+     ],
+     "largura": 77,
+     "altura": 53,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 73,
+     "sha256": "81764853815eeb03d9888758f821273a24df59eb2b0a8a3e070ab4a1fde3e06a"
+    },
+    {
+     "quadro": 3,
+     "arquivo": "efeitos/ataque_estocada_brilho_f3.png",
+     "ancora": [
+      27,
+      51
+     ],
+     "largura": 77,
+     "altura": 53,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 70,
+     "sha256": "6af34cb5cac25ae993bad6db2bdd6e6550fcb184fadd62c067b5fb50a81394bf"
+    },
+    {
+     "quadro": 4,
+     "arquivo": "efeitos/ataque_estocada_brilho_f4.png",
+     "ancora": [
+      27,
+      51
+     ],
+     "largura": 77,
+     "altura": 53,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 117,
+     "sha256": "305fa2011341d29e20caf6160f9dfb4daa77dbc1fe2dedd583bda46df9e11203"
+    },
+    {
+     "quadro": 5,
+     "arquivo": "efeitos/ataque_estocada_fx_f5.png",
+     "ancora": [
+      27,
+      51
+     ],
+     "largura": 77,
+     "altura": 53,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 268,
+     "sha256": "ed865d594ecac980b1295443ae87ec9bbf0f1e53fa672dd54c738ac81f74a4a6"
+    },
+    {
+     "quadro": 6,
+     "arquivo": "efeitos/ataque_estocada_fx_f6.png",
+     "ancora": [
+      27,
+      51
+     ],
+     "largura": 77,
+     "altura": 53,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 409,
+     "sha256": "c149102efacb3b8c8990fc0cd58d5543522860316657d0d6d8f964dc87896769"
+    }
+   ],
+   "camadas": "ORDEM DE TRAS PARA FRENTE: efeitos atras_do_corpo -> corpo (capa/asas ja no quadro) -> efeitos frente_do_corpo (brilho de aviso, atordoamento). Sombra em arquivo proprio.",
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/ataque_estocada_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao"
+   },
+   "ataque": {
+    "attack_id": "peregrino_estocada",
+    "tres": {
+     "windup_ms": 430.0,
+     "active_ms": 100.0,
+     "recovery_ms": 420.0,
+     "base_damage": 14,
+     "posture_damage": 10,
+     "parry_class": "parryable",
+     "hit_stop_ms": 35,
+     "hitbox_jogo": {
+      "tamanho_px": [
+       22.0,
+       6.0
+      ],
+      "centro_x": 23.0,
+      "angulo_inicio": -18.0,
+      "angulo_fim": 8.0
+     }
+    },
+    "fases": {
+     "PREPARACAO": {
+      "quadros": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "ms": 430
+     },
+     "ATIVO": {
+      "quadros": [
+       5,
+       6
+      ],
+      "ms": 100
+     },
+     "RECUPERACAO": {
+      "quadros": [
+       7,
+       8,
+       9,
+       10
+      ],
+      "ms": 420
+     }
+    },
+    "soma_confere_com_tres": true,
+    "aviso": {
+     "classe": "aparavel",
+     "cor": "PALIDO (indices 18/16, igual a luz do parry do Carrasco) = pode aparar",
+     "quadros_com_brilho": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "regra": "o brilho cresce quadro a quadro na PREPARACAO (aura 1 px -> 3 px) e some no ATIVO; o motor pode pulsar a camada frente_do_corpo; no Corvo o cuspe tambem acumula uma bola roxa na boca"
+    }
+   }
+  },
+  {
+   "id": "ataque_corte_duplo",
+   "tipo": "animacao",
+   "estado_ia": [
+    "ATTACK_WINDUP",
+    "ATTACK_ACTIVE",
+    "ATTACK_RECOVERY"
+   ],
+   "loop": false,
+   "quadros_n": 14,
+   "duracao_total_ms": 1210.0,
+   "nota_tempo": "CORTE DUPLO (aparavel x2): golpe 1 prep 3 q (290) / ativo 2 q (90) / recup 1 q (110); golpe 2 (volta subindo) prep 2 q (220) / ativo 2 q (100) / recup 4 q (400) = 1210 ms",
+   "quadros": [
+    {
+     "arquivo": "quadros/ataque_corte_duplo/ataque_corte_duplo_f0.png",
+     "largura": 70,
+     "altura": 75,
+     "ancora": [
+      25,
+      73
+     ],
+     "pivo": [
+      25,
+      73
+     ],
+     "ms": 97.0,
+     "sha256": "d7c5a510c83a5cd6e07bde7410bbf54930d08440f501e467b86b962fcce33dbf",
+     "nome_origem": "e1_peregrino_ataque_corte_duplo_f0",
+     "corpo_bbox": [
+      3,
+      24,
+      58,
+      72
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_duplo_sombra.png",
+      "ancora": [
+       25,
+       73
+      ],
+      "largura": 70,
+      "altura": 75,
+      "pixels": 44,
+      "sha256": "e28c05d534e83030e9dbd87b01c7ad01b3987b3e318f78c3b36a9439491f2ebb"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte_duplo/ataque_corte_duplo_f1.png",
+     "largura": 70,
+     "altura": 75,
+     "ancora": [
+      25,
+      73
+     ],
+     "pivo": [
+      25,
+      73
+     ],
+     "ms": 97.0,
+     "sha256": "0c8dc796cbf217fba43f7bcefc3cc39222b9bb4f35692543b5cbc46987a08d6b",
+     "nome_origem": "e1_peregrino_ataque_corte_duplo_f1",
+     "corpo_bbox": [
+      2,
+      7,
+      39,
+      72
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_duplo_sombra.png",
+      "ancora": [
+       25,
+       73
+      ],
+      "largura": 70,
+      "altura": 75,
+      "pixels": 44,
+      "sha256": "e28c05d534e83030e9dbd87b01c7ad01b3987b3e318f78c3b36a9439491f2ebb"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte_duplo/ataque_corte_duplo_f2.png",
+     "largura": 70,
+     "altura": 75,
+     "ancora": [
+      25,
+      73
+     ],
+     "pivo": [
+      25,
+      73
+     ],
+     "ms": 96.0,
+     "sha256": "25871f1ef1ab7fac894eeb32e042e245940d5eb22b696066c35ff761a5b80917",
+     "nome_origem": "e1_peregrino_ataque_corte_duplo_f2",
+     "corpo_bbox": [
+      1,
+      4,
+      39,
+      72
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_duplo_sombra.png",
+      "ancora": [
+       25,
+       73
+      ],
+      "largura": 70,
+      "altura": 75,
+      "pixels": 44,
+      "sha256": "e28c05d534e83030e9dbd87b01c7ad01b3987b3e318f78c3b36a9439491f2ebb"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte_duplo/ataque_corte_duplo_f3.png",
+     "largura": 70,
+     "altura": 75,
+     "ancora": [
+      25,
+      73
+     ],
+     "pivo": [
+      25,
+      73
+     ],
+     "ms": 45.0,
+     "sha256": "47311c7c372a04aecc9cf88f3cb78c1395ef84558528ac42aef50d0b95c1f497",
+     "nome_origem": "e1_peregrino_ataque_corte_duplo_f3",
+     "corpo_bbox": [
+      5,
+      24,
+      63,
+      72
+     ],
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       0,
+       -72,
+       45,
+       42
+      ],
+      "espelha_com_a_direcao": "inverter x quando o inimigo olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         0.0,
+         -71.4
+        ],
+        [
+         3.2,
+         -71.5
+        ],
+        [
+         7.0,
+         -71.3
+        ],
+        [
+         10.8,
+         -70.8
+        ],
+        [
+         14.6,
+         -69.9
+        ],
+        [
+         18.2,
+         -68.6
+        ],
+        [
+         21.7,
+         -67.1
+        ],
+        [
+         25.0,
+         -65.2
+        ],
+        [
+         28.2,
+         -63.0
+        ],
+        [
+         31.1,
+         -60.5
+        ],
+        [
+         33.8,
+         -57.8
+        ],
+        [
+         36.2,
+         -54.8
+        ],
+        [
+         38.4,
+         -51.7
+        ],
+        [
+         40.2,
+         -48.3
+        ],
+        [
+         41.8,
+         -44.8
+        ],
+        [
+         43.0,
+         -41.2
+        ],
+        [
+         43.8,
+         -37.4
+        ],
+        [
+         44.3,
+         -33.6
+        ],
+        [
+         41.9,
+         -33.4
+        ],
+        [
+         38.7,
+         -36.5
+        ],
+        [
+         36.0,
+         -39.2
+        ],
+        [
+         33.4,
+         -41.6
+        ],
+        [
+         30.9,
+         -43.7
+        ],
+        [
+         28.4,
+         -45.5
+        ],
+        [
+         26.0,
+         -47.2
+        ],
+        [
+         23.7,
+         -48.7
+        ],
+        [
+         21.5,
+         -50.1
+        ],
+        [
+         19.4,
+         -51.5
+        ],
+        [
+         17.4,
+         -52.9
+        ],
+        [
+         15.3,
+         -54.4
+        ],
+        [
+         13.3,
+         -56.1
+        ],
+        [
+         11.1,
+         -57.9
+        ],
+        [
+         8.7,
+         -59.9
+        ],
+        [
+         6.1,
+         -62.1
+        ],
+        [
+         3.2,
+         -64.7
+        ],
+        [
+         0.0,
+         -68.4
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         13.3,
+         -33.4
+        ],
+        [
+         14.6,
+         -34.2
+        ],
+        [
+         16.0,
+         -34.9
+        ],
+        [
+         17.4,
+         -35.6
+        ],
+        [
+         18.7,
+         -36.3
+        ],
+        [
+         20.2,
+         -36.9
+        ],
+        [
+         21.6,
+         -37.5
+        ],
+        [
+         23.1,
+         -37.8
+        ],
+        [
+         24.6,
+         -38.1
+        ],
+        [
+         26.1,
+         -38.3
+        ],
+        [
+         27.6,
+         -38.5
+        ],
+        [
+         29.2,
+         -38.7
+        ],
+        [
+         30.7,
+         -38.6
+        ],
+        [
+         32.3,
+         -38.4
+        ],
+        [
+         33.8,
+         -38.0
+        ],
+        [
+         35.4,
+         -37.6
+        ],
+        [
+         36.9,
+         -37.1
+        ],
+        [
+         38.4,
+         -36.5
+        ],
+        [
+         38.4,
+         -35.6
+        ],
+        [
+         36.9,
+         -35.1
+        ],
+        [
+         35.5,
+         -34.6
+        ],
+        [
+         34.1,
+         -34.0
+        ],
+        [
+         32.7,
+         -33.5
+        ],
+        [
+         31.3,
+         -32.9
+        ],
+        [
+         29.9,
+         -32.6
+        ],
+        [
+         28.5,
+         -32.4
+        ],
+        [
+         27.1,
+         -32.2
+        ],
+        [
+         25.8,
+         -32.0
+        ],
+        [
+         24.4,
+         -31.7
+        ],
+        [
+         23.0,
+         -31.4
+        ],
+        [
+         21.6,
+         -31.3
+        ],
+        [
+         20.1,
+         -31.2
+        ],
+        [
+         18.7,
+         -31.1
+        ],
+        [
+         17.2,
+         -31.0
+        ],
+        [
+         15.8,
+         -30.8
+        ],
+        [
+         14.3,
+         -30.6
+        ]
+       ]
+      }
+     },
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_duplo_sombra.png",
+      "ancora": [
+       25,
+       73
+      ],
+      "largura": 70,
+      "altura": 75,
+      "pixels": 44,
+      "sha256": "e28c05d534e83030e9dbd87b01c7ad01b3987b3e318f78c3b36a9439491f2ebb"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte_duplo/ataque_corte_duplo_f4.png",
+     "largura": 70,
+     "altura": 75,
+     "ancora": [
+      25,
+      73
+     ],
+     "pivo": [
+      25,
+      73
+     ],
+     "ms": 45.0,
+     "sha256": "e90ee4df7a0f7d0bcd9bee4c9401d6ceaae5b8369a96fa9981398604af2bd0a2",
+     "nome_origem": "e1_peregrino_ataque_corte_duplo_f4",
+     "corpo_bbox": [
+      7,
+      24,
+      58,
+      72
+     ],
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       0,
+       -73,
+       46,
+       72
+      ],
+      "espelha_com_a_direcao": "inverter x quando o inimigo olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         0.0,
+         -72.4
+        ],
+        [
+         5.2,
+         -72.4
+        ],
+        [
+         11.0,
+         -71.7
+        ],
+        [
+         16.7,
+         -70.2
+        ],
+        [
+         22.1,
+         -67.9
+        ],
+        [
+         27.2,
+         -64.9
+        ],
+        [
+         31.8,
+         -61.3
+        ],
+        [
+         35.8,
+         -57.0
+        ],
+        [
+         39.2,
+         -52.2
+        ],
+        [
+         42.0,
+         -47.0
+        ],
+        [
+         43.9,
+         -41.4
+        ],
+        [
+         45.1,
+         -35.7
+        ],
+        [
+         45.5,
+         -29.8
+        ],
+        [
+         45.1,
+         -23.9
+        ],
+        [
+         43.8,
+         -18.2
+        ],
+        [
+         41.8,
+         -12.6
+        ],
+        [
+         39.0,
+         -7.4
+        ],
+        [
+         35.6,
+         -2.7
+        ],
+        [
+         33.6,
+         -4.3
+        ],
+        [
+         34.2,
+         -10.5
+        ],
+        [
+         34.5,
+         -15.9
+        ],
+        [
+         34.2,
+         -21.0
+        ],
+        [
+         33.4,
+         -25.6
+        ],
+        [
+         32.2,
+         -29.8
+        ],
+        [
+         30.7,
+         -33.7
+        ],
+        [
+         29.0,
+         -37.3
+        ],
+        [
+         27.2,
+         -40.5
+        ],
+        [
+         25.2,
+         -43.6
+        ],
+        [
+         23.1,
+         -46.5
+        ],
+        [
+         20.9,
+         -49.4
+        ],
+        [
+         18.5,
+         -52.3
+        ],
+        [
+         15.8,
+         -55.3
+        ],
+        [
+         12.7,
+         -58.4
+        ],
+        [
+         9.1,
+         -61.5
+        ],
+        [
+         4.8,
+         -64.9
+        ],
+        [
+         0.0,
+         -69.4
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         18.3,
+         -22.2
+        ],
+        [
+         19.6,
+         -21.4
+        ],
+        [
+         20.9,
+         -20.6
+        ],
+        [
+         22.2,
+         -19.8
+        ],
+        [
+         23.5,
+         -18.9
+        ],
+        [
+         24.7,
+         -18.0
+        ],
+        [
+         25.9,
+         -17.0
+        ],
+        [
+         26.9,
+         -15.9
+        ],
+        [
+         27.9,
+         -14.7
+        ],
+        [
+         28.9,
+         -13.6
+        ],
+        [
+         29.8,
+         -12.3
+        ],
+        [
+         30.8,
+         -11.1
+        ],
+        [
+         31.5,
+         -9.7
+        ],
+        [
+         32.0,
+         -8.3
+        ],
+        [
+         32.5,
+         -6.7
+        ],
+        [
+         32.9,
+         -5.2
+        ],
+        [
+         33.2,
+         -3.6
+        ],
+        [
+         33.5,
+         -2.1
+        ],
+        [
+         32.7,
+         -1.6
+        ],
+        [
+         31.5,
+         -2.6
+        ],
+        [
+         30.3,
+         -3.6
+        ],
+        [
+         29.1,
+         -4.5
+        ],
+        [
+         28.0,
+         -5.5
+        ],
+        [
+         26.8,
+         -6.4
+        ],
+        [
+         25.8,
+         -7.4
+        ],
+        [
+         25.0,
+         -8.5
+        ],
+        [
+         24.1,
+         -9.6
+        ],
+        [
+         23.2,
+         -10.7
+        ],
+        [
+         22.3,
+         -11.8
+        ],
+        [
+         21.4,
+         -12.8
+        ],
+        [
+         20.5,
+         -14.0
+        ],
+        [
+         19.8,
+         -15.2
+        ],
+        [
+         18.9,
+         -16.4
+        ],
+        [
+         18.1,
+         -17.6
+        ],
+        [
+         17.2,
+         -18.8
+        ],
+        [
+         16.3,
+         -19.9
+        ]
+       ]
+      }
+     },
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_duplo_sombra.png",
+      "ancora": [
+       25,
+       73
+      ],
+      "largura": 70,
+      "altura": 75,
+      "pixels": 44,
+      "sha256": "e28c05d534e83030e9dbd87b01c7ad01b3987b3e318f78c3b36a9439491f2ebb"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte_duplo/ataque_corte_duplo_f5.png",
+     "largura": 70,
+     "altura": 75,
+     "ancora": [
+      25,
+      73
+     ],
+     "pivo": [
+      25,
+      73
+     ],
+     "ms": 110.0,
+     "sha256": "078b721917d9ffaacc43e25da36a9510ec574332a61fbb078cb4e2b4e8c0c9e4",
+     "nome_origem": "e1_peregrino_ataque_corte_duplo_f5",
+     "corpo_bbox": [
+      7,
+      24,
+      58,
+      72
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_duplo_sombra.png",
+      "ancora": [
+       25,
+       73
+      ],
+      "largura": 70,
+      "altura": 75,
+      "pixels": 44,
+      "sha256": "e28c05d534e83030e9dbd87b01c7ad01b3987b3e318f78c3b36a9439491f2ebb"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte_duplo/ataque_corte_duplo_f6.png",
+     "largura": 70,
+     "altura": 75,
+     "ancora": [
+      25,
+      73
+     ],
+     "pivo": [
+      25,
+      73
+     ],
+     "ms": 110.0,
+     "sha256": "1fef9e1db26b8582db302c321e8303021be86298003ccc269a8d19916281336c",
+     "nome_origem": "e1_peregrino_ataque_corte_duplo_f6",
+     "corpo_bbox": [
+      6,
+      25,
+      59,
+      72
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_duplo_sombra.png",
+      "ancora": [
+       25,
+       73
+      ],
+      "largura": 70,
+      "altura": 75,
+      "pixels": 44,
+      "sha256": "e28c05d534e83030e9dbd87b01c7ad01b3987b3e318f78c3b36a9439491f2ebb"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte_duplo/ataque_corte_duplo_f7.png",
+     "largura": 70,
+     "altura": 75,
+     "ancora": [
+      25,
+      73
+     ],
+     "pivo": [
+      25,
+      73
+     ],
+     "ms": 110.0,
+     "sha256": "9a8499d413d66c769001a993efc90689c35c821dbef8eca5e12f3ba0b75b3d2a",
+     "nome_origem": "e1_peregrino_ataque_corte_duplo_f7",
+     "corpo_bbox": [
+      6,
+      25,
+      62,
+      72
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_duplo_sombra.png",
+      "ancora": [
+       25,
+       73
+      ],
+      "largura": 70,
+      "altura": 75,
+      "pixels": 44,
+      "sha256": "e28c05d534e83030e9dbd87b01c7ad01b3987b3e318f78c3b36a9439491f2ebb"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte_duplo/ataque_corte_duplo_f8.png",
+     "largura": 70,
+     "altura": 75,
+     "ancora": [
+      25,
+      73
+     ],
+     "pivo": [
+      25,
+      73
+     ],
+     "ms": 50.0,
+     "sha256": "3dac974fe4dd1eaaa698bb2bcfa2ef0fa0d2085505d79a24b07d238ea2ea7ae1",
+     "nome_origem": "e1_peregrino_ataque_corte_duplo_f8",
+     "corpo_bbox": [
+      7,
+      24,
+      64,
+      72
+     ],
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       17,
+       -35,
+       28,
+       35
+      ],
+      "espelha_com_a_direcao": "inverter x quando o inimigo olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         31.7,
+         0.0
+        ],
+        [
+         33.1,
+         -1.5
+        ],
+        [
+         34.7,
+         -3.3
+        ],
+        [
+         36.2,
+         -5.1
+        ],
+        [
+         37.6,
+         -7.1
+        ],
+        [
+         38.9,
+         -9.1
+        ],
+        [
+         40.0,
+         -11.2
+        ],
+        [
+         41.0,
+         -13.4
+        ],
+        [
+         41.9,
+         -15.6
+        ],
+        [
+         42.7,
+         -17.8
+        ],
+        [
+         43.3,
+         -20.1
+        ],
+        [
+         43.8,
+         -22.5
+        ],
+        [
+         44.2,
+         -24.8
+        ],
+        [
+         44.4,
+         -27.2
+        ],
+        [
+         44.5,
+         -29.6
+        ],
+        [
+         44.5,
+         -32.0
+        ],
+        [
+         44.3,
+         -34.3
+        ],
+        [
+         41.8,
+         -34.1
+        ],
+        [
+         39.2,
+         -31.7
+        ],
+        [
+         37.3,
+         -29.6
+        ],
+        [
+         35.5,
+         -27.8
+        ],
+        [
+         33.8,
+         -26.1
+        ],
+        [
+         32.3,
+         -24.6
+        ],
+        [
+         30.9,
+         -23.2
+        ],
+        [
+         29.7,
+         -21.8
+        ],
+        [
+         28.6,
+         -20.5
+        ],
+        [
+         27.8,
+         -19.2
+        ],
+        [
+         27.1,
+         -17.7
+        ],
+        [
+         26.6,
+         -16.2
+        ],
+        [
+         26.4,
+         -14.5
+        ],
+        [
+         26.2,
+         -12.6
+        ],
+        [
+         26.3,
+         -10.4
+        ],
+        [
+         26.4,
+         -7.8
+        ],
+        [
+         26.8,
+         -4.8
+        ],
+        [
+         28.1,
+         -0.1
+        ],
+        [
+         28.2,
+         -0.0
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         18.3,
+         -24.3
+        ],
+        [
+         19.8,
+         -23.9
+        ],
+        [
+         21.3,
+         -23.6
+        ],
+        [
+         22.8,
+         -23.2
+        ],
+        [
+         24.3,
+         -22.7
+        ],
+        [
+         25.8,
+         -22.3
+        ],
+        [
+         27.2,
+         -21.7
+        ],
+        [
+         28.5,
+         -20.9
+        ],
+        [
+         29.8,
+         -20.1
+        ],
+        [
+         31.1,
+         -19.3
+        ],
+        [
+         32.4,
+         -18.5
+        ],
+        [
+         33.7,
+         -17.6
+        ],
+        [
+         34.8,
+         -16.5
+        ],
+        [
+         35.7,
+         -15.2
+        ],
+        [
+         36.6,
+         -13.9
+        ],
+        [
+         37.5,
+         -12.6
+        ],
+        [
+         38.3,
+         -11.2
+        ],
+        [
+         39.0,
+         -9.8
+        ],
+        [
+         38.4,
+         -9.1
+        ],
+        [
+         37.0,
+         -9.7
+        ],
+        [
+         35.6,
+         -10.3
+        ],
+        [
+         34.2,
+         -10.8
+        ],
+        [
+         32.8,
+         -11.3
+        ],
+        [
+         31.4,
+         -11.9
+        ],
+        [
+         30.1,
+         -12.5
+        ],
+        [
+         29.0,
+         -13.3
+        ],
+        [
+         27.8,
+         -14.1
+        ],
+        [
+         26.6,
+         -14.8
+        ],
+        [
+         25.4,
+         -15.6
+        ],
+        [
+         24.2,
+         -16.3
+        ],
+        [
+         23.1,
+         -17.1
+        ],
+        [
+         21.9,
+         -18.0
+        ],
+        [
+         20.8,
+         -18.9
+        ],
+        [
+         19.6,
+         -19.8
+        ],
+        [
+         18.4,
+         -20.7
+        ],
+        [
+         17.2,
+         -21.5
+        ]
+       ]
+      }
+     },
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_duplo_sombra.png",
+      "ancora": [
+       25,
+       73
+      ],
+      "largura": 70,
+      "altura": 75,
+      "pixels": 44,
+      "sha256": "e28c05d534e83030e9dbd87b01c7ad01b3987b3e318f78c3b36a9439491f2ebb"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte_duplo/ataque_corte_duplo_f9.png",
+     "largura": 70,
+     "altura": 75,
+     "ancora": [
+      25,
+      73
+     ],
+     "pivo": [
+      25,
+      73
+     ],
+     "ms": 50.0,
+     "sha256": "095523654ccfb46af8b186ab6ffbe5c1131de7febf4ff647f1fba55ac43878ad",
+     "nome_origem": "e1_peregrino_ataque_corte_duplo_f9",
+     "corpo_bbox": [
+      5,
+      19,
+      57,
+      72
+     ],
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       11,
+       -63,
+       35,
+       63
+      ],
+      "espelha_com_a_direcao": "inverter x quando o inimigo olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         33.1,
+         0.0
+        ],
+        [
+         33.5,
+         -0.4
+        ],
+        [
+         36.4,
+         -3.7
+        ],
+        [
+         38.9,
+         -7.3
+        ],
+        [
+         41.0,
+         -11.1
+        ],
+        [
+         42.8,
+         -15.1
+        ],
+        [
+         44.1,
+         -19.2
+        ],
+        [
+         45.0,
+         -23.5
+        ],
+        [
+         45.4,
+         -27.8
+        ],
+        [
+         45.4,
+         -32.2
+        ],
+        [
+         45.0,
+         -36.5
+        ],
+        [
+         44.1,
+         -40.8
+        ],
+        [
+         42.8,
+         -44.9
+        ],
+        [
+         41.0,
+         -48.9
+        ],
+        [
+         38.9,
+         -52.7
+        ],
+        [
+         36.4,
+         -56.3
+        ],
+        [
+         33.5,
+         -59.6
+        ],
+        [
+         30.3,
+         -62.6
+        ],
+        [
+         28.7,
+         -60.6
+        ],
+        [
+         29.4,
+         -55.6
+        ],
+        [
+         30.1,
+         -51.3
+        ],
+        [
+         30.4,
+         -47.4
+        ],
+        [
+         30.5,
+         -43.7
+        ],
+        [
+         30.4,
+         -40.3
+        ],
+        [
+         30.1,
+         -37.1
+        ],
+        [
+         29.7,
+         -34.1
+        ],
+        [
+         29.3,
+         -31.4
+        ],
+        [
+         29.0,
+         -28.7
+        ],
+        [
+         28.7,
+         -26.0
+        ],
+        [
+         28.6,
+         -23.3
+        ],
+        [
+         28.4,
+         -20.4
+        ],
+        [
+         28.4,
+         -17.4
+        ],
+        [
+         28.3,
+         -14.0
+        ],
+        [
+         28.2,
+         -10.1
+        ],
+        [
+         28.1,
+         -5.7
+        ],
+        [
+         28.6,
+         0.0
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         11.9,
+         -38.2
+        ],
+        [
+         12.7,
+         -39.5
+        ],
+        [
+         13.6,
+         -40.8
+        ],
+        [
+         14.4,
+         -42.1
+        ],
+        [
+         15.4,
+         -43.3
+        ],
+        [
+         16.3,
+         -44.5
+        ],
+        [
+         17.3,
+         -45.7
+        ],
+        [
+         18.5,
+         -46.7
+        ],
+        [
+         19.7,
+         -47.6
+        ],
+        [
+         20.9,
+         -48.6
+        ],
+        [
+         22.2,
+         -49.5
+        ],
+        [
+         23.4,
+         -50.3
+        ],
+        [
+         24.8,
+         -51.0
+        ],
+        [
+         26.3,
+         -51.5
+        ],
+        [
+         27.9,
+         -51.9
+        ],
+        [
+         29.4,
+         -52.2
+        ],
+        [
+         31.0,
+         -52.5
+        ],
+        [
+         32.6,
+         -52.7
+        ],
+        [
+         33.0,
+         -51.9
+        ],
+        [
+         31.9,
+         -50.8
+        ],
+        [
+         30.9,
+         -49.6
+        ],
+        [
+         30.0,
+         -48.5
+        ],
+        [
+         29.0,
+         -47.4
+        ],
+        [
+         28.0,
+         -46.3
+        ],
+        [
+         27.0,
+         -45.3
+        ],
+        [
+         25.8,
+         -44.5
+        ],
+        [
+         24.7,
+         -43.6
+        ],
+        [
+         23.6,
+         -42.8
+        ],
+        [
+         22.5,
+         -41.9
+        ],
+        [
+         21.4,
+         -41.0
+        ],
+        [
+         20.2,
+         -40.2
+        ],
+        [
+         19.0,
+         -39.5
+        ],
+        [
+         17.7,
+         -38.7
+        ],
+        [
+         16.5,
+         -37.9
+        ],
+        [
+         15.3,
+         -37.1
+        ],
+        [
+         14.1,
+         -36.2
+        ]
+       ]
+      }
+     },
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_duplo_sombra.png",
+      "ancora": [
+       25,
+       73
+      ],
+      "largura": 70,
+      "altura": 75,
+      "pixels": 44,
+      "sha256": "e28c05d534e83030e9dbd87b01c7ad01b3987b3e318f78c3b36a9439491f2ebb"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte_duplo/ataque_corte_duplo_f10.png",
+     "largura": 70,
+     "altura": 75,
+     "ancora": [
+      25,
+      73
+     ],
+     "pivo": [
+      25,
+      73
+     ],
+     "ms": 100.0,
+     "sha256": "c489a332bdcd853ab8e70c142038490ceaa350941287b1a7133de0883d671c01",
+     "nome_origem": "e1_peregrino_ataque_corte_duplo_f10",
+     "corpo_bbox": [
+      4,
+      16,
+      56,
+      72
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_duplo_sombra.png",
+      "ancora": [
+       25,
+       73
+      ],
+      "largura": 70,
+      "altura": 75,
+      "pixels": 44,
+      "sha256": "e28c05d534e83030e9dbd87b01c7ad01b3987b3e318f78c3b36a9439491f2ebb"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte_duplo/ataque_corte_duplo_f11.png",
+     "largura": 70,
+     "altura": 75,
+     "ancora": [
+      25,
+      73
+     ],
+     "pivo": [
+      25,
+      73
+     ],
+     "ms": 100.0,
+     "sha256": "9fcf132a867479f5850f82a2f429a920f6e2475b5ed44277ee7c11e30d8ee902",
+     "nome_origem": "e1_peregrino_ataque_corte_duplo_f11",
+     "corpo_bbox": [
+      4,
+      23,
+      63,
+      72
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_duplo_sombra.png",
+      "ancora": [
+       25,
+       73
+      ],
+      "largura": 70,
+      "altura": 75,
+      "pixels": 44,
+      "sha256": "e28c05d534e83030e9dbd87b01c7ad01b3987b3e318f78c3b36a9439491f2ebb"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte_duplo/ataque_corte_duplo_f12.png",
+     "largura": 70,
+     "altura": 75,
+     "ancora": [
+      25,
+      73
+     ],
+     "pivo": [
+      25,
+      73
+     ],
+     "ms": 100.0,
+     "sha256": "7693f7cf939a745221775e92fc18f11f0b28b0a60a17e6c77943262ee49d4594",
+     "nome_origem": "e1_peregrino_ataque_corte_duplo_f12",
+     "corpo_bbox": [
+      4,
+      23,
+      61,
+      72
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_duplo_sombra.png",
+      "ancora": [
+       25,
+       73
+      ],
+      "largura": 70,
+      "altura": 75,
+      "pixels": 44,
+      "sha256": "e28c05d534e83030e9dbd87b01c7ad01b3987b3e318f78c3b36a9439491f2ebb"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_corte_duplo/ataque_corte_duplo_f13.png",
+     "largura": 70,
+     "altura": 75,
+     "ancora": [
+      25,
+      73
+     ],
+     "pivo": [
+      25,
+      73
+     ],
+     "ms": 100.0,
+     "sha256": "5b564ff8a2e315ed90f2fa254cfb69954c34ef41e64374b2ddd4b88f239887e3",
+     "nome_origem": "e1_peregrino_ataque_corte_duplo_f13",
+     "corpo_bbox": [
+      4,
+      23,
+      57,
+      72
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_corte_duplo_sombra.png",
+      "ancora": [
+       25,
+       73
+      ],
+      "largura": 70,
+      "altura": 75,
+      "pixels": 44,
+      "sha256": "e28c05d534e83030e9dbd87b01c7ad01b3987b3e318f78c3b36a9439491f2ebb"
+     }
+    }
+   ],
+   "efeitos": [
+    {
+     "quadro": 0,
+     "arquivo": "efeitos/ataque_corte_duplo_brilho_f0.png",
+     "ancora": [
+      25,
+      73
+     ],
+     "largura": 70,
+     "altura": 75,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 27,
+     "sha256": "1eb1200e8de3be4cee975abe1b5299836bb165cfa91e23cd42f33eeb6b1b46fc"
+    },
+    {
+     "quadro": 1,
+     "arquivo": "efeitos/ataque_corte_duplo_brilho_f1.png",
+     "ancora": [
+      25,
+      73
+     ],
+     "largura": 70,
+     "altura": 75,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 83,
+     "sha256": "362e4b39baea08640eb891c8e0a5b1fa7d841082a044082cfb0fc2d23159e8ec"
+    },
+    {
+     "quadro": 2,
+     "arquivo": "efeitos/ataque_corte_duplo_brilho_f2.png",
+     "ancora": [
+      25,
+      73
+     ],
+     "largura": 70,
+     "altura": 75,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 144,
+     "sha256": "8a3f7acca760d36da78a1b671265e28c541aef668c20ccc29c02d971da859bbe"
+    },
+    {
+     "quadro": 3,
+     "arquivo": "efeitos/ataque_corte_duplo_fx_f3.png",
+     "ancora": [
+      25,
+      73
+     ],
+     "largura": 70,
+     "altura": 75,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 449,
+     "sha256": "d4a9a0c4e4b954ea5d54204571b2e4c92130f4db797ee017ce919bcc3cab9145"
+    },
+    {
+     "quadro": 4,
+     "arquivo": "efeitos/ataque_corte_duplo_fx_f4.png",
+     "ancora": [
+      25,
+      73
+     ],
+     "largura": 70,
+     "altura": 75,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 807,
+     "sha256": "d0a110e5057a1cfe04412e5da7440ae17fca66c8357d59ad49bcafa64070f965"
+    },
+    {
+     "quadro": 6,
+     "arquivo": "efeitos/ataque_corte_duplo_brilho_f6.png",
+     "ancora": [
+      25,
+      73
+     ],
+     "largura": 70,
+     "altura": 75,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 115,
+     "sha256": "cba5dc2723a3b27e43114cdbaabce7d33dfc119deb8969b102825881b98f38fc"
+    },
+    {
+     "quadro": 7,
+     "arquivo": "efeitos/ataque_corte_duplo_brilho_f7.png",
+     "ancora": [
+      25,
+      73
+     ],
+     "largura": 70,
+     "altura": 75,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 204,
+     "sha256": "d51e8db9e6b9d40294314024131df9709a7d7b2a99c405a3dacdc27ea6eaf8fe"
+    },
+    {
+     "quadro": 8,
+     "arquivo": "efeitos/ataque_corte_duplo_fx_f8.png",
+     "ancora": [
+      25,
+      73
+     ],
+     "largura": 70,
+     "altura": 75,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 285,
+     "sha256": "fb6670c9fdf8e2158bca7b33f2616c568a44b8e8e6b25da1dd3a36de418378bb"
+    },
+    {
+     "quadro": 9,
+     "arquivo": "efeitos/ataque_corte_duplo_fx_f9.png",
+     "ancora": [
+      25,
+      73
+     ],
+     "largura": 70,
+     "altura": 75,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 599,
+     "sha256": "37b6a893eb500b9c8e5f6372d58be5997743a15baf3d9da4a0dccb6349d59b72"
+    }
+   ],
+   "camadas": "ORDEM DE TRAS PARA FRENTE: efeitos atras_do_corpo -> corpo (capa/asas ja no quadro) -> efeitos frente_do_corpo (brilho de aviso, atordoamento). Sombra em arquivo proprio.",
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/ataque_corte_duplo_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao"
+   },
+   "ataque": [
+    {
+     "attack_id": "peregrino_corte_duplo_1",
+     "tres": {
+      "windup_ms": 290.0,
+      "active_ms": 90.0,
+      "recovery_ms": 110.0,
+      "base_damage": 10,
+      "posture_damage": 6,
+      "parry_class": "parryable",
+      "hit_stop_ms": 25,
+      "hitbox_jogo": {
+       "tamanho_px": [
+        18.0,
+        7.0
+       ],
+       "centro_x": 19.0,
+       "angulo_inicio": -60.0,
+       "angulo_fim": 40.0
+      }
+     },
+     "fases": {
+      "PREPARACAO": {
+       "quadros": [
+        0,
+        1,
+        2
+       ],
+       "ms": 290
+      },
+      "ATIVO": {
+       "quadros": [
+        3,
+        4
+       ],
+       "ms": 90
+      },
+      "RECUPERACAO": {
+       "quadros": [
+        5
+       ],
+       "ms": 110
+      }
+     },
+     "soma_confere_com_tres": true,
+     "aviso": {
+      "classe": "aparavel",
+      "cor": "PALIDO (indices 18/16, igual a luz do parry do Carrasco) = pode aparar",
+      "quadros_com_brilho": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "regra": "o brilho cresce quadro a quadro na PREPARACAO (aura 1 px -> 3 px) e some no ATIVO; o motor pode pulsar a camada frente_do_corpo; no Corvo o cuspe tambem acumula uma bola roxa na boca"
+     }
+    },
+    {
+     "attack_id": "peregrino_corte_duplo_2",
+     "tres": {
+      "windup_ms": 220.0,
+      "active_ms": 100.0,
+      "recovery_ms": 400.0,
+      "base_damage": 12,
+      "posture_damage": 8,
+      "parry_class": "parryable",
+      "hit_stop_ms": 30,
+      "hitbox_jogo": {
+       "tamanho_px": [
+        18.0,
+        7.0
+       ],
+       "centro_x": 19.0,
+       "angulo_inicio": 50.0,
+       "angulo_fim": -50.0
+      }
+     },
+     "fases": {
+      "PREPARACAO": {
+       "quadros": [
+        6,
+        7
+       ],
+       "ms": 220
+      },
+      "ATIVO": {
+       "quadros": [
+        8,
+        9
+       ],
+       "ms": 100
+      },
+      "RECUPERACAO": {
+       "quadros": [
+        10,
+        11,
+        12,
+        13
+       ],
+       "ms": 400
+      }
+     },
+     "soma_confere_com_tres": true,
+     "aviso": {
+      "classe": "aparavel",
+      "cor": "PALIDO (indices 18/16, igual a luz do parry do Carrasco) = pode aparar",
+      "quadros_com_brilho": [
+       6,
+       7,
+       8
+      ],
+      "regra": "o brilho cresce quadro a quadro na PREPARACAO (aura 1 px -> 3 px) e some no ATIVO; o motor pode pulsar a camada frente_do_corpo; no Corvo o cuspe tambem acumula uma bola roxa na boca"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ataque_investida",
+   "tipo": "animacao",
+   "estado_ia": [
+    "ATTACK_WINDUP",
+    "ATTACK_ACTIVE",
+    "ATTACK_RECOVERY"
+   ],
+   "loop": false,
+   "quadros_n": 12,
+   "duracao_total_ms": 1240.0,
+   "nota_tempo": "INVESTIDA (aparavel): prep 5 q (540) agachado / ATIVO 2 q (180) estocada correndo: o motor desloca o corpo a 88 px/s so no ATIVO (~15,8 px) / recup 5 q (520) derrapando = 1240 ms",
+   "quadros": [
+    {
+     "arquivo": "quadros/ataque_investida/ataque_investida_f0.png",
+     "largura": 74,
+     "altura": 53,
+     "ancora": [
+      26,
+      51
+     ],
+     "pivo": [
+      26,
+      51
+     ],
+     "ms": 108.0,
+     "sha256": "e131c0c426607f65e8efd5150deaf3cc416df53d530065a01de87dd02f7968fc",
+     "nome_origem": "e1_peregrino_ataque_investida_f0",
+     "corpo_bbox": [
+      5,
+      3,
+      58,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_investida_sombra.png",
+      "ancora": [
+       26,
+       51
+      ],
+      "largura": 74,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "aee14bc279bead93781e491572f599deeb660f246664195e7fd7d5644b076b75"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_investida/ataque_investida_f1.png",
+     "largura": 74,
+     "altura": 53,
+     "ancora": [
+      26,
+      51
+     ],
+     "pivo": [
+      26,
+      51
+     ],
+     "ms": 108.0,
+     "sha256": "05d49b93d0a23f225e7e2870f0731ec72280358f1b41ca382d51203b71e60dc5",
+     "nome_origem": "e1_peregrino_ataque_investida_f1",
+     "corpo_bbox": [
+      4,
+      5,
+      56,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_investida_sombra.png",
+      "ancora": [
+       26,
+       51
+      ],
+      "largura": 74,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "aee14bc279bead93781e491572f599deeb660f246664195e7fd7d5644b076b75"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_investida/ataque_investida_f2.png",
+     "largura": 74,
+     "altura": 53,
+     "ancora": [
+      26,
+      51
+     ],
+     "pivo": [
+      26,
+      51
+     ],
+     "ms": 108.0,
+     "sha256": "a488666678eae94d96d8e4ba041889d899d2db056b144ba538443951d222f8cf",
+     "nome_origem": "e1_peregrino_ataque_investida_f2",
+     "corpo_bbox": [
+      2,
+      7,
+      53,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_investida_sombra.png",
+      "ancora": [
+       26,
+       51
+      ],
+      "largura": 74,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "aee14bc279bead93781e491572f599deeb660f246664195e7fd7d5644b076b75"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_investida/ataque_investida_f3.png",
+     "largura": 74,
+     "altura": 53,
+     "ancora": [
+      26,
+      51
+     ],
+     "pivo": [
+      26,
+      51
+     ],
+     "ms": 108.0,
+     "sha256": "a47940f7d434d6f6ef1370e543e82c23989f0980355774c25ec3b1ad6bbda8d7",
+     "nome_origem": "e1_peregrino_ataque_investida_f3",
+     "corpo_bbox": [
+      1,
+      7,
+      52,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_investida_sombra.png",
+      "ancora": [
+       26,
+       51
+      ],
+      "largura": 74,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "aee14bc279bead93781e491572f599deeb660f246664195e7fd7d5644b076b75"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_investida/ataque_investida_f4.png",
+     "largura": 74,
+     "altura": 53,
+     "ancora": [
+      26,
+      51
+     ],
+     "pivo": [
+      26,
+      51
+     ],
+     "ms": 108.0,
+     "sha256": "5982fc3c102dd1be5f36615a4666f919423292d3cad8f862f6333792c1716065",
+     "nome_origem": "e1_peregrino_ataque_investida_f4",
+     "corpo_bbox": [
+      1,
+      9,
+      51,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_investida_sombra.png",
+      "ancora": [
+       26,
+       51
+      ],
+      "largura": 74,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "aee14bc279bead93781e491572f599deeb660f246664195e7fd7d5644b076b75"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_investida/ataque_investida_f5.png",
+     "largura": 74,
+     "altura": 53,
+     "ancora": [
+      26,
+      51
+     ],
+     "pivo": [
+      26,
+      51
+     ],
+     "ms": 90.0,
+     "sha256": "c83c883f8d023f0019da924b82cc5eba3caf39fcc00d64740c7492c96146eb39",
+     "nome_origem": "e1_peregrino_ataque_investida_f5",
+     "corpo_bbox": [
+      7,
+      7,
+      72,
+      50
+     ],
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       21,
+       -45,
+       26,
+       23
+      ],
+      "espelha_com_a_direcao": "inverter x quando o inimigo olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         39.8,
+         -44.7
+        ],
+        [
+         40.3,
+         -43.5
+        ],
+        [
+         40.8,
+         -42.2
+        ],
+        [
+         41.3,
+         -41.0
+        ],
+        [
+         41.7,
+         -39.7
+        ],
+        [
+         42.1,
+         -38.4
+        ],
+        [
+         42.4,
+         -37.1
+        ],
+        [
+         42.7,
+         -35.8
+        ],
+        [
+         43.0,
+         -34.5
+        ],
+        [
+         43.2,
+         -33.2
+        ],
+        [
+         43.3,
+         -31.8
+        ],
+        [
+         43.4,
+         -30.5
+        ],
+        [
+         43.5,
+         -29.2
+        ],
+        [
+         43.5,
+         -27.8
+        ],
+        [
+         43.5,
+         -26.5
+        ],
+        [
+         43.4,
+         -25.2
+        ],
+        [
+         43.3,
+         -23.8
+        ],
+        [
+         43.1,
+         -22.5
+        ],
+        [
+         40.6,
+         -22.9
+        ],
+        [
+         38.8,
+         -24.3
+        ],
+        [
+         37.4,
+         -25.6
+        ],
+        [
+         36.1,
+         -26.8
+        ],
+        [
+         35.0,
+         -27.9
+        ],
+        [
+         34.1,
+         -28.9
+        ],
+        [
+         33.2,
+         -29.9
+        ],
+        [
+         32.5,
+         -30.8
+        ],
+        [
+         32.0,
+         -31.7
+        ],
+        [
+         31.6,
+         -32.6
+        ],
+        [
+         31.5,
+         -33.5
+        ],
+        [
+         31.5,
+         -34.5
+        ],
+        [
+         31.7,
+         -35.6
+        ],
+        [
+         32.2,
+         -36.7
+        ],
+        [
+         32.9,
+         -38.0
+        ],
+        [
+         33.8,
+         -39.5
+        ],
+        [
+         35.1,
+         -41.2
+        ],
+        [
+         37.5,
+         -43.6
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         21.8,
+         -27.9
+        ],
+        [
+         23.2,
+         -28.4
+        ],
+        [
+         24.7,
+         -28.8
+        ],
+        [
+         26.2,
+         -29.2
+        ],
+        [
+         27.7,
+         -29.6
+        ],
+        [
+         29.2,
+         -29.9
+        ],
+        [
+         30.7,
+         -30.1
+        ],
+        [
+         32.3,
+         -30.1
+        ],
+        [
+         33.8,
+         -30.1
+        ],
+        [
+         35.3,
+         -30.0
+        ],
+        [
+         36.8,
+         -29.9
+        ],
+        [
+         38.4,
+         -29.8
+        ],
+        [
+         39.9,
+         -29.4
+        ],
+        [
+         41.3,
+         -28.8
+        ],
+        [
+         42.8,
+         -28.1
+        ],
+        [
+         44.2,
+         -27.4
+        ],
+        [
+         45.6,
+         -26.6
+        ],
+        [
+         46.9,
+         -25.7
+        ],
+        [
+         46.7,
+         -24.9
+        ],
+        [
+         45.2,
+         -24.6
+        ],
+        [
+         43.7,
+         -24.4
+        ],
+        [
+         42.2,
+         -24.1
+        ],
+        [
+         40.7,
+         -23.9
+        ],
+        [
+         39.3,
+         -23.7
+        ],
+        [
+         37.8,
+         -23.6
+        ],
+        [
+         36.4,
+         -23.7
+        ],
+        [
+         35.0,
+         -23.8
+        ],
+        [
+         33.6,
+         -23.9
+        ],
+        [
+         32.2,
+         -23.9
+        ],
+        [
+         30.8,
+         -23.9
+        ],
+        [
+         29.4,
+         -24.1
+        ],
+        [
+         28.0,
+         -24.3
+        ],
+        [
+         26.5,
+         -24.5
+        ],
+        [
+         25.1,
+         -24.7
+        ],
+        [
+         23.6,
+         -24.8
+        ],
+        [
+         22.2,
+         -24.9
+        ]
+       ]
+      }
+     },
+     "sombra": {
+      "arquivo": "sombras/ataque_investida_sombra.png",
+      "ancora": [
+       26,
+       51
+      ],
+      "largura": 74,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "aee14bc279bead93781e491572f599deeb660f246664195e7fd7d5644b076b75"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_investida/ataque_investida_f6.png",
+     "largura": 74,
+     "altura": 53,
+     "ancora": [
+      26,
+      51
+     ],
+     "pivo": [
+      26,
+      51
+     ],
+     "ms": 90.0,
+     "sha256": "0e00d6b410ca5400769c5537456d726c5926571e60bd5468296a0d4cdae9b366",
+     "nome_origem": "e1_peregrino_ataque_investida_f6",
+     "corpo_bbox": [
+      6,
+      7,
+      71,
+      50
+     ],
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       24,
+       -46,
+       22,
+       39
+      ],
+      "espelha_com_a_direcao": "inverter x quando o inimigo olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         41.6,
+         -45.5
+        ],
+        [
+         42.4,
+         -43.6
+        ],
+        [
+         43.2,
+         -41.7
+        ],
+        [
+         43.8,
+         -39.7
+        ],
+        [
+         44.4,
+         -37.7
+        ],
+        [
+         44.8,
+         -35.6
+        ],
+        [
+         45.1,
+         -33.6
+        ],
+        [
+         45.4,
+         -31.5
+        ],
+        [
+         45.5,
+         -29.4
+        ],
+        [
+         45.5,
+         -27.3
+        ],
+        [
+         45.4,
+         -25.2
+        ],
+        [
+         45.2,
+         -23.2
+        ],
+        [
+         44.9,
+         -21.1
+        ],
+        [
+         44.5,
+         -19.0
+        ],
+        [
+         44.0,
+         -17.0
+        ],
+        [
+         43.4,
+         -15.0
+        ],
+        [
+         42.7,
+         -13.0
+        ],
+        [
+         41.9,
+         -11.1
+        ],
+        [
+         39.6,
+         -12.1
+        ],
+        [
+         38.0,
+         -14.9
+        ],
+        [
+         36.9,
+         -17.2
+        ],
+        [
+         35.9,
+         -19.2
+        ],
+        [
+         35.0,
+         -21.2
+        ],
+        [
+         34.1,
+         -22.9
+        ],
+        [
+         33.4,
+         -24.5
+        ],
+        [
+         32.7,
+         -26.1
+        ],
+        [
+         32.3,
+         -27.5
+        ],
+        [
+         32.0,
+         -28.9
+        ],
+        [
+         31.9,
+         -30.4
+        ],
+        [
+         32.1,
+         -31.8
+        ],
+        [
+         32.4,
+         -33.3
+        ],
+        [
+         33.0,
+         -35.0
+        ],
+        [
+         33.9,
+         -36.8
+        ],
+        [
+         35.0,
+         -38.8
+        ],
+        [
+         36.5,
+         -41.2
+        ],
+        [
+         39.3,
+         -44.5
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         25.4,
+         -23.2
+        ],
+        [
+         26.8,
+         -22.8
+        ],
+        [
+         28.3,
+         -22.4
+        ],
+        [
+         29.8,
+         -21.9
+        ],
+        [
+         31.2,
+         -21.4
+        ],
+        [
+         32.7,
+         -20.9
+        ],
+        [
+         34.1,
+         -20.3
+        ],
+        [
+         35.4,
+         -19.5
+        ],
+        [
+         36.7,
+         -18.6
+        ],
+        [
+         38.0,
+         -17.7
+        ],
+        [
+         39.2,
+         -16.9
+        ],
+        [
+         40.4,
+         -15.9
+        ],
+        [
+         41.5,
+         -14.8
+        ],
+        [
+         42.4,
+         -13.5
+        ],
+        [
+         43.3,
+         -12.2
+        ],
+        [
+         44.1,
+         -10.8
+        ],
+        [
+         44.8,
+         -9.4
+        ],
+        [
+         45.5,
+         -8.0
+        ],
+        [
+         44.9,
+         -7.3
+        ],
+        [
+         43.5,
+         -8.0
+        ],
+        [
+         42.1,
+         -8.6
+        ],
+        [
+         40.7,
+         -9.1
+        ],
+        [
+         39.3,
+         -9.7
+        ],
+        [
+         38.0,
+         -10.3
+        ],
+        [
+         36.7,
+         -11.0
+        ],
+        [
+         35.6,
+         -11.8
+        ],
+        [
+         34.4,
+         -12.6
+        ],
+        [
+         33.3,
+         -13.4
+        ],
+        [
+         32.1,
+         -14.2
+        ],
+        [
+         30.9,
+         -15.0
+        ],
+        [
+         29.8,
+         -15.9
+        ],
+        [
+         28.7,
+         -16.8
+        ],
+        [
+         27.6,
+         -17.7
+        ],
+        [
+         26.5,
+         -18.7
+        ],
+        [
+         25.3,
+         -19.5
+        ],
+        [
+         24.1,
+         -20.4
+        ]
+       ]
+      }
+     },
+     "sombra": {
+      "arquivo": "sombras/ataque_investida_sombra.png",
+      "ancora": [
+       26,
+       51
+      ],
+      "largura": 74,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "aee14bc279bead93781e491572f599deeb660f246664195e7fd7d5644b076b75"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_investida/ataque_investida_f7.png",
+     "largura": 74,
+     "altura": 53,
+     "ancora": [
+      26,
+      51
+     ],
+     "pivo": [
+      26,
+      51
+     ],
+     "ms": 104.0,
+     "sha256": "bade47cabc917ed449b9cf6c1e7f3fc9907640823ad44aeb194f3dedbaa29a94",
+     "nome_origem": "e1_peregrino_ataque_investida_f7",
+     "corpo_bbox": [
+      6,
+      5,
+      68,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_investida_sombra.png",
+      "ancora": [
+       26,
+       51
+      ],
+      "largura": 74,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "aee14bc279bead93781e491572f599deeb660f246664195e7fd7d5644b076b75"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_investida/ataque_investida_f8.png",
+     "largura": 74,
+     "altura": 53,
+     "ancora": [
+      26,
+      51
+     ],
+     "pivo": [
+      26,
+      51
+     ],
+     "ms": 104.0,
+     "sha256": "46ee95c37b4a53d8abc066ffee17a1386c83a7740a9663923b96cfad018fbc7e",
+     "nome_origem": "e1_peregrino_ataque_investida_f8",
+     "corpo_bbox": [
+      9,
+      4,
+      64,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_investida_sombra.png",
+      "ancora": [
+       26,
+       51
+      ],
+      "largura": 74,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "aee14bc279bead93781e491572f599deeb660f246664195e7fd7d5644b076b75"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_investida/ataque_investida_f9.png",
+     "largura": 74,
+     "altura": 53,
+     "ancora": [
+      26,
+      51
+     ],
+     "pivo": [
+      26,
+      51
+     ],
+     "ms": 104.0,
+     "sha256": "3d9270c410176e46d78814990af536dcfc160bd84f81604cf4b8e2c3cbac8bde",
+     "nome_origem": "e1_peregrino_ataque_investida_f9",
+     "corpo_bbox": [
+      7,
+      3,
+      61,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_investida_sombra.png",
+      "ancora": [
+       26,
+       51
+      ],
+      "largura": 74,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "aee14bc279bead93781e491572f599deeb660f246664195e7fd7d5644b076b75"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_investida/ataque_investida_f10.png",
+     "largura": 74,
+     "altura": 53,
+     "ancora": [
+      26,
+      51
+     ],
+     "pivo": [
+      26,
+      51
+     ],
+     "ms": 104.0,
+     "sha256": "2e6e3016decff08377e37dd097782736f6d3fe6ba6a2fc5ca89798638536f274",
+     "nome_origem": "e1_peregrino_ataque_investida_f10",
+     "corpo_bbox": [
+      6,
+      2,
+      61,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_investida_sombra.png",
+      "ancora": [
+       26,
+       51
+      ],
+      "largura": 74,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "aee14bc279bead93781e491572f599deeb660f246664195e7fd7d5644b076b75"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_investida/ataque_investida_f11.png",
+     "largura": 74,
+     "altura": 53,
+     "ancora": [
+      26,
+      51
+     ],
+     "pivo": [
+      26,
+      51
+     ],
+     "ms": 104.0,
+     "sha256": "a55061fbfddf9e7216c4f3ea53366a03d375412d80dab75b3acfe9f1dc4e4f6e",
+     "nome_origem": "e1_peregrino_ataque_investida_f11",
+     "corpo_bbox": [
+      5,
+      1,
+      59,
+      50
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_investida_sombra.png",
+      "ancora": [
+       26,
+       51
+      ],
+      "largura": 74,
+      "altura": 53,
+      "pixels": 44,
+      "sha256": "aee14bc279bead93781e491572f599deeb660f246664195e7fd7d5644b076b75"
+     }
+    }
+   ],
+   "efeitos": [
+    {
+     "quadro": 1,
+     "arquivo": "efeitos/ataque_investida_brilho_f1.png",
+     "ancora": [
+      26,
+      51
+     ],
+     "largura": 74,
+     "altura": 53,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 26,
+     "sha256": "8874f1988cf9d131de9d04db293604b34ff0fc7aa8cee16f5ec42b51a6405092"
+    },
+    {
+     "quadro": 2,
+     "arquivo": "efeitos/ataque_investida_brilho_f2.png",
+     "ancora": [
+      26,
+      51
+     ],
+     "largura": 74,
+     "altura": 53,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 71,
+     "sha256": "030a9523fa5e9c45d7afa50cab4c85699dbf7cbf485b38b250f67049937d3ed9"
+    },
+    {
+     "quadro": 3,
+     "arquivo": "efeitos/ataque_investida_brilho_f3.png",
+     "ancora": [
+      26,
+      51
+     ],
+     "largura": 74,
+     "altura": 53,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 68,
+     "sha256": "f36327f92eba963730765019d78a6a74bd01acfcb82be8f6f680cdf037277d6e"
+    },
+    {
+     "quadro": 4,
+     "arquivo": "efeitos/ataque_investida_brilho_f4.png",
+     "ancora": [
+      26,
+      51
+     ],
+     "largura": 74,
+     "altura": 53,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 107,
+     "sha256": "5b495f135ae1225735ed91389043bd55d1c186e247ec15aea62c812e804071b8"
+    },
+    {
+     "quadro": 5,
+     "arquivo": "efeitos/ataque_investida_fx_f5.png",
+     "ancora": [
+      26,
+      51
+     ],
+     "largura": 74,
+     "altura": 53,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 125,
+     "sha256": "6543915dd2a780af935ebfca27d64148774efda4a74e565a9365481c86b30618"
+    },
+    {
+     "quadro": 6,
+     "arquivo": "efeitos/ataque_investida_fx_f6.png",
+     "ancora": [
+      26,
+      51
+     ],
+     "largura": 74,
+     "altura": 53,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 227,
+     "sha256": "fb715de14b3c867473ccf79e84b1ff023b6eb3117207620f612ada08641037da"
+    },
+    {
+     "quadro": 7,
+     "arquivo": "efeitos/ataque_investida_fx_f7.png",
+     "ancora": [
+      26,
+      51
+     ],
+     "largura": 74,
+     "altura": 53,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 22,
+     "sha256": "88dc10d0efcebb6b329c3e735b1ffb26d0dd30d7f4ba717042d330d20b85f5f3"
+    },
+    {
+     "quadro": 8,
+     "arquivo": "efeitos/ataque_investida_fx_f8.png",
+     "ancora": [
+      26,
+      51
+     ],
+     "largura": 74,
+     "altura": 53,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 13,
+     "sha256": "bcc799521dc468d137790e3ba37bad251b66fbf62f0d586a42ddd2b3837e3514"
+    }
+   ],
+   "camadas": "ORDEM DE TRAS PARA FRENTE: efeitos atras_do_corpo -> corpo (capa/asas ja no quadro) -> efeitos frente_do_corpo (brilho de aviso, atordoamento). Sombra em arquivo proprio.",
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/ataque_investida_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao"
+   },
+   "desloc_ativo_px": 15.84,
+   "vel_ativo_px_s": 88,
+   "ataque": {
+    "attack_id": "peregrino_investida",
+    "tres": {
+     "windup_ms": 540.0,
+     "active_ms": 180.0,
+     "recovery_ms": 520.0,
+     "base_damage": 18,
+     "posture_damage": 14,
+     "parry_class": "parryable",
+     "hit_stop_ms": 45,
+     "hitbox_jogo": {
+      "tamanho_px": [
+       24.0,
+       8.0
+      ],
+      "centro_x": 24.0,
+      "angulo_inicio": -25.0,
+      "angulo_fim": 24.0
+     }
+    },
+    "fases": {
+     "PREPARACAO": {
+      "quadros": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "ms": 540
+     },
+     "ATIVO": {
+      "quadros": [
+       5,
+       6
+      ],
+      "ms": 180
+     },
+     "RECUPERACAO": {
+      "quadros": [
+       7,
+       8,
+       9,
+       10,
+       11
+      ],
+      "ms": 520
+     }
+    },
+    "soma_confere_com_tres": true,
+    "aviso": {
+     "classe": "aparavel",
+     "cor": "PALIDO (indices 18/16, igual a luz do parry do Carrasco) = pode aparar",
+     "quadros_com_brilho": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "regra": "o brilho cresce quadro a quadro na PREPARACAO (aura 1 px -> 3 px) e some no ATIVO; o motor pode pulsar a camada frente_do_corpo; no Corvo o cuspe tambem acumula uma bola roxa na boca"
+    }
+   }
+  },
+  {
+   "id": "ataque_penitencia",
+   "tipo": "animacao",
+   "estado_ia": [
+    "ATTACK_WINDUP",
+    "ATTACK_ACTIVE",
+    "ATTACK_RECOVERY"
+   ],
+   "loop": false,
+   "quadros_n": 14,
+   "duracao_total_ms": 1480.0,
+   "nota_tempo": "PENITENCIA (NAO aparavel, o mais forte): prep 6 q (690) ergue a lamina, grita, aviso VERMELHO / martelada 2 q (140) arco -100..80 / recup 6 q (650) lamina cravada no chao = 1480 ms",
+   "quadros": [
+    {
+     "arquivo": "quadros/ataque_penitencia/ataque_penitencia_f0.png",
+     "largura": 77,
+     "altura": 88,
+     "ancora": [
+      29,
+      77
+     ],
+     "pivo": [
+      29,
+      77
+     ],
+     "ms": 115.0,
+     "sha256": "c966bedd8380c2756269327806c6c5f1f0d652341db3a02e0e6891ba0dc1225c",
+     "nome_origem": "e1_peregrino_ataque_penitencia_f0",
+     "corpo_bbox": [
+      7,
+      28,
+      61,
+      76
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_penitencia_sombra.png",
+      "ancora": [
+       29,
+       77
+      ],
+      "largura": 77,
+      "altura": 88,
+      "pixels": 44,
+      "sha256": "047ede6e3a43a31db4080d7febc33b650aa4d5ea333388b70c56a3499befb988"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_penitencia/ataque_penitencia_f1.png",
+     "largura": 77,
+     "altura": 88,
+     "ancora": [
+      29,
+      77
+     ],
+     "pivo": [
+      29,
+      77
+     ],
+     "ms": 115.0,
+     "sha256": "6a93b971830d80ec75fb1fe9986513f566038c1f69033ee9b198df0fc003f89a",
+     "nome_origem": "e1_peregrino_ataque_penitencia_f1",
+     "corpo_bbox": [
+      5,
+      11,
+      42,
+      76
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_penitencia_sombra.png",
+      "ancora": [
+       29,
+       77
+      ],
+      "largura": 77,
+      "altura": 88,
+      "pixels": 44,
+      "sha256": "047ede6e3a43a31db4080d7febc33b650aa4d5ea333388b70c56a3499befb988"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_penitencia/ataque_penitencia_f2.png",
+     "largura": 77,
+     "altura": 88,
+     "ancora": [
+      29,
+      77
+     ],
+     "pivo": [
+      29,
+      77
+     ],
+     "ms": 115.0,
+     "sha256": "375798d8db22f1ed49075e4b8a1d5eb5f89e3169e94d9951992bc68a4523dd7e",
+     "nome_origem": "e1_peregrino_ataque_penitencia_f2",
+     "corpo_bbox": [
+      4,
+      5,
+      41,
+      76
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_penitencia_sombra.png",
+      "ancora": [
+       29,
+       77
+      ],
+      "largura": 77,
+      "altura": 88,
+      "pixels": 44,
+      "sha256": "047ede6e3a43a31db4080d7febc33b650aa4d5ea333388b70c56a3499befb988"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_penitencia/ataque_penitencia_f3.png",
+     "largura": 77,
+     "altura": 88,
+     "ancora": [
+      29,
+      77
+     ],
+     "pivo": [
+      29,
+      77
+     ],
+     "ms": 115.0,
+     "sha256": "f951c2a04775af6e7f3aeb0d2d554295202f0ec325d14c1b8fb2a1aa73aaa40e",
+     "nome_origem": "e1_peregrino_ataque_penitencia_f3",
+     "corpo_bbox": [
+      3,
+      3,
+      41,
+      76
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_penitencia_sombra.png",
+      "ancora": [
+       29,
+       77
+      ],
+      "largura": 77,
+      "altura": 88,
+      "pixels": 44,
+      "sha256": "047ede6e3a43a31db4080d7febc33b650aa4d5ea333388b70c56a3499befb988"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_penitencia/ataque_penitencia_f4.png",
+     "largura": 77,
+     "altura": 88,
+     "ancora": [
+      29,
+      77
+     ],
+     "pivo": [
+      29,
+      77
+     ],
+     "ms": 115.0,
+     "sha256": "7ce8c560bea5b0189a872130fec65d1581eef5a2913e4cdcf60655d22124bf2e",
+     "nome_origem": "e1_peregrino_ataque_penitencia_f4",
+     "corpo_bbox": [
+      2,
+      4,
+      44,
+      76
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_penitencia_sombra.png",
+      "ancora": [
+       29,
+       77
+      ],
+      "largura": 77,
+      "altura": 88,
+      "pixels": 44,
+      "sha256": "047ede6e3a43a31db4080d7febc33b650aa4d5ea333388b70c56a3499befb988"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_penitencia/ataque_penitencia_f5.png",
+     "largura": 77,
+     "altura": 88,
+     "ancora": [
+      29,
+      77
+     ],
+     "pivo": [
+      29,
+      77
+     ],
+     "ms": 115.0,
+     "sha256": "bb4a3bdb740cab7da75d08c03b065e8b99b0d6ca8d92cacb344ba3eeee9e0859",
+     "nome_origem": "e1_peregrino_ataque_penitencia_f5",
+     "corpo_bbox": [
+      1,
+      5,
+      45,
+      76
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_penitencia_sombra.png",
+      "ancora": [
+       29,
+       77
+      ],
+      "largura": 77,
+      "altura": 88,
+      "pixels": 44,
+      "sha256": "047ede6e3a43a31db4080d7febc33b650aa4d5ea333388b70c56a3499befb988"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_penitencia/ataque_penitencia_f6.png",
+     "largura": 77,
+     "altura": 88,
+     "ancora": [
+      29,
+      77
+     ],
+     "pivo": [
+      29,
+      77
+     ],
+     "ms": 70.0,
+     "sha256": "d37e71fab32980d7fdad4d1823c6680a6b7f3df638b9383f95b1486d23c8a0c1",
+     "nome_origem": "e1_peregrino_ataque_penitencia_f6",
+     "corpo_bbox": [
+      13,
+      28,
+      69,
+      76
+     ],
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       0,
+       -74,
+       48,
+       41
+      ],
+      "espelha_com_a_direcao": "inverter x quando o inimigo olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         0.0,
+         -73.3
+        ],
+        [
+         1.5,
+         -73.4
+        ],
+        [
+         6.0,
+         -73.5
+        ],
+        [
+         10.5,
+         -73.0
+        ],
+        [
+         14.8,
+         -72.1
+        ],
+        [
+         19.1,
+         -70.8
+        ],
+        [
+         23.2,
+         -69.0
+        ],
+        [
+         27.1,
+         -66.9
+        ],
+        [
+         30.7,
+         -64.3
+        ],
+        [
+         34.1,
+         -61.4
+        ],
+        [
+         37.2,
+         -58.1
+        ],
+        [
+         39.9,
+         -54.6
+        ],
+        [
+         42.2,
+         -50.8
+        ],
+        [
+         44.1,
+         -46.7
+        ],
+        [
+         45.7,
+         -42.5
+        ],
+        [
+         46.7,
+         -38.2
+        ],
+        [
+         47.3,
+         -33.8
+        ],
+        [
+         44.8,
+         -33.6
+        ],
+        [
+         41.4,
+         -37.2
+        ],
+        [
+         38.4,
+         -40.4
+        ],
+        [
+         35.4,
+         -43.1
+        ],
+        [
+         32.5,
+         -45.5
+        ],
+        [
+         29.6,
+         -47.5
+        ],
+        [
+         26.8,
+         -49.3
+        ],
+        [
+         24.1,
+         -50.9
+        ],
+        [
+         21.4,
+         -52.4
+        ],
+        [
+         18.9,
+         -53.8
+        ],
+        [
+         16.4,
+         -55.2
+        ],
+        [
+         13.8,
+         -56.6
+        ],
+        [
+         11.2,
+         -58.2
+        ],
+        [
+         8.5,
+         -59.9
+        ],
+        [
+         5.5,
+         -61.7
+        ],
+        [
+         2.1,
+         -63.6
+        ],
+        [
+         0.0,
+         -64.8
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         15.3,
+         -36.4
+        ],
+        [
+         16.6,
+         -37.2
+        ],
+        [
+         18.0,
+         -37.9
+        ],
+        [
+         19.4,
+         -38.6
+        ],
+        [
+         20.7,
+         -39.3
+        ],
+        [
+         22.2,
+         -39.9
+        ],
+        [
+         23.6,
+         -40.5
+        ],
+        [
+         25.1,
+         -40.8
+        ],
+        [
+         26.6,
+         -41.1
+        ],
+        [
+         28.1,
+         -41.3
+        ],
+        [
+         29.6,
+         -41.5
+        ],
+        [
+         31.2,
+         -41.7
+        ],
+        [
+         32.7,
+         -41.6
+        ],
+        [
+         34.3,
+         -41.4
+        ],
+        [
+         35.8,
+         -41.0
+        ],
+        [
+         37.4,
+         -40.6
+        ],
+        [
+         38.9,
+         -40.1
+        ],
+        [
+         40.4,
+         -39.5
+        ],
+        [
+         40.4,
+         -38.6
+        ],
+        [
+         38.9,
+         -38.1
+        ],
+        [
+         37.5,
+         -37.6
+        ],
+        [
+         36.1,
+         -37.0
+        ],
+        [
+         34.7,
+         -36.5
+        ],
+        [
+         33.3,
+         -35.9
+        ],
+        [
+         31.9,
+         -35.6
+        ],
+        [
+         30.5,
+         -35.4
+        ],
+        [
+         29.1,
+         -35.2
+        ],
+        [
+         27.8,
+         -35.0
+        ],
+        [
+         26.4,
+         -34.7
+        ],
+        [
+         25.0,
+         -34.4
+        ],
+        [
+         23.6,
+         -34.3
+        ],
+        [
+         22.1,
+         -34.2
+        ],
+        [
+         20.7,
+         -34.1
+        ],
+        [
+         19.2,
+         -34.0
+        ],
+        [
+         17.8,
+         -33.8
+        ],
+        [
+         16.3,
+         -33.6
+        ]
+       ]
+      }
+     },
+     "sombra": {
+      "arquivo": "sombras/ataque_penitencia_sombra.png",
+      "ancora": [
+       29,
+       77
+      ],
+      "largura": 77,
+      "altura": 88,
+      "pixels": 44,
+      "sha256": "047ede6e3a43a31db4080d7febc33b650aa4d5ea333388b70c56a3499befb988"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_penitencia/ataque_penitencia_f7.png",
+     "largura": 77,
+     "altura": 88,
+     "ancora": [
+      29,
+      77
+     ],
+     "pivo": [
+      29,
+      77
+     ],
+     "ms": 70.0,
+     "sha256": "d69009575429dae4c87b648ea5c884ca89d4cd1400145d48a1fd7e87dffd6803",
+     "nome_origem": "e1_peregrino_ataque_penitencia_f7",
+     "corpo_bbox": [
+      16,
+      34,
+      56,
+      76
+     ],
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       0,
+       -75,
+       49,
+       76
+      ],
+      "espelha_com_a_direcao": "inverter x quando o inimigo olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         0.0,
+         -74.2
+        ],
+        [
+         0.8,
+         -74.4
+        ],
+        [
+         9.2,
+         -74.2
+        ],
+        [
+         17.5,
+         -72.4
+        ],
+        [
+         25.3,
+         -69.1
+        ],
+        [
+         32.3,
+         -64.4
+        ],
+        [
+         38.2,
+         -58.4
+        ],
+        [
+         43.0,
+         -51.5
+        ],
+        [
+         46.3,
+         -43.7
+        ],
+        [
+         48.2,
+         -35.5
+        ],
+        [
+         48.4,
+         -27.0
+        ],
+        [
+         47.0,
+         -18.7
+        ],
+        [
+         44.1,
+         -10.8
+        ],
+        [
+         39.8,
+         -3.5
+        ],
+        [
+         36.6,
+         -0.0
+        ],
+        [
+         22.6,
+         0.0
+        ],
+        [
+         26.3,
+         -5.8
+        ],
+        [
+         28.7,
+         -11.7
+        ],
+        [
+         30.1,
+         -17.5
+        ],
+        [
+         30.5,
+         -23.0
+        ],
+        [
+         30.2,
+         -28.2
+        ],
+        [
+         29.3,
+         -33.1
+        ],
+        [
+         27.8,
+         -37.7
+        ],
+        [
+         26.0,
+         -42.1
+        ],
+        [
+         23.6,
+         -46.3
+        ],
+        [
+         20.8,
+         -50.4
+        ],
+        [
+         17.3,
+         -54.5
+        ],
+        [
+         13.0,
+         -58.4
+        ],
+        [
+         7.8,
+         -62.2
+        ],
+        [
+         1.4,
+         -65.8
+        ],
+        [
+         0.0,
+         -66.6
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         19.0,
+         -15.3
+        ],
+        [
+         19.5,
+         -13.9
+        ],
+        [
+         20.0,
+         -12.4
+        ],
+        [
+         20.4,
+         -10.9
+        ],
+        [
+         20.9,
+         -9.5
+        ],
+        [
+         21.3,
+         -8.0
+        ],
+        [
+         21.5,
+         -6.4
+        ],
+        [
+         21.6,
+         -4.9
+        ],
+        [
+         21.6,
+         -3.4
+        ],
+        [
+         21.6,
+         -1.8
+        ],
+        [
+         21.5,
+         -0.3
+        ],
+        [
+         21.5,
+         0.0
+        ],
+        [
+         15.3,
+         0.0
+        ],
+        [
+         15.3,
+         -0.5
+        ],
+        [
+         15.4,
+         -1.9
+        ],
+        [
+         15.4,
+         -3.3
+        ],
+        [
+         15.4,
+         -4.7
+        ],
+        [
+         15.3,
+         -6.1
+        ],
+        [
+         15.4,
+         -7.5
+        ],
+        [
+         15.6,
+         -9.0
+        ],
+        [
+         15.8,
+         -10.4
+        ],
+        [
+         15.9,
+         -11.9
+        ],
+        [
+         16.0,
+         -13.3
+        ],
+        [
+         16.0,
+         -14.8
+        ]
+       ]
+      }
+     },
+     "sombra": {
+      "arquivo": "sombras/ataque_penitencia_sombra.png",
+      "ancora": [
+       29,
+       77
+      ],
+      "largura": 77,
+      "altura": 88,
+      "pixels": 44,
+      "sha256": "047ede6e3a43a31db4080d7febc33b650aa4d5ea333388b70c56a3499befb988"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_penitencia/ataque_penitencia_f8.png",
+     "largura": 77,
+     "altura": 88,
+     "ancora": [
+      29,
+      77
+     ],
+     "pivo": [
+      29,
+      77
+     ],
+     "ms": 108.0,
+     "sha256": "8f7ce1e47282dd25c734087598b6077866cb2de639d3ee1946ea5c123a8e0bff",
+     "nome_origem": "e1_peregrino_ataque_penitencia_f8",
+     "corpo_bbox": [
+      16,
+      34,
+      55,
+      76
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_penitencia_sombra.png",
+      "ancora": [
+       29,
+       77
+      ],
+      "largura": 77,
+      "altura": 88,
+      "pixels": 44,
+      "sha256": "047ede6e3a43a31db4080d7febc33b650aa4d5ea333388b70c56a3499befb988"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_penitencia/ataque_penitencia_f9.png",
+     "largura": 77,
+     "altura": 88,
+     "ancora": [
+      29,
+      77
+     ],
+     "pivo": [
+      29,
+      77
+     ],
+     "ms": 108.0,
+     "sha256": "db40f895ccca428d1a48e570a2ca7b7e1860ee32f45ad4100151c45548092ba4",
+     "nome_origem": "e1_peregrino_ataque_penitencia_f9",
+     "corpo_bbox": [
+      16,
+      34,
+      55,
+      76
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_penitencia_sombra.png",
+      "ancora": [
+       29,
+       77
+      ],
+      "largura": 77,
+      "altura": 88,
+      "pixels": 44,
+      "sha256": "047ede6e3a43a31db4080d7febc33b650aa4d5ea333388b70c56a3499befb988"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_penitencia/ataque_penitencia_f10.png",
+     "largura": 77,
+     "altura": 88,
+     "ancora": [
+      29,
+      77
+     ],
+     "pivo": [
+      29,
+      77
+     ],
+     "ms": 108.0,
+     "sha256": "928fbf12ead831773475f8bd979f3e7bf1bbd6a5d0806858ad11bc4cb4d315ae",
+     "nome_origem": "e1_peregrino_ataque_penitencia_f10",
+     "corpo_bbox": [
+      15,
+      32,
+      53,
+      76
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_penitencia_sombra.png",
+      "ancora": [
+       29,
+       77
+      ],
+      "largura": 77,
+      "altura": 88,
+      "pixels": 44,
+      "sha256": "047ede6e3a43a31db4080d7febc33b650aa4d5ea333388b70c56a3499befb988"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_penitencia/ataque_penitencia_f11.png",
+     "largura": 77,
+     "altura": 88,
+     "ancora": [
+      29,
+      77
+     ],
+     "pivo": [
+      29,
+      77
+     ],
+     "ms": 108.0,
+     "sha256": "cae997efe03b7587491dafec82a81ef1e106bfce457b4bc16cf3ce3f41ab5d38",
+     "nome_origem": "e1_peregrino_ataque_penitencia_f11",
+     "corpo_bbox": [
+      13,
+      30,
+      67,
+      76
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_penitencia_sombra.png",
+      "ancora": [
+       29,
+       77
+      ],
+      "largura": 77,
+      "altura": 88,
+      "pixels": 44,
+      "sha256": "047ede6e3a43a31db4080d7febc33b650aa4d5ea333388b70c56a3499befb988"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_penitencia/ataque_penitencia_f12.png",
+     "largura": 77,
+     "altura": 88,
+     "ancora": [
+      29,
+      77
+     ],
+     "pivo": [
+      29,
+      77
+     ],
+     "ms": 109.0,
+     "sha256": "3e9ac30f2d36364daed32dc09685b3fc45bade89789f7d9f064bd4cf4d36d317",
+     "nome_origem": "e1_peregrino_ataque_penitencia_f12",
+     "corpo_bbox": [
+      10,
+      28,
+      64,
+      76
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_penitencia_sombra.png",
+      "ancora": [
+       29,
+       77
+      ],
+      "largura": 77,
+      "altura": 88,
+      "pixels": 44,
+      "sha256": "047ede6e3a43a31db4080d7febc33b650aa4d5ea333388b70c56a3499befb988"
+     }
+    },
+    {
+     "arquivo": "quadros/ataque_penitencia/ataque_penitencia_f13.png",
+     "largura": 77,
+     "altura": 88,
+     "ancora": [
+      29,
+      77
+     ],
+     "pivo": [
+      29,
+      77
+     ],
+     "ms": 109.0,
+     "sha256": "eaa2044c57e3cb6dc5d36719c448d33a17eeea99cd564d2af5cd4f9f0f414f7d",
+     "nome_origem": "e1_peregrino_ataque_penitencia_f13",
+     "corpo_bbox": [
+      8,
+      27,
+      62,
+      76
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ataque_penitencia_sombra.png",
+      "ancora": [
+       29,
+       77
+      ],
+      "largura": 77,
+      "altura": 88,
+      "pixels": 44,
+      "sha256": "047ede6e3a43a31db4080d7febc33b650aa4d5ea333388b70c56a3499befb988"
+     }
+    }
+   ],
+   "efeitos": [
+    {
+     "quadro": 1,
+     "arquivo": "efeitos/ataque_penitencia_brilho_f1.png",
+     "ancora": [
+      29,
+      77
+     ],
+     "largura": 77,
+     "altura": 88,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 26,
+     "sha256": "5d9514d70fedd9af366b95da7a63de55df039a8bb63368d5300abcde08233044"
+    },
+    {
+     "quadro": 2,
+     "arquivo": "efeitos/ataque_penitencia_brilho_f2.png",
+     "ancora": [
+      29,
+      77
+     ],
+     "largura": 77,
+     "altura": 88,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 77,
+     "sha256": "9c11b654426c40f7bb94a592a8f8c891fbe60bd9a067510b2afbe98d09099690"
+    },
+    {
+     "quadro": 3,
+     "arquivo": "efeitos/ataque_penitencia_brilho_f3.png",
+     "ancora": [
+      29,
+      77
+     ],
+     "largura": 77,
+     "altura": 88,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 82,
+     "sha256": "56fa09d0174186449008b9d97fc1f01db230abdc7d2ea49f87d6e15d7b181eb5"
+    },
+    {
+     "quadro": 4,
+     "arquivo": "efeitos/ataque_penitencia_brilho_f4.png",
+     "ancora": [
+      29,
+      77
+     ],
+     "largura": 77,
+     "altura": 88,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 166,
+     "sha256": "a0017cc7f080e54b7fe9f5e7dc20108226dd5cbec42885524f34b98aa4a98668"
+    },
+    {
+     "quadro": 5,
+     "arquivo": "efeitos/ataque_penitencia_brilho_f5.png",
+     "ancora": [
+      29,
+      77
+     ],
+     "largura": 77,
+     "altura": 88,
+     "camada": "frente_do_corpo",
+     "tipo": "brilho_de_aviso",
+     "pixels": 174,
+     "sha256": "f76a017fd969df32975538d5b417994f073296d1f2c0a5cc8d9ea1e8b79973bd"
+    },
+    {
+     "quadro": 6,
+     "arquivo": "efeitos/ataque_penitencia_fx_f6.png",
+     "ancora": [
+      29,
+      77
+     ],
+     "largura": 77,
+     "altura": 88,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 577,
+     "sha256": "bd3b471e8d3be633229e60272c39a9ba3f2cb73cf0d3499e32d7ffeba9285616"
+    },
+    {
+     "quadro": 7,
+     "arquivo": "efeitos/ataque_penitencia_fx_f7.png",
+     "ancora": [
+      29,
+      77
+     ],
+     "largura": 77,
+     "altura": 88,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 1388,
+     "sha256": "4e39e9dba9f751ac555c1a0a688588dbe396b18261cdcf2e6c917e42b0589bdc"
+    },
+    {
+     "quadro": 8,
+     "arquivo": "efeitos/ataque_penitencia_fx_f8.png",
+     "ancora": [
+      29,
+      77
+     ],
+     "largura": 77,
+     "altura": 88,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 16,
+     "sha256": "1dce525ac64a94adb0d8bac35ad97d3b8cb3e73e362777068e6ad1da79e73728"
+    }
+   ],
+   "camadas": "ORDEM DE TRAS PARA FRENTE: efeitos atras_do_corpo -> corpo (capa/asas ja no quadro) -> efeitos frente_do_corpo (brilho de aviso, atordoamento). Sombra em arquivo proprio.",
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/ataque_penitencia_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao"
+   },
+   "ataque": {
+    "attack_id": "peregrino_penitencia",
+    "tres": {
+     "windup_ms": 690.0,
+     "active_ms": 140.0,
+     "recovery_ms": 650.0,
+     "base_damage": 25,
+     "posture_damage": 22,
+     "parry_class": "non_parryable",
+     "hit_stop_ms": 55,
+     "hitbox_jogo": {
+      "tamanho_px": [
+       21.0,
+       9.0
+      ],
+      "centro_x": 21.0,
+      "angulo_inicio": -100.0,
+      "angulo_fim": 80.0
+     }
+    },
+    "fases": {
+     "PREPARACAO": {
+      "quadros": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5
+      ],
+      "ms": 690
+     },
+     "ATIVO": {
+      "quadros": [
+       6,
+       7
+      ],
+      "ms": 140
+     },
+     "RECUPERACAO": {
+      "quadros": [
+       8,
+       9,
+       10,
+       11,
+       12,
+       13
+      ],
+      "ms": 650
+     }
+    },
+    "soma_confere_com_tres": true,
+    "aviso": {
+     "classe": "nao_aparavel",
+     "cor": "VERMELHO VIVO (indices 41/26) = NAO pode aparar",
+     "quadros_com_brilho": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "regra": "o brilho cresce quadro a quadro na PREPARACAO (aura 1 px -> 3 px) e some no ATIVO; o motor pode pulsar a camada frente_do_corpo; no Corvo o cuspe tambem acumula uma bola roxa na boca"
+    }
+   }
+  },
+  {
+   "id": "dano",
+   "tipo": "animacao",
+   "estado_ia": [
+    "HURT"
+   ],
+   "loop": false,
+   "quadros_n": 2,
+   "duracao_total_ms": 100.0,
+   "nota_tempo": "DANO (hurt_seconds 0,10 s): 2 x 50 ms - recuo, olhos fechados; o motor ja pisca o sprite (modulate) e empurra 65 px/s",
+   "quadros": [
+    {
+     "arquivo": "quadros/dano/dano_f0.png",
+     "largura": 57,
+     "altura": 56,
+     "ancora": [
+      28,
+      54
+     ],
+     "pivo": [
+      28,
+      54
+     ],
+     "ms": 50.0,
+     "sha256": "0fab5be89379f734665cef6d0735c36dbfeebebb1d24a8b6ed84b4699e2c92c1",
+     "nome_origem": "e1_peregrino_dano_f0",
+     "corpo_bbox": [
+      1,
+      1,
+      49,
+      53
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/dano_sombra.png",
+      "ancora": [
+       28,
+       54
+      ],
+      "largura": 57,
+      "altura": 56,
+      "pixels": 44,
+      "sha256": "22fcf51b00e02318e5beb04fd39a03a364ffab6d59b45a02141e3c137ac3eac5"
+     }
+    },
+    {
+     "arquivo": "quadros/dano/dano_f1.png",
+     "largura": 57,
+     "altura": 56,
+     "ancora": [
+      28,
+      54
+     ],
+     "pivo": [
+      28,
+      54
+     ],
+     "ms": 50.0,
+     "sha256": "e98f4f40bf4ee7571f10eaede87857b1877fe00df1b2258bed74888d1e411481",
+     "nome_origem": "e1_peregrino_dano_f1",
+     "corpo_bbox": [
+      3,
+      3,
+      55,
+      53
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/dano_sombra.png",
+      "ancora": [
+       28,
+       54
+      ],
+      "largura": 57,
+      "altura": 56,
+      "pixels": 44,
+      "sha256": "22fcf51b00e02318e5beb04fd39a03a364ffab6d59b45a02141e3c137ac3eac5"
+     }
+    }
+   ],
+   "efeitos": [],
+   "camadas": "ORDEM DE TRAS PARA FRENTE: efeitos atras_do_corpo -> corpo (capa/asas ja no quadro) -> efeitos frente_do_corpo (brilho de aviso, atordoamento). Sombra em arquivo proprio.",
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/dano_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao"
+   }
+  },
+  {
+   "id": "ruptura",
+   "tipo": "animacao",
+   "estado_ia": [
+    "RUPTURE"
+   ],
+   "loop": true,
+   "quadros_n": 7,
+   "duracao_total_ms": 950.0,
+   "nota_tempo": "RUPTURA DE POSTURA (rupture_duration 2,0 s): entrada 3 q (70/70/90: cambaleia e cai de joelhos), LACO a partir do quadro 3 (4 q x 180 ms): ajoelhado, cabeca caida, estrelas de atordoamento (brilho a frente); vulneravel +20 %",
+   "quadros": [
+    {
+     "arquivo": "quadros/ruptura/ruptura_f0.png",
+     "largura": 63,
+     "altura": 54,
+     "ancora": [
+      31,
+      52
+     ],
+     "pivo": [
+      31,
+      52
+     ],
+     "ms": 70.0,
+     "sha256": "30c22275b8a6d27fc90c2681b858528927d891a5805ca7333791859b1251ccd7",
+     "nome_origem": "e1_peregrino_ruptura_f0",
+     "corpo_bbox": [
+      3,
+      1,
+      43,
+      51
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ruptura_sombra.png",
+      "ancora": [
+       31,
+       52
+      ],
+      "largura": 63,
+      "altura": 54,
+      "pixels": 44,
+      "sha256": "9086f5d2ce0caea90afae73b7bf623f51e999e154106c7e39639d74232eabd92"
+     }
+    },
+    {
+     "arquivo": "quadros/ruptura/ruptura_f1.png",
+     "largura": 63,
+     "altura": 54,
+     "ancora": [
+      31,
+      52
+     ],
+     "pivo": [
+      31,
+      52
+     ],
+     "ms": 70.0,
+     "sha256": "e371cb5c1d0cb972b3781695d233969b00542639177da9dfd779d2d076a7468b",
+     "nome_origem": "e1_peregrino_ruptura_f1",
+     "corpo_bbox": [
+      1,
+      6,
+      61,
+      51
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ruptura_sombra.png",
+      "ancora": [
+       31,
+       52
+      ],
+      "largura": 63,
+      "altura": 54,
+      "pixels": 44,
+      "sha256": "9086f5d2ce0caea90afae73b7bf623f51e999e154106c7e39639d74232eabd92"
+     }
+    },
+    {
+     "arquivo": "quadros/ruptura/ruptura_f2.png",
+     "largura": 63,
+     "altura": 54,
+     "ancora": [
+      31,
+      52
+     ],
+     "pivo": [
+      31,
+      52
+     ],
+     "ms": 90.0,
+     "sha256": "7fb236a623aa3cd810752168a38f8acf70581d692336e41349f81000d9da5f52",
+     "nome_origem": "e1_peregrino_ruptura_f2",
+     "corpo_bbox": [
+      9,
+      13,
+      49,
+      51
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ruptura_sombra.png",
+      "ancora": [
+       31,
+       52
+      ],
+      "largura": 63,
+      "altura": 54,
+      "pixels": 44,
+      "sha256": "9086f5d2ce0caea90afae73b7bf623f51e999e154106c7e39639d74232eabd92"
+     }
+    },
+    {
+     "arquivo": "quadros/ruptura/ruptura_f3.png",
+     "largura": 63,
+     "altura": 54,
+     "ancora": [
+      31,
+      52
+     ],
+     "pivo": [
+      31,
+      52
+     ],
+     "ms": 180.0,
+     "sha256": "9da05bf8e0b5ac122524d492ba734ed129b2a3b396246f26e6f08a0bf54b3c37",
+     "nome_origem": "e1_peregrino_ruptura_f3",
+     "corpo_bbox": [
+      9,
+      13,
+      49,
+      51
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ruptura_sombra.png",
+      "ancora": [
+       31,
+       52
+      ],
+      "largura": 63,
+      "altura": 54,
+      "pixels": 44,
+      "sha256": "9086f5d2ce0caea90afae73b7bf623f51e999e154106c7e39639d74232eabd92"
+     }
+    },
+    {
+     "arquivo": "quadros/ruptura/ruptura_f4.png",
+     "largura": 63,
+     "altura": 54,
+     "ancora": [
+      31,
+      52
+     ],
+     "pivo": [
+      31,
+      52
+     ],
+     "ms": 180.0,
+     "sha256": "4e8074e44dd3f6b8259e7fe7c8b6382ba8a53863abaee50afbd611ad9cd7ff50",
+     "nome_origem": "e1_peregrino_ruptura_f4",
+     "corpo_bbox": [
+      10,
+      14,
+      50,
+      51
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ruptura_sombra.png",
+      "ancora": [
+       31,
+       52
+      ],
+      "largura": 63,
+      "altura": 54,
+      "pixels": 44,
+      "sha256": "9086f5d2ce0caea90afae73b7bf623f51e999e154106c7e39639d74232eabd92"
+     }
+    },
+    {
+     "arquivo": "quadros/ruptura/ruptura_f5.png",
+     "largura": 63,
+     "altura": 54,
+     "ancora": [
+      31,
+      52
+     ],
+     "pivo": [
+      31,
+      52
+     ],
+     "ms": 180.0,
+     "sha256": "026dc5d75ea44bc09f4fbac61cd0af19a712aadfb8d4ee985764c36773275930",
+     "nome_origem": "e1_peregrino_ruptura_f5",
+     "corpo_bbox": [
+      10,
+      15,
+      50,
+      51
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ruptura_sombra.png",
+      "ancora": [
+       31,
+       52
+      ],
+      "largura": 63,
+      "altura": 54,
+      "pixels": 44,
+      "sha256": "9086f5d2ce0caea90afae73b7bf623f51e999e154106c7e39639d74232eabd92"
+     }
+    },
+    {
+     "arquivo": "quadros/ruptura/ruptura_f6.png",
+     "largura": 63,
+     "altura": 54,
+     "ancora": [
+      31,
+      52
+     ],
+     "pivo": [
+      31,
+      52
+     ],
+     "ms": 180.0,
+     "sha256": "a695d1f7dd52815b1d3f6e354709a5d0d47df9225519fdb03611f3b21a22862e",
+     "nome_origem": "e1_peregrino_ruptura_f6",
+     "corpo_bbox": [
+      9,
+      13,
+      49,
+      51
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/ruptura_sombra.png",
+      "ancora": [
+       31,
+       52
+      ],
+      "largura": 63,
+      "altura": 54,
+      "pixels": 44,
+      "sha256": "9086f5d2ce0caea90afae73b7bf623f51e999e154106c7e39639d74232eabd92"
+     }
+    }
+   ],
+   "efeitos": [
+    {
+     "quadro": 3,
+     "arquivo": "efeitos/ruptura_brilho_f3.png",
+     "ancora": [
+      31,
+      52
+     ],
+     "largura": 63,
+     "altura": 54,
+     "camada": "frente_do_corpo",
+     "tipo": "atordoamento",
+     "pixels": 9,
+     "sha256": "0773c5fb61e83cfa61d04fdbfc4b3f3adeebe15ab6338f3cee648d938a8eb85d"
+    },
+    {
+     "quadro": 4,
+     "arquivo": "efeitos/ruptura_brilho_f4.png",
+     "ancora": [
+      31,
+      52
+     ],
+     "largura": 63,
+     "altura": 54,
+     "camada": "frente_do_corpo",
+     "tipo": "atordoamento",
+     "pixels": 9,
+     "sha256": "0bd52f5c7c175b9eabbf1fa652e20238e9a7ff307067b844d6d59627c2e9a59d"
+    },
+    {
+     "quadro": 5,
+     "arquivo": "efeitos/ruptura_brilho_f5.png",
+     "ancora": [
+      31,
+      52
+     ],
+     "largura": 63,
+     "altura": 54,
+     "camada": "frente_do_corpo",
+     "tipo": "atordoamento",
+     "pixels": 9,
+     "sha256": "b94302df57a167281dc83c43729df3ee9501f5933daae11bfc2b9e4d3f67f135"
+    },
+    {
+     "quadro": 6,
+     "arquivo": "efeitos/ruptura_brilho_f6.png",
+     "ancora": [
+      31,
+      52
+     ],
+     "largura": 63,
+     "altura": 54,
+     "camada": "frente_do_corpo",
+     "tipo": "atordoamento",
+     "pixels": 9,
+     "sha256": "9224d0726be6bf8fd3e9d90c9d12efb78e7315f06e30645b60e2a3f711ee6dc1"
+    }
+   ],
+   "camadas": "ORDEM DE TRAS PARA FRENTE: efeitos atras_do_corpo -> corpo (capa/asas ja no quadro) -> efeitos frente_do_corpo (brilho de aviso, atordoamento). Sombra em arquivo proprio.",
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/ruptura_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao"
+   },
+   "loop_inicio_quadro": 3,
+   "nota_laco": "tocar os quadros 0..loop_inicio-1 uma vez e repetir loop_inicio..fim ate o estado acabar"
+  },
+  {
+   "id": "morte",
+   "tipo": "animacao",
+   "estado_ia": [
+    "DEATH"
+   ],
+   "loop": false,
+   "quadros_n": 8,
+   "duracao_total_ms": 1120.0,
+   "nota_tempo": "MORTE: 8 q (60/80/100/110/110/120/140/400 ms) - golpe, joelhos, solta a lamina, cai para a FRENTE e fica no chao (ultimo quadro fica parado); o motor desliga hurtbox e colisao; o motor tambem gira o sprite 70 graus: usar ESTA animacao no lugar da rotacao",
+   "quadros": [
+    {
+     "arquivo": "quadros/morte/morte_f0.png",
+     "largura": 63,
+     "altura": 56,
+     "ancora": [
+      31,
+      54
+     ],
+     "pivo": [
+      31,
+      54
+     ],
+     "ms": 60.0,
+     "sha256": "04679fc374b237082b77e9bdb2efcc148d1f2be7ee9720fe49f03992d2175410",
+     "nome_origem": "e1_peregrino_morte_f0",
+     "corpo_bbox": [
+      3,
+      1,
+      52,
+      53
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/morte_sombra.png",
+      "ancora": [
+       31,
+       54
+      ],
+      "largura": 63,
+      "altura": 56,
+      "pixels": 44,
+      "sha256": "ff57709da32feb7577d6e36cc01ebcbc7ea75e3738a746b8396f1920ad92a899"
+     }
+    },
+    {
+     "arquivo": "quadros/morte/morte_f1.png",
+     "largura": 63,
+     "altura": 56,
+     "ancora": [
+      31,
+      54
+     ],
+     "pivo": [
+      31,
+      54
+     ],
+     "ms": 80.0,
+     "sha256": "b0233fffb9142dc79c6e0848c9457f0185ab977a8015f7f7345194079a748ced",
+     "nome_origem": "e1_peregrino_morte_f1",
+     "corpo_bbox": [
+      1,
+      7,
+      61,
+      53
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/morte_sombra.png",
+      "ancora": [
+       31,
+       54
+      ],
+      "largura": 63,
+      "altura": 56,
+      "pixels": 44,
+      "sha256": "ff57709da32feb7577d6e36cc01ebcbc7ea75e3738a746b8396f1920ad92a899"
+     }
+    },
+    {
+     "arquivo": "quadros/morte/morte_f2.png",
+     "largura": 63,
+     "altura": 56,
+     "ancora": [
+      31,
+      54
+     ],
+     "pivo": [
+      31,
+      54
+     ],
+     "ms": 100.0,
+     "sha256": "e596acd39ca0358b7e79914dd1144c8ca0ab9fc885f87adf3454041a21324dd5",
+     "nome_origem": "e1_peregrino_morte_f2",
+     "corpo_bbox": [
+      6,
+      14,
+      46,
+      53
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/morte_sombra.png",
+      "ancora": [
+       31,
+       54
+      ],
+      "largura": 63,
+      "altura": 56,
+      "pixels": 44,
+      "sha256": "ff57709da32feb7577d6e36cc01ebcbc7ea75e3738a746b8396f1920ad92a899"
+     }
+    },
+    {
+     "arquivo": "quadros/morte/morte_f3.png",
+     "largura": 63,
+     "altura": 56,
+     "ancora": [
+      31,
+      54
+     ],
+     "pivo": [
+      31,
+      54
+     ],
+     "ms": 110.0,
+     "sha256": "c84516af491334ad73c02f41d5a59032843b3d01e8cf229cb1f0615a0734884b",
+     "nome_origem": "e1_peregrino_morte_f3",
+     "corpo_bbox": [
+      11,
+      20,
+      48,
+      53
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/morte_sombra.png",
+      "ancora": [
+       31,
+       54
+      ],
+      "largura": 63,
+      "altura": 56,
+      "pixels": 44,
+      "sha256": "ff57709da32feb7577d6e36cc01ebcbc7ea75e3738a746b8396f1920ad92a899"
+     }
+    },
+    {
+     "arquivo": "quadros/morte/morte_f4.png",
+     "largura": 63,
+     "altura": 56,
+     "ancora": [
+      31,
+      54
+     ],
+     "pivo": [
+      31,
+      54
+     ],
+     "ms": 110.0,
+     "sha256": "09ce42cdd975b66f1384c1a8eb3cb5e35c7dc6091c73f752f1bcfdad417c4c5e",
+     "nome_origem": "e1_peregrino_morte_f4",
+     "corpo_bbox": [
+      8,
+      28,
+      48,
+      53
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/morte_sombra.png",
+      "ancora": [
+       31,
+       54
+      ],
+      "largura": 63,
+      "altura": 56,
+      "pixels": 44,
+      "sha256": "ff57709da32feb7577d6e36cc01ebcbc7ea75e3738a746b8396f1920ad92a899"
+     }
+    },
+    {
+     "arquivo": "quadros/morte/morte_f5.png",
+     "largura": 63,
+     "altura": 56,
+     "ancora": [
+      31,
+      54
+     ],
+     "pivo": [
+      31,
+      54
+     ],
+     "ms": 120.0,
+     "sha256": "753e82a16afc3150ba186d1a272c04e49ad00ebf55b15003e8174f31b2d588a8",
+     "nome_origem": "e1_peregrino_morte_f5",
+     "corpo_bbox": [
+      5,
+      34,
+      48,
+      53
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/morte_sombra.png",
+      "ancora": [
+       31,
+       54
+      ],
+      "largura": 63,
+      "altura": 56,
+      "pixels": 44,
+      "sha256": "ff57709da32feb7577d6e36cc01ebcbc7ea75e3738a746b8396f1920ad92a899"
+     }
+    },
+    {
+     "arquivo": "quadros/morte/morte_f6.png",
+     "largura": 63,
+     "altura": 56,
+     "ancora": [
+      31,
+      54
+     ],
+     "pivo": [
+      31,
+      54
+     ],
+     "ms": 140.0,
+     "sha256": "ba1bea6e91726a0d409cca65eb24611951444d90746588825807f360011dffc7",
+     "nome_origem": "e1_peregrino_morte_f6",
+     "corpo_bbox": [
+      8,
+      36,
+      47,
+      53
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/morte_sombra.png",
+      "ancora": [
+       31,
+       54
+      ],
+      "largura": 63,
+      "altura": 56,
+      "pixels": 44,
+      "sha256": "ff57709da32feb7577d6e36cc01ebcbc7ea75e3738a746b8396f1920ad92a899"
+     }
+    },
+    {
+     "arquivo": "quadros/morte/morte_f7.png",
+     "largura": 63,
+     "altura": 56,
+     "ancora": [
+      31,
+      54
+     ],
+     "pivo": [
+      31,
+      54
+     ],
+     "ms": 400.0,
+     "sha256": "ba1bea6e91726a0d409cca65eb24611951444d90746588825807f360011dffc7",
+     "nome_origem": "e1_peregrino_morte_f7",
+     "corpo_bbox": [
+      8,
+      36,
+      47,
+      53
+     ],
+     "hitbox": null,
+     "sombra": {
+      "arquivo": "sombras/morte_sombra.png",
+      "ancora": [
+       31,
+       54
+      ],
+      "largura": 63,
+      "altura": 56,
+      "pixels": 44,
+      "sha256": "ff57709da32feb7577d6e36cc01ebcbc7ea75e3738a746b8396f1920ad92a899"
+     }
+    }
+   ],
+   "efeitos": [],
+   "camadas": "ORDEM DE TRAS PARA FRENTE: efeitos atras_do_corpo -> corpo (capa/asas ja no quadro) -> efeitos frente_do_corpo (brilho de aviso, atordoamento). Sombra em arquivo proprio.",
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/morte_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao"
+   }
+  }
+ ],
+ "estados_ia": [
+  {
+   "estado": "IDLE",
+   "animacao": "idle",
+   "regra_no_jogo": "parado ate idle_seconds 0,55 s; percebeu -> ALERTA"
+  },
+  {
+   "estado": "PATROL",
+   "animacao": "patrulha",
+   "regra_no_jogo": "anda +-56 px ao redor de casa a 29 px/s; olha a borda do chao"
+  },
+  {
+   "estado": "ALERT",
+   "animacao": "alerta",
+   "regra_no_jogo": "alert_seconds 0,28 s olhando o jogador; depois PERSEGUICAO"
+  },
+  {
+   "estado": "CHASE",
+   "animacao": "perseguicao",
+   "regra_no_jogo": "chase_speed 64 px/s (x1,15 com HP < 30 %); ataca a 32 +- 5 px"
+  },
+  {
+   "estado": "ATTACK_WINDUP / ATTACK_ACTIVE / ATTACK_RECOVERY",
+   "animacao": "ataque_corte | ataque_estocada | ataque_corte_duplo | ataque_investida | ataque_penitencia",
+   "regra_no_jogo": "ciclo fixo de 5 golpes: corte, estocada, corte duplo, investida, penitencia (attack_index % 5); cooldown 0,42 s"
+  },
+  {
+   "estado": "HURT",
+   "animacao": "dano",
+   "regra_no_jogo": "hurt_seconds 0,10 s, empurrao de 65 px/s"
+  },
+  {
+   "estado": "RUPTURE",
+   "animacao": "ruptura",
+   "regra_no_jogo": "postura quebrada: 2,0 s, +20 % de vulnerabilidade; ao recuperar -> PERSEGUICAO"
+  },
+  {
+   "estado": "DEATH",
+   "animacao": "morte",
+   "regra_no_jogo": "desliga colisao e hurtbox; o motor escurece e gira 70 graus"
+  }
+ ],
+ "jogo_lido_somente_leitura": {
+  "raiz": "The Refusal/integracao-p40",
+  "arquivos": [
+   "scripts/enemies/peregrino.gd",
+   "scripts/enemies/peregrino_brain.gd",
+   "scripts/enemies/peregrino_attack.gd",
+   "scripts/enemies/peregrino_tuning.gd",
+   "data/enemies/peregrino_tuning.tres",
+   "scenes/enemies/peregrino.tscn",
+   "data/attacks/peregrino_corte.tres",
+   "data/attacks/peregrino_corte_duplo_1.tres",
+   "data/attacks/peregrino_corte_duplo_2.tres",
+   "data/attacks/peregrino_estocada.tres",
+   "data/attacks/peregrino_investida.tres",
+   "data/attacks/peregrino_penitencia.tres"
+  ],
+  "nota": "nada do jogo foi alterado; tempos de ataque conferidos por asserts contra os .tres (soma por fase = windup/active/recovery)"
+ },
+ "regras_de_aviso": {
+  "aparavel": "brilho PALIDO (18/16) na lamina, olhos claros",
+  "nao_aparavel": "brilho VERMELHO VIVO (41/26) na lamina, olhos vermelhos, grito",
+  "cor_do_jogo_atual": "Telegraph do jogo: pale (0,8/0,88/0,61) = aparavel, vermelho (0,91/0,27/0,19) = nao aparavel (peregrino_attack.gd); mesma regra"
+ },
+ "notas": [
+  "Hitbox por quadro ATIVO recortada a frente do corpo (x >= 0) e ate o chao (y <= 0), em px relativos a ancora; espelhar com a direcao.",
+  "A lamina nao atravessa o chao: quadros de solo tem a ponta recortada na linha do chao (martelada da penitencia cravada no chao).",
+  "Hurtbox atual do jogo (7 x 31) e menor que o sprite de 50 px: ver hurtbox_sugerida."
+ ],
+ "prova": {
+  "tira": "prova/tira_x2.png"
+ }
+}

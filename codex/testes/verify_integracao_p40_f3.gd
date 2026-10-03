@@ -334,7 +334,7 @@ func attack_checks() -> void:
     combat.tick(STEP)
     combat.resolve_frame_contact()
     check(not combat.uses_frame_profile() and not combat.hitbox.frame_override_active and combat.hitbox.active, "habilidade sem dados conserva pivô/fallback")
-    # Actual Peregrino capsule: meaningful close/tip contacts, not a point target.
+    # Historical Peregrino capsule (before package): retain close/tip regression. F6 checks the real 7/44 hurtbox.
     var enemy_capsule := CapsuleShape2D.new()
     enemy_capsule.radius = 7
     enemy_capsule.height = 31

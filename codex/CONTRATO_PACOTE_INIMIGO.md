@@ -1,20 +1,24 @@
 # Pacotes de inimigo — preparo da Tarefa 4.4
 
-Os pacotes finais ainda não foram entregues. Após avaliação, extrair `pacote_inimigo_peregrino_v1.zip` em `assets/enemies/peregrino_v1/` e `pacote_inimigo_corvo_v1.zip` em `assets/enemies/corvo_v1/`, com `manifesto_sprites.json` diretamente nessas pastas. Os mapas em `data/enemies/` permitem ajustar nomes de animações sem alterar IA. Raiz também tem adaptador/fallback, sem pacote definitivo nesta fase.
+**Tarefa 4.5:** Peregrino Profanado aprovado e equipado em `assets/enemies/peregrino_v1/`, cópia byte a byte de `carrasco_25d_test/pacotes/pacote_inimigo_peregrino_v1.zip`. O campo histórico de status dentro do manifesto foi preservado; a aprovação válida é a decisão atual do usuário. IA/tempos/dano continuam originais. Hurtbox sugerida aplicada por opção explícita do mapa, em todas as instâncias (cemitério e Bosque).
+
+**Corvo inimigo é uma ave.** Não extrair/equipar como inimigo o pacote humanoide `pacote_inimigo_corvo_v1.zip`: foi reclassificado como rascunho da máscara Corvo jogável. Corvo ave e Raiz aguardam pacotes próprios; mantêm fallback. Os mapas permitem trocar nomes de animações sem alterar IA.
 
 ## Manifesto
 
 Mesmo formato do Pequeno A: `animacoes[]`, cada entrada com `id`, `loop`, `quadros[]`; cada quadro informa `arquivo`, `sha256`, `ms`, `ancora:[x,y]` e dimensões opcionais `largura/altura`. PNGs nativos, ×1 NEAREST, âncora em pixels inteiros. SHA256 confere bytes exatos ou remove somente o chunk caBX, como o Carrasco. Arquivos relativos ao pacote; caminhos externos/`..` são rejeitados.
 
-`sombra` pode vir na animação ou no quadro, com arquivo/hash/dimensões/âncora próprios. Fica no terreno abaixo dos pés, reduz/clareia no ar e desaparece sem chão; nunca embutir sombra no corpo ou nos FX. `efeitos[]` usa o mesmo descritor de PNG, `fase` e seletor `quadro` opcional. Também aceita efeitos locais no quadro. Fases: WINDUP/PREP/PREPARACAO, ACTIVE/ATIVO, RECOVERY/RECUP/RECUPERACAO, ALL/TODAS.
+`sombra` pode vir na animação ou no quadro, com arquivo/hash/dimensões/âncora próprios. Fica no terreno abaixo dos pés, reduz/clareia no ar e desaparece sem chão; nunca embutir sombra no corpo ou nos FX. `efeitos[]` usa o mesmo descritor de PNG, `fase` e seletor `quadro` opcional. Também aceita efeitos locais no quadro. Sem `fase`, um efeito selecionado por `quadro` herda a fase desse quadro, ou ALL nos estados sem fase. `camada:atras_do_corpo` desenha antes do corpo e `frente_do_corpo` depois; brilho de aviso aparece somente em WINDUP. Fases: WINDUP/PREP/PREPARACAO, ACTIVE/ATIVO, RECOVERY/RECUP/RECUPERACAO, ALL/TODAS.
 
-Para ataques, marcar fases pelo campo `fase` do quadro ou por `ataque.fases.{PREPARACAO,ATIVO,RECUPERACAO}.quadros`. `hitbox` é opcional somente em ACTIVE: `retangulo:[x,y,w,h]`, `retangulos:[[...],...]`, `poligono:[[x,y],...]` ou `arco/lamina.poligono`, relativos à âncora. X positivo à frente, Y positivo para baixo. Recorte x≥0, decomposição convexa e espelho único. Os tempos da IA/ataques originais prevalecem: os quadros autorais são distribuídos dentro de cada fase, sem modificar seu tempo físico.
+`hitbox:null` significa quadro sem área. `loop_inicio_quadro` toca a entrada uma vez e repete a cauda (ruptura); animação sem loop mantém o último quadro (morte).
+
+Para ataques, marcar fases pelo campo `fase` do quadro ou por `ataque.fases.{PREPARACAO,ATIVO,RECUPERACAO}.quadros`. `hitbox` é opcional somente em ACTIVE: `retangulo:[x,y,w,h]`, `retangulos:[[...],...]`, `poligono:[[x,y],...]` ou `arco/lamina.poligono`, relativos à âncora. X positivo à frente, Y positivo para baixo. Recorte x≥0, decomposição convexa e espelho único. `ataque` aceita objeto ou lista de objetos com `attack_id` e fases separados (as duas partes do corte duplo). Índices JSON são normalizados para inteiros antes da seleção. Os tempos da IA/ataques originais prevalecem: os quadros autorais são distribuídos dentro de cada fase, sem modificar seu tempo físico.
 
 Um ataque com algum dado de hitbox usa exclusivamente seus quadros; quadro vazio não reativa a caixa antiga. Ataque/animação sem dados mantém fallback. Recuo, flash, sangue e hitstop usam o sistema comum da sensação, não precisam ser desenhados no pacote.
 
 ## Mapeamento
 
-`*_mapa.json` contém `pacote`, `padrao`, `pes_world:[x,y]`, `estados:{NOME_DA_IA:animacao}` e `ataques:{id_do_tres:animacao}`. Pés seguem o colisor original: Peregrino Y=15,5, Corvo Y=8 e Raiz Y=9 unidades. Isso não altera cápsulas, IA, vida ou postura. Os mapas entregues listam todos os estados/IDs atuais, como ponto de partida.
+`*_mapa.json` contém `pacote`, `padrao`, `pes_world:[x,y]`, `estados:{NOME_DA_IA:animacao}` e `ataques:{id_do_tres:animacao}`. Pés seguem o colisor original: Peregrino Y=15,5, Corvo Y=8 e Raiz Y=9 unidades. Isso não altera o colisor de locomoção, IA, vida ou postura. `aplicar_hurtbox_sugerida:true` lê `hurtbox_sugerida.raio_px/altura_px` do manifesto e divide pela escala física fixa 0,9. Peregrino: raio 7/altura 44 px, centro Y=−8,944444 e base Y=15,5; colisor original raio 7/altura 31 unidades intocado. Mantém 44 px em todos os estados vivos nesta fase; a variante opcional de 34 px na ruptura não foi ativada. Morte mantém a desativação original; pacote ausente/falso restaura a hurtbox anterior. Os mapas entregues listam todos os estados/IDs atuais, como ponto de partida.
 
 Corvo aceita `projeteis:{corvo_cuspe_pestilento:cuspe_projetil}`. Essa animação tem PNG/âncora próprios e avança por `ms` durante o voo. Seus quadros de dano são ACTIVE e relativos à origem/âncora do projétil, com direção travada na trajetória. A animação do bico é distinta. Sem animação dedicada, o core e a área nativos continuam. Velocidade, duração, colisão com terreno e defesa permanecem originais.
 

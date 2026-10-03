@@ -1,0 +1,6 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 616.92 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 5060 Ti
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+CAPTURE_RESULT {"dry_run":false,"duration_s":20.0,"feel_groups":{"camera":true,"controle":true,"impacto":true,"movimento":true},"fps":30,"frames":600,"method":"Clipe: entradas programadas, IA e dano reais, encontro Peregrino; jogador posicionado ao início. Fotos: inimigo imóvel, ataques originais, morte/ruptura acionadas pelos callbacks de dano para revisão visual. Hitstop virtual 60 Hz só na exportação.","photos":false,"pixel_emissions":{"poeira":22,"sangue":5},"real_combat_verified":true,"shots":{"morte":true,"ruptura":true},"stats":{"animations":{"attack_exit":9,"charge_start":2,"dash":10,"dash_ar":20,"fall_loop":18,"fall_start":8,"heavy":59,"hurt":42,"idle":649,"jump_up":6,"light1":48,"parry":189,"run":101,"run_start":22,"run_stop":9,"turn":8},"enemy_deaths":["Peregrino"],"hits":{"Peregrino":2},"incoming_damage":49,"max_ghosts":3},"viewport":[960,540]}

@@ -1,0 +1,65 @@
+{
+  "main_preservado": true,
+  "checkout_head_preservado": true,
+  "checkout_status_preservado": true,
+  "alteracoes": {
+    "reference_p40": [],
+    "prova": [],
+    "primary_checkout": [],
+    "bosque_scenes": [],
+    "bosque_scripts": [],
+    "enemy_scenes": [],
+    "enemy_brains": [],
+    "enemy_tuning": [
+      "peregrino_mapa.json"
+    ],
+    "attacks": [],
+    "pequeno_v34A": [],
+    "previous_evidence": [],
+    "approved_packages": []
+  },
+  "arquivos": {
+    "reference_p40": 1583,
+    "prova": 1550,
+    "primary_checkout": 770,
+    "bosque_scenes": 7,
+    "bosque_scripts": 41,
+    "enemy_scenes": 4,
+    "enemy_brains": 12,
+    "enemy_tuning": 6,
+    "attacks": 29,
+    "pequeno_v34A": 407,
+    "previous_evidence": 96,
+    "approved_packages": 3
+  },
+  "alteracoes_autorizadas": {
+    "reference_p40": [],
+    "prova": [],
+    "primary_checkout": [],
+    "bosque_scenes": [],
+    "bosque_scripts": [],
+    "enemy_scenes": [],
+    "enemy_brains": [],
+    "enemy_tuning": [
+      "peregrino_mapa.json"
+    ],
+    "attacks": [],
+    "pequeno_v34A": [],
+    "previous_evidence": [],
+    "approved_packages": []
+  },
+  "alteracoes_nao_autorizadas": {
+    "reference_p40": [],
+    "prova": [],
+    "primary_checkout": [],
+    "bosque_scenes": [],
+    "bosque_scripts": [],
+    "enemy_scenes": [],
+    "enemy_brains": [],
+    "enemy_tuning": [],
+    "attacks": [],
+    "pequeno_v34A": [],
+    "previous_evidence": [],
+    "approved_packages": []
+  }
+}
