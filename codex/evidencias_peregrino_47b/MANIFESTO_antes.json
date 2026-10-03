@@ -1,0 +1,4389 @@
+{
+  "pacote": "peregrino_corrompido_v1",
+  "versao": 1,
+  "personagem": "Peregrino Corrompido",
+  "status": "para avaliacao da tarefa 4.7",
+  "fonte": {
+    "mestre": "arte_fonte/inimigos_mestre_x1/peregrino_corrompido_x1.png",
+    "sha256": "2188841e60a9123c885649da45849b9b77d46768d6d002db9f9b5ddd23f3bb74",
+    "recorte": "arte_fonte/referencias/inimigos_v2/recortes/peregrino_corrompido.png"
+  },
+  "altura_referencia_px": 52,
+  "paleta": {
+    "arquivo": "paleta/paleta_bosque_v1.json",
+    "sha256": "9678161f917103d1d177f9af8b965c664f153ae502de35dcb63af8917081742b",
+    "cores": 62,
+    "travada": true
+  },
+  "hurtbox_sugerida": {
+    "raio_px": 7,
+    "altura_px": 48,
+    "descricao": "tronco e capuz, sem galhos/arma; pes conservados"
+  },
+  "estados_ia": {
+    "IDLE": "idle",
+    "PATROL": "patrulha",
+    "ALERT": "alerta",
+    "CHASE": "perseguicao",
+    "ATTACK_WINDUP": "idle",
+    "ATTACK_ACTIVE": "idle",
+    "ATTACK_RECOVERY": "idle",
+    "HURT": "dano",
+    "RUPTURE": "ruptura",
+    "DEATH": "morte"
+  },
+  "animacoes": [
+    {
+      "id": "idle",
+      "loop": true,
+      "quadros": [
+        {
+          "arquivo": "sprites/idle_f00.png",
+          "sha256": "35cf9ce70701ebccd838b251899f06020a4f8a5666522c820c2a9cfdb540c0d9",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 92,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/idle_f01.png",
+          "sha256": "1f1958203555d1b1d0c7e5d44841ca9308453a995451a19fec63742abe8e1adb",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 92,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/idle_f02.png",
+          "sha256": "5e160ac070ff87b1ba983b2765d917d07cc12e5144251539de33b1091179c8fa",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 92,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/idle_f03.png",
+          "sha256": "49dada01888449c5ce2aad647fce90edb7eec5efc498f76a9dd145ad2f4a3fdf",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 92,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/idle_f04.png",
+          "sha256": "5ab7ce1f2a4e04e2dda57bebe00c406f293ed736f4736dc881d4db417fc5b132",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 91,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/idle_f05.png",
+          "sha256": "e0f2ab48b156baa6769ee1d881c58692eab2ef6eb8cbf0cddc7e82d81557f105",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 91,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        }
+      ],
+      "sombra": {
+        "arquivo": "sombras/chao.png",
+        "sha256": "373fa8fa40d278b3342403ebfd87ecc9751655268c23ddff5d2d267a2fc4742d",
+        "largura": 30,
+        "altura": 7,
+        "ancora": [
+          15,
+          3
+        ]
+      }
+    },
+    {
+      "id": "patrulha",
+      "loop": true,
+      "quadros": [
+        {
+          "arquivo": "sprites/patrulha_f00.png",
+          "sha256": "17e66087f6fc93b8ea4fe2b43b66be494bacda3523cde4314e54db0d5ad1d4a0",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 153,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/patrulha_f01.png",
+          "sha256": "2a0ce743eab89290905caf21b92be39f77e1ca2de1896b8697a17c562775414c",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 153,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/patrulha_f02.png",
+          "sha256": "df112569b751d2f443545e011b3dfb62d8fefec02a4fedc53bacceb804fe4582",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 153,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/patrulha_f03.png",
+          "sha256": "7a5db93d6ca6e9b0261694abc0c2b95ccf9028401d64a1afc3964ab5e84235fc",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 153,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/patrulha_f04.png",
+          "sha256": "cf45783c858024eaefcfbe20bf6ae607877db91e71ce94cf1f61160194e0606f",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 153,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/patrulha_f05.png",
+          "sha256": "c7907d6b10d240ca658d5dbbc8a81f323ef983077d7bb0a77efd11f9c22692eb",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 153,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/patrulha_f06.png",
+          "sha256": "e14b68928db4220c2ad2fb7f2d65bdbdcb7470c7f614da0bf8c7c40ce95f89df",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 153,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/patrulha_f07.png",
+          "sha256": "e103fafd2d1cf222ea9838b15cb019768262146295f1ed19af55ad45900d0420",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 153,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        }
+      ],
+      "sombra": {
+        "arquivo": "sombras/chao.png",
+        "sha256": "373fa8fa40d278b3342403ebfd87ecc9751655268c23ddff5d2d267a2fc4742d",
+        "largura": 30,
+        "altura": 7,
+        "ancora": [
+          15,
+          3
+        ]
+      },
+      "px_por_quadro": 4
+    },
+    {
+      "id": "perseguicao",
+      "loop": true,
+      "quadros": [
+        {
+          "arquivo": "sprites/perseguicao_f00.png",
+          "sha256": "dcf74abbb10d5163d4e41ed53a6af41487339b2f723129ec1b18d0d5ad31bb43",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 69,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/perseguicao_f01.png",
+          "sha256": "10aeb122fdc2bd5f6de0b85abb98477500fb76150452469753dc9072fdf637a1",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 69,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/perseguicao_f02.png",
+          "sha256": "5dcd123a58ebad4f4148df0038723588f7946a73d534a07c3681b92f0432352d",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 69,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/perseguicao_f03.png",
+          "sha256": "6f986436a7f281ba3d04310d42f0f32d7c879b31c67f256a88be420dd53a45a4",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 69,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/perseguicao_f04.png",
+          "sha256": "68b7d64cdaf1a0fd8f976baab3f35b4e3b24a7f0da7d4069d646ab3e86ebcb0b",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 69,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/perseguicao_f05.png",
+          "sha256": "e3b15058a590e670a0cf0d3f18f19b8fb31644513e7b65774b6859246f7a7b85",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 69,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/perseguicao_f06.png",
+          "sha256": "9687387307ad5218d3f344b75d64f3260a673921ad7714938b793a2542db1ca5",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 69,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/perseguicao_f07.png",
+          "sha256": "134e071acc25499c87859c21c8ede24e49dae6e5dbc01eda4e0a651659385bde",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 69,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        }
+      ],
+      "sombra": {
+        "arquivo": "sombras/chao.png",
+        "sha256": "373fa8fa40d278b3342403ebfd87ecc9751655268c23ddff5d2d267a2fc4742d",
+        "largura": 30,
+        "altura": 7,
+        "ancora": [
+          15,
+          3
+        ]
+      },
+      "px_por_quadro": 4
+    },
+    {
+      "id": "alerta",
+      "loop": false,
+      "quadros": [
+        {
+          "arquivo": "sprites/alerta_f00.png",
+          "sha256": "14680be9e60f48d155040d339a8a2de8bd83f5e4177f6d096642ab7ca980eb5f",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 94,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/alerta_f01.png",
+          "sha256": "e9d02c821543776d0e2c5c44e329e9eeafe5d1d0428fde9f2be9cf3e6aeda62f",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 93,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/alerta_f02.png",
+          "sha256": "b16fc0c96fee4481177182555f707966f818b6b16d74f2ab62b901d58abcb1f5",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 93,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        }
+      ],
+      "sombra": {
+        "arquivo": "sombras/chao.png",
+        "sha256": "373fa8fa40d278b3342403ebfd87ecc9751655268c23ddff5d2d267a2fc4742d",
+        "largura": 30,
+        "altura": 7,
+        "ancora": [
+          15,
+          3
+        ]
+      }
+    },
+    {
+      "id": "dano",
+      "loop": false,
+      "quadros": [
+        {
+          "arquivo": "sprites/dano_f00.png",
+          "sha256": "de2f9e35e37d2ccc492a87be9e9b043e2fd05e001b82e5eed816b18066715a45",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 50,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/dano_f01.png",
+          "sha256": "07870afab17ecdc2007b750b56e4dbe2a214fad54b6e76ff496cf516d536d2cf",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 50,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        }
+      ],
+      "sombra": {
+        "arquivo": "sombras/chao.png",
+        "sha256": "373fa8fa40d278b3342403ebfd87ecc9751655268c23ddff5d2d267a2fc4742d",
+        "largura": 30,
+        "altura": 7,
+        "ancora": [
+          15,
+          3
+        ]
+      }
+    },
+    {
+      "id": "ruptura",
+      "loop": true,
+      "quadros": [
+        {
+          "arquivo": "sprites/ruptura_f00.png",
+          "sha256": "3197713809e648ffd14ed77b477d12e96e269a54cf5639e6a349fd701a7c6463",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 70,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/ruptura_f01.png",
+          "sha256": "c32b61408ff847aa6b5b4b1addccfc1af43f07a197cc55d14a6830779b584082",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 70,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/ruptura_f02.png",
+          "sha256": "e568f8649edd44a2b3e6cb6e8c519c5abd4998980af87a4c95048a5d300a5138",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 90,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/ruptura_f03.png",
+          "sha256": "17f42f718ab0729c97e17baf8c58f284c712d11edf1096277ec6d933b7f343df",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 180,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/ruptura_f04.png",
+          "sha256": "5b777b78aacde82006ae2900f14ee51988a67073439690b7ffd0be9bda339a71",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 180,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/ruptura_f05.png",
+          "sha256": "b4efd858bdd42fcdc0fe9012c0310561420d239c7a2b2030705cb4543ccacb9f",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 180,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/ruptura_f06.png",
+          "sha256": "ce6731bfa8d5f829a4ce54872a56870820ed663a28a810e012d6265737e93ced",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 180,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        }
+      ],
+      "sombra": {
+        "arquivo": "sombras/chao.png",
+        "sha256": "373fa8fa40d278b3342403ebfd87ecc9751655268c23ddff5d2d267a2fc4742d",
+        "largura": 30,
+        "altura": 7,
+        "ancora": [
+          15,
+          3
+        ]
+      },
+      "loop_inicio_quadro": 3
+    },
+    {
+      "id": "morte",
+      "loop": false,
+      "quadros": [
+        {
+          "arquivo": "sprites/morte_f00.png",
+          "sha256": "b57abc9be628c56e094cd118c5cccdbf9c00ea8737ef35a73455d224d3bc164d",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 60,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/morte_f01.png",
+          "sha256": "b9ea3befc151826c72486c9c7882b6627f65505477dfb49e020ee9a1a16fd0d9",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 80,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/morte_f02.png",
+          "sha256": "4dd7e4f519374dcf3a2a16d1024beb0ae4df4728c45190ebbd44323c4467619a",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 100,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/morte_f03.png",
+          "sha256": "643b17f58a46d9768eaf0e4b8626cfbf3d7d5cf430656789f556f5a39800fd88",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 110,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/morte_f04.png",
+          "sha256": "96aab2bd151d74c759ce95e2a1f2b356d56fffb41ffac63d475549b3559cf327",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 110,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/morte_f05.png",
+          "sha256": "ce39050ffc3406e8a166aaf0bb5a266d328d67691d0c77cdccbb327c76d0812b",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 120,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/morte_f06.png",
+          "sha256": "96aab2bd151d74c759ce95e2a1f2b356d56fffb41ffac63d475549b3559cf327",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 140,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/morte_f07.png",
+          "sha256": "96aab2bd151d74c759ce95e2a1f2b356d56fffb41ffac63d475549b3559cf327",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 400,
+          "fase": "ALL",
+          "hitbox": null,
+          "efeitos": []
+        }
+      ],
+      "sombra": {
+        "arquivo": "sombras/chao.png",
+        "sha256": "373fa8fa40d278b3342403ebfd87ecc9751655268c23ddff5d2d267a2fc4742d",
+        "largura": 30,
+        "altura": 7,
+        "ancora": [
+          15,
+          3
+        ]
+      }
+    },
+    {
+      "id": "ataque_corte",
+      "loop": false,
+      "quadros": [
+        {
+          "arquivo": "sprites/ataque_corte_f00.png",
+          "sha256": "12116fec47233c1366c373cd9eb6cfa2c11533313f42bd7d9b31fcdcab6b0e24",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 120,
+          "fase": "WINDUP",
+          "hitbox": null,
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_corte_f00_aviso.png",
+              "sha256": "a93cdf933d79b728e4e0f655689c7b0bae08c3b96faebe64dcc6d5ad819e7dc0",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "WINDUP",
+              "camada": "atras_do_corpo",
+              "tipo": "brilho_de_aviso"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_corte_f01.png",
+          "sha256": "a252bcae8e2313470db8a48fa0f9ddfefa83f87b449a6af13a72113196c9d2f4",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 120,
+          "fase": "WINDUP",
+          "hitbox": null,
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_corte_f01_aviso.png",
+              "sha256": "4149a9ab76142147f651dd4ce3224d889364005754791db25cc56fa1c37f8f89",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "WINDUP",
+              "camada": "atras_do_corpo",
+              "tipo": "brilho_de_aviso"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_corte_f02.png",
+          "sha256": "9fd9ae3115d6878fa63bc65b79e497de827c47d2fa6b10e5246a9ee27d849077",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 120,
+          "fase": "WINDUP",
+          "hitbox": null,
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_corte_f02_aviso.png",
+              "sha256": "9bd866d970d4bdd5811d7fb39c5e4c886e9cbcfedb02183f1c3d7e527c59746e",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "WINDUP",
+              "camada": "atras_do_corpo",
+              "tipo": "brilho_de_aviso"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_corte_f03.png",
+          "sha256": "05548816479810436e71d565a80fe44f0471ddb00318febb7096d3366bbc1ecb",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 55,
+          "fase": "ACTIVE",
+          "hitbox": {
+            "fase": "ACTIVE",
+            "retangulos": [
+              [
+                1,
+                -42,
+                12,
+                34
+              ]
+            ],
+            "poligono": [
+              [
+                0,
+                -70.81
+              ],
+              [
+                0.25,
+                -70.84
+              ],
+              [
+                4.0,
+                -71.0
+              ],
+              [
+                7.75,
+                -70.84
+              ],
+              [
+                11.47,
+                -70.35
+              ],
+              [
+                15.13,
+                -69.53
+              ],
+              [
+                18.71,
+                -68.41
+              ],
+              [
+                22.17,
+                -66.97
+              ],
+              [
+                25.5,
+                -65.24
+              ],
+              [
+                28.66,
+                -63.22
+              ],
+              [
+                31.64,
+                -60.94
+              ],
+              [
+                34.41,
+                -58.41
+              ],
+              [
+                36.94,
+                -55.64
+              ],
+              [
+                39.22,
+                -52.66
+              ],
+              [
+                41.24,
+                -49.5
+              ],
+              [
+                42.97,
+                -46.17
+              ],
+              [
+                44.41,
+                -42.71
+              ],
+              [
+                45.53,
+                -39.13
+              ],
+              [
+                46.35,
+                -35.47
+              ],
+              [
+                46.84,
+                -31.75
+              ],
+              [
+                43.68,
+                -35.0
+              ],
+              [
+                41.0,
+                -37.92
+              ],
+              [
+                38.37,
+                -40.51
+              ],
+              [
+                35.76,
+                -42.81
+              ],
+              [
+                33.18,
+                -44.85
+              ],
+              [
+                30.66,
+                -46.67
+              ],
+              [
+                28.2,
+                -48.3
+              ],
+              [
+                25.81,
+                -49.81
+              ],
+              [
+                23.49,
+                -51.23
+              ],
+              [
+                21.23,
+                -52.61
+              ],
+              [
+                19.01,
+                -54.0
+              ],
+              [
+                16.79,
+                -55.43
+              ],
+              [
+                14.53,
+                -56.94
+              ],
+              [
+                12.18,
+                -58.54
+              ],
+              [
+                9.69,
+                -60.27
+              ],
+              [
+                6.99,
+                -62.13
+              ],
+              [
+                4.0,
+                -64.17
+              ],
+              [
+                0.63,
+                -66.51
+              ],
+              [
+                0,
+                -67.1
+              ]
+            ],
+            "lamina": {
+              "poligono": [
+                [
+                  12,
+                  -35
+                ],
+                [
+                  42,
+                  -48
+                ],
+                [
+                  45,
+                  -36
+                ],
+                [
+                  12,
+                  -27
+                ]
+              ]
+            }
+          },
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_corte_f03_arco.png",
+              "sha256": "2d7c5beb85abef204ef592c1c09c4a4b2db8ff21f5f1a4b288ec7fab13b049b7",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "ACTIVE",
+              "camada": "frente_do_corpo",
+              "tipo": "arco_musgo_bronze"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_corte_f04.png",
+          "sha256": "f37176f6043071d2c867eb42af53df76240f198cff22154388a1c77a7d5ddd1b",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 55,
+          "fase": "ACTIVE",
+          "hitbox": {
+            "fase": "ACTIVE",
+            "retangulos": [
+              [
+                1,
+                -42,
+                12,
+                34
+              ]
+            ],
+            "poligono": [
+              [
+                0,
+                -71.72
+              ],
+              [
+                2.3,
+                -71.97
+              ],
+              [
+                8.28,
+                -71.79
+              ],
+              [
+                14.17,
+                -70.81
+              ],
+              [
+                19.88,
+                -69.03
+              ],
+              [
+                25.3,
+                -66.5
+              ],
+              [
+                30.32,
+                -63.26
+              ],
+              [
+                34.85,
+                -59.37
+              ],
+              [
+                38.82,
+                -54.9
+              ],
+              [
+                42.15,
+                -49.93
+              ],
+              [
+                44.77,
+                -44.56
+              ],
+              [
+                46.63,
+                -38.88
+              ],
+              [
+                47.71,
+                -33.0
+              ],
+              [
+                47.99,
+                -27.03
+              ],
+              [
+                47.45,
+                -21.08
+              ],
+              [
+                46.11,
+                -15.25
+              ],
+              [
+                44.0,
+                -9.66
+              ],
+              [
+                41.14,
+                -4.41
+              ],
+              [
+                38.64,
+                -1
+              ],
+              [
+                34.87,
+                -1
+              ],
+              [
+                35.06,
+                -1.74
+              ],
+              [
+                36.27,
+                -7.5
+              ],
+              [
+                36.81,
+                -12.96
+              ],
+              [
+                36.74,
+                -18.09
+              ],
+              [
+                36.15,
+                -22.88
+              ],
+              [
+                35.12,
+                -27.31
+              ],
+              [
+                33.76,
+                -31.4
+              ],
+              [
+                32.13,
+                -35.18
+              ],
+              [
+                30.31,
+                -38.69
+              ],
+              [
+                28.32,
+                -41.98
+              ],
+              [
+                26.18,
+                -45.13
+              ],
+              [
+                23.86,
+                -48.2
+              ],
+              [
+                21.33,
+                -51.22
+              ],
+              [
+                18.52,
+                -54.25
+              ],
+              [
+                15.33,
+                -57.29
+              ],
+              [
+                11.69,
+                -60.34
+              ],
+              [
+                7.46,
+                -63.43
+              ],
+              [
+                2.51,
+                -66.62
+              ],
+              [
+                0,
+                -68.54
+              ]
+            ],
+            "lamina": {
+              "poligono": [
+                [
+                  12,
+                  -27
+                ],
+                [
+                  42,
+                  -13
+                ],
+                [
+                  45,
+                  -1
+                ],
+                [
+                  12,
+                  -19
+                ]
+              ]
+            }
+          },
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_corte_f04_arco.png",
+              "sha256": "fc07fbf57a406971767135ebf92c145d801c1dcb5ee89405ca55d33376321b63",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "ACTIVE",
+              "camada": "frente_do_corpo",
+              "tipo": "arco_musgo_bronze"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_corte_f05.png",
+          "sha256": "bfaff0d3becfdf773dcb8602c8125e51e151b2b7632399efc61db8523a0afeb1",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 120,
+          "fase": "RECOVERY",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/ataque_corte_f06.png",
+          "sha256": "fb2a9ddb5db813f9245bcc43904326a46cd8450a0b307004dc6479b073dc844a",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 120,
+          "fase": "RECOVERY",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/ataque_corte_f07.png",
+          "sha256": "6d63d99c278891d3e238aab245bb70f0ada1069b9280cb16dfb3ee8d9679667e",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 120,
+          "fase": "RECOVERY",
+          "hitbox": null,
+          "efeitos": []
+        }
+      ],
+      "sombra": {
+        "arquivo": "sombras/chao.png",
+        "sha256": "373fa8fa40d278b3342403ebfd87ecc9751655268c23ddff5d2d267a2fc4742d",
+        "largura": 30,
+        "altura": 7,
+        "ancora": [
+          15,
+          3
+        ]
+      },
+      "ataque": {
+        "attack_id": "peregrino_corte",
+        "tres": {
+          "windup": 360,
+          "active": 110,
+          "recovery": 360,
+          "parry_class": "parryable",
+          "arquivo": "data/attacks/peregrino_corte.tres",
+          "windup_ms": 360,
+          "active_ms": 110,
+          "recovery_ms": 360
+        },
+        "fases": {
+          "PREPARACAO": {
+            "quadros": [
+              0,
+              1,
+              2
+            ],
+            "ms": 360
+          },
+          "ATIVO": {
+            "quadros": [
+              3,
+              4
+            ],
+            "ms": 110
+          },
+          "RECUPERACAO": {
+            "quadros": [
+              5,
+              6,
+              7
+            ],
+            "ms": 360
+          }
+        }
+      }
+    },
+    {
+      "id": "ataque_estocada",
+      "loop": false,
+      "quadros": [
+        {
+          "arquivo": "sprites/ataque_estocada_f00.png",
+          "sha256": "12116fec47233c1366c373cd9eb6cfa2c11533313f42bd7d9b31fcdcab6b0e24",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 144,
+          "fase": "WINDUP",
+          "hitbox": null,
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_estocada_f00_aviso.png",
+              "sha256": "a93cdf933d79b728e4e0f655689c7b0bae08c3b96faebe64dcc6d5ad819e7dc0",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "WINDUP",
+              "camada": "atras_do_corpo",
+              "tipo": "brilho_de_aviso"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_estocada_f01.png",
+          "sha256": "a252bcae8e2313470db8a48fa0f9ddfefa83f87b449a6af13a72113196c9d2f4",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 143,
+          "fase": "WINDUP",
+          "hitbox": null,
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_estocada_f01_aviso.png",
+              "sha256": "4149a9ab76142147f651dd4ce3224d889364005754791db25cc56fa1c37f8f89",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "WINDUP",
+              "camada": "atras_do_corpo",
+              "tipo": "brilho_de_aviso"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_estocada_f02.png",
+          "sha256": "9fd9ae3115d6878fa63bc65b79e497de827c47d2fa6b10e5246a9ee27d849077",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 143,
+          "fase": "WINDUP",
+          "hitbox": null,
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_estocada_f02_aviso.png",
+              "sha256": "9bd866d970d4bdd5811d7fb39c5e4c886e9cbcfedb02183f1c3d7e527c59746e",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "WINDUP",
+              "camada": "atras_do_corpo",
+              "tipo": "brilho_de_aviso"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_estocada_f03.png",
+          "sha256": "01eed663fefcead98c5b30d9ec943264efac3d32eb3cfe746bd2486eb9d153bc",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 50,
+          "fase": "ACTIVE",
+          "hitbox": {
+            "fase": "ACTIVE",
+            "retangulos": [
+              [
+                1,
+                -42,
+                12,
+                34
+              ]
+            ],
+            "poligono": [
+              [
+                0,
+                -28.46
+              ],
+              [
+                0.37,
+                -28.86
+              ],
+              [
+                2.75,
+                -31.02
+              ],
+              [
+                5.32,
+                -32.94
+              ],
+              [
+                8.06,
+                -34.63
+              ],
+              [
+                10.94,
+                -36.05
+              ],
+              [
+                13.94,
+                -37.21
+              ],
+              [
+                17.03,
+                -38.08
+              ],
+              [
+                20.19,
+                -38.67
+              ],
+              [
+                23.39,
+                -38.96
+              ],
+              [
+                26.61,
+                -38.96
+              ],
+              [
+                29.81,
+                -38.67
+              ],
+              [
+                32.97,
+                -38.08
+              ],
+              [
+                36.06,
+                -37.21
+              ],
+              [
+                39.06,
+                -36.05
+              ],
+              [
+                41.94,
+                -34.63
+              ],
+              [
+                44.68,
+                -32.94
+              ],
+              [
+                47.25,
+                -31.02
+              ],
+              [
+                49.63,
+                -28.86
+              ],
+              [
+                51.81,
+                -26.5
+              ],
+              [
+                47.73,
+                -26.94
+              ],
+              [
+                44.27,
+                -27.4
+              ],
+              [
+                41.07,
+                -27.63
+              ],
+              [
+                38.09,
+                -27.67
+              ],
+              [
+                35.32,
+                -27.53
+              ],
+              [
+                32.76,
+                -27.28
+              ],
+              [
+                30.37,
+                -26.97
+              ],
+              [
+                28.14,
+                -26.63
+              ],
+              [
+                26.02,
+                -26.3
+              ],
+              [
+                23.99,
+                -26.02
+              ],
+              [
+                21.98,
+                -25.81
+              ],
+              [
+                19.93,
+                -25.68
+              ],
+              [
+                17.8,
+                -25.62
+              ],
+              [
+                15.51,
+                -25.63
+              ],
+              [
+                13.01,
+                -25.67
+              ],
+              [
+                10.23,
+                -25.72
+              ],
+              [
+                7.09,
+                -25.75
+              ],
+              [
+                3.43,
+                -25.77
+              ],
+              [
+                0,
+                -26.25
+              ]
+            ],
+            "lamina": {
+              "poligono": [
+                [
+                  17,
+                  -30
+                ],
+                [
+                  48,
+                  -31
+                ],
+                [
+                  51,
+                  -19
+                ],
+                [
+                  17,
+                  -22
+                ]
+              ]
+            }
+          },
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_estocada_f03_arco.png",
+              "sha256": "f6d5f1ccde9397ed3ecd6e063f6d77a5fadd031f9ca8732212fc102bb4b91771",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "ACTIVE",
+              "camada": "frente_do_corpo",
+              "tipo": "arco_musgo_bronze"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_estocada_f04.png",
+          "sha256": "10937eb11711aa40b670093a41afd7f1fe91733347915efe03b2e77eec6be336",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 50,
+          "fase": "ACTIVE",
+          "hitbox": {
+            "fase": "ACTIVE",
+            "retangulos": [
+              [
+                1,
+                -42,
+                12,
+                34
+              ]
+            ],
+            "poligono": [
+              [
+                0,
+                -32.57
+              ],
+              [
+                0.84,
+                -33.33
+              ],
+              [
+                3.64,
+                -35.43
+              ],
+              [
+                6.61,
+                -37.25
+              ],
+              [
+                9.74,
+                -38.8
+              ],
+              [
+                12.99,
+                -40.05
+              ],
+              [
+                16.35,
+                -41.0
+              ],
+              [
+                19.78,
+                -41.64
+              ],
+              [
+                23.26,
+                -41.96
+              ],
+              [
+                26.74,
+                -41.96
+              ],
+              [
+                30.22,
+                -41.64
+              ],
+              [
+                33.65,
+                -41.0
+              ],
+              [
+                37.01,
+                -40.05
+              ],
+              [
+                40.26,
+                -38.8
+              ],
+              [
+                43.39,
+                -37.25
+              ],
+              [
+                46.36,
+                -35.43
+              ],
+              [
+                49.16,
+                -33.33
+              ],
+              [
+                51.75,
+                -30.99
+              ],
+              [
+                54.11,
+                -28.43
+              ],
+              [
+                49.84,
+                -29.07
+              ],
+              [
+                46.18,
+                -29.71
+              ],
+              [
+                42.75,
+                -30.11
+              ],
+              [
+                39.54,
+                -30.29
+              ],
+              [
+                36.53,
+                -30.28
+              ],
+              [
+                33.7,
+                -30.13
+              ],
+              [
+                31.05,
+                -29.89
+              ],
+              [
+                28.55,
+                -29.6
+              ],
+              [
+                26.16,
+                -29.3
+              ],
+              [
+                23.85,
+                -29.02
+              ],
+              [
+                21.56,
+                -28.78
+              ],
+              [
+                19.25,
+                -28.6
+              ],
+              [
+                16.85,
+                -28.47
+              ],
+              [
+                14.31,
+                -28.38
+              ],
+              [
+                11.56,
+                -28.3
+              ],
+              [
+                8.55,
+                -28.2
+              ],
+              [
+                5.18,
+                -28.06
+              ],
+              [
+                1.31,
+                -27.9
+              ],
+              [
+                0,
+                -28.03
+              ]
+            ],
+            "lamina": {
+              "poligono": [
+                [
+                  20,
+                  -30
+                ],
+                [
+                  53,
+                  -31
+                ],
+                [
+                  56,
+                  -19
+                ],
+                [
+                  20,
+                  -22
+                ]
+              ]
+            }
+          },
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_estocada_f04_arco.png",
+              "sha256": "23168ed12fdc7748349f79a71a81760587be6b48f6a0ea8d1dc5fea0b33d7916",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "ACTIVE",
+              "camada": "frente_do_corpo",
+              "tipo": "arco_musgo_bronze"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_estocada_f05.png",
+          "sha256": "bfaff0d3becfdf773dcb8602c8125e51e151b2b7632399efc61db8523a0afeb1",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 140,
+          "fase": "RECOVERY",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/ataque_estocada_f06.png",
+          "sha256": "fb2a9ddb5db813f9245bcc43904326a46cd8450a0b307004dc6479b073dc844a",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 140,
+          "fase": "RECOVERY",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/ataque_estocada_f07.png",
+          "sha256": "6d63d99c278891d3e238aab245bb70f0ada1069b9280cb16dfb3ee8d9679667e",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 140,
+          "fase": "RECOVERY",
+          "hitbox": null,
+          "efeitos": []
+        }
+      ],
+      "sombra": {
+        "arquivo": "sombras/chao.png",
+        "sha256": "373fa8fa40d278b3342403ebfd87ecc9751655268c23ddff5d2d267a2fc4742d",
+        "largura": 30,
+        "altura": 7,
+        "ancora": [
+          15,
+          3
+        ]
+      },
+      "ataque": {
+        "attack_id": "peregrino_estocada",
+        "tres": {
+          "windup": 430,
+          "active": 100,
+          "recovery": 420,
+          "parry_class": "parryable",
+          "arquivo": "data/attacks/peregrino_estocada.tres",
+          "windup_ms": 430,
+          "active_ms": 100,
+          "recovery_ms": 420
+        },
+        "fases": {
+          "PREPARACAO": {
+            "quadros": [
+              0,
+              1,
+              2
+            ],
+            "ms": 430
+          },
+          "ATIVO": {
+            "quadros": [
+              3,
+              4
+            ],
+            "ms": 100
+          },
+          "RECUPERACAO": {
+            "quadros": [
+              5,
+              6,
+              7
+            ],
+            "ms": 420
+          }
+        }
+      }
+    },
+    {
+      "id": "ataque_investida",
+      "loop": false,
+      "quadros": [
+        {
+          "arquivo": "sprites/ataque_investida_f00.png",
+          "sha256": "12116fec47233c1366c373cd9eb6cfa2c11533313f42bd7d9b31fcdcab6b0e24",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 135,
+          "fase": "WINDUP",
+          "hitbox": null,
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_investida_f00_aviso.png",
+              "sha256": "a93cdf933d79b728e4e0f655689c7b0bae08c3b96faebe64dcc6d5ad819e7dc0",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "WINDUP",
+              "camada": "atras_do_corpo",
+              "tipo": "brilho_de_aviso"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_investida_f01.png",
+          "sha256": "a252bcae8e2313470db8a48fa0f9ddfefa83f87b449a6af13a72113196c9d2f4",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 135,
+          "fase": "WINDUP",
+          "hitbox": null,
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_investida_f01_aviso.png",
+              "sha256": "4149a9ab76142147f651dd4ce3224d889364005754791db25cc56fa1c37f8f89",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "WINDUP",
+              "camada": "atras_do_corpo",
+              "tipo": "brilho_de_aviso"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_investida_f02.png",
+          "sha256": "9fd9ae3115d6878fa63bc65b79e497de827c47d2fa6b10e5246a9ee27d849077",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 135,
+          "fase": "WINDUP",
+          "hitbox": null,
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_investida_f02_aviso.png",
+              "sha256": "9bd866d970d4bdd5811d7fb39c5e4c886e9cbcfedb02183f1c3d7e527c59746e",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "WINDUP",
+              "camada": "atras_do_corpo",
+              "tipo": "brilho_de_aviso"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_investida_f03.png",
+          "sha256": "0837f12b3901a5277425374c6dea1b48f99733b06b7fcbf6b825e35063582fe2",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 135,
+          "fase": "WINDUP",
+          "hitbox": null,
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_investida_f03_aviso.png",
+              "sha256": "6ab77f22b0bf51a51717144008373554175deda873adf740abea60d5cf08d355",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "WINDUP",
+              "camada": "atras_do_corpo",
+              "tipo": "brilho_de_aviso"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_investida_f04.png",
+          "sha256": "0f4f5e27c8928fa6d2e05f57d96b6f39e6257ab56e75f786768b0e79924b3edb",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 90,
+          "fase": "ACTIVE",
+          "hitbox": {
+            "fase": "ACTIVE",
+            "retangulos": [
+              [
+                1,
+                -42,
+                12,
+                34
+              ]
+            ],
+            "poligono": [
+              [
+                0,
+                -28.46
+              ],
+              [
+                0.37,
+                -28.86
+              ],
+              [
+                2.75,
+                -31.02
+              ],
+              [
+                5.32,
+                -32.94
+              ],
+              [
+                8.06,
+                -34.63
+              ],
+              [
+                10.94,
+                -36.05
+              ],
+              [
+                13.94,
+                -37.21
+              ],
+              [
+                17.03,
+                -38.08
+              ],
+              [
+                20.19,
+                -38.67
+              ],
+              [
+                23.39,
+                -38.96
+              ],
+              [
+                26.61,
+                -38.96
+              ],
+              [
+                29.81,
+                -38.67
+              ],
+              [
+                32.97,
+                -38.08
+              ],
+              [
+                36.06,
+                -37.21
+              ],
+              [
+                39.06,
+                -36.05
+              ],
+              [
+                41.94,
+                -34.63
+              ],
+              [
+                44.68,
+                -32.94
+              ],
+              [
+                47.25,
+                -31.02
+              ],
+              [
+                49.63,
+                -28.86
+              ],
+              [
+                51.81,
+                -26.5
+              ],
+              [
+                47.73,
+                -26.94
+              ],
+              [
+                44.27,
+                -27.4
+              ],
+              [
+                41.07,
+                -27.63
+              ],
+              [
+                38.09,
+                -27.67
+              ],
+              [
+                35.32,
+                -27.53
+              ],
+              [
+                32.76,
+                -27.28
+              ],
+              [
+                30.37,
+                -26.97
+              ],
+              [
+                28.14,
+                -26.63
+              ],
+              [
+                26.02,
+                -26.3
+              ],
+              [
+                23.99,
+                -26.02
+              ],
+              [
+                21.98,
+                -25.81
+              ],
+              [
+                19.93,
+                -25.68
+              ],
+              [
+                17.8,
+                -25.62
+              ],
+              [
+                15.51,
+                -25.63
+              ],
+              [
+                13.01,
+                -25.67
+              ],
+              [
+                10.23,
+                -25.72
+              ],
+              [
+                7.09,
+                -25.75
+              ],
+              [
+                3.43,
+                -25.77
+              ],
+              [
+                0,
+                -26.25
+              ]
+            ],
+            "lamina": {
+              "poligono": [
+                [
+                  17,
+                  -30
+                ],
+                [
+                  48,
+                  -31
+                ],
+                [
+                  51,
+                  -19
+                ],
+                [
+                  17,
+                  -22
+                ]
+              ]
+            }
+          },
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_investida_f04_arco.png",
+              "sha256": "f6d5f1ccde9397ed3ecd6e063f6d77a5fadd031f9ca8732212fc102bb4b91771",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "ACTIVE",
+              "camada": "frente_do_corpo",
+              "tipo": "arco_musgo_bronze"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_investida_f05.png",
+          "sha256": "10937eb11711aa40b670093a41afd7f1fe91733347915efe03b2e77eec6be336",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 90,
+          "fase": "ACTIVE",
+          "hitbox": {
+            "fase": "ACTIVE",
+            "retangulos": [
+              [
+                1,
+                -42,
+                12,
+                34
+              ]
+            ],
+            "poligono": [
+              [
+                0,
+                -32.57
+              ],
+              [
+                0.84,
+                -33.33
+              ],
+              [
+                3.64,
+                -35.43
+              ],
+              [
+                6.61,
+                -37.25
+              ],
+              [
+                9.74,
+                -38.8
+              ],
+              [
+                12.99,
+                -40.05
+              ],
+              [
+                16.35,
+                -41.0
+              ],
+              [
+                19.78,
+                -41.64
+              ],
+              [
+                23.26,
+                -41.96
+              ],
+              [
+                26.74,
+                -41.96
+              ],
+              [
+                30.22,
+                -41.64
+              ],
+              [
+                33.65,
+                -41.0
+              ],
+              [
+                37.01,
+                -40.05
+              ],
+              [
+                40.26,
+                -38.8
+              ],
+              [
+                43.39,
+                -37.25
+              ],
+              [
+                46.36,
+                -35.43
+              ],
+              [
+                49.16,
+                -33.33
+              ],
+              [
+                51.75,
+                -30.99
+              ],
+              [
+                54.11,
+                -28.43
+              ],
+              [
+                49.84,
+                -29.07
+              ],
+              [
+                46.18,
+                -29.71
+              ],
+              [
+                42.75,
+                -30.11
+              ],
+              [
+                39.54,
+                -30.29
+              ],
+              [
+                36.53,
+                -30.28
+              ],
+              [
+                33.7,
+                -30.13
+              ],
+              [
+                31.05,
+                -29.89
+              ],
+              [
+                28.55,
+                -29.6
+              ],
+              [
+                26.16,
+                -29.3
+              ],
+              [
+                23.85,
+                -29.02
+              ],
+              [
+                21.56,
+                -28.78
+              ],
+              [
+                19.25,
+                -28.6
+              ],
+              [
+                16.85,
+                -28.47
+              ],
+              [
+                14.31,
+                -28.38
+              ],
+              [
+                11.56,
+                -28.3
+              ],
+              [
+                8.55,
+                -28.2
+              ],
+              [
+                5.18,
+                -28.06
+              ],
+              [
+                1.31,
+                -27.9
+              ],
+              [
+                0,
+                -28.03
+              ]
+            ],
+            "lamina": {
+              "poligono": [
+                [
+                  20,
+                  -30
+                ],
+                [
+                  53,
+                  -31
+                ],
+                [
+                  56,
+                  -19
+                ],
+                [
+                  20,
+                  -22
+                ]
+              ]
+            }
+          },
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_investida_f05_arco.png",
+              "sha256": "23168ed12fdc7748349f79a71a81760587be6b48f6a0ea8d1dc5fea0b33d7916",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "ACTIVE",
+              "camada": "frente_do_corpo",
+              "tipo": "arco_musgo_bronze"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_investida_f06.png",
+          "sha256": "bfaff0d3becfdf773dcb8602c8125e51e151b2b7632399efc61db8523a0afeb1",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 174,
+          "fase": "RECOVERY",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/ataque_investida_f07.png",
+          "sha256": "fb2a9ddb5db813f9245bcc43904326a46cd8450a0b307004dc6479b073dc844a",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 173,
+          "fase": "RECOVERY",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/ataque_investida_f08.png",
+          "sha256": "6d63d99c278891d3e238aab245bb70f0ada1069b9280cb16dfb3ee8d9679667e",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 173,
+          "fase": "RECOVERY",
+          "hitbox": null,
+          "efeitos": []
+        }
+      ],
+      "sombra": {
+        "arquivo": "sombras/chao.png",
+        "sha256": "373fa8fa40d278b3342403ebfd87ecc9751655268c23ddff5d2d267a2fc4742d",
+        "largura": 30,
+        "altura": 7,
+        "ancora": [
+          15,
+          3
+        ]
+      },
+      "ataque": {
+        "attack_id": "peregrino_investida",
+        "tres": {
+          "windup": 540,
+          "active": 180,
+          "recovery": 520,
+          "parry_class": "parryable",
+          "arquivo": "data/attacks/peregrino_investida.tres",
+          "windup_ms": 540,
+          "active_ms": 180,
+          "recovery_ms": 520
+        },
+        "fases": {
+          "PREPARACAO": {
+            "quadros": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "ms": 540
+          },
+          "ATIVO": {
+            "quadros": [
+              4,
+              5
+            ],
+            "ms": 180
+          },
+          "RECUPERACAO": {
+            "quadros": [
+              6,
+              7,
+              8
+            ],
+            "ms": 520
+          }
+        }
+      }
+    },
+    {
+      "id": "ataque_penitencia",
+      "loop": false,
+      "quadros": [
+        {
+          "arquivo": "sprites/ataque_penitencia_f00.png",
+          "sha256": "0faf4fb65d32ceef76b0b012048ac5aa4bb0a785008dc68f70d990b78121970d",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 173,
+          "fase": "WINDUP",
+          "hitbox": null,
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_penitencia_f00_aviso.png",
+              "sha256": "a19ab6690f6caf0c2245203710d828815e43d392e7528768eb29d47124234de0",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "WINDUP",
+              "camada": "atras_do_corpo",
+              "tipo": "brilho_de_aviso"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_penitencia_f01.png",
+          "sha256": "536e2892b0ea54820eea6ba7d36ecd84504af6bbabfb485de416534f9fbc5896",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 173,
+          "fase": "WINDUP",
+          "hitbox": null,
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_penitencia_f01_aviso.png",
+              "sha256": "265a98be7d9fa3c5f5c4296ed7c90827cc1218f81302f3e58251bb4b3da1f656",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "WINDUP",
+              "camada": "atras_do_corpo",
+              "tipo": "brilho_de_aviso"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_penitencia_f02.png",
+          "sha256": "9147f00ccdbb23cddea2e1686ad2ea46a8b0a1d8481f11eaa3549c5b66dcfd68",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 172,
+          "fase": "WINDUP",
+          "hitbox": null,
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_penitencia_f02_aviso.png",
+              "sha256": "93b0bbed843b888d1f9e07fd1835d36e408349a90be54794ce7fcd2a75d6d644",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "WINDUP",
+              "camada": "atras_do_corpo",
+              "tipo": "brilho_de_aviso"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_penitencia_f03.png",
+          "sha256": "0192fc13af585b979b7edfabb506e34d6c3d5962e530db1eb016ba42d11fb820",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 172,
+          "fase": "WINDUP",
+          "hitbox": null,
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_penitencia_f03_aviso.png",
+              "sha256": "dd27f16cf0d23e1b66750dc68d2b6c9db394c30bdcf3a9803d5b4e9a50034e18",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "WINDUP",
+              "camada": "atras_do_corpo",
+              "tipo": "brilho_de_aviso"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_penitencia_f04.png",
+          "sha256": "f192fc3c842ca51d5b4f9ea15220484e919d75a4fc3f86b100054a07769e4b7b",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 70,
+          "fase": "ACTIVE",
+          "hitbox": {
+            "fase": "ACTIVE",
+            "retangulos": [
+              [
+                1,
+                -42,
+                12,
+                34
+              ]
+            ],
+            "poligono": [
+              [
+                17.35,
+                -63.64
+              ],
+              [
+                21.3,
+                -62.36
+              ],
+              [
+                25.09,
+                -60.67
+              ],
+              [
+                28.69,
+                -58.61
+              ],
+              [
+                32.06,
+                -56.18
+              ],
+              [
+                35.15,
+                -53.41
+              ],
+              [
+                37.95,
+                -50.34
+              ],
+              [
+                40.41,
+                -47.0
+              ],
+              [
+                42.51,
+                -43.42
+              ],
+              [
+                44.22,
+                -39.64
+              ],
+              [
+                45.54,
+                -35.71
+              ],
+              [
+                46.44,
+                -31.66
+              ],
+              [
+                46.92,
+                -27.53
+              ],
+              [
+                46.97,
+                -23.38
+              ],
+              [
+                46.58,
+                -19.25
+              ],
+              [
+                45.78,
+                -15.18
+              ],
+              [
+                44.55,
+                -11.22
+              ],
+              [
+                42.92,
+                -7.4
+              ],
+              [
+                40.9,
+                -3.77
+              ],
+              [
+                38.96,
+                -1
+              ],
+              [
+                38.51,
+                -1
+              ],
+              [
+                38.43,
+                -5.32
+              ],
+              [
+                38.38,
+                -9.62
+              ],
+              [
+                38.06,
+                -13.6
+              ],
+              [
+                37.47,
+                -17.28
+              ],
+              [
+                36.67,
+                -20.69
+              ],
+              [
+                35.71,
+                -23.84
+              ],
+              [
+                34.65,
+                -26.76
+              ],
+              [
+                33.53,
+                -29.48
+              ],
+              [
+                32.39,
+                -32.05
+              ],
+              [
+                31.24,
+                -34.54
+              ],
+              [
+                30.1,
+                -36.98
+              ],
+              [
+                28.95,
+                -39.46
+              ],
+              [
+                27.78,
+                -42.01
+              ],
+              [
+                26.53,
+                -44.71
+              ],
+              [
+                25.15,
+                -47.59
+              ],
+              [
+                23.59,
+                -50.7
+              ],
+              [
+                21.77,
+                -54.12
+              ],
+              [
+                19.63,
+                -57.98
+              ]
+            ],
+            "lamina": {
+              "poligono": [
+                [
+                  24,
+                  -32
+                ],
+                [
+                  24,
+                  -7
+                ],
+                [
+                  27,
+                  -1
+                ],
+                [
+                  24,
+                  -24
+                ]
+              ]
+            }
+          },
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_penitencia_f04_arco.png",
+              "sha256": "20e026398267958c3bd7a6fd293e45e60e995a6b85e2dabf7a95bc568a91aa8c",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "ACTIVE",
+              "camada": "frente_do_corpo",
+              "tipo": "arco_musgo_bronze"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_penitencia_f05.png",
+          "sha256": "4ad945aa50a32efafef52e485a9829a3046f0b07e07a8e86492121674744ae2b",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 70,
+          "fase": "ACTIVE",
+          "hitbox": {
+            "fase": "ACTIVE",
+            "retangulos": [
+              [
+                1,
+                -42,
+                12,
+                34
+              ]
+            ],
+            "poligono": [
+              [
+                3.51,
+                -64.85
+              ],
+              [
+                8.4,
+                -64.98
+              ],
+              [
+                13.26,
+                -64.51
+              ],
+              [
+                18.03,
+                -63.45
+              ],
+              [
+                22.63,
+                -61.82
+              ],
+              [
+                27.0,
+                -59.64
+              ],
+              [
+                31.07,
+                -56.95
+              ],
+              [
+                34.79,
+                -53.77
+              ],
+              [
+                38.09,
+                -50.17
+              ],
+              [
+                40.92,
+                -46.2
+              ],
+              [
+                43.25,
+                -41.9
+              ],
+              [
+                45.04,
+                -37.36
+              ],
+              [
+                46.27,
+                -32.63
+              ],
+              [
+                46.9,
+                -27.79
+              ],
+              [
+                46.95,
+                -22.91
+              ],
+              [
+                46.39,
+                -18.05
+              ],
+              [
+                45.25,
+                -13.31
+              ],
+              [
+                43.54,
+                -8.73
+              ],
+              [
+                41.29,
+                -4.4
+              ],
+              [
+                38.95,
+                -1
+              ],
+              [
+                38.49,
+                -1
+              ],
+              [
+                38.25,
+                -6.22
+              ],
+              [
+                37.94,
+                -11.23
+              ],
+              [
+                37.22,
+                -15.76
+              ],
+              [
+                36.15,
+                -19.86
+              ],
+              [
+                34.8,
+                -23.54
+              ],
+              [
+                33.26,
+                -26.84
+              ],
+              [
+                31.61,
+                -29.78
+              ],
+              [
+                29.92,
+                -32.45
+              ],
+              [
+                28.23,
+                -34.9
+              ],
+              [
+                26.56,
+                -37.22
+              ],
+              [
+                24.9,
+                -39.49
+              ],
+              [
+                23.22,
+                -41.8
+              ],
+              [
+                21.47,
+                -44.2
+              ],
+              [
+                19.56,
+                -46.75
+              ],
+              [
+                17.4,
+                -49.5
+              ],
+              [
+                14.88,
+                -52.47
+              ],
+              [
+                11.86,
+                -55.69
+              ],
+              [
+                8.2,
+                -59.29
+              ]
+            ],
+            "lamina": {
+              "poligono": [
+                [
+                  24,
+                  -32
+                ],
+                [
+                  24,
+                  -7
+                ],
+                [
+                  27,
+                  -1
+                ],
+                [
+                  24,
+                  -24
+                ]
+              ]
+            }
+          },
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_penitencia_f05_arco.png",
+              "sha256": "51f80f761a004e82ee896d2e6ac2bf8ff5b03032a48ce5de26d54be30e2b2e78",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "ACTIVE",
+              "camada": "frente_do_corpo",
+              "tipo": "arco_musgo_bronze"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_penitencia_f06.png",
+          "sha256": "7ebd4dd30c617c0ff39ac638115c8e124dec8fc5e0ad5c2bdfbac6ed2c3fc3ac",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 217,
+          "fase": "RECOVERY",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/ataque_penitencia_f07.png",
+          "sha256": "fb2a9ddb5db813f9245bcc43904326a46cd8450a0b307004dc6479b073dc844a",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 217,
+          "fase": "RECOVERY",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/ataque_penitencia_f08.png",
+          "sha256": "6d63d99c278891d3e238aab245bb70f0ada1069b9280cb16dfb3ee8d9679667e",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 216,
+          "fase": "RECOVERY",
+          "hitbox": null,
+          "efeitos": []
+        }
+      ],
+      "sombra": {
+        "arquivo": "sombras/chao.png",
+        "sha256": "373fa8fa40d278b3342403ebfd87ecc9751655268c23ddff5d2d267a2fc4742d",
+        "largura": 30,
+        "altura": 7,
+        "ancora": [
+          15,
+          3
+        ]
+      },
+      "ataque": {
+        "attack_id": "peregrino_penitencia",
+        "tres": {
+          "windup": 690,
+          "active": 140,
+          "recovery": 650,
+          "parry_class": "non_parryable",
+          "arquivo": "data/attacks/peregrino_penitencia.tres",
+          "windup_ms": 690,
+          "active_ms": 140,
+          "recovery_ms": 650
+        },
+        "fases": {
+          "PREPARACAO": {
+            "quadros": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "ms": 690
+          },
+          "ATIVO": {
+            "quadros": [
+              4,
+              5
+            ],
+            "ms": 140
+          },
+          "RECUPERACAO": {
+            "quadros": [
+              6,
+              7,
+              8
+            ],
+            "ms": 650
+          }
+        }
+      }
+    },
+    {
+      "id": "ataque_corte_duplo",
+      "loop": false,
+      "quadros": [
+        {
+          "arquivo": "sprites/ataque_corte_duplo_f00.png",
+          "sha256": "12116fec47233c1366c373cd9eb6cfa2c11533313f42bd7d9b31fcdcab6b0e24",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 97,
+          "fase": "WINDUP",
+          "hitbox": null,
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_corte_duplo_f00_aviso.png",
+              "sha256": "a93cdf933d79b728e4e0f655689c7b0bae08c3b96faebe64dcc6d5ad819e7dc0",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "WINDUP",
+              "camada": "atras_do_corpo",
+              "tipo": "brilho_de_aviso"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_corte_duplo_f01.png",
+          "sha256": "a252bcae8e2313470db8a48fa0f9ddfefa83f87b449a6af13a72113196c9d2f4",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 97,
+          "fase": "WINDUP",
+          "hitbox": null,
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_corte_duplo_f01_aviso.png",
+              "sha256": "4149a9ab76142147f651dd4ce3224d889364005754791db25cc56fa1c37f8f89",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "WINDUP",
+              "camada": "atras_do_corpo",
+              "tipo": "brilho_de_aviso"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_corte_duplo_f02.png",
+          "sha256": "9fd9ae3115d6878fa63bc65b79e497de827c47d2fa6b10e5246a9ee27d849077",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 96,
+          "fase": "WINDUP",
+          "hitbox": null,
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_corte_duplo_f02_aviso.png",
+              "sha256": "9bd866d970d4bdd5811d7fb39c5e4c886e9cbcfedb02183f1c3d7e527c59746e",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "WINDUP",
+              "camada": "atras_do_corpo",
+              "tipo": "brilho_de_aviso"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_corte_duplo_f03.png",
+          "sha256": "05548816479810436e71d565a80fe44f0471ddb00318febb7096d3366bbc1ecb",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 45,
+          "fase": "ACTIVE",
+          "hitbox": {
+            "fase": "ACTIVE",
+            "retangulos": [
+              [
+                1,
+                -42,
+                12,
+                34
+              ]
+            ],
+            "poligono": [
+              [
+                0,
+                -70.81
+              ],
+              [
+                0.25,
+                -70.84
+              ],
+              [
+                4.0,
+                -71.0
+              ],
+              [
+                7.75,
+                -70.84
+              ],
+              [
+                11.47,
+                -70.35
+              ],
+              [
+                15.13,
+                -69.53
+              ],
+              [
+                18.71,
+                -68.41
+              ],
+              [
+                22.17,
+                -66.97
+              ],
+              [
+                25.5,
+                -65.24
+              ],
+              [
+                28.66,
+                -63.22
+              ],
+              [
+                31.64,
+                -60.94
+              ],
+              [
+                34.41,
+                -58.41
+              ],
+              [
+                36.94,
+                -55.64
+              ],
+              [
+                39.22,
+                -52.66
+              ],
+              [
+                41.24,
+                -49.5
+              ],
+              [
+                42.97,
+                -46.17
+              ],
+              [
+                44.41,
+                -42.71
+              ],
+              [
+                45.53,
+                -39.13
+              ],
+              [
+                46.35,
+                -35.47
+              ],
+              [
+                46.84,
+                -31.75
+              ],
+              [
+                43.68,
+                -35.0
+              ],
+              [
+                41.0,
+                -37.92
+              ],
+              [
+                38.37,
+                -40.51
+              ],
+              [
+                35.76,
+                -42.81
+              ],
+              [
+                33.18,
+                -44.85
+              ],
+              [
+                30.66,
+                -46.67
+              ],
+              [
+                28.2,
+                -48.3
+              ],
+              [
+                25.81,
+                -49.81
+              ],
+              [
+                23.49,
+                -51.23
+              ],
+              [
+                21.23,
+                -52.61
+              ],
+              [
+                19.01,
+                -54.0
+              ],
+              [
+                16.79,
+                -55.43
+              ],
+              [
+                14.53,
+                -56.94
+              ],
+              [
+                12.18,
+                -58.54
+              ],
+              [
+                9.69,
+                -60.27
+              ],
+              [
+                6.99,
+                -62.13
+              ],
+              [
+                4.0,
+                -64.17
+              ],
+              [
+                0.63,
+                -66.51
+              ],
+              [
+                0,
+                -67.1
+              ]
+            ],
+            "lamina": {
+              "poligono": [
+                [
+                  12,
+                  -35
+                ],
+                [
+                  42,
+                  -48
+                ],
+                [
+                  45,
+                  -36
+                ],
+                [
+                  12,
+                  -27
+                ]
+              ]
+            }
+          },
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_corte_duplo_f03_arco.png",
+              "sha256": "2d7c5beb85abef204ef592c1c09c4a4b2db8ff21f5f1a4b288ec7fab13b049b7",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "ACTIVE",
+              "camada": "frente_do_corpo",
+              "tipo": "arco_musgo_bronze"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_corte_duplo_f04.png",
+          "sha256": "f37176f6043071d2c867eb42af53df76240f198cff22154388a1c77a7d5ddd1b",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 45,
+          "fase": "ACTIVE",
+          "hitbox": {
+            "fase": "ACTIVE",
+            "retangulos": [
+              [
+                1,
+                -42,
+                12,
+                34
+              ]
+            ],
+            "poligono": [
+              [
+                0,
+                -71.72
+              ],
+              [
+                2.3,
+                -71.97
+              ],
+              [
+                8.28,
+                -71.79
+              ],
+              [
+                14.17,
+                -70.81
+              ],
+              [
+                19.88,
+                -69.03
+              ],
+              [
+                25.3,
+                -66.5
+              ],
+              [
+                30.32,
+                -63.26
+              ],
+              [
+                34.85,
+                -59.37
+              ],
+              [
+                38.82,
+                -54.9
+              ],
+              [
+                42.15,
+                -49.93
+              ],
+              [
+                44.77,
+                -44.56
+              ],
+              [
+                46.63,
+                -38.88
+              ],
+              [
+                47.71,
+                -33.0
+              ],
+              [
+                47.99,
+                -27.03
+              ],
+              [
+                47.45,
+                -21.08
+              ],
+              [
+                46.11,
+                -15.25
+              ],
+              [
+                44.0,
+                -9.66
+              ],
+              [
+                41.14,
+                -4.41
+              ],
+              [
+                38.64,
+                -1
+              ],
+              [
+                34.87,
+                -1
+              ],
+              [
+                35.06,
+                -1.74
+              ],
+              [
+                36.27,
+                -7.5
+              ],
+              [
+                36.81,
+                -12.96
+              ],
+              [
+                36.74,
+                -18.09
+              ],
+              [
+                36.15,
+                -22.88
+              ],
+              [
+                35.12,
+                -27.31
+              ],
+              [
+                33.76,
+                -31.4
+              ],
+              [
+                32.13,
+                -35.18
+              ],
+              [
+                30.31,
+                -38.69
+              ],
+              [
+                28.32,
+                -41.98
+              ],
+              [
+                26.18,
+                -45.13
+              ],
+              [
+                23.86,
+                -48.2
+              ],
+              [
+                21.33,
+                -51.22
+              ],
+              [
+                18.52,
+                -54.25
+              ],
+              [
+                15.33,
+                -57.29
+              ],
+              [
+                11.69,
+                -60.34
+              ],
+              [
+                7.46,
+                -63.43
+              ],
+              [
+                2.51,
+                -66.62
+              ],
+              [
+                0,
+                -68.54
+              ]
+            ],
+            "lamina": {
+              "poligono": [
+                [
+                  12,
+                  -27
+                ],
+                [
+                  42,
+                  -13
+                ],
+                [
+                  45,
+                  -1
+                ],
+                [
+                  12,
+                  -19
+                ]
+              ]
+            }
+          },
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_corte_duplo_f04_arco.png",
+              "sha256": "fc07fbf57a406971767135ebf92c145d801c1dcb5ee89405ca55d33376321b63",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "ACTIVE",
+              "camada": "frente_do_corpo",
+              "tipo": "arco_musgo_bronze"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_corte_duplo_f05.png",
+          "sha256": "bfaff0d3becfdf773dcb8602c8125e51e151b2b7632399efc61db8523a0afeb1",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 110,
+          "fase": "RECOVERY",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/ataque_corte_duplo_f06.png",
+          "sha256": "38dfc031f09ea14e4433aec9275c8f7efe970e6f5dd43f4edfde3b41c91bc3d0",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 110,
+          "fase": "WINDUP",
+          "hitbox": null,
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_corte_duplo_f06_aviso.png",
+              "sha256": "ceb64e0f2593a7f3bfe7cde530edd724adffa645b45fae990eed9cfded52b4a3",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "WINDUP",
+              "camada": "atras_do_corpo",
+              "tipo": "brilho_de_aviso"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_corte_duplo_f07.png",
+          "sha256": "a252bcae8e2313470db8a48fa0f9ddfefa83f87b449a6af13a72113196c9d2f4",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 110,
+          "fase": "WINDUP",
+          "hitbox": null,
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_corte_duplo_f07_aviso.png",
+              "sha256": "4149a9ab76142147f651dd4ce3224d889364005754791db25cc56fa1c37f8f89",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "WINDUP",
+              "camada": "atras_do_corpo",
+              "tipo": "brilho_de_aviso"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_corte_duplo_f08.png",
+          "sha256": "49f20bdec624d9e1582a30e80295180efd7a2812d98fb0c510e6d9b83df2f7d6",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 50,
+          "fase": "ACTIVE",
+          "hitbox": {
+            "fase": "ACTIVE",
+            "retangulos": [
+              [
+                1,
+                -42,
+                12,
+                34
+              ]
+            ],
+            "poligono": [
+              [
+                0,
+                -71.72
+              ],
+              [
+                2.3,
+                -71.97
+              ],
+              [
+                8.28,
+                -71.79
+              ],
+              [
+                14.17,
+                -70.81
+              ],
+              [
+                19.88,
+                -69.03
+              ],
+              [
+                25.3,
+                -66.5
+              ],
+              [
+                30.32,
+                -63.26
+              ],
+              [
+                34.85,
+                -59.37
+              ],
+              [
+                38.82,
+                -54.9
+              ],
+              [
+                42.15,
+                -49.93
+              ],
+              [
+                44.77,
+                -44.56
+              ],
+              [
+                46.63,
+                -38.88
+              ],
+              [
+                47.71,
+                -33.0
+              ],
+              [
+                47.99,
+                -27.03
+              ],
+              [
+                47.45,
+                -21.08
+              ],
+              [
+                46.11,
+                -15.25
+              ],
+              [
+                44.0,
+                -9.66
+              ],
+              [
+                41.14,
+                -4.41
+              ],
+              [
+                38.64,
+                -1
+              ],
+              [
+                34.87,
+                -1
+              ],
+              [
+                35.06,
+                -1.74
+              ],
+              [
+                36.27,
+                -7.5
+              ],
+              [
+                36.81,
+                -12.96
+              ],
+              [
+                36.74,
+                -18.09
+              ],
+              [
+                36.15,
+                -22.88
+              ],
+              [
+                35.12,
+                -27.31
+              ],
+              [
+                33.76,
+                -31.4
+              ],
+              [
+                32.13,
+                -35.18
+              ],
+              [
+                30.31,
+                -38.69
+              ],
+              [
+                28.32,
+                -41.98
+              ],
+              [
+                26.18,
+                -45.13
+              ],
+              [
+                23.86,
+                -48.2
+              ],
+              [
+                21.33,
+                -51.22
+              ],
+              [
+                18.52,
+                -54.25
+              ],
+              [
+                15.33,
+                -57.29
+              ],
+              [
+                11.69,
+                -60.34
+              ],
+              [
+                7.46,
+                -63.43
+              ],
+              [
+                2.51,
+                -66.62
+              ],
+              [
+                0,
+                -68.54
+              ]
+            ],
+            "lamina": {
+              "poligono": [
+                [
+                  12,
+                  -27
+                ],
+                [
+                  42,
+                  -13
+                ],
+                [
+                  45,
+                  -1
+                ],
+                [
+                  12,
+                  -19
+                ]
+              ]
+            }
+          },
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_corte_duplo_f08_arco.png",
+              "sha256": "fc07fbf57a406971767135ebf92c145d801c1dcb5ee89405ca55d33376321b63",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "ACTIVE",
+              "camada": "frente_do_corpo",
+              "tipo": "arco_musgo_bronze"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_corte_duplo_f09.png",
+          "sha256": "07e093815fa98a7105e52687d0e0b19f18b36a8aedabfe2228e50b092803227e",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 50,
+          "fase": "ACTIVE",
+          "hitbox": {
+            "fase": "ACTIVE",
+            "retangulos": [
+              [
+                1,
+                -42,
+                12,
+                34
+              ]
+            ],
+            "poligono": [
+              [
+                0,
+                -70.81
+              ],
+              [
+                0.25,
+                -70.84
+              ],
+              [
+                4.0,
+                -71.0
+              ],
+              [
+                7.75,
+                -70.84
+              ],
+              [
+                11.47,
+                -70.35
+              ],
+              [
+                15.13,
+                -69.53
+              ],
+              [
+                18.71,
+                -68.41
+              ],
+              [
+                22.17,
+                -66.97
+              ],
+              [
+                25.5,
+                -65.24
+              ],
+              [
+                28.66,
+                -63.22
+              ],
+              [
+                31.64,
+                -60.94
+              ],
+              [
+                34.41,
+                -58.41
+              ],
+              [
+                36.94,
+                -55.64
+              ],
+              [
+                39.22,
+                -52.66
+              ],
+              [
+                41.24,
+                -49.5
+              ],
+              [
+                42.97,
+                -46.17
+              ],
+              [
+                44.41,
+                -42.71
+              ],
+              [
+                45.53,
+                -39.13
+              ],
+              [
+                46.35,
+                -35.47
+              ],
+              [
+                46.84,
+                -31.75
+              ],
+              [
+                43.68,
+                -35.0
+              ],
+              [
+                41.0,
+                -37.92
+              ],
+              [
+                38.37,
+                -40.51
+              ],
+              [
+                35.76,
+                -42.81
+              ],
+              [
+                33.18,
+                -44.85
+              ],
+              [
+                30.66,
+                -46.67
+              ],
+              [
+                28.2,
+                -48.3
+              ],
+              [
+                25.81,
+                -49.81
+              ],
+              [
+                23.49,
+                -51.23
+              ],
+              [
+                21.23,
+                -52.61
+              ],
+              [
+                19.01,
+                -54.0
+              ],
+              [
+                16.79,
+                -55.43
+              ],
+              [
+                14.53,
+                -56.94
+              ],
+              [
+                12.18,
+                -58.54
+              ],
+              [
+                9.69,
+                -60.27
+              ],
+              [
+                6.99,
+                -62.13
+              ],
+              [
+                4.0,
+                -64.17
+              ],
+              [
+                0.63,
+                -66.51
+              ],
+              [
+                0,
+                -67.1
+              ]
+            ],
+            "lamina": {
+              "poligono": [
+                [
+                  12,
+                  -35
+                ],
+                [
+                  42,
+                  -48
+                ],
+                [
+                  45,
+                  -36
+                ],
+                [
+                  12,
+                  -27
+                ]
+              ]
+            }
+          },
+          "efeitos": [
+            {
+              "arquivo": "efeitos/ataque_corte_duplo_f09_arco.png",
+              "sha256": "2d7c5beb85abef204ef592c1c09c4a4b2db8ff21f5f1a4b288ec7fab13b049b7",
+              "largura": 160,
+              "altura": 104,
+              "ancora": [
+                54,
+                90
+              ],
+              "fase": "ACTIVE",
+              "camada": "frente_do_corpo",
+              "tipo": "arco_musgo_bronze"
+            }
+          ]
+        },
+        {
+          "arquivo": "sprites/ataque_corte_duplo_f10.png",
+          "sha256": "8c7a0d854dd27364b7504deb2f7f57abdd0fc45a3d9a8e35f998ab04af8c5aa9",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 134,
+          "fase": "RECOVERY",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/ataque_corte_duplo_f11.png",
+          "sha256": "fb2a9ddb5db813f9245bcc43904326a46cd8450a0b307004dc6479b073dc844a",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 133,
+          "fase": "RECOVERY",
+          "hitbox": null,
+          "efeitos": []
+        },
+        {
+          "arquivo": "sprites/ataque_corte_duplo_f12.png",
+          "sha256": "6d63d99c278891d3e238aab245bb70f0ada1069b9280cb16dfb3ee8d9679667e",
+          "largura": 160,
+          "altura": 104,
+          "ancora": [
+            54,
+            90
+          ],
+          "ms": 133,
+          "fase": "RECOVERY",
+          "hitbox": null,
+          "efeitos": []
+        }
+      ],
+      "sombra": {
+        "arquivo": "sombras/chao.png",
+        "sha256": "373fa8fa40d278b3342403ebfd87ecc9751655268c23ddff5d2d267a2fc4742d",
+        "largura": 30,
+        "altura": 7,
+        "ancora": [
+          15,
+          3
+        ]
+      },
+      "ataque": [
+        {
+          "attack_id": "peregrino_corte_duplo_1",
+          "tres": {
+            "windup": 290,
+            "active": 90,
+            "recovery": 110,
+            "parry_class": "parryable",
+            "arquivo": "data/attacks/peregrino_corte_duplo_1.tres",
+            "windup_ms": 290,
+            "active_ms": 90,
+            "recovery_ms": 110
+          },
+          "fases": {
+            "PREPARACAO": {
+              "quadros": [
+                0,
+                1,
+                2
+              ],
+              "ms": 290
+            },
+            "ATIVO": {
+              "quadros": [
+                3,
+                4
+              ],
+              "ms": 90
+            },
+            "RECUPERACAO": {
+              "quadros": [
+                5
+              ],
+              "ms": 110
+            }
+          }
+        },
+        {
+          "attack_id": "peregrino_corte_duplo_2",
+          "tres": {
+            "windup": 220,
+            "active": 100,
+            "recovery": 400,
+            "parry_class": "parryable",
+            "arquivo": "data/attacks/peregrino_corte_duplo_2.tres",
+            "windup_ms": 220,
+            "active_ms": 100,
+            "recovery_ms": 400
+          },
+          "fases": {
+            "PREPARACAO": {
+              "quadros": [
+                6,
+                7
+              ],
+              "ms": 220
+            },
+            "ATIVO": {
+              "quadros": [
+                8,
+                9
+              ],
+              "ms": 100
+            },
+            "RECUPERACAO": {
+              "quadros": [
+                10,
+                11,
+                12
+              ],
+              "ms": 400
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "gerador": "arte_fonte/ferramentas/ajustar_peregrino_47b.py",
+  "partes": {
+    "cabeca_legivel": {
+      "arquivo": "partes/cabeca_legivel.png",
+      "sha256": "363a11c47a34b5a78d0b1eacef8cd95e142e6ff38d22c0ad88a2ba6deb903996",
+      "pivo": [
+        27,
+        22
+      ]
+    },
+    "cajado_sem_sinos": {
+      "arquivo": "partes/cajado_sem_sinos.png",
+      "sha256": "1bc4917e6ac4cf598769b949c1ff2cb461fc169e239ae64a53b01e80b5f63f97",
+      "pivo": [
+        27,
+        22
+      ]
+    },
+    "cajado_solto": {
+      "arquivo": "partes/cajado_solto.png",
+      "sha256": "0b7659846f74c8fd79446b4b8697f4631817948684aeceaa9378c7ddf763d35c",
+      "pivo": [
+        54,
+        72
+      ]
+    },
+    "capuz_queda": {
+      "arquivo": "partes/capuz_queda.png",
+      "sha256": "3ef5cafbe11434ec67252bae05f7c5813a6c83f1e66be75d2988e233cdcf7d84",
+      "pivo": [
+        27,
+        22
+      ]
+    },
+    "corpo_caido": {
+      "arquivo": "partes/corpo_caido.png",
+      "sha256": "c0e84a986181e493e556cfd38a73c997252a401eecc211ffe306e7dade0e06d9",
+      "pivo": [
+        54,
+        72
+      ]
+    },
+    "corpo_marcha": {
+      "arquivo": "partes/corpo_marcha.png",
+      "sha256": "0ece380270acfba7873b694de24e8e5813f755ed0045bab6ee64f94942f01f35",
+      "pivo": [
+        27,
+        22
+      ]
+    },
+    "manto_marcha": {
+      "arquivo": "partes/manto_marcha.png",
+      "sha256": "af861db30608562b3098fa97020fbc59220fa567cd95e39e4b50a89f25b0b5fb",
+      "pivo": [
+        27,
+        22
+      ]
+    },
+    "perna_frente_0": {
+      "arquivo": "partes/perna_frente_0.png",
+      "sha256": "5006b10c4be276cddb8f56d8d7e9745c45f335a7335e6e04384e95dfb5745f38",
+      "pivo": [
+        54,
+        72
+      ]
+    },
+    "perna_frente_1": {
+      "arquivo": "partes/perna_frente_1.png",
+      "sha256": "fd387f6da17829bf86cbe5aaba9fcd61653a4c99ec1ccb69883ad434ba3e714d",
+      "pivo": [
+        54,
+        72
+      ]
+    },
+    "perna_frente_2": {
+      "arquivo": "partes/perna_frente_2.png",
+      "sha256": "ce94b53017c7611991b6643360bc039b976107d90e74839dfa4975eaf8270a4e",
+      "pivo": [
+        54,
+        72
+      ]
+    },
+    "perna_frente_3": {
+      "arquivo": "partes/perna_frente_3.png",
+      "sha256": "d5ad2a2f8ff83d6a54a3fe3fa74d544c89c6a63b2ba078eb7610f8a8f1d7ad31",
+      "pivo": [
+        54,
+        72
+      ]
+    },
+    "perna_frente_4": {
+      "arquivo": "partes/perna_frente_4.png",
+      "sha256": "c32dac72ea69e7bf9af06a0c0c96801592298f9941a19a5ae5c193de37d8f76a",
+      "pivo": [
+        54,
+        72
+      ]
+    },
+    "perna_frente_5": {
+      "arquivo": "partes/perna_frente_5.png",
+      "sha256": "baa1e4d8800623454d89d80349e69bc7e69302d806aba0a5ddd228db6170b43d",
+      "pivo": [
+        54,
+        72
+      ]
+    },
+    "perna_frente_6": {
+      "arquivo": "partes/perna_frente_6.png",
+      "sha256": "74c3855268441e551f8aa5e7e2e001d524daeb6a7db42d6d9c624942be6d6ad9",
+      "pivo": [
+        54,
+        72
+      ]
+    },
+    "perna_frente_7": {
+      "arquivo": "partes/perna_frente_7.png",
+      "sha256": "2ad4004ce2e9bcee6f6582fc7c454e1c7f90231abbd08c63bc2d6e2e0fcafaf3",
+      "pivo": [
+        54,
+        72
+      ]
+    },
+    "perna_tras_0": {
+      "arquivo": "partes/perna_tras_0.png",
+      "sha256": "8962ddb84ccd9ab8d1a798b5527449f1ec2cce744233a7701b9eef0340fe21ef",
+      "pivo": [
+        54,
+        72
+      ]
+    },
+    "perna_tras_1": {
+      "arquivo": "partes/perna_tras_1.png",
+      "sha256": "e4311c4eec1ad71d89dd964a777551a8fbfe09116d9ea25226621590e58f60d9",
+      "pivo": [
+        54,
+        72
+      ]
+    },
+    "perna_tras_2": {
+      "arquivo": "partes/perna_tras_2.png",
+      "sha256": "48f78e578a7b778f1d03705e39434c79c18aa42f2b39806b4da14887abfca296",
+      "pivo": [
+        54,
+        72
+      ]
+    },
+    "perna_tras_3": {
+      "arquivo": "partes/perna_tras_3.png",
+      "sha256": "0fd0120fe2b56f884226fbbe22b82f8ef11cedde8467c0692f372f89cbcd6940",
+      "pivo": [
+        54,
+        72
+      ]
+    },
+    "perna_tras_4": {
+      "arquivo": "partes/perna_tras_4.png",
+      "sha256": "020a8562dbae9f6418fb38522ea4309aa597214f93751a4852ed5dcc2313d42f",
+      "pivo": [
+        54,
+        72
+      ]
+    },
+    "perna_tras_5": {
+      "arquivo": "partes/perna_tras_5.png",
+      "sha256": "3b23624bfa75b1a2a1ba6978883e85ef42e254baa853bb1cb35f71700ed2572d",
+      "pivo": [
+        54,
+        72
+      ]
+    },
+    "perna_tras_6": {
+      "arquivo": "partes/perna_tras_6.png",
+      "sha256": "f3e4188a91ec6468ca7f5131a899202169e71f8d7ad14a36751f52676a9616c1",
+      "pivo": [
+        54,
+        72
+      ]
+    },
+    "perna_tras_7": {
+      "arquivo": "partes/perna_tras_7.png",
+      "sha256": "4fc97ecb31239c01fd0768d3c8a33c8cd7ade67a291af5ffe29564431af78758",
+      "pivo": [
+        54,
+        72
+      ]
+    },
+    "sinos": {
+      "arquivo": "partes/sinos.png",
+      "sha256": "c7d37caddcf50db50e789bb621ac3a4ac8fe479e42d9731b4dc8586867287864",
+      "pivo": [
+        27,
+        22
+      ]
+    }
+  },
+  "marcha": "pes alternados, 4 px/quadro; manto/musgo/sinos usam quadro anterior",
+  "queda": "joelhos -> frente; capuz/rosto originais, rotacao NEAREST de 20 graus; cajado SEM braco separado",
+  "componentes_morte": "um corpo principal + um cajado solto; nenhum pixel solto"
+}

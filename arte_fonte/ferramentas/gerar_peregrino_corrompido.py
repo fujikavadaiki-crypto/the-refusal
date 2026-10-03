@@ -212,6 +212,12 @@ def descriptor(p,anchor=ANCHOR):
     return {'arquivo':p.relative_to(PACK).as_posix(),'sha256':sha(p),'largura':w,'altura':h,'ancora':anchor}
 
 def build():
+    # Once 4.7b is installed, keep its four revised animations when rerunning
+    # the public generator. All other approved 4.7 artwork remains archived.
+    if (ART/'ajuste_47b/rig.json').exists():
+        import runpy
+        revised=runpy.run_path(str(ROOT/'arte_fonte/ferramentas/ajustar_peregrino_47b.py'))
+        revised['build'](apply=True);revised['verify']();return
     parts,master=split_master()
     for d in ['sprites','efeitos','sombras','paleta']:(PACK/d).mkdir(parents=True,exist_ok=True)
     shadow=Image.new('RGBA',(30,7));ImageDraw.Draw(shadow).ellipse((1,1,28,5),fill=tuple(PAL[3])+(120,));shadow.save(PACK/'sombras/chao.png');shadow_spec=descriptor(PACK/'sombras/chao.png',[15,3])
@@ -303,6 +309,9 @@ def build():
     verify()
 
 def verify():
+    if (ART/'ajuste_47b/rig.json').exists():
+        import runpy
+        runpy.run_path(str(ROOT/'arte_fonte/ferramentas/ajustar_peregrino_47b.py'))['verify']();return
     data=json.loads((PACK/'manifesto_sprites.json').read_text(encoding='utf-8'));checks=[];unique=set();timings=[]
     assert len(data['animacoes'])==12
     for anim in data['animacoes']:

@@ -1,0 +1,87 @@
+{
+  "preservado": false,
+  "metadados": {
+    "branch": true,
+    "main": true,
+    "original_head": true,
+    "original_status": true
+  },
+  "contrato_tempos_ancoras_areas_cadencia_preservado": true,
+  "alteracoes": {
+    "integracao_protegida": [
+      "codex/diretor/DIARIO_DIRETOR.md"
+    ],
+    "prova": [],
+    "P40": [],
+    "original": [],
+    "pacotes_aprovados": [],
+    "historico": []
+  },
+  "arquivos": {
+    "integracao_protegida": 2300,
+    "prova": 1550,
+    "P40": 1578,
+    "original": 770,
+    "pacotes_aprovados": 3,
+    "historico": 1
+  },
+  "excecoes_autorizadas": [
+    "codex/evidencias_peregrino_47b",
+    "codex/verificar_peregrino_47b.py",
+    "codex/RELATORIO_PEREGRINO_47B.md",
+    "codex/testes/foto_peregrino_47b.gd",
+    "arte_fonte/ferramentas/ajustar_peregrino_47b.py",
+    "arte_fonte/ferramentas/gerar_peregrino_corrompido.py",
+    "arte_fonte/peregrino_corrompido_v1/ajuste_47b",
+    "assets/enemies/peregrino_corrompido_v1/manifesto_sprites.json",
+    "assets/enemies/peregrino_corrompido_v1/sprites/patrulha_f00.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/patrulha_f01.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/patrulha_f02.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/patrulha_f03.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/patrulha_f04.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/patrulha_f05.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/patrulha_f06.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/patrulha_f07.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/perseguicao_f00.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/perseguicao_f01.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/perseguicao_f02.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/perseguicao_f03.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/perseguicao_f04.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/perseguicao_f05.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/perseguicao_f06.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/perseguicao_f07.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/ruptura_f00.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/ruptura_f01.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/ruptura_f02.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/ruptura_f03.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/ruptura_f04.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/ruptura_f05.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/ruptura_f06.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/morte_f00.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/morte_f01.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/morte_f02.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/morte_f03.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/morte_f04.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/morte_f05.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/morte_f06.png",
+    "assets/enemies/peregrino_corrompido_v1/sprites/morte_f07.png"
+  ],
+  "alteracoes_externas": [
+    {
+      "arquivo": "codex/diretor/DIARIO_DIRETOR.md",
+      "versionado": false,
+      "sha256_antes": "c0150b03c1974e6728ec33f0f6c09e1421ed1a2f8d636df4dd1a774941c53852",
+      "sha256_depois": "26e1fa10ce464b0f42251b07c634ddade7d3abdb70d633bfa595d9add525c1b6",
+      "nota": "Arquivo preexistente fora do Git, alterado durante a tarefa; nenhuma operacao desta tarefa escreveu nele. Preservado em disco, fora do commit."
+    }
+  ],
+  "preservacao_da_tarefa_confirmada": true,
+  "alteracoes_nao_explicitadas": {
+    "integracao_protegida": [],
+    "prova": [],
+    "P40": [],
+    "original": [],
+    "pacotes_aprovados": [],
+    "historico": []
+  }
+}

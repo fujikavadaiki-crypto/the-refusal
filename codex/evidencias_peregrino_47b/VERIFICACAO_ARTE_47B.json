@@ -1,0 +1,271 @@
+{
+  "contrato_integral_preservado": true,
+  "marchas_8_quadros_distintos": true,
+  "cadencia_px_por_quadro": 4,
+  "cores_apenas_da_arte_em_pe": true,
+  "quadros": [
+    {
+      "arquivo": "sprites/patrulha_f00.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 107
+    },
+    {
+      "arquivo": "sprites/patrulha_f01.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 106
+    },
+    {
+      "arquivo": "sprites/patrulha_f02.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 108
+    },
+    {
+      "arquivo": "sprites/patrulha_f03.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 101
+    },
+    {
+      "arquivo": "sprites/patrulha_f04.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 99
+    },
+    {
+      "arquivo": "sprites/patrulha_f05.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 97
+    },
+    {
+      "arquivo": "sprites/patrulha_f06.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 108
+    },
+    {
+      "arquivo": "sprites/patrulha_f07.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 105
+    },
+    {
+      "arquivo": "sprites/perseguicao_f00.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 107
+    },
+    {
+      "arquivo": "sprites/perseguicao_f01.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 106
+    },
+    {
+      "arquivo": "sprites/perseguicao_f02.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 108
+    },
+    {
+      "arquivo": "sprites/perseguicao_f03.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 101
+    },
+    {
+      "arquivo": "sprites/perseguicao_f04.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 99
+    },
+    {
+      "arquivo": "sprites/perseguicao_f05.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 97
+    },
+    {
+      "arquivo": "sprites/perseguicao_f06.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 108
+    },
+    {
+      "arquivo": "sprites/perseguicao_f07.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 105
+    },
+    {
+      "arquivo": "sprites/ruptura_f00.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 137
+    },
+    {
+      "arquivo": "sprites/ruptura_f01.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 161
+    },
+    {
+      "arquivo": "sprites/ruptura_f02.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 155
+    },
+    {
+      "arquivo": "sprites/ruptura_f03.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 147
+    },
+    {
+      "arquivo": "sprites/ruptura_f04.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 140
+    },
+    {
+      "arquivo": "sprites/ruptura_f05.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 122
+    },
+    {
+      "arquivo": "sprites/ruptura_f06.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 138
+    },
+    {
+      "arquivo": "sprites/morte_f00.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 208
+    },
+    {
+      "arquivo": "sprites/morte_f01.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 169
+    },
+    {
+      "arquivo": "sprites/morte_f02.png",
+      "componentes": 1,
+      "pixels_isolados": 0,
+      "osso_claro_px": 35,
+      "musgo_px": 180
+    },
+    {
+      "arquivo": "sprites/morte_f03.png",
+      "componentes": 2,
+      "pixels_isolados": 0,
+      "osso_claro_px": 34,
+      "musgo_px": 260
+    },
+    {
+      "arquivo": "sprites/morte_f04.png",
+      "componentes": 2,
+      "pixels_isolados": 0,
+      "osso_claro_px": 34,
+      "musgo_px": 260
+    },
+    {
+      "arquivo": "sprites/morte_f05.png",
+      "componentes": 2,
+      "pixels_isolados": 0,
+      "osso_claro_px": 34,
+      "musgo_px": 260
+    },
+    {
+      "arquivo": "sprites/morte_f06.png",
+      "componentes": 2,
+      "pixels_isolados": 0,
+      "osso_claro_px": 34,
+      "musgo_px": 260
+    },
+    {
+      "arquivo": "sprites/morte_f07.png",
+      "componentes": 2,
+      "pixels_isolados": 0,
+      "osso_claro_px": 34,
+      "musgo_px": 260
+    }
+  ],
+  "medidas_raster_marcha": {
+    "patrulha": {
+      "0": {
+        "pe_frente_x_px": 10.5,
+        "pe_frente_y_px": -2,
+        "rosto_y_px": -34.0
+      },
+      "1": {
+        "pe_frente_x_px": 6.5,
+        "pe_frente_y_px": -2,
+        "rosto_y_px": -33.0
+      },
+      "4": {
+        "pe_frente_x_px": -5.5,
+        "pe_frente_y_px": -2,
+        "rosto_y_px": -34.0
+      },
+      "6": {
+        "pe_frente_x_px": 3.5,
+        "pe_frente_y_px": -9,
+        "rosto_y_px": -33.0
+      }
+    },
+    "perseguicao": {
+      "0": {
+        "pe_frente_x_px": 10.5,
+        "pe_frente_y_px": -2,
+        "rosto_y_px": -34.0
+      },
+      "1": {
+        "pe_frente_x_px": 6.5,
+        "pe_frente_y_px": -2,
+        "rosto_y_px": -33.0
+      },
+      "4": {
+        "pe_frente_x_px": -5.5,
+        "pe_frente_y_px": -2,
+        "rosto_y_px": -34.0
+      },
+      "6": {
+        "pe_frente_x_px": 3.5,
+        "pe_frente_y_px": -9,
+        "rosto_y_px": -33.0
+      }
+    }
+  }
+}

@@ -139,7 +139,7 @@
       "quadros": [
         {
           "arquivo": "sprites/patrulha_f00.png",
-          "sha256": "17e66087f6fc93b8ea4fe2b43b66be494bacda3523cde4314e54db0d5ad1d4a0",
+          "sha256": "260530dd30267bb01f25736ce2a5d8fd0216ed89fc8031fdbdc7133ebc21ed37",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -153,7 +153,7 @@
         },
         {
           "arquivo": "sprites/patrulha_f01.png",
-          "sha256": "2a0ce743eab89290905caf21b92be39f77e1ca2de1896b8697a17c562775414c",
+          "sha256": "50993073f9d5b5ba9ba8a88c8669559071cde6e8f820ce510d156be8b6b86974",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -167,7 +167,7 @@
         },
         {
           "arquivo": "sprites/patrulha_f02.png",
-          "sha256": "df112569b751d2f443545e011b3dfb62d8fefec02a4fedc53bacceb804fe4582",
+          "sha256": "24989214592f0d2d022a33eb69273a50f55650600af03677b80a43eed4676aac",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -181,7 +181,7 @@
         },
         {
           "arquivo": "sprites/patrulha_f03.png",
-          "sha256": "7a5db93d6ca6e9b0261694abc0c2b95ccf9028401d64a1afc3964ab5e84235fc",
+          "sha256": "38cea2629f40edee77bd2734b4a9ba16ea7ea50528c12c0be823603f04bde569",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -195,7 +195,7 @@
         },
         {
           "arquivo": "sprites/patrulha_f04.png",
-          "sha256": "cf45783c858024eaefcfbe20bf6ae607877db91e71ce94cf1f61160194e0606f",
+          "sha256": "7396445ea938888b762bd2f8ab703c5e1865d816444eccfc817ac854bece091c",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -209,7 +209,7 @@
         },
         {
           "arquivo": "sprites/patrulha_f05.png",
-          "sha256": "c7907d6b10d240ca658d5dbbc8a81f323ef983077d7bb0a77efd11f9c22692eb",
+          "sha256": "b6682a6273f1c93fe2253d8fc58de955b25e94a0379e576b19a2c64cd163aae0",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -223,7 +223,7 @@
         },
         {
           "arquivo": "sprites/patrulha_f06.png",
-          "sha256": "e14b68928db4220c2ad2fb7f2d65bdbdcb7470c7f614da0bf8c7c40ce95f89df",
+          "sha256": "b03cb782de43f44a03fd137c3a4fa9bf183c0ffb5c4c8a40213965ea54a535e6",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -237,7 +237,7 @@
         },
         {
           "arquivo": "sprites/patrulha_f07.png",
-          "sha256": "e103fafd2d1cf222ea9838b15cb019768262146295f1ed19af55ad45900d0420",
+          "sha256": "768233a9d8acbc690e77ff2a0055236a80b975f4577777fd68f711f712bf3852",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -268,7 +268,7 @@
       "quadros": [
         {
           "arquivo": "sprites/perseguicao_f00.png",
-          "sha256": "dcf74abbb10d5163d4e41ed53a6af41487339b2f723129ec1b18d0d5ad31bb43",
+          "sha256": "ff3d68d595d63276f5507f9d24f0663173d1961f7a0bce5c4c14f0ff8b135113",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -282,7 +282,7 @@
         },
         {
           "arquivo": "sprites/perseguicao_f01.png",
-          "sha256": "10aeb122fdc2bd5f6de0b85abb98477500fb76150452469753dc9072fdf637a1",
+          "sha256": "bb0756701849c3b5103b189c556d55c0a9daa9b9936dc8eb543cf3046439ef26",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -296,7 +296,7 @@
         },
         {
           "arquivo": "sprites/perseguicao_f02.png",
-          "sha256": "5dcd123a58ebad4f4148df0038723588f7946a73d534a07c3681b92f0432352d",
+          "sha256": "0bdc271f5ee9d2735a31130e8134db8e10b68d70ea31740be33e6c5c8c7bfb46",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -310,7 +310,7 @@
         },
         {
           "arquivo": "sprites/perseguicao_f03.png",
-          "sha256": "6f986436a7f281ba3d04310d42f0f32d7c879b31c67f256a88be420dd53a45a4",
+          "sha256": "d177d2eba1ab4607e44d84b1b05164faa32790f84bc69572d7f121fc17789377",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -324,7 +324,7 @@
         },
         {
           "arquivo": "sprites/perseguicao_f04.png",
-          "sha256": "68b7d64cdaf1a0fd8f976baab3f35b4e3b24a7f0da7d4069d646ab3e86ebcb0b",
+          "sha256": "284d8ddea974c07f179742dccc12c724bfbd339782ae758dad41f0963063c62e",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -338,7 +338,7 @@
         },
         {
           "arquivo": "sprites/perseguicao_f05.png",
-          "sha256": "e3b15058a590e670a0cf0d3f18f19b8fb31644513e7b65774b6859246f7a7b85",
+          "sha256": "5e86409cb2ef2b29b3e62e842fbdb2b76782c4b4200d3daea40cf5f15ee85280",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -352,7 +352,7 @@
         },
         {
           "arquivo": "sprites/perseguicao_f06.png",
-          "sha256": "9687387307ad5218d3f344b75d64f3260a673921ad7714938b793a2542db1ca5",
+          "sha256": "b73d3f43ee573084b038163c1e8c68c2d2483577142ccc9c5d5d87a912bb192b",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -366,7 +366,7 @@
         },
         {
           "arquivo": "sprites/perseguicao_f07.png",
-          "sha256": "134e071acc25499c87859c21c8ede24e49dae6e5dbc01eda4e0a651659385bde",
+          "sha256": "d3947796d11f704e2f5beb25ddc3350c2db4ecacd9aa25c73c7056c601141ea2",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -499,7 +499,7 @@
       "quadros": [
         {
           "arquivo": "sprites/ruptura_f00.png",
-          "sha256": "3197713809e648ffd14ed77b477d12e96e269a54cf5639e6a349fd701a7c6463",
+          "sha256": "e3b7e90f537f040c091b364ad3970f65fa116c83f65d026deaa12f24170d75ec",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -513,7 +513,7 @@
         },
         {
           "arquivo": "sprites/ruptura_f01.png",
-          "sha256": "c32b61408ff847aa6b5b4b1addccfc1af43f07a197cc55d14a6830779b584082",
+          "sha256": "1adf3386110824f87ca34310d311df811ac225de7d56a29428c75d68b2451548",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -527,7 +527,7 @@
         },
         {
           "arquivo": "sprites/ruptura_f02.png",
-          "sha256": "e568f8649edd44a2b3e6cb6e8c519c5abd4998980af87a4c95048a5d300a5138",
+          "sha256": "6544df07e91d4abe10874685cc27e42dfe5237272ecd1c54607b54751fa7b0c8",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -541,7 +541,7 @@
         },
         {
           "arquivo": "sprites/ruptura_f03.png",
-          "sha256": "17f42f718ab0729c97e17baf8c58f284c712d11edf1096277ec6d933b7f343df",
+          "sha256": "31d15ea71024c027aa2a0cc268c74e7a6a4fad3aee163c82265a5f4934ebd842",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -555,7 +555,7 @@
         },
         {
           "arquivo": "sprites/ruptura_f04.png",
-          "sha256": "5b777b78aacde82006ae2900f14ee51988a67073439690b7ffd0be9bda339a71",
+          "sha256": "4b622d553e5d0a69f04d905f4b34f2da9b577a0a8d78467005b760cd44339876",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -569,7 +569,7 @@
         },
         {
           "arquivo": "sprites/ruptura_f05.png",
-          "sha256": "b4efd858bdd42fcdc0fe9012c0310561420d239c7a2b2030705cb4543ccacb9f",
+          "sha256": "9a800f3fce9cf9097ab9e64fd41d4f31b91db1223377f6d5db807d5f3da36638",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -583,7 +583,7 @@
         },
         {
           "arquivo": "sprites/ruptura_f06.png",
-          "sha256": "ce6731bfa8d5f829a4ce54872a56870820ed663a28a810e012d6265737e93ced",
+          "sha256": "15fb306dff246e666e87375b2d90991119181ec81bad0140feedfbc189757dc1",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -614,7 +614,7 @@
       "quadros": [
         {
           "arquivo": "sprites/morte_f00.png",
-          "sha256": "b57abc9be628c56e094cd118c5cccdbf9c00ea8737ef35a73455d224d3bc164d",
+          "sha256": "f2cb06aa844d1186f08733e9d8224636abaa5059d5d0c31e9dff1e17d09b3c86",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -628,7 +628,7 @@
         },
         {
           "arquivo": "sprites/morte_f01.png",
-          "sha256": "b9ea3befc151826c72486c9c7882b6627f65505477dfb49e020ee9a1a16fd0d9",
+          "sha256": "c88d631c16a0bcdafd6f96044070d3f7e1ccbda0a96ba944357b9810f31eb69f",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -642,7 +642,7 @@
         },
         {
           "arquivo": "sprites/morte_f02.png",
-          "sha256": "4dd7e4f519374dcf3a2a16d1024beb0ae4df4728c45190ebbd44323c4467619a",
+          "sha256": "1baffe2b521c0dd24917facf2b3d126fc5a217c509b8e15439ef4bad283620c4",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -656,7 +656,7 @@
         },
         {
           "arquivo": "sprites/morte_f03.png",
-          "sha256": "643b17f58a46d9768eaf0e4b8626cfbf3d7d5cf430656789f556f5a39800fd88",
+          "sha256": "f7c7f510187efc799914482515d6beb952ad4b8ea7499a94ec583c2bbdccfa3b",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -670,7 +670,7 @@
         },
         {
           "arquivo": "sprites/morte_f04.png",
-          "sha256": "96aab2bd151d74c759ce95e2a1f2b356d56fffb41ffac63d475549b3559cf327",
+          "sha256": "62203a1877c46ddc34c8ba67e6c022a3b99226af261180d1c07dc6b7cf76fc25",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -684,7 +684,7 @@
         },
         {
           "arquivo": "sprites/morte_f05.png",
-          "sha256": "ce39050ffc3406e8a166aaf0bb5a266d328d67691d0c77cdccbb327c76d0812b",
+          "sha256": "0d9b0d4714e555c37c5316fd059fbcc080d740bdbcdce69936e75456a52a80b4",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -698,7 +698,7 @@
         },
         {
           "arquivo": "sprites/morte_f06.png",
-          "sha256": "96aab2bd151d74c759ce95e2a1f2b356d56fffb41ffac63d475549b3559cf327",
+          "sha256": "2584276848b4227baa02e7f545f622844582d146a68b6f1582cb4210593e0f7e",
           "largura": 160,
           "altura": 104,
           "ancora": [
@@ -712,7 +712,7 @@
         },
         {
           "arquivo": "sprites/morte_f07.png",
-          "sha256": "96aab2bd151d74c759ce95e2a1f2b356d56fffb41ffac63d475549b3559cf327",
+          "sha256": "2584276848b4227baa02e7f545f622844582d146a68b6f1582cb4210593e0f7e",
           "largura": 160,
           "altura": 104,
           "ancora": [

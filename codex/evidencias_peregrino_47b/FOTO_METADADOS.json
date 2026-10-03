@@ -1,0 +1,1 @@
+{"animation":"morte","art_scale":1,"enemy_hp":0,"feet_screen":[377.777740478516,190.000030517578],"frame":7,"method":"Photo only: actors stationary, death triggered through Health.receive_hit; no production edits.","scene":"res://scenes/biomes/cemiterio/sala_cemiterio.tscn","viewport":[960,540],"zoom":0.9}

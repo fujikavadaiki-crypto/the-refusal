@@ -1,0 +1,160 @@
+{
+  "manifesto_intacto": true,
+  "quadros": [
+    {
+      "arquivo": "morte_f00.png",
+      "sha256": "f2cb06aa844d1186f08733e9d8224636abaa5059d5d0c31e9dff1e17d09b3c86",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "morte_f01.png",
+      "sha256": "c88d631c16a0bcdafd6f96044070d3f7e1ccbda0a96ba944357b9810f31eb69f",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "morte_f02.png",
+      "sha256": "1baffe2b521c0dd24917facf2b3d126fc5a217c509b8e15439ef4bad283620c4",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "morte_f03.png",
+      "sha256": "f7c7f510187efc799914482515d6beb952ad4b8ea7499a94ec583c2bbdccfa3b",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "morte_f04.png",
+      "sha256": "62203a1877c46ddc34c8ba67e6c022a3b99226af261180d1c07dc6b7cf76fc25",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "morte_f05.png",
+      "sha256": "0d9b0d4714e555c37c5316fd059fbcc080d740bdbcdce69936e75456a52a80b4",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "morte_f06.png",
+      "sha256": "2584276848b4227baa02e7f545f622844582d146a68b6f1582cb4210593e0f7e",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "morte_f07.png",
+      "sha256": "2584276848b4227baa02e7f545f622844582d146a68b6f1582cb4210593e0f7e",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "patrulha_f00.png",
+      "sha256": "260530dd30267bb01f25736ce2a5d8fd0216ed89fc8031fdbdc7133ebc21ed37",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "patrulha_f01.png",
+      "sha256": "50993073f9d5b5ba9ba8a88c8669559071cde6e8f820ce510d156be8b6b86974",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "patrulha_f02.png",
+      "sha256": "24989214592f0d2d022a33eb69273a50f55650600af03677b80a43eed4676aac",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "patrulha_f03.png",
+      "sha256": "38cea2629f40edee77bd2734b4a9ba16ea7ea50528c12c0be823603f04bde569",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "patrulha_f04.png",
+      "sha256": "7396445ea938888b762bd2f8ab703c5e1865d816444eccfc817ac854bece091c",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "patrulha_f05.png",
+      "sha256": "b6682a6273f1c93fe2253d8fc58de955b25e94a0379e576b19a2c64cd163aae0",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "patrulha_f06.png",
+      "sha256": "b03cb782de43f44a03fd137c3a4fa9bf183c0ffb5c4c8a40213965ea54a535e6",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "patrulha_f07.png",
+      "sha256": "768233a9d8acbc690e77ff2a0055236a80b975f4577777fd68f711f712bf3852",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "perseguicao_f00.png",
+      "sha256": "ff3d68d595d63276f5507f9d24f0663173d1961f7a0bce5c4c14f0ff8b135113",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "perseguicao_f01.png",
+      "sha256": "bb0756701849c3b5103b189c556d55c0a9daa9b9936dc8eb543cf3046439ef26",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "perseguicao_f02.png",
+      "sha256": "0bdc271f5ee9d2735a31130e8134db8e10b68d70ea31740be33e6c5c8c7bfb46",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "perseguicao_f03.png",
+      "sha256": "d177d2eba1ab4607e44d84b1b05164faa32790f84bc69572d7f121fc17789377",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "perseguicao_f04.png",
+      "sha256": "284d8ddea974c07f179742dccc12c724bfbd339782ae758dad41f0963063c62e",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "perseguicao_f05.png",
+      "sha256": "5e86409cb2ef2b29b3e62e842fbdb2b76782c4b4200d3daea40cf5f15ee85280",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "perseguicao_f06.png",
+      "sha256": "b73d3f43ee573084b038163c1e8c68c2d2483577142ccc9c5d5d87a912bb192b",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "perseguicao_f07.png",
+      "sha256": "d3947796d11f704e2f5beb25ddc3350c2db4ecacd9aa25c73c7056c601141ea2",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "ruptura_f00.png",
+      "sha256": "e3b7e90f537f040c091b364ad3970f65fa116c83f65d026deaa12f24170d75ec",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "ruptura_f01.png",
+      "sha256": "1adf3386110824f87ca34310d311df811ac225de7d56a29428c75d68b2451548",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "ruptura_f02.png",
+      "sha256": "6544df07e91d4abe10874685cc27e42dfe5237272ecd1c54607b54751fa7b0c8",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "ruptura_f03.png",
+      "sha256": "31d15ea71024c027aa2a0cc268c74e7a6a4fad3aee163c82265a5f4934ebd842",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "ruptura_f04.png",
+      "sha256": "4b622d553e5d0a69f04d905f4b34f2da9b577a0a8d78467005b760cd44339876",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "ruptura_f05.png",
+      "sha256": "9a800f3fce9cf9097ab9e64fd41d4f31b91db1223377f6d5db807d5f3da36638",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "ruptura_f06.png",
+      "sha256": "15fb306dff246e666e87375b2d90991119181ec81bad0140feedfbc189757dc1",
+      "reproducao_exata": true
+    }
+  ]
+}

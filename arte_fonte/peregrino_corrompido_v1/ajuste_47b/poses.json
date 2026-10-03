@@ -1,0 +1,341 @@
+{
+  "patrulha": [
+    {
+      "gait": 0,
+      "lean": 0,
+      "bob": -1,
+      "pe_frente": [
+        10,
+        0
+      ],
+      "pe_tras": [
+        -6,
+        0
+      ],
+      "secundario_quadro": 7,
+      "manto_sinos_sway": -1,
+      "manto_sinos_bob": -1
+    },
+    {
+      "gait": 1,
+      "lean": 0,
+      "bob": 0,
+      "pe_frente": [
+        6,
+        0
+      ],
+      "pe_tras": [
+        -3,
+        -4
+      ],
+      "secundario_quadro": 0,
+      "manto_sinos_sway": -1,
+      "manto_sinos_bob": -1
+    },
+    {
+      "gait": 2,
+      "lean": 0,
+      "bob": 0,
+      "pe_frente": [
+        2,
+        0
+      ],
+      "pe_tras": [
+        3,
+        -7
+      ],
+      "secundario_quadro": 1,
+      "manto_sinos_sway": 0,
+      "manto_sinos_bob": 0
+    },
+    {
+      "gait": 3,
+      "lean": 0,
+      "bob": -1,
+      "pe_frente": [
+        -2,
+        0
+      ],
+      "pe_tras": [
+        8,
+        -4
+      ],
+      "secundario_quadro": 2,
+      "manto_sinos_sway": 1,
+      "manto_sinos_bob": 0
+    },
+    {
+      "gait": 4,
+      "lean": 0,
+      "bob": -1,
+      "pe_frente": [
+        -6,
+        0
+      ],
+      "pe_tras": [
+        10,
+        0
+      ],
+      "secundario_quadro": 3,
+      "manto_sinos_sway": 1,
+      "manto_sinos_bob": -1
+    },
+    {
+      "gait": 5,
+      "lean": 0,
+      "bob": 0,
+      "pe_frente": [
+        -3,
+        -4
+      ],
+      "pe_tras": [
+        6,
+        0
+      ],
+      "secundario_quadro": 4,
+      "manto_sinos_sway": 1,
+      "manto_sinos_bob": -1
+    },
+    {
+      "gait": 6,
+      "lean": 0,
+      "bob": 0,
+      "pe_frente": [
+        3,
+        -7
+      ],
+      "pe_tras": [
+        2,
+        0
+      ],
+      "secundario_quadro": 5,
+      "manto_sinos_sway": 0,
+      "manto_sinos_bob": 0
+    },
+    {
+      "gait": 7,
+      "lean": 0,
+      "bob": -1,
+      "pe_frente": [
+        8,
+        -4
+      ],
+      "pe_tras": [
+        -2,
+        0
+      ],
+      "secundario_quadro": 6,
+      "manto_sinos_sway": -1,
+      "manto_sinos_bob": 0
+    }
+  ],
+  "perseguicao": [
+    {
+      "gait": 0,
+      "lean": 3,
+      "bob": -1,
+      "pe_frente": [
+        10,
+        0
+      ],
+      "pe_tras": [
+        -6,
+        0
+      ],
+      "secundario_quadro": 7,
+      "manto_sinos_sway": -1,
+      "manto_sinos_bob": -1
+    },
+    {
+      "gait": 1,
+      "lean": 3,
+      "bob": 0,
+      "pe_frente": [
+        6,
+        0
+      ],
+      "pe_tras": [
+        -3,
+        -4
+      ],
+      "secundario_quadro": 0,
+      "manto_sinos_sway": -1,
+      "manto_sinos_bob": -1
+    },
+    {
+      "gait": 2,
+      "lean": 3,
+      "bob": 0,
+      "pe_frente": [
+        2,
+        0
+      ],
+      "pe_tras": [
+        3,
+        -7
+      ],
+      "secundario_quadro": 1,
+      "manto_sinos_sway": 0,
+      "manto_sinos_bob": 0
+    },
+    {
+      "gait": 3,
+      "lean": 3,
+      "bob": -1,
+      "pe_frente": [
+        -2,
+        0
+      ],
+      "pe_tras": [
+        8,
+        -4
+      ],
+      "secundario_quadro": 2,
+      "manto_sinos_sway": 1,
+      "manto_sinos_bob": 0
+    },
+    {
+      "gait": 4,
+      "lean": 3,
+      "bob": -1,
+      "pe_frente": [
+        -6,
+        0
+      ],
+      "pe_tras": [
+        10,
+        0
+      ],
+      "secundario_quadro": 3,
+      "manto_sinos_sway": 1,
+      "manto_sinos_bob": -1
+    },
+    {
+      "gait": 5,
+      "lean": 3,
+      "bob": 0,
+      "pe_frente": [
+        -3,
+        -4
+      ],
+      "pe_tras": [
+        6,
+        0
+      ],
+      "secundario_quadro": 4,
+      "manto_sinos_sway": 1,
+      "manto_sinos_bob": -1
+    },
+    {
+      "gait": 6,
+      "lean": 3,
+      "bob": 0,
+      "pe_frente": [
+        3,
+        -7
+      ],
+      "pe_tras": [
+        2,
+        0
+      ],
+      "secundario_quadro": 5,
+      "manto_sinos_sway": 0,
+      "manto_sinos_bob": 0
+    },
+    {
+      "gait": 7,
+      "lean": 3,
+      "bob": -1,
+      "pe_frente": [
+        8,
+        -4
+      ],
+      "pe_tras": [
+        -2,
+        0
+      ],
+      "secundario_quadro": 6,
+      "manto_sinos_sway": -1,
+      "manto_sinos_bob": 0
+    }
+  ],
+  "ruptura": [
+    {
+      "lean": -3,
+      "drop": 2
+    },
+    {
+      "lean": -4,
+      "drop": 6
+    },
+    {
+      "lean": -3,
+      "drop": 10
+    },
+    {
+      "lean": -3,
+      "drop": 12
+    },
+    {
+      "lean": -2,
+      "drop": 13
+    },
+    {
+      "lean": -3,
+      "drop": 12
+    },
+    {
+      "lean": -3,
+      "drop": 13
+    }
+  ],
+  "morte": [
+    {
+      "lean": -3,
+      "drop": 3
+    },
+    {
+      "lean": 1,
+      "drop": 12
+    },
+    {
+      "lean": 8,
+      "drop": 17
+    },
+    {
+      "fallen": true,
+      "head_x": 20,
+      "head_bottom": -6,
+      "staff_y": -15,
+      "bell_lag": -1
+    },
+    {
+      "fallen": true,
+      "head_x": 26,
+      "head_bottom": -1,
+      "staff_y": -6,
+      "bell_lag": 0
+    },
+    {
+      "fallen": true,
+      "head_x": 27,
+      "head_bottom": -1,
+      "staff_y": -8,
+      "bell_lag": 1
+    },
+    {
+      "fallen": true,
+      "head_x": 27,
+      "head_bottom": -1,
+      "staff_y": -5,
+      "bell_lag": 0
+    },
+    {
+      "fallen": true,
+      "head_x": 27,
+      "head_bottom": -1,
+      "staff_y": -5,
+      "bell_lag": 0
+    }
+  ]
+}
