@@ -1,7 +1,7 @@
 {
   "aprovado": true,
   "arquivo": "arte_fonte/forma_humana_v1/forma_humana_mestre_x1.png",
-  "sha256": "c7f501c30f0f5dd2201ac8651a7c1a4c513500c5a4b90122a0b3ad6089dcf856",
+  "sha256": "204432d31a2d8890c6def7b6fd81b56972ce482b5eca82fa3de878ebe2dcf988",
   "canvas_px": [
     50,
     52
@@ -26,7 +26,7 @@
   "componentes": 1,
   "pixels_isolados_sem_mesma_cor_em_8_vizinhos": 0,
   "botas_distintas": 2,
-  "cores_usadas": 23,
+  "cores_usadas": 25,
   "paleta": "paleta_bosque_v1",
   "cores": [
     {
@@ -36,7 +36,7 @@
         19,
         21
       ],
-      "pixels": 34
+      "pixels": 55
     },
     {
       "id": 1,
@@ -45,7 +45,7 @@
         31,
         33
       ],
-      "pixels": 99
+      "pixels": 83
     },
     {
       "id": 2,
@@ -54,7 +54,7 @@
         47,
         49
       ],
-      "pixels": 98
+      "pixels": 92
     },
     {
       "id": 3,
@@ -63,7 +63,7 @@
         4,
         5
       ],
-      "pixels": 246
+      "pixels": 283
     },
     {
       "id": 5,
@@ -72,7 +72,16 @@
         4,
         4
       ],
-      "pixels": 2
+      "pixels": 24
+    },
+    {
+      "id": 6,
+      "rgb": [
+        42,
+        6,
+        8
+      ],
+      "pixels": 7
     },
     {
       "id": 7,
@@ -81,7 +90,7 @@
         17,
         17
       ],
-      "pixels": 46
+      "pixels": 96
     },
     {
       "id": 8,
@@ -90,7 +99,7 @@
         38,
         37
       ],
-      "pixels": 109
+      "pixels": 117
     },
     {
       "id": 10,
@@ -99,7 +108,7 @@
         55,
         53
       ],
-      "pixels": 98
+      "pixels": 44
     },
     {
       "id": 11,
@@ -108,7 +117,7 @@
         65,
         58
       ],
-      "pixels": 102
+      "pixels": 48
     },
     {
       "id": 12,
@@ -117,7 +126,16 @@
         75,
         70
       ],
-      "pixels": 33
+      "pixels": 4
+    },
+    {
+      "id": 13,
+      "rgb": [
+        129,
+        76,
+        58
+      ],
+      "pixels": 41
     },
     {
       "id": 14,
@@ -126,16 +144,16 @@
         71,
         72
       ],
-      "pixels": 24
+      "pixels": 9
     },
     {
-      "id": 15,
+      "id": 16,
       "rgb": [
-        128,
-        107,
-        108
+        179,
+        153,
+        148
       ],
-      "pixels": 16
+      "pixels": 23
     },
     {
       "id": 17,
@@ -144,7 +162,7 @@
         186,
         179
       ],
-      "pixels": 4
+      "pixels": 8
     },
     {
       "id": 18,
@@ -153,16 +171,16 @@
         232,
         224
       ],
-      "pixels": 30
+      "pixels": 28
     },
     {
-      "id": 21,
+      "id": 24,
       "rgb": [
-        64,
-        11,
-        14
+        61,
+        29,
+        27
       ],
-      "pixels": 5
+      "pixels": 2
     },
     {
       "id": 25,
@@ -171,7 +189,7 @@
         21,
         26
       ],
-      "pixels": 8
+      "pixels": 7
     },
     {
       "id": 28,
@@ -189,7 +207,7 @@
         43,
         37
       ],
-      "pixels": 2
+      "pixels": 17
     },
     {
       "id": 35,
@@ -198,7 +216,7 @@
         122,
         101
       ],
-      "pixels": 40
+      "pixels": 8
     },
     {
       "id": 37,
@@ -207,34 +225,34 @@
         157,
         131
       ],
-      "pixels": 33
+      "pixels": 36
     },
     {
-      "id": 39,
+      "id": 42,
       "rgb": [
-        242,
-        199,
-        174
+        98,
+        84,
+        75
       ],
-      "pixels": 9
+      "pixels": 2
     },
     {
-      "id": 56,
+      "id": 44,
       "rgb": [
-        171,
-        120,
-        74
-      ],
-      "pixels": 6
-    },
-    {
-      "id": 61,
-      "rgb": [
-        198,
-        152,
-        82
+        38,
+        30,
+        19
       ],
       "pixels": 4
+    },
+    {
+      "id": 52,
+      "rgb": [
+        134,
+        88,
+        53
+      ],
+      "pixels": 10
     }
   ],
   "arte_instalada": false,

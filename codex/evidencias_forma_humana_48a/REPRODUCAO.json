@@ -1,6 +1,7 @@
 {
   "reducao_reproduzida": true,
   "mestre_reproduzido": true,
-  "ferramenta_original_intacta": true,
-  "dependencia_scipy": "1.18.1, isolada em .godot/forma_humana_48a/deps"
+  "mestre_sha256": "204432d31a2d8890c6def7b6fd81b56972ce482b5eca82fa3de878ebe2dcf988",
+  "dependencia_scipy": "1.18.1, isolada em .godot/forma_humana_48a/deps",
+  "aparencia": "preservar a reducao automatica, conforme escolha do usuario"
 }
