@@ -39,7 +39,7 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
     if Input.is_action_just_pressed("training_parryable"):
         trigger_attack(false)
-    elif Input.is_action_just_pressed("training_heavy"):
+    elif Input.is_action_just_pressed("training_heavy") and not get_node("/root/Sensacao").debug_controls:
         trigger_attack(true)
     if Input.is_action_just_pressed("reset_dummy"):
         reset_device()
@@ -132,7 +132,7 @@ func _on_hit_confirmed(context: HitContext) -> void:
             feedback_label.text = "PARRIED -%d POST" % context.parry_posture_return
         _:
             feedback_label.text = "-%d HP / -%d POST" % [context.actual_damage, context.actual_posture_damage]
-            get_node("/root/HitStop").request_ms(current_attack.hit_stop_ms, 1)
+            get_node("/root/HitStop").request_hit(context)
 
 
 func _on_damage_taken(context: HitContext) -> void:

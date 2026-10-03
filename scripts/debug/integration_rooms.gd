@@ -22,6 +22,7 @@ func _switch(target: String) -> void:
     get_node("/root/HitStop")._restore()
     for action in InputMap.get_actions(): Input.action_release(action)
     get_tree().debug_collisions_hint=false
+    get_node("/root/Sensacao").debug_controls=false
     var error:=get_tree().change_scene_to_file(target)
     if error!=OK: push_error("Não foi possível abrir a sala: %s" % target)
     await get_tree().process_frame

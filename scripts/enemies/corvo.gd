@@ -15,6 +15,7 @@ var flash_remaining := 0.0
 
 
 func _ready() -> void:
+    get_node("/root/Sensacao").attach_actor(self, "res://data/enemies/corvo_mapa.json")
     spawn_position = global_position
     health.damage_taken.connect(_on_damage)
     health.depleted.connect(_on_death)
@@ -30,6 +31,7 @@ func _physics_process(delta: float) -> void:
         attack.tick(delta, brain.player)
     brain.tick(delta)
     flight.tick(delta)
+    attack.resolve_frame_contact()
     flash_remaining = maxf(0.0, flash_remaining - delta)
     if brain.state == CorvoBrain.State.DEATH:
         visual.modulate = Color(0.38, 0.39, 0.38)
@@ -66,10 +68,8 @@ func reset_enemy() -> void:
 
 
 func _on_damage(context: HitContext) -> void:
-    flash_remaining = 0.1
+    flash_remaining = 0.0
     brain.on_damage(context)
-    if context.attacker != null and health.current_health > 0:
-        velocity.x = signf(global_position.x - context.attacker.global_position.x) * 55.0
 
 
 func _on_death() -> void:

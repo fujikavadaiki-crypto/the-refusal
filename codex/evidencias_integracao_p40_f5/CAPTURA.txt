@@ -1,0 +1,12 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 616.92 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 5060 Ti
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/biomes/cemiterio/fundo_congelado_p40.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _make_background (res://scripts/biomes/cemiterio/sala_cemiterio.gd:71)
+       [1] _ready (res://scripts/biomes/cemiterio/sala_cemiterio.gd:49)
+       [2] start (res://codex/testes/capturar_cemiterio_f5.gd:34)
+CAPTURE_RESULT {"dry_run":false,"duration_s":20.0,"feel_groups":{"camera":true,"controle":true,"impacto":true,"movimento":true},"fps":30,"frames":600,"method":"Inputs programados; IA e dano reais, jogador reposicionado entre 3 encontros de ~6,67 s, sem ajuste de IA ou dano artificial; hitstop em relógio virtual 60 Hz só na exportação.","pixel_emissions":{"poeira":22,"sangue":8},"real_combat_verified":true,"stats":{"animations":{"air_heavy":51,"attack_exit":16,"charge_start":4,"dash_ar":20,"fall_loop":31,"fall_start":16,"heavy":118,"hurt":28,"idle":511,"jump_up":32,"land":11,"light1":69,"parry":22,"run":232,"run_start":33,"run_stop":6},"enemy_deaths":["Peregrino","Corvo","Raiz"],"hits":{"Corvo":2,"Peregrino":2,"Raiz":2},"incoming_damage":22,"max_ghosts":3},"viewport":[960,540]}

@@ -1,0 +1,24 @@
+{
+  "pacote": "res://assets/enemies/raiz_faminta_v1/",
+  "padrao": "idle",
+  "pes_world": [
+    0,
+    9.0
+  ],
+  "estados": {
+    "HIDDEN": "hidden",
+    "DETECT": "hidden",
+    "BURROW_MOVE": "burrow",
+    "EMERGE_WINDUP": "emerge",
+    "EMERGE_ATTACK": "idle",
+    "EMERGE_RECOVERY": "idle",
+    "GROUND_CHASE": "idle",
+    "BITE_WINDUP": "idle",
+    "BITE_ACTIVE": "idle",
+    "BITE_RECOVERY": "idle",
+    "HURT": "hurt",
+    "RUPTURE": "hurt",
+    "DEATH": "death"
+  },
+  "ataques": {}
+}

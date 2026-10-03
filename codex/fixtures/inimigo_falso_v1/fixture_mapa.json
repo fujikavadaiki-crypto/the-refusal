@@ -1,0 +1,24 @@
+{
+  "pacote": "res://codex/fixtures/inimigo_falso_v1/",
+  "padrao": "idle",
+  "pes_world": [
+    0,
+    15.5
+  ],
+  "estados": {
+    "IDLE": "idle",
+    "PATROL": "idle",
+    "CHASE": "idle",
+    "HURT": "hurt",
+    "RUPTURE": "hurt",
+    "DEATH": "death"
+  },
+  "ataques": {
+    "peregrino_corte": "attack",
+    "corvo_rasante": "attack",
+    "corvo_cuspe_pestilento": "attack",
+    "raiz_mordida": "attack",
+    "raiz_garra_subterranea": "attack"
+  },
+  "projeteis": {"corvo_cuspe_pestilento": "attack"}
+}

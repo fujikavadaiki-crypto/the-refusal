@@ -569,6 +569,7 @@ func sync(_delta: float) -> void:
     var feet_screen := (canvas * feet_world).round()
     global_transform = canvas.affine_inverse() * Transform2D(0.0, feet_screen)
     var flipped: bool = int(player.get("facing_direction")) < 0
+    body.position.y = int(player.get_meta("landing_offset_px", 0))
     body.texture = frame_spec.tex
     body.flip_h = flipped
     body.offset = _offset(frame_spec.tex, last_anchor, flipped)

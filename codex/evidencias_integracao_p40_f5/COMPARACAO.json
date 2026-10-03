@@ -1,0 +1,25 @@
+{
+  "suites_before": 23,
+  "suites_after": 23,
+  "passed_before": 21,
+  "passed_after": 21,
+  "checks_passed_before": 1795,
+  "checks_passed_after": 1795,
+  "new_suite": {
+    "teste": "codex/testes/verify_integracao_p40_f5.gd",
+    "exit": 0,
+    "pass": 70,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 2.22,
+    "aprovado": true
+  },
+  "preexisting_failures": [
+    "tests/verify_carrasco_gif_test.gd",
+    "tests/verify_milestone8_2.gd"
+  ],
+  "failures_after": [
+    "tests/verify_carrasco_gif_test.gd",
+    "tests/verify_milestone8_2.gd"
+  ]
+}

@@ -1,0 +1,81 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/biomes/cemiterio/fundo_congelado_p40.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _make_background (res://scripts/biomes/cemiterio/sala_cemiterio.gd:71)
+       [1] _ready (res://scripts/biomes/cemiterio/sala_cemiterio.gd:49)
+       [2] run (res://codex/testes/verify_integracao_p40_f5.gd:369)
+PASS: quatro grupos ligados por padrão
+PASS: pulo/coyote 100 ms no arquivo único
+PASS: ataque/dash 120 ms no arquivo único
+PASS: soltar cedo: mínimo ~1 m
+PASS: segurar mantém pulo P40 a 60 Hz
+PASS: controle OFF desliga corte variável
+PASS: coyote aceita pulo após saída do chão
+PASS: buffer de pulo conserva pedido enquanto bloqueado
+PASS: buffer expira após 100 ms
+PASS: desligar controle descarta pedidos pendentes
+PASS: dash cancela somente recuperação leve
+PASS: dash não cancela recuperação pesada
+PASS: buffer dash: cooldown 80 ms aceita pedido
+PASS: buffer dash: cooldown 250 ms expira pedido
+PASS: buffer ataque: bloqueio 80 ms aceita pedido
+PASS: buffer ataque: bloqueio 250 ms expira pedido
+PASS: un hitstop leve único de 60 ms
+PASS: leve não treme câmera
+PASS: alvo: flash de dois quadros e recuo para fora
+PASS: flash branco aplicado à arte, sem atingir sombra
+PASS: material original restaurado após dois quadros
+PASS: recuo efetivo com atrito e limite de meio metro
+PASS: pesado: hitstop 90 ms e tremor no responsável existente
+PASS: sangue de paleta emitido em pixels
+PASS: impacto OFF libera hitstop ativo
+PASS: impacto OFF remove recuo, flash e tremor
+PASS: impacto OFF mantém dano sem feedback
+PASS: pacote FALSO mínimo lê animacoes[] sem exigir animações do Carrasco
+PASS: raiz externa rejeitada
+PASS: pacote ausente preserva fallback
+PASS: fallback mantém Raiz enterrada conforme IA original
+PASS: inimigo real ainda usa arte provisória
+PASS: mapa da IA ativa arte do pacote sem mudar IA
+PASS: âncora dos pés arredondada em tela
+PASS: espelho único preserva âncora (10,30) em PNG de 32 px
+PASS: virada não desloca pés
+PASS: sombra separada detecta chão por raycast
+PASS: sombra no ar permanece no chão e clareia até metade
+PASS: sem chão embaixo não há sombra
+PASS: WINDUP: quadro correto, nenhum FX ACTIVE
+PASS: ACTIVE inicial: retângulo e FX do mesmo quadro
+PASS: armar ataque aplica área por quadro antes do contato nativo
+PASS: ACTIVE seguinte seleciona polígono diferente no tick
+PASS: dano do pacote só à frente
+PASS: RECOVERY: sem FX ACTIVE
+PASS: abortar limpa toda área por quadro
+PASS: retângulo do pacote causa dano na hurtbox real
+PASS: quadros diferentes não duplicam dano do mesmo UID
+PASS: ataque sem pacote usa retângulo/pivô existente
+PASS: Peregrino aceita área do pacote falso
+PASS: Corvo aceita área do pacote falso
+PASS: Raiz aceita área do pacote falso
+PASS: Corvo: área por quadro acompanha origem do projétil
+PASS: projétil: arte/retângulo ACTIVE vêm do mesmo quadro dedicado
+PASS: projétil mantém direção própria após virada do Corvo
+PASS: expirar projétil limpa área do pacote
+PASS: manifesto rejeita hash inválido sem ativar arte/dano
+PASS: manifesto rejeita path inválido sem ativar arte/dano
+PASS: manifesto rejeita time inválido sem ativar arte/dano
+PASS: manifesto rejeita anchor inválido sem ativar arte/dano
+PASS: manifesto rejeita phase inválido sem ativar arte/dano
+PASS: pouso desloca 2 px sem escalar arte
+PASS: movimento OFF cancela deslocamento do pouso
+PASS: poeira em pixels usa paleta e orçamento comum
+PASS: antecipação suave termina em 18 pixels inteiros
+PASS: fundo acompanha câmera sem deslizar contra colisores
+PASS: câmera OFF restaura composição congelada
+PASS: F3 habilita comandos debug G/H
+PASS: G cicla grupo selecionado
+PASS: H alterna grupo ao vivo
+FINAL: PASSED · 70 checks

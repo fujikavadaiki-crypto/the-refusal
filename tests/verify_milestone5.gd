@@ -1,5 +1,7 @@
 extends SceneTree
 
+var jump_ticket := 0
+
 var failed := false
 var arena: Node2D
 var bird: CharacterBody2D
@@ -29,7 +31,10 @@ func wait_frames(count: int) -> void:
 func press(action: StringName) -> void:
     Input.action_press(action)
     await wait_frames(2)
-    Input.action_release(action)
+    if action == &"jump":
+        release_full_jump()
+    else:
+        Input.action_release(action)
 
 
 func wait_for_descent(lead_ticks := 0) -> void:
@@ -54,6 +59,10 @@ func check(condition: bool, description: String) -> void:
 
 
 func reset_player(position := Vector2(1070, 215)) -> void:
+    jump_ticket += 1
+    Input.action_release("jump")
+    player.get_node("Locomotion").reset_assists()
+    player.clear_action_buffers()
     player_combat.abort_attack()
     player_health.reset_health()
     player_posture.reset_posture()
@@ -387,3 +396,10 @@ func run_checks() -> void:
     while Time.get_ticks_msec() < audio_cleanup_until:
         await process_frame
     quit(1 if failed else 0)
+
+
+func release_full_jump() -> void:
+    # This fixture requests a full jump; variable-height taps are tested in F5.
+    var ticket := jump_ticket
+    await wait_frames(22)
+    if ticket == jump_ticket: Input.action_release("jump")

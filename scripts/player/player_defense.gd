@@ -193,7 +193,7 @@ func try_defend(context: HitContext) -> bool:
     spark_remaining = 0.16
     spark.visible = true
     parry_audio.play()
-    get_node("/root/HitStop").request_ms(parry_hit_stop_ms, 2)
+    get_node("/root/HitStop").request_ms(int(get_node("/root/Sensacao").value("impacto", "hitstop_parry_ms")), 2)
     parry_succeeded.emit(context)
     return true
 

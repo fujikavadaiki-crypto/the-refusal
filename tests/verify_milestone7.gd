@@ -1,5 +1,7 @@
 extends SceneTree
 
+var jump_ticket := 0
+
 var failed := false
 var slice: Node2D
 var player: CharacterBody2D
@@ -21,7 +23,10 @@ func wait_frames(count: int) -> void:
 func press(action: StringName) -> void:
     Input.action_press(action)
     await wait_frames(2)
-    Input.action_release(action)
+    if action == &"jump":
+        release_full_jump()
+    else:
+        Input.action_release(action)
 
 
 func check(condition: bool, description: String) -> void:
@@ -44,6 +49,10 @@ func make_hit(target: CharacterBody2D, damage: int) -> HitContext:
 
 
 func move_player(position: Vector2) -> void:
+    jump_ticket += 1
+    Input.action_release("jump")
+    player.get_node("Locomotion").reset_assists()
+    player.clear_action_buffers()
     player.global_position = position
     player.velocity = Vector2.ZERO
     await wait_frames(4)
@@ -278,3 +287,10 @@ func geometry_traversal() -> void:
     check(jumped_gap and jumped_step and slice.finished and slice.fall_recovery_count == 1, "travessia contínua alcança saída com pulo e pequeno desnível")
     check(camera_bounded, "câmera respeita limites durante o corredor longo")
     print("TRAVESSIA SEM COMBATE: %.1f s" % slice.elapsed_seconds)
+
+
+func release_full_jump() -> void:
+    # This fixture requests a full jump; variable-height taps are tested in F5.
+    var ticket := jump_ticket
+    await wait_frames(22)
+    if ticket == jump_ticket: Input.action_release("jump")

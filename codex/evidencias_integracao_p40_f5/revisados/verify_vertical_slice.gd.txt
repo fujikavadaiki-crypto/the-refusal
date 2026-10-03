@@ -1,0 +1,20 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+PASS: Carrasco pequeno nasce no piso com pacote validado
+PASS: dois encontros, três inimigos
+PASS: câmera da vertical slice configurada
+PASS: corrida acelera prontamente
+PASS: inversão responde sem deslizamento longo
+PASS: dash não é reduzido pelo botão de andar
+PASS: jogador deixa a borda do penhasco pintado
+PASS: coyote time aceita salto logo após a borda
+PASS: jump buffer executa salto no pouso
+NAV: x=3846.1 finished=true falls=0 elapsed=21.9
+PASS: três travessias com salto e air dash sobre vãos visíveis
+PASS: combo real acerta a hurtbox do Peregrino
+COMBAT: enemy_hp=23 player_hp=100 hits=2
+PASS: Heavy conclui startup, active e recovery
+PASS: morte reinicia a fase e os encontros
+VERTICAL SLICE: PASS

@@ -17,6 +17,7 @@ var died_buried := false
 
 
 func _ready() -> void:
+    get_node("/root/Sensacao").attach_actor(self, "res://data/enemies/raiz_faminta_mapa.json")
     spawn_position = global_position
     health.damage_taken.connect(_on_damage)
     health.depleted.connect(_on_death)
@@ -39,7 +40,9 @@ func _physics_process(delta: float) -> void:
         if not is_on_floor():
             velocity.y += brain.tuning.gravity * delta
         velocity.x = move_toward(velocity.x, brain.move_axis, brain.tuning.ground_acceleration * delta)
+        $SensacaoAlvo.apply_recoil(delta)
         move_and_slide()
+    attack.resolve_frame_contact()
     flash_remaining = maxf(0.0, flash_remaining - delta)
     _update_visual()
     status.text = "RAIZ %d/%d  POST %d/%d\n%s" % [health.current_health, health.max_health, roundi(posture.current_posture), roundi(posture.max_posture), RaizFamintaBrain.State.keys()[brain.state]]
@@ -71,7 +74,7 @@ func reset_enemy() -> void:
 
 
 func _on_damage(context: HitContext) -> void:
-    flash_remaining = 0.10
+    flash_remaining = 0.0
     brain.on_damage(context)
 
 

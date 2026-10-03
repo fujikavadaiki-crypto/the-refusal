@@ -306,7 +306,7 @@ func _on_hit_confirmed(context: HitContext) -> void:
     masks.on_hit(context)
     hit_confirmed.emit(context)
     if context.outcome != HitContext.Outcome.CONTACT:
-        get_node("/root/HitStop").request_ms(current_attack.hit_stop_ms)
+        get_node("/root/HitStop").request_hit(context)
 
 
 func _on_player_damaged(_context: HitContext) -> void:

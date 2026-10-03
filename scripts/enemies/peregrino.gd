@@ -16,6 +16,7 @@ var flash_remaining := 0.0
 
 
 func _ready() -> void:
+    get_node("/root/Sensacao").attach_actor(self, "res://data/enemies/peregrino_mapa.json")
     spawn_position = global_position
     health.damage_taken.connect(_on_damage)
     health.depleted.connect(_on_death)
@@ -34,7 +35,9 @@ func _physics_process(delta: float) -> void:
             velocity.y += brain.tuning.gravity * delta
         var rate := brain.tuning.acceleration * delta
         velocity.x = move_toward(velocity.x, brain.move_axis, rate)
+        $SensacaoAlvo.apply_recoil(delta)
         move_and_slide()
+        attack.resolve_frame_contact()
     flash_remaining = maxf(0.0, flash_remaining - delta)
     if brain.state != PeregrinoBrain.State.DEATH and brain.state != PeregrinoBrain.State.RUPTURE:
         visual.modulate = Color(1.0, 0.75, 0.66) if flash_remaining > 0.0 else Color.WHITE
@@ -66,10 +69,8 @@ func reset_enemy() -> void:
 
 
 func _on_damage(context: HitContext) -> void:
-    flash_remaining = 0.10
+    flash_remaining = 0.0
     brain.on_damage(context)
-    if context.attacker != null and health.current_health > 0:
-        velocity.x = signf(global_position.x - context.attacker.global_position.x) * 65.0
 
 
 func _on_death() -> void:

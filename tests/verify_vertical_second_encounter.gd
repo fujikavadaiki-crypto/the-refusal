@@ -1,5 +1,7 @@
 extends SceneTree
 
+var jump_ticket := 0
+
 var failed := false
 
 
@@ -23,7 +25,10 @@ func check(value: bool, description: String) -> void:
 func tap(action: StringName) -> void:
     Input.action_press(action)
     await frames(2)
-    Input.action_release(action)
+    if action == &"jump":
+        release_full_jump()
+    else:
+        Input.action_release(action)
 
 
 func run_checks() -> void:
@@ -89,3 +94,10 @@ func run_checks() -> void:
     check(player.get_node("Health").current_health < 100, "Peregrino do segundo encontro consegue ferir o jogador")
     print("SECOND ENCOUNTER: ", "FAIL" if failed else "PASS")
     quit(1 if failed else 0)
+
+
+func release_full_jump() -> void:
+    # This fixture requests a full jump; variable-height taps are tested in F5.
+    var ticket := jump_ticket
+    await frames(22)
+    if ticket == jump_ticket: Input.action_release("jump")

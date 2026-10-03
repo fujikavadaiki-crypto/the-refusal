@@ -327,7 +327,7 @@ func run_checks() -> void:
     Input.action_press("move_right")
     await frames(15)
     Input.action_release("move_right")
-    check(player.global_position.x > 320.0 and (player.get_node("Camera2D") as PlayerCamera).position.x > 0.0, "Carrasco moves and camera tracks through original Player")
+    check(player.global_position.x > 320.0 and (player.get_node("Camera2D") as PlayerCamera).offset.x > 0.0, "Carrasco moves and camera tracks through original Player")
     var ground_y := player.global_position.y
     Input.action_press("jump")
     await frames(2)

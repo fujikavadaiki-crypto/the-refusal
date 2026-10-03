@@ -54,6 +54,7 @@ func tick(delta: float) -> void:
         bird.velocity = bird.velocity.move_toward(target_velocity, rate * delta)
     else:
         bird.velocity = forced_velocity
+    bird.get_node("SensacaoAlvo").apply_recoil(delta)
     bird.move_and_slide()
     if controlled and (bird.is_on_wall() or bird.is_on_floor() or bird.is_on_ceiling()):
         bird.velocity = bird.velocity.move_toward(Vector2.ZERO, tuning.flight_brake * delta)

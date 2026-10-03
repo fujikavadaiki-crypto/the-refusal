@@ -94,6 +94,7 @@ func run_checks() -> void:
     var jumps := [false, false, false]
     var dashes := [false, false, false]
     var jump_release := false
+    var jump_release_at := -1
     var dash_release := false
     var jump_points := [1135.0, 2368.0, 3645.0]
     var dash_points := [1180.0, 2405.0, 3700.0]
@@ -106,7 +107,7 @@ func run_checks() -> void:
         dash_points[index] = jump_points[index] + locomotion.run_speed * apex_seconds
     Input.action_press(&"move_right")
     for _i in range(3600):
-        if jump_release:
+        if jump_release and _i >= jump_release_at:
             Input.action_release(&"jump")
             jump_release = false
         if dash_release:
@@ -116,6 +117,7 @@ func run_checks() -> void:
             if not jumps[index] and player.global_position.x >= jump_points[index]:
                 Input.action_press(&"jump")
                 jump_release = true
+                jump_release_at = _i + 25
                 jumps[index] = true
                 break
             if jumps[index] and not dashes[index] and player.global_position.x >= dash_points[index]:

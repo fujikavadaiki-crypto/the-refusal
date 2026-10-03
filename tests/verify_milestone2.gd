@@ -80,7 +80,7 @@ func run_checks() -> void:
     check(started == [&"light_1"], "Light 1 starts alone")
     check(health.current_health == 480 and int(dummy.get("hit_count")) == 1, "Light 1 deals 20 damage once")
     check(hits.size() == 1 and hits[0].attack_id == &"light_1" and hits[0].tags.has("light"), "Light hit context and tags")
-    check(int(hit_stop.get("request_count")) == stop_before + 1 and int(hit_stop.get("last_requested_ms")) == 30, "valid Light impact requests 30 ms hit stop")
+    check(int(hit_stop.get("request_count")) == stop_before + 1 and int(hit_stop.get("last_requested_ms")) == 60, "valid Light impact requests 60 ms hit stop")
     check(not bool(hit_stop.get("active")) and is_equal_approx(Engine.time_scale, 1.0), "hit stop restores time scale")
 
     await reset_at(374)
@@ -91,7 +91,8 @@ func run_checks() -> void:
 
     await reset_at(374)
     await press(&"attack_light")
-    await wait_frames(13)
+    while combat.is_busy() and combat.elapsed < combat.current_attack.combo_queue_start_seconds:
+        await physics_frame
     await press(&"attack_light")
     await wait_idle()
     await wait_frames(4)
@@ -100,7 +101,8 @@ func run_checks() -> void:
 
     await reset_at(374)
     await press(&"attack_light")
-    await wait_frames(13)
+    while combat.is_busy() and combat.elapsed < combat.current_attack.combo_queue_start_seconds:
+        await physics_frame
     await press(&"attack_light")
     for _i in range(90):
         if combat.current_light_stage == 2 and combat.elapsed >= combat.light_2.combo_queue_start_seconds:
@@ -130,7 +132,7 @@ func run_checks() -> void:
     await press(&"attack_heavy")
     await wait_idle()
     check(started == [&"heavy"] and health.current_health == 465 and int(dummy.get("hit_count")) == 1, "Heavy deals 35 damage once")
-    check(int(hit_stop.get("request_count")) == stop_before + 1 and int(hit_stop.get("last_requested_ms")) == 55, "valid Heavy impact requests 55 ms hit stop")
+    check(int(hit_stop.get("request_count")) == stop_before + 1 and int(hit_stop.get("last_requested_ms")) == 90, "valid Heavy impact requests 90 ms hit stop")
 
     await reset_at(426, -1)
     await press(&"attack_light")

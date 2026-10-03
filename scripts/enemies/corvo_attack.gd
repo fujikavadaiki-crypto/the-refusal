@@ -19,6 +19,7 @@ signal projectile_fired(projectile: CorvoProjectile)
 
 enum Mode { NONE, DIVE, PROJECTILE }
 var mode := Mode.NONE
+var frame_provider: Node
 var elapsed := 0.0
 var target_locked := Vector2.ZERO
 var aim_locked := Vector2.ZERO
@@ -89,11 +90,13 @@ func _tick_dive(player: Node2D) -> void:
         var context := _context(rasante)
         context.parry_posture_return_override = 20
         hitbox.arm(context, rasante)
+        if frame_provider != null: frame_provider.apply_damage(hitbox, rasante, elapsed)
         telegraph.visible = false
         state_requested.emit(CorvoBrain.State.DIVE_ACTIVE)
     if elapsed < rasante.windup_seconds + rasante.active_seconds and not bird.is_on_floor():
         flight.commit(dive_velocity)
-        hitbox.scan_overlaps()
+        # Profiled geometry is queried after Flight resolves the moving bird.
+        if frame_provider == null or not frame_provider.apply_damage(hitbox, rasante, elapsed): hitbox.scan_overlaps()
         return
     if hitbox.active:
         hitbox.disarm()
@@ -117,6 +120,7 @@ func _tick_projectile(player: Node2D) -> void:
             aim_is_locked = true
         var projectile := projectile_scene.instantiate() as CorvoProjectile
         bird.get_parent().add_child(projectile)
+        projectile.frame_provider = frame_provider
         projectile.launch(bird, bird.global_position + Vector2(7 * bird.facing_direction, 3), aim_locked, tuning.projectile_speed, tuning.projectile_lifetime)
         projectile.expired.connect(_on_projectile_expired)
         projectile.contact.connect(func(context: HitContext) -> void: _report_contact(context, cuspe))
@@ -132,6 +136,10 @@ func _tick_projectile(player: Node2D) -> void:
 
 func _target_point(player: Node2D) -> Vector2:
     return player.global_position + Vector2(0, -3) if is_instance_valid(player) else bird.global_position + Vector2(40 * bird.facing_direction, 40)
+
+func resolve_frame_contact() -> void:
+    if mode == Mode.DIVE and hitbox.active and frame_provider != null:
+        if frame_provider.apply_damage(hitbox, rasante, elapsed): hitbox.scan_overlaps()
 
 
 func _context(data: AttackData) -> HitContext:
@@ -183,4 +191,4 @@ func _on_projectile_expired(projectile: CorvoProjectile) -> void:
 func _report_contact(context: HitContext, data: AttackData) -> void:
     hit_confirmed.emit(context)
     if context.outcome in [HitContext.Outcome.DAMAGED, HitContext.Outcome.DEAD]:
-        get_node("/root/HitStop").request_ms(data.hit_stop_ms)
+        get_node("/root/HitStop").request_hit(context)

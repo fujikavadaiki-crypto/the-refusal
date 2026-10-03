@@ -1,7 +1,6 @@
 extends Node
 
 ## Central real-time pause. A low time scale preserves input/physics ticks during brief impacts.
-const IMPACT_TIME_SCALE := 0.08
 
 var active := false
 var end_tick_usec := 0
@@ -16,6 +15,8 @@ func _ready() -> void:
 
 
 func request_ms(duration_ms: int, priority := 1) -> void:
+    var feel := get_node_or_null("/root/Sensacao")
+    if feel != null and not feel.enabled("impacto"): return
     if duration_ms <= 0:
         return
     if active and priority < active_priority:
@@ -26,11 +27,12 @@ func request_ms(duration_ms: int, priority := 1) -> void:
     end_tick_usec = maxi(end_tick_usec, Time.get_ticks_usec() + duration_ms * 1000)
     if not active:
         previous_time_scale = Engine.time_scale
-        Engine.time_scale = IMPACT_TIME_SCALE
+        Engine.time_scale = feel.value("impacto", "escala_tempo_hitstop") if feel != null else 1.0
         active = true
 
 
 func _process(_delta: float) -> void:
+    if active and not get_node("/root/Sensacao").enabled("impacto"): _restore()
     if active and Time.get_ticks_usec() >= end_tick_usec:
         _restore()
 
@@ -45,3 +47,7 @@ func _restore() -> void:
     active = false
     end_tick_usec = 0
     active_priority = 0
+
+func request_hit(context: HitContext) -> void:
+    var feel := get_node("/root/Sensacao")
+    request_ms(int(feel.value("impacto", "hitstop_pesado_ms" if context.tags.has("heavy") else "hitstop_leve_ms")), 2 if context.tags.has("heavy") else 1)

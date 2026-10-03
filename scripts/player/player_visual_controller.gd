@@ -176,7 +176,7 @@ func _on_dash_started(_direction: int) -> void:
 
 
 func _draw() -> void:
-    if not slice_feedback_enabled or form == null or player.get_meta("small_carrasco_presenter_active", false):
+    if get_node("/root/Sensacao").enabled("movimento") or not slice_feedback_enabled or form == null or player.get_meta("small_carrasco_presenter_active", false):
         return
     if slash_remaining > 0.0:
         var alpha := slash_remaining / 0.12
@@ -208,7 +208,8 @@ func _on_hit_confirmed(context: HitContext) -> void:
         kind = &"heavy"
     elif context.tags.has("mark"):
         kind = &"mark"
-    _spawn_impact(context.target.global_position + Vector2(0, -12), kind)
+    if kind not in [&"slash", &"heavy", &"charged"]:
+        _spawn_impact(context.target.global_position + Vector2(0, -12), kind)
     if context.caused_rupture or context.actual_posture_damage >= 40:
         _spawn_impact(context.target.global_position + Vector2(0, -18), &"posture")
 

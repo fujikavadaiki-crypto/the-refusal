@@ -1,0 +1,204 @@
+{
+  "pacote": "FALSO_SO_PARA_TESTES",
+  "status": "fixture sintética; não é arte de produção",
+  "animacoes": [
+    {
+      "id": "idle",
+      "loop": true,
+      "quadros": [
+        {
+          "arquivo": "idle.png",
+          "largura": 32,
+          "altura": 32,
+          "ancora": [
+            10,
+            30
+          ],
+          "sha256": "8640b4444fa8e53b717e9abd14d81fa4f49c77e9b88f0ef4b0182e7643d3de89",
+          "ms": 100,
+          "fase": "TODAS"
+        }
+      ],
+      "sombra": {
+        "arquivo": "sombra.png",
+        "largura": 32,
+        "altura": 32,
+        "ancora": [
+          10,
+          30
+        ],
+        "sha256": "2bc94500944dcd7b875637423e71331dabda6decca62371dd399d000d4ec62d7"
+      }
+    },
+    {
+      "id": "attack",
+      "loop": false,
+      "quadros": [
+        {
+          "arquivo": "idle.png",
+          "largura": 32,
+          "altura": 32,
+          "ancora": [
+            10,
+            30
+          ],
+          "sha256": "8640b4444fa8e53b717e9abd14d81fa4f49c77e9b88f0ef4b0182e7643d3de89",
+          "ms": 300,
+          "fase": "WINDUP"
+        },
+        {
+          "arquivo": "ataque.png",
+          "largura": 32,
+          "altura": 32,
+          "ancora": [
+            10,
+            30
+          ],
+          "sha256": "1361d0a11058e9e8b29e66b7bef2d5ae3a6fadedc043d444a6531316dbdc9877",
+          "ms": 60,
+          "fase": "ACTIVE",
+          "hitbox": {
+            "fase": "ACTIVE",
+            "retangulos": [
+              [
+                3,
+                -20,
+                10,
+                14
+              ]
+            ]
+          }
+        },
+        {
+          "arquivo": "ataque.png",
+          "largura": 32,
+          "altura": 32,
+          "ancora": [
+            10,
+            30
+          ],
+          "sha256": "1361d0a11058e9e8b29e66b7bef2d5ae3a6fadedc043d444a6531316dbdc9877",
+          "ms": 60,
+          "fase": "ACTIVE",
+          "hitbox": {
+            "fase": "ACTIVE",
+            "poligono": [
+              [
+                12,
+                -22
+              ],
+              [
+                24,
+                -22
+              ],
+              [
+                24,
+                -6
+              ],
+              [
+                12,
+                -6
+              ]
+            ]
+          }
+        },
+        {
+          "arquivo": "idle.png",
+          "largura": 32,
+          "altura": 32,
+          "ancora": [
+            10,
+            30
+          ],
+          "sha256": "8640b4444fa8e53b717e9abd14d81fa4f49c77e9b88f0ef4b0182e7643d3de89",
+          "ms": 330,
+          "fase": "RECOVERY"
+        }
+      ],
+      "ataque": {
+        "tres": {
+          "windup_ms": 300,
+          "active_ms": 120,
+          "recovery_ms": 330
+        },
+        "fases": {
+          "PREPARACAO": {
+            "quadros": [
+              0
+            ]
+          },
+          "ATIVO": {
+            "quadros": [
+              1,
+              2
+            ]
+          },
+          "RECUPERACAO": {
+            "quadros": [
+              3
+            ]
+          }
+        }
+      },
+      "sombra": {
+        "arquivo": "sombra.png",
+        "largura": 32,
+        "altura": 32,
+        "ancora": [
+          10,
+          30
+        ],
+        "sha256": "2bc94500944dcd7b875637423e71331dabda6decca62371dd399d000d4ec62d7"
+      },
+      "efeitos": [
+        {
+          "arquivo": "fx.png",
+          "largura": 32,
+          "altura": 32,
+          "ancora": [
+            10,
+            30
+          ],
+          "sha256": "cbf00766a96e8d84caf25d60912b0ee2a80b9f069291ba5fc7f831122529a8e3",
+          "fase": "ACTIVE"
+        }
+      ]
+    },
+    {
+      "id": "hurt",
+      "loop": false,
+      "quadros": [
+        {
+          "arquivo": "idle.png",
+          "largura": 32,
+          "altura": 32,
+          "ancora": [
+            10,
+            30
+          ],
+          "sha256": "8640b4444fa8e53b717e9abd14d81fa4f49c77e9b88f0ef4b0182e7643d3de89",
+          "ms": 100,
+          "fase": "TODAS"
+        }
+      ]
+    },
+    {
+      "id": "death",
+      "loop": false,
+      "quadros": [
+        {
+          "arquivo": "idle.png",
+          "largura": 32,
+          "altura": 32,
+          "ancora": [
+            10,
+            30
+          ],
+          "sha256": "8640b4444fa8e53b717e9abd14d81fa4f49c77e9b88f0ef4b0182e7643d3de89",
+          "ms": 100,
+          "fase": "TODAS"
+        }
+      ]
+    }
+  ]
+}

@@ -25,6 +25,7 @@ const ENEMIES := {
 var collisions: Array[CollisionPolygon2D] = []
 var enemies: Array[CharacterBody2D] = []
 var enemies_ready := false
+var background_root: Node2D
 var background: TextureRect
 var background_patch: TextureRect
 var hud: Label
@@ -46,6 +47,7 @@ func floor_screen(x: float) -> float:
 func _ready() -> void:
     process_priority=50
     _make_background()
+    camera.bind_fixed(player,background_root)
     _make_collisions()
     start.position=Vector2(150,floor_screen(150))/ZOOM-Vector2(0,13.1)
     player.position=start.position
@@ -70,7 +72,10 @@ func _make_background() -> void:
     background.size=Vector2(960,540)
     background.texture_filter=CanvasItem.TEXTURE_FILTER_NEAREST
     background.mouse_filter=Control.MOUSE_FILTER_IGNORE
-    layer.add_child(background)
+    background_root=Node2D.new()
+    background_root.name="FundoComCamera"
+    layer.add_child(background_root)
+    background_root.add_child(background)
     # Identical P40 atlas coverage, hiding the old figure baked in the frozen PNG.
     background_patch=TextureRect.new()
     background_patch.name="RemendoCarrascoAntigo"
@@ -82,7 +87,8 @@ func _make_background() -> void:
     background_patch.size=Vector2(39,69)
     background_patch.texture_filter=CanvasItem.TEXTURE_FILTER_NEAREST
     background_patch.mouse_filter=Control.MOUSE_FILTER_IGNORE
-    layer.add_child(background_patch)
+    background_root.add_child(background_patch)
+    _background_edges()
 
 func _make_collisions() -> void:
     for i in range(GROUND_TOPS.size()):
@@ -235,3 +241,37 @@ func _draw() -> void:
         local.append(local[0])
         draw_polyline(local,Color(1,.5,.1),1/ZOOM)
     draw_circle(to_local(player.global_position+Vector2(0,13)),1.5/ZOOM,Color.YELLOW)
+    for enemy in enemies:
+        var attack_box: Hitbox2D=enemy.get_node("Attack").hitbox
+        for part: PackedVector2Array in attack_box.current_world_parts():
+            var local:=PackedVector2Array()
+            for point_ in part: local.append(to_local(point_))
+            draw_colored_polygon(local,Color(.6,.2,1,.25))
+            local.append(local[0])
+            draw_polyline(local,Color(.8,.5,1),1/ZOOM)
+
+func _background_edges() -> void:
+    var feel:=get_node("/root/Sensacao")
+    var mx:=ceili(feel.value("camera","antecipacao_px")+feel.value("impacto","tremor_px"))
+    var my:=ceili(feel.value("impacto","tremor_px"))
+    var edges: Array=[
+        [Rect2(0,0,mx,540),Vector2(-mx,0),true,false],
+        [Rect2(960-mx,0,mx,540),Vector2(960,0),true,false],
+        [Rect2(0,0,960,my),Vector2(0,-my),false,true],
+        [Rect2(0,540-my,960,my),Vector2(0,540),false,true]]
+    for x in [0,1]:
+        for y in [0,1]:
+            edges.append([Rect2(0 if x==0 else 960-mx,0 if y==0 else 540-my,mx,my),Vector2(-mx if x==0 else 960,-my if y==0 else 540),true,true])
+    for spec in edges:
+        var edge:=TextureRect.new()
+        var atlas:=AtlasTexture.new()
+        atlas.atlas=background.texture
+        atlas.region=spec[0]
+        edge.texture=atlas
+        edge.position=spec[1]
+        edge.size=spec[0].size
+        edge.flip_h=spec[2]
+        edge.flip_v=spec[3]
+        edge.texture_filter=CanvasItem.TEXTURE_FILTER_NEAREST
+        edge.mouse_filter=Control.MOUSE_FILTER_IGNORE
+        background_root.add_child(edge)

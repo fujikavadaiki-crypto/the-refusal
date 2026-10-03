@@ -1,0 +1,31 @@
+{
+  "pacote": "res://assets/enemies/corvo_v1/",
+  "padrao": "idle",
+  "pes_world": [
+    0,
+    8.0
+  ],
+  "estados": {
+    "HOVER": "idle",
+    "PATROL_AIR": "idle",
+    "ALERT": "idle",
+    "POSITIONING": "idle",
+    "DIVE_WINDUP": "idle",
+    "DIVE_ACTIVE": "idle",
+    "DIVE_RECOVERY": "idle",
+    "PROJECTILE_WINDUP": "idle",
+    "PROJECTILE_ATTACK": "idle",
+    "PROJECTILE_RECOVERY": "idle",
+    "HURT": "hurt",
+    "RUPTURE": "hurt",
+    "TAKEOFF": "idle",
+    "DEATH": "death"
+  },
+  "ataques": {
+    "corvo_cuspe_pestilento": "cuspe_pestilento",
+    "corvo_rasante": "rasante"
+  },
+  "projeteis": {
+    "corvo_cuspe_pestilento": "cuspe_projetil"
+  }
+}

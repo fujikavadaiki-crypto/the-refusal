@@ -1,0 +1,28 @@
+{
+  "pacote": "res://assets/enemies/peregrino_v1/",
+  "padrao": "idle",
+  "pes_world": [
+    0,
+    15.5
+  ],
+  "estados": {
+    "IDLE": "idle",
+    "PATROL": "run",
+    "ALERT": "idle",
+    "CHASE": "run",
+    "ATTACK_WINDUP": "idle",
+    "ATTACK_ACTIVE": "idle",
+    "ATTACK_RECOVERY": "idle",
+    "HURT": "hurt",
+    "RUPTURE": "hurt",
+    "DEATH": "death"
+  },
+  "ataques": {
+    "peregrino_corte": "corte",
+    "peregrino_corte_duplo_1": "corte_duplo_1",
+    "peregrino_corte_duplo_2": "corte_duplo_2",
+    "peregrino_estocada": "estocada",
+    "peregrino_investida": "investida",
+    "peregrino_penitencia": "penitencia"
+  }
+}

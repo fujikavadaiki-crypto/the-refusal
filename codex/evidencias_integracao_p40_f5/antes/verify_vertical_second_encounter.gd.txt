@@ -1,0 +1,14 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+PASS: segundo encontro ativa os dois comportamentos
+CROW: pos=(2965.0, 113.0) hp=24 player=(2939.477, 200.7549)
+PASS: ataque aéreo pode alcançar o Corvo
+CROW FINISH: hp=0
+PASS: Corvo pode morrer para ataques reais do Carrasco
+PASS: air dash disponível no segundo encontro
+PASS: ataque após air dash responde
+PASS: Heavy apertado no fim da recuperação entra pelo buffer
+PASS: Peregrino do segundo encontro consegue ferir o jogador
+SECOND ENCOUNTER: PASS

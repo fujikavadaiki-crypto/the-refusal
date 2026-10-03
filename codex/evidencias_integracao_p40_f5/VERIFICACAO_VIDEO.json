@@ -1,0 +1,12 @@
+{
+  "decodificacao_completa": true,
+  "quadros_decodificados": 600,
+  "duracao_s": 20,
+  "fps": 30,
+  "resolucao": [
+    960,
+    540
+  ],
+  "sha256": "47b099f41f1ece095ca659936f215930910e2a9d371b7d846313033e8941ed78",
+  "bytes": 1609675
+}

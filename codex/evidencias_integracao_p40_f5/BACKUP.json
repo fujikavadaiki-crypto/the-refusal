@@ -1,0 +1,8 @@
+{
+  "branch": "feature/integracao-p40",
+  "local_before": "68807ee8bbcada0bfd3e6dec59b6da7e99661181",
+  "remote_verified": "68807ee8bbcada0bfd3e6dec59b6da7e99661181",
+  "remote_main": "ef24b5561cacb823d1f719370c29d82522cb5b58",
+  "push": "git push -u origin feature/integracao-p40",
+  "no_other_branches": true
+}

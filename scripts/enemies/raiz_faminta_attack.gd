@@ -21,6 +21,7 @@ var current_attack: AttackData
 var elapsed := 0.0
 var locked_position := Vector2.ZERO
 var facing_locked := false
+var frame_provider: Node
 
 
 func _ready() -> void:
@@ -72,11 +73,12 @@ func tick(delta: float, player: Node2D) -> void:
         var context := _context(current_attack)
         hitbox.position.y = -11.0 if mode == Mode.EMERGE else -5.0
         hitbox.arm(context, current_attack)
+        if frame_provider != null: frame_provider.apply_damage(hitbox, current_attack, elapsed)
         emerge_telegraph.visible = false
         bite_telegraph.visible = false
         state_requested.emit(RaizFamintaBrain.State.EMERGE_ATTACK if mode == Mode.EMERGE else RaizFamintaBrain.State.BITE_ACTIVE)
     if hitbox.active:
-        hitbox.scan_overlaps()
+        if frame_provider == null or not frame_provider.apply_damage(hitbox, current_attack, elapsed): hitbox.scan_overlaps()
     if elapsed >= current_attack.windup_seconds + current_attack.active_seconds and hitbox.active:
         hitbox.disarm()
         state_requested.emit(RaizFamintaBrain.State.EMERGE_RECOVERY if mode == Mode.EMERGE else RaizFamintaBrain.State.BITE_RECOVERY)
@@ -94,6 +96,10 @@ func abort() -> void:
     current_attack = null
     elapsed = 0.0
     facing_locked = false
+
+func resolve_frame_contact() -> void:
+    if hitbox.active and current_attack != null and frame_provider != null:
+        if frame_provider.apply_damage(hitbox, current_attack, elapsed): hitbox.scan_overlaps()
 
 
 func _context(data: AttackData) -> HitContext:
@@ -114,4 +120,4 @@ func _context(data: AttackData) -> HitContext:
 func _on_hit_confirmed(context: HitContext) -> void:
     hit_confirmed.emit(context)
     if current_attack != null and context.outcome in [HitContext.Outcome.DAMAGED, HitContext.Outcome.DEAD]:
-        get_node("/root/HitStop").request_ms(current_attack.hit_stop_ms)
+        get_node("/root/HitStop").request_hit(context)

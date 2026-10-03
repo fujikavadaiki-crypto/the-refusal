@@ -1,0 +1,69 @@
+[
+  {
+    "teste": "tests/verify_milestone2.gd",
+    "exit": 0,
+    "pass": 33,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 21.36,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone3.gd",
+    "exit": 0,
+    "pass": 68,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 14.84,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone4_1.gd",
+    "exit": 0,
+    "pass": 59,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 11.34,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone8.gd",
+    "exit": 0,
+    "pass": 66,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 4.22,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_vertical_second_encounter.gd",
+    "exit": 0,
+    "pass": 7,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 8.44,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_vertical_slice.gd",
+    "exit": 0,
+    "pass": 13,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 27.78,
+    "aprovado": true
+  },
+  {
+    "teste": "codex/testes/verify_integracao_p40_f5.gd",
+    "exit": 1,
+    "pass": 67,
+    "fail": 2,
+    "falhas": [
+      "FAIL: Corvo: área por quadro acompanha origem do projétil",
+      "FAIL: projétil mantém direção própria após virada do Corvo",
+      "FINAL: FAILED · 69 checks"
+    ],
+    "segundos": 2.11,
+    "aprovado": false
+  }
+]

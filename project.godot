@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 HitStop="*res://scripts/combat/hit_stop.gd"
 IntegrationRooms="*res://scripts/debug/integration_rooms.gd"
+Sensacao="*res://scripts/feel/sensacao.gd"
 
 [display]
 

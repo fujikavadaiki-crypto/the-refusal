@@ -1,0 +1,8 @@
+{
+  "grupos_ligados": {"controle": true, "impacto": true, "movimento": true, "camera": true},
+  "controle": {"buffer_pulo_ms": 100, "coyote_ms": 100, "pulo_minimo_m": 1.0, "buffer_ataque_ms": 120, "buffer_dash_ms": 120, "dash_cancela_recuperacao_leve": true},
+  "impacto": {"hitstop_leve_ms": 60, "hitstop_pesado_ms": 90, "hitstop_parry_ms": 80, "escala_tempo_hitstop": 0.08, "tremor_px": 3, "tremor_ms": 110, "tremor_x_rad_s": 73, "tremor_y_rad_s": 91, "flash_quadros": 2, "recuo_leve_m_s": 1.1, "recuo_pesado_m_s": 2.1, "recuo_atrito_m_s2": 12, "recuo_limite_m": 0.5, "sangue_quantidade": 12, "sangue_ms": 280, "sangue_vel_px_s": 80, "sangue_gravidade_px_s2": 250, "sangue_paleta": ["#6e151a", "#ae0910", "#bb3638"]},
+  "movimento": {"poeira_quantidade": 8, "poeira_ms": 220, "poeira_vel_px_s": 40, "poeira_gravidade_px_s2": 80, "poeira_paleta": ["#62544b", "#92816f", "#b39994"], "pouso_desloc_px": 2, "pouso_ms": 80, "limiar_vel_m_s": 0.1},
+  "camera": {"antecipacao_px": 18, "suavizacao_s_inversa": 8, "limiar_corrida_m_s": 0.1},
+  "pixels": {"limite_particulas": 192, "tamanho_px": 2, "semente": 4404, "vel_x_fatores": [0.2, 1.0], "vel_y_fatores": [0.2, 0.9]}
+}

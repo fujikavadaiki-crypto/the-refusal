@@ -249,7 +249,7 @@ Consulta `intersect_shape` sobre hurtboxes não verifica terreno intermediário 
 
 ## 4. Sequência de integração e critérios de saída
 
-Cada passo registra seus testes. **Passos 1–3: fase 1 aprovada. Passos 4–5: única implementação da fase 2. Passos 6–13 permanecem pendentes.** Não antecipar arte, dano por quadro, efeitos, câmera/salas ou rebalanceamento de IA.
+Cada passo registra seus testes. **Fases 1–4 aprovadas. Tarefa 4.4 entrega o passo 12 (sensação) e prepara pacotes de inimigo.** Avaliação ampliada e balanceamento continuam futuros.
 
 | Passo e fase | Alteração delimitada | Critério de saída |
 |---|---|---|
@@ -264,7 +264,7 @@ Cada passo registra seus testes. **Passos 1–3: fase 1 aprovada. Passos 4–5: 
 | **9 — FUTURA: avaliação ampliada da fluidez** | O apresentador do passo 6 já inclui apoio 1/5 por dois ticks, run_stop 66 ms, virada/pouso/saída/carga/faísca e rastro 110/80 ms. Não há frenagem física até apoio. | Ampliar comparação de soltura em oito fases, retomadas/interrupções e bordas; não declarar esta etapa independente aprovada pela integração visual. |
 | **10 — F3 ENTREGUE: dano por quadro** | Polígonos/retângulos, recorte x≥0, decomposição, seleção ACTIVE após movimento; oito golpes com dados, fallback dos demais. | Quadros ACTIVE dos oito golpes nas duas direções, deduplicação, interrupção, recuperação, colado/ponta/atrás/fora e parede sólida. |
 | **11 — PENDENTE: avaliação ampliada de ataques/inimigos** | Oito perfis já integrados em F3; ampliar playtest de combos/carga/pós-dash/aéreos e arenas sem antecipar ajustes de IA. | M5 retimado; **reavaliar após dano por quadro**. Peregrino/Corvo/Raiz usam fontes/valores intactos. |
-| **12 — PARCIAL: sala nova / Tarefa 4.3** | Cemitério do P40 como início: câmera fixa 0,9, fundo ×1, quatro chãos e quatro plataformas; Peregrino, Corvo e Raiz originais. F9 abre Bosque B. Outras revisões de câmera/sensação permanecem futuras. | Spawn sem interpenetração, projeção de cada vértice, apoio, quatro rotas sem dash, reset e navegação F9; suítes do Bosque continuam no Bosque. |
+| **12 — F4 APROVADA + F5 ENTREGUE: sala/sensação** | Cemitério P40 aceito; quatro grupos em arquivo único, buffers/coyote/corte variável, hitstop/câmera unificados, flash/recuo/pixels e antecipação. | G/H no debug F3, todos ON por padrão; pulo curto ~1 m e completo ~2,315 m; sem duplicação de feedback; sala/Bosque e contratos aprovados preservados. |
 | **13 — PENDENTE: regressão e avaliação final** | Atualizar somente expectativas de contratos substituídos; guardar captura normal e depuração; manter recursos antigos necessários. | Suites pertinentes sem falhas novas, medidas físicas/contatos e verificação visual/playtest; limitações restantes explicitadas. |
 | **14 — FUTURA: balanceamento de inimigos** | Avaliar mirar no **centro da hurtbox do jogador**, respeitando forma/altura; depende de decisão própria. | Ataques altos que passam sobre Pequeno A aceitos por ora. Medir alcance/altura/cadência antes de alterar IA. |
 
@@ -322,3 +322,20 @@ Na fase 2, P42b/v34A torna-se a fonte atual; muda somente o dash artístico fren
 **Escopo F3 entregue para avaliação:** passos 6–8 e 10; pacote Pequeno A v34A, apresentador, sombra, distância e dano por quadro. Raio corrigido para 7 unidades pela decisão do usuário, fixture M5 retimada e IA/recursos de ataques/inimigos intactos. Oito perfis do manifesto entram pelo leitor genérico do passo 10. Habilidades, execução e Tribunal sem animação própria usam idle como fallback visual, mantendo seu runtime/sinais/efeitos. O launcher abre uma cena derivada do Bosque aprovado com os três inimigos originais; cenário, colisores e cena base não foram redesenhados. Próximas etapas permanecem dependentes de avaliação.
 
 **Tarefa 4.3:** nova cena `scenes/biomes/cemiterio/sala_cemiterio.tscn`; fundo P40/A1.1 copiado byte a byte, cobertura atlas do personagem antigo embutido igual à referência. Conversão dos colisores: `x*0,6154`, `(y+86)*0,6156`, depois `/0,9`; fechamentos do chão em y=620, plataformas de 2 px e margem unidirecional 1/0,9. A sala inteira e a câmera recebem somente uma translação Y=−150 no mundo para acomodar a faixa absoluta original do Corvo (92–186), conservando exatamente suas coordenadas de tela. IA/tuning/ataques e arquivos do Bosque intocados. Pedra/ruína/pilar acessíveis do chão; coluna pelo pilar. Não prometer salto direto do chão à coluna: o topo está perto/acima do ápice nessa posição. F9 global alterna as duas salas e restaura o relógio de hitstop; R reinicia o encontro/renasce. Sem push/merge.
+
+
+## 7. Tarefa 4.4 — sensação e preparo de pacotes de inimigo
+
+Aprovação F4: o fundo efetivo P40/A1.1 é aceito como fundo desta sala. As diferenças para R4 ficam para revisão geral do mapa. Seu SHA256 e os colisores continuam iguais; a antecipação move a vista e o fundo juntos, com margens de pixels existentes espelhadas, sem retocar o PNG.
+
+**Sensação:** `data/config/sensacao.json` concentra os parâmetros. Quatro grupos começam ON; F3 habilita G/H e mostra a seleção/estados no HUD. H continua sendo execução fora do debug. Desligar um grupo limpa seus pedidos/efeitos pendentes. CONTROLE usa coyote e buffer de pulo 100 ms (substitui o buffer histórico 120 ms), ataque/dash 120 ms, corte de subida até ~1 m e cancelamento de recuperação leve por dash. Não cancela windup/ACTIVE/pesado; preserva o bloqueio do ataque precoce antes de 80 ms do dash e a carga aérea. R/renascimento limpa assistências e efeitos de pouso também nas salas antigas.
+
+O hitstop existente continua como único responsável pelo relógio: 60/90 ms, parry 80 ms e escala 0,08. A câmera existente atende câmera fixa e acompanhamento; só acerto pesado treme 3 px/110 ms. Flash branco no alvo dura dois quadros renderizados. Recuo usa 1,1/2,1 m/s, atrito 12 m/s² e limite 0,5 m. Sangue/poeira usam retângulos de 2 px, paletas do P40 e orçamento comum. Pouso desloca o sprite em 2 px por 80 ms; não altera cápsula ou escala. Antecipação 18 px, suavização 8/s e offset final inteiro; a câmera não recalcula física por zoom.
+
+Medição nova a 60 Hz: toque curto 1,000400 m, ápice 13 ticks; segurado 2,314903 m, ápice 20 ticks, voo 41 ticks. g/v0, velocidades, dash, máscara, corpo/hurtbox e pivô das fases aprovadas não mudam.
+
+**Inimigos:** `scripts/enemies/presentation/` lê o mesmo formato `animacoes[]/quadros[]`, PNG/SHA256, ms, âncora, sombra, FX com fase e hitboxes. Mapas separados traduzem estados/IDs de ataque. Ausente/inválido/sem animação correspondente preserva arte original; sem geometria preserva ataque nativo. Ataque perfilado com quadro vazio fica sem dano naquele quadro. Amostragem por fase usa os tempos do ataque original: adaptar cadência artística não muda IA ou `.tres`. Consultar após movimento resolvido; uma ação mantém um UID entre todos os quadros. F3 desenha também as peças ACTIVE dos inimigos.
+
+Projéteis têm animação/âncora dedicada opcional em `projeteis`; caixas do disparo junto ao bico não são deslocadas para a bala. Sem esse dado, o projétil conserva core/área/velocidade/vida/parry originais. Pacote falso mínimo é restrito à suíte de teste. Os pacotes finais de Peregrino/Corvo ainda não foram entregues; não substituí-los por arte inventada. Contrato completo em `CONTRATO_PACOTE_INIMIGO.md`.
+
+Backup remoto inicial: `feature/integracao-p40@68807ee8bbcada0bfd3e6dec59b6da7e99661181`. Esta tarefa autoriza commit/push somente deste branch. Nenhum push ou merge do main. Relatório e testes atuais ficam na fase F5; registros F1–F4 permanecem históricos.

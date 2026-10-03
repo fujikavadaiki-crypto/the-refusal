@@ -27,6 +27,7 @@ var followup: AttackData
 var elapsed := 0.0
 var action_uid := 0
 var facing_locked := false
+var frame_provider: Node
 
 
 func _ready() -> void:
@@ -72,7 +73,7 @@ func tick(delta: float, player: Node2D, facing_deadzone: float) -> void:
     if phase == Phase.ACTIVE:
         var progress := clampf((elapsed - current_attack.windup_seconds) / current_attack.active_seconds, 0.0, 1.0)
         pivot.rotation_degrees = lerpf(current_attack.start_angle_degrees, current_attack.end_angle_degrees, progress) * enemy.facing_direction
-        hitbox.scan_overlaps()
+        if frame_provider == null or not frame_provider.apply_damage(hitbox, current_attack, elapsed): hitbox.scan_overlaps()
         if phase == Phase.ACTIVE and elapsed >= current_attack.windup_seconds + current_attack.active_seconds:
             hitbox.disarm()
             telegraph.visible = false
@@ -98,6 +99,10 @@ func abort() -> void:
     facing_locked = false
     pivot.rotation_degrees = 0.0
 
+func resolve_frame_contact() -> void:
+    if hitbox.active and current_attack != null and frame_provider != null:
+        if frame_provider.apply_damage(hitbox, current_attack, elapsed): hitbox.scan_overlaps()
+
 
 func _arm() -> void:
     var context := HitContext.new()
@@ -112,9 +117,10 @@ func _arm() -> void:
     context.parry_class = current_attack.parry_class
     context.tags = current_attack.tags.duplicate()
     hitbox.arm(context, current_attack)
+    if frame_provider != null: frame_provider.apply_damage(hitbox, current_attack, elapsed)
 
 
 func _on_hit_confirmed(context: HitContext) -> void:
     hit_confirmed.emit(context)
     if (context.outcome == HitContext.Outcome.DAMAGED or context.outcome == HitContext.Outcome.DEAD) and current_attack != null:
-        get_node("/root/HitStop").request_ms(current_attack.hit_stop_ms)
+        get_node("/root/HitStop").request_hit(context)

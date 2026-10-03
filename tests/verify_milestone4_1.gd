@@ -1,5 +1,7 @@
 extends SceneTree
 
+var jump_ticket := 0
+
 var failed := false
 var room: Node2D
 var player: CharacterBody2D
@@ -27,7 +29,10 @@ func wait_frames(count: int) -> void:
 func press(action: StringName) -> void:
     Input.action_press(action)
     await wait_frames(2)
-    Input.action_release(action)
+    if action == &"jump":
+        release_full_jump()
+    else:
+        Input.action_release(action)
 
 
 func check(condition: bool, description: String) -> void:
@@ -51,6 +56,10 @@ func bind_player(new_player: CharacterBody2D) -> void:
 
 
 func reset_player(x := 1000.0, y := 215.0) -> void:
+    jump_ticket += 1
+    Input.action_release("jump")
+    player.get_node("Locomotion").reset_assists()
+    player.clear_action_buffers()
     combat.abort_attack()
     health.reset_health()
     posture.reset_posture()
@@ -309,3 +318,10 @@ func run_checks() -> void:
 
     print("MILESTONE 4.1: ", "FAIL" if failed else "PASS")
     quit(1 if failed else 0)
+
+
+func release_full_jump() -> void:
+    # This fixture requests a full jump; variable-height taps are tested in F5.
+    var ticket := jump_ticket
+    await wait_frames(22)
+    if ticket == jump_ticket: Input.action_release("jump")

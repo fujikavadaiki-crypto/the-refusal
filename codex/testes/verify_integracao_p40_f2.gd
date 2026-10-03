@@ -158,7 +158,7 @@ func profiles() -> void:
 
 func jumps() -> void:
     check(Engine.physics_ticks_per_second == 60, "medição feita a 60 Hz")
-    check(near(loco.coyote_seconds, 0.10) and near(loco.jump_buffer_seconds, 0.12), "coyote 100 ms e buffer 120 ms preservados")
+    check(near(loco.coyote_seconds, 0.10) and near(loco.jump_buffer_seconds, 0.10), "F5: coyote 100 ms e buffer 100 ms configurados")
     for carrasco in [false, true]:
         await reset(carrasco)
         var start := player.position.y
