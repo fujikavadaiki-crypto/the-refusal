@@ -137,7 +137,7 @@ func check_scene_contracts() -> void:
         var main_masks := main_player.get_node("MaskController") as MaskController
         check(main_masks.active_data() == CARRASCO and near(main_locomotion.run_speed, CARRASCO_RUN), "cena principal aplica Carrasco a 160 world units/s")
         check(near(main_masks.base_speed, HUMAN_RUN), "cena principal captura a base humana antes da máscara")
-        check(near(main_locomotion.gravity, 800.0) and near(main_locomotion.jump_velocity, -260.0), "cena principal preserva gravidade e pulo atuais")
+        check(near(main_locomotion.gravity, 1481.130834977) and near(main_locomotion.jump_velocity, -481.367521368), "cena principal usa o pulo P40 integrado na fase 2")
         main_player.get_node("ParryAudio").stop()
         main_player.get_node("ParryAudio").stream = null
     level.queue_free()
@@ -147,7 +147,7 @@ func check_scene_contracts() -> void:
     # authored override without starting encounters, AI or level reset logic.
     var vertical: Node = load("res://scenes/biomes/forest/forest_vertical_slice.tscn").instantiate()
     var vertical_locomotion := vertical.get_node("Player/Locomotion") as PlayerLocomotion
-    check(near(vertical_locomotion.jump_velocity, -380.0) and near(vertical_locomotion.gravity, 800.0), "override vertical -380 permanece intacto com gravidade 800")
+    check(near(vertical_locomotion.jump_velocity, -481.367521368) and near(vertical_locomotion.gravity, 1481.130834977), "vertical slice herda o pulo P40 sem override -380")
     vertical.free()
 
 
@@ -158,7 +158,7 @@ func check_configuration() -> void:
     check(near(locomotion.ground_acceleration, 900.0 * RATE_SCALE), "aceleração de solo usa a mesma proporção da corrida")
     check(near(locomotion.ground_deceleration, 1100.0 * RATE_SCALE), "desaceleração de solo usa a mesma proporção da corrida")
     check(near(locomotion.air_acceleration, 650.0 * RATE_SCALE), "aceleração aérea usa a mesma proporção da corrida")
-    check(near(locomotion.gravity, 800.0) and near(locomotion.jump_velocity, -260.0), "fixture de produção conserva gravidade 800 e pulo -260")
+    check(near(locomotion.gravity, 1481.130834977) and near(locomotion.jump_velocity, -481.367521368), "fixture de produção usa gravidade/impulso P40 da fase 2")
     var configured_dash: Variant = defense.get("dash_speed")
     check(configured_dash != null and near(float(configured_dash), DASH_SPEED), "dash absoluto é 320 / 0,9 world units/s")
     check(near(defense.dodge_total_seconds, DASH_SECONDS) and near(defense.air_dash_total_seconds, DASH_SECONDS), "dash solo/ar dura 350 ms")

@@ -13,6 +13,16 @@ var facing_direction := 1
 var light_buffer_remaining := 0.0
 var heavy_buffer_remaining := 0.0
 const ATTACK_BUFFER_SECONDS := 0.16
+const SMALL_REFERENCE_ZOOM := 0.9
+const SMALL_RADIUS := 7.0 / SMALL_REFERENCE_ZOOM
+const SMALL_HEIGHT := 46.0 / SMALL_REFERENCE_ZOOM
+const SMALL_PIVOT_HEIGHT_ABOVE_FEET := 0.84 * PlayerLocomotion.P40_UNITS_PER_METER
+var human_body_shape: CapsuleShape2D
+var human_hurt_shape: CapsuleShape2D
+var human_body_center := Vector2.ZERO
+var human_hurt_center := Vector2.ZERO
+var human_pivot_y := 0.0
+var feet_y := 0.0
 
 
 func clear_action_buffers() -> void:
@@ -21,8 +31,55 @@ func clear_action_buffers() -> void:
 
 
 func _ready() -> void:
+    # Keep independent originals: the shared scene and human profile stay intact.
+    human_body_shape = $CollisionShape2D.shape.duplicate()
+    human_hurt_shape = $Hurtbox/CollisionShape2D.shape.duplicate()
+    human_body_center = $CollisionShape2D.position
+    human_hurt_center = $Hurtbox/CollisionShape2D.position
+    human_pivot_y = $AttackPivot.position.y
+    feet_y = human_body_center.y + human_body_shape.height / 2.0
+    masks.mask_changed.connect(_apply_body_profile)
+    _apply_body_profile(masks.active_data())
     combat.hit_confirmed.connect(_on_hit_confirmed)
     $Health.damage_taken.connect(_on_damage_taken)
+
+
+func _is_small_carrasco(data: MaskData) -> bool:
+    return data != null and data.mask_id == &"carrasco_base"
+
+
+func _small_capsule() -> CapsuleShape2D:
+    var capsule := CapsuleShape2D.new()
+    capsule.radius = SMALL_RADIUS
+    capsule.height = SMALL_HEIGHT
+    return capsule
+
+
+func _apply_body_profile(data: MaskData) -> void:
+    var small := _is_small_carrasco(data)
+    $CollisionShape2D.shape = _small_capsule() if small else human_body_shape.duplicate()
+    $Hurtbox/CollisionShape2D.shape = _small_capsule() if small else human_hurt_shape.duplicate()
+    var small_center := Vector2(human_body_center.x, feet_y - SMALL_HEIGHT / 2.0)
+    $CollisionShape2D.position = small_center if small else human_body_center
+    $Hurtbox/CollisionShape2D.position = small_center if small else human_hurt_center
+    $AttackPivot.position.y = feet_y - SMALL_PIVOT_HEIGHT_ABOVE_FEET if small else human_pivot_y
+
+
+func can_change_body_profile(data: MaskData) -> bool:
+    # A larger form cannot materialize through a low ceiling or narrow wall.
+    # Keep the same feet/origin; a rejected swap consumes no cooldown or ultimate.
+    var small := _is_small_carrasco(data)
+    var capsule := _small_capsule() if small else human_body_shape.duplicate() as CapsuleShape2D
+    capsule.radius -= 0.01
+    capsule.height -= 0.02
+    var center := Vector2(human_body_center.x, feet_y - SMALL_HEIGHT / 2.0) if small else human_body_center
+    var query := PhysicsShapeQueryParameters2D.new()
+    query.shape = capsule
+    query.transform = global_transform * Transform2D(0.0, center)
+    query.collision_mask = collision_mask
+    query.exclude = [get_rid()]
+    query.collide_with_areas = false
+    return get_world_2d().direct_space_state.intersect_shape(query).is_empty()
 
 
 func _physics_process(delta: float) -> void:

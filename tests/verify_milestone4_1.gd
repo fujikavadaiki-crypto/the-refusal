@@ -194,7 +194,10 @@ func run_checks() -> void:
     await press(&"parry")
     check(defense.mode == PlayerDefense.Mode.PARRYING, "Parry volta após fim do Ground Dodge")
 
-    await reset_player(1000, 80)
+    # Keep the whole 28-tick post-cancel observation airborne with P40 gravity.
+    # At Y=80 the new gravity reaches the real floor first, correctly recharging
+    # Air Dash; that would test landing rather than consumption by an air attack.
+    await reset_player(1000, -80)
     await press(&"dodge")
     await wait_frames(6)
     var dash_speed := absf(player.velocity.x)

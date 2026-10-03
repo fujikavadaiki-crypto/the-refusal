@@ -1,25 +1,25 @@
-# Tarefa 4.0 — Plano de integração do Pequeno A no jogo principal
+# Tarefas 4.0–4.1 — Plano de integração do Pequeno A no jogo principal
 
-**Fase 1: passos 1–3, linha de base, corrida/caminhada e dash.** Pulo, cápsula, pivô, apresentador, sprites, sombra, dano por quadro, efeitos e revisão de salas continuam pendentes para as etapas posteriores. Os critérios deste plano descrevem a validação necessária; não equivalem a resultados de testes executados.
+**Fase 1 aprovada: passos 1–3. Fase 2: somente passos 4–5, pulo e corpo/pivô do Pequeno A.** Apresentador, sprites, sombra, dano por quadro, efeitos e revisão de salas continuam pendentes (6–13). Resultados executados e limitações desta fase estão em `RELATORIO_INTEGRACAO_P40_F2.md`; os critérios futuros abaixo não equivalem a testes já executados.
 
 **Destino de integração:** `C:/Users/daiki/Documents/Codex/The Refusal/integracao-p40`, branch `feature/integracao-p40`, criada a partir de `main` no commit `ef24b5561cacb823d1f719370c29d82522cb5b58`. Esta cópia permite preservar a branch e as alterações locais do usuário em `C:/Users/daiki/Documents/Codex/The Refusal/the-refusal`.
 
-**Referência somente leitura:** `C:/Users/daiki/Documents/Codex/carrasco_25d_test/jogavel/prototipo_40`. O nome da pasta permanece `prototipo_40`. O README ainda começa com **Protótipo 41 (ex-40)**, mas sua nova seção P42, o relatório P42 e o seletor de personagens identificam a entrega atual **P42 / Pequeno A v33A**. A fonte inicial desta integração foi P41/v32A; a evolução externa detectada durante o trabalho está registrada abaixo. Não renomear nem editar essa referência, não importar/executar seu projeto no Godot e não usar seus diretórios temporários como destino da integração.
+**Referência somente leitura:** `C:/Users/daiki/Documents/Codex/carrasco_25d_test/jogavel/prototipo_40`, atualmente **P42b / Pequeno A v34A** (`pacotes/pequeno_v34A`). README ainda começa com Protótipo 41, mas seletor e `RELATORIO_P42b.md` identificam o pacote atual. A fonte inicial foi P41/v32A, seguida de P42/v33A; preservar o histórico abaixo. Não renomear nem editar a referência, não importar/executar seu projeto no Godot nem usar seus temporários como destino.
 
 **Plano anterior, preservado:** [Tarefa 3.7 — PLANO_INTEGRACAO.md](<C:/Users/daiki/Documents/Codex/carrasco_25d_test/codex/PLANO_INTEGRACAO.md>). Este documento o atualiza para a referência jogável atual e as decisões do usuário. As observações sobre o código principal se referem à base `main@ef24b556`; as linhas poderão mudar durante a integração.
 
-## 1. Fontes, decisões e limites da fase 1
+## 1. Fontes, decisões e limites das fases 1–2
 
 | Fonte atual, lida sem alteração | Contrato fornecido |
 |---|---|
-| [README.md](<C:/Users/daiki/Documents/Codex/carrasco_25d_test/jogavel/prototipo_40/README.md>) e [RELATORIO_P42.md](<C:/Users/daiki/Documents/Codex/carrasco_25d_test/jogavel/prototipo_40/RELATORIO_P42.md>) | Caminho de produção = **PEQUENO A**, agora v33A; v32A preservado como antes/arquivado. Grande e Pequeno B permanecem arquivados; a troca por TAB existe no protótipo como acesso histórico. |
-| [personagens_p40.gd](<C:/Users/daiki/Documents/Codex/carrasco_25d_test/jogavel/prototipo_40/personagens_p40.gd>) | `PEQUENO_A = res://pacotes/pequeno_v33A/`; `PEQUENO_A_V32` identifica a v32A arquivada. Leitura de animações, quadros, âncoras, polígonos, efeitos, sombras e hashes; apoios da corrida lidos do manifesto, atualmente 1/5. |
-| [manifesto_sprites.json](<C:/Users/daiki/Documents/Codex/carrasco_25d_test/jogavel/prototipo_40/pacotes/pequeno_v33A/manifesto_sprites.json>) | Pacote `pacote_pequeno_v33A`, 26 animações, altura idle 48 px, cabeça 15 px/31,2%, cápsula sugerida de **raio 7 px e altura total 46 px**. Corrida v2 e dash com smear substituem a arte correspondente da v32A. |
+| [README.md](<C:/Users/daiki/Documents/Codex/carrasco_25d_test/jogavel/prototipo_40/README.md>) e [RELATORIO_P42b.md](<C:/Users/daiki/Documents/Codex/carrasco_25d_test/jogavel/prototipo_40/RELATORIO_P42b.md>) | Produção = **PEQUENO A v34A**; v33A/v32A, Grande e Pequeno B arquivados. TAB no protótipo é acesso histórico. |
+| [personagens_p40.gd](<C:/Users/daiki/Documents/Codex/carrasco_25d_test/jogavel/prototipo_40/personagens_p40.gd>) | `PEQUENO_A = res://pacotes/pequeno_v34A/`; v33A/v32A arquivadas. Leitura de animações, quadros, âncoras, polígonos, efeitos, sombras e hashes; apoios da corrida 1/5. |
+| [manifesto_sprites.json](<C:/Users/daiki/Documents/Codex/carrasco_25d_test/jogavel/prototipo_40/pacotes/pequeno_v34A/manifesto_sprites.json>) | Pacote `pacote_pequeno_v34A`, 26 animações, altura idle 48 px, cápsula de **raio 7 px e altura total 46 px**. P42b altera apenas dash/dash_ar para smear compacto; física, hurtbox e danos iguais à v33A. |
 | [presenter_p40.gd](<C:/Users/daiki/Documents/Codex/carrasco_25d_test/jogavel/prototipo_40/presenter_p40.gd>) | Apresentação ×1 NEAREST, âncora nos pés, corrida por distância real, apoio visual por dois ticks seguido de `run_stop` por 66 ms, transições, sombra, rastro configurado pelo manifesto e seleção comum de quadro para arte/dano. |
 | [prototipo.gd](<C:/Users/daiki/Documents/Codex/carrasco_25d_test/jogavel/prototipo_40/prototipo.gd>), [config_combate.json](<C:/Users/daiki/Documents/Codex/carrasco_25d_test/jogavel/prototipo_40/config_combate.json>) e [config_sensacao.json](<C:/Users/daiki/Documents/Codex/carrasco_25d_test/jogavel/prototipo_40/config_sensacao.json>) | Corrida M3 = 4,5 m/s; dash B2 = 3,5 m/0,35 s; pulo nominal 2,20 m; referência de escala = 32 px de tela/m, zoom 0,9. |
 | [TESTES_P42.json](<C:/Users/daiki/Documents/Codex/carrasco_25d_test/jogavel/prototipo_40/evidencias_p40/TESTES_P42.json>) | Evidência previamente salva: 445 verificações e lista de falhas vazia, Godot 4.7.2, passo 1/60 s; mesmos valores físicos do Pequeno A. Estes resultados não foram reproduzidos nesta leitura. |
 
-SHA256 do manifesto ativo v33A nesta leitura: `396d611384a8f51a4f8a99e2b82eb3057707f042a1fd4a5cfb64a1c8d60a04f8`. O manifesto ainda contém o status textual “TESTE para avaliação (não aprovado)”; a escolha atual do usuário e o padrão do jogável estabelecem o Pequeno A como caminho de produção. Isso não representa nova aprovação visual da entrega P42. Registrar essa diferença sem modificar a fonte.
+SHA256 do manifesto ativo **v34A/P42b** nesta fase: `0a61e24f68a2d5ed2ebbdfc666c504d2851fa8f66316cae5d9c8f33c114d9a64`. Manifesto ainda contém status textual de teste; a escolha do usuário estabelece Pequeno A como produção. Hash v33A e evidências da fase 1 permanecem no histórico. Evidência P42b salva na fonte: 450 verificações; não atribuídas à execução desta integração.
 
 ### 1.1 Histórico da fonte congelada e evolução externa
 
@@ -47,8 +47,9 @@ As mudanças reais para etapas futuras são: corrida **6 × 8 px → 8 × 6 px**
 - **Manter `move_speed_multiplier = 0.92` da máscara.** O humano continua mais rápido; Carrasco equipado deve correr a 4,5 m/s.
 - **Dash absoluto e independente da corrida/máscara:** 3,5 m em 0,35 s no chão e no ar. Andar não reduz o dash.
 - **Preservar futuramente o pulo como jogado, cerca de 2,316052 m (~2,32 m).** 2,20 m é o valor nominal da configuração, não uma exigência de corrigir a integração para obter exatamente essa altura.
-- **Não alterar o pulo atual na fase 1:** manter `gravity = 800`, `jump_velocity = -260`, coyote/buffer e o override `jump_velocity = -380` da vertical slice.
-- Integrar depois o pacote pequeno atual `v33A`; preservar `v32A` como fonte inicial congelada/arquivada, sem transportar a arte grande C5.2b/corrida v1 como padrão de produção.
+- **Fase 1 preservou o pulo antigo; fase 2 adota g/v0 P40** e remove o override −380. Coyote 100 ms e buffer 120 ms atuais continuam iguais; não portar corte variável nesta fase.
+- **Cápsula pequena só para Carrasco nesta fase.** Humano conserva raio 7 unidades, altura 64, centro −19 e pivô Y=−2. Pulo global P40 vale para as duas formas.
+- Integrar depois o pacote pequeno atual `v34A/P42b`; preservar v33A/v32A como histórico. A fase 2 não copia arte ou apresentador.
 
 ## 2. Conversão e contratos físicos
 
@@ -105,15 +106,15 @@ Preservar [player.gd](<C:/Users/daiki/Documents/Codex/The Refusal/integracao-p40
 
 **Nominal e medido:** a evidência salva do Pequeno A registra **111,639001465 px em 0,35 s**, não exatamente 112. A ordem atual `aceitar entrada → tick da defesa → cancelamento → locomoção` encerra o modo antes de mover o tick final, que já sofre atualização normal. Manter essa ordem nesta fase; registrar distância e tolerância por tick. A 60 Hz, um tick corresponde a 16,666667 ms e 5,333333 px de referência/5,925926 unidades durante o dash. Não somar a frenagem posterior à distância do modo dash nem exigir igualdade exata com a fórmula contínua.
 
-### 2.4 Pulo como jogado — integração futura
+### 2.4 Pulo como jogado — fase 2
 
 Não alterar nenhum parâmetro ou assistência de pulo na fase 1. Na base, `gravity = 800`, `jump_velocity = -260`, coyote = 0,10 s e buffer = 0,12 s. A única sobrescrita de Locomotion encontrada nas salas é `jump_velocity = -380` em [forest_vertical_slice.tscn](<C:/Users/daiki/Documents/Codex/The Refusal/integracao-p40/scenes/biomes/forest/forest_vertical_slice.tscn>). Não há sobrescrita de corrida/dash nas salas da base.
 
-Para a etapa futura, reproduzir o perfil da referência: H nominal = `2.2 × U = 78.222222222 unidades`, T nominal = 0,325 s, `g = 2H / T² = 1481.130834977` e `v0 = -2H / T = -481.367521368`. A evidência Pequeno A a 60 Hz mede **74,113659668 px / 32 = 2,316051865 m**. Preservar esse comportamento observado; não corrigir para 2,20 m exatos por iniciativa da integração.
+Na fase 2, reproduzir o perfil da referência: H nominal = `2.2 × U = 78.222222222 unidades`, T nominal = 0,325 s, `g = 2H / T² = 1481.130834977` e `v0 = -2H / T = -481.367521368`. A evidência Pequeno A a 60 Hz mede **74,113659668 px / 32 = 2,316051865 m**. Preservar esse comportamento observado; não corrigir para 2,20 m exatos por iniciativa da integração.
 
-A adoção futura exigirá tratar o override da vertical slice e medir as trajetórias completas, ápice, coyote, buffer, salto curto, teto e pouso. Buffers/corte de pulo da referência pertencem a uma etapa própria; não trocar as assistências do principal junto com a fase 1.
+A fase 2 substitui os defaults de `PlayerLocomotion` por essas fórmulas e remove o nó sobrescrito da vertical slice; não muda a ordem de integração. Medir a 60 Hz, do piso até a maior subida, incluindo o tick inicial que aplica impulso antes da gravidade seguinte. Coyote/buffer atuais permanecem, sem adicionar pulo variável. Trajetórias e contatos antes/depois são salvos em `evidencias_integracao_p40_f2/MEDIDAS_*.json`.
 
-### 2.5 Cápsula do Pequeno A e pivô — integração futura
+### 2.5 Cápsula do Pequeno A e pivô — fase 2, só Carrasco
 
 **Raio = 7 px; altura total = 46 px; diâmetro = 14 px.** A altura inclui as duas extremidades arredondadas. A base fica na linha dos pés e o eixo no x da âncora/centro do tronco. Capa, braço, lâmina e rastro ficam fora da cápsula.
 
@@ -127,9 +128,9 @@ A adoção futura exigirá tratar o override da vertical slice e medir as trajet
 
 Os 0,22 m e 1,44 m do manifesto são arredondados. Priorizar os pixels indicados, sem recalcular a partir desses metros. O raio 7 é o menor proposto que cobre ao menos 70% do núcleo do idle: 71,9% de cabeça/tronco/pernas e 52,6% de todos os pixels; a fonte ainda o chama de proposta para calibração em jogo.
 
-Na referência, corpo e hurtbox recebem cápsulas iguais, com o fundo em Y local = 13. A base principal tem raio 7 **unidades**, altura 64 e centro Y = -19, também terminando em Y = 13: não confundir o raio atual de mundo com os 7 px do pacote. Preservar essas formas nesta fase.
+Na referência, corpo e hurtbox recebem cápsulas iguais, com fundo Y=13. A forma humana preserva raio 7 **unidades**, altura 64 e centro Y=−19 (fundo Y=13). No Carrasco, corpo/hurtbox recebem cópias independentes de raio 7,777778 e altura 51,111111. Não confundir unidades atuais com os 7 px do pacote.
 
-O Player é compartilhado com a forma humana. Antes do passo 5, definir e testar a aplicação do perfil pequeno por forma e sua restauração na troca; uma mudança universal da cápsula seria uma decisão adicional. Conferir spawn, rampas, quinas, paredes, teto, plataformas one-way e projéteis.
+O Player aplica o perfil pequeno pelo identificador `carrasco_base` no sinal de troca de máscara e restaura cópias do original para humano/outras formas. Pés e origem não são deslocados. A troca normal consulta se a nova cápsula cabe: expansão bloqueada sob teto/entre paredes não consome cooldown nem termina ultimate. Consulta com inset de 0,01 unidade distingue tangência de interpenetração; equip/setup continuam APIs de montagem da cena, cuja posição deve ser válida.
 
 O pivô elevado da referência tem Y = `13 - 0.84 × U = -16.866666667` e mantém X = 5. Geometria por quadro relativa aos pés não recebe novamente a rotação desse pivô. Elevar o pivô sozinho não substitui o futuro adaptador de dano.
 
@@ -137,7 +138,7 @@ O pivô elevado da referência tem Y = `13 - 0.84 × U = -16.866666667` e manté
 
 ### 3.1 Leitor e integridade
 
-Criar o apresentador do **Pequeno A v33A (P42)** e um leitor próprio dentro do principal. Aproveitar os contratos atuais de `personagens_p40.gd` e `presenter_p40.gd`, adaptando as interfaces do jogo; não transplantar a cena de demonstração, os inimigos de teste, seus autoloads ou o seletor histórico de três personagens. A v32A arquivada serve à comparação e à rastreabilidade da fase 1.
+Criar futuramente o apresentador do **Pequeno A v34A (P42b)** e um leitor próprio dentro do principal. Aproveitar os contratos atuais de `personagens_p40.gd` e `presenter_p40.gd`, adaptando as interfaces; não transplantar a demonstração/inimigos de teste/autoloads/seletor histórico. v32A/v33A arquivadas servem à rastreabilidade.
 
 O formato atual é `animacoes[]` com `id`, `loop` e `quadros[]`; cada quadro fornece `arquivo`, `ms`, `ancora`, `sha256`, dimensões e, quando aplicável, sombra e hitbox. Efeitos são camada separada, com `arquivo`, `ancora`, `fase`, hash e índice `quadro` opcional. A sombra do quadro tem precedência; a sombra da animação é fallback. A capa já está desenhada nos quadros, com atraso visual de um quadro, e não pede nova deformação física.
 
@@ -157,7 +158,7 @@ Na releitura, os 191 PNG únicos referenciados pela v32A e os 190 da v33A contin
 | run_stop | 1 | 66 ms | Freio visual após apoio por dois ticks, antes do idle |
 | turn | 1 | 50 ms | Virada no chão |
 | attack_exit | 1 | 66 ms | Saída de ataque terrestre para idle |
-| dash / dash_ar | 4 cada | 350 ms cada | Arranque → smear 1 → smear 2 → freio; 50/120/130/50 ms |
+| dash / dash_ar | 4 cada | 350 ms cada | P42b: arranque → smear compacto → pose esticada → freio; 50/60/190/50 ms |
 | jump_up | 2 | 140 ms | Subida, último quadro mantido |
 | fall_start / fall_loop | 2 / 3 | 140 / 270 ms | Entrada na queda seguida de loop |
 | land | 2 | 120 ms | Pouso |
@@ -245,16 +246,16 @@ Consulta `intersect_shape` sobre hurtboxes não verifica terreno intermediário 
 
 ## 4. Sequência de integração e critérios de saída
 
-Cada passo deve deixar a alteração revisável e registrar seus testes antes do seguinte. **Somente os passos 1–3 pertencem à fase 1.** Etapas 4–13 estão pendentes; não autorizam alterações antecipadas de pulo, cápsula, arte, combate ou apresentação nesta fase.
+Cada passo registra seus testes. **Passos 1–3: fase 1 aprovada. Passos 4–5: única implementação da fase 2. Passos 6–13 permanecem pendentes.** Não antecipar arte, dano por quadro, efeitos, câmera/salas ou rebalanceamento de IA.
 
 | Passo e fase | Alteração delimitada | Critério de saída |
 |---|---|---|
 | **1 — FASE 1: linha de base** | Identificar `main@ef24b556`, cópia/branch isoladas e alterações anteriores preservadas. Manter identificação/hash inicial congelado P41/v32A e registrar a evolução externa P42/v33A por leitura, sem substituir snapshots anteriores. Rodar suites pertinentes somente na cópia de integração, registrar passes/falhas anteriores e os contratos humano/máscara/U. | Evidência reproduzível distingue falhas preexistentes, novas e evolução externa da fonte; nenhuma escrita da integração na referência; pulo/cápsula/presenter atuais identificados. |
 | **2 — FASE 1: corrida/caminhada** | Ajustar default humano e acelerações, manter 0,55 e máscara 0,92/cache da base. Não trocar arte, pulo, cápsula ou lógica de parada por apoio. | Humano 173,913043/95,652174 e Carrasco 160/88; aceleração/parada proporcionais; equip/troca/reset sem acumulação. |
 | **3 — FASE 1: dash B2** | Velocidade absoluta solo/ar 355,555556; duração 0,35; i-frames proporcionais. Preservar direção, cooldown, carga aérea, cancelamento 80 ms, momentum e colisões. Revisar só expectativas relacionadas aos novos valores. | Chão/ar, direita/esquerda, Shift, ambas as formas, corrida zero, parede, fronteiras de i-frame/cancelamento e distância medida; pulo atual continua igual. |
-| **4 — PENDENTE: pulo como jogado** | Reproduzir perfil g/v0 e trajetória ~2,316052 m da referência, tratar override vertical e assistências em passos próprios. | Altura/ápice e trajetória medidos a 60/120 Hz, salto curto/coyote/buffer/teto/pouso; sem correção automática para 2,20 m exatos. |
-| **5 — PENDENTE: cápsula pequena e pivô** | Definir aplicação por forma; corpo/hurtbox com raio 7 px, altura total 46 px, centros preservando pés. Elevar pivô sem mudar X. | Troca humana/Carrasco, spawn livre, rampas/quinas/one-way/parede/teto, inimigo/projétil e combate ainda coerentes. |
-| **6 — PENDENTE: apresentador Pequeno A v33A** | Copiar recursos intactos para o principal, validar leitor/hashes/metadata e selecionar modo novo com estados/âncoras/loops/fallbacks/runtime, mantendo v32A como histórico arquivado. | 26 animações identificadas; arte ×1 NEAREST em referência, âncora/facing corretos; troca, humano, Condenação/execução/Tribunal/áudio preservados. |
+| **4 — FASE 2: pulo como jogado** | Aplicar g=1481,130835/v0=−481,367521; remover override −380. Manter coyote/buffer atuais. | Altura/ápice/traço medidos a 60 Hz, coyote/buffer e pouso; altura jogada ~2,32 m, sem corrigir para 2,20 m. |
+| **5 — FASE 2: cápsula pequena e pivô** | Aplicar só Carrasco: raio 7 px/altura total 46 px; preservar pés. Elevar pivô para Y=−16,866667, sem mudar X. Humano conserva corpo/hurtbox/pivô originais. | Trocas/restauração/instâncias independentes, spawn sem penetração, teto/passagem estreita, contato Peregrino/Corvo/Raiz/projétil; diferenças medidas e relatadas, IA intacta. |
+| **6 — PENDENTE: apresentador Pequeno A v34A** | Copiar recursos intactos, validar leitor/hashes/metadata e selecionar modo novo; manter v32A/v33A como histórico. | 26 animações; arte ×1 NEAREST, âncora/facing corretos; troca, humano, Condenação/execução/Tribunal/áudio preservados. |
 | **7 — PENDENTE: sombra única** | Sombra por quadro/animação projetada no terreno, sem duplicar sombra antiga. | Piso/plataforma/ar/sem piso/inimigo abaixo; uma sombra, fator/âncora/oclusão corretos. |
 | **8 — PENDENTE: corrida por distância** | Oito quadros, **6 px/quadro**, posições após movimento, fase/reset/teleporte e run_start de um quadro/6 px; manter locomoção independente da arte. | Fórmula `floor(distancia_px / 6) % 8`, 0,1875 m/quadro, ciclo 48 px/1,5 m; parede/câmera/hitstop não avançam indevidamente; run/walk/inversão/respawn conferidos. |
 | **9 — PENDENTE: apoio visual e fluidez** | Apoios 1/5 do manifesto por dois ticks → run_stop 66 ms → idle; virada/pouso/saída/carga/faísca, dash de quatro quadros e rastro 110/80 ms com limites 3/2. Não implementar frenagem física até apoio. | Soltura em oito fases não altera posição/velocidade; transições/ghosts/pixels/alpha corretos, retomada e interrupção, bordas/parede seguras. |
@@ -301,7 +302,7 @@ Verificar sombra única no terreno, arte sem blur, pés estáveis ao espelhar/tr
 ## 6. Diferenças em relação ao plano da tarefa 3.7
 
 1. **Fonte principal atualizada:** referências históricas 3.3–3.6 dão contexto; a produção passa a ser o jogável da pasta `prototipo_40`. A fonte inicial foi P41/Pequeno A v32A; a evolução externa P42/v33A é agora a referência futura, com v32A arquivada/hash inicial preservado. O README ainda tem título P41 e seção P42. O destino é a cópia isolada/branch a partir de `main`, preservando o checkout do usuário.
-2. **Escopo temporal definido:** passos 1–3 são a fase 1 atual; passos 4–13 permanecem pendentes. O plano anterior tratava toda a sequência como futura e ainda pedia congelar entregas 3.5/3.6 em evolução.
+2. **Escopo temporal definido:** passos 1–3 são a fase 1 aprovada; passos 4–5 são a fase 2 atual; 6–13 permanecem pendentes. O plano anterior tratava toda a sequência como futura e ainda pedia congelar entregas 3.5/3.6 em evolução.
 3. **Máscara decidida:** manter 0,92 e humano mais rápido deixou de ser proposta/questão de balanceamento. Base humana = 173,913043478; Carrasco = 160. Dash independente passa a contrato explícito.
 4. **Pulo observado preservado:** o alvo futuro é ~2,316052 m como jogado. Retirada a sugestão de corrigir para 2,20 m exatos; gravidade/impulso/assistências/override atuais não mudam na fase 1.
 5. **Cápsula pequena:** raio 7 px, altura total 46 px, convertidos em 7,777778/51,111111 unidades e centro -12,555556. Substitui a proposta grande de raio 0,31 m/altura 2,20 m/centro -26,111111. Metros arredondados do manifesto não prevalecem sobre seus pixels.
@@ -310,4 +311,6 @@ Verificar sombra única no terreno, arte sem blur, pés estáveis ao espelhar/tr
 8. **Dano já descrito por polígonos:** o pacote pequeno contém arco/lâmina nos quadros ATIVOS de oito ataques, com heavy frente/costas corrigido. A antiga pendência de anotar o heavy grande com retângulos não é o contrato de produção. Seleção comum de quadro, convexidade, interrupção e deduplicação agora são requisitos explícitos.
 9. **Integridade e efeitos atualizados:** hashes aceitam bytes exatos ou normalização específica do chunk `caBX`; sombra por quadro/animação, rastro de dash/pós-dash, faísca e capa atrasada estão presentes. P42 reduz rastro de dash/pós-dash a 110/80 ms e limites 3/2, muda canvas/âncoras/sombras das novas poses e remove poeira do dash aéreo. Esses mecanismos continuam pendentes de integração, sem serem confundidos com física ou evidência recém-executada.
 
-**Conclusão de escopo:** a fase 1 entrega baseline verificável, corrida/caminhada e dash B2 na cópia isolada. Os detalhes futuros ficam documentados para preservar o Pequeno A e o pulo como jogado quando essas etapas forem executadas. Este arquivo, por si só, não certifica implementação, execução de testes ou aprovação visual de nenhuma fase.
+Na fase 2, P42b/v34A torna-se a fonte atual; muda somente o dash artístico frente à v33A (50/60/190/50 ms, smear 64 px). Física/hurtbox/dano mantêm o contrato. Corpo/hurtbox pequenos ficam **só no Carrasco**, humano restaurado nas trocas e expansão recusada onde não cabe. Pivô elevado Y=−16,866667 corresponde a 29,866667 unidades acima dos pés (58,4348% da altura pequena), diretamente da referência; não aplicar outra redução de escala por 48/72.
+
+**Escopo entregue:** fase 1 = corrida/caminhada/dash; fase 2 = gravidade/impulso, retirada do override vertical e perfil de corpo/hurtbox/pivô por forma. `RELATORIO_INTEGRACAO_P40_F2.md` registra medidas a 60 Hz, testes e diferenças de contato. Arte/apresentador/dano por quadro e IAs permanecem para passos 6–13. Não considerar os critérios futuros como implementação ou aprovação já realizadas.

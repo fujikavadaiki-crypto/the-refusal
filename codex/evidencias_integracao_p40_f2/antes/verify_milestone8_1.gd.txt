@@ -1,0 +1,64 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+PASS: 11 Execution uses semantic InputMap action
+PASS: Charged Heavy configured by reusable AttackData
+PASS: Carrasco base data carrasco_light_1: 30/16
+PASS: Carrasco base data carrasco_light_2: 34/18
+PASS: Carrasco base data carrasco_light_3: 44/28
+PASS: Carrasco base data carrasco_heavy: 58/42
+PASS: Carrasco base data carrasco_charged_heavy: 78/65
+PASS: Carrasco base data carrasco_post_dodge: 32/18
+PASS: Carrasco base data carrasco_air_light: 34/22
+PASS: Carrasco base data carrasco_air_heavy: 52/45
+PASS: Carrasco base data carrasco_quebra_selos: 50/70
+PASS: press Heavy begins mobile reduced-speed charge
+PASS: 01 tap Heavy releases normal Heavy
+PASS: hold below threshold remains uncharged
+PASS: 02 release below threshold gives normal Heavy
+PASS: charge reaches distinct CHARGED READY feedback
+PASS: 03 hold above threshold releases Charged Heavy
+PASS: 04 Charged Heavy base HP damage 78
+PASS: 05 Charged Heavy base Posture damage 65
+PASS: 06 Dodge cancels charge and starts universal Dodge
+PASS: 07 canceled charge never arms hitbox
+PASS: 08 swap cancels charge without storing it
+PASS: swap-canceled charge produces no hit
+PASS: incoming damage interrupts charge
+PASS: Charged Heavy resolves 78/65 through existing hitbox
+PASS: 09 valid Charged Heavy adds one Condemnation
+PASS: 10 Tribunal Charged Heavy adds two stacks total
+PASS: 12 common at exactly 15 percent is not eligible
+PASS: 12 common HP<15, Rupture and three stacks is eligible
+PASS: 13 normal window ends with Rupture
+PASS: 14 Tribunal grants one second of extended opportunity
+PASS: 15 extended window does not prolong physical Rupture
+PASS: 16 extended window does not prolong Rupture vulnerability
+PASS: 17 gameplay Input executes common during Tribunal extension
+PASS: Execution does not teleport Player
+PASS: 24 dead target cannot execute again
+PASS: 27 execution does not emit duplicate Rupture
+PASS: common death clears Condemnation target state
+PASS: 18 common window closes after exact extension
+PASS: Execution outside window causes no damage
+PASS: inactive Carrasco retains window but cannot execute
+PASS: returning to Carrasco can use remaining window
+PASS: window keeps ticking while Carrasco is reserve
+PASS: Tribunal activated after Rupture does not retroactively extend window
+PASS: elite receives strike, never forced kill
+PASS: 22 elite consumes exactly three stacks
+PASS: miniboss receives strike, never forced kill
+PASS: 22 miniboss consumes exactly three stacks
+PASS: boss receives strike, never forced kill
+PASS: 22 boss consumes exactly three stacks
+PASS: elite/boss strike stays available in Tribunal extension
+PASS: extended boss strike consumes three stacks
+PASS: 23 target outside 52 px cannot execute
+PASS: wall blocks Execution without teleport
+PASS: 25 reserve mask cannot use Carrasco Execution
+PASS: 26 closest eligible target wins
+PASS: 26 facing breaks equal-distance tie
+PASS: ordinary lethal hit clears target state immediately
+PASS: freed target leaves no Condemnation or window reference
+MILESTONE 8.1: PASS

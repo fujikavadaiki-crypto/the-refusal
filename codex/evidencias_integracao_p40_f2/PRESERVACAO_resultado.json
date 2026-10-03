@@ -1,0 +1,13 @@
+{
+  "main_preservado": true,
+  "checkout_head_preservado": true,
+  "checkout_status_preservado": true,
+  "alteracoes": {
+    "reference_p42b": [],
+    "primary_checkout": []
+  },
+  "arquivos": {
+    "reference_p42b": 1583,
+    "primary_checkout": 771
+  }
+}

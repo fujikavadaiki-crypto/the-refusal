@@ -97,10 +97,13 @@ func run_checks() -> void:
     var dash_release := false
     var jump_points := [1135.0, 2368.0, 3645.0]
     var dash_points := [1180.0, 2405.0, 3700.0]
-    # Preserve the former jump-to-dash delay at the new P40 running speed.
-    # A fixed old distance would suspend ascent before reaching the raised ledge.
+    # Dash near the discrete P40 apex. The former third input at 500 ms
+    # froze an already descending jump (new apex ~333 ms), below the far ledge.
+    # Only the input route changes; terrain and movement values stay untouched.
+    var apex_ticks := ceili(-locomotion.jump_velocity / locomotion.gravity * Engine.physics_ticks_per_second)
+    var apex_seconds := float(apex_ticks) / Engine.physics_ticks_per_second
     for index in range(3):
-        dash_points[index] = jump_points[index] + (dash_points[index] - jump_points[index]) * locomotion.run_speed / 110.4
+        dash_points[index] = jump_points[index] + locomotion.run_speed * apex_seconds
     Input.action_press(&"move_right")
     for _i in range(3600):
         if jump_release:

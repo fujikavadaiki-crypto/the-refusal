@@ -8,8 +8,13 @@ const P40_MOVEMENT_SCALE := (160.0 / 0.92) / 120.0
 @export var ground_acceleration := 900.0 * P40_MOVEMENT_SCALE
 @export var ground_deceleration := 1100.0 * P40_MOVEMENT_SCALE
 @export var air_acceleration := 650.0 * P40_MOVEMENT_SCALE
-@export var gravity := 800.0
-@export var jump_velocity := -260.0
+## P40 played jump: nominal 2.20 m / 325 ms, measured ~2.32 m at 60 Hz.
+## Fixed reference conversion; never recompute physics from a room's camera zoom.
+const P40_UNITS_PER_METER := 32.0 / 0.9
+const P40_JUMP_HEIGHT := 2.2 * P40_UNITS_PER_METER
+const P40_APEX_SECONDS := 0.325
+@export var gravity := 2.0 * P40_JUMP_HEIGHT / (P40_APEX_SECONDS * P40_APEX_SECONDS)
+@export var jump_velocity := -2.0 * P40_JUMP_HEIGHT / P40_APEX_SECONDS
 @export var coyote_seconds := 0.10
 @export var jump_buffer_seconds := 0.12
 

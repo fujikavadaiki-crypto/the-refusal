@@ -1,0 +1,75 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+PASS: bosque_room_aprovada.tscn: spawn sem interpenetração física
+PASS: forest_vertical_slice.tscn: spawn sem interpenetração física
+PASS: bosque_trecho_01_playable.tscn: spawn sem interpenetração física
+PASS: corpo humano: raio/altura corretos
+PASS: hurtbox acompanha a cápsula false
+PASS: troca de corpo preserva os pés Y=13
+PASS: pivô false usa a altura esperada
+PASS: corpo false apoiado não penetra no chão
+PASS: corpo Carrasco: raio/altura corretos
+PASS: hurtbox acompanha a cápsula true
+PASS: troca de corpo preserva os pés Y=13
+PASS: pivô true usa a altura esperada
+PASS: corpo true apoiado não penetra no chão
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: outra instância humana mantém a cápsula original
+PASS: medição feita a 60 Hz
+PASS: coyote 100 ms e buffer 120 ms preservados
+MEASURE: jump {"apex_s":0.333333333333333,"apex_tick":20,"flight_s":0.683333333333333,"form":"human","gravity":800.0,"height_m":1.25063678920269,"height_px":40.0203772544861,"height_world":44.4670858383179,"impulse":-260.0,"landing_tick":41,"trace":[{"tick":1,"vy":-260.0,"y":-17.4059638977051},{"tick":2,"vy":-246.66667175293,"y":-21.5170745849609},{"tick":3,"vy":-233.333343505859,"y":-25.4059638977051},{"tick":4,"vy":-220.000015258789,"y":-29.0726318359375},{"tick":5,"vy":-206.666687011719,"y":-32.5170783996582},{"tick":6,"vy":-193.333358764648,"y":-35.7392997741699},{"tick":7,"vy":-180.000030517578,"y":-38.7392997741699},{"tick":8,"vy":-166.666702270508,"y":-41.5170783996582},{"tick":9,"vy":-153.333374023438,"y":-44.0726356506348},{"tick":10,"vy":-140.000045776367,"y":-46.4059715270996},{"tick":11,"vy":-126.666709899902,"y":-48.5170822143555},{"tick":12,"vy":-113.333374023438,"y":-50.4059715270996},{"tick":13,"vy":-100.000038146973,"y":-52.072639465332},{"tick":14,"vy":-86.6667022705078,"y":-53.5170860290527},{"tick":15,"vy":-73.333366394043,"y":-54.7393074035645},{"tick":16,"vy":-60.0000343322754,"y":-55.7393074035645},{"tick":17,"vy":-46.6667022705078,"y":-56.5170860290527},{"tick":18,"vy":-33.3333702087402,"y":-57.0726432800293},{"tick":19,"vy":-20.000036239624,"y":-57.4059753417969},{"tick":20,"vy":-6.66670274734497,"y":-57.5170860290527},{"tick":21,"vy":6.66663074493408,"y":-57.4059753417969},{"tick":22,"vy":19.999963760376,"y":-57.0726432800293},{"tick":23,"vy":33.3332977294922,"y":-56.51708984375},{"tick":24,"vy":46.6666297912598,"y":-55.7393112182617},{"tick":25,"vy":59.9999618530273,"y":-54.7393112182617},{"tick":26,"vy":73.3332977294922,"y":-53.51708984375},{"tick":27,"vy":86.666633605957,"y":-52.0726470947266},{"tick":28,"vy":99.9999694824219,"y":-50.4059791564941},{"tick":29,"vy":113.333305358887,"y":-48.51708984375},{"tick":30,"vy":126.666641235352,"y":-46.4059791564941},{"tick":31,"vy":139.999969482422,"y":-44.0726470947266},{"tick":32,"vy":153.333297729492,"y":-41.5170936584473},{"tick":33,"vy":166.666625976563,"y":-38.739315032959},{"tick":34,"vy":179.999954223633,"y":-35.739315032959},{"tick":35,"vy":193.333282470703,"y":-32.5170936584473},{"tick":36,"vy":206.666610717773,"y":-29.0726509094238},{"tick":37,"vy":219.999938964844,"y":-25.40598487854},{"tick":38,"vy":233.333267211914,"y":-21.5170974731445},{"tick":39,"vy":246.666595458984,"y":-17.4059867858887},{"tick":40,"vy":259.999938964844,"y":-13.0726547241211},{"tick":41,"vy":0.0,"y":-13.0726547241211}]}
+PASS: pulo sobe e retorna ao piso
+PASS: coyote permite pulo após 83 ms fora do piso
+PASS: coyote expira depois de 100 ms
+PASS: buffer transforma entrada anterior ao pouso em pulo
+MEASURE: jump {"apex_s":0.333333333333333,"apex_tick":20,"flight_s":0.683333333333333,"form":"Carrasco","gravity":800.0,"height_m":1.25063678920269,"height_px":40.0203772544861,"height_world":44.4670858383179,"impulse":-260.0,"landing_tick":41,"trace":[{"tick":1,"vy":-260.0,"y":-17.4059638977051},{"tick":2,"vy":-246.66667175293,"y":-21.5170745849609},{"tick":3,"vy":-233.333343505859,"y":-25.4059638977051},{"tick":4,"vy":-220.000015258789,"y":-29.0726318359375},{"tick":5,"vy":-206.666687011719,"y":-32.5170783996582},{"tick":6,"vy":-193.333358764648,"y":-35.7392997741699},{"tick":7,"vy":-180.000030517578,"y":-38.7392997741699},{"tick":8,"vy":-166.666702270508,"y":-41.5170783996582},{"tick":9,"vy":-153.333374023438,"y":-44.0726356506348},{"tick":10,"vy":-140.000045776367,"y":-46.4059715270996},{"tick":11,"vy":-126.666709899902,"y":-48.5170822143555},{"tick":12,"vy":-113.333374023438,"y":-50.4059715270996},{"tick":13,"vy":-100.000038146973,"y":-52.072639465332},{"tick":14,"vy":-86.6667022705078,"y":-53.5170860290527},{"tick":15,"vy":-73.333366394043,"y":-54.7393074035645},{"tick":16,"vy":-60.0000343322754,"y":-55.7393074035645},{"tick":17,"vy":-46.6667022705078,"y":-56.5170860290527},{"tick":18,"vy":-33.3333702087402,"y":-57.0726432800293},{"tick":19,"vy":-20.000036239624,"y":-57.4059753417969},{"tick":20,"vy":-6.66670274734497,"y":-57.5170860290527},{"tick":21,"vy":6.66663074493408,"y":-57.4059753417969},{"tick":22,"vy":19.999963760376,"y":-57.0726432800293},{"tick":23,"vy":33.3332977294922,"y":-56.51708984375},{"tick":24,"vy":46.6666297912598,"y":-55.7393112182617},{"tick":25,"vy":59.9999618530273,"y":-54.7393112182617},{"tick":26,"vy":73.3332977294922,"y":-53.51708984375},{"tick":27,"vy":86.666633605957,"y":-52.0726470947266},{"tick":28,"vy":99.9999694824219,"y":-50.4059791564941},{"tick":29,"vy":113.333305358887,"y":-48.51708984375},{"tick":30,"vy":126.666641235352,"y":-46.4059791564941},{"tick":31,"vy":139.999969482422,"y":-44.0726470947266},{"tick":32,"vy":153.333297729492,"y":-41.5170936584473},{"tick":33,"vy":166.666625976563,"y":-38.739315032959},{"tick":34,"vy":179.999954223633,"y":-35.739315032959},{"tick":35,"vy":193.333282470703,"y":-32.5170936584473},{"tick":36,"vy":206.666610717773,"y":-29.0726509094238},{"tick":37,"vy":219.999938964844,"y":-25.40598487854},{"tick":38,"vy":233.333267211914,"y":-21.5170974731445},{"tick":39,"vy":246.666595458984,"y":-17.4059867858887},{"tick":40,"vy":259.999938964844,"y":-13.0726547241211},{"tick":41,"vy":0.0,"y":-13.0726547241211}]}
+PASS: pulo sobe e retorna ao piso
+PASS: coyote permite pulo após 83 ms fora do piso
+PASS: coyote expira depois de 100 ms
+PASS: buffer transforma entrada anterior ao pouso em pulo
+PASS: peregrino/corte acerta humano em altura normal
+PASS: peregrino/corte acerta Carrasco em altura normal
+PASS: peregrino/estocada acerta humano em altura normal
+PASS: peregrino/estocada acerta Carrasco em altura normal
+PASS: raiz_faminta/garra_subterranea acerta humano em altura normal
+PASS: raiz_faminta/garra_subterranea acerta Carrasco em altura normal
+PASS: raiz_faminta/mordida acerta humano em altura normal
+PASS: raiz_faminta/mordida acerta Carrasco em altura normal
+PASS: corvo/rasante acerta humano em altura normal
+PASS: corvo/rasante acerta Carrasco em altura normal
+PASS: projétil horizontal a 4.0 unidades dos pés: acerta
+PASS: projétil horizontal a 20.0 unidades dos pés: acerta
+PASS: projétil horizontal a 40.0 unidades dos pés: acerta
+PASS: projétil horizontal a 58.0 unidades dos pés: acerta
+PASS: projétil horizontal a 70.0 unidades dos pés: passa acima
+PASS: projétil horizontal a 4.0 unidades dos pés: acerta
+PASS: projétil horizontal a 20.0 unidades dos pés: acerta
+PASS: projétil horizontal a 40.0 unidades dos pés: acerta
+PASS: projétil horizontal a 58.0 unidades dos pés: acerta
+PASS: projétil horizontal a 70.0 unidades dos pés: passa acima
+PHASE2: 68 checks / 0 failures

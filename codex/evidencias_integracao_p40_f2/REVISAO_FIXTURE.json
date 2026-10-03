@@ -1,0 +1,32 @@
+[
+  {
+    "teste": "tests/verify_milestone4_1.gd",
+    "exit": 0,
+    "pass": 59,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 11.36,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone8_3.gd",
+    "exit": 0,
+    "pass": 56,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 1.31,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_vertical_slice.gd",
+    "exit": 1,
+    "pass": 12,
+    "fail": 1,
+    "falhas": [
+      "FAIL: Carrasco aprovado nasce sobre o piso pintado",
+      "VERTICAL SLICE: FAIL"
+    ],
+    "segundos": 27.5,
+    "aprovado": false
+  }
+]

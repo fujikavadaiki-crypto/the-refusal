@@ -73,6 +73,10 @@ func swap() -> bool:
     combat.cancel_charge()
     if combat.is_busy():
         return false
+    var next_state := slots[1 - active_slot]
+    var next_data: MaskData = next_state.data if next_state != null else null
+    if player.has_method("can_change_body_profile") and not player.can_change_body_profile(next_data):
+        return false
     var state := active_state()
     if state != null:
         state.end_ultimate()

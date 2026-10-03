@@ -208,9 +208,6 @@ script = ExtResource("10_shadow")
 [node name="Player" parent="." instance=ExtResource("5_player")]
 position = Vector2(120, 169)
 
-[node name="Locomotion" parent="Player" index="1"]
-jump_velocity = -380.0
-
 [node name="Encounters" type="Node2D" parent="."]
 
 [node name="FirstEncounter" type="Node2D" parent="Encounters"]

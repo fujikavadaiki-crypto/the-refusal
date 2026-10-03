@@ -1,0 +1,38 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+PASS: Godot 4.7 runtime
+PASS: keyboard and controller attack inputs
+PASS: canonical HP damage
+PASS: canonical future posture data
+PASS: attack commitment timing
+PASS: Light 1 starts alone
+PASS: Light 1 deals 20 damage once
+PASS: Light hit context and tags
+PASS: valid Light impact requests 30 ms hit stop
+PASS: hit stop restores time scale
+PASS: early repeated press cannot skip Light commitment
+PASS: timed re-press advances to Light 2
+PASS: Light 1→2 deals 20+22 once each
+PASS: Light 2 reaches its queue window
+PASS: timed re-press advances to Light 3
+PASS: full combo deals 20+22+28 once each
+PASS: unique action and hit IDs
+PASS: expired chain restarts at Light 1
+PASS: expired chain has two 20-damage hits
+PASS: Heavy deals 35 damage once
+PASS: valid Heavy impact requests 55 ms hit stop
+PASS: left facing mirrors sword and hitbox
+PASS: right facing sword and hitbox
+PASS: one action hits target once across multiple hurtboxes
+PASS: whiff does not trigger hit stop
+PASS: attack near wall keeps body collision
+PASS: movement continues with greater Heavy commitment
+PASS: gravity and grounded state retained
+PASS: movement and camera retained
+PASS: jump retained
+PASS: jump lands without regression
+PASS: dummy reset restores HP and count
+PASS: damage type and Heavy tag
+FINAL: PASSED

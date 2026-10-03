@@ -64,7 +64,8 @@ func run_checks() -> void:
     check(sprite.scale == Vector2.ONE and sprite.texture_filter == CanvasItem.TEXTURE_FILTER_NEAREST and sprite.offset == Vector2(-28, -54) and sprite.position == Vector2(0, 13), "approved idle GIF uses native pixels and shares the body's ground plane")
     check(sprite.texture is Texture2D and sprite.texture.get_size() == Vector2(56, 56), "runtime displays the native 56x56 idle frame")
     check(visual.form.frame_textures.size() == expected.size(), "all authored actions are available to the interchangeable Mask visual")
-    check((player.get_node("CollisionShape2D") as CollisionShape2D).shape.height == 64.0, "body collider matches the modular silhouette")
+    var body_shape := (player.get_node("CollisionShape2D") as CollisionShape2D).shape as CapsuleShape2D
+    check(is_equal_approx(body_shape.height, 46.0 / 0.9) and is_equal_approx(body_shape.radius, 7.0 / 0.9), "Carrasco collider follows Pequeno A; legacy visual remains until step 6")
     check(not combat.hitbox.active, "hitbox starts inactive")
     Input.action_press("attack_light")
     await frames(2)

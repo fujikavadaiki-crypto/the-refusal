@@ -1,0 +1,302 @@
+{
+  "suites_before": 20,
+  "suites_after": 20,
+  "passed_before": 17,
+  "passed_after": 16,
+  "assertions_passed_before": 795,
+  "assertions_passed_after": 790,
+  "failed_before": [
+    {
+      "teste": "tests/verify_carrasco_gif_test.gd",
+      "exit": -2,
+      "pass": 1,
+      "fail": 0,
+      "falhas": [
+        "SCRIPT ERROR: Invalid access to property or key 'texture_filter' on a base object of type 'null instance'."
+      ],
+      "segundos": 3.52,
+      "aprovado": false
+    },
+    {
+      "teste": "tests/verify_milestone8_2.gd",
+      "exit": -2,
+      "pass": 1,
+      "fail": 0,
+      "falhas": [
+        "SCRIPT ERROR: Invalid access to property or key 'sprite' on a base object of type 'Node2D (carrasco_base_official.gd)'."
+      ],
+      "segundos": 3.52,
+      "aprovado": false
+    },
+    {
+      "teste": "tests/verify_vertical_slice.gd",
+      "exit": 1,
+      "pass": 12,
+      "fail": 1,
+      "falhas": [
+        "FAIL: Carrasco aprovado nasce sobre o piso pintado",
+        "VERTICAL SLICE: FAIL"
+      ],
+      "segundos": 27.8,
+      "aprovado": false
+    }
+  ],
+  "failed_after": [
+    {
+      "teste": "tests/verify_carrasco_gif_test.gd",
+      "exit": -2,
+      "pass": 1,
+      "fail": 0,
+      "falhas": [
+        "SCRIPT ERROR: Invalid access to property or key 'texture_filter' on a base object of type 'null instance'."
+      ],
+      "segundos": 3.53,
+      "aprovado": false
+    },
+    {
+      "teste": "tests/verify_milestone5.gd",
+      "exit": 1,
+      "pass": 45,
+      "fail": 5,
+      "falhas": [
+        "FAIL: Air Light real causa 18 HP/7 Postura ao Corvo",
+        "FAIL: Air Light produz um contato por ação",
+        "FAIL: Air Heavy real causa 32 HP/28 Postura e rompe o Corvo",
+        "FAIL: Ruptura aérea derruba o corpo",
+        "FAIL: Ruptura recupera ~50% e decola gradualmente",
+        "MILESTONE 5: FAIL"
+      ],
+      "segundos": 203.83,
+      "aprovado": false
+    },
+    {
+      "teste": "tests/verify_milestone8_2.gd",
+      "exit": -2,
+      "pass": 1,
+      "fail": 0,
+      "falhas": [
+        "SCRIPT ERROR: Invalid access to property or key 'sprite' on a base object of type 'Node2D (carrasco_base_official.gd)'."
+      ],
+      "segundos": 3.52,
+      "aprovado": false
+    },
+    {
+      "teste": "tests/verify_vertical_slice.gd",
+      "exit": 1,
+      "pass": 12,
+      "fail": 1,
+      "falhas": [
+        "FAIL: Carrasco aprovado nasce sobre o piso pintado",
+        "VERTICAL SLICE: FAIL"
+      ],
+      "segundos": 27.5,
+      "aprovado": false
+    }
+  ],
+  "new_suite": {
+    "teste": "codex/testes/verify_integracao_p40_f2.gd",
+    "exit": 0,
+    "pass": 85,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 39.84,
+    "aprovado": true
+  },
+  "jump": [
+    {
+      "apex_s": 0.333333333333333,
+      "apex_tick": 20,
+      "flight_s": 0.683333333333333,
+      "form": "human",
+      "gravity": 1481.13083497699,
+      "height_m": 2.31490331590176,
+      "height_px": 74.0769061088562,
+      "height_world": 82.3076734542847,
+      "impulse": -481.367521367521,
+      "landing_tick": 41
+    },
+    {
+      "apex_s": 0.333333333333333,
+      "apex_tick": 20,
+      "flight_s": 0.683333333333333,
+      "form": "Carrasco",
+      "gravity": 1481.13083497699,
+      "height_m": 2.31490331590176,
+      "height_px": 74.0769061088562,
+      "height_world": 82.3076734542847,
+      "impulse": -481.367521367521,
+      "landing_tick": 41
+    }
+  ],
+  "contact_trials": 130,
+  "changed_contacts": [
+    {
+      "before": {
+        "attack": "estocada",
+        "damage": 14,
+        "dx_m": 0.28125,
+        "dx_world": 10.0,
+        "enemy": "peregrino",
+        "form": "Carrasco",
+        "hit": true,
+        "raised_m": 1.2375,
+        "raised_world": 44.0
+      },
+      "after": {
+        "attack": "estocada",
+        "damage": 0,
+        "dx_m": 0.28125,
+        "dx_world": 10.0,
+        "enemy": "peregrino",
+        "form": "Carrasco",
+        "hit": false,
+        "raised_m": 1.2375,
+        "raised_world": 44.0
+      }
+    },
+    {
+      "before": {
+        "attack": "estocada",
+        "damage": 14,
+        "dx_m": 0.703125,
+        "dx_world": 25.0,
+        "enemy": "peregrino",
+        "form": "Carrasco",
+        "hit": true,
+        "raised_m": 1.2375,
+        "raised_world": 44.0
+      },
+      "after": {
+        "attack": "estocada",
+        "damage": 0,
+        "dx_m": 0.703125,
+        "dx_world": 25.0,
+        "enemy": "peregrino",
+        "form": "Carrasco",
+        "hit": false,
+        "raised_m": 1.2375,
+        "raised_world": 44.0
+      }
+    },
+    {
+      "before": {
+        "attack": "estocada",
+        "damage": 14,
+        "dx_m": 1.125,
+        "dx_world": 40.0,
+        "enemy": "peregrino",
+        "form": "Carrasco",
+        "hit": true,
+        "raised_m": 1.2375,
+        "raised_world": 44.0
+      },
+      "after": {
+        "attack": "estocada",
+        "damage": 0,
+        "dx_m": 1.125,
+        "dx_world": 40.0,
+        "enemy": "peregrino",
+        "form": "Carrasco",
+        "hit": false,
+        "raised_m": 1.2375,
+        "raised_world": 44.0
+      }
+    },
+    {
+      "before": {
+        "attack": "garra_subterranea",
+        "damage": 14,
+        "dx_m": 0.28125,
+        "dx_world": 10.0,
+        "enemy": "raiz_faminta",
+        "form": "Carrasco",
+        "hit": true,
+        "raised_m": 1.2375,
+        "raised_world": 44.0
+      },
+      "after": {
+        "attack": "garra_subterranea",
+        "damage": 0,
+        "dx_m": 0.28125,
+        "dx_world": 10.0,
+        "enemy": "raiz_faminta",
+        "form": "Carrasco",
+        "hit": false,
+        "raised_m": 1.2375,
+        "raised_world": 44.0
+      }
+    },
+    {
+      "before": {
+        "attack": "mordida",
+        "damage": 11,
+        "dx_m": 0.28125,
+        "dx_world": 10.0,
+        "enemy": "raiz_faminta",
+        "form": "Carrasco",
+        "hit": true,
+        "raised_m": 1.2375,
+        "raised_world": 44.0
+      },
+      "after": {
+        "attack": "mordida",
+        "damage": 0,
+        "dx_m": 0.28125,
+        "dx_world": 10.0,
+        "enemy": "raiz_faminta",
+        "form": "Carrasco",
+        "hit": false,
+        "raised_m": 1.2375,
+        "raised_world": 44.0
+      }
+    },
+    {
+      "before": {
+        "attack": "mordida",
+        "damage": 11,
+        "dx_m": 0.703125,
+        "dx_world": 25.0,
+        "enemy": "raiz_faminta",
+        "form": "Carrasco",
+        "hit": true,
+        "raised_m": 1.2375,
+        "raised_world": 44.0
+      },
+      "after": {
+        "attack": "mordida",
+        "damage": 0,
+        "dx_m": 0.703125,
+        "dx_world": 25.0,
+        "enemy": "raiz_faminta",
+        "form": "Carrasco",
+        "hit": false,
+        "raised_m": 1.2375,
+        "raised_world": 44.0
+      }
+    },
+    {
+      "before": {
+        "attack": "projectile",
+        "damage": 8,
+        "dx_world": 40,
+        "enemy": "corvo",
+        "form": "Carrasco",
+        "height_m": 1.63125,
+        "height_world": 58.0,
+        "hit": true
+      },
+      "after": {
+        "attack": "projectile",
+        "damage": 0,
+        "dx_world": 40,
+        "enemy": "corvo",
+        "form": "Carrasco",
+        "height_m": 1.63125,
+        "height_world": 58.0,
+        "hit": false
+      }
+    }
+  ],
+  "enemy_and_attack_sources_changed": "",
+  "scope": "Phase 2, only jump and Carrasco body/hurtbox/pivot; original checkout and reference read-only."
+}
