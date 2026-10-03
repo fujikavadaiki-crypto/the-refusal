@@ -1,0 +1,1902 @@
+{
+  "baseline": false,
+  "checks": 85,
+  "contacts": [
+    {
+      "attack": "corte",
+      "damage": 12,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "corte",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "corte",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": true,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": true,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "corte",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "corte",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "corte",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "corte",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "corte",
+      "damage": 12,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "corte",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "corte",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": true,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": true,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": true,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "peregrino",
+      "form": "human",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 14,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "estocada",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "peregrino",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 14,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 0,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 14,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 0,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 14,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": true,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 0,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 14,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 0,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 14,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 0,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 0,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 0,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "garra_subterranea",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 11,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 11,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 11,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 11,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 11,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": true,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 11,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": true,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "raiz_faminta",
+      "form": "human",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 11,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 11,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 11,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 11,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 0,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 0,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "mordida",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "raiz_faminta",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 11,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "corvo",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 0,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "corvo",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "corvo",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "corvo",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 11,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "corvo",
+      "form": "human",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 0,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "corvo",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "corvo",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "corvo",
+      "form": "human",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 11,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "corvo",
+      "form": "human",
+      "hit": true,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 0,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "corvo",
+      "form": "human",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "corvo",
+      "form": "human",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "corvo",
+      "form": "human",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 11,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "corvo",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 0,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "corvo",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "corvo",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "corvo",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.0,
+      "raised_world": 0.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 11,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "corvo",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 0,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "corvo",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "corvo",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "corvo",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 0.7875,
+      "raised_world": 28.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 11,
+      "dx_m": 0.28125,
+      "dx_world": 10.0,
+      "enemy": "corvo",
+      "form": "Carrasco",
+      "hit": true,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 0,
+      "dx_m": 0.703125,
+      "dx_world": 25.0,
+      "enemy": "corvo",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 0,
+      "dx_m": 1.125,
+      "dx_world": 40.0,
+      "enemy": "corvo",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "rasante",
+      "damage": 0,
+      "dx_m": 1.546875,
+      "dx_world": 55.0,
+      "enemy": "corvo",
+      "form": "Carrasco",
+      "hit": false,
+      "raised_m": 1.2375,
+      "raised_world": 44.0
+    },
+    {
+      "attack": "projectile",
+      "damage": 8,
+      "dx_world": 40,
+      "enemy": "corvo",
+      "form": "human",
+      "height_m": 0.1125,
+      "height_world": 4.0,
+      "hit": true
+    },
+    {
+      "attack": "projectile",
+      "damage": 8,
+      "dx_world": 40,
+      "enemy": "corvo",
+      "form": "human",
+      "height_m": 0.5625,
+      "height_world": 20.0,
+      "hit": true
+    },
+    {
+      "attack": "projectile",
+      "damage": 8,
+      "dx_world": 40,
+      "enemy": "corvo",
+      "form": "human",
+      "height_m": 1.125,
+      "height_world": 40.0,
+      "hit": true
+    },
+    {
+      "attack": "projectile",
+      "damage": 8,
+      "dx_world": 40,
+      "enemy": "corvo",
+      "form": "human",
+      "height_m": 1.63125,
+      "height_world": 58.0,
+      "hit": true
+    },
+    {
+      "attack": "projectile",
+      "damage": 0,
+      "dx_world": 40,
+      "enemy": "corvo",
+      "form": "human",
+      "height_m": 1.96875,
+      "height_world": 70.0,
+      "hit": false
+    },
+    {
+      "attack": "projectile",
+      "damage": 8,
+      "dx_world": 40,
+      "enemy": "corvo",
+      "form": "Carrasco",
+      "height_m": 0.1125,
+      "height_world": 4.0,
+      "hit": true
+    },
+    {
+      "attack": "projectile",
+      "damage": 8,
+      "dx_world": 40,
+      "enemy": "corvo",
+      "form": "Carrasco",
+      "height_m": 0.5625,
+      "height_world": 20.0,
+      "hit": true
+    },
+    {
+      "attack": "projectile",
+      "damage": 8,
+      "dx_world": 40,
+      "enemy": "corvo",
+      "form": "Carrasco",
+      "height_m": 1.125,
+      "height_world": 40.0,
+      "hit": true
+    },
+    {
+      "attack": "projectile",
+      "damage": 0,
+      "dx_world": 40,
+      "enemy": "corvo",
+      "form": "Carrasco",
+      "height_m": 1.63125,
+      "height_world": 58.0,
+      "hit": false
+    },
+    {
+      "attack": "projectile",
+      "damage": 0,
+      "dx_world": 40,
+      "enemy": "corvo",
+      "form": "Carrasco",
+      "height_m": 1.96875,
+      "height_world": 70.0,
+      "hit": false
+    }
+  ],
+  "failures": 0,
+  "jump": [
+    {
+      "apex_s": 0.333333333333333,
+      "apex_tick": 20,
+      "flight_s": 0.683333333333333,
+      "form": "human",
+      "gravity": 1481.13083497699,
+      "height_m": 2.31490331590176,
+      "height_px": 74.0769061088562,
+      "height_world": 82.3076734542847,
+      "impulse": -481.367521367521,
+      "landing_tick": 41,
+      "trace": [
+        {
+          "tick": 1,
+          "vy": -481.367523193359,
+          "y": -21.095422744751
+        },
+        {
+          "tick": 2,
+          "vy": -456.682006835938,
+          "y": -28.7067909240723
+        },
+        {
+          "tick": 3,
+          "vy": -431.996490478516,
+          "y": -35.9067344665527
+        },
+        {
+          "tick": 4,
+          "vy": -407.310974121094,
+          "y": -42.6952514648438
+        },
+        {
+          "tick": 5,
+          "vy": -382.625457763672,
+          "y": -49.0723419189453
+        },
+        {
+          "tick": 6,
+          "vy": -357.93994140625,
+          "y": -55.0380096435547
+        },
+        {
+          "tick": 7,
+          "vy": -333.254425048828,
+          "y": -60.5922508239746
+        },
+        {
+          "tick": 8,
+          "vy": -308.568908691406,
+          "y": -65.7350692749023
+        },
+        {
+          "tick": 9,
+          "vy": -283.883392333984,
+          "y": -70.4664611816406
+        },
+        {
+          "tick": 10,
+          "vy": -259.197875976563,
+          "y": -74.7864227294922
+        },
+        {
+          "tick": 11,
+          "vy": -234.512359619141,
+          "y": -78.6949615478516
+        },
+        {
+          "tick": 12,
+          "vy": -209.826843261719,
+          "y": -82.1920776367188
+        },
+        {
+          "tick": 13,
+          "vy": -185.141326904297,
+          "y": -85.2777633666992
+        },
+        {
+          "tick": 14,
+          "vy": -160.455810546875,
+          "y": -87.9520263671875
+        },
+        {
+          "tick": 15,
+          "vy": -135.770294189453,
+          "y": -90.2148666381836
+        },
+        {
+          "tick": 16,
+          "vy": -111.084777832031,
+          "y": -92.066276550293
+        },
+        {
+          "tick": 17,
+          "vy": -86.3992614746094,
+          "y": -93.5062637329102
+        },
+        {
+          "tick": 18,
+          "vy": -61.7137489318848,
+          "y": -94.5348281860352
+        },
+        {
+          "tick": 19,
+          "vy": -37.0282363891602,
+          "y": -95.1519622802734
+        },
+        {
+          "tick": 20,
+          "vy": -12.3427228927612,
+          "y": -95.3576736450195
+        },
+        {
+          "tick": 21,
+          "vy": 12.3427906036377,
+          "y": -95.1519622802734
+        },
+        {
+          "tick": 22,
+          "vy": 37.0283050537109,
+          "y": -94.5348205566406
+        },
+        {
+          "tick": 23,
+          "vy": 61.7138175964355,
+          "y": -93.5062561035156
+        },
+        {
+          "tick": 24,
+          "vy": 86.3993301391602,
+          "y": -92.0662689208984
+        },
+        {
+          "tick": 25,
+          "vy": 111.084846496582,
+          "y": -90.2148513793945
+        },
+        {
+          "tick": 26,
+          "vy": 135.770355224609,
+          "y": -87.9520111083984
+        },
+        {
+          "tick": 27,
+          "vy": 160.455871582031,
+          "y": -85.2777481079102
+        },
+        {
+          "tick": 28,
+          "vy": 185.141387939453,
+          "y": -82.1920547485352
+        },
+        {
+          "tick": 29,
+          "vy": 209.826904296875,
+          "y": -78.694938659668
+        },
+        {
+          "tick": 30,
+          "vy": 234.512420654297,
+          "y": -74.7863998413086
+        },
+        {
+          "tick": 31,
+          "vy": 259.197937011719,
+          "y": -70.4664306640625
+        },
+        {
+          "tick": 32,
+          "vy": 283.883453369141,
+          "y": -65.7350387573242
+        },
+        {
+          "tick": 33,
+          "vy": 308.568969726563,
+          "y": -60.5922241210938
+        },
+        {
+          "tick": 34,
+          "vy": 333.254486083984,
+          "y": -55.0379829406738
+        },
+        {
+          "tick": 35,
+          "vy": 357.940002441406,
+          "y": -49.0723152160645
+        },
+        {
+          "tick": 36,
+          "vy": 382.625518798828,
+          "y": -42.6952209472656
+        },
+        {
+          "tick": 37,
+          "vy": 407.31103515625,
+          "y": -35.9067039489746
+        },
+        {
+          "tick": 38,
+          "vy": 431.996551513672,
+          "y": -28.7067604064941
+        },
+        {
+          "tick": 39,
+          "vy": 456.682067871094,
+          "y": -21.0953922271729
+        },
+        {
+          "tick": 40,
+          "vy": 481.367584228516,
+          "y": -13.0725984573364
+        },
+        {
+          "tick": 41,
+          "vy": 0.0,
+          "y": -13.0725984573364
+        }
+      ]
+    },
+    {
+      "apex_s": 0.333333333333333,
+      "apex_tick": 20,
+      "flight_s": 0.683333333333333,
+      "form": "Carrasco",
+      "gravity": 1481.13083497699,
+      "height_m": 2.31490331590176,
+      "height_px": 74.0769061088562,
+      "height_world": 82.3076734542847,
+      "impulse": -481.367521367521,
+      "landing_tick": 41,
+      "trace": [
+        {
+          "tick": 1,
+          "vy": -481.367523193359,
+          "y": -21.0954246520996
+        },
+        {
+          "tick": 2,
+          "vy": -456.682006835938,
+          "y": -28.7067909240723
+        },
+        {
+          "tick": 3,
+          "vy": -431.996490478516,
+          "y": -35.9067344665527
+        },
+        {
+          "tick": 4,
+          "vy": -407.310974121094,
+          "y": -42.6952514648438
+        },
+        {
+          "tick": 5,
+          "vy": -382.625457763672,
+          "y": -49.0723419189453
+        },
+        {
+          "tick": 6,
+          "vy": -357.93994140625,
+          "y": -55.0380096435547
+        },
+        {
+          "tick": 7,
+          "vy": -333.254425048828,
+          "y": -60.5922508239746
+        },
+        {
+          "tick": 8,
+          "vy": -308.568908691406,
+          "y": -65.7350692749023
+        },
+        {
+          "tick": 9,
+          "vy": -283.883392333984,
+          "y": -70.4664611816406
+        },
+        {
+          "tick": 10,
+          "vy": -259.197875976563,
+          "y": -74.7864227294922
+        },
+        {
+          "tick": 11,
+          "vy": -234.512359619141,
+          "y": -78.6949615478516
+        },
+        {
+          "tick": 12,
+          "vy": -209.826843261719,
+          "y": -82.1920776367188
+        },
+        {
+          "tick": 13,
+          "vy": -185.141326904297,
+          "y": -85.2777633666992
+        },
+        {
+          "tick": 14,
+          "vy": -160.455810546875,
+          "y": -87.9520263671875
+        },
+        {
+          "tick": 15,
+          "vy": -135.770294189453,
+          "y": -90.2148666381836
+        },
+        {
+          "tick": 16,
+          "vy": -111.084777832031,
+          "y": -92.066276550293
+        },
+        {
+          "tick": 17,
+          "vy": -86.3992614746094,
+          "y": -93.5062637329102
+        },
+        {
+          "tick": 18,
+          "vy": -61.7137489318848,
+          "y": -94.5348281860352
+        },
+        {
+          "tick": 19,
+          "vy": -37.0282363891602,
+          "y": -95.1519622802734
+        },
+        {
+          "tick": 20,
+          "vy": -12.3427228927612,
+          "y": -95.3576736450195
+        },
+        {
+          "tick": 21,
+          "vy": 12.3427906036377,
+          "y": -95.1519622802734
+        },
+        {
+          "tick": 22,
+          "vy": 37.0283050537109,
+          "y": -94.5348205566406
+        },
+        {
+          "tick": 23,
+          "vy": 61.7138175964355,
+          "y": -93.5062561035156
+        },
+        {
+          "tick": 24,
+          "vy": 86.3993301391602,
+          "y": -92.0662689208984
+        },
+        {
+          "tick": 25,
+          "vy": 111.084846496582,
+          "y": -90.2148513793945
+        },
+        {
+          "tick": 26,
+          "vy": 135.770355224609,
+          "y": -87.9520111083984
+        },
+        {
+          "tick": 27,
+          "vy": 160.455871582031,
+          "y": -85.2777481079102
+        },
+        {
+          "tick": 28,
+          "vy": 185.141387939453,
+          "y": -82.1920547485352
+        },
+        {
+          "tick": 29,
+          "vy": 209.826904296875,
+          "y": -78.694938659668
+        },
+        {
+          "tick": 30,
+          "vy": 234.512420654297,
+          "y": -74.7863998413086
+        },
+        {
+          "tick": 31,
+          "vy": 259.197937011719,
+          "y": -70.4664306640625
+        },
+        {
+          "tick": 32,
+          "vy": 283.883453369141,
+          "y": -65.7350387573242
+        },
+        {
+          "tick": 33,
+          "vy": 308.568969726563,
+          "y": -60.5922241210938
+        },
+        {
+          "tick": 34,
+          "vy": 333.254486083984,
+          "y": -55.0379829406738
+        },
+        {
+          "tick": 35,
+          "vy": 357.940002441406,
+          "y": -49.0723152160645
+        },
+        {
+          "tick": 36,
+          "vy": 382.625518798828,
+          "y": -42.6952209472656
+        },
+        {
+          "tick": 37,
+          "vy": 407.31103515625,
+          "y": -35.9067039489746
+        },
+        {
+          "tick": 38,
+          "vy": 431.996551513672,
+          "y": -28.7067604064941
+        },
+        {
+          "tick": 39,
+          "vy": 456.682067871094,
+          "y": -21.0953922271729
+        },
+        {
+          "tick": 40,
+          "vy": 481.367584228516,
+          "y": -13.0725984573364
+        },
+        {
+          "tick": 41,
+          "vy": 0.0,
+          "y": -13.0725984573364
+        }
+      ]
+    }
+  ],
+  "passages": {
+    "Carrasco_diameter_world": 14,
+    "human_diameter_world": 14,
+    "low_ceiling_m": 1.546875,
+    "low_ceiling_world": 55,
+    "slot_width_m": 0.421875,
+    "slot_width_world": 15
+  },
+  "physics_hz": 60,
+  "spawn": [
+    {
+      "overlaps": [],
+      "position": [
+        82.0,
+        161.0
+      ],
+      "scene": "res://scenes/biomes/forest/bosque_room_aprovada.tscn"
+    },
+    {
+      "overlaps": [],
+      "position": [
+        120.0,
+        169.0
+      ],
+      "scene": "res://scenes/biomes/forest/forest_vertical_slice.tscn"
+    },
+    {
+      "overlaps": [],
+      "position": [
+        109.0,
+        451.0
+      ],
+      "scene": "res://scenes/biomes/forest/bosque_trecho_01_playable.tscn"
+    }
+  ]
+}

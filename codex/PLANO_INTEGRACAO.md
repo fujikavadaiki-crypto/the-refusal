@@ -1,6 +1,6 @@
-# Tarefas 4.0–4.1 — Plano de integração do Pequeno A no jogo principal
+# Tarefas 4.0–4.2 — Plano de integração do Pequeno A no jogo principal
 
-**Fase 1 aprovada: passos 1–3. Fase 2: somente passos 4–5, pulo e corpo/pivô do Pequeno A.** Apresentador, sprites, sombra, dano por quadro, efeitos e revisão de salas continuam pendentes (6–13). Resultados executados e limitações desta fase estão em `RELATORIO_INTEGRACAO_P40_F2.md`; os critérios futuros abaixo não equivalem a testes já executados.
+**Fases 1–2 aprovadas. Fase 3 / Tarefa 4.2: passos 6–8 e 10**, com as decisões sobre raio e fixture do Corvo aprovadas pelo usuário. Pequeno A v34A, sombra única, corrida por distância e dano por quadro entram nesta cópia. Relatórios: `RELATORIO_INTEGRACAO_P40_F2.md` (histórico preservado) e `RELATORIO_INTEGRACAO_P40_F3.md` (fase atual). Etapas futuras não equivalem a implementação ou aprovação já realizadas.
 
 **Destino de integração:** `C:/Users/daiki/Documents/Codex/The Refusal/integracao-p40`, branch `feature/integracao-p40`, criada a partir de `main` no commit `ef24b5561cacb823d1f719370c29d82522cb5b58`. Esta cópia permite preservar a branch e as alterações locais do usuário em `C:/Users/daiki/Documents/Codex/The Refusal/the-refusal`.
 
@@ -8,7 +8,7 @@
 
 **Plano anterior, preservado:** [Tarefa 3.7 — PLANO_INTEGRACAO.md](<C:/Users/daiki/Documents/Codex/carrasco_25d_test/codex/PLANO_INTEGRACAO.md>). Este documento o atualiza para a referência jogável atual e as decisões do usuário. As observações sobre o código principal se referem à base `main@ef24b556`; as linhas poderão mudar durante a integração.
 
-## 1. Fontes, decisões e limites das fases 1–2
+## 1. Fontes, decisões e limites das fases 1–3
 
 | Fonte atual, lida sem alteração | Contrato fornecido |
 |---|---|
@@ -48,8 +48,10 @@ As mudanças reais para etapas futuras são: corrida **6 × 8 px → 8 × 6 px**
 - **Dash absoluto e independente da corrida/máscara:** 3,5 m em 0,35 s no chão e no ar. Andar não reduz o dash.
 - **Preservar futuramente o pulo como jogado, cerca de 2,316052 m (~2,32 m).** 2,20 m é o valor nominal da configuração, não uma exigência de corrigir a integração para obter exatamente essa altura.
 - **Fase 1 preservou o pulo antigo; fase 2 adota g/v0 P40** e remove o override −380. Coyote 100 ms e buffer 120 ms atuais continuam iguais; não portar corte variável nesta fase.
-- **Cápsula pequena só para Carrasco nesta fase.** Humano conserva raio 7 unidades, altura 64, centro −19 e pivô Y=−2. Pulo global P40 vale para as duas formas.
-- Integrar depois o pacote pequeno atual `v34A/P42b`; preservar v33A/v32A como histórico. A fase 2 não copia arte ou apresentador.
+- **Cápsula pequena só para Carrasco.** Humano conserva raio 7 unidades, altura 64, centro −19 e pivô Y=−2. Pulo global P40 vale para as duas formas. Decisão após F2: Carrasco também usa **raio 7 unidades**, altura 51,111111 e pés Y=13; não mais raio 7,777778. Toda passagem que aceita a cápsula humana aceita a transformação para a menor.
+- **Corvo: IA intocada.** M5 passa a exercer o contato ACTIVE na descida do pulo novo; o pesado antecipa a entrada em dois ticks no limite do ápice para compensar seus 250 ms de preparação. Mesma posição/altura do alvo. Registrar **“reavaliar após dano por quadro”**, pois essa fixture ainda testa a forma humana com pivô/fallback.
+- Ataques altos que passam acima do Carrasco pequeno são **aceitos por ora**. Etapa futura **“balanceamento de inimigos”**: avaliar mirar no centro da hurtbox do jogador, com decisão e medidas próprias. Sem ajuste preventivo de IA nesta fase.
+- F3 copia o pacote atual `v34A/P42b` e adapta o apresentador da referência; humano e arte antiga continuam disponíveis. Fonte e checkout original permanecem somente leitura.
 
 ## 2. Conversão e contratos físicos
 
@@ -114,31 +116,31 @@ Na fase 2, reproduzir o perfil da referência: H nominal = `2.2 × U = 78.222222
 
 A fase 2 substitui os defaults de `PlayerLocomotion` por essas fórmulas e remove o nó sobrescrito da vertical slice; não muda a ordem de integração. Medir a 60 Hz, do piso até a maior subida, incluindo o tick inicial que aplica impulso antes da gravidade seguinte. Coyote/buffer atuais permanecem, sem adicionar pulo variável. Trajetórias e contatos antes/depois são salvos em `evidencias_integracao_p40_f2/MEDIDAS_*.json`.
 
-### 2.5 Cápsula do Pequeno A e pivô — fase 2, só Carrasco
+### 2.5 Cápsula do Pequeno A e pivô — F2 e decisão aprovada para F3
 
-**Raio = 7 px; altura total = 46 px; diâmetro = 14 px.** A altura inclui as duas extremidades arredondadas. A base fica na linha dos pés e o eixo no x da âncora/centro do tronco. Capa, braço, lâmina e rastro ficam fora da cápsula.
+O manifesto intacto declara **raio 7 px e altura 46 px**. A decisão posterior do usuário substitui somente o raio integrado: **7 unidades de mundo**, igual ao humano; altura e pés ficam como em F2. A altura inclui as extremidades arredondadas. Capa, braço, lâmina e rastro ficam fora da cápsula.
 
-| Grandeza futura | Conversão fixa |
+| Grandeza integrada atual | Conversão fixa |
 |---|---:|
-| Raio | `7 / 0.9 = 7.777777778 unidades` |
+| Raio | **7 unidades**, equivalentes a 6,3 px de referência (F2 histórica: 7,777778 unidades) |
 | Altura total | `46 / 0.9 = 51.111111111 unidades` |
-| Diâmetro | `14 / 0.9 = 15.555555556 unidades` |
+| Diâmetro | **14 unidades**, equivalentes a 12,6 px de referência |
 | Centro local, pés em (0,13) | `Vector2(0, 13 - 51.111111111 / 2) = Vector2(0, -12.555555556)` |
-| Metros exatos de referência | raio `7 / 32 = 0.21875 m`; altura `46 / 32 = 1.4375 m` |
+| Metros integrados | raio `7 / U = 0.196875 m`; altura `46 / 32 = 1.4375 m` |
 
-Os 0,22 m e 1,44 m do manifesto são arredondados. Priorizar os pixels indicados, sem recalcular a partir desses metros. O raio 7 é o menor proposto que cobre ao menos 70% do núcleo do idle: 71,9% de cabeça/tronco/pernas e 52,6% de todos os pixels; a fonte ainda o chama de proposta para calibração em jogo.
+Os 0,22 m e 1,44 m do manifesto são arredondados. Os percentuais da proposta de raio 7 px (71,9% do núcleo, 52,6% de todos os pixels) descrevem a fonte; não são uma nova medição do raio aprovado de 7 unidades. Não modificar o manifesto para refletir a decisão de integração.
 
-Na referência, corpo e hurtbox recebem cápsulas iguais, com fundo Y=13. A forma humana preserva raio 7 **unidades**, altura 64 e centro Y=−19 (fundo Y=13). No Carrasco, corpo/hurtbox recebem cópias independentes de raio 7,777778 e altura 51,111111. Não confundir unidades atuais com os 7 px do pacote.
+Na integração, corpo/hurtbox recebem cópias independentes de **raio 7 e altura 51,111111**, fundo Y=13. Humano mantém raio 7, altura 64 e centro −19. A cápsula menor é subconjunto da humana com os mesmos pés; a troca humana → Carrasco não é mais recusada no vão de 15 unidades. A expansão de volta ao humano ainda exige altura disponível.
 
 O Player aplica o perfil pequeno pelo identificador `carrasco_base` no sinal de troca de máscara e restaura cópias do original para humano/outras formas. Pés e origem não são deslocados. A troca normal consulta se a nova cápsula cabe: expansão bloqueada sob teto/entre paredes não consome cooldown nem termina ultimate. Consulta com inset de 0,01 unidade distingue tangência de interpenetração; equip/setup continuam APIs de montagem da cena, cuja posição deve ser válida.
 
-O pivô elevado da referência tem Y = `13 - 0.84 × U = -16.866666667` e mantém X = 5. Geometria por quadro relativa aos pés não recebe novamente a rotação desse pivô. Elevar o pivô sozinho não substitui o futuro adaptador de dano.
+O pivô elevado da referência tem Y = `13 - 0.84 × U = -16.866666667` e mantém X = 5. Geometria por quadro relativa aos pés não recebe novamente a rotação desse pivô. Golpes sem dados mantêm esse fallback.
 
-## 3. Contrato do apresentador e pacote pequeno — fases posteriores
+## 3. Contrato do apresentador e pacote pequeno — implementação F3
 
 ### 3.1 Leitor e integridade
 
-Criar futuramente o apresentador do **Pequeno A v34A (P42b)** e um leitor próprio dentro do principal. Aproveitar os contratos atuais de `personagens_p40.gd` e `presenter_p40.gd`, adaptando as interfaces; não transplantar a demonstração/inimigos de teste/autoloads/seletor histórico. v32A/v33A arquivadas servem à rastreabilidade.
+O leitor `carrasco_p42b_package.gd` e o apresentador `carrasco_pequeno_a.gd` adaptam os contratos da referência. O pacote foi copiado para `assets/characters/pequeno_v34A/`, byte a byte; não foram transplantados os inimigos/autoloads/seletor histórico do protótipo. v32A/v33A arquivadas servem à rastreabilidade. O modo novo é padrão somente para `carrasco_base`; `small_carrasco_enabled=false` conserva os caminhos antigos para teste/comparação.
 
 O formato atual é `animacoes[]` com `id`, `loop` e `quadros[]`; cada quadro fornece `arquivo`, `ms`, `ancora`, `sha256`, dimensões e, quando aplicável, sombra e hitbox. Efeitos são camada separada, com `arquivo`, `ancora`, `fase`, hash e índice `quadro` opcional. A sombra do quadro tem precedência; a sombra da animação é fallback. A capa já está desenhada nos quadros, com atraso visual de um quadro, e não pede nova deformação física.
 
@@ -254,15 +256,16 @@ Cada passo registra seus testes. **Passos 1–3: fase 1 aprovada. Passos 4–5: 
 | **2 — FASE 1: corrida/caminhada** | Ajustar default humano e acelerações, manter 0,55 e máscara 0,92/cache da base. Não trocar arte, pulo, cápsula ou lógica de parada por apoio. | Humano 173,913043/95,652174 e Carrasco 160/88; aceleração/parada proporcionais; equip/troca/reset sem acumulação. |
 | **3 — FASE 1: dash B2** | Velocidade absoluta solo/ar 355,555556; duração 0,35; i-frames proporcionais. Preservar direção, cooldown, carga aérea, cancelamento 80 ms, momentum e colisões. Revisar só expectativas relacionadas aos novos valores. | Chão/ar, direita/esquerda, Shift, ambas as formas, corrida zero, parede, fronteiras de i-frame/cancelamento e distância medida; pulo atual continua igual. |
 | **4 — FASE 2: pulo como jogado** | Aplicar g=1481,130835/v0=−481,367521; remover override −380. Manter coyote/buffer atuais. | Altura/ápice/traço medidos a 60 Hz, coyote/buffer e pouso; altura jogada ~2,32 m, sem corrigir para 2,20 m. |
-| **5 — FASE 2: cápsula pequena e pivô** | Aplicar só Carrasco: raio 7 px/altura total 46 px; preservar pés. Elevar pivô para Y=−16,866667, sem mudar X. Humano conserva corpo/hurtbox/pivô originais. | Trocas/restauração/instâncias independentes, spawn sem penetração, teto/passagem estreita, contato Peregrino/Corvo/Raiz/projétil; diferenças medidas e relatadas, IA intacta. |
-| **6 — PENDENTE: apresentador Pequeno A v34A** | Copiar recursos intactos, validar leitor/hashes/metadata e selecionar modo novo; manter v32A/v33A como histórico. | 26 animações; arte ×1 NEAREST, âncora/facing corretos; troca, humano, Condenação/execução/Tribunal/áudio preservados. |
-| **7 — PENDENTE: sombra única** | Sombra por quadro/animação projetada no terreno, sem duplicar sombra antiga. | Piso/plataforma/ar/sem piso/inimigo abaixo; uma sombra, fator/âncora/oclusão corretos. |
-| **8 — PENDENTE: corrida por distância** | Oito quadros, **6 px/quadro**, posições após movimento, fase/reset/teleporte e run_start de um quadro/6 px; manter locomoção independente da arte. | Fórmula `floor(distancia_px / 6) % 8`, 0,1875 m/quadro, ciclo 48 px/1,5 m; parede/câmera/hitstop não avançam indevidamente; run/walk/inversão/respawn conferidos. |
-| **9 — PENDENTE: apoio visual e fluidez** | Apoios 1/5 do manifesto por dois ticks → run_stop 66 ms → idle; virada/pouso/saída/carga/faísca, dash de quatro quadros e rastro 110/80 ms com limites 3/2. Não implementar frenagem física até apoio. | Soltura em oito fases não altera posição/velocidade; transições/ghosts/pixels/alpha corretos, retomada e interrupção, bordas/parede seguras. |
-| **10 — PENDENTE: polígonos no heavy** | Validar arco/lâmina de quadros 4/5, decompor, selecionar geometria antes do scan e manter deduplicação por ação. | Ambos os lados, dentro/fora/atrás, duas peças/um alvo/dois alvos, primeiro/último ACTIVE, sem dano fora de fase/através de parede. |
-| **11 — PENDENTE: demais ataques e inimigos** | Integrar oito ataques perfilados, combo/carga/pós-dash/aéreos/pouso; preservar fallback das habilidades e validar arenas/IAs. | Danos/Postura/parry/Condenação/execução sem regressão; nenhum impulso aéreo pesado extra; Peregrino/Corvo/Raiz mantêm seus ciclos. |
+| **5 — F2 APROVADA + DECISÃO F3** | Só Carrasco: raio **7 unidades**/altura 51,111111; pés e pivô elevados preservados. Humano conserva corpo/hurtbox/pivô originais. | Regressão F2 atualizada: 85 checks, incluindo transformação no vão de 15 unidades. |
+| **6 — F3 ENTREGUE: apresentador Pequeno A v34A** | Leitor próprio, 215 arquivos copiados intactos, SHA256/raw ou caBX; modo novo como padrão. | 26 animações, âncoras e pixels ×1 NEAREST, um espelhamento; sinais/combate da máscara preservados. |
+| **7 — F3 ENTREGUE: sombra única** | Sombra por quadro/animação projetada no terreno; antiga desligada somente no modo novo. | Piso/ar/sem piso e retorno ao humano conferidos; ray exclui personagens para alcançar chão. |
+| **8 — F3 ENTREGUE: corrida por distância** | Oito quadros, **6 px/quadro**, posições após movimento, reset/teleporte; sem frenagem física até apoio. | Fórmula por distância; parede/câmera/parada testadas. Parada medida 7 ticks/0,116667 s; apoio 1/5 é somente visual. |
+| **9 — FUTURA: avaliação ampliada da fluidez** | O apresentador do passo 6 já inclui apoio 1/5 por dois ticks, run_stop 66 ms, virada/pouso/saída/carga/faísca e rastro 110/80 ms. Não há frenagem física até apoio. | Ampliar comparação de soltura em oito fases, retomadas/interrupções e bordas; não declarar esta etapa independente aprovada pela integração visual. |
+| **10 — F3 ENTREGUE: dano por quadro** | Polígonos/retângulos, recorte x≥0, decomposição, seleção ACTIVE após movimento; oito golpes com dados, fallback dos demais. | Quadros ACTIVE dos oito golpes nas duas direções, deduplicação, interrupção, recuperação, colado/ponta/atrás/fora e parede sólida. |
+| **11 — PENDENTE: avaliação ampliada de ataques/inimigos** | Oito perfis já integrados em F3; ampliar playtest de combos/carga/pós-dash/aéreos e arenas sem antecipar ajustes de IA. | M5 retimado; **reavaliar após dano por quadro**. Peregrino/Corvo/Raiz usam fontes/valores intactos. |
 | **12 — PENDENTE: câmera, salas e sensação** | Resolver zoom/oclusão/escala/local flags e rotas/respawn; avaliar cada grupo de sensação separadamente. | Bosque/trecho/sala de teste/vertical slice completos, câmera nas extremidades, fundo/colisores alinhados, efeitos sem duplicação e respawn seguro. |
 | **13 — PENDENTE: regressão e avaliação final** | Atualizar somente expectativas de contratos substituídos; guardar captura normal e depuração; manter recursos antigos necessários. | Suites pertinentes sem falhas novas, medidas físicas/contatos e verificação visual/playtest; limitações restantes explicitadas. |
+| **14 — FUTURA: balanceamento de inimigos** | Avaliar mirar no **centro da hurtbox do jogador**, respeitando forma/altura; depende de decisão própria. | Ataques altos que passam sobre Pequeno A aceitos por ora. Medir alcance/altura/cadência antes de alterar IA. |
 
 ## 5. Validação dirigida e riscos
 
@@ -313,4 +316,6 @@ Verificar sombra única no terreno, arte sem blur, pés estáveis ao espelhar/tr
 
 Na fase 2, P42b/v34A torna-se a fonte atual; muda somente o dash artístico frente à v33A (50/60/190/50 ms, smear 64 px). Física/hurtbox/dano mantêm o contrato. Corpo/hurtbox pequenos ficam **só no Carrasco**, humano restaurado nas trocas e expansão recusada onde não cabe. Pivô elevado Y=−16,866667 corresponde a 29,866667 unidades acima dos pés (58,4348% da altura pequena), diretamente da referência; não aplicar outra redução de escala por 48/72.
 
-**Escopo entregue:** fase 1 = corrida/caminhada/dash; fase 2 = gravidade/impulso, retirada do override vertical e perfil de corpo/hurtbox/pivô por forma. `RELATORIO_INTEGRACAO_P40_F2.md` registra medidas a 60 Hz, testes e diferenças de contato. Arte/apresentador/dano por quadro e IAs permanecem para passos 6–13. Não considerar os critérios futuros como implementação ou aprovação já realizadas.
+**Histórico:** fase 1 = corrida/caminhada/dash; fase 2 = gravidade/impulso, retirada do override vertical e corpo/hurtbox/pivô por forma. `RELATORIO_INTEGRACAO_P40_F2.md` preserva as medidas e contatos daquela entrega, inclusive o raio anterior.
+
+**Escopo F3 entregue para avaliação:** passos 6–8 e 10; pacote Pequeno A v34A, apresentador, sombra, distância e dano por quadro. Raio corrigido para 7 unidades pela decisão do usuário, fixture M5 retimada e IA/recursos de ataques/inimigos intactos. Oito perfis do manifesto entram pelo leitor genérico do passo 10. Habilidades, execução e Tribunal sem animação própria usam idle como fallback visual, mantendo seu runtime/sinais/efeitos. O launcher abre uma cena derivada do Bosque aprovado com os três inimigos originais; cenário, colisores e cena base não foram redesenhados. Próximas etapas permanecem dependentes de avaliação.

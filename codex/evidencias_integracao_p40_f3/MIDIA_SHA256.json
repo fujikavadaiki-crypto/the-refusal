@@ -1,0 +1,19 @@
+{
+  "mp4": {
+    "sha256": "41ebbb3e61116844418d306d7ae148aad9d0e5af397c83afe3ae719e99d46646",
+    "bytes": 26708178
+  },
+  "images": {
+    "dash_ar.png": "9a9d0d3cbcf128c680f088f10e7895599541642fe41319fd928d76b603a8b72f",
+    "escala_Corvo.png": "797c4e44e088ec513dfcda3e63da388a67004c547696afa6980adc4ff28753a6",
+    "escala_Peregrino.png": "b60d3c86c658df80f7eebf0655941c1ba38f7920369114aa3642fdf78b63db80",
+    "escala_Raiz.png": "7e5cab00dd88a0f0a36ec4d3b2dfbb76cae8331851841f354beee4e899ea0d73",
+    "F3_Corvo.png": "979a7199c14f847ed8fd9fd16a21232a99bc02ebef5535b653cbd79f01924346",
+    "F3_Peregrino.png": "444ceb385f95fd9626e28aa5e794e26c1819a47850bd44df7130c90c8f6bd72a",
+    "F3_Raiz.png": "80a981e657c384b8fdc882597efc23d3a346cab9f9f5599895204247bacbe8a1",
+    "lado_Corvo.png": "2c9bcfbffb51cf2df26e19db857e1fdeb3677f5d78b89f20bdb5d1599a524395",
+    "lado_Peregrino.png": "bf3d6ad53ae055e89045a955b9b8ab3108d35e25f99d3f32e6c343cc488b20aa",
+    "lado_Raiz.png": "ba753631767a180f509a5d154ca43f2849275eb71807fc9b313a49f44d221f95",
+    "pulo.png": "c90f12af09af414f64cd42889687293afc9111f81d3fe0f094168655766d4700"
+  }
+}

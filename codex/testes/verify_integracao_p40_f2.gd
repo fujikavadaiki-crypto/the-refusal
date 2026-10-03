@@ -135,7 +135,7 @@ func profiles() -> void:
         var capsule := collision.shape as CapsuleShape2D
         var hit_capsule := hurt.shape as CapsuleShape2D
         var expected_height := 46.0 / 0.9 if carrasco and not baseline else 64.0
-        var expected_radius := 7.0 / 0.9 if carrasco and not baseline else 7.0
+        var expected_radius := 7.0 # F3 decision: same world radius as human.
         check(near(capsule.height, expected_height) and near(capsule.radius, expected_radius), "corpo %s: raio/altura corretos" % ("Carrasco" if carrasco else "humano"))
         check(near(hit_capsule.height, expected_height) and near(hit_capsule.radius, expected_radius), "hurtbox acompanha a cápsula %s" % carrasco)
         check(near(collision.position.y + capsule.height / 2.0, 13.0) and collision.position == hurt.position, "troca de corpo preserva os pés Y=13")
@@ -245,14 +245,14 @@ func passage() -> void:
     check(player.position.x < 180.0 and penetrations(player).is_empty(), "humano conserva altura e é barrado pelo mesmo teto")
     ceiling.queue_free()
     await frames(2)
-    # Reference radius is 7 pixels, wider than the original 7 world units.
+    # F3 decision: equal world radius, so every human-width slot also fits Carrasco.
     var left := solid("SlotLeft", Vector2(-317.5, -50), Vector2(20, 100))
     var right := solid("SlotRight", Vector2(-282.5, -50), Vector2(20, 100))
     await reset(false, Vector2(-300, -13.05))
     check(penetrations(player).is_empty(), "humano de 14 unidades cabe no vão de 15 / 0,421875 m")
-    check(not masks.swap(), "Carrasco de 15,555556 unidades não materializa dentro do vão de 15")
-    check(masks.active_data() == null and near(player.position.x, -300), "recusa de expansão lateral preserva forma humana e posição")
-    measurements["passages"] = {"low_ceiling_world": 55, "low_ceiling_m": 55 / UNIT, "slot_width_world": 15, "slot_width_m": 15 / UNIT, "human_diameter_world": 14, "Carrasco_diameter_world": 14 / 0.9}
+    check(masks.swap(), "Carrasco de 14 unidades também cabe no vão de 15")
+    check(masks.active_data() == CARRASCO and near(player.position.x, -300) and penetrations(player).is_empty(), "troca no vão mantém pés e não penetra nas paredes")
+    measurements["passages"] = {"low_ceiling_world": 55, "low_ceiling_m": 55 / UNIT, "slot_width_world": 15, "slot_width_m": 15 / UNIT, "human_diameter_world": 14, "Carrasco_diameter_world": 14}
     left.queue_free()
     right.queue_free()
     await frames(2)
@@ -343,7 +343,7 @@ func run() -> void:
     measurements["baseline"] = baseline
     measurements["checks"] = checks
     measurements["failures"] = failures
-    var path := "res://codex/evidencias_integracao_p40_f2/MEDIDAS_%s.json" % ("antes" if baseline else "depois")
+    var path := "res://codex/evidencias_integracao_p40_f3/REGRESSAO_F2_MEDIDAS_%s.json" % ("antes" if baseline else "depois")
     var file := FileAccess.open(path, FileAccess.WRITE)
     file.store_string(JSON.stringify(measurements, "  ") + "\n")
     file.close()

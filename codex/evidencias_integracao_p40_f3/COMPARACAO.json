@@ -1,0 +1,123 @@
+{
+  "suites_before": 21,
+  "suites_after": 21,
+  "passed_before": 16,
+  "passed_after": 19,
+  "pass_assertions_before": 874,
+  "pass_assertions_after": 881,
+  "failures_before": [
+    {
+      "teste": "tests/verify_carrasco_gif_test.gd",
+      "exit": -2,
+      "pass": 1,
+      "fail": 0,
+      "falhas": [
+        "SCRIPT ERROR: Invalid access to property or key 'texture_filter' on a base object of type 'null instance'."
+      ],
+      "segundos": 3.53,
+      "aprovado": false
+    },
+    {
+      "teste": "tests/verify_milestone5.gd",
+      "exit": 1,
+      "pass": 45,
+      "fail": 5,
+      "falhas": [
+        "FAIL: Air Light real causa 18 HP/7 Postura ao Corvo",
+        "FAIL: Air Light produz um contato por ação",
+        "FAIL: Air Heavy real causa 32 HP/28 Postura e rompe o Corvo",
+        "FAIL: Ruptura aérea derruba o corpo",
+        "FAIL: Ruptura recupera ~50% e decola gradualmente",
+        "MILESTONE 5: FAIL"
+      ],
+      "segundos": 203.73,
+      "aprovado": false
+    },
+    {
+      "teste": "tests/verify_milestone6.gd",
+      "exit": 1,
+      "pass": 50,
+      "fail": 1,
+      "falhas": [
+        "FAIL: mordida entra em recuperação",
+        "MILESTONE 6: FAIL"
+      ],
+      "segundos": 198.22,
+      "aprovado": false
+    },
+    {
+      "teste": "tests/verify_milestone8_2.gd",
+      "exit": -2,
+      "pass": 1,
+      "fail": 0,
+      "falhas": [
+        "SCRIPT ERROR: Invalid access to property or key 'sprite' on a base object of type 'Node2D (carrasco_base_official.gd)'."
+      ],
+      "segundos": 3.53,
+      "aprovado": false
+    },
+    {
+      "teste": "tests/verify_vertical_slice.gd",
+      "exit": 1,
+      "pass": 12,
+      "fail": 1,
+      "falhas": [
+        "FAIL: Carrasco aprovado nasce sobre o piso pintado",
+        "VERTICAL SLICE: FAIL"
+      ],
+      "segundos": 27.5,
+      "aprovado": false
+    }
+  ],
+  "failures_after": [
+    {
+      "teste": "tests/verify_carrasco_gif_test.gd",
+      "exit": -2,
+      "pass": 1,
+      "fail": 0,
+      "falhas": [
+        "SCRIPT ERROR: Invalid access to property or key 'texture_filter' on a base object of type 'null instance'."
+      ],
+      "segundos": 4.03,
+      "aprovado": false
+    },
+    {
+      "teste": "tests/verify_milestone8_2.gd",
+      "exit": -2,
+      "pass": 1,
+      "fail": 0,
+      "falhas": [
+        "SCRIPT ERROR: Invalid access to property or key 'sprite' on a base object of type 'Node2D (carrasco_base_official.gd)'."
+      ],
+      "segundos": 4.03,
+      "aprovado": false
+    }
+  ],
+  "new_suite": {
+    "teste": "codex/testes/verify_integracao_p40_f3.gd",
+    "exit": 0,
+    "pass": 795,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 6.42,
+    "aprovado": true
+  },
+  "package_files_identical": 215,
+  "preservation": {
+    "main_preservado": true,
+    "checkout_head_preservado": true,
+    "checkout_status_preservado": true,
+    "alteracoes": {
+      "reference_p42b": [],
+      "primary_checkout": []
+    },
+    "arquivos": {
+      "reference_p42b": 1583,
+      "primary_checkout": 771
+    }
+  },
+  "unchanged_enemy_attack_project_sources": true,
+  "real_capture_verified": true,
+  "video_duration_s": 30,
+  "scope": "Phase 3: steps 6-8 and 10 plus user-approved radius/M5 fixture decisions; local branch, no push/merge."
+}

@@ -1,0 +1,43 @@
+{
+  "dry_run": false,
+  "duration_s": 30.0,
+  "fps": 30,
+  "frames": 900,
+  "method": "Inputs programados; IA e dano reais, jogador reposicionado entre 3 encontros de 10 s, sem ajuste de IA ou dano artificial; hitstop em relógio virtual 60 Hz só na exportação.",
+  "real_combat_verified": true,
+  "stats": {
+    "animations": {
+      "air_heavy": 49,
+      "attack_exit": 20,
+      "charge_start": 4,
+      "dash_ar": 20,
+      "fall_loop": 33,
+      "fall_start": 16,
+      "heavy": 116,
+      "hurt": 26,
+      "idle": 1171,
+      "jump_up": 32,
+      "land": 10,
+      "light1": 90,
+      "parry": 22,
+      "run": 171,
+      "run_start": 20
+    },
+    "enemy_deaths": [
+      "Peregrino",
+      "Corvo",
+      "Raiz"
+    ],
+    "hits": {
+      "Corvo": 2,
+      "Peregrino": 2,
+      "Raiz": 2
+    },
+    "incoming_damage": 22,
+    "max_ghosts": 3
+  },
+  "viewport": [
+    960,
+    540
+  ]
+}

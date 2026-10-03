@@ -7,6 +7,8 @@ signal audio_cue_requested(cue: StringName)
 const IMPACT := preload("res://scenes/player/visuals/carrasco_impact.tscn")
 const MODULAR_CARRASCO := preload("res://scenes/player/visuals/carrasco_modular.tscn")
 const OFFICIAL_CARRASCO := preload("res://scenes/player/visuals/carrasco_base_official.tscn")
+const SMALL_CARRASCO := preload("res://scripts/player/visuals/carrasco_pequeno_a.gd")
+@export var small_carrasco_enabled := true
 @export var slice_feedback_enabled := false
 @export var approved_board_mode := false
 @export var modular_carrasco_enabled := true
@@ -130,7 +132,26 @@ func _on_mask_changed(data: MaskData) -> void:
     charge_marker.modulate.a = 1.0
     tribunal_was_active = false
     if not masked:
+        combat.frame_provider = null
+        player.set_meta("small_carrasco_presenter_active", false)
+        player.get_node("ParrySpark").modulate.a = 1.0
         return
+    combat.frame_provider = null
+    player.set_meta("small_carrasco_presenter_active", false)
+    if data.mask_id == &"carrasco_base" and small_carrasco_enabled:
+        var small := SMALL_CARRASCO.new()
+        if small.PACKAGE.load_package().valid:
+            form = small
+            form.name = "CarrascoPequenoA"
+            add_child(form)
+            form.bind_player(player)
+            combat.frame_provider = form
+            player.set_meta("small_carrasco_presenter_active", true)
+            active_marker.modulate.a = 0.0
+            charge_marker.modulate.a = 0.0
+            return
+        small.free()
+        push_error("Pequeno A package rejected; preserving legacy Carrasco presentation.")
     var visual_scene: PackedScene = data.visual_scene
     if data.mask_id == &"carrasco_base" and modular_carrasco_enabled:
         visual_scene = OFFICIAL_CARRASCO if official_base_enabled else MODULAR_CARRASCO
@@ -155,7 +176,7 @@ func _on_dash_started(_direction: int) -> void:
 
 
 func _draw() -> void:
-    if not slice_feedback_enabled or form == null:
+    if not slice_feedback_enabled or form == null or player.get_meta("small_carrasco_presenter_active", false):
         return
     if slash_remaining > 0.0:
         var alpha := slash_remaining / 0.12

@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/biomes/forest/bosque_room_aprovada.tscn" id="1_room"]
+[ext_resource type="Script" path="res://scripts/biomes/forest/bosque_integracao_p40.gd" id="2_integration"]
+
+[node name="BosqueIntegracaoP40" instance=ExtResource("1_room")]
+script = ExtResource("2_integration")

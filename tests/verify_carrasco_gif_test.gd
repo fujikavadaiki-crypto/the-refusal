@@ -49,6 +49,9 @@ func run_checks() -> void:
 
     var player := arena.get_node("TestRoom/Player") as CharacterBody2D
     var visual := player.get_node("VisualRoot") as PlayerVisualController
+    # This suite describes the archived GIF contract, not the new package.
+    visual.small_carrasco_enabled = false
+    visual._on_mask_changed(player.get_node("MaskController").active_data())
     var form: Node2D = visual.form
     var sprite := form.get_node("Sprite") as Sprite2D
     var locomotion := player.get_node("Locomotion") as PlayerLocomotion

@@ -32,6 +32,19 @@ func press(action: StringName) -> void:
     Input.action_release(action)
 
 
+func wait_for_descent(lead_ticks := 0) -> void:
+    # Approved F2 decision: ACTIVE contact on descent, same target/AI. The
+    # heavy's 250 ms preparation needs input two ticks before the apex boundary;
+    # the engine consumes this input on the following tick. Light waits for descent.
+    # Reavaliar após dano por quadro (this fixture still exercises the human fallback).
+    for _tick in range(90):
+        await physics_frame
+        var lead_velocity: float = player.get_node("Locomotion").gravity * lead_ticks / 60.0
+        if not player.is_on_floor() and player.velocity.y >= -lead_velocity:
+            return
+    check(false, "fixture chega à descida do pulo P40")
+
+
 func check(condition: bool, description: String) -> void:
     if condition:
         print("PASS: ", description)
@@ -178,6 +191,7 @@ func run_checks() -> void:
 
     await fixture(Vector2(1100, 175), Vector2(1070, 215))
     await press(&"jump")
+    await wait_for_descent()
     await press(&"attack_light")
     await wait_frames(22)
     check(health.current_health == 47 and roundi(posture.current_posture) == 13, "Air Light real causa 18 HP/7 Postura ao Corvo")
@@ -185,6 +199,7 @@ func run_checks() -> void:
 
     await fixture(Vector2(1100, 175), Vector2(1070, 215))
     await press(&"jump")
+    await wait_for_descent(2)
     await press(&"attack_heavy")
     await wait_frames(35)
     check(health.current_health == 33 and posture.is_ruptured(), "Air Heavy real causa 32 HP/28 Postura e rompe o Corvo")

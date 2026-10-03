@@ -1,0 +1,49 @@
+{
+ "px_por_quadro": 6,
+ "ms_por_quadro": 41.67,
+ "velocidade_px_s": 144.0,
+ "metodo": "renderiza so a bota; calcanhar = menor coluna da bota nas 3 linhas de baixo; ponta = maior coluna na linha do chao; posicao no mundo = coluna + 6 px x quadro (o corpo anda 6 px por quadro)",
+ "apoios": {
+  "near_f0": {
+   "tipo": "UP",
+   "calcanhar_mundo": 122,
+   "ponta_mundo": 128
+  },
+  "near_f1": {
+   "tipo": "FL",
+   "calcanhar_mundo": 122,
+   "ponta_mundo": 134
+  },
+  "near_f2": {
+   "tipo": "DN",
+   "calcanhar_mundo": 127,
+   "ponta_mundo": 134
+  },
+  "far_f4": {
+   "tipo": "UP",
+   "calcanhar_mundo": 122,
+   "ponta_mundo": 128
+  },
+  "far_f5": {
+   "tipo": "FL",
+   "calcanhar_mundo": 122,
+   "ponta_mundo": 134
+  },
+  "far_f6": {
+   "tipo": "DN",
+   "calcanhar_mundo": 127,
+   "ponta_mundo": 134
+  }
+ },
+ "patinacao_px": {
+  "near": {
+   "calcanhar_q1_vs_q0": 0,
+   "ponta_q2_vs_q1": 0
+  },
+  "far": {
+   "calcanhar_q1_vs_q0": 0,
+   "ponta_q2_vs_q1": 0
+  }
+ },
+ "regra_apoio": "cada pe fica no chao em 3 quadros (UP -> FL -> DN): o calcanhar nao desliza do 1o para o 2o; a ponta nao desliza do 2o para o 3o (calcanhar levanta girando na ponta)"
+}

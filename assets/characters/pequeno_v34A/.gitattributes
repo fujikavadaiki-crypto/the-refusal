@@ -1,0 +1,2 @@
+# Keep the source package bytes unchanged, including manifest line endings.
+* -text

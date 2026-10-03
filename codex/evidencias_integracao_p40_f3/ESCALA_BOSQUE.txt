@@ -1,0 +1,5 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+SCALE_RESULT {"enemies":[{"hurtbox_world":31.0,"name":"Peregrino","note":"silhueta provisória original; Raiz medida na geometria de quando emerge, sem mudar sua IA","visible_at_sample":true,"visual_bbox_screen":[14.4000244140625,29.7000122070313]},{"hurtbox_world":18.0,"name":"Corvo","note":"silhueta provisória original; Raiz medida na geometria de quando emerge, sem mudar sua IA","visible_at_sample":true,"visual_bbox_screen":[49.5,28.8000030517578]},{"hurtbox_world":18.0,"name":"Raiz","note":"silhueta provisória original; Raiz medida na geometria de quando emerge, sem mudar sua IA","visible_at_sample":false,"visual_bbox_screen":[45.8999633789063,26.1000061035156]}],"player_capsule_world":{"height":51.1111111111111,"radius":7},"player_idle_native_bbox":[4,2,52,48],"viewport":[960,540],"zoom":0.9}

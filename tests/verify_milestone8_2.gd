@@ -29,6 +29,9 @@ func run_checks() -> void:
     var player := arena.get_node("TestRoom/Player") as CharacterBody2D
     var visual := player.get_node("VisualRoot") as PlayerVisualController
     var masks := player.get_node("MaskController") as MaskController
+    # Preserve the legacy artwork checks; Pequeno A has its own acceptance suite.
+    visual.small_carrasco_enabled = false
+    visual._on_mask_changed(masks.active_data())
     var combat := player.get_node("Combat") as PlayerCombat
     var defense := player.get_node("Defense") as PlayerDefense
     var state := masks.active_state() as CarrascoRuntimeState

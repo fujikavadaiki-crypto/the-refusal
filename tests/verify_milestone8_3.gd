@@ -58,6 +58,7 @@ func run_checks() -> void:
     var masks := player.get_node("MaskController") as MaskController
     var dummy := arena.get_node("TestRoom/Dummy") as Node2D
     # Exercise the preserved legacy atlas explicitly; gameplay uses the modular rig.
+    visual.small_carrasco_enabled = false
     visual.modular_carrasco_enabled = false
     visual._on_mask_changed(masks.active_data())
     var sprite := visual.form.sprite as Sprite2D
@@ -65,7 +66,7 @@ func run_checks() -> void:
     check(sprite.texture is Texture2D and sprite.texture.get_size() == Vector2(56, 56), "runtime displays the native 56x56 idle frame")
     check(visual.form.frame_textures.size() == expected.size(), "all authored actions are available to the interchangeable Mask visual")
     var body_shape := (player.get_node("CollisionShape2D") as CollisionShape2D).shape as CapsuleShape2D
-    check(is_equal_approx(body_shape.height, 46.0 / 0.9) and is_equal_approx(body_shape.radius, 7.0 / 0.9), "Carrasco collider follows Pequeno A; legacy visual remains until step 6")
+    check(is_equal_approx(body_shape.height, 46.0 / 0.9) and is_equal_approx(body_shape.radius, 7.0), "Carrasco keeps small height and human radius, independently of legacy visual")
     check(not combat.hitbox.active, "hitbox starts inactive")
     Input.action_press("attack_light")
     await frames(2)

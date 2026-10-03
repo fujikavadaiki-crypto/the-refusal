@@ -1,0 +1,8209 @@
+{
+ "pacote": "pacote_pequeno_v34A",
+ "versao": "Carrasco pequeno v3.4A (48 px, cabeca 31 %) - CORRIDA v2 + DASH com SMEAR curto",
+ "personagem": "O Carrasco",
+ "data": "2026-10-02",
+ "status": "TESTE para avaliacao (nao aprovado). v3.4 = v3.3A (corrida aprovada) com o DASH refeito (smear compacto de 1 q + pose esticada); v3.3 = v3.2A com a CORRIDA refeita (8 q, tronco muito inclinado, capa longa em onda, lamina baixa), partida de 1 q, FREIO de 1 q e o DASH com SMEAR de 1 q (arranque 50 / smear 60 / pose esticada 190 / freio 50). Golpes, hitbox e tempos dos ataques identicos a v3.2A. v3.2A e v3.1 intactas.",
+ "formato": "mesmo da v3.1: animacoes[] com quadros (arquivo, ms, ancora), sombra em arquivo proprio, efeitos em camada separada, paleta travada; hitbox por quadro ATIVO (recortada a frente do corpo); animacoes de ataque trazem `ataque` (fases e soma = .tres)",
+ "cores": "SAIDA: todo pixel opaco e uma das cores da paleta C5.1; alfa 0/255.",
+ "paleta": {
+  "arquivo": "paleta/carrasco_c51_travada.gpl",
+  "cores": 44,
+  "travada": true,
+  "sha256": "6d3acc7dc9fc7f516d29abea3d9be2b024f868bad8a24158eea230089fe1b4ce"
+ },
+ "cores_usadas": {
+  "quantidade": 22,
+  "indices": [
+   0,
+   1,
+   2,
+   3,
+   5,
+   7,
+   8,
+   10,
+   12,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   22,
+   26,
+   27,
+   31,
+   41,
+   42,
+   43
+  ],
+  "rgb": [
+   [
+    22,
+    19,
+    21
+   ],
+   [
+    38,
+    31,
+    33
+   ],
+   [
+    59,
+    47,
+    49
+   ],
+   [
+    7,
+    4,
+    5
+   ],
+   [
+    20,
+    4,
+    4
+   ],
+   [
+    34,
+    17,
+    17
+   ],
+   [
+    60,
+    38,
+    37
+   ],
+   [
+    85,
+    55,
+    53
+   ],
+   [
+    118,
+    75,
+    70
+   ],
+   [
+    88,
+    71,
+    72
+   ],
+   [
+    128,
+    107,
+    108
+   ],
+   [
+    179,
+    153,
+    148
+   ],
+   [
+    216,
+    186,
+    179
+   ],
+   [
+    243,
+    232,
+    224
+   ],
+   [
+    67,
+    4,
+    7
+   ],
+   [
+    116,
+    3,
+    6
+   ],
+   [
+    174,
+    9,
+    16
+   ],
+   [
+    150,
+    20,
+    28
+   ],
+   [
+    187,
+    54,
+    56
+   ],
+   [
+    238,
+    40,
+    36
+   ],
+   [
+    98,
+    84,
+    75
+   ],
+   [
+    146,
+    129,
+    111
+   ]
+  ]
+ },
+ "proporcao": {
+  "altura_idle_px": 48,
+  "cabeca_px": 15,
+  "cabeca_pct": 31.2,
+  "mascara_px": "8 x 9"
+ },
+ "ancora_convencao": "ancora = pixel (x,y) do quadro nos pes, na linha logo abaixo da sola (corpo termina em y-1, sombra ocupa y e y+1). Todos os quadros de UMA animacao compartilham canvas e ancora; x = centro do tronco.",
+ "capsula_sugerida": {
+  "forma": "capsula vertical",
+  "raio_px": 7,
+  "altura_px": 46,
+  "raio_m": 0.22,
+  "altura_m": 1.44,
+  "base": "na linha dos pes (ancora), eixo no x da ancora (centro do tronco)",
+  "escala": "1 m = 32 px (mapa atual); referencia aprovada 0,31 x 2,20 m para o sprite de 72 px, reduzida por 48/72",
+  "cobertura_idle_por_raio_px": {
+   "6": {
+    "nucleo": 63.8,
+    "tudo": 46.4
+   },
+   "7": {
+    "nucleo": 71.9,
+    "tudo": 52.6
+   },
+   "8": {
+    "nucleo": 79.1,
+    "tudo": 58.1
+   },
+   "9": {
+    "nucleo": 85.5,
+    "tudo": 63.5
+   },
+   "10": {
+    "nucleo": 90.0,
+    "tudo": 68.4
+   }
+  },
+  "regra": "menor raio com >= 70 % do nucleo (cabeca, tronco, pernas) dentro",
+  "nota": "proposta; calibrar em jogo. Capa, braco, lamina e rastro ficam fora (solto)."
+ },
+ "rastro_dash": {
+  "regra": "a cada ~40 ms do dash (chao e ar), uma copia do quadro atual na posicao em que estava, em vermelho-sangue escuro (indice 22 da paleta, RGB 116,3,6), alfa 0,5 -> 0 em ~110 ms, no maximo 3 (v3.3: nevoa mais curta); pixels inteiros, NEAREST. Mais curto no ataque pos-dash. Feito pelo apresentador (nao e arte neste pacote).",
+  "indice_paleta": 22,
+  "rgb": [
+   116,
+   3,
+   6
+  ],
+  "vida_s": 0.11,
+  "vida_curta_s": 0.08,
+  "maximo": 3,
+  "maximo_curto": 2,
+  "intervalo_s": 0.04
+ },
+ "animacoes": [
+  {
+   "id": "idle",
+   "tipo": "animacao",
+   "loop": true,
+   "quadros_n": 8,
+   "duracao_total_ms": 2000.0,
+   "nota_tempo": "respiracao (peito sobe, cabeca atrasa 1 px), lamina oscilando e capa viva (atraso de 1 quadro); 2000 ms em laco",
+   "quadros": [
+    {
+     "arquivo": "quadros/idle/idle_f0.png",
+     "largura": 57,
+     "altura": 53,
+     "ancora": [
+      25,
+      50
+     ],
+     "pivo": [
+      25,
+      50
+     ],
+     "ms": 280.0,
+     "sha256": "7a0da50b242d6d09d81d0bc01cf17130c16a8a14ac11240579d10f7d3eb5b835",
+     "nome_origem": "v4_A_idle_f0",
+     "corpo_bbox": [
+      4,
+      2,
+      55,
+      49
+     ],
+     "sombra": {
+      "arquivo": "sombras/idle_sombra.png",
+      "ancora": [
+       25,
+       50
+      ],
+      "largura": 57,
+      "altura": 53,
+      "pixels": 52,
+      "sha256": "8b5633bfd2513dfbdafbb3f8a59628b9aa4454a426d11e0a64beb2dad522dbfd"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/idle/idle_f1.png",
+     "largura": 57,
+     "altura": 53,
+     "ancora": [
+      25,
+      50
+     ],
+     "pivo": [
+      25,
+      50
+     ],
+     "ms": 250.0,
+     "sha256": "7a0da50b242d6d09d81d0bc01cf17130c16a8a14ac11240579d10f7d3eb5b835",
+     "nome_origem": "v4_A_idle_f1",
+     "corpo_bbox": [
+      4,
+      2,
+      55,
+      49
+     ],
+     "sombra": {
+      "arquivo": "sombras/idle_sombra.png",
+      "ancora": [
+       25,
+       50
+      ],
+      "largura": 57,
+      "altura": 53,
+      "pixels": 52,
+      "sha256": "8b5633bfd2513dfbdafbb3f8a59628b9aa4454a426d11e0a64beb2dad522dbfd"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/idle/idle_f2.png",
+     "largura": 57,
+     "altura": 53,
+     "ancora": [
+      25,
+      50
+     ],
+     "pivo": [
+      25,
+      50
+     ],
+     "ms": 250.0,
+     "sha256": "d70d468005b2b582591cea6d7e368e0f58908ce8db186e6bf038b7761288b276",
+     "nome_origem": "v4_A_idle_f2",
+     "corpo_bbox": [
+      6,
+      1,
+      55,
+      49
+     ],
+     "sombra": {
+      "arquivo": "sombras/idle_sombra.png",
+      "ancora": [
+       25,
+       50
+      ],
+      "largura": 57,
+      "altura": 53,
+      "pixels": 52,
+      "sha256": "8b5633bfd2513dfbdafbb3f8a59628b9aa4454a426d11e0a64beb2dad522dbfd"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/idle/idle_f3.png",
+     "largura": 57,
+     "altura": 53,
+     "ancora": [
+      25,
+      50
+     ],
+     "pivo": [
+      25,
+      50
+     ],
+     "ms": 280.0,
+     "sha256": "ae087c98aebbd3859e7901d8dc1c55dd1fc0d96bb8d4b44ec40178ac95efb3cf",
+     "nome_origem": "v4_A_idle_f3",
+     "corpo_bbox": [
+      5,
+      2,
+      55,
+      49
+     ],
+     "sombra": {
+      "arquivo": "sombras/idle_sombra.png",
+      "ancora": [
+       25,
+       50
+      ],
+      "largura": 57,
+      "altura": 53,
+      "pixels": 52,
+      "sha256": "8b5633bfd2513dfbdafbb3f8a59628b9aa4454a426d11e0a64beb2dad522dbfd"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/idle/idle_f4.png",
+     "largura": 57,
+     "altura": 53,
+     "ancora": [
+      25,
+      50
+     ],
+     "pivo": [
+      25,
+      50
+     ],
+     "ms": 250.0,
+     "sha256": "3f07a0eb382f93ae15b2e2068db58f883f769836e9845f395093f4791c7cfbac",
+     "nome_origem": "v4_A_idle_f4",
+     "corpo_bbox": [
+      5,
+      2,
+      54,
+      49
+     ],
+     "sombra": {
+      "arquivo": "sombras/idle_sombra.png",
+      "ancora": [
+       25,
+       50
+      ],
+      "largura": 57,
+      "altura": 53,
+      "pixels": 52,
+      "sha256": "8b5633bfd2513dfbdafbb3f8a59628b9aa4454a426d11e0a64beb2dad522dbfd"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/idle/idle_f5.png",
+     "largura": 57,
+     "altura": 53,
+     "ancora": [
+      25,
+      50
+     ],
+     "pivo": [
+      25,
+      50
+     ],
+     "ms": 250.0,
+     "sha256": "c3e980e89ebaf8f1cd65fdee45b9eefdd41c5447e1adce89d4245648ea95c47c",
+     "nome_origem": "v4_A_idle_f5",
+     "corpo_bbox": [
+      3,
+      2,
+      54,
+      49
+     ],
+     "sombra": {
+      "arquivo": "sombras/idle_sombra.png",
+      "ancora": [
+       25,
+       50
+      ],
+      "largura": 57,
+      "altura": 53,
+      "pixels": 52,
+      "sha256": "8b5633bfd2513dfbdafbb3f8a59628b9aa4454a426d11e0a64beb2dad522dbfd"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/idle/idle_f6.png",
+     "largura": 57,
+     "altura": 53,
+     "ancora": [
+      25,
+      50
+     ],
+     "pivo": [
+      25,
+      50
+     ],
+     "ms": 220.0,
+     "sha256": "0feca38b004f9c544f4427117aa2fea3e0022df6c18442bb6dd0ffff935355b3",
+     "nome_origem": "v4_A_idle_f6",
+     "corpo_bbox": [
+      1,
+      2,
+      54,
+      49
+     ],
+     "sombra": {
+      "arquivo": "sombras/idle_sombra.png",
+      "ancora": [
+       25,
+       50
+      ],
+      "largura": 57,
+      "altura": 53,
+      "pixels": 52,
+      "sha256": "8b5633bfd2513dfbdafbb3f8a59628b9aa4454a426d11e0a64beb2dad522dbfd"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/idle/idle_f7.png",
+     "largura": 57,
+     "altura": 53,
+     "ancora": [
+      25,
+      50
+     ],
+     "pivo": [
+      25,
+      50
+     ],
+     "ms": 220.0,
+     "sha256": "a163157f035ba0766d1fd66e7d2d7f1aab67add77cceeb42d9c499742e8e7bc0",
+     "nome_origem": "v4_A_idle_f7",
+     "corpo_bbox": [
+      2,
+      2,
+      55,
+      49
+     ],
+     "sombra": {
+      "arquivo": "sombras/idle_sombra.png",
+      "ancora": [
+       25,
+       50
+      ],
+      "largura": 57,
+      "altura": 53,
+      "pixels": 52,
+      "sha256": "8b5633bfd2513dfbdafbb3f8a59628b9aa4454a426d11e0a64beb2dad522dbfd"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/idle_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo."
+  },
+  {
+   "id": "run",
+   "tipo": "animacao",
+   "loop": true,
+   "quadros_n": 8,
+   "duracao_total_ms": 333.33,
+   "nota_tempo": "CORRIDA v2: 8 q a 6 px/q (41,67 ms, 144 px/s, 48 px por ciclo): tronco MUITO inclinado (~26 graus), corpo baixo, capa LONGA em onda (atraso de 1 q, ponta +-3 px por passo), cabeca sobe 1 px, lamina baixa arrastando atras, pernas curtas; cada pe fica no chao 3 q sem deslizar",
+   "quadros": [
+    {
+     "arquivo": "quadros/run/run_f0.png",
+     "largura": 68,
+     "altura": 50,
+     "ancora": [
+      44,
+      47
+     ],
+     "pivo": [
+      44,
+      47
+     ],
+     "ms": 41.67,
+     "sha256": "483b04da0b23a4e25b6678b59692c7946a31a289b8c2a567aef36cce0e604a90",
+     "nome_origem": "v4_A_run_f0",
+     "corpo_bbox": [
+      1,
+      2,
+      64,
+      46
+     ],
+     "sombra": {
+      "arquivo": "sombras/run_sombra.png",
+      "ancora": [
+       44,
+       47
+      ],
+      "largura": 68,
+      "altura": 50,
+      "pixels": 52,
+      "sha256": "62e8e9cbbaeaa148b6cdea32da619fc08f2f0fde623543183e8c5cd33f7f3274"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/run/run_f1.png",
+     "largura": 68,
+     "altura": 50,
+     "ancora": [
+      44,
+      47
+     ],
+     "pivo": [
+      44,
+      47
+     ],
+     "ms": 41.67,
+     "sha256": "16c8c515051efc40a53a6cc035a9d88826b5767bf71a1d15b24029c6cb9d4d0f",
+     "nome_origem": "v4_A_run_f1",
+     "corpo_bbox": [
+      1,
+      4,
+      65,
+      46
+     ],
+     "sombra": {
+      "arquivo": "sombras/run_sombra.png",
+      "ancora": [
+       44,
+       47
+      ],
+      "largura": 68,
+      "altura": 50,
+      "pixels": 52,
+      "sha256": "62e8e9cbbaeaa148b6cdea32da619fc08f2f0fde623543183e8c5cd33f7f3274"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/run/run_f2.png",
+     "largura": 68,
+     "altura": 50,
+     "ancora": [
+      44,
+      47
+     ],
+     "pivo": [
+      44,
+      47
+     ],
+     "ms": 41.67,
+     "sha256": "678cc2c51090712735e5e8bae3f37554b1c32366c7385f55c44299470636618e",
+     "nome_origem": "v4_A_run_f2",
+     "corpo_bbox": [
+      1,
+      2,
+      64,
+      46
+     ],
+     "sombra": {
+      "arquivo": "sombras/run_sombra.png",
+      "ancora": [
+       44,
+       47
+      ],
+      "largura": 68,
+      "altura": 50,
+      "pixels": 52,
+      "sha256": "62e8e9cbbaeaa148b6cdea32da619fc08f2f0fde623543183e8c5cd33f7f3274"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/run/run_f3.png",
+     "largura": 68,
+     "altura": 50,
+     "ancora": [
+      44,
+      47
+     ],
+     "pivo": [
+      44,
+      47
+     ],
+     "ms": 41.67,
+     "sha256": "98b5c179b5767566f9c56ecf4cfca1bf0c235030b3edd7a9a55a34ea68d5bd3c",
+     "nome_origem": "v4_A_run_f3",
+     "corpo_bbox": [
+      1,
+      1,
+      66,
+      45
+     ],
+     "sombra": {
+      "arquivo": "sombras/run_sombra.png",
+      "ancora": [
+       44,
+       47
+      ],
+      "largura": 68,
+      "altura": 50,
+      "pixels": 52,
+      "sha256": "62e8e9cbbaeaa148b6cdea32da619fc08f2f0fde623543183e8c5cd33f7f3274"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/run/run_f4.png",
+     "largura": 68,
+     "altura": 50,
+     "ancora": [
+      44,
+      47
+     ],
+     "pivo": [
+      44,
+      47
+     ],
+     "ms": 41.67,
+     "sha256": "1205136a5a8f779716cb9db1791a91e78469f53b7433372007f5b2660a9f4301",
+     "nome_origem": "v4_A_run_f4",
+     "corpo_bbox": [
+      1,
+      2,
+      64,
+      46
+     ],
+     "sombra": {
+      "arquivo": "sombras/run_sombra.png",
+      "ancora": [
+       44,
+       47
+      ],
+      "largura": 68,
+      "altura": 50,
+      "pixels": 52,
+      "sha256": "62e8e9cbbaeaa148b6cdea32da619fc08f2f0fde623543183e8c5cd33f7f3274"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/run/run_f5.png",
+     "largura": 68,
+     "altura": 50,
+     "ancora": [
+      44,
+      47
+     ],
+     "pivo": [
+      44,
+      47
+     ],
+     "ms": 41.67,
+     "sha256": "0cc32c7c9f513a92ed420922da75cb7bbad9616d70d3e961aa9f3bc814b2c791",
+     "nome_origem": "v4_A_run_f5",
+     "corpo_bbox": [
+      1,
+      4,
+      65,
+      46
+     ],
+     "sombra": {
+      "arquivo": "sombras/run_sombra.png",
+      "ancora": [
+       44,
+       47
+      ],
+      "largura": 68,
+      "altura": 50,
+      "pixels": 52,
+      "sha256": "62e8e9cbbaeaa148b6cdea32da619fc08f2f0fde623543183e8c5cd33f7f3274"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/run/run_f6.png",
+     "largura": 68,
+     "altura": 50,
+     "ancora": [
+      44,
+      47
+     ],
+     "pivo": [
+      44,
+      47
+     ],
+     "ms": 41.67,
+     "sha256": "eba70d5a9f1eb99fa6a80207affe91f32884c70ae243db3144a4d4416d8fb4b4",
+     "nome_origem": "v4_A_run_f6",
+     "corpo_bbox": [
+      1,
+      2,
+      64,
+      46
+     ],
+     "sombra": {
+      "arquivo": "sombras/run_sombra.png",
+      "ancora": [
+       44,
+       47
+      ],
+      "largura": 68,
+      "altura": 50,
+      "pixels": 52,
+      "sha256": "62e8e9cbbaeaa148b6cdea32da619fc08f2f0fde623543183e8c5cd33f7f3274"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/run/run_f7.png",
+     "largura": 68,
+     "altura": 50,
+     "ancora": [
+      44,
+      47
+     ],
+     "pivo": [
+      44,
+      47
+     ],
+     "ms": 41.67,
+     "sha256": "0f8dc2312461c0855e9dcda2cc013602fddb42159a9875de9e844bf533f4e9ac",
+     "nome_origem": "v4_A_run_f7",
+     "corpo_bbox": [
+      1,
+      1,
+      66,
+      45
+     ],
+     "sombra": {
+      "arquivo": "sombras/run_sombra.png",
+      "ancora": [
+       44,
+       47
+      ],
+      "largura": 68,
+      "altura": 50,
+      "pixels": 52,
+      "sha256": "62e8e9cbbaeaa148b6cdea32da619fc08f2f0fde623543183e8c5cd33f7f3274"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/run_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo.",
+   "px_por_quadro": 6,
+   "velocidade_px_s": 144,
+   "ms_por_quadro": 41.67,
+   "apoios": [
+    1,
+    5
+   ]
+  },
+  {
+   "id": "run_start",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 1,
+   "duracao_total_ms": 50.0,
+   "nota_tempo": "PARTIDA da corrida: 1 q inclinando forte (corpo baixo, capa ainda caida), mostrado nos primeiros 6 px",
+   "quadros": [
+    {
+     "arquivo": "quadros/run_start/run_start_f0.png",
+     "largura": 56,
+     "altura": 46,
+     "ancora": [
+      32,
+      43
+     ],
+     "pivo": [
+      32,
+      43
+     ],
+     "ms": 50.0,
+     "sha256": "abf6859496f677c8e0449c062a18d0b36b1501cb61c20b6c7631b0acea648f20",
+     "nome_origem": "v4_A_run_start_f0",
+     "corpo_bbox": [
+      1,
+      1,
+      54,
+      42
+     ],
+     "sombra": {
+      "arquivo": "sombras/run_start_sombra.png",
+      "ancora": [
+       32,
+       43
+      ],
+      "largura": 56,
+      "altura": 46,
+      "pixels": 52,
+      "sha256": "a9f0f550dad1e1005c0dfb5f97ea8525131e10bdc1556c4b02b57e6cf9851cd1"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/run_start_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo."
+  },
+  {
+   "id": "run_stop",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 1,
+   "duracao_total_ms": 66.0,
+   "nota_tempo": "FREIO da corrida: 1 q (derrapa, tronco para tras, capa passa para a frente das pernas), 66 ms",
+   "quadros": [
+    {
+     "arquivo": "quadros/run_stop/run_stop_f0.png",
+     "largura": 67,
+     "altura": 48,
+     "ancora": [
+      44,
+      45
+     ],
+     "pivo": [
+      44,
+      45
+     ],
+     "ms": 66.0,
+     "sha256": "969cf3b395d275bb41c719de1f506b985e291cd314e7d56c63b9345f5425d234",
+     "nome_origem": "v4_A_run_stop_f0",
+     "corpo_bbox": [
+      1,
+      1,
+      65,
+      44
+     ],
+     "sombra": {
+      "arquivo": "sombras/run_stop_sombra.png",
+      "ancora": [
+       44,
+       45
+      ],
+      "largura": 67,
+      "altura": 48,
+      "pixels": 52,
+      "sha256": "6065c28e2027a242a5421fe29a1cd893c5b67d0118a2777f1f4dbaf7539894ad"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/run_stop_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo."
+  },
+  {
+   "id": "turn",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 1,
+   "duracao_total_ms": 50.0,
+   "nota_tempo": "VIRADA de direcao: 1 q (derrapa, tronco para tras, pes abertos), 50 ms",
+   "quadros": [
+    {
+     "arquivo": "quadros/turn/turn_f0.png",
+     "largura": 55,
+     "altura": 49,
+     "ancora": [
+      28,
+      46
+     ],
+     "pivo": [
+      28,
+      46
+     ],
+     "ms": 50.0,
+     "sha256": "5f839e69664a1322275c386c1230a9687b8fd7ad11e7c41397cdf5ccfafdbf5e",
+     "nome_origem": "v4_A_turn_f0",
+     "corpo_bbox": [
+      1,
+      1,
+      53,
+      45
+     ],
+     "sombra": {
+      "arquivo": "sombras/turn_sombra.png",
+      "ancora": [
+       28,
+       46
+      ],
+      "largura": 55,
+      "altura": 49,
+      "pixels": 52,
+      "sha256": "86042de2e10f7411409e2136fbcb90daeb5fedb15c361655eb4b69356d66126f"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/turn_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo."
+  },
+  {
+   "id": "attack_exit",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 1,
+   "duracao_total_ms": 66.0,
+   "nota_tempo": "SAIDA do ataque para o idle: 1 q (lamina volta ao porte), 66 ms",
+   "quadros": [
+    {
+     "arquivo": "quadros/attack_exit/attack_exit_f0.png",
+     "largura": 54,
+     "altura": 50,
+     "ancora": [
+      23,
+      47
+     ],
+     "pivo": [
+      23,
+      47
+     ],
+     "ms": 66.0,
+     "sha256": "8a4726fc80a60718b6600a1b7a11119a70e9d7b2872f3a0de508eecb556f607b",
+     "nome_origem": "v4_A_attack_exit_f0",
+     "corpo_bbox": [
+      1,
+      1,
+      52,
+      46
+     ],
+     "sombra": {
+      "arquivo": "sombras/attack_exit_sombra.png",
+      "ancora": [
+       23,
+       47
+      ],
+      "largura": 54,
+      "altura": 50,
+      "pixels": 52,
+      "sha256": "faa3a81bf8ffe475142cf13f3dfd8ceb30a9fb7b5b801476324b8bd6507ac199"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/attack_exit_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo."
+  },
+  {
+   "id": "dash",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 4,
+   "duracao_total_ms": 350.0,
+   "nota_tempo": "dash no chao, 4 q = 350 ms: ARRANQUE (corpo comprimido + poeira) 50 / SMEAR (1 q, virgula compacta ~1,3x o corpo) 60 / POSE ESTICADA (corpo inclinado, capa longa reta, lamina recolhida) 190 / FREIO (derrapa, capa para a frente + poeira) 50; 112 px = 0,32 px/ms; a nevoa de sangue (fantasmas, mais curta) e feita pelo apresentador",
+   "quadros": [
+    {
+     "arquivo": "quadros/dash/dash_f0.png",
+     "largura": 94,
+     "altura": 48,
+     "ancora": [
+      66,
+      45
+     ],
+     "pivo": [
+      66,
+      45
+     ],
+     "ms": 50.0,
+     "sha256": "496384aa6fdebb4e0dad0b93699fc243787ae66b500c22f98545ab7e0278bb99",
+     "nome_origem": "v4_A_dash_f0",
+     "corpo_bbox": [
+      36,
+      4,
+      84,
+      44
+     ],
+     "sombra": {
+      "arquivo": "sombras/dash_sombra.png",
+      "ancora": [
+       66,
+       45
+      ],
+      "largura": 94,
+      "altura": 48,
+      "pixels": 60,
+      "sha256": "f8869ce1e841108eca0ac35dd2bc790fd7b63afa7d21332ada63268ecf09eb9f"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/dash/dash_f1.png",
+     "largura": 94,
+     "altura": 48,
+     "ancora": [
+      66,
+      45
+     ],
+     "pivo": [
+      66,
+      45
+     ],
+     "ms": 60.0,
+     "sha256": "c43ac187e294986f5fe27f1db09c67296e0c7098fee6aea68345cb4d53ab3f15",
+     "nome_origem": "v4_A_dash_f1",
+     "corpo_bbox": [
+      27,
+      11,
+      90,
+      44
+     ],
+     "sombra": {
+      "arquivo": "sombras/dash_sombra.png",
+      "ancora": [
+       66,
+       45
+      ],
+      "largura": 94,
+      "altura": 48,
+      "pixels": 60,
+      "sha256": "f8869ce1e841108eca0ac35dd2bc790fd7b63afa7d21332ada63268ecf09eb9f"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/dash/dash_f2.png",
+     "largura": 94,
+     "altura": 48,
+     "ancora": [
+      66,
+      45
+     ],
+     "pivo": [
+      66,
+      45
+     ],
+     "ms": 190.0,
+     "sha256": "fed3770e7fe851b6f296295eaf54432704acea48c7e5eb19f8f6a2ecc2a7868a",
+     "nome_origem": "v4_A_dash_f2",
+     "corpo_bbox": [
+      1,
+      3,
+      92,
+      43
+     ],
+     "sombra": {
+      "arquivo": "sombras/dash_sombra.png",
+      "ancora": [
+       66,
+       45
+      ],
+      "largura": 94,
+      "altura": 48,
+      "pixels": 60,
+      "sha256": "f8869ce1e841108eca0ac35dd2bc790fd7b63afa7d21332ada63268ecf09eb9f"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/dash/dash_f3.png",
+     "largura": 94,
+     "altura": 48,
+     "ancora": [
+      66,
+      45
+     ],
+     "pivo": [
+      66,
+      45
+     ],
+     "ms": 50.0,
+     "sha256": "c62bbf85db64d90903804d1d7fb6c533edaa4be3867394fcde61fc63083dcc16",
+     "nome_origem": "v4_A_dash_f3",
+     "corpo_bbox": [
+      33,
+      1,
+      87,
+      44
+     ],
+     "sombra": {
+      "arquivo": "sombras/dash_sombra.png",
+      "ancora": [
+       66,
+       45
+      ],
+      "largura": 94,
+      "altura": 48,
+      "pixels": 60,
+      "sha256": "f8869ce1e841108eca0ac35dd2bc790fd7b63afa7d21332ada63268ecf09eb9f"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/dash_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [
+    {
+     "quadro": 0,
+     "arquivo": "efeitos/dash_fx_f0.png",
+     "ancora": [
+      66,
+      45
+     ],
+     "largura": 94,
+     "altura": 48,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 14,
+     "sha256": "379f9dcc541ff6abcd1652d2cb7bcee8a94a3e294708159a715327d303b1c53e"
+    },
+    {
+     "quadro": 1,
+     "arquivo": "efeitos/dash_fx_f1.png",
+     "ancora": [
+      66,
+      45
+     ],
+     "largura": 94,
+     "altura": 48,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 10,
+     "sha256": "4d209f040dcdf944b0e71420d18757628770ae80a2f12974b963a32fc6fe7136"
+    },
+    {
+     "quadro": 2,
+     "arquivo": "efeitos/dash_fx_f2.png",
+     "ancora": [
+      66,
+      45
+     ],
+     "largura": 94,
+     "altura": 48,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 12,
+     "sha256": "169f4a44239e2b3f1d7c5c9545a21ab1b63c93f67975c334a7aa6366c23950b3"
+    },
+    {
+     "quadro": 3,
+     "arquivo": "efeitos/dash_fx_f3.png",
+     "ancora": [
+      66,
+      45
+     ],
+     "largura": 94,
+     "altura": 48,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 15,
+     "sha256": "3e2d8eea04b202b6673ca361f3fbe447de7d3b5e7973d0987e53c715edbd5b69"
+    }
+   ],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo.",
+   "deslocamento_total_px": 112,
+   "velocidade_px_s": 320,
+   "nota_desloc": "mover o personagem 0,32 px/ms durante os 350 ms (nao por quadro)"
+  },
+  {
+   "id": "dash_ar",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 4,
+   "duracao_total_ms": 350.0,
+   "nota_tempo": "dash no ar, 4 q = 350 ms: mesmo arranque / smear 60 / pose esticada 190 / freio, sem poeira",
+   "quadros": [
+    {
+     "arquivo": "quadros/dash_ar/dash_ar_f0.png",
+     "largura": 94,
+     "altura": 51,
+     "ancora": [
+      66,
+      48
+     ],
+     "pivo": [
+      66,
+      48
+     ],
+     "ms": 50.0,
+     "sha256": "f5dc7ca764e47cd8e6a46f78fb4fd178d54878220c1facfd5ca1cda6287cbe1b",
+     "nome_origem": "v4_A_dash_ar_f0",
+     "corpo_bbox": [
+      36,
+      3,
+      84,
+      44
+     ],
+     "sombra": {
+      "arquivo": "sombras/dash_ar_sombra.png",
+      "ancora": [
+       66,
+       48
+      ],
+      "largura": 94,
+      "altura": 51,
+      "pixels": 60,
+      "sha256": "508ece7866277db68ffbd297286a5104e3be881eee9a6eff58de8e4f73aac083"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/dash_ar/dash_ar_f1.png",
+     "largura": 94,
+     "altura": 51,
+     "ancora": [
+      66,
+      48
+     ],
+     "pivo": [
+      66,
+      48
+     ],
+     "ms": 60.0,
+     "sha256": "f87127efe455c8acde254b8dd4d315f90fa94117844da45326ffd80a67a721e8",
+     "nome_origem": "v4_A_dash_ar_f1",
+     "corpo_bbox": [
+      27,
+      14,
+      90,
+      47
+     ],
+     "sombra": {
+      "arquivo": "sombras/dash_ar_sombra.png",
+      "ancora": [
+       66,
+       48
+      ],
+      "largura": 94,
+      "altura": 51,
+      "pixels": 60,
+      "sha256": "508ece7866277db68ffbd297286a5104e3be881eee9a6eff58de8e4f73aac083"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/dash_ar/dash_ar_f2.png",
+     "largura": 94,
+     "altura": 51,
+     "ancora": [
+      66,
+      48
+     ],
+     "pivo": [
+      66,
+      48
+     ],
+     "ms": 190.0,
+     "sha256": "9e886ca02b55e53481c2875d847baf410f486cb59934123bb010e88f0dce1cef",
+     "nome_origem": "v4_A_dash_ar_f2",
+     "corpo_bbox": [
+      1,
+      4,
+      92,
+      43
+     ],
+     "sombra": {
+      "arquivo": "sombras/dash_ar_sombra.png",
+      "ancora": [
+       66,
+       48
+      ],
+      "largura": 94,
+      "altura": 51,
+      "pixels": 60,
+      "sha256": "508ece7866277db68ffbd297286a5104e3be881eee9a6eff58de8e4f73aac083"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/dash_ar/dash_ar_f3.png",
+     "largura": 94,
+     "altura": 51,
+     "ancora": [
+      66,
+      48
+     ],
+     "pivo": [
+      66,
+      48
+     ],
+     "ms": 50.0,
+     "sha256": "58974a8ae955179eef4ae4baf30a78b82c0588bb947a19d4e8d771074a4588fa",
+     "nome_origem": "v4_A_dash_ar_f3",
+     "corpo_bbox": [
+      33,
+      1,
+      83,
+      43
+     ],
+     "sombra": {
+      "arquivo": "sombras/dash_ar_sombra.png",
+      "ancora": [
+       66,
+       48
+      ],
+      "largura": 94,
+      "altura": 51,
+      "pixels": 60,
+      "sha256": "508ece7866277db68ffbd297286a5104e3be881eee9a6eff58de8e4f73aac083"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/dash_ar_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo.",
+   "deslocamento_total_px": 112,
+   "velocidade_px_s": 320,
+   "nota_desloc": "mover o personagem 0,32 px/ms durante os 350 ms (nao por quadro)"
+  },
+  {
+   "id": "jump_up",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 2,
+   "duracao_total_ms": 140.0,
+   "nota_tempo": "subida (2 q)",
+   "quadros": [
+    {
+     "arquivo": "quadros/jump_up/jump_up_f0.png",
+     "largura": 54,
+     "altura": 56,
+     "ancora": [
+      23,
+      53
+     ],
+     "pivo": [
+      23,
+      53
+     ],
+     "ms": 60.0,
+     "sha256": "31d5934df2b48a7d37905ad328099f43e661e548a73d37c3cfc4ee91697d7849",
+     "nome_origem": "v4_A_jump_up_f0",
+     "corpo_bbox": [
+      1,
+      2,
+      49,
+      52
+     ],
+     "sombra": {
+      "arquivo": "sombras/jump_up_sombra.png",
+      "ancora": [
+       23,
+       53
+      ],
+      "largura": 54,
+      "altura": 56,
+      "pixels": 44,
+      "sha256": "94e3f382703793c03c8bff849c598f09feab8fe46ffcaea80a9e84e82beecc15"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/jump_up/jump_up_f1.png",
+     "largura": 54,
+     "altura": 56,
+     "ancora": [
+      23,
+      53
+     ],
+     "pivo": [
+      23,
+      53
+     ],
+     "ms": 80.0,
+     "sha256": "cf7ef10500b6cd90e256019651adcce57a1c7a52f06af471860fb67a59260922",
+     "nome_origem": "v4_A_jump_up_f1",
+     "corpo_bbox": [
+      6,
+      1,
+      52,
+      46
+     ],
+     "sombra": {
+      "arquivo": "sombras/jump_up_sombra.png",
+      "ancora": [
+       23,
+       53
+      ],
+      "largura": 54,
+      "altura": 56,
+      "pixels": 44,
+      "sha256": "94e3f382703793c03c8bff849c598f09feab8fe46ffcaea80a9e84e82beecc15"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/jump_up_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo."
+  },
+  {
+   "id": "fall_start",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 2,
+   "duracao_total_ms": 140.0,
+   "nota_tempo": "queda - inicio (2 q)",
+   "quadros": [
+    {
+     "arquivo": "quadros/fall_start/fall_start_f0.png",
+     "largura": 54,
+     "altura": 56,
+     "ancora": [
+      21,
+      53
+     ],
+     "pivo": [
+      21,
+      53
+     ],
+     "ms": 70.0,
+     "sha256": "4021f5854990827aa02e05e18179d9e0bac40104eb6067abc62162c945e4480e",
+     "nome_origem": "v4_A_fall_start_f0",
+     "corpo_bbox": [
+      1,
+      1,
+      52,
+      48
+     ],
+     "sombra": {
+      "arquivo": "sombras/fall_start_sombra.png",
+      "ancora": [
+       21,
+       53
+      ],
+      "largura": 54,
+      "altura": 56,
+      "pixels": 44,
+      "sha256": "4ca439b3bbd87fdb775f665a2bdadea7a43e5d57d4b1417b0040e777fceab2ad"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/fall_start/fall_start_f1.png",
+     "largura": 54,
+     "altura": 56,
+     "ancora": [
+      21,
+      53
+     ],
+     "pivo": [
+      21,
+      53
+     ],
+     "ms": 70.0,
+     "sha256": "6ad417e5c46edebbb3e36e75b5af2e8f5829e03568b5c02f809e7be082b85065",
+     "nome_origem": "v4_A_fall_start_f1",
+     "corpo_bbox": [
+      1,
+      3,
+      50,
+      50
+     ],
+     "sombra": {
+      "arquivo": "sombras/fall_start_sombra.png",
+      "ancora": [
+       21,
+       53
+      ],
+      "largura": 54,
+      "altura": 56,
+      "pixels": 44,
+      "sha256": "4ca439b3bbd87fdb775f665a2bdadea7a43e5d57d4b1417b0040e777fceab2ad"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/fall_start_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo."
+  },
+  {
+   "id": "fall_loop",
+   "tipo": "animacao",
+   "loop": true,
+   "quadros_n": 3,
+   "duracao_total_ms": 270.0,
+   "nota_tempo": "queda - laco (3 q): capa paraquedas",
+   "quadros": [
+    {
+     "arquivo": "quadros/fall_loop/fall_loop_f0.png",
+     "largura": 59,
+     "altura": 68,
+     "ancora": [
+      27,
+      65
+     ],
+     "pivo": [
+      27,
+      65
+     ],
+     "ms": 90.0,
+     "sha256": "2a78be1d3f584f3dd4ca8aad312d9d6983a8ee441fd48566db33b4e504bd216b",
+     "nome_origem": "v4_A_fall_loop_f0",
+     "corpo_bbox": [
+      12,
+      13,
+      55,
+      62
+     ],
+     "sombra": {
+      "arquivo": "sombras/fall_loop_sombra.png",
+      "ancora": [
+       27,
+       65
+      ],
+      "largura": 59,
+      "altura": 68,
+      "pixels": 44,
+      "sha256": "c0d0e52dda53a5dd71411d80bcd13def2d4949ad1e5cff3c1c684cca18a70b46"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/fall_loop/fall_loop_f1.png",
+     "largura": 59,
+     "altura": 68,
+     "ancora": [
+      27,
+      65
+     ],
+     "pivo": [
+      27,
+      65
+     ],
+     "ms": 90.0,
+     "sha256": "bcf55cf5cbdd38961588f48c026de33f10f90c16b55144d6d3df9a02903a1632",
+     "nome_origem": "v4_A_fall_loop_f1",
+     "corpo_bbox": [
+      1,
+      1,
+      56,
+      63
+     ],
+     "sombra": {
+      "arquivo": "sombras/fall_loop_sombra.png",
+      "ancora": [
+       27,
+       65
+      ],
+      "largura": 59,
+      "altura": 68,
+      "pixels": 44,
+      "sha256": "c0d0e52dda53a5dd71411d80bcd13def2d4949ad1e5cff3c1c684cca18a70b46"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/fall_loop/fall_loop_f2.png",
+     "largura": 59,
+     "altura": 68,
+     "ancora": [
+      27,
+      65
+     ],
+     "pivo": [
+      27,
+      65
+     ],
+     "ms": 90.0,
+     "sha256": "19fe2e47a523287bf90555847189f3fb791004bf7a0db2625a06f9166f9f015a",
+     "nome_origem": "v4_A_fall_loop_f2",
+     "corpo_bbox": [
+      4,
+      4,
+      57,
+      61
+     ],
+     "sombra": {
+      "arquivo": "sombras/fall_loop_sombra.png",
+      "ancora": [
+       27,
+       65
+      ],
+      "largura": 59,
+      "altura": 68,
+      "pixels": 44,
+      "sha256": "c0d0e52dda53a5dd71411d80bcd13def2d4949ad1e5cff3c1c684cca18a70b46"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/fall_loop_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo."
+  },
+  {
+   "id": "land",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 2,
+   "duracao_total_ms": 120.0,
+   "nota_tempo": "POUSO: 2 q de impacto (agachar fundo + poeira / levantar), 120 ms",
+   "quadros": [
+    {
+     "arquivo": "quadros/land/land_f0.png",
+     "largura": 56,
+     "altura": 49,
+     "ancora": [
+      24,
+      46
+     ],
+     "pivo": [
+      24,
+      46
+     ],
+     "ms": 50.0,
+     "sha256": "e07527b924ae047e1c17a9d1119c69380d7c44510c994012ba116f6c0ceedc9d",
+     "nome_origem": "v4_A_land_f0",
+     "corpo_bbox": [
+      1,
+      5,
+      54,
+      45
+     ],
+     "sombra": {
+      "arquivo": "sombras/land_sombra.png",
+      "ancora": [
+       24,
+       46
+      ],
+      "largura": 56,
+      "altura": 49,
+      "pixels": 56,
+      "sha256": "7365d80b2e045d5356356e2cc448556e36640f661eeda5a2b4b1dacadd7ec557"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/land/land_f1.png",
+     "largura": 56,
+     "altura": 49,
+     "ancora": [
+      24,
+      46
+     ],
+     "pivo": [
+      24,
+      46
+     ],
+     "ms": 70.0,
+     "sha256": "cf7456282591d9c48619c796743c1fcb035dd5f88e516cebfa509970b65849ab",
+     "nome_origem": "v4_A_land_f1",
+     "corpo_bbox": [
+      2,
+      1,
+      53,
+      45
+     ],
+     "sombra": {
+      "arquivo": "sombras/land_sombra.png",
+      "ancora": [
+       24,
+       46
+      ],
+      "largura": 56,
+      "altura": 49,
+      "pixels": 56,
+      "sha256": "7365d80b2e045d5356356e2cc448556e36640f661eeda5a2b4b1dacadd7ec557"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/land_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [
+    {
+     "quadro": 0,
+     "arquivo": "efeitos/land_fx_f0.png",
+     "ancora": [
+      24,
+      46
+     ],
+     "largura": 56,
+     "altura": 49,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 9,
+     "sha256": "2dd8025d25ba1a71cb7944849ddf98f89b846ab768e52f1ae77b94ba74cd16f6"
+    },
+    {
+     "quadro": 1,
+     "arquivo": "efeitos/land_fx_f1.png",
+     "ancora": [
+      24,
+      46
+     ],
+     "largura": 56,
+     "altura": 49,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 6,
+     "sha256": "9b46968bd3ed926dd19f4b994d3a2752924ee923bcdc41b723d3dc8c0c3a9b12"
+    }
+   ],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo."
+  },
+  {
+   "id": "hurt",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 3,
+   "duracao_total_ms": 180.0,
+   "nota_tempo": "dano: 3 x 60 ms",
+   "quadros": [
+    {
+     "arquivo": "quadros/hurt/hurt_f0.png",
+     "largura": 49,
+     "altura": 53,
+     "ancora": [
+      23,
+      50
+     ],
+     "pivo": [
+      23,
+      50
+     ],
+     "ms": 60.0,
+     "sha256": "4edd4697f5cdfaffe744b540d5d8ebee3e82855cb86db721a09edb7e50450164",
+     "nome_origem": "v4_A_hurt_f0",
+     "corpo_bbox": [
+      1,
+      1,
+      40,
+      49
+     ],
+     "sombra": {
+      "arquivo": "sombras/hurt_sombra.png",
+      "ancora": [
+       23,
+       50
+      ],
+      "largura": 49,
+      "altura": 53,
+      "pixels": 48,
+      "sha256": "0a2bf96ccafe38ee505399338aa66cd717cc15c566689eb8f321bb7f1495e61c"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/hurt/hurt_f1.png",
+     "largura": 49,
+     "altura": 53,
+     "ancora": [
+      23,
+      50
+     ],
+     "pivo": [
+      23,
+      50
+     ],
+     "ms": 60.0,
+     "sha256": "7e79440738ace22186f5a5666243dd514a9b58013f082f7f374c9e46749ba4f7",
+     "nome_origem": "v4_A_hurt_f1",
+     "corpo_bbox": [
+      5,
+      3,
+      38,
+      49
+     ],
+     "sombra": {
+      "arquivo": "sombras/hurt_sombra.png",
+      "ancora": [
+       23,
+       50
+      ],
+      "largura": 49,
+      "altura": 53,
+      "pixels": 48,
+      "sha256": "0a2bf96ccafe38ee505399338aa66cd717cc15c566689eb8f321bb7f1495e61c"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/hurt/hurt_f2.png",
+     "largura": 49,
+     "altura": 53,
+     "ancora": [
+      23,
+      50
+     ],
+     "pivo": [
+      23,
+      50
+     ],
+     "ms": 60.0,
+     "sha256": "624c06ad1849158d8f84e9b53884945339381a4599f48ebf18c9e84feb94db1a",
+     "nome_origem": "v4_A_hurt_f2",
+     "corpo_bbox": [
+      6,
+      3,
+      47,
+      49
+     ],
+     "sombra": {
+      "arquivo": "sombras/hurt_sombra.png",
+      "ancora": [
+       23,
+       50
+      ],
+      "largura": 49,
+      "altura": 53,
+      "pixels": 48,
+      "sha256": "0a2bf96ccafe38ee505399338aa66cd717cc15c566689eb8f321bb7f1495e61c"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/hurt_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [
+    {
+     "quadro": 0,
+     "arquivo": "efeitos/hurt_fx_f0.png",
+     "ancora": [
+      23,
+      50
+     ],
+     "largura": 49,
+     "altura": 53,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 7,
+     "sha256": "bfb9488db5b4d4a19a2c0b6bb5cefe1292c6a7cc4d880ca373f05d80125964a2"
+    },
+    {
+     "quadro": 1,
+     "arquivo": "efeitos/hurt_fx_f1.png",
+     "ancora": [
+      23,
+      50
+     ],
+     "largura": 49,
+     "altura": 53,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 6,
+     "sha256": "41e482c4d6109a110cd461f9e52d5b87fa11df13bf399d32301483dfacacd40a"
+    },
+    {
+     "quadro": 2,
+     "arquivo": "efeitos/hurt_fx_f2.png",
+     "ancora": [
+      23,
+      50
+     ],
+     "largura": 49,
+     "altura": 53,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 2,
+     "sha256": "5ce29165c8740d820dc742200253ffe4a2db19b57d4365b68c772d2615ec2db4"
+    }
+   ],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo."
+  },
+  {
+   "id": "heavy",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 9,
+   "duracao_total_ms": 890.0,
+   "nota_tempo": "heavy: prep 4 q (320) / arco gigante 2 q (140) / parado 3 q (430) = 890 ms; DANO so a frente do corpo (x >= 0) ate o chao",
+   "quadros": [
+    {
+     "arquivo": "quadros/heavy/heavy_f0.png",
+     "largura": 125,
+     "altura": 102,
+     "ancora": [
+      57,
+      99
+     ],
+     "pivo": [
+      57,
+      99
+     ],
+     "ms": 80.0,
+     "sha256": "3c6cc3c1291e25d03ee056411dc51a79edfe565d3112e10ac00c2f5e01baacee",
+     "nome_origem": "v4_A_heavy_f0",
+     "corpo_bbox": [
+      35,
+      52,
+      86,
+      98
+     ],
+     "sombra": {
+      "arquivo": "sombras/heavy_sombra.png",
+      "ancora": [
+       57,
+       99
+      ],
+      "largura": 125,
+      "altura": 102,
+      "pixels": 64,
+      "sha256": "5050ddf3cc6f45ee9e7b09bd95ed003a586aeba5ed7161d53b0e2cdec62e6835"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/heavy/heavy_f1.png",
+     "largura": 125,
+     "altura": 102,
+     "ancora": [
+      57,
+      99
+     ],
+     "pivo": [
+      57,
+      99
+     ],
+     "ms": 80.0,
+     "sha256": "ac4eae5cf05e94647e0a1cbdc02cdf448618295093cc6adad0955a03e7e9cd9b",
+     "nome_origem": "v4_A_heavy_f1",
+     "corpo_bbox": [
+      35,
+      40,
+      76,
+      98
+     ],
+     "sombra": {
+      "arquivo": "sombras/heavy_sombra.png",
+      "ancora": [
+       57,
+       99
+      ],
+      "largura": 125,
+      "altura": 102,
+      "pixels": 64,
+      "sha256": "5050ddf3cc6f45ee9e7b09bd95ed003a586aeba5ed7161d53b0e2cdec62e6835"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/heavy/heavy_f2.png",
+     "largura": 125,
+     "altura": 102,
+     "ancora": [
+      57,
+      99
+     ],
+     "pivo": [
+      57,
+      99
+     ],
+     "ms": 80.0,
+     "sha256": "f746790f0181123b2d36fb22f68a2cd68798c2c56a885834d2c0c9d856e06d74",
+     "nome_origem": "v4_A_heavy_f2",
+     "corpo_bbox": [
+      29,
+      36,
+      76,
+      98
+     ],
+     "sombra": {
+      "arquivo": "sombras/heavy_sombra.png",
+      "ancora": [
+       57,
+       99
+      ],
+      "largura": 125,
+      "altura": 102,
+      "pixels": 64,
+      "sha256": "5050ddf3cc6f45ee9e7b09bd95ed003a586aeba5ed7161d53b0e2cdec62e6835"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/heavy/heavy_f3.png",
+     "largura": 125,
+     "altura": 102,
+     "ancora": [
+      57,
+      99
+     ],
+     "pivo": [
+      57,
+      99
+     ],
+     "ms": 80.0,
+     "sha256": "d68fb2d7b500bab2adc4187aecfab71881485007288ea1b0e34652968253202f",
+     "nome_origem": "v4_A_heavy_f3",
+     "corpo_bbox": [
+      19,
+      39,
+      75,
+      98
+     ],
+     "sombra": {
+      "arquivo": "sombras/heavy_sombra.png",
+      "ancora": [
+       57,
+       99
+      ],
+      "largura": 125,
+      "altura": 102,
+      "pixels": 64,
+      "sha256": "5050ddf3cc6f45ee9e7b09bd95ed003a586aeba5ed7161d53b0e2cdec62e6835"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/heavy/heavy_f4.png",
+     "largura": 125,
+     "altura": 102,
+     "ancora": [
+      57,
+      99
+     ],
+     "pivo": [
+      57,
+      99
+     ],
+     "ms": 70.0,
+     "sha256": "fe24f1ca6ef91d29e84a3ea0f788fc9857ff40ab023f585d10d4f2f4ccb39465",
+     "nome_origem": "v4_A_heavy_f4",
+     "corpo_bbox": [
+      36,
+      51,
+      96,
+      98
+     ],
+     "sombra": {
+      "arquivo": "sombras/heavy_sombra.png",
+      "ancora": [
+       57,
+       99
+      ],
+      "largura": 125,
+      "altura": 102,
+      "pixels": 64,
+      "sha256": "5050ddf3cc6f45ee9e7b09bd95ed003a586aeba5ed7161d53b0e2cdec62e6835"
+     },
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 (da cabeca para a frente) e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       0,
+       -100,
+       69,
+       90
+      ],
+      "cobertura_pixels_pct": 100.0,
+      "pixels_atras_do_corpo_excluidos": 1323,
+      "espelha_com_a_direcao": "inverter x quando o Carrasco olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         0.0,
+         -99.0
+        ],
+        [
+         4.9,
+         -99.5
+        ],
+        [
+         17.4,
+         -98.3
+        ],
+        [
+         29.5,
+         -94.6
+        ],
+        [
+         40.6,
+         -88.6
+        ],
+        [
+         50.3,
+         -80.5
+        ],
+        [
+         58.2,
+         -70.6
+        ],
+        [
+         64.0,
+         -59.4
+        ],
+        [
+         67.5,
+         -47.3
+        ],
+        [
+         68.5,
+         -34.7
+        ],
+        [
+         67.0,
+         -22.2
+        ],
+        [
+         63.0,
+         -10.2
+        ],
+        [
+         60.7,
+         -11.2
+        ],
+        [
+         57.9,
+         -24.2
+        ],
+        [
+         54.2,
+         -35.0
+        ],
+        [
+         49.2,
+         -44.0
+        ],
+        [
+         43.2,
+         -51.2
+        ],
+        [
+         36.8,
+         -56.7
+        ],
+        [
+         30.2,
+         -60.7
+        ],
+        [
+         23.6,
+         -63.5
+        ],
+        [
+         17.3,
+         -65.3
+        ],
+        [
+         11.1,
+         -66.5
+        ],
+        [
+         4.9,
+         -67.1
+        ],
+        [
+         0.0,
+         -67.2
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         18.0,
+         -25.3
+        ],
+        [
+         33.9,
+         -14.5
+        ],
+        [
+         36.6,
+         -25.9
+        ],
+        [
+         24.2,
+         -34.4
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "arquivo": "quadros/heavy/heavy_f5.png",
+     "largura": 125,
+     "altura": 102,
+     "ancora": [
+      57,
+      99
+     ],
+     "pivo": [
+      57,
+      99
+     ],
+     "ms": 70.0,
+     "sha256": "fd226b9784808db07db237c5b24797350dfcb3ce36f7c3f69d1350dfca55f5a6",
+     "nome_origem": "v4_A_heavy_f5",
+     "corpo_bbox": [
+      24,
+      55,
+      97,
+      98
+     ],
+     "sombra": {
+      "arquivo": "sombras/heavy_sombra.png",
+      "ancora": [
+       57,
+       99
+      ],
+      "largura": 125,
+      "altura": 102,
+      "pixels": 64,
+      "sha256": "5050ddf3cc6f45ee9e7b09bd95ed003a586aeba5ed7161d53b0e2cdec62e6835"
+     },
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 (da cabeca para a frente) e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       0,
+       -96,
+       69,
+       96
+      ],
+      "cobertura_pixels_pct": 99.5,
+      "pixels_atras_do_corpo_excluidos": 0,
+      "espelha_com_a_direcao": "inverter x quando o Carrasco olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         0.0,
+         -95.3
+        ],
+        [
+         9.0,
+         -95.4
+        ],
+        [
+         18.7,
+         -94.0
+        ],
+        [
+         28.1,
+         -91.2
+        ],
+        [
+         36.9,
+         -86.9
+        ],
+        [
+         44.9,
+         -81.4
+        ],
+        [
+         52.0,
+         -74.7
+        ],
+        [
+         58.0,
+         -67.0
+        ],
+        [
+         62.7,
+         -58.4
+        ],
+        [
+         66.1,
+         -49.3
+        ],
+        [
+         68.0,
+         -39.7
+        ],
+        [
+         68.5,
+         -29.9
+        ],
+        [
+         67.4,
+         -20.2
+        ],
+        [
+         64.8,
+         -10.8
+        ],
+        [
+         60.9,
+         -1.8
+        ],
+        [
+         59.7,
+         0.0
+        ],
+        [
+         50.0,
+         0.0
+        ],
+        [
+         51.4,
+         -6.9
+        ],
+        [
+         52.5,
+         -15.1
+        ],
+        [
+         53.1,
+         -22.9
+        ],
+        [
+         53.1,
+         -30.4
+        ],
+        [
+         52.7,
+         -37.8
+        ],
+        [
+         51.6,
+         -45.2
+        ],
+        [
+         49.8,
+         -52.5
+        ],
+        [
+         47.2,
+         -59.8
+        ],
+        [
+         43.4,
+         -66.9
+        ],
+        [
+         38.6,
+         -73.5
+        ],
+        [
+         32.6,
+         -79.6
+        ],
+        [
+         25.5,
+         -84.6
+        ],
+        [
+         17.5,
+         -88.6
+        ],
+        [
+         8.8,
+         -91.1
+        ],
+        [
+         0.0,
+         -92.0
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         17.1,
+         -8.8
+        ],
+        [
+         28.0,
+         0.0
+        ],
+        [
+         36.3,
+         0.0
+        ],
+        [
+         38.2,
+         -5.9
+        ],
+        [
+         24.0,
+         -17.4
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "arquivo": "quadros/heavy/heavy_f6.png",
+     "largura": 125,
+     "altura": 102,
+     "ancora": [
+      57,
+      99
+     ],
+     "pivo": [
+      57,
+      99
+     ],
+     "ms": 150.0,
+     "sha256": "8ee9f9486d98a9852a819be9c8cb9a9a193a4da955139e98979d74959cdc4979",
+     "nome_origem": "v4_A_heavy_f6",
+     "corpo_bbox": [
+      25,
+      55,
+      96,
+      98
+     ],
+     "sombra": {
+      "arquivo": "sombras/heavy_sombra.png",
+      "ancora": [
+       57,
+       99
+      ],
+      "largura": 125,
+      "altura": 102,
+      "pixels": 64,
+      "sha256": "5050ddf3cc6f45ee9e7b09bd95ed003a586aeba5ed7161d53b0e2cdec62e6835"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/heavy/heavy_f7.png",
+     "largura": 125,
+     "altura": 102,
+     "ancora": [
+      57,
+      99
+     ],
+     "pivo": [
+      57,
+      99
+     ],
+     "ms": 140.0,
+     "sha256": "4d3dac6e653a5efc3a1b7da670fb903a6db42510dae4bcccef26868d5fb6dff3",
+     "nome_origem": "v4_A_heavy_f7",
+     "corpo_bbox": [
+      32,
+      55,
+      96,
+      98
+     ],
+     "sombra": {
+      "arquivo": "sombras/heavy_sombra.png",
+      "ancora": [
+       57,
+       99
+      ],
+      "largura": 125,
+      "altura": 102,
+      "pixels": 64,
+      "sha256": "5050ddf3cc6f45ee9e7b09bd95ed003a586aeba5ed7161d53b0e2cdec62e6835"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/heavy/heavy_f8.png",
+     "largura": 125,
+     "altura": 102,
+     "ancora": [
+      57,
+      99
+     ],
+     "pivo": [
+      57,
+      99
+     ],
+     "ms": 140.0,
+     "sha256": "44712675f6c48d030009322ed6049b56d4e0c127f267a5f522e7f688168f2cf0",
+     "nome_origem": "v4_A_heavy_f8",
+     "corpo_bbox": [
+      35,
+      54,
+      96,
+      98
+     ],
+     "sombra": {
+      "arquivo": "sombras/heavy_sombra.png",
+      "ancora": [
+       57,
+       99
+      ],
+      "largura": 125,
+      "altura": 102,
+      "pixels": 64,
+      "sha256": "5050ddf3cc6f45ee9e7b09bd95ed003a586aeba5ed7161d53b0e2cdec62e6835"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/heavy_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [
+    {
+     "quadro": 4,
+     "arquivo": "efeitos/heavy_fx_f4.png",
+     "ancora": [
+      57,
+      99
+     ],
+     "largura": 125,
+     "altura": 102,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 3518,
+     "sha256": "90b94fc353fb0c49b8d41ba4a4b23fef1e2a54e7fe45ca3078c995f8952955e3"
+    },
+    {
+     "quadro": 5,
+     "arquivo": "efeitos/heavy_fx_f5.png",
+     "ancora": [
+      57,
+      99
+     ],
+     "largura": 125,
+     "altura": 102,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 1085,
+     "sha256": "b5229c8d2af00c2790a22ecd9d1168988ee2078f1a0dab7623403fad3d6b299a"
+    },
+    {
+     "quadro": 6,
+     "arquivo": "efeitos/heavy_fx_f6.png",
+     "ancora": [
+      57,
+      99
+     ],
+     "largura": 125,
+     "altura": 102,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 5,
+     "sha256": "fd77555cb207a11c3bd0d82c07e735569b2182be38cc90dc9c3be4bd20053c30"
+    },
+    {
+     "quadro": 7,
+     "arquivo": "efeitos/heavy_fx_f7.png",
+     "ancora": [
+      57,
+      99
+     ],
+     "largura": 125,
+     "altura": 102,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 3,
+     "sha256": "a6cd5b9778cd7e98e323f645ae773e17d37ce77730811e65a03a656fe705b542"
+    },
+    {
+     "quadro": 8,
+     "arquivo": "efeitos/heavy_fx_f8.png",
+     "ancora": [
+      57,
+      99
+     ],
+     "largura": 125,
+     "altura": 102,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 2,
+     "sha256": "59db2a9a37549bd6976d7fe3f785ed6916795168bc2e860614dcbd0d466b55d4"
+    }
+   ],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo.",
+   "ataque": {
+    "attack_id": "carrasco_heavy",
+    "tres": {
+     "windup_ms": 320.0,
+     "active_ms": 140.0,
+     "recovery_ms": 430.0
+    },
+    "fases": {
+     "PREPARACAO": {
+      "quadros": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "ms": 320
+     },
+     "ATIVO": {
+      "quadros": [
+       4,
+       5
+      ],
+      "ms": 140
+     },
+     "RECUPERACAO": {
+      "quadros": [
+       6,
+       7,
+       8
+      ],
+      "ms": 430
+     }
+    },
+    "soma_confere_com_tres": true,
+    "dano_recortado": "so a frente do corpo e acima do chao"
+   }
+  },
+  {
+   "id": "light1",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 7,
+   "duracao_total_ms": 460.0,
+   "nota_tempo": "leve 1 - horizontal baixo: prep 2 q (130) / ativo 2 q (110) / recup 3 q (220) = 460 ms; arco menor que o do heavy",
+   "quadros": [
+    {
+     "arquivo": "quadros/light1/light1_f0.png",
+     "largura": 94,
+     "altura": 51,
+     "ancora": [
+      51,
+      48
+     ],
+     "pivo": [
+      51,
+      48
+     ],
+     "ms": 60.0,
+     "sha256": "7d16b9b7e55e5ca3efbb156ab21d34d1a8563c4973259c4a3afaae52dd93cdb5",
+     "nome_origem": "v4_A_light1_f0",
+     "corpo_bbox": [
+      12,
+      1,
+      69,
+      47
+     ],
+     "sombra": {
+      "arquivo": "sombras/light1_sombra.png",
+      "ancora": [
+       51,
+       48
+      ],
+      "largura": 94,
+      "altura": 51,
+      "pixels": 60,
+      "sha256": "a86ee6e50a53d37c183b46878da27db99d98bbba343233dca19a145e372c2b53"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/light1/light1_f1.png",
+     "largura": 94,
+     "altura": 51,
+     "ancora": [
+      51,
+      48
+     ],
+     "pivo": [
+      51,
+      48
+     ],
+     "ms": 70.0,
+     "sha256": "1d1f691f1882898ba1de05e4b5b76cb577d0e172e76a125f89545288c7f5cbad",
+     "nome_origem": "v4_A_light1_f1",
+     "corpo_bbox": [
+      1,
+      3,
+      70,
+      47
+     ],
+     "sombra": {
+      "arquivo": "sombras/light1_sombra.png",
+      "ancora": [
+       51,
+       48
+      ],
+      "largura": 94,
+      "altura": 51,
+      "pixels": 60,
+      "sha256": "a86ee6e50a53d37c183b46878da27db99d98bbba343233dca19a145e372c2b53"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/light1/light1_f2.png",
+     "largura": 94,
+     "altura": 51,
+     "ancora": [
+      51,
+      48
+     ],
+     "pivo": [
+      51,
+      48
+     ],
+     "ms": 50.0,
+     "sha256": "3050068155102a3563c394c55a9e7df379d2659ae8e7af6fa820d84acb7ab715",
+     "nome_origem": "v4_A_light1_f2",
+     "corpo_bbox": [
+      33,
+      3,
+      89,
+      47
+     ],
+     "sombra": {
+      "arquivo": "sombras/light1_sombra.png",
+      "ancora": [
+       51,
+       48
+      ],
+      "largura": 94,
+      "altura": 51,
+      "pixels": 60,
+      "sha256": "a86ee6e50a53d37c183b46878da27db99d98bbba343233dca19a145e372c2b53"
+     },
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 (da cabeca para a frente) e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       0,
+       -23,
+       38,
+       20
+      ],
+      "cobertura_pixels_pct": 100.0,
+      "pixels_atras_do_corpo_excluidos": 420,
+      "espelha_com_a_direcao": "inverter x quando o Carrasco olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         0.0,
+         -3.7
+        ],
+        [
+         1.7,
+         -3.5
+        ],
+        [
+         6.8,
+         -3.7
+        ],
+        [
+         11.9,
+         -4.4
+        ],
+        [
+         16.8,
+         -5.7
+        ],
+        [
+         21.5,
+         -7.6
+        ],
+        [
+         26.0,
+         -10.1
+        ],
+        [
+         30.1,
+         -13.0
+        ],
+        [
+         33.9,
+         -16.4
+        ],
+        [
+         37.3,
+         -20.2
+        ],
+        [
+         35.3,
+         -21.8
+        ],
+        [
+         29.6,
+         -20.7
+        ],
+        [
+         24.6,
+         -19.9
+        ],
+        [
+         20.1,
+         -19.5
+        ],
+        [
+         15.9,
+         -19.5
+        ],
+        [
+         12.1,
+         -19.8
+        ],
+        [
+         8.6,
+         -20.3
+        ],
+        [
+         5.3,
+         -20.9
+        ],
+        [
+         2.3,
+         -21.6
+        ],
+        [
+         0.0,
+         -22.1
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         19.6,
+         -9.3
+        ],
+        [
+         36.8,
+         -5.6
+        ],
+        [
+         35.1,
+         -17.3
+        ],
+        [
+         21.9,
+         -20.1
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "arquivo": "quadros/light1/light1_f3.png",
+     "largura": 94,
+     "altura": 51,
+     "ancora": [
+      51,
+      48
+     ],
+     "pivo": [
+      51,
+      48
+     ],
+     "ms": 60.0,
+     "sha256": "a56d2efb2270bdd80e6109932a17c58ada7d53f11c4e541236187c293eb54657",
+     "nome_origem": "v4_A_light1_f3",
+     "corpo_bbox": [
+      23,
+      4,
+      92,
+      47
+     ],
+     "sombra": {
+      "arquivo": "sombras/light1_sombra.png",
+      "ancora": [
+       51,
+       48
+      ],
+      "largura": 94,
+      "altura": 51,
+      "pixels": 60,
+      "sha256": "a86ee6e50a53d37c183b46878da27db99d98bbba343233dca19a145e372c2b53"
+     },
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 (da cabeca para a frente) e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       1,
+       -34,
+       44,
+       32
+      ],
+      "cobertura_pixels_pct": 100.0,
+      "pixels_atras_do_corpo_excluidos": 0,
+      "espelha_com_a_direcao": "inverter x quando o Carrasco olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         1.5,
+         -2.5
+        ],
+        [
+         4.8,
+         -2.5
+        ],
+        [
+         8.1,
+         -2.8
+        ],
+        [
+         11.3,
+         -3.3
+        ],
+        [
+         14.6,
+         -4.1
+        ],
+        [
+         17.7,
+         -5.1
+        ],
+        [
+         20.8,
+         -6.3
+        ],
+        [
+         23.7,
+         -7.8
+        ],
+        [
+         26.6,
+         -9.4
+        ],
+        [
+         29.3,
+         -11.3
+        ],
+        [
+         31.8,
+         -13.4
+        ],
+        [
+         34.2,
+         -15.7
+        ],
+        [
+         36.4,
+         -18.2
+        ],
+        [
+         38.5,
+         -20.8
+        ],
+        [
+         40.3,
+         -23.6
+        ],
+        [
+         41.9,
+         -26.5
+        ],
+        [
+         43.2,
+         -29.5
+        ],
+        [
+         44.4,
+         -32.6
+        ],
+        [
+         42.0,
+         -33.3
+        ],
+        [
+         37.9,
+         -31.6
+        ],
+        [
+         34.8,
+         -30.0
+        ],
+        [
+         32.1,
+         -28.5
+        ],
+        [
+         29.8,
+         -26.9
+        ],
+        [
+         27.8,
+         -25.4
+        ],
+        [
+         26.0,
+         -23.7
+        ],
+        [
+         24.3,
+         -21.9
+        ],
+        [
+         22.7,
+         -20.0
+        ],
+        [
+         21.0,
+         -18.1
+        ],
+        [
+         19.3,
+         -16.0
+        ],
+        [
+         17.4,
+         -13.9
+        ],
+        [
+         15.2,
+         -11.9
+        ],
+        [
+         12.9,
+         -10.0
+        ],
+        [
+         10.4,
+         -8.3
+        ],
+        [
+         7.6,
+         -6.8
+        ],
+        [
+         4.7,
+         -5.7
+        ],
+        [
+         1.6,
+         -5.0
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         22.3,
+         -11.0
+        ],
+        [
+         39.7,
+         -6.7
+        ],
+        [
+         38.3,
+         -18.3
+        ],
+        [
+         25.0,
+         -21.7
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "arquivo": "quadros/light1/light1_f4.png",
+     "largura": 94,
+     "altura": 51,
+     "ancora": [
+      51,
+      48
+     ],
+     "pivo": [
+      51,
+      48
+     ],
+     "ms": 70.0,
+     "sha256": "871cd7dd21144ed7155b59789b8132ea18fdd7df4525a296a04f1b573a17a9f0",
+     "nome_origem": "v4_A_light1_f4",
+     "corpo_bbox": [
+      24,
+      4,
+      91,
+      47
+     ],
+     "sombra": {
+      "arquivo": "sombras/light1_sombra.png",
+      "ancora": [
+       51,
+       48
+      ],
+      "largura": 94,
+      "altura": 51,
+      "pixels": 60,
+      "sha256": "a86ee6e50a53d37c183b46878da27db99d98bbba343233dca19a145e372c2b53"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/light1/light1_f5.png",
+     "largura": 94,
+     "altura": 51,
+     "ancora": [
+      51,
+      48
+     ],
+     "pivo": [
+      51,
+      48
+     ],
+     "ms": 70.0,
+     "sha256": "ecd3998e277296b5f2c9eaf7d96a50450ba3ca2c0151706fe2e3ec12fe91d164",
+     "nome_origem": "v4_A_light1_f5",
+     "corpo_bbox": [
+      26,
+      3,
+      88,
+      47
+     ],
+     "sombra": {
+      "arquivo": "sombras/light1_sombra.png",
+      "ancora": [
+       51,
+       48
+      ],
+      "largura": 94,
+      "altura": 51,
+      "pixels": 60,
+      "sha256": "a86ee6e50a53d37c183b46878da27db99d98bbba343233dca19a145e372c2b53"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/light1/light1_f6.png",
+     "largura": 94,
+     "altura": 51,
+     "ancora": [
+      51,
+      48
+     ],
+     "pivo": [
+      51,
+      48
+     ],
+     "ms": 80.0,
+     "sha256": "ffcac04f2d284a10a0db52a7d9a8028c4b925c66bf9d20034e21866f5895ec21",
+     "nome_origem": "v4_A_light1_f6",
+     "corpo_bbox": [
+      27,
+      2,
+      84,
+      47
+     ],
+     "sombra": {
+      "arquivo": "sombras/light1_sombra.png",
+      "ancora": [
+       51,
+       48
+      ],
+      "largura": 94,
+      "altura": 51,
+      "pixels": 60,
+      "sha256": "a86ee6e50a53d37c183b46878da27db99d98bbba343233dca19a145e372c2b53"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/light1_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [
+    {
+     "quadro": 2,
+     "arquivo": "efeitos/light1_fx_f2.png",
+     "ancora": [
+      51,
+      48
+     ],
+     "largura": 94,
+     "altura": 51,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 785,
+     "sha256": "65b5dff9edcc6ecb078176b4d32ae1984adde1786b9529164995cc3f532ead35"
+    },
+    {
+     "quadro": 3,
+     "arquivo": "efeitos/light1_fx_f3.png",
+     "ancora": [
+      51,
+      48
+     ],
+     "largura": 94,
+     "altura": 51,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 265,
+     "sha256": "9c7156328ab7972542dddd865613524b11183d42577374fa9cb8fbcdcbb1eae9"
+    }
+   ],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo.",
+   "ataque": {
+    "attack_id": "carrasco_light_1",
+    "tres": {
+     "windup_ms": 130.0,
+     "active_ms": 110.0,
+     "recovery_ms": 220.0
+    },
+    "fases": {
+     "PREPARACAO": {
+      "quadros": [
+       0,
+       1
+      ],
+      "ms": 130
+     },
+     "ATIVO": {
+      "quadros": [
+       2,
+       3
+      ],
+      "ms": 110
+     },
+     "RECUPERACAO": {
+      "quadros": [
+       4,
+       5,
+       6
+      ],
+      "ms": 220
+     }
+    },
+    "soma_confere_com_tres": true,
+    "dano_recortado": "so a frente do corpo e acima do chao"
+   }
+  },
+  {
+   "id": "light2",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 8,
+   "duracao_total_ms": 520.0,
+   "nota_tempo": "leve 2 - diagonal subindo: prep 3 q (160) / ativo 2 q (110) / recup 3 q (250) = 520 ms",
+   "quadros": [
+    {
+     "arquivo": "quadros/light2/light2_f0.png",
+     "largura": 73,
+     "altura": 69,
+     "ancora": [
+      31,
+      66
+     ],
+     "pivo": [
+      31,
+      66
+     ],
+     "ms": 50.0,
+     "sha256": "211c6f3dcf5a16168d86efb923c0f96ae3344b0d98a9543d801979225f3b5d6d",
+     "nome_origem": "v4_A_light2_f0",
+     "corpo_bbox": [
+      9,
+      20,
+      61,
+      65
+     ],
+     "sombra": {
+      "arquivo": "sombras/light2_sombra.png",
+      "ancora": [
+       31,
+       66
+      ],
+      "largura": 73,
+      "altura": 69,
+      "pixels": 60,
+      "sha256": "192b994308eed9cf5e58ce29823cbc1a2120a854f2ab3a6540e7b84b3d81ac2c"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/light2/light2_f1.png",
+     "largura": 73,
+     "altura": 69,
+     "ancora": [
+      31,
+      66
+     ],
+     "pivo": [
+      31,
+      66
+     ],
+     "ms": 50.0,
+     "sha256": "338bfb6e3fc89a9b98cfa263c6850ac6a4876d64784de38d906bbe4eec96306f",
+     "nome_origem": "v4_A_light2_f1",
+     "corpo_bbox": [
+      9,
+      22,
+      60,
+      65
+     ],
+     "sombra": {
+      "arquivo": "sombras/light2_sombra.png",
+      "ancora": [
+       31,
+       66
+      ],
+      "largura": 73,
+      "altura": 69,
+      "pixels": 60,
+      "sha256": "192b994308eed9cf5e58ce29823cbc1a2120a854f2ab3a6540e7b84b3d81ac2c"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/light2/light2_f2.png",
+     "largura": 73,
+     "altura": 69,
+     "ancora": [
+      31,
+      66
+     ],
+     "pivo": [
+      31,
+      66
+     ],
+     "ms": 60.0,
+     "sha256": "d34b748597f11958088a1724aa2a01fdcdf0c904dd74a8a74292d91efcfc4377",
+     "nome_origem": "v4_A_light2_f2",
+     "corpo_bbox": [
+      11,
+      24,
+      58,
+      65
+     ],
+     "sombra": {
+      "arquivo": "sombras/light2_sombra.png",
+      "ancora": [
+       31,
+       66
+      ],
+      "largura": 73,
+      "altura": 69,
+      "pixels": 60,
+      "sha256": "192b994308eed9cf5e58ce29823cbc1a2120a854f2ab3a6540e7b84b3d81ac2c"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/light2/light2_f3.png",
+     "largura": 73,
+     "altura": 69,
+     "ancora": [
+      31,
+      66
+     ],
+     "pivo": [
+      31,
+      66
+     ],
+     "ms": 50.0,
+     "sha256": "fb3c7c2cdf621cdb1c9362e047988a091b2ef4f22b19d94a3371822a551afd79",
+     "nome_origem": "v4_A_light2_f3",
+     "corpo_bbox": [
+      12,
+      21,
+      70,
+      65
+     ],
+     "sombra": {
+      "arquivo": "sombras/light2_sombra.png",
+      "ancora": [
+       31,
+       66
+      ],
+      "largura": 73,
+      "altura": 69,
+      "pixels": 60,
+      "sha256": "192b994308eed9cf5e58ce29823cbc1a2120a854f2ab3a6540e7b84b3d81ac2c"
+     },
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 (da cabeca para a frente) e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       7,
+       -62,
+       38,
+       62
+      ],
+      "cobertura_pixels_pct": 100.0,
+      "pixels_atras_do_corpo_excluidos": 0,
+      "espelha_com_a_direcao": "inverter x quando o Carrasco olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         38.1,
+         0.0
+        ],
+        [
+         38.6,
+         -1.1
+        ],
+        [
+         40.5,
+         -5.9
+        ],
+        [
+         41.7,
+         -10.9
+        ],
+        [
+         42.4,
+         -16.1
+        ],
+        [
+         42.4,
+         -21.2
+        ],
+        [
+         41.9,
+         -26.4
+        ],
+        [
+         40.7,
+         -31.4
+        ],
+        [
+         38.9,
+         -36.3
+        ],
+        [
+         36.6,
+         -40.9
+        ],
+        [
+         33.7,
+         -45.2
+        ],
+        [
+         30.4,
+         -49.2
+        ],
+        [
+         26.5,
+         -52.7
+        ],
+        [
+         22.4,
+         -55.7
+        ],
+        [
+         17.8,
+         -58.2
+        ],
+        [
+         13.0,
+         -60.2
+        ],
+        [
+         8.0,
+         -61.5
+        ],
+        [
+         7.5,
+         -59.1
+        ],
+        [
+         11.1,
+         -54.4
+        ],
+        [
+         14.0,
+         -50.3
+        ],
+        [
+         16.4,
+         -46.3
+        ],
+        [
+         18.3,
+         -42.5
+        ],
+        [
+         19.7,
+         -38.9
+        ],
+        [
+         20.8,
+         -35.4
+        ],
+        [
+         21.6,
+         -32.2
+        ],
+        [
+         22.3,
+         -29.1
+        ],
+        [
+         23.0,
+         -26.2
+        ],
+        [
+         23.7,
+         -23.2
+        ],
+        [
+         24.4,
+         -20.3
+        ],
+        [
+         25.3,
+         -17.2
+        ],
+        [
+         26.2,
+         -13.9
+        ],
+        [
+         27.2,
+         -10.1
+        ],
+        [
+         28.1,
+         -5.8
+        ],
+        [
+         29.1,
+         -0.8
+        ],
+        [
+         29.4,
+         0.0
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         27.3,
+         -28.1
+        ],
+        [
+         44.1,
+         -34.9
+        ],
+        [
+         36.1,
+         -43.5
+        ],
+        [
+         23.1,
+         -38.2
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "arquivo": "quadros/light2/light2_f4.png",
+     "largura": 73,
+     "altura": 69,
+     "ancora": [
+      31,
+      66
+     ],
+     "pivo": [
+      31,
+      66
+     ],
+     "ms": 60.0,
+     "sha256": "896dbf8cd8f87fceffa537f8114556c66d5251de436ed06bc3fd88aa10285a0c",
+     "nome_origem": "v4_A_light2_f4",
+     "corpo_bbox": [
+      2,
+      1,
+      58,
+      65
+     ],
+     "sombra": {
+      "arquivo": "sombras/light2_sombra.png",
+      "ancora": [
+       31,
+       66
+      ],
+      "largura": 73,
+      "altura": 69,
+      "pixels": 60,
+      "sha256": "192b994308eed9cf5e58ce29823cbc1a2120a854f2ab3a6540e7b84b3d81ac2c"
+     },
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 (da cabeca para a frente) e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       0,
+       -64,
+       38,
+       25
+      ],
+      "cobertura_pixels_pct": 100.0,
+      "pixels_atras_do_corpo_excluidos": 2,
+      "espelha_com_a_direcao": "inverter x quando o Carrasco olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         37.4,
+         -40.4
+        ],
+        [
+         36.0,
+         -42.9
+        ],
+        [
+         34.4,
+         -45.3
+        ],
+        [
+         32.7,
+         -47.5
+        ],
+        [
+         30.8,
+         -49.7
+        ],
+        [
+         28.8,
+         -51.7
+        ],
+        [
+         26.6,
+         -53.6
+        ],
+        [
+         24.4,
+         -55.3
+        ],
+        [
+         22.0,
+         -56.9
+        ],
+        [
+         19.5,
+         -58.4
+        ],
+        [
+         16.9,
+         -59.6
+        ],
+        [
+         14.3,
+         -60.7
+        ],
+        [
+         11.6,
+         -61.6
+        ],
+        [
+         8.8,
+         -62.4
+        ],
+        [
+         6.0,
+         -62.9
+        ],
+        [
+         3.2,
+         -63.3
+        ],
+        [
+         0.3,
+         -63.5
+        ],
+        [
+         0.0,
+         -63.5
+        ],
+        [
+         0.0,
+         -58.0
+        ],
+        [
+         0.2,
+         -57.7
+        ],
+        [
+         2.4,
+         -55.5
+        ],
+        [
+         4.5,
+         -53.6
+        ],
+        [
+         6.4,
+         -52.0
+        ],
+        [
+         8.3,
+         -50.9
+        ],
+        [
+         10.3,
+         -50.0
+        ],
+        [
+         12.2,
+         -49.3
+        ],
+        [
+         14.3,
+         -48.7
+        ],
+        [
+         16.6,
+         -48.2
+        ],
+        [
+         18.9,
+         -47.7
+        ],
+        [
+         21.3,
+         -47.1
+        ],
+        [
+         23.8,
+         -46.4
+        ],
+        [
+         26.3,
+         -45.5
+        ],
+        [
+         28.7,
+         -44.3
+        ],
+        [
+         31.1,
+         -42.9
+        ],
+        [
+         33.3,
+         -41.2
+        ],
+        [
+         35.2,
+         -39.2
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         21.8,
+         -44.4
+        ],
+        [
+         29.9,
+         -60.5
+        ],
+        [
+         18.2,
+         -61.7
+        ],
+        [
+         12.0,
+         -49.3
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "arquivo": "quadros/light2/light2_f5.png",
+     "largura": 73,
+     "altura": 69,
+     "ancora": [
+      31,
+      66
+     ],
+     "pivo": [
+      31,
+      66
+     ],
+     "ms": 80.0,
+     "sha256": "e229a617e467b4a3c5d30a71511689e212f795c744ab2276ab342f049d4d473f",
+     "nome_origem": "v4_A_light2_f5",
+     "corpo_bbox": [
+      1,
+      3,
+      60,
+      65
+     ],
+     "sombra": {
+      "arquivo": "sombras/light2_sombra.png",
+      "ancora": [
+       31,
+       66
+      ],
+      "largura": 73,
+      "altura": 69,
+      "pixels": 60,
+      "sha256": "192b994308eed9cf5e58ce29823cbc1a2120a854f2ab3a6540e7b84b3d81ac2c"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/light2/light2_f6.png",
+     "largura": 73,
+     "altura": 69,
+     "ancora": [
+      31,
+      66
+     ],
+     "pivo": [
+      31,
+      66
+     ],
+     "ms": 80.0,
+     "sha256": "3d91cabd21fff2148f3747e1976ce44da3c37603abaf1bedda965941e05d2bfa",
+     "nome_origem": "v4_A_light2_f6",
+     "corpo_bbox": [
+      3,
+      20,
+      70,
+      65
+     ],
+     "sombra": {
+      "arquivo": "sombras/light2_sombra.png",
+      "ancora": [
+       31,
+       66
+      ],
+      "largura": 73,
+      "altura": 69,
+      "pixels": 60,
+      "sha256": "192b994308eed9cf5e58ce29823cbc1a2120a854f2ab3a6540e7b84b3d81ac2c"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/light2/light2_f7.png",
+     "largura": 73,
+     "altura": 69,
+     "ancora": [
+      31,
+      66
+     ],
+     "pivo": [
+      31,
+      66
+     ],
+     "ms": 90.0,
+     "sha256": "7ed9c652e29e6ad5d11d9f3eef4f0b712a46238edf2117545b5cb748e74bf5be",
+     "nome_origem": "v4_A_light2_f7",
+     "corpo_bbox": [
+      7,
+      20,
+      66,
+      65
+     ],
+     "sombra": {
+      "arquivo": "sombras/light2_sombra.png",
+      "ancora": [
+       31,
+       66
+      ],
+      "largura": 73,
+      "altura": 69,
+      "pixels": 60,
+      "sha256": "192b994308eed9cf5e58ce29823cbc1a2120a854f2ab3a6540e7b84b3d81ac2c"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/light2_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [
+    {
+     "quadro": 3,
+     "arquivo": "efeitos/light2_fx_f3.png",
+     "ancora": [
+      31,
+      66
+     ],
+     "largura": 73,
+     "altura": 69,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 772,
+     "sha256": "29060ff175b5d2848bfbecc200326c7b5d59cf8528a84cd41b966ee832fe2d57"
+    },
+    {
+     "quadro": 4,
+     "arquivo": "efeitos/light2_fx_f4.png",
+     "ancora": [
+      31,
+      66
+     ],
+     "largura": 73,
+     "altura": 69,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 229,
+     "sha256": "fd50a911c2e7a525e024a53a25863bd0ba71a82dc495ee76faede6d984c9e420"
+    }
+   ],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo.",
+   "ataque": {
+    "attack_id": "carrasco_light_2",
+    "tres": {
+     "windup_ms": 160.0,
+     "active_ms": 110.0,
+     "recovery_ms": 250.0
+    },
+    "fases": {
+     "PREPARACAO": {
+      "quadros": [
+       0,
+       1,
+       2
+      ],
+      "ms": 160
+     },
+     "ATIVO": {
+      "quadros": [
+       3,
+       4
+      ],
+      "ms": 110
+     },
+     "RECUPERACAO": {
+      "quadros": [
+       5,
+       6,
+       7
+      ],
+      "ms": 250
+     }
+    },
+    "soma_confere_com_tres": true,
+    "dano_recortado": "so a frente do corpo e acima do chao"
+   }
+  },
+  {
+   "id": "light3",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 9,
+   "duracao_total_ms": 670.0,
+   "nota_tempo": "leve 3 - de cima para baixo, arco maior: prep 3 q (220) / ativo 2 q (130) / recup 4 q (320) = 670 ms",
+   "quadros": [
+    {
+     "arquivo": "quadros/light3/light3_f0.png",
+     "largura": 97,
+     "altura": 87,
+     "ancora": [
+      47,
+      84
+     ],
+     "pivo": [
+      47,
+      84
+     ],
+     "ms": 70.0,
+     "sha256": "a3b47285e5be667c5af9e2a59d2d03f7484cfbd34f8c9c044d9c953c9f662c95",
+     "nome_origem": "v4_A_light3_f0",
+     "corpo_bbox": [
+      25,
+      14,
+      65,
+      83
+     ],
+     "sombra": {
+      "arquivo": "sombras/light3_sombra.png",
+      "ancora": [
+       47,
+       84
+      ],
+      "largura": 97,
+      "altura": 87,
+      "pixels": 64,
+      "sha256": "de2838d77ebc4f940c12cfbdf4a67c419b19e867590df0b81a4d22cfe1511bd9"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/light3/light3_f1.png",
+     "largura": 97,
+     "altura": 87,
+     "ancora": [
+      47,
+      84
+     ],
+     "pivo": [
+      47,
+      84
+     ],
+     "ms": 70.0,
+     "sha256": "6a29ce7f1579b0f296bb0f7f531e61e6c51f80604f47b2e97355d7c92eb51829",
+     "nome_origem": "v4_A_light3_f1",
+     "corpo_bbox": [
+      6,
+      29,
+      66,
+      83
+     ],
+     "sombra": {
+      "arquivo": "sombras/light3_sombra.png",
+      "ancora": [
+       47,
+       84
+      ],
+      "largura": 97,
+      "altura": 87,
+      "pixels": 64,
+      "sha256": "de2838d77ebc4f940c12cfbdf4a67c419b19e867590df0b81a4d22cfe1511bd9"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/light3/light3_f2.png",
+     "largura": 97,
+     "altura": 87,
+     "ancora": [
+      47,
+      84
+     ],
+     "pivo": [
+      47,
+      84
+     ],
+     "ms": 80.0,
+     "sha256": "c0522ecea643e88efacdf3c8b650caac537e456d4dd0e7fee86d6ea2c14fe8ab",
+     "nome_origem": "v4_A_light3_f2",
+     "corpo_bbox": [
+      1,
+      39,
+      67,
+      83
+     ],
+     "sombra": {
+      "arquivo": "sombras/light3_sombra.png",
+      "ancora": [
+       47,
+       84
+      ],
+      "largura": 97,
+      "altura": 87,
+      "pixels": 64,
+      "sha256": "de2838d77ebc4f940c12cfbdf4a67c419b19e867590df0b81a4d22cfe1511bd9"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/light3/light3_f3.png",
+     "largura": 97,
+     "altura": 87,
+     "ancora": [
+      47,
+      84
+     ],
+     "pivo": [
+      47,
+      84
+     ],
+     "ms": 65.0,
+     "sha256": "0db4d9d030b1c1cba8bdba80830489f2381c413a09266350f4cd3f1e6f0fb3e2",
+     "nome_origem": "v4_A_light3_f3",
+     "corpo_bbox": [
+      30,
+      39,
+      88,
+      83
+     ],
+     "sombra": {
+      "arquivo": "sombras/light3_sombra.png",
+      "ancora": [
+       47,
+       84
+      ],
+      "largura": 97,
+      "altura": 87,
+      "pixels": 64,
+      "sha256": "de2838d77ebc4f940c12cfbdf4a67c419b19e867590df0b81a4d22cfe1511bd9"
+     },
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 (da cabeca para a frente) e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       0,
+       -85,
+       51,
+       68
+      ],
+      "cobertura_pixels_pct": 100.0,
+      "pixels_atras_do_corpo_excluidos": 495,
+      "espelha_com_a_direcao": "inverter x quando o Carrasco olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         0.0,
+         -84.3
+        ],
+        [
+         4.1,
+         -84.3
+        ],
+        [
+         12.0,
+         -82.8
+        ],
+        [
+         19.6,
+         -80.2
+        ],
+        [
+         26.6,
+         -76.4
+        ],
+        [
+         33.1,
+         -71.6
+        ],
+        [
+         38.7,
+         -65.9
+        ],
+        [
+         43.3,
+         -59.3
+        ],
+        [
+         46.8,
+         -52.1
+        ],
+        [
+         49.2,
+         -44.4
+        ],
+        [
+         50.4,
+         -36.5
+        ],
+        [
+         50.3,
+         -28.5
+        ],
+        [
+         49.0,
+         -20.5
+        ],
+        [
+         46.5,
+         -21.1
+        ],
+        [
+         42.8,
+         -29.1
+        ],
+        [
+         39.2,
+         -35.7
+        ],
+        [
+         35.3,
+         -41.3
+        ],
+        [
+         31.0,
+         -45.8
+        ],
+        [
+         26.6,
+         -49.4
+        ],
+        [
+         22.2,
+         -52.2
+        ],
+        [
+         17.9,
+         -54.5
+        ],
+        [
+         13.8,
+         -56.3
+        ],
+        [
+         9.8,
+         -57.8
+        ],
+        [
+         5.8,
+         -59.2
+        ],
+        [
+         1.7,
+         -60.5
+        ],
+        [
+         0.0,
+         -61.0
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         21.1,
+         -24.8
+        ],
+        [
+         37.9,
+         -17.9
+        ],
+        [
+         38.2,
+         -29.7
+        ],
+        [
+         25.3,
+         -34.9
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "arquivo": "quadros/light3/light3_f4.png",
+     "largura": 97,
+     "altura": 87,
+     "ancora": [
+      47,
+      84
+     ],
+     "pivo": [
+      47,
+      84
+     ],
+     "ms": 65.0,
+     "sha256": "c3830f2e4e75450baa2dc82e83c17497702a4e252ca3d00b412e49f413b824b5",
+     "nome_origem": "v4_A_light3_f4",
+     "corpo_bbox": [
+      15,
+      41,
+      84,
+      83
+     ],
+     "sombra": {
+      "arquivo": "sombras/light3_sombra.png",
+      "ancora": [
+       47,
+       84
+      ],
+      "largura": 97,
+      "altura": 87,
+      "pixels": 64,
+      "sha256": "de2838d77ebc4f940c12cfbdf4a67c419b19e867590df0b81a4d22cfe1511bd9"
+     },
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 (da cabeca para a frente) e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       18,
+       -72,
+       33,
+       72
+      ],
+      "cobertura_pixels_pct": 100.0,
+      "pixels_atras_do_corpo_excluidos": 0,
+      "espelha_com_a_direcao": "inverter x quando o Carrasco olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         30.7,
+         -71.6
+        ],
+        [
+         35.1,
+         -67.8
+        ],
+        [
+         39.0,
+         -63.5
+        ],
+        [
+         42.4,
+         -58.7
+        ],
+        [
+         45.2,
+         -53.7
+        ],
+        [
+         47.5,
+         -48.3
+        ],
+        [
+         49.1,
+         -42.7
+        ],
+        [
+         50.1,
+         -37.0
+        ],
+        [
+         50.5,
+         -31.2
+        ],
+        [
+         50.2,
+         -25.4
+        ],
+        [
+         49.2,
+         -19.7
+        ],
+        [
+         47.6,
+         -14.1
+        ],
+        [
+         45.4,
+         -8.7
+        ],
+        [
+         42.6,
+         -3.6
+        ],
+        [
+         40.1,
+         0.0
+        ],
+        [
+         28.5,
+         0.0
+        ],
+        [
+         28.9,
+         -1.1
+        ],
+        [
+         30.5,
+         -5.9
+        ],
+        [
+         32.0,
+         -10.3
+        ],
+        [
+         33.5,
+         -14.5
+        ],
+        [
+         34.9,
+         -18.5
+        ],
+        [
+         36.3,
+         -22.6
+        ],
+        [
+         37.6,
+         -26.8
+        ],
+        [
+         38.7,
+         -31.2
+        ],
+        [
+         39.6,
+         -35.8
+        ],
+        [
+         40.0,
+         -40.6
+        ],
+        [
+         39.9,
+         -45.6
+        ],
+        [
+         39.2,
+         -50.7
+        ],
+        [
+         37.8,
+         -55.8
+        ],
+        [
+         35.7,
+         -60.8
+        ],
+        [
+         32.8,
+         -65.4
+        ],
+        [
+         29.2,
+         -69.6
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         18.0,
+         -7.1
+        ],
+        [
+         24.1,
+         -0.0
+        ],
+        [
+         33.4,
+         0.0
+        ],
+        [
+         35.4,
+         -3.8
+        ],
+        [
+         26.4,
+         -14.3
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "arquivo": "quadros/light3/light3_f5.png",
+     "largura": 97,
+     "altura": 87,
+     "ancora": [
+      47,
+      84
+     ],
+     "pivo": [
+      47,
+      84
+     ],
+     "ms": 80.0,
+     "sha256": "69c660537c713c7828d396e56b72b5cd267dae09f5a4c3a829daba6078f7348e",
+     "nome_origem": "v4_A_light3_f5",
+     "corpo_bbox": [
+      17,
+      41,
+      78,
+      83
+     ],
+     "sombra": {
+      "arquivo": "sombras/light3_sombra.png",
+      "ancora": [
+       47,
+       84
+      ],
+      "largura": 97,
+      "altura": 87,
+      "pixels": 64,
+      "sha256": "de2838d77ebc4f940c12cfbdf4a67c419b19e867590df0b81a4d22cfe1511bd9"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/light3/light3_f6.png",
+     "largura": 97,
+     "altura": 87,
+     "ancora": [
+      47,
+      84
+     ],
+     "pivo": [
+      47,
+      84
+     ],
+     "ms": 80.0,
+     "sha256": "36b3979a19aafeea2a9bd337c1e6bda4b026c6c25837711773f10d6101afdd20",
+     "nome_origem": "v4_A_light3_f6",
+     "corpo_bbox": [
+      20,
+      40,
+      81,
+      83
+     ],
+     "sombra": {
+      "arquivo": "sombras/light3_sombra.png",
+      "ancora": [
+       47,
+       84
+      ],
+      "largura": 97,
+      "altura": 87,
+      "pixels": 64,
+      "sha256": "de2838d77ebc4f940c12cfbdf4a67c419b19e867590df0b81a4d22cfe1511bd9"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/light3/light3_f7.png",
+     "largura": 97,
+     "altura": 87,
+     "ancora": [
+      47,
+      84
+     ],
+     "pivo": [
+      47,
+      84
+     ],
+     "ms": 80.0,
+     "sha256": "4588693d7b9b747dcc48c5753afbc97092921325557a042fd46346b9992ec1c2",
+     "nome_origem": "v4_A_light3_f7",
+     "corpo_bbox": [
+      24,
+      39,
+      81,
+      83
+     ],
+     "sombra": {
+      "arquivo": "sombras/light3_sombra.png",
+      "ancora": [
+       47,
+       84
+      ],
+      "largura": 97,
+      "altura": 87,
+      "pixels": 64,
+      "sha256": "de2838d77ebc4f940c12cfbdf4a67c419b19e867590df0b81a4d22cfe1511bd9"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/light3/light3_f8.png",
+     "largura": 97,
+     "altura": 87,
+     "ancora": [
+      47,
+      84
+     ],
+     "pivo": [
+      47,
+      84
+     ],
+     "ms": 80.0,
+     "sha256": "1c7dbeab1ffcc42065979bff19ee948398f168900dbcb8d214a0da3908a68ae2",
+     "nome_origem": "v4_A_light3_f8",
+     "corpo_bbox": [
+      26,
+      38,
+      80,
+      83
+     ],
+     "sombra": {
+      "arquivo": "sombras/light3_sombra.png",
+      "ancora": [
+       47,
+       84
+      ],
+      "largura": 97,
+      "altura": 87,
+      "pixels": 64,
+      "sha256": "de2838d77ebc4f940c12cfbdf4a67c419b19e867590df0b81a4d22cfe1511bd9"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/light3_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [
+    {
+     "quadro": 3,
+     "arquivo": "efeitos/light3_fx_f3.png",
+     "ancora": [
+      47,
+      84
+     ],
+     "largura": 97,
+     "altura": 87,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 1655,
+     "sha256": "08e14e9e9828cc2fc4753a51bab0566939ef83cd3ce54e616de4edfada98cacd"
+    },
+    {
+     "quadro": 4,
+     "arquivo": "efeitos/light3_fx_f4.png",
+     "ancora": [
+      47,
+      84
+     ],
+     "largura": 97,
+     "altura": 87,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 509,
+     "sha256": "883c81095aa69c53939d9ce3bca27b823825acf329b00e29fa5446d15833bc30"
+    }
+   ],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo.",
+   "ataque": {
+    "attack_id": "carrasco_light_3",
+    "tres": {
+     "windup_ms": 220.0,
+     "active_ms": 130.0,
+     "recovery_ms": 320.0
+    },
+    "fases": {
+     "PREPARACAO": {
+      "quadros": [
+       0,
+       1,
+       2
+      ],
+      "ms": 220
+     },
+     "ATIVO": {
+      "quadros": [
+       3,
+       4
+      ],
+      "ms": 130
+     },
+     "RECUPERACAO": {
+      "quadros": [
+       5,
+       6,
+       7,
+       8
+      ],
+      "ms": 320
+     }
+    },
+    "soma_confere_com_tres": true,
+    "dano_recortado": "so a frente do corpo e acima do chao"
+   }
+  },
+  {
+   "id": "post_dash",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 7,
+   "duracao_total_ms": 500.0,
+   "nota_tempo": "pos-dash - estocada com arco RETO (lente): prep 2 q (120) / ativo 2 q (110) / recup 3 q (270) = 500 ms",
+   "quadros": [
+    {
+     "arquivo": "quadros/post_dash/post_dash_f0.png",
+     "largura": 135,
+     "altura": 49,
+     "ancora": [
+      52,
+      46
+     ],
+     "pivo": [
+      52,
+      46
+     ],
+     "ms": 50.0,
+     "sha256": "5b6498010581be8c68c6be29fb0196302e90c1441ae442adf6a91080e611be19",
+     "nome_origem": "v4_A_post_dash_f0",
+     "corpo_bbox": [
+      11,
+      1,
+      70,
+      45
+     ],
+     "sombra": {
+      "arquivo": "sombras/post_dash_sombra.png",
+      "ancora": [
+       52,
+       46
+      ],
+      "largura": 135,
+      "altura": 49,
+      "pixels": 68,
+      "sha256": "043481a5c3470a842e2cce76545ab1d91b357453bf450accd0b65bf36f62e098"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/post_dash/post_dash_f1.png",
+     "largura": 135,
+     "altura": 49,
+     "ancora": [
+      52,
+      46
+     ],
+     "pivo": [
+      52,
+      46
+     ],
+     "ms": 70.0,
+     "sha256": "6d60240ea47a902037bd7fa31fb1c61501ae52daa5ae74ed4854b96268693139",
+     "nome_origem": "v4_A_post_dash_f1",
+     "corpo_bbox": [
+      1,
+      2,
+      71,
+      45
+     ],
+     "sombra": {
+      "arquivo": "sombras/post_dash_sombra.png",
+      "ancora": [
+       52,
+       46
+      ],
+      "largura": 135,
+      "altura": 49,
+      "pixels": 68,
+      "sha256": "043481a5c3470a842e2cce76545ab1d91b357453bf450accd0b65bf36f62e098"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/post_dash/post_dash_f2.png",
+     "largura": 135,
+     "altura": 49,
+     "ancora": [
+      52,
+      46
+     ],
+     "pivo": [
+      52,
+      46
+     ],
+     "ms": 50.0,
+     "sha256": "7682a5ba3ef6327d8e62c5df773098029c24df052010e131a74f00024ae1c1df",
+     "nome_origem": "v4_A_post_dash_f2",
+     "corpo_bbox": [
+      33,
+      3,
+      98,
+      45
+     ],
+     "sombra": {
+      "arquivo": "sombras/post_dash_sombra.png",
+      "ancora": [
+       52,
+       46
+      ],
+      "largura": 135,
+      "altura": 49,
+      "pixels": 68,
+      "sha256": "043481a5c3470a842e2cce76545ab1d91b357453bf450accd0b65bf36f62e098"
+     },
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 (da cabeca para a frente) e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       17,
+       -29,
+       66,
+       14
+      ],
+      "cobertura_pixels_pct": 100.0,
+      "pixels_atras_do_corpo_excluidos": 0,
+      "espelha_com_a_direcao": "inverter x quando o Carrasco olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         17.0,
+         -23.0
+        ],
+        [
+         21.4,
+         -25.6
+        ],
+        [
+         25.8,
+         -26.7
+        ],
+        [
+         30.2,
+         -27.5
+        ],
+        [
+         34.6,
+         -28.1
+        ],
+        [
+         39.0,
+         -28.5
+        ],
+        [
+         43.4,
+         -28.8
+        ],
+        [
+         47.8,
+         -28.9
+        ],
+        [
+         52.2,
+         -29.0
+        ],
+        [
+         56.6,
+         -29.0
+        ],
+        [
+         61.0,
+         -28.9
+        ],
+        [
+         65.4,
+         -28.6
+        ],
+        [
+         69.8,
+         -27.9
+        ],
+        [
+         74.2,
+         -26.8
+        ],
+        [
+         78.6,
+         -25.1
+        ],
+        [
+         83.0,
+         -23.0
+        ],
+        [
+         83.0,
+         -21.0
+        ],
+        [
+         78.6,
+         -18.9
+        ],
+        [
+         74.2,
+         -17.2
+        ],
+        [
+         69.8,
+         -16.1
+        ],
+        [
+         65.4,
+         -15.4
+        ],
+        [
+         61.0,
+         -15.1
+        ],
+        [
+         56.6,
+         -15.0
+        ],
+        [
+         52.2,
+         -15.0
+        ],
+        [
+         47.8,
+         -15.1
+        ],
+        [
+         43.4,
+         -15.2
+        ],
+        [
+         39.0,
+         -15.5
+        ],
+        [
+         34.6,
+         -15.9
+        ],
+        [
+         30.2,
+         -16.5
+        ],
+        [
+         25.8,
+         -17.3
+        ],
+        [
+         21.4,
+         -18.4
+        ],
+        [
+         17.0,
+         -21.0
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         29.8,
+         -17.1
+        ],
+        [
+         46.8,
+         -16.5
+        ],
+        [
+         43.0,
+         -27.6
+        ],
+        [
+         30.2,
+         -28.1
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "arquivo": "quadros/post_dash/post_dash_f3.png",
+     "largura": 135,
+     "altura": 49,
+     "ancora": [
+      52,
+      46
+     ],
+     "pivo": [
+      52,
+      46
+     ],
+     "ms": 60.0,
+     "sha256": "b8d180caee547665c4d32b15ea74d39cc5f98831c7638665d123e6e1e4c28c64",
+     "nome_origem": "v4_A_post_dash_f3",
+     "corpo_bbox": [
+      19,
+      3,
+      99,
+      45
+     ],
+     "sombra": {
+      "arquivo": "sombras/post_dash_sombra.png",
+      "ancora": [
+       52,
+       46
+      ],
+      "largura": 135,
+      "altura": 49,
+      "pixels": 68,
+      "sha256": "043481a5c3470a842e2cce76545ab1d91b357453bf450accd0b65bf36f62e098"
+     },
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 (da cabeca para a frente) e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       26,
+       -29,
+       46,
+       13
+      ],
+      "cobertura_pixels_pct": 100.0,
+      "pixels_atras_do_corpo_excluidos": 0,
+      "espelha_com_a_direcao": "inverter x quando o Carrasco olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         26.0,
+         -23.0
+        ],
+        [
+         29.1,
+         -24.4
+        ],
+        [
+         32.1,
+         -25.0
+        ],
+        [
+         35.2,
+         -25.4
+        ],
+        [
+         38.3,
+         -25.6
+        ],
+        [
+         41.3,
+         -25.8
+        ],
+        [
+         44.4,
+         -25.9
+        ],
+        [
+         47.5,
+         -26.0
+        ],
+        [
+         50.5,
+         -26.0
+        ],
+        [
+         53.6,
+         -26.0
+        ],
+        [
+         56.7,
+         -25.9
+        ],
+        [
+         59.7,
+         -25.7
+        ],
+        [
+         62.8,
+         -25.3
+        ],
+        [
+         65.9,
+         -24.7
+        ],
+        [
+         68.9,
+         -23.9
+        ],
+        [
+         72.0,
+         -23.0
+        ],
+        [
+         72.0,
+         -21.0
+        ],
+        [
+         68.9,
+         -20.1
+        ],
+        [
+         65.9,
+         -19.3
+        ],
+        [
+         62.8,
+         -18.7
+        ],
+        [
+         59.7,
+         -18.3
+        ],
+        [
+         56.7,
+         -18.1
+        ],
+        [
+         53.6,
+         -18.0
+        ],
+        [
+         50.5,
+         -18.0
+        ],
+        [
+         47.5,
+         -18.0
+        ],
+        [
+         44.4,
+         -18.1
+        ],
+        [
+         41.3,
+         -18.2
+        ],
+        [
+         38.3,
+         -18.4
+        ],
+        [
+         35.2,
+         -18.6
+        ],
+        [
+         32.1,
+         -19.0
+        ],
+        [
+         29.1,
+         -19.6
+        ],
+        [
+         26.0,
+         -21.0
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         30.8,
+         -17.1
+        ],
+        [
+         47.8,
+         -16.5
+        ],
+        [
+         44.0,
+         -27.6
+        ],
+        [
+         31.2,
+         -28.1
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "arquivo": "quadros/post_dash/post_dash_f4.png",
+     "largura": 135,
+     "altura": 49,
+     "ancora": [
+      52,
+      46
+     ],
+     "pivo": [
+      52,
+      46
+     ],
+     "ms": 90.0,
+     "sha256": "3f8280fc56aa4dfb52b37543a4ee657013e3ab959734a77ee7a3bf241a80e2ad",
+     "nome_origem": "v4_A_post_dash_f4",
+     "corpo_bbox": [
+      21,
+      3,
+      98,
+      45
+     ],
+     "sombra": {
+      "arquivo": "sombras/post_dash_sombra.png",
+      "ancora": [
+       52,
+       46
+      ],
+      "largura": 135,
+      "altura": 49,
+      "pixels": 68,
+      "sha256": "043481a5c3470a842e2cce76545ab1d91b357453bf450accd0b65bf36f62e098"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/post_dash/post_dash_f5.png",
+     "largura": 135,
+     "altura": 49,
+     "ancora": [
+      52,
+      46
+     ],
+     "pivo": [
+      52,
+      46
+     ],
+     "ms": 90.0,
+     "sha256": "9ff2e19d7954d484a08b55483e18bc19af502ce6b8e2e9c3eaada5a13d2020b5",
+     "nome_origem": "v4_A_post_dash_f5",
+     "corpo_bbox": [
+      25,
+      2,
+      94,
+      45
+     ],
+     "sombra": {
+      "arquivo": "sombras/post_dash_sombra.png",
+      "ancora": [
+       52,
+       46
+      ],
+      "largura": 135,
+      "altura": 49,
+      "pixels": 68,
+      "sha256": "043481a5c3470a842e2cce76545ab1d91b357453bf450accd0b65bf36f62e098"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/post_dash/post_dash_f6.png",
+     "largura": 135,
+     "altura": 49,
+     "ancora": [
+      52,
+      46
+     ],
+     "pivo": [
+      52,
+      46
+     ],
+     "ms": 90.0,
+     "sha256": "9bbe011f334175565a0036901d7a8e5b661a037c16e2e4980ab2c52ce9e9f374",
+     "nome_origem": "v4_A_post_dash_f6",
+     "corpo_bbox": [
+      27,
+      1,
+      87,
+      45
+     ],
+     "sombra": {
+      "arquivo": "sombras/post_dash_sombra.png",
+      "ancora": [
+       52,
+       46
+      ],
+      "largura": 135,
+      "altura": 49,
+      "pixels": 68,
+      "sha256": "043481a5c3470a842e2cce76545ab1d91b357453bf450accd0b65bf36f62e098"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/post_dash_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [
+    {
+     "quadro": 2,
+     "arquivo": "efeitos/post_dash_fx_f2.png",
+     "ancora": [
+      52,
+      46
+     ],
+     "largura": 135,
+     "altura": 49,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 592,
+     "sha256": "52c59b490f9f95086e7bf9451359b7591f165343d1ba2cd4449c919deacebf46"
+    },
+    {
+     "quadro": 3,
+     "arquivo": "efeitos/post_dash_fx_f3.png",
+     "ancora": [
+      52,
+      46
+     ],
+     "largura": 135,
+     "altura": 49,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 180,
+     "sha256": "f4034e13478e74c03b130471a00f9c57b4f67c03b29bdeeaf916c96f2ab89cb0"
+    }
+   ],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo.",
+   "ataque": {
+    "attack_id": "carrasco_post_dodge",
+    "tres": {
+     "windup_ms": 120.0,
+     "active_ms": 110.0,
+     "recovery_ms": 270.0
+    },
+    "fases": {
+     "PREPARACAO": {
+      "quadros": [
+       0,
+       1
+      ],
+      "ms": 120
+     },
+     "ATIVO": {
+      "quadros": [
+       2,
+       3
+      ],
+      "ms": 110
+     },
+     "RECUPERACAO": {
+      "quadros": [
+       4,
+       5,
+       6
+      ],
+      "ms": 270
+     }
+    },
+    "soma_confere_com_tres": true,
+    "dano_recortado": "so a frente do corpo e acima do chao"
+   }
+  },
+  {
+   "id": "air_light",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 7,
+   "duracao_total_ms": 520.0,
+   "nota_tempo": "aereo leve - giro com arco circular: prep 2 q (130) / ativo 2 q (120) / recup 3 q (270) = 520 ms",
+   "quadros": [
+    {
+     "arquivo": "quadros/air_light/air_light_f0.png",
+     "largura": 85,
+     "altura": 72,
+     "ancora": [
+      47,
+      61
+     ],
+     "pivo": [
+      47,
+      61
+     ],
+     "ms": 60.0,
+     "sha256": "82cb7096f1434b90740f43968e803429ee61bbea30f73b58c30c12558eaf0178",
+     "nome_origem": "v4_A_air_light_f0",
+     "corpo_bbox": [
+      5,
+      11,
+      60,
+      55
+     ],
+     "sombra": {
+      "arquivo": "sombras/air_light_sombra.png",
+      "ancora": [
+       47,
+       61
+      ],
+      "largura": 85,
+      "altura": 72,
+      "pixels": 56,
+      "sha256": "b290086f415429b3c3eab9a3738bf3e73bbb642c1252298610a1087c34a84272"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/air_light/air_light_f1.png",
+     "largura": 85,
+     "altura": 72,
+     "ancora": [
+      47,
+      61
+     ],
+     "pivo": [
+      47,
+      61
+     ],
+     "ms": 70.0,
+     "sha256": "085aba2102cbd6cb0146c3f9f6d9d51fb10d66ed14aff8ae0da169d080e7fdd9",
+     "nome_origem": "v4_A_air_light_f1",
+     "corpo_bbox": [
+      1,
+      10,
+      59,
+      54
+     ],
+     "sombra": {
+      "arquivo": "sombras/air_light_sombra.png",
+      "ancora": [
+       47,
+       61
+      ],
+      "largura": 85,
+      "altura": 72,
+      "pixels": 56,
+      "sha256": "b290086f415429b3c3eab9a3738bf3e73bbb642c1252298610a1087c34a84272"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/air_light/air_light_f2.png",
+     "largura": 85,
+     "altura": 72,
+     "ancora": [
+      47,
+      61
+     ],
+     "pivo": [
+      47,
+      61
+     ],
+     "ms": 60.0,
+     "sha256": "bffdb73eb92798669af1fbb2113493fb2d6b1544c12afe93104024273d371bd2",
+     "nome_origem": "v4_A_air_light_f2",
+     "corpo_bbox": [
+      25,
+      3,
+      83,
+      55
+     ],
+     "sombra": {
+      "arquivo": "sombras/air_light_sombra.png",
+      "ancora": [
+       47,
+       61
+      ],
+      "largura": 85,
+      "altura": 72,
+      "pixels": 56,
+      "sha256": "b290086f415429b3c3eab9a3738bf3e73bbb642c1252298610a1087c34a84272"
+     },
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 (da cabeca para a frente) (golpe aereo: sem corte no chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": null
+      },
+      "retangulo_uniao": [
+       0,
+       -62,
+       41,
+       59
+      ],
+      "cobertura_pixels_pct": 100.0,
+      "pixels_atras_do_corpo_excluidos": 616,
+      "espelha_com_a_direcao": "inverter x quando o Carrasco olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         0.0,
+         -61.5
+        ],
+        [
+         0.2,
+         -61.5
+        ],
+        [
+         9.0,
+         -60.3
+        ],
+        [
+         17.3,
+         -57.0
+        ],
+        [
+         24.4,
+         -51.7
+        ],
+        [
+         30.1,
+         -44.8
+        ],
+        [
+         33.8,
+         -36.8
+        ],
+        [
+         35.4,
+         -28.0
+        ],
+        [
+         34.8,
+         -19.1
+        ],
+        [
+         32.0,
+         -10.7
+        ],
+        [
+         27.2,
+         -3.2
+        ],
+        [
+         25.3,
+         -4.8
+        ],
+        [
+         26.7,
+         -13.2
+        ],
+        [
+         26.6,
+         -20.7
+        ],
+        [
+         24.9,
+         -27.4
+        ],
+        [
+         22.0,
+         -33.0
+        ],
+        [
+         18.2,
+         -37.4
+        ],
+        [
+         13.9,
+         -40.6
+        ],
+        [
+         9.3,
+         -42.7
+        ],
+        [
+         4.7,
+         -43.8
+        ],
+        [
+         0.1,
+         -44.0
+        ],
+        [
+         0.0,
+         -44.0
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         24.3,
+         -40.0
+        ],
+        [
+         40.5,
+         -48.1
+        ],
+        [
+         31.8,
+         -56.0
+        ],
+        [
+         19.4,
+         -49.8
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "arquivo": "quadros/air_light/air_light_f3.png",
+     "largura": 85,
+     "altura": 72,
+     "ancora": [
+      47,
+      61
+     ],
+     "pivo": [
+      47,
+      61
+     ],
+     "ms": 60.0,
+     "sha256": "cb01a0e5e4b95fe33b0eb3ca8c983460b6a074e314810e7033b8261f12ec0d9a",
+     "nome_origem": "v4_A_air_light_f3",
+     "corpo_bbox": [
+      18,
+      12,
+      63,
+      71
+     ],
+     "sombra": {
+      "arquivo": "sombras/air_light_sombra.png",
+      "ancora": [
+       47,
+       61
+      ],
+      "largura": 85,
+      "altura": 72,
+      "pixels": 56,
+      "sha256": "b290086f415429b3c3eab9a3738bf3e73bbb642c1252298610a1087c34a84272"
+     },
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 (da cabeca para a frente) (golpe aereo: sem corte no chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": null
+      },
+      "retangulo_uniao": [
+       -1,
+       -15,
+       35,
+       28
+      ],
+      "cobertura_pixels_pct": 100.0,
+      "pixels_atras_do_corpo_excluidos": 564,
+      "espelha_com_a_direcao": "inverter x quando o Carrasco olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         33.8,
+         -14.0
+        ],
+        [
+         31.0,
+         -7.8
+        ],
+        [
+         27.2,
+         -2.2
+        ],
+        [
+         22.3,
+         2.6
+        ],
+        [
+         16.7,
+         6.3
+        ],
+        [
+         10.4,
+         8.9
+        ],
+        [
+         3.7,
+         10.3
+        ],
+        [
+         0.0,
+         10.3
+        ],
+        [
+         0.0,
+         -3.2
+        ],
+        [
+         2.3,
+         -2.8
+        ],
+        [
+         6.8,
+         -2.7
+        ],
+        [
+         11.6,
+         -3.2
+        ],
+        [
+         16.5,
+         -4.6
+        ],
+        [
+         21.5,
+         -6.9
+        ],
+        [
+         26.4,
+         -10.3
+        ],
+        [
+         31.4,
+         -14.8
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         7.3,
+         -5.5
+        ],
+        [
+         5.5,
+         12.6
+        ],
+        [
+         -0.0,
+         9.8
+        ],
+        [
+         0.0,
+         -6.3
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "arquivo": "quadros/air_light/air_light_f4.png",
+     "largura": 85,
+     "altura": 72,
+     "ancora": [
+      47,
+      61
+     ],
+     "pivo": [
+      47,
+      61
+     ],
+     "ms": 90.0,
+     "sha256": "baa5811f9c66e5c5a57eb36217dd07245810ae620ddbf91e20a3416056249689",
+     "nome_origem": "v4_A_air_light_f4",
+     "corpo_bbox": [
+      19,
+      11,
+      69,
+      64
+     ],
+     "sombra": {
+      "arquivo": "sombras/air_light_sombra.png",
+      "ancora": [
+       47,
+       61
+      ],
+      "largura": 85,
+      "altura": 72,
+      "pixels": 56,
+      "sha256": "b290086f415429b3c3eab9a3738bf3e73bbb642c1252298610a1087c34a84272"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/air_light/air_light_f5.png",
+     "largura": 85,
+     "altura": 72,
+     "ancora": [
+      47,
+      61
+     ],
+     "pivo": [
+      47,
+      61
+     ],
+     "ms": 90.0,
+     "sha256": "5aaac4a3a6f06cae0e624dfa3321dff8edabe07ce87f9252676237268e5fed0c",
+     "nome_origem": "v4_A_air_light_f5",
+     "corpo_bbox": [
+      19,
+      11,
+      74,
+      61
+     ],
+     "sombra": {
+      "arquivo": "sombras/air_light_sombra.png",
+      "ancora": [
+       47,
+       61
+      ],
+      "largura": 85,
+      "altura": 72,
+      "pixels": 56,
+      "sha256": "b290086f415429b3c3eab9a3738bf3e73bbb642c1252298610a1087c34a84272"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/air_light/air_light_f6.png",
+     "largura": 85,
+     "altura": 72,
+     "ancora": [
+      47,
+      61
+     ],
+     "pivo": [
+      47,
+      61
+     ],
+     "ms": 90.0,
+     "sha256": "fe3bacac4c52ca4610225a2b8e3761c801bafe73d1816d90716fe7b7aebae899",
+     "nome_origem": "v4_A_air_light_f6",
+     "corpo_bbox": [
+      21,
+      12,
+      77,
+      59
+     ],
+     "sombra": {
+      "arquivo": "sombras/air_light_sombra.png",
+      "ancora": [
+       47,
+       61
+      ],
+      "largura": 85,
+      "altura": 72,
+      "pixels": 56,
+      "sha256": "b290086f415429b3c3eab9a3738bf3e73bbb642c1252298610a1087c34a84272"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/air_light_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [
+    {
+     "quadro": 2,
+     "arquivo": "efeitos/air_light_fx_f2.png",
+     "ancora": [
+      47,
+      61
+     ],
+     "largura": 85,
+     "altura": 72,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 1240,
+     "sha256": "f6169b79510a4d6a133fb836fab01338b5ac717b2a0df6e67a2d3472495916d2"
+    },
+    {
+     "quadro": 3,
+     "arquivo": "efeitos/air_light_fx_f3.png",
+     "ancora": [
+      47,
+      61
+     ],
+     "largura": 85,
+     "altura": 72,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 763,
+     "sha256": "388e85b8ca7572a25b0ab79191330faec314c268faf4a3c0c6313fb94cba54d9"
+    }
+   ],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo.",
+   "ataque": {
+    "attack_id": "carrasco_air_light",
+    "tres": {
+     "windup_ms": 130.0,
+     "active_ms": 120.0,
+     "recovery_ms": 270.0
+    },
+    "fases": {
+     "PREPARACAO": {
+      "quadros": [
+       0,
+       1
+      ],
+      "ms": 130
+     },
+     "ATIVO": {
+      "quadros": [
+       2,
+       3
+      ],
+      "ms": 120
+     },
+     "RECUPERACAO": {
+      "quadros": [
+       4,
+       5,
+       6
+      ],
+      "ms": 270
+     }
+    },
+    "soma_confere_com_tres": true,
+    "dano_recortado": "so a frente do corpo"
+   }
+  },
+  {
+   "id": "air_heavy",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 10,
+   "duracao_total_ms": 770.0,
+   "nota_tempo": "aereo pesado - mergulho: prep 3 q (250) / ativo 2 q (130) / recup 5 q (390): q5 = segura no ar; q6..q9 = IMPACTO NO POUSO (rodam a partir do instante em que toca o chao)",
+   "quadros": [
+    {
+     "arquivo": "quadros/air_heavy/air_heavy_f0.png",
+     "largura": 106,
+     "altura": 107,
+     "ancora": [
+      48,
+      97
+     ],
+     "pivo": [
+      48,
+      97
+     ],
+     "ms": 80.0,
+     "sha256": "501d53633c84c321700c101d792681c40ee5477669738cc87b9f526d877b8691",
+     "nome_origem": "v4_A_air_heavy_f0",
+     "corpo_bbox": [
+      26,
+      23,
+      61,
+      91
+     ],
+     "sombra": {
+      "arquivo": "sombras/air_heavy_sombra.png",
+      "ancora": [
+       48,
+       97
+      ],
+      "largura": 106,
+      "altura": 107,
+      "pixels": 64,
+      "sha256": "b82705fe3f9e020f6a14467294cb373f201a790ab5bfd22743f5baffec85e91f"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/air_heavy/air_heavy_f1.png",
+     "largura": 106,
+     "altura": 107,
+     "ancora": [
+      48,
+      97
+     ],
+     "pivo": [
+      48,
+      97
+     ],
+     "ms": 80.0,
+     "sha256": "e0f30f83c88a7d0ab35da0cfca9ecc9b8e2c22da68bb7c9ba6e3651efc98e9f8",
+     "nome_origem": "v4_A_air_heavy_f1",
+     "corpo_bbox": [
+      6,
+      39,
+      60,
+      90
+     ],
+     "sombra": {
+      "arquivo": "sombras/air_heavy_sombra.png",
+      "ancora": [
+       48,
+       97
+      ],
+      "largura": 106,
+      "altura": 107,
+      "pixels": 64,
+      "sha256": "b82705fe3f9e020f6a14467294cb373f201a790ab5bfd22743f5baffec85e91f"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/air_heavy/air_heavy_f2.png",
+     "largura": 106,
+     "altura": 107,
+     "ancora": [
+      48,
+      97
+     ],
+     "pivo": [
+      48,
+      97
+     ],
+     "ms": 90.0,
+     "sha256": "698d64521f5aa2e466452d8d3ff4875df21147422999d230ba4a882af5ea44ba",
+     "nome_origem": "v4_A_air_heavy_f2",
+     "corpo_bbox": [
+      1,
+      47,
+      59,
+      89
+     ],
+     "sombra": {
+      "arquivo": "sombras/air_heavy_sombra.png",
+      "ancora": [
+       48,
+       97
+      ],
+      "largura": 106,
+      "altura": 107,
+      "pixels": 64,
+      "sha256": "b82705fe3f9e020f6a14467294cb373f201a790ab5bfd22743f5baffec85e91f"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/air_heavy/air_heavy_f3.png",
+     "largura": 106,
+     "altura": 107,
+     "ancora": [
+      48,
+      97
+     ],
+     "pivo": [
+      48,
+      97
+     ],
+     "ms": 65.0,
+     "sha256": "4e32713b064c11e419bcf70098b17bdfe0856dfeb93475f4f646a95f312068e2",
+     "nome_origem": "v4_A_air_heavy_f3",
+     "corpo_bbox": [
+      24,
+      45,
+      88,
+      89
+     ],
+     "sombra": {
+      "arquivo": "sombras/air_heavy_sombra.png",
+      "ancora": [
+       48,
+       97
+      ],
+      "largura": 106,
+      "altura": 107,
+      "pixels": 64,
+      "sha256": "b82705fe3f9e020f6a14467294cb373f201a790ab5bfd22743f5baffec85e91f"
+     },
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 (da cabeca para a frente) (golpe aereo: sem corte no chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": null
+      },
+      "retangulo_uniao": [
+       0,
+       -98,
+       59,
+       91
+      ],
+      "cobertura_pixels_pct": 100.0,
+      "pixels_atras_do_corpo_excluidos": 129,
+      "espelha_com_a_direcao": "inverter x quando o Carrasco olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         0.0,
+         -97.3
+        ],
+        [
+         7.3,
+         -97.3
+        ],
+        [
+         15.8,
+         -96.0
+        ],
+        [
+         23.9,
+         -93.4
+        ],
+        [
+         31.5,
+         -89.6
+        ],
+        [
+         38.5,
+         -84.7
+        ],
+        [
+         44.6,
+         -78.7
+        ],
+        [
+         49.8,
+         -71.9
+        ],
+        [
+         53.8,
+         -64.4
+        ],
+        [
+         56.6,
+         -56.3
+        ],
+        [
+         58.2,
+         -47.9
+        ],
+        [
+         58.4,
+         -39.4
+        ],
+        [
+         57.4,
+         -30.9
+        ],
+        [
+         55.0,
+         -22.7
+        ],
+        [
+         51.5,
+         -14.9
+        ],
+        [
+         46.7,
+         -7.8
+        ],
+        [
+         44.8,
+         -9.4
+        ],
+        [
+         44.5,
+         -18.8
+        ],
+        [
+         43.8,
+         -26.9
+        ],
+        [
+         42.3,
+         -34.0
+        ],
+        [
+         40.1,
+         -40.2
+        ],
+        [
+         37.3,
+         -45.7
+        ],
+        [
+         34.3,
+         -50.4
+        ],
+        [
+         31.2,
+         -54.4
+        ],
+        [
+         28.0,
+         -58.0
+        ],
+        [
+         24.8,
+         -61.2
+        ],
+        [
+         21.6,
+         -64.4
+        ],
+        [
+         18.3,
+         -67.5
+        ],
+        [
+         14.7,
+         -70.7
+        ],
+        [
+         10.6,
+         -74.1
+        ],
+        [
+         5.8,
+         -77.7
+        ],
+        [
+         0.0,
+         -81.4
+        ],
+        [
+         0.0,
+         -81.4
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         21.2,
+         -25.4
+        ],
+        [
+         34.2,
+         -13.0
+        ],
+        [
+         38.8,
+         -23.9
+        ],
+        [
+         28.8,
+         -33.4
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "arquivo": "quadros/air_heavy/air_heavy_f4.png",
+     "largura": 106,
+     "altura": 107,
+     "ancora": [
+      48,
+      97
+     ],
+     "pivo": [
+      48,
+      97
+     ],
+     "ms": 65.0,
+     "sha256": "4f33e9d4d474e2933049b5890812793ea860cf06fa1a0ca52abfe07c4ef528ae",
+     "nome_origem": "v4_A_air_heavy_f4",
+     "corpo_bbox": [
+      12,
+      45,
+      72,
+      98
+     ],
+     "sombra": {
+      "arquivo": "sombras/air_heavy_sombra.png",
+      "ancora": [
+       48,
+       97
+      ],
+      "largura": 106,
+      "altura": 107,
+      "pixels": 64,
+      "sha256": "b82705fe3f9e020f6a14467294cb373f201a790ab5bfd22743f5baffec85e91f"
+     },
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 (da cabeca para a frente) (golpe aereo: sem corte no chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": null
+      },
+      "retangulo_uniao": [
+       10,
+       -61,
+       49,
+       74
+      ],
+      "cobertura_pixels_pct": 100.0,
+      "pixels_atras_do_corpo_excluidos": 0,
+      "espelha_com_a_direcao": "inverter x quando o Carrasco olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         55.2,
+         -61.0
+        ],
+        [
+         56.8,
+         -55.6
+        ],
+        [
+         57.9,
+         -50.2
+        ],
+        [
+         58.4,
+         -44.6
+        ],
+        [
+         58.4,
+         -39.0
+        ],
+        [
+         57.8,
+         -33.5
+        ],
+        [
+         56.7,
+         -28.0
+        ],
+        [
+         55.0,
+         -22.7
+        ],
+        [
+         52.8,
+         -17.6
+        ],
+        [
+         50.1,
+         -12.7
+        ],
+        [
+         46.9,
+         -8.1
+        ],
+        [
+         43.3,
+         -3.9
+        ],
+        [
+         39.3,
+         -0.0
+        ],
+        [
+         34.9,
+         3.4
+        ],
+        [
+         30.2,
+         6.4
+        ],
+        [
+         25.2,
+         8.9
+        ],
+        [
+         19.9,
+         10.9
+        ],
+        [
+         14.5,
+         12.3
+        ],
+        [
+         14.0,
+         9.8
+        ],
+        [
+         17.9,
+         4.6
+        ],
+        [
+         21.5,
+         0.4
+        ],
+        [
+         24.7,
+         -3.3
+        ],
+        [
+         27.7,
+         -6.8
+        ],
+        [
+         30.6,
+         -10.0
+        ],
+        [
+         33.5,
+         -13.1
+        ],
+        [
+         36.4,
+         -16.2
+        ],
+        [
+         39.4,
+         -19.4
+        ],
+        [
+         42.3,
+         -22.8
+        ],
+        [
+         45.0,
+         -26.4
+        ],
+        [
+         47.6,
+         -30.4
+        ],
+        [
+         49.8,
+         -34.7
+        ],
+        [
+         51.7,
+         -39.4
+        ],
+        [
+         53.0,
+         -44.4
+        ],
+        [
+         53.7,
+         -49.5
+        ],
+        [
+         53.7,
+         -54.9
+        ],
+        [
+         52.8,
+         -60.1
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         10.8,
+         -14.1
+        ],
+        [
+         14.6,
+         4.1
+        ],
+        [
+         24.5,
+         -2.2
+        ],
+        [
+         21.6,
+         -16.3
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "arquivo": "quadros/air_heavy/air_heavy_f5.png",
+     "largura": 106,
+     "altura": 107,
+     "ancora": [
+      48,
+      97
+     ],
+     "pivo": [
+      48,
+      97
+     ],
+     "ms": 70.0,
+     "sha256": "81ef7d87c175f0969e89446a06b2ae7b96fab3b49adfd02f5dc9cd70033b760d",
+     "nome_origem": "v4_A_air_heavy_f5",
+     "corpo_bbox": [
+      12,
+      46,
+      73,
+      99
+     ],
+     "sombra": {
+      "arquivo": "sombras/air_heavy_sombra.png",
+      "ancora": [
+       48,
+       97
+      ],
+      "largura": 106,
+      "altura": 107,
+      "pixels": 64,
+      "sha256": "b82705fe3f9e020f6a14467294cb373f201a790ab5bfd22743f5baffec85e91f"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/air_heavy/air_heavy_f6.png",
+     "largura": 106,
+     "altura": 107,
+     "ancora": [
+      48,
+      97
+     ],
+     "pivo": [
+      48,
+      97
+     ],
+     "ms": 80.0,
+     "sha256": "6a0e25b7de2612bdaefbea13cd5becf3de78b2a2f519333cedd13705ab8f61a8",
+     "nome_origem": "v4_A_air_heavy_f6",
+     "corpo_bbox": [
+      15,
+      57,
+      68,
+      96
+     ],
+     "sombra": {
+      "arquivo": "sombras/air_heavy_sombra.png",
+      "ancora": [
+       48,
+       97
+      ],
+      "largura": 106,
+      "altura": 107,
+      "pixels": 64,
+      "sha256": "b82705fe3f9e020f6a14467294cb373f201a790ab5bfd22743f5baffec85e91f"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/air_heavy/air_heavy_f7.png",
+     "largura": 106,
+     "altura": 107,
+     "ancora": [
+      48,
+      97
+     ],
+     "pivo": [
+      48,
+      97
+     ],
+     "ms": 90.0,
+     "sha256": "1b91c0200c20ed40166fed641ab621299ab8a2e05a80709fa7a74477db0dfd00",
+     "nome_origem": "v4_A_air_heavy_f7",
+     "corpo_bbox": [
+      26,
+      54,
+      71,
+      96
+     ],
+     "sombra": {
+      "arquivo": "sombras/air_heavy_sombra.png",
+      "ancora": [
+       48,
+       97
+      ],
+      "largura": 106,
+      "altura": 107,
+      "pixels": 64,
+      "sha256": "b82705fe3f9e020f6a14467294cb373f201a790ab5bfd22743f5baffec85e91f"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/air_heavy/air_heavy_f8.png",
+     "largura": 106,
+     "altura": 107,
+     "ancora": [
+      48,
+      97
+     ],
+     "pivo": [
+      48,
+      97
+     ],
+     "ms": 90.0,
+     "sha256": "bb74f5fcac1748c4e2c4f69a599360aa2ea9e0e1376c11668c708a0284554ccd",
+     "nome_origem": "v4_A_air_heavy_f8",
+     "corpo_bbox": [
+      25,
+      52,
+      76,
+      96
+     ],
+     "sombra": {
+      "arquivo": "sombras/air_heavy_sombra.png",
+      "ancora": [
+       48,
+       97
+      ],
+      "largura": 106,
+      "altura": 107,
+      "pixels": 64,
+      "sha256": "b82705fe3f9e020f6a14467294cb373f201a790ab5bfd22743f5baffec85e91f"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/air_heavy/air_heavy_f9.png",
+     "largura": 106,
+     "altura": 107,
+     "ancora": [
+      48,
+      97
+     ],
+     "pivo": [
+      48,
+      97
+     ],
+     "ms": 60.0,
+     "sha256": "9b0c354d72dd148c33d9f9448b6245cae69722e98f58928b2c37a9ade656c61a",
+     "nome_origem": "v4_A_air_heavy_f9",
+     "corpo_bbox": [
+      27,
+      51,
+      78,
+      96
+     ],
+     "sombra": {
+      "arquivo": "sombras/air_heavy_sombra.png",
+      "ancora": [
+       48,
+       97
+      ],
+      "largura": 106,
+      "altura": 107,
+      "pixels": 64,
+      "sha256": "b82705fe3f9e020f6a14467294cb373f201a790ab5bfd22743f5baffec85e91f"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/air_heavy_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [
+    {
+     "quadro": 3,
+     "arquivo": "efeitos/air_heavy_fx_f3.png",
+     "ancora": [
+      48,
+      97
+     ],
+     "largura": 106,
+     "altura": 107,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 1931,
+     "sha256": "2955e5d39d0f6e28dfca98e71acd506192b373de9c598fc80fcdbf2ac3b09432"
+    },
+    {
+     "quadro": 4,
+     "arquivo": "efeitos/air_heavy_fx_f4.png",
+     "ancora": [
+      48,
+      97
+     ],
+     "largura": 106,
+     "altura": 107,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 551,
+     "sha256": "e39121150b7c7629b53a9cacdcd1d31dc8204c4c510cd67326092e099adbfa0f"
+    },
+    {
+     "quadro": 6,
+     "arquivo": "efeitos/air_heavy_fx_f6.png",
+     "ancora": [
+      48,
+      97
+     ],
+     "largura": 106,
+     "altura": 107,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 17,
+     "sha256": "f0d12ef7a7cee9762dd2e10383dacd087fe9373890a68976b698917b0e742256"
+    },
+    {
+     "quadro": 7,
+     "arquivo": "efeitos/air_heavy_fx_f7.png",
+     "ancora": [
+      48,
+      97
+     ],
+     "largura": 106,
+     "altura": 107,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 7,
+     "sha256": "dd1a1f7df0537163363c32aa26f387bc033874a802d1fbbc13dcfb3aa3ae5d74"
+    }
+   ],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo.",
+   "ataque": {
+    "attack_id": "carrasco_air_heavy",
+    "tres": {
+     "windup_ms": 250.0,
+     "active_ms": 130.0,
+     "recovery_ms": 390.0
+    },
+    "fases": {
+     "PREPARACAO": {
+      "quadros": [
+       0,
+       1,
+       2
+      ],
+      "ms": 250
+     },
+     "ATIVO": {
+      "quadros": [
+       3,
+       4
+      ],
+      "ms": 130
+     },
+     "RECUPERACAO": {
+      "quadros": [
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "ms": 390
+     }
+    },
+    "soma_confere_com_tres": true,
+    "dano_recortado": "so a frente do corpo",
+    "pouso_a_partir": 6
+   }
+  },
+  {
+   "id": "charge_start",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 2,
+   "duracao_total_ms": 120.0,
+   "nota_tempo": "carregar - entrada: 2 q (60 ms cada), mesmas poses do inicio do heavy (um toque rapido segue direto para o heavy)",
+   "quadros": [
+    {
+     "arquivo": "quadros/charge_start/charge_start_f0.png",
+     "largura": 54,
+     "altura": 63,
+     "ancora": [
+      23,
+      60
+     ],
+     "pivo": [
+      23,
+      60
+     ],
+     "ms": 60.0,
+     "sha256": "f2ec5d7af4c5eefffc907227f3794afc3ed1355b6326aebad7983605640da8ce",
+     "nome_origem": "v4_A_charge_start_f0",
+     "corpo_bbox": [
+      1,
+      13,
+      52,
+      59
+     ],
+     "sombra": {
+      "arquivo": "sombras/charge_start_sombra.png",
+      "ancora": [
+       23,
+       60
+      ],
+      "largura": 54,
+      "altura": 63,
+      "pixels": 56,
+      "sha256": "e02b9277a961d81b630170fe1b41edbe67a896f407e35202631d13d89052e3c0"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/charge_start/charge_start_f1.png",
+     "largura": 54,
+     "altura": 63,
+     "ancora": [
+      23,
+      60
+     ],
+     "pivo": [
+      23,
+      60
+     ],
+     "ms": 60.0,
+     "sha256": "fd483d82af6480a6ccba848249cc96c4aa3f63650aff4cf241e0e8956553e196",
+     "nome_origem": "v4_A_charge_start_f1",
+     "corpo_bbox": [
+      1,
+      1,
+      42,
+      59
+     ],
+     "sombra": {
+      "arquivo": "sombras/charge_start_sombra.png",
+      "ancora": [
+       23,
+       60
+      ],
+      "largura": 54,
+      "altura": 63,
+      "pixels": 56,
+      "sha256": "e02b9277a961d81b630170fe1b41edbe67a896f407e35202631d13d89052e3c0"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/charge_start_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [
+    {
+     "quadro": 1,
+     "arquivo": "efeitos/charge_start_fx_f1.png",
+     "ancora": [
+      23,
+      60
+     ],
+     "largura": 54,
+     "altura": 63,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 60,
+     "sha256": "d49ab1f023916d7a34f57fafe319219bfa398eca1ce2bf8346da6f9fe561601d"
+    }
+   ],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo."
+  },
+  {
+   "id": "charge_loop",
+   "tipo": "animacao",
+   "loop": true,
+   "quadros_n": 4,
+   "duracao_total_ms": 360.0,
+   "nota_tempo": "carregar - laco 4 q x 90 ms: tremor de 1 px + brilho vermelho pulsando na lamina",
+   "quadros": [
+    {
+     "arquivo": "quadros/charge_loop/charge_loop_f0.png",
+     "largura": 75,
+     "altura": 51,
+     "ancora": [
+      53,
+      48
+     ],
+     "pivo": [
+      53,
+      48
+     ],
+     "ms": 90.0,
+     "sha256": "68df58ba90a8804892a08f6f713b4028323ee17cef7a127642439bb20d7d92e2",
+     "nome_origem": "v4_A_charge_loop_f0",
+     "corpo_bbox": [
+      8,
+      2,
+      72,
+      47
+     ],
+     "sombra": {
+      "arquivo": "sombras/charge_loop_sombra.png",
+      "ancora": [
+       53,
+       48
+      ],
+      "largura": 75,
+      "altura": 51,
+      "pixels": 56,
+      "sha256": "bb9b5656129517e731ed4c1d041bc42afc3e04418769d47c85855268cc1a80e6"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/charge_loop/charge_loop_f1.png",
+     "largura": 75,
+     "altura": 51,
+     "ancora": [
+      53,
+      48
+     ],
+     "pivo": [
+      53,
+      48
+     ],
+     "ms": 90.0,
+     "sha256": "888b92b2ba91c48025afb2487e858c4dd2e536883d15cf23767adf3d6aca3134",
+     "nome_origem": "v4_A_charge_loop_f1",
+     "corpo_bbox": [
+      9,
+      2,
+      73,
+      47
+     ],
+     "sombra": {
+      "arquivo": "sombras/charge_loop_sombra.png",
+      "ancora": [
+       53,
+       48
+      ],
+      "largura": 75,
+      "altura": 51,
+      "pixels": 56,
+      "sha256": "bb9b5656129517e731ed4c1d041bc42afc3e04418769d47c85855268cc1a80e6"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/charge_loop/charge_loop_f2.png",
+     "largura": 75,
+     "altura": 51,
+     "ancora": [
+      53,
+      48
+     ],
+     "pivo": [
+      53,
+      48
+     ],
+     "ms": 90.0,
+     "sha256": "18806bdd364d824a209eb1db8ddbeec1b043c09f723b7537b578136434792c7a",
+     "nome_origem": "v4_A_charge_loop_f2",
+     "corpo_bbox": [
+      8,
+      2,
+      72,
+      47
+     ],
+     "sombra": {
+      "arquivo": "sombras/charge_loop_sombra.png",
+      "ancora": [
+       53,
+       48
+      ],
+      "largura": 75,
+      "altura": 51,
+      "pixels": 56,
+      "sha256": "bb9b5656129517e731ed4c1d041bc42afc3e04418769d47c85855268cc1a80e6"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/charge_loop/charge_loop_f3.png",
+     "largura": 75,
+     "altura": 51,
+     "ancora": [
+      53,
+      48
+     ],
+     "pivo": [
+      53,
+      48
+     ],
+     "ms": 90.0,
+     "sha256": "098d1cbdcae8ef0be13a85ba02eeb9fc81d54b2147957a1834b956a72d8df235",
+     "nome_origem": "v4_A_charge_loop_f3",
+     "corpo_bbox": [
+      7,
+      2,
+      71,
+      47
+     ],
+     "sombra": {
+      "arquivo": "sombras/charge_loop_sombra.png",
+      "ancora": [
+       53,
+       48
+      ],
+      "largura": 75,
+      "altura": 51,
+      "pixels": 56,
+      "sha256": "bb9b5656129517e731ed4c1d041bc42afc3e04418769d47c85855268cc1a80e6"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/charge_loop_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [
+    {
+     "quadro": 0,
+     "arquivo": "efeitos/charge_loop_fx_f0.png",
+     "ancora": [
+      53,
+      48
+     ],
+     "largura": 75,
+     "altura": 51,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 77,
+     "sha256": "11c0fdcc131cbbbe64e5ac8cfb55f076680e18faaa8bf17d970975055dddef51"
+    },
+    {
+     "quadro": 1,
+     "arquivo": "efeitos/charge_loop_fx_f1.png",
+     "ancora": [
+      53,
+      48
+     ],
+     "largura": 75,
+     "altura": 51,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 77,
+     "sha256": "a8fc763b08fa48bf9f4823cc9c24932516a2fc0be54f05eda3417a40f7996560"
+    },
+    {
+     "quadro": 2,
+     "arquivo": "efeitos/charge_loop_fx_f2.png",
+     "ancora": [
+      53,
+      48
+     ],
+     "largura": 75,
+     "altura": 51,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 77,
+     "sha256": "11c0fdcc131cbbbe64e5ac8cfb55f076680e18faaa8bf17d970975055dddef51"
+    },
+    {
+     "quadro": 3,
+     "arquivo": "efeitos/charge_loop_fx_f3.png",
+     "ancora": [
+      53,
+      48
+     ],
+     "largura": 75,
+     "altura": 51,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 77,
+     "sha256": "58234c048d3d41b24c90e1bdddb5013628777b8899a456bea07caeff636895d7"
+    }
+   ],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo."
+  },
+  {
+   "id": "charge_full",
+   "tipo": "animacao",
+   "loop": true,
+   "quadros_n": 4,
+   "duracao_total_ms": 280.0,
+   "nota_tempo": "carregar - PRONTO (>= 1,0 s): laco 4 q x 70 ms, brilho forte + fagulhas",
+   "quadros": [
+    {
+     "arquivo": "quadros/charge_full/charge_full_f0.png",
+     "largura": 75,
+     "altura": 69,
+     "ancora": [
+      53,
+      66
+     ],
+     "pivo": [
+      53,
+      66
+     ],
+     "ms": 70.0,
+     "sha256": "86dd5123d5a7001bea52264f0bcf8f928e6d7fa3adebb4b14fcc27eb7cc489a5",
+     "nome_origem": "v4_A_charge_full_f0",
+     "corpo_bbox": [
+      9,
+      20,
+      73,
+      65
+     ],
+     "sombra": {
+      "arquivo": "sombras/charge_full_sombra.png",
+      "ancora": [
+       53,
+       66
+      ],
+      "largura": 75,
+      "altura": 69,
+      "pixels": 56,
+      "sha256": "ffadcde7e77eb8bd9861f9b406d54089e3bc7f6a5a696d5c2ee0e6bc8365e48f"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/charge_full/charge_full_f1.png",
+     "largura": 75,
+     "altura": 69,
+     "ancora": [
+      53,
+      66
+     ],
+     "pivo": [
+      53,
+      66
+     ],
+     "ms": 70.0,
+     "sha256": "369f6c9db63fa25ce6bd3108af108a5ef52cd2e46229a1fa588120cc7ec1bee2",
+     "nome_origem": "v4_A_charge_full_f1",
+     "corpo_bbox": [
+      7,
+      20,
+      71,
+      65
+     ],
+     "sombra": {
+      "arquivo": "sombras/charge_full_sombra.png",
+      "ancora": [
+       53,
+       66
+      ],
+      "largura": 75,
+      "altura": 69,
+      "pixels": 56,
+      "sha256": "ffadcde7e77eb8bd9861f9b406d54089e3bc7f6a5a696d5c2ee0e6bc8365e48f"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/charge_full/charge_full_f2.png",
+     "largura": 75,
+     "altura": 69,
+     "ancora": [
+      53,
+      66
+     ],
+     "pivo": [
+      53,
+      66
+     ],
+     "ms": 70.0,
+     "sha256": "8fd94df0f17754c4cdafd1b3573f1fa375233d864229bdfa4b44bef4983d8099",
+     "nome_origem": "v4_A_charge_full_f2",
+     "corpo_bbox": [
+      9,
+      20,
+      73,
+      65
+     ],
+     "sombra": {
+      "arquivo": "sombras/charge_full_sombra.png",
+      "ancora": [
+       53,
+       66
+      ],
+      "largura": 75,
+      "altura": 69,
+      "pixels": 56,
+      "sha256": "ffadcde7e77eb8bd9861f9b406d54089e3bc7f6a5a696d5c2ee0e6bc8365e48f"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/charge_full/charge_full_f3.png",
+     "largura": 75,
+     "altura": 69,
+     "ancora": [
+      53,
+      66
+     ],
+     "pivo": [
+      53,
+      66
+     ],
+     "ms": 70.0,
+     "sha256": "18cc1e0b2615501ad1f314b126972093f8c5026cb342ffe75b9aa855dd9e42da",
+     "nome_origem": "v4_A_charge_full_f3",
+     "corpo_bbox": [
+      8,
+      20,
+      72,
+      65
+     ],
+     "sombra": {
+      "arquivo": "sombras/charge_full_sombra.png",
+      "ancora": [
+       53,
+       66
+      ],
+      "largura": 75,
+      "altura": 69,
+      "pixels": 56,
+      "sha256": "ffadcde7e77eb8bd9861f9b406d54089e3bc7f6a5a696d5c2ee0e6bc8365e48f"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/charge_full_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [
+    {
+     "quadro": 0,
+     "arquivo": "efeitos/charge_full_fx_f0.png",
+     "ancora": [
+      53,
+      66
+     ],
+     "largura": 75,
+     "altura": 69,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 126,
+     "sha256": "89c59a31fb60261a94eace9ffe094f569278c9d4aaa4548bf070f2df85334316"
+    },
+    {
+     "quadro": 1,
+     "arquivo": "efeitos/charge_full_fx_f1.png",
+     "ancora": [
+      53,
+      66
+     ],
+     "largura": 75,
+     "altura": 69,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 82,
+     "sha256": "418da37c7410f050fcc41bcbc79948033247749bc50162d6ce4455a01690ec8b"
+    },
+    {
+     "quadro": 2,
+     "arquivo": "efeitos/charge_full_fx_f2.png",
+     "ancora": [
+      53,
+      66
+     ],
+     "largura": 75,
+     "altura": 69,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 125,
+     "sha256": "f5cd26bc467e650860816cf82a903b6e41237a743687b5b3ff2468955ea55458"
+    },
+    {
+     "quadro": 3,
+     "arquivo": "efeitos/charge_full_fx_f3.png",
+     "ancora": [
+      53,
+      66
+     ],
+     "largura": 75,
+     "altura": 69,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 82,
+     "sha256": "05e8b7dede88c0fa3ceed2718fdf9957b3352e74258a8691dcd901ae2e45def9"
+    }
+   ],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo."
+  },
+  {
+   "id": "charged_heavy",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 9,
+   "duracao_total_ms": 780.0,
+   "nota_tempo": "golpe carregado: prep 2 q (160) / arco MAIOR e mais longo 2 q (140) / recup 5 q (480) = 780 ms",
+   "quadros": [
+    {
+     "arquivo": "quadros/charged_heavy/charged_heavy_f0.png",
+     "largura": 158,
+     "altura": 130,
+     "ancora": [
+      72,
+      118
+     ],
+     "pivo": [
+      72,
+      118
+     ],
+     "ms": 80.0,
+     "sha256": "eca3f30d8a94878af39a579f8cdf11bd09f3ea161a7926a78c5a0cf600d70fa3",
+     "nome_origem": "v4_A_charged_heavy_f0",
+     "corpo_bbox": [
+      25,
+      74,
+      91,
+      117
+     ],
+     "sombra": {
+      "arquivo": "sombras/charged_heavy_sombra.png",
+      "ancora": [
+       72,
+       118
+      ],
+      "largura": 158,
+      "altura": 130,
+      "pixels": 72,
+      "sha256": "f72ffd3529fee8830709aa9520927a001a1b08e792d0dca17c7abb471a28d877"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/charged_heavy/charged_heavy_f1.png",
+     "largura": 158,
+     "altura": 130,
+     "ancora": [
+      72,
+      118
+     ],
+     "pivo": [
+      72,
+      118
+     ],
+     "ms": 80.0,
+     "sha256": "418e9978036b8f94736309bd06fd8ee1fe77cbced2e52ef85966b641e141c2f7",
+     "nome_origem": "v4_A_charged_heavy_f1",
+     "corpo_bbox": [
+      22,
+      76,
+      92,
+      117
+     ],
+     "sombra": {
+      "arquivo": "sombras/charged_heavy_sombra.png",
+      "ancora": [
+       72,
+       118
+      ],
+      "largura": 158,
+      "altura": 130,
+      "pixels": 72,
+      "sha256": "f72ffd3529fee8830709aa9520927a001a1b08e792d0dca17c7abb471a28d877"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/charged_heavy/charged_heavy_f2.png",
+     "largura": 158,
+     "altura": 130,
+     "ancora": [
+      72,
+      118
+     ],
+     "pivo": [
+      72,
+      118
+     ],
+     "ms": 70.0,
+     "sha256": "479c9f1702ad5fe334caa39add9e6235276bb712da44b83ebc2d58e0a2c36d81",
+     "nome_origem": "v4_A_charged_heavy_f2",
+     "corpo_bbox": [
+      54,
+      71,
+      116,
+      117
+     ],
+     "sombra": {
+      "arquivo": "sombras/charged_heavy_sombra.png",
+      "ancora": [
+       72,
+       118
+      ],
+      "largura": 158,
+      "altura": 130,
+      "pixels": 72,
+      "sha256": "f72ffd3529fee8830709aa9520927a001a1b08e792d0dca17c7abb471a28d877"
+     },
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 (da cabeca para a frente) e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       0,
+       -119,
+       87,
+       119
+      ],
+      "cobertura_pixels_pct": 98.8,
+      "pixels_atras_do_corpo_excluidos": 3289,
+      "espelha_com_a_direcao": "inverter x quando o Carrasco olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         0.0,
+         -117.9
+        ],
+        [
+         2.8,
+         -118.4
+        ],
+        [
+         22.2,
+         -117.0
+        ],
+        [
+         40.8,
+         -110.9
+        ],
+        [
+         57.3,
+         -100.5
+        ],
+        [
+         70.8,
+         -86.4
+        ],
+        [
+         80.5,
+         -69.4
+        ],
+        [
+         85.7,
+         -50.5
+        ],
+        [
+         86.1,
+         -31.0
+        ],
+        [
+         81.8,
+         -12.0
+        ],
+        [
+         75.7,
+         0.0
+        ],
+        [
+         70.9,
+         0.0
+        ],
+        [
+         71.3,
+         -15.8
+        ],
+        [
+         68.7,
+         -32.8
+        ],
+        [
+         63.0,
+         -47.2
+        ],
+        [
+         54.9,
+         -58.8
+        ],
+        [
+         45.3,
+         -67.5
+        ],
+        [
+         35.1,
+         -73.4
+        ],
+        [
+         24.8,
+         -76.8
+        ],
+        [
+         14.7,
+         -78.3
+        ],
+        [
+         4.9,
+         -78.1
+        ],
+        [
+         0.0,
+         -77.2
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         23.6,
+         -14.6
+        ],
+        [
+         39.2,
+         -5.3
+        ],
+        [
+         41.2,
+         -16.9
+        ],
+        [
+         29.3,
+         -24.1
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "arquivo": "quadros/charged_heavy/charged_heavy_f3.png",
+     "largura": 158,
+     "altura": 130,
+     "ancora": [
+      72,
+      118
+     ],
+     "pivo": [
+      72,
+      118
+     ],
+     "ms": 70.0,
+     "sha256": "53d7d72b25598e54d9a8a4ea494ec90dfa500af8e43ff16c831b8b7b7b0bbd07",
+     "nome_origem": "v4_A_charged_heavy_f3",
+     "corpo_bbox": [
+      36,
+      75,
+      108,
+      117
+     ],
+     "sombra": {
+      "arquivo": "sombras/charged_heavy_sombra.png",
+      "ancora": [
+       72,
+       118
+      ],
+      "largura": 158,
+      "altura": 130,
+      "pixels": 72,
+      "sha256": "f72ffd3529fee8830709aa9520927a001a1b08e792d0dca17c7abb471a28d877"
+     },
+     "hitbox": {
+      "fase": "ATIVO",
+      "tipo": "arco/lamina recortados a frente do corpo",
+      "origem": "poligono do arco (ou lente da estocada) + poligono da lamina, RECORTADOS: so x >= 0 (da cabeca para a frente) e y <= 0 (ate o chao); px relativos a ancora (x direita, y baixo)",
+      "recorte": {
+       "x_minimo": 0,
+       "y_maximo": 0
+      },
+      "retangulo_uniao": [
+       0,
+       -115,
+       87,
+       116
+      ],
+      "cobertura_pixels_pct": 97.7,
+      "pixels_atras_do_corpo_excluidos": 55,
+      "espelha_com_a_direcao": "inverter x quando o Carrasco olha para a esquerda",
+      "arco": {
+       "poligono": [
+        [
+         0.0,
+         -113.9
+        ],
+        [
+         9.4,
+         -114.5
+        ],
+        [
+         24.0,
+         -112.7
+        ],
+        [
+         38.0,
+         -108.2
+        ],
+        [
+         50.9,
+         -101.3
+        ],
+        [
+         62.3,
+         -92.1
+        ],
+        [
+         71.9,
+         -80.9
+        ],
+        [
+         79.2,
+         -68.2
+        ],
+        [
+         84.1,
+         -54.4
+        ],
+        [
+         86.3,
+         -39.9
+        ],
+        [
+         85.9,
+         -25.2
+        ],
+        [
+         82.8,
+         -10.9
+        ],
+        [
+         78.1,
+         0.0
+        ],
+        [
+         60.9,
+         0.0
+        ],
+        [
+         62.7,
+         -5.1
+        ],
+        [
+         65.3,
+         -16.4
+        ],
+        [
+         66.7,
+         -27.6
+        ],
+        [
+         66.9,
+         -38.7
+        ],
+        [
+         65.8,
+         -49.8
+        ],
+        [
+         63.1,
+         -60.8
+        ],
+        [
+         58.6,
+         -71.6
+        ],
+        [
+         52.3,
+         -81.7
+        ],
+        [
+         44.1,
+         -90.9
+        ],
+        [
+         33.9,
+         -98.7
+        ],
+        [
+         22.2,
+         -104.5
+        ],
+        [
+         9.2,
+         -108.0
+        ],
+        [
+         0.0,
+         -108.5
+        ]
+       ]
+      },
+      "lamina": {
+       "poligono": [
+        [
+         18.7,
+         -6.0
+        ],
+        [
+         23.6,
+         0.0
+        ],
+        [
+         34.0,
+         -0.0
+        ],
+        [
+         35.6,
+         -2.7
+        ],
+        [
+         27.2,
+         -13.0
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "arquivo": "quadros/charged_heavy/charged_heavy_f4.png",
+     "largura": 158,
+     "altura": 130,
+     "ancora": [
+      72,
+      118
+     ],
+     "pivo": [
+      72,
+      118
+     ],
+     "ms": 70.0,
+     "sha256": "f75df7c38955a8053b16b5568f73112435be8677661e37ca5d6eae43a6e122f5",
+     "nome_origem": "v4_A_charged_heavy_f4",
+     "corpo_bbox": [
+      39,
+      75,
+      104,
+      117
+     ],
+     "sombra": {
+      "arquivo": "sombras/charged_heavy_sombra.png",
+      "ancora": [
+       72,
+       118
+      ],
+      "largura": 158,
+      "altura": 130,
+      "pixels": 72,
+      "sha256": "f72ffd3529fee8830709aa9520927a001a1b08e792d0dca17c7abb471a28d877"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/charged_heavy/charged_heavy_f5.png",
+     "largura": 158,
+     "altura": 130,
+     "ancora": [
+      72,
+      118
+     ],
+     "pivo": [
+      72,
+      118
+     ],
+     "ms": 70.0,
+     "sha256": "5121cb418dac5c0f4a6ef83e1471287d2acc70463d1b61635e66c05a77008d2d",
+     "nome_origem": "v4_A_charged_heavy_f5",
+     "corpo_bbox": [
+      42,
+      75,
+      103,
+      117
+     ],
+     "sombra": {
+      "arquivo": "sombras/charged_heavy_sombra.png",
+      "ancora": [
+       72,
+       118
+      ],
+      "largura": 158,
+      "altura": 130,
+      "pixels": 72,
+      "sha256": "f72ffd3529fee8830709aa9520927a001a1b08e792d0dca17c7abb471a28d877"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/charged_heavy/charged_heavy_f6.png",
+     "largura": 158,
+     "altura": 130,
+     "ancora": [
+      72,
+      118
+     ],
+     "pivo": [
+      72,
+      118
+     ],
+     "ms": 80.0,
+     "sha256": "b4852be933df3ccfbb1113f83282151a6a9000048eb684df7d52608a88c0ae30",
+     "nome_origem": "v4_A_charged_heavy_f6",
+     "corpo_bbox": [
+      45,
+      74,
+      104,
+      117
+     ],
+     "sombra": {
+      "arquivo": "sombras/charged_heavy_sombra.png",
+      "ancora": [
+       72,
+       118
+      ],
+      "largura": 158,
+      "altura": 130,
+      "pixels": 72,
+      "sha256": "f72ffd3529fee8830709aa9520927a001a1b08e792d0dca17c7abb471a28d877"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/charged_heavy/charged_heavy_f7.png",
+     "largura": 158,
+     "altura": 130,
+     "ancora": [
+      72,
+      118
+     ],
+     "pivo": [
+      72,
+      118
+     ],
+     "ms": 120.0,
+     "sha256": "f25d0797ff6a65cf29c611f77d3f44d72c32e76a889f366b57d92912768ebd00",
+     "nome_origem": "v4_A_charged_heavy_f7",
+     "corpo_bbox": [
+      49,
+      73,
+      105,
+      117
+     ],
+     "sombra": {
+      "arquivo": "sombras/charged_heavy_sombra.png",
+      "ancora": [
+       72,
+       118
+      ],
+      "largura": 158,
+      "altura": 130,
+      "pixels": 72,
+      "sha256": "f72ffd3529fee8830709aa9520927a001a1b08e792d0dca17c7abb471a28d877"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/charged_heavy/charged_heavy_f8.png",
+     "largura": 158,
+     "altura": 130,
+     "ancora": [
+      72,
+      118
+     ],
+     "pivo": [
+      72,
+      118
+     ],
+     "ms": 140.0,
+     "sha256": "929fe0df2538f87d76db2ca521ad7372dbb13288ee8d8d4345d864ada41bffab",
+     "nome_origem": "v4_A_charged_heavy_f8",
+     "corpo_bbox": [
+      51,
+      72,
+      104,
+      117
+     ],
+     "sombra": {
+      "arquivo": "sombras/charged_heavy_sombra.png",
+      "ancora": [
+       72,
+       118
+      ],
+      "largura": 158,
+      "altura": 130,
+      "pixels": 72,
+      "sha256": "f72ffd3529fee8830709aa9520927a001a1b08e792d0dca17c7abb471a28d877"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/charged_heavy_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [
+    {
+     "quadro": 0,
+     "arquivo": "efeitos/charged_heavy_fx_f0.png",
+     "ancora": [
+      72,
+      118
+     ],
+     "largura": 158,
+     "altura": 130,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 122,
+     "sha256": "871fd9d212c173d5906c096a0a7d16317de85f3be348341412811f5aad315e2b"
+    },
+    {
+     "quadro": 1,
+     "arquivo": "efeitos/charged_heavy_fx_f1.png",
+     "ancora": [
+      72,
+      118
+     ],
+     "largura": 158,
+     "altura": 130,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 110,
+     "sha256": "164cdf597568cf125336f8624f035056e8d2f52da88f7836e9f47adbd2005d05"
+    },
+    {
+     "quadro": 2,
+     "arquivo": "efeitos/charged_heavy_fx_f2.png",
+     "ancora": [
+      72,
+      118
+     ],
+     "largura": 158,
+     "altura": 130,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 7041,
+     "sha256": "cd69169123c2582c28cb2c69e23707716bc5852766e6588f6d9594bcf2dbccab"
+    },
+    {
+     "quadro": 3,
+     "arquivo": "efeitos/charged_heavy_fx_f3.png",
+     "ancora": [
+      72,
+      118
+     ],
+     "largura": 158,
+     "altura": 130,
+     "camada": "atras_do_corpo",
+     "fase": "ATIVO",
+     "pixels": 1983,
+     "sha256": "054e539de295c712fbd9e05162c7e6ac0ebd39241e82e36e561200c611890cf8"
+    },
+    {
+     "quadro": 4,
+     "arquivo": "efeitos/charged_heavy_fx_f4.png",
+     "ancora": [
+      72,
+      118
+     ],
+     "largura": 158,
+     "altura": 130,
+     "camada": "atras_do_corpo",
+     "fase": "todas",
+     "pixels": 76,
+     "sha256": "8983f0cd8fd4c129b582c969e0701e7a30583bbb7ff76c622a957bebd4b0b830"
+    }
+   ],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo.",
+   "ataque": {
+    "attack_id": "carrasco_charged_heavy",
+    "tres": {
+     "windup_ms": 160.0,
+     "active_ms": 140.0,
+     "recovery_ms": 480.0
+    },
+    "fases": {
+     "PREPARACAO": {
+      "quadros": [
+       0,
+       1
+      ],
+      "ms": 160
+     },
+     "ATIVO": {
+      "quadros": [
+       2,
+       3
+      ],
+      "ms": 140
+     },
+     "RECUPERACAO": {
+      "quadros": [
+       4,
+       5,
+       6,
+       7,
+       8
+      ],
+      "ms": 480
+     }
+    },
+    "soma_confere_com_tres": true,
+    "dano_recortado": "so a frente do corpo e acima do chao"
+   }
+  },
+  {
+   "id": "parry",
+   "tipo": "animacao",
+   "loop": false,
+   "quadros_n": 4,
+   "duracao_total_ms": 380.0,
+   "nota_tempo": "parry: 4 q = 380 ms (guarda subindo 50 / guarda 110 / segura 100 / volta 120); ativo 0-160 ms",
+   "quadros": [
+    {
+     "arquivo": "quadros/parry/parry_f0.png",
+     "largura": 64,
+     "altura": 68,
+     "ancora": [
+      24,
+      65
+     ],
+     "pivo": [
+      24,
+      65
+     ],
+     "ms": 50.0,
+     "sha256": "9e66d0deb89baf2ccb9d4aac98f65ff3a733e1d7b0e9018b6f3bba784e2a87bb",
+     "nome_origem": "v4_A_parry_f0",
+     "corpo_bbox": [
+      2,
+      1,
+      42,
+      64
+     ],
+     "sombra": {
+      "arquivo": "sombras/parry_sombra.png",
+      "ancora": [
+       24,
+       65
+      ],
+      "largura": 64,
+      "altura": 68,
+      "pixels": 56,
+      "sha256": "3548ba67f4e94f7859033fdc2fec8fef58c693a46c30be3fb7fd20a6ca3a3c23"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/parry/parry_f1.png",
+     "largura": 64,
+     "altura": 68,
+     "ancora": [
+      24,
+      65
+     ],
+     "pivo": [
+      24,
+      65
+     ],
+     "ms": 110.0,
+     "sha256": "77e058be327e38b7c8f2bfa153fcc20ae8fe44632a699462d67117e3b5ecb3fc",
+     "nome_origem": "v4_A_parry_f1",
+     "corpo_bbox": [
+      2,
+      6,
+      45,
+      64
+     ],
+     "sombra": {
+      "arquivo": "sombras/parry_sombra.png",
+      "ancora": [
+       24,
+       65
+      ],
+      "largura": 64,
+      "altura": 68,
+      "pixels": 56,
+      "sha256": "3548ba67f4e94f7859033fdc2fec8fef58c693a46c30be3fb7fd20a6ca3a3c23"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/parry/parry_f2.png",
+     "largura": 64,
+     "altura": 68,
+     "ancora": [
+      24,
+      65
+     ],
+     "pivo": [
+      24,
+      65
+     ],
+     "ms": 100.0,
+     "sha256": "448bf0424af1f43beed069147bb4d331e616f5a4cfec36627d9e8075deae2553",
+     "nome_origem": "v4_A_parry_f2",
+     "corpo_bbox": [
+      1,
+      8,
+      49,
+      64
+     ],
+     "sombra": {
+      "arquivo": "sombras/parry_sombra.png",
+      "ancora": [
+       24,
+       65
+      ],
+      "largura": 64,
+      "altura": 68,
+      "pixels": 56,
+      "sha256": "3548ba67f4e94f7859033fdc2fec8fef58c693a46c30be3fb7fd20a6ca3a3c23"
+     },
+     "hitbox": null
+    },
+    {
+     "arquivo": "quadros/parry/parry_f3.png",
+     "largura": 64,
+     "altura": 68,
+     "ancora": [
+      24,
+      65
+     ],
+     "pivo": [
+      24,
+      65
+     ],
+     "ms": 120.0,
+     "sha256": "06a48531154641948302fc33250bf449d546adb799f970a727865af5fbe2f870",
+     "nome_origem": "v4_A_parry_f3",
+     "corpo_bbox": [
+      2,
+      19,
+      62,
+      64
+     ],
+     "sombra": {
+      "arquivo": "sombras/parry_sombra.png",
+      "ancora": [
+       24,
+       65
+      ],
+      "largura": 64,
+      "altura": 68,
+      "pixels": 56,
+      "sha256": "3548ba67f4e94f7859033fdc2fec8fef58c693a46c30be3fb7fd20a6ca3a3c23"
+     },
+     "hitbox": null
+    }
+   ],
+   "sombra": {
+    "por_quadro": false,
+    "arquivo": "sombras/parry_sombra.png",
+    "aplica_a": "todos os quadros; fica no chao (nao acompanha o voo)"
+   },
+   "efeitos": [],
+   "capa": "capa SEMPRE viva: o movimento de cada quadro vem do quadro ANTERIOR (atraso de 1 quadro em relacao ao corpo); faz parte do corpo",
+   "camadas": "ORDEM DE TRAS PARA FRENTE: capa -> bota distante -> bota proxima -> tronco/pano -> cabeca -> LAMINA -> braco/ombreira; efeitos atras do corpo."
+  },
+  {
+   "id": "parry_spark",
+   "tipo": "efeito_solto",
+   "loop": false,
+   "quadros_n": 3,
+   "duracao_total_ms": 160.0,
+   "nota_tempo": "faisca ao aparar (160 ms = parry_succeeded): desenhar POR CIMA do corpo, com a ancora (centro) em pes + posicao_relativa_aos_pes (x espelha)",
+   "posicao_relativa_aos_pes": [
+    25,
+    -25
+   ],
+   "quadros": [
+    {
+     "arquivo": "efeitos/parry_spark_f0.png",
+     "largura": 25,
+     "altura": 25,
+     "ancora": [
+      12,
+      12
+     ],
+     "ms": 50.0,
+     "sha256": "e9a747bc53ccc586d3628fd352be228fdf70ba016fbc3e4ac6b0adced342a342",
+     "sombra": null,
+     "hitbox": null
+    },
+    {
+     "arquivo": "efeitos/parry_spark_f1.png",
+     "largura": 25,
+     "altura": 25,
+     "ancora": [
+      12,
+      12
+     ],
+     "ms": 50.0,
+     "sha256": "e197ca691ee67b6bc7fc5738bb58f4fda0abafefa2b902eada4f3a11d7ea34a0",
+     "sombra": null,
+     "hitbox": null
+    },
+    {
+     "arquivo": "efeitos/parry_spark_f2.png",
+     "largura": 25,
+     "altura": 25,
+     "ancora": [
+      12,
+      12
+     ],
+     "ms": 60.0,
+     "sha256": "6d021da76eb7da7badc3830a4efe710dc985ef6844860dc49f00d7b39f744f88",
+     "sombra": null,
+     "hitbox": null
+    }
+   ],
+   "efeitos": [],
+   "sombra": {}
+  }
+ ],
+ "prova": {
+  "tira": "prova/tira_x2.png",
+  "pes_corrida": "verificacao/pes_corrida.json"
+ }
+}

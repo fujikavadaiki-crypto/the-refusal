@@ -4,6 +4,9 @@ extends Node2D
 
 
 func _physics_process(_delta: float) -> void:
+    if player.get_meta("small_carrasco_presenter_active", false):
+        visible = false
+        return
     var from := player.global_position + Vector2(0, 10)
     var query := PhysicsRayQueryParameters2D.create(from, from + Vector2(0, 95), 1)
     query.exclude = [player.get_rid()]

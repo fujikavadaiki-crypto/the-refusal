@@ -37,6 +37,9 @@ var confirmed_hit_count := 0
 var facing_direction := 1
 var charge_source: AttackData
 var charge_elapsed := 0.0
+var frame_provider: Object
+var frame_hitbox_anim := ""
+var frame_hitbox_frame := -1
 
 
 func _ready() -> void:
@@ -172,7 +175,8 @@ func tick(delta: float) -> void:
             _arm_hitbox()
         var progress := (elapsed - active_start) / current_attack.active_seconds
         pivot.rotation_degrees = lerpf(current_attack.start_angle_degrees, current_attack.end_angle_degrees, progress) * facing_direction
-        hitbox.scan_overlaps()
+        if not uses_frame_profile():
+            hitbox.scan_overlaps()
     elif elapsed < total:
         if phase == Phase.ACTIVE:
             hitbox.disarm()
@@ -182,6 +186,24 @@ func tick(delta: float) -> void:
         pivot.rotation_degrees = lerpf(current_attack.end_angle_degrees, 55.0, progress) * facing_direction
     else:
         _finish()
+
+
+func uses_frame_profile() -> bool:
+    return current_attack != null and is_instance_valid(frame_provider) and frame_provider.has_method("profiles_attack") and frame_provider.profiles_attack(String(current_attack.attack_id))
+
+
+func resolve_frame_contact() -> void:
+    frame_hitbox_anim = ""
+    frame_hitbox_frame = -1
+    if phase != Phase.ACTIVE or not uses_frame_profile():
+        hitbox.clear_frame_override()
+        return
+    var info: Dictionary = frame_provider.attack_hitbox(String(current_attack.attack_id), elapsed)
+    frame_hitbox_anim = String(info.get("anim", ""))
+    frame_hitbox_frame = int(info.get("quadro", -1))
+    var parts: Array = info.get("partes", []) if info.get("tem_hitbox", false) else []
+    hitbox.set_frame_parts(parts, player.global_position + Vector2(0, 13), facing_direction, 0.9)
+    hitbox.scan_overlaps()
 
 
 func _light_data(stage: int) -> AttackData:

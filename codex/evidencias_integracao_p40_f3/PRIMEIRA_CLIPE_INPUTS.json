@@ -1,0 +1,425 @@
+[
+  {
+    "event": "start",
+    "frame": 0,
+    "scene": "res://scenes/biomes/forest/bosque_integracao_p40.tscn"
+  },
+  {
+    "action": "move_right",
+    "frame": 35,
+    "pressed": true
+  },
+  {
+    "action": "jump",
+    "frame": 70,
+    "pressed": true
+  },
+  {
+    "action": "jump",
+    "frame": 80,
+    "pressed": false
+  },
+  {
+    "action": "dodge",
+    "frame": 88,
+    "pressed": true
+  },
+  {
+    "action": "dodge",
+    "frame": 90,
+    "pressed": false
+  },
+  {
+    "action": "move_right",
+    "frame": 200,
+    "pressed": false
+  },
+  {
+    "action": "parry",
+    "frame": 205,
+    "pressed": true
+  },
+  {
+    "action": "parry",
+    "frame": 207,
+    "pressed": false
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 261,
+    "pressed": true
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 263,
+    "pressed": false
+  },
+  {
+    "active_frame": 4,
+    "attack": "carrasco_heavy",
+    "damage": 70,
+    "event": "hit",
+    "frame": 284,
+    "target": "Peregrino"
+  },
+  {
+    "action": "attack_light",
+    "frame": 331,
+    "pressed": true
+  },
+  {
+    "action": "attack_light",
+    "frame": 333,
+    "pressed": false
+  },
+  {
+    "active_frame": 2,
+    "attack": "carrasco_light_1",
+    "damage": 30,
+    "event": "hit",
+    "frame": 339,
+    "target": "Peregrino"
+  },
+  {
+    "event": "next_encounter",
+    "frame": 600,
+    "player_position": [
+      470.735382080078,
+      226.618804931641
+    ],
+    "target": "Corvo"
+  },
+  {
+    "action": "move_right",
+    "frame": 600,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 608,
+    "pressed": false
+  },
+  {
+    "action": "move_right",
+    "frame": 628,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 662,
+    "pressed": false
+  },
+  {
+    "action": "move_right",
+    "frame": 682,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 694,
+    "pressed": false
+  },
+  {
+    "action": "jump",
+    "frame": 714,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 715,
+    "pressed": true
+  },
+  {
+    "action": "jump",
+    "frame": 724,
+    "pressed": false
+  },
+  {
+    "action": "move_right",
+    "frame": 724,
+    "pressed": false
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 728,
+    "pressed": true
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 730,
+    "pressed": false
+  },
+  {
+    "action": "move_right",
+    "frame": 775,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 781,
+    "pressed": false
+  },
+  {
+    "action": "move_right",
+    "frame": 840,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 852,
+    "pressed": false
+  },
+  {
+    "action": "move_right",
+    "frame": 885,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 890,
+    "pressed": false
+  },
+  {
+    "action": "move_right",
+    "frame": 910,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 912,
+    "pressed": false
+  },
+  {
+    "action": "move_right",
+    "frame": 932,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 952,
+    "pressed": false
+  },
+  {
+    "action": "move_left",
+    "frame": 972,
+    "pressed": true
+  },
+  {
+    "action": "move_left",
+    "frame": 996,
+    "pressed": false
+  },
+  {
+    "action": "move_left",
+    "frame": 1030,
+    "pressed": true
+  },
+  {
+    "action": "move_left",
+    "frame": 1040,
+    "pressed": false
+  },
+  {
+    "action": "move_left",
+    "frame": 1087,
+    "pressed": true
+  },
+  {
+    "action": "move_left",
+    "frame": 1091,
+    "pressed": false
+  },
+  {
+    "action": "move_left",
+    "frame": 1122,
+    "pressed": true
+  },
+  {
+    "action": "move_left",
+    "frame": 1130,
+    "pressed": false
+  },
+  {
+    "action": "move_left",
+    "frame": 1172,
+    "pressed": true
+  },
+  {
+    "action": "move_left",
+    "frame": 1180,
+    "pressed": false
+  },
+  {
+    "event": "next_encounter",
+    "frame": 1200,
+    "player_position": [
+      730.098510742188,
+      200.491821289063
+    ],
+    "target": "Raiz"
+  },
+  {
+    "action": "move_right",
+    "frame": 1200,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 1204,
+    "pressed": false
+  },
+  {
+    "action": "move_right",
+    "frame": 1231,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 1248,
+    "pressed": false
+  },
+  {
+    "action": "move_left",
+    "frame": 1270,
+    "pressed": true
+  },
+  {
+    "action": "move_left",
+    "frame": 1289,
+    "pressed": false
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 1309,
+    "pressed": true
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 1311,
+    "pressed": false
+  },
+  {
+    "action": "move_right",
+    "frame": 1356,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 1357,
+    "pressed": false
+  },
+  {
+    "active_frame": 2,
+    "attack": "carrasco_light_1",
+    "damage": 36,
+    "event": "hit",
+    "frame": 1364,
+    "target": "Raiz"
+  },
+  {
+    "action": "move_right",
+    "frame": 1387,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 1397,
+    "pressed": false
+  },
+  {
+    "action": "attack_light",
+    "frame": 1397,
+    "pressed": true
+  },
+  {
+    "action": "attack_light",
+    "frame": 1399,
+    "pressed": false
+  },
+  {
+    "action": "attack_light",
+    "frame": 1420,
+    "pressed": true
+  },
+  {
+    "action": "attack_light",
+    "frame": 1422,
+    "pressed": false
+  },
+  {
+    "action": "attack_light",
+    "frame": 1445,
+    "pressed": true
+  },
+  {
+    "action": "attack_light",
+    "frame": 1447,
+    "pressed": false
+  },
+  {
+    "action": "move_right",
+    "frame": 1473,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 1474,
+    "pressed": false
+  },
+  {
+    "active_frame": 2,
+    "attack": "carrasco_light_1",
+    "damage": 36,
+    "event": "hit",
+    "frame": 1491,
+    "target": "Raiz"
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 1514,
+    "pressed": true
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 1584,
+    "pressed": false
+  },
+  {
+    "action": "jump",
+    "frame": 1664,
+    "pressed": true
+  },
+  {
+    "action": "jump",
+    "frame": 1674,
+    "pressed": false
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 1677,
+    "pressed": true
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 1679,
+    "pressed": false
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 1754,
+    "pressed": true
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 1756,
+    "pressed": false
+  },
+  {
+    "active_frame": 4,
+    "attack": "carrasco_heavy",
+    "damage": 13,
+    "event": "hit",
+    "frame": 1777,
+    "target": "Raiz"
+  }
+]

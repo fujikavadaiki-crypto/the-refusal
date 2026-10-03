@@ -47,7 +47,7 @@ func run_checks() -> void:
     var camera := player.get_node("Camera2D") as PlayerCamera
     var encounters := slice.encounters as Array[ForestEncounter]
     var form: Node2D = player.get_node("VisualRoot").form
-    check(player.is_on_floor() and player.get_node("MaskController").active_data().mask_id == &"carrasco_base" and form.get("approved_board_mode"), "Carrasco aprovado nasce sobre o piso pintado")
+    check(player.is_on_floor() and player.get_node("MaskController").active_data().mask_id == &"carrasco_base" and form.get("package_ready"), "Carrasco pequeno nasce no piso com pacote validado")
     check(encounters.size() == 2 and encounters[0].enemies.size() + encounters[1].enemies.size() == 3, "dois encontros, três inimigos")
     check(camera.limit_right == 3900 and camera.impact_shake_enabled, "câmera da vertical slice configurada")
     await snapshot("01_inicio")

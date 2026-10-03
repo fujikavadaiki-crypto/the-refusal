@@ -1,0 +1,18 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+ROOM_STEP tick=0 x=82.3 y=161.4 floor=false falls=0
+ROOM_STEP tick=60 x=234.9 y=209.1 floor=true falls=0
+ROOM_STEP tick=120 x=395.3 y=224.5 floor=true falls=0
+ROOM_STEP tick=180 x=555.3 y=228.7 floor=true falls=0
+ROOM_JUMP_RUIN x=603.3 y=230.1
+ROOM_STEP tick=240 x=715.5 y=199.7 floor=true falls=0
+ROOM_STEP tick=300 x=875.9 y=246.9 floor=true falls=0
+ROOM_JUMP_STONE x=950.6 y=246.7
+ROOM_STEP tick=360 x=1035.9 y=189.2 floor=false falls=0
+ROOM_JUMP_GAP x=1041.3 y=199.0 floor=false
+ROOM_DASH_GAP x=1091.9 y=145.1
+ROOM_STEP tick=420 x=1206.3 y=212.8 floor=false falls=0
+BOSQUE_APPROVED_ROOM_EXIT falls=0
+ROOM_RESULT checks={ "main_path": true, "height_change": true, "raised_platform": true, "gap_empty": true, "gap_crossed": true, "exit": true } falls=0 x=1272.9 y=263.3
