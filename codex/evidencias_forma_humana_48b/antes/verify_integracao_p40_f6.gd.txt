@@ -1,0 +1,209 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+PASS: pacote aprovado carrega sem erro: []
+PASS: 12 animações reais do Peregrino
+PASS: hurtbox sugerida raio 7 / altura 44 px pela escala fixa
+PASS: hurtbox conserva pés antigos
+PASS: colisor de locomoção e IA preservados
+PASS: estado IDLE usa animação própria
+PASS: estado PATROL usa animação própria
+PASS: estado ALERT usa animação própria
+PASS: estado CHASE usa animação própria
+PASS: estado HURT usa animação própria
+PASS: estado RUPTURE usa animação própria
+PASS: estado DEATH usa animação própria
+PASS: ruptura não repete a entrada: loop começa no quadro 3
+PASS: morte segura quadro caído sem rotação/escala legadas
+PASS: corte mantém tempos do recurso original
+PASS: corte seleciona área do quadro ATIVO correspondente
+PASS: corte área recortada à frente e acima do chão
+PASS: corte seleciona área do quadro ATIVO correspondente
+PASS: corte área recortada à frente e acima do chão
+PASS: corte aviso segue classe real de parry
+PASS: corte aviso do pacote visível na preparação
+PASS: corte área do pacote substitui pivô e arma legada não aparece
+PASS: corte aviso desaparece em ACTIVE
+PASS: corte interrupção limpa área
+PASS: corte espelho conserva contato/dano
+PASS: estocada mantém tempos do recurso original
+PASS: estocada seleciona área do quadro ATIVO correspondente
+PASS: estocada área recortada à frente e acima do chão
+PASS: estocada seleciona área do quadro ATIVO correspondente
+PASS: estocada área recortada à frente e acima do chão
+PASS: estocada aviso segue classe real de parry
+PASS: estocada aviso do pacote visível na preparação
+PASS: estocada área do pacote substitui pivô e arma legada não aparece
+PASS: estocada aviso desaparece em ACTIVE
+PASS: estocada interrupção limpa área
+PASS: estocada espelho conserva contato/dano
+PASS: corte_duplo_1 mantém tempos do recurso original
+PASS: corte_duplo_1 seleciona área do quadro ATIVO correspondente
+PASS: corte_duplo_1 área recortada à frente e acima do chão
+PASS: corte_duplo_1 seleciona área do quadro ATIVO correspondente
+PASS: corte_duplo_1 área recortada à frente e acima do chão
+PASS: corte_duplo_1 seleciona apenas a sua parte do duplo
+PASS: corte_duplo_1 aviso segue classe real de parry
+PASS: corte_duplo_1 aviso do pacote visível na preparação
+PASS: corte_duplo_1 área do pacote substitui pivô e arma legada não aparece
+PASS: corte_duplo_1 aviso desaparece em ACTIVE
+PASS: corte_duplo_1 interrupção limpa área
+PASS: corte_duplo_1 espelho conserva contato/dano
+PASS: corte_duplo_2 mantém tempos do recurso original
+PASS: corte_duplo_2 seleciona área do quadro ATIVO correspondente
+PASS: corte_duplo_2 área recortada à frente e acima do chão
+PASS: corte_duplo_2 seleciona área do quadro ATIVO correspondente
+PASS: corte_duplo_2 área recortada à frente e acima do chão
+PASS: corte_duplo_2 seleciona apenas a sua parte do duplo
+PASS: corte_duplo_2 aviso segue classe real de parry
+PASS: corte_duplo_2 aviso do pacote visível na preparação
+PASS: corte_duplo_2 área do pacote substitui pivô e arma legada não aparece
+PASS: corte_duplo_2 aviso desaparece em ACTIVE
+PASS: corte_duplo_2 interrupção limpa área
+PASS: corte_duplo_2 espelho conserva contato/dano
+PASS: investida mantém tempos do recurso original
+PASS: investida seleciona área do quadro ATIVO correspondente
+PASS: investida área recortada à frente e acima do chão
+PASS: investida seleciona área do quadro ATIVO correspondente
+PASS: investida área recortada à frente e acima do chão
+PASS: investida aviso segue classe real de parry
+PASS: investida aviso do pacote visível na preparação
+PASS: investida área do pacote substitui pivô e arma legada não aparece
+PASS: investida aviso desaparece em ACTIVE
+PASS: investida interrupção limpa área
+PASS: investida espelho conserva contato/dano
+PASS: penitencia mantém tempos do recurso original
+PASS: penitencia seleciona área do quadro ATIVO correspondente
+PASS: penitencia área recortada à frente e acima do chão
+PASS: penitencia seleciona área do quadro ATIVO correspondente
+PASS: penitencia área recortada à frente e acima do chão
+PASS: penitencia aviso segue classe real de parry
+PASS: penitencia aviso do pacote visível na preparação
+PASS: penitencia área do pacote substitui pivô e arma legada não aparece
+PASS: penitencia aviso desaparece em ACTIVE
+PASS: penitencia interrupção limpa área
+PASS: penitencia espelho conserva contato/dano
+PASS: corte não atinge jogador atrás do Peregrino
+PASS: estocada não atinge jogador atrás do Peregrino
+PASS: corte_duplo_1 não atinge jogador atrás do Peregrino
+PASS: corte_duplo_2 não atinge jogador atrás do Peregrino
+PASS: investida não atinge jogador atrás do Peregrino
+PASS: penitencia não atinge jogador atrás do Peregrino
+PASS: pacote real: âncora nos pés em pixel inteiro
+PASS: pacote real: apresentação ×1 NEAREST
+PASS: pacote real: espelho único sem deslocar pés
+PASS: pacote real: uma sombra separada no chão
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: FX real: camada de fundo/frente válida
+PASS: duplo conserva dois UIDs e no máximo um acerto por parte
+PASS: ruptura real seleciona ajoelhado
+PASS: morte real anima e desliga hurtbox
+PASS: R restaura vida, hurtbox e apresentação
+PASS: mapeamento ausente restaura apresentação/arma antigas
+PASS: fallback restaura hurtbox anterior sem deixar pacote parcialmente equipado
+PASS: reequipar pacote válido restaura arte e hurtbox sugerida
+PASS: Corvo mantém arte provisória; nenhum pacote humanoide usado
+PASS: Raiz mantém arte provisória; nenhum pacote humanoide usado
+PASS: Bosque F9 também equipa pacote e hurtbox reais
+FINAL: 204 checks / 0 failures

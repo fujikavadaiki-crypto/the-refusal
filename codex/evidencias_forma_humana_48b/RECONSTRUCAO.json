@@ -1,0 +1,22 @@
+{
+  "rgba_identico": true,
+  "pixels_diferentes": 0,
+  "mestre_sha256": "204432d31a2d8890c6def7b6fd81b56972ce482b5eca82fa3de878ebe2dcf988",
+  "partes": 13,
+  "origem": "arte_fonte/forma_humana_v1/forma_humana_mestre_x1.png",
+  "partes_camadas": [
+    "coxa_tras",
+    "canela_tras",
+    "bota_tras",
+    "braco_distante",
+    "capa",
+    "tronco",
+    "coxa_frente",
+    "canela_frente",
+    "bota_frente",
+    "capuz",
+    "cabeca_cabelo",
+    "braco_proximo",
+    "mao_espada"
+  ]
+}

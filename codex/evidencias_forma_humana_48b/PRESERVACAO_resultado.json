@@ -1,0 +1,34 @@
+{
+  "preservado": true,
+  "metadados": {
+    "branch": true,
+    "main": true,
+    "original_head": true,
+    "original_status": true,
+    "conceito_original": true,
+    "mestre_aprovado": true
+  },
+  "alteracoes_todas": {
+    "integracao_protegida": [],
+    "prova": [],
+    "P40": [],
+    "original": [],
+    "pacotes_aprovados": [],
+    "referencias_elenco": [],
+    "historico": []
+  },
+  "alteracoes_externas_diretor": [],
+  "arquivos": {
+    "integracao_protegida": 2786,
+    "prova": 1550,
+    "P40": 1578,
+    "original": 770,
+    "pacotes_aprovados": 3,
+    "referencias_elenco": 11,
+    "historico": 1
+  },
+  "conceito_original": {
+    "forma_humana_conceito_v1.png": "a06f367146b26b5e77a635c4af63d8510b152dc2ea6f3f5fd566c7afa2e7c279",
+    "PROMPT.txt": "2b87ac1e4f6f85a9aebb08d26069d45b48787ca196ae94e25af4c5d9ea026b1b"
+  }
+}

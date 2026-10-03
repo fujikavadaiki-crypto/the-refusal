@@ -1,0 +1,197 @@
+{
+  "referencia_sha256": "0a61e24f68a2d5ed2ebbdfc666c504d2851fa8f66316cae5d9c8f33c114d9a64",
+  "animacoes": [
+    {
+      "id": "idle",
+      "loop": true,
+      "quadros_n": 8,
+      "quadros": [
+        {
+          "arquivo": "quadros/idle/idle_f0.png",
+          "sha256": "7652e095e94c62066d553239e0602f9caf5659fe4a377cc35408638af18ee7dc",
+          "ms": 280.0,
+          "ancora": [
+            40,
+            56
+          ],
+          "quadro": 0
+        },
+        {
+          "arquivo": "quadros/idle/idle_f1.png",
+          "sha256": "7652e095e94c62066d553239e0602f9caf5659fe4a377cc35408638af18ee7dc",
+          "ms": 250.0,
+          "ancora": [
+            40,
+            56
+          ],
+          "quadro": 1
+        },
+        {
+          "arquivo": "quadros/idle/idle_f2.png",
+          "sha256": "ea1812e2696b19e8238057f704b6e9268c5288bf3bfe4c8b756918a320ebefc8",
+          "ms": 250.0,
+          "ancora": [
+            40,
+            56
+          ],
+          "quadro": 2
+        },
+        {
+          "arquivo": "quadros/idle/idle_f3.png",
+          "sha256": "7bf37fce4ed80a78dd81176d1c945b1bc16a29578c0decc653f4373fbe95de73",
+          "ms": 280.0,
+          "ancora": [
+            40,
+            56
+          ],
+          "quadro": 3
+        },
+        {
+          "arquivo": "quadros/idle/idle_f4.png",
+          "sha256": "7bf37fce4ed80a78dd81176d1c945b1bc16a29578c0decc653f4373fbe95de73",
+          "ms": 250.0,
+          "ancora": [
+            40,
+            56
+          ],
+          "quadro": 4
+        },
+        {
+          "arquivo": "quadros/idle/idle_f5.png",
+          "sha256": "c801c2f76b22e7e83852835dcefa2070f9f72341d7801151303153f318269f6b",
+          "ms": 250.0,
+          "ancora": [
+            40,
+            56
+          ],
+          "quadro": 5
+        },
+        {
+          "arquivo": "quadros/idle/idle_f6.png",
+          "sha256": "7652e095e94c62066d553239e0602f9caf5659fe4a377cc35408638af18ee7dc",
+          "ms": 220.0,
+          "ancora": [
+            40,
+            56
+          ],
+          "quadro": 6
+        },
+        {
+          "arquivo": "quadros/idle/idle_f7.png",
+          "sha256": "7652e095e94c62066d553239e0602f9caf5659fe4a377cc35408638af18ee7dc",
+          "ms": 220.0,
+          "ancora": [
+            40,
+            56
+          ],
+          "quadro": 7
+        }
+      ],
+      "duracao_soma_ms": 2000.0,
+      "duracao_nominal_referencia_ms": 2000.0
+    },
+    {
+      "id": "run",
+      "loop": true,
+      "quadros_n": 8,
+      "quadros": [
+        {
+          "arquivo": "quadros/run/run_f0.png",
+          "sha256": "4a24ca478e3b482e4db92071ec7c170249982803e6e685c2b12eb7846689fe4f",
+          "ms": 41.67,
+          "ancora": [
+            40,
+            56
+          ],
+          "quadro": 0
+        },
+        {
+          "arquivo": "quadros/run/run_f1.png",
+          "sha256": "55e7b71c86b7d2a131f7c7b40852bedc0b47708417635488225c709fc7c7cba6",
+          "ms": 41.67,
+          "ancora": [
+            40,
+            56
+          ],
+          "quadro": 1
+        },
+        {
+          "arquivo": "quadros/run/run_f2.png",
+          "sha256": "6277814d66f583ed083c6f9b63348da4354d3de948b6b6f353ca36a13c5c3dff",
+          "ms": 41.67,
+          "ancora": [
+            40,
+            56
+          ],
+          "quadro": 2
+        },
+        {
+          "arquivo": "quadros/run/run_f3.png",
+          "sha256": "4625070f9fd08b76a77c4573d0b5a266683cbdbf26004de882041f5a2bcdb68a",
+          "ms": 41.67,
+          "ancora": [
+            40,
+            56
+          ],
+          "quadro": 3
+        },
+        {
+          "arquivo": "quadros/run/run_f4.png",
+          "sha256": "ee7c35bf48c5f804a0146e7208133ec59804f8eadf6cc50375f14557004a2d63",
+          "ms": 41.67,
+          "ancora": [
+            40,
+            56
+          ],
+          "quadro": 4
+        },
+        {
+          "arquivo": "quadros/run/run_f5.png",
+          "sha256": "efce4cc7544a935eaa745b945edef5cceb84972f36a230dd70a88bac5c1e28d9",
+          "ms": 41.67,
+          "ancora": [
+            40,
+            56
+          ],
+          "quadro": 5
+        },
+        {
+          "arquivo": "quadros/run/run_f6.png",
+          "sha256": "2c23fce3870c355bf2903bd21aca86c3b40519c4e8066acaa4826379cb007f66",
+          "ms": 41.67,
+          "ancora": [
+            40,
+            56
+          ],
+          "quadro": 6
+        },
+        {
+          "arquivo": "quadros/run/run_f7.png",
+          "sha256": "dcfc4653ea9cc4de6e82dc832e8a2f02424dcf5a6d11a76e965cabe40fd0cdbe",
+          "ms": 41.67,
+          "ancora": [
+            40,
+            56
+          ],
+          "quadro": 7
+        }
+      ],
+      "duracao_soma_ms": 333.36,
+      "duracao_nominal_referencia_ms": 333.33,
+      "px_por_quadro": 6,
+      "selecao": "floor(distancia_px/6) % 8"
+    }
+  ],
+  "nao_e_pacote_final": true,
+  "sem_walk": true,
+  "caminhada_usa": "run",
+  "paleta": "paleta_bosque_v1",
+  "canvas": [
+    96,
+    64
+  ],
+  "ancora": [
+    40,
+    56
+  ]
+}
