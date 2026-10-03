@@ -23,3 +23,13 @@ Um ataque com algum dado de hitbox usa exclusivamente seus quadros; quadro vazio
 Corvo aceita `projeteis:{corvo_cuspe_pestilento:cuspe_projetil}`. Essa animação tem PNG/âncora próprios e avança por `ms` durante o voo. Seus quadros de dano são ACTIVE e relativos à origem/âncora do projétil, com direção travada na trajetória. A animação do bico é distinta. Sem animação dedicada, o core e a área nativos continuam. Velocidade, duração, colisão com terreno e defesa permanecem originais.
 
 `codex/fixtures/inimigo_falso_v1/` é **FALSO, apenas para testes**: quatro PNGs pequenos, idle/hurt/death e ataque com retângulo/polígono ACTIVE, FX e sombra separados. A sala normal não o usa. A suíte F5 injeta seu mapa em Peregrino, Corvo, Raiz e projétil, testa rejeição de hash/caminho/tempo/âncora/fase inválidos e restaura os mapas reais. F3 exibe polígonos dos inimigos quando um pacote válido fornecer áreas.
+
+## Tarefa 4.7 — Peregrino Corrompido
+
+Pacote equipado: `assets/enemies/peregrino_corrompido_v1/`, com paleta Bosque v1 (62 cores, as 44 originais preservadas), mestre v2 de 52 px, 12 animações e 89 quadros. O Profanado v1 e seu pacote continuam arquivados byte a byte. A fixture `codex/fixtures/peregrino_profanado_mapa.json` permite verificar o pacote antigo sem depender da roupa atualmente equipada.
+
+`px_por_quadro` é opcional, numérico e positivo. Patrulha/perseguição usam 4 px de referência por quadro; acumulam deslocamento horizontal pela escala fixa 0,9, conservam a fase entre as duas marchas e não avançam só com o tempo. Teleportes ≥48 px não contam como passos; idle limpa o acumulador. Pacotes sem esse campo mantêm a cadência temporal. Tolerância numérica de 0,001 px nos limites de quadro; arte final em pixels inteiros.
+
+Cajado e sinos substituem a lâmina visual; penitência crava o cajado no chão e usa aviso vermelho. Os outros golpes usam aviso pálido. Cada área ACTIVE combina arco em polígono, corpo próximo da arma em retângulo e segmento do cajado; recortados à frente e acima do chão. Os seis recursos de ataque, suas fases, parry, dano e IA continuam originais.
+
+Hurtbox sugerida/aplicada: raio 7 e altura 48 px (capuz/tronco sem galhos/arma), raio 7,777778 e altura 53,333333 unidades; centro Y=−11,166667, pés Y=15,5. O colisor de locomoção mantém raio 7/altura 31 unidades. F3 desenha a hurtbox e áreas acima dos sprites/FX, para não ocultar as linhas de inspeção.

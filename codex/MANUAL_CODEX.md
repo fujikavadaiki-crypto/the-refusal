@@ -36,7 +36,7 @@
 
 ---
 
-## 2. Estado atual (fim da Tarefa 4.5 / F6)
+## 2. Estado atual (fim da Tarefa 4.7)
 
 **Integrado e funcionando no branch:**
 
@@ -57,14 +57,14 @@
   - flash branco, recuo, sangue e poeira em pixels;
   - câmera com antecipação de 18 px.
 - **Inimigos:**
-  - **Peregrino Profanado v1** com arte (`assets/enemies/peregrino_v1/`), hurtbox 7×44 px. **Este visual será substituído** pelo Peregrino Corrompido (§5.2).
+  - **Peregrino Corrompido v1** equipado (`assets/enemies/peregrino_corrompido_v1/`): mestre v2 limpo de 52 px, rig de partes, 12 animações/89 quadros, marcha por distância (4 px/quadro), cajado com sinos e áreas ACTIVE. Hurtbox raio 7/altura 48 px, sem alterar colisor de locomoção, IA ou tuning. O Profanado v1 permanece arquivado intacto em `assets/enemies/peregrino_v1/`.
   - **Corvo** (ave) e **Raiz Faminta** ainda com `Polygon2D` provisório.
 - **Leitor genérico de pacote de inimigo**, com contrato em `codex/CONTRATO_PACOTE_INIMIGO.md`:
   - mapas IA→animação em `data/enemies/*_mapa.json`;
   - projétil com animação própria;
   - pacote FALSO só para os testes.
 - **Salas:** `JOGAR_INTEGRACAO.cmd` abre o **cemitério do P40**; F9 alterna para o **Bosque B**. As teclas estão em `codex/README_INTEGRACAO_P40.md`.
-- **Testes:** `python codex/verificar_fase6.py after` roda 24 suítes, com 2 falhas preexistentes; `python codex/verificar_fase6.py new` roda as 201 verificações do pacote real.
+- **Testes:** `python codex/verificar_peregrino_corrompido.py after` roda 25 suítes (23 aprovadas, duas falhas antigas); `python codex/verificar_peregrino_corrompido.py new` roda 200 verificações do Corrompido. A suíte F6 verifica explicitamente o Profanado arquivado (204 verificações). `python arte_fonte/ferramentas/gerar_peregrino_corrompido.py --verify` confere hashes, paleta, componentes, pixels, âncoras e tempos dos seis `.tres`.
 
 **Pendências conhecidas (não resolver sem tarefa):**
 
@@ -306,7 +306,9 @@ The Refusal/integracao-p40/            <- TRABALHO (branch feature/integracao-p4
   codex/RELATORIO_INTEGRACAO_P40_F1..F6.md, evidencias_*/
   data/config/sensacao.json            <- valores de sensação
   data/enemies/*_mapa.json             <- IA -> animação
-  assets/enemies/peregrino_v1/         <- 1º pacote real de inimigo
+  assets/enemies/peregrino_v1/         <- Profanado v1 arquivado, intacto
+  assets/enemies/peregrino_corrompido_v1/ <- pacote v2 equipado (Tarefa 4.7)
+  arte_fonte/peregrino_corrompido_v1/  <- limpeza, partes/pivôs, poses e comparações
   arte_fonte/ (.gdignore)              <- ARTE-FONTE (não importada pelo Godot)
     referencias/inimigos_v2/folhas|recortes
     inimigos_mestre_x1/                <- mestres x1 + comparações de escala + alturas_alvo.json

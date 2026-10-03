@@ -45,3 +45,14 @@ O backup da fase anterior e a entrega desta fase são enviados **somente a featu
 `python codex/verificar_fase6.py after` executa as **24 suítes** existentes; `python codex/verificar_fase6.py new` executa as **204 verificações** do pacote real. Suites do Bosque continuam abrindo o Bosque. Logs e medidas são redirecionados para F6, preservando as evidências antigas. Duas falhas preexistentes de arte legada permanecem registradas.
 
 `python codex/capturar_fase6.py photos` recria os prints; `python codex/capturar_fase6.py capture` exporta os 600 quadros; `python codex/capturar_fase6.py encode` gera o MP4. Quadros temporários em `.godot/p40_runtime_f6/capture_frames`. O ZIP aprovado e suas 160 cópias são conferidos por SHA256; o original permanece só leitura. Não sobrescrever `PRESERVACAO_antes.json` da entrega.
+
+## Tarefa 4.7 — Peregrino Corrompido
+
+Abra `JOGAR_INTEGRACAO.cmd`: o cemitério usa o Corrompido de capuz marrom, musgo, osso e cajado com sinos. F9 alterna para o Bosque com o mesmo pacote. R reinicia. F3 mostra hurtbox/áreas ACTIVE; G/H alternam os grupos de sensação. Física e teclas de combate continuam iguais.
+
+Arte-fonte: `arte_fonte/peregrino_corrompido_v1/` (mestre limpo, partes/pivôs, poses e folhas). Pacote final: `assets/enemies/peregrino_corrompido_v1/`. O Profanado v1 está guardado em `assets/enemies/peregrino_v1/`.
+
+- Conferir arte: `python arte_fonte/ferramentas/gerar_peregrino_corrompido.py --verify`.
+- Suíte nova: `python codex/verificar_peregrino_corrompido.py new`.
+- Regressão: `python codex/verificar_peregrino_corrompido.py after`.
+- Evidências e GIFs: `codex/evidencias_peregrino_corrompido/CAPTURAS.md`.

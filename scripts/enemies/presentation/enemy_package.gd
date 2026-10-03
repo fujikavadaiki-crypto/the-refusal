@@ -114,7 +114,12 @@ static func load_package(root: String) -> Dictionary:
                         atlas.region = bbox
                         shadow = {"texture": atlas, "bbox": bbox, "ancora": sa}
             frames.append({"tex": tex, "ancora": anchor, "ms": ms, "sombra": shadow, "efeitos": effects, "hitbox": damage, "phase": phase})
-        anims[id] = {"frames": frames, "loop": bool(source.get("loop", false)), "ms": total_ms, "has_damage": has_damage, "attack": attack, "attack_specs": attack_specs, "loop_start": int(source.get("loop_inicio_quadro", 0))}
+        var distance_step := 0.0
+        if source.has("px_por_quadro"):
+            if not CORE._number(source.px_por_quadro) or float(source.px_por_quadro) <= 0:
+                errors.append("px_por_quadro invalido")
+            else: distance_step = float(source.px_por_quadro)
+        anims[id] = {"frames": frames, "loop": bool(source.get("loop", false)), "ms": total_ms, "has_damage": has_damage, "attack": attack, "attack_specs": attack_specs, "loop_start": int(source.get("loop_inicio_quadro", 0)), "px_por_quadro": distance_step}
     if anims.is_empty(): errors.append("pacote sem animacoes")
     var hurt: Variant = data.get("hurtbox_sugerida", {})
     if not hurt is Dictionary:

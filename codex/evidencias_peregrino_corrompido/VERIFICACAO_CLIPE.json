@@ -1,0 +1,19 @@
+{
+  "arquivo": "CLIPE_PEREGRINO_CORROMPIDO_20s.mp4",
+  "exit": 0,
+  "quadros_decodificados": 600,
+  "duracao_s": 20,
+  "erro": "",
+  "sha256": "afcee5f82d6bd5c7d5f3735176800a953c98cb7b5ce847956ba46138720c06e0",
+  "animacoes_inimigo_no_clipe": {
+    "alerta": 9,
+    "perseguicao": 102,
+    "ataque_corte": 55,
+    "ataque_estocada": 62,
+    "ataque_corte_duplo": 81,
+    "ataque_investida": 32,
+    "ruptura": 89,
+    "ataque_penitencia": 47,
+    "morte": 123
+  }
+}

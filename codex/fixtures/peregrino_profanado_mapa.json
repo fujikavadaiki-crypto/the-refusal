@@ -1,0 +1,29 @@
+{
+  "pacote": "res://assets/enemies/peregrino_v1/",
+  "padrao": "idle",
+  "pes_world": [
+    0,
+    15.5
+  ],
+  "estados": {
+    "IDLE": "idle",
+    "PATROL": "patrulha",
+    "ALERT": "alerta",
+    "CHASE": "perseguicao",
+    "ATTACK_WINDUP": "idle",
+    "ATTACK_ACTIVE": "idle",
+    "ATTACK_RECOVERY": "idle",
+    "HURT": "dano",
+    "RUPTURE": "ruptura",
+    "DEATH": "morte"
+  },
+  "ataques": {
+    "peregrino_corte": "ataque_corte",
+    "peregrino_corte_duplo_1": "ataque_corte_duplo",
+    "peregrino_corte_duplo_2": "ataque_corte_duplo",
+    "peregrino_estocada": "ataque_estocada",
+    "peregrino_investida": "ataque_investida",
+    "peregrino_penitencia": "ataque_penitencia"
+  },
+  "aplicar_hurtbox_sugerida": true
+}

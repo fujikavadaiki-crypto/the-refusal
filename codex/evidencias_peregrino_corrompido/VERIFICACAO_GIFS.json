@@ -1,0 +1,98 @@
+[
+  {
+    "arquivo": "alerta_x4.gif",
+    "dimensoes": [
+      640,
+      416
+    ],
+    "quadros_gif": 3
+  },
+  {
+    "arquivo": "ataque_corte_duplo_x4.gif",
+    "dimensoes": [
+      640,
+      416
+    ],
+    "quadros_gif": 13
+  },
+  {
+    "arquivo": "ataque_corte_x4.gif",
+    "dimensoes": [
+      640,
+      416
+    ],
+    "quadros_gif": 8
+  },
+  {
+    "arquivo": "ataque_estocada_x4.gif",
+    "dimensoes": [
+      640,
+      416
+    ],
+    "quadros_gif": 8
+  },
+  {
+    "arquivo": "ataque_investida_x4.gif",
+    "dimensoes": [
+      640,
+      416
+    ],
+    "quadros_gif": 9
+  },
+  {
+    "arquivo": "ataque_penitencia_x4.gif",
+    "dimensoes": [
+      640,
+      416
+    ],
+    "quadros_gif": 9
+  },
+  {
+    "arquivo": "dano_x4.gif",
+    "dimensoes": [
+      640,
+      416
+    ],
+    "quadros_gif": 2
+  },
+  {
+    "arquivo": "idle_x4.gif",
+    "dimensoes": [
+      640,
+      416
+    ],
+    "quadros_gif": 6
+  },
+  {
+    "arquivo": "morte_x4.gif",
+    "dimensoes": [
+      640,
+      416
+    ],
+    "quadros_gif": 7
+  },
+  {
+    "arquivo": "patrulha_x4.gif",
+    "dimensoes": [
+      640,
+      416
+    ],
+    "quadros_gif": 8
+  },
+  {
+    "arquivo": "perseguicao_x4.gif",
+    "dimensoes": [
+      640,
+      416
+    ],
+    "quadros_gif": 8
+  },
+  {
+    "arquivo": "ruptura_x4.gif",
+    "dimensoes": [
+      640,
+      416
+    ],
+    "quadros_gif": 7
+  }
+]

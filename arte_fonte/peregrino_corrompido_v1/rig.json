@@ -1,0 +1,144 @@
+{
+  "fonte": "arte_fonte/inimigos_mestre_x1/peregrino_corrompido_x1.png",
+  "sha256_fonte": "2188841e60a9123c885649da45849b9b77d46768d6d002db9f9b5ddd23f3bb74",
+  "altura_px": 52,
+  "ancora_mestre": [
+    27,
+    52
+  ],
+  "camadas": [
+    "perna_tras",
+    "braco_tras",
+    "manto_musgo",
+    "corpo",
+    "perna_frente",
+    "capuz_cabeca",
+    "braco_cajado"
+  ],
+  "partes": {
+    "manto_musgo": {
+      "pivo": [
+        18,
+        29
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "partes/manto_musgo.png",
+      "sha256": "e5f2d4c6be4f8e54b136fc135e8e4babf43b2a0a6070249e15b37cfc003058a9"
+    },
+    "perna_tras": {
+      "pivo": [
+        21,
+        40
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "partes/perna_tras.png",
+      "sha256": "cd3e024cb7d2d1d53a1888afa4e0476fe27f35e938da3f323a131503ff247059"
+    },
+    "perna_frente": {
+      "pivo": [
+        30,
+        40
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "partes/perna_frente.png",
+      "sha256": "ec380b91c76b9ccf8c6b29d4c4a2458ac450b40f9643e3cde3ce7436aebdff5b"
+    },
+    "capuz_cabeca": {
+      "pivo": [
+        27,
+        25
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "partes/capuz_cabeca.png",
+      "sha256": "363a11c47a34b5a78d0b1eacef8cd95e142e6ff38d22c0ad88a2ba6deb903996"
+    },
+    "braco_cajado": {
+      "pivo": [
+        27,
+        31
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "partes/braco_cajado.png",
+      "sha256": "166de83fbc6a6b96c3dabb5054bb2c277e0352094143a3c2687ca93f6e476aee"
+    },
+    "braco_tras": {
+      "pivo": [
+        18,
+        28
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "partes/braco_tras.png",
+      "sha256": "5d6f98761650f4fb203a004be4a33df5bc853699befe9d6937386064b1832ecd"
+    },
+    "corpo": {
+      "pivo": [
+        27,
+        33
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "partes/corpo.png",
+      "sha256": "68249881aef35343b2ef99370e6b0b3723e0bada580a7fb7ebce1765676da550"
+    },
+    "braco_cajado_alto": {
+      "arquivo": "partes/braco_cajado_alto.png",
+      "sha256": "a30b0e0b494a4d4636e763978f70b09ec12ec115e4deb1a0a4ffb6feee5239ae",
+      "pivo": [
+        54,
+        65
+      ],
+      "variante": true
+    },
+    "braco_cajado_horizontal": {
+      "arquivo": "partes/braco_cajado_horizontal.png",
+      "sha256": "a16d035d27309b55f4638bc4aaddef926c5e9e9982c0f19f32674cf8eb5fc65a",
+      "pivo": [
+        54,
+        65
+      ],
+      "variante": true
+    },
+    "braco_cajado_cravado": {
+      "arquivo": "partes/braco_cajado_cravado.png",
+      "sha256": "e8de16cbaa94d093e0e0244f053810e53586fbd4e659eaeeff388147e89db7f0",
+      "pivo": [
+        54,
+        65
+      ],
+      "variante": true
+    },
+    "braco_cajado_baixo": {
+      "arquivo": "partes/braco_cajado_baixo.png",
+      "sha256": "538bdbb48f590a5f3ae743187e9fe2e370a7c538d852290650241f450bb877fe",
+      "pivo": [
+        54,
+        65
+      ],
+      "variante": true
+    }
+  },
+  "rotacao_maxima_graus": 20,
+  "variantes_extremas": "armas desenhadas em poses distintas; corpo caido desenhado, sem escala/rotacao global",
+  "pixels_completados": "tronco e ombro sob o braco/capuz; ligacoes do quadril durante a marcha",
+  "movimento_secundario": "manto/musgo usam lean/bob/crouch do quadro anterior; sinos atrasam a direcao da ponta do cajado em 1 quadro"
+}

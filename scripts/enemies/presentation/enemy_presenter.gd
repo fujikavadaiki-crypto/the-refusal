@@ -21,6 +21,9 @@ var warning_class := ""
 var original_hurt: Shape2D
 var original_hurt_position := Vector2.ZERO
 var hurt_node: CollisionShape2D
+var motion_px := 0.0
+var last_actor_x := 0.0
+var debug_overlay := Node2D.new()
 
 func _ready() -> void:
     top_level = true
@@ -32,6 +35,9 @@ func _ready() -> void:
     add_child(shadow)
     add_child(body)
     add_child(fx_root)
+    debug_overlay.z_index = 3
+    add_child(debug_overlay)
+    debug_overlay.draw.connect(_draw_debug)
     visible = false
 
 func bind_actor(owner_actor: CharacterBody2D, map_path: String) -> void:
@@ -48,6 +54,8 @@ func bind_actor(owner_actor: CharacterBody2D, map_path: String) -> void:
         hurt_node.position = original_hurt_position
     idle_ms = 0
     last_state = -1
+    motion_px = 0
+    last_actor_x = actor.global_position.x
     var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(map_path)) if FileAccess.file_exists(map_path) else null
     if not parsed is Dictionary:
         fallback_reason = "mapeamento ausente/invalido"
@@ -107,6 +115,8 @@ func _runtime_attack() -> Dictionary:
 
 func _process(delta: float) -> void:
     if not is_instance_valid(actor): return
+    var traveled := absf(actor.global_position.x - last_actor_x) * ZOOM
+    last_actor_x = actor.global_position.x
     var brain: Node = actor.get_node("Brain")
     if int(brain.state) != last_state:
         idle_ms = 0.0
@@ -122,6 +132,12 @@ func _process(delta: float) -> void:
         if package.anims.has(id):
             var anim: Dictionary = package.anims[id]
             var index := PACKAGE.state_frame(anim, idle_ms)
+            if anim.get("px_por_quadro", 0.0) > 0:
+                # Fixed reference pixels: camera zoom does not change cadence.
+                # Spawn/reset teleports do not count as walking.
+                if traveled < 48.0: motion_px += traveled
+                index = int(floor((motion_px + 0.001) / float(anim.px_por_quadro))) % anim.frames.size()
+            else: motion_px = 0
             sample = {"anim": id, "index": index, "frame": anim.frames[index], "phase": "ALL"}
     var was_active := active
     active = not sample.is_empty()
@@ -163,7 +179,7 @@ func _process(delta: float) -> void:
         fx_root.add_child(sprite)
         _pose(sprite, effect.tex, effect.ancora, left)
     _shadow(frame.sombra, left)
-    queue_redraw()
+    debug_overlay.queue_redraw()
 
 func _pose(sprite: Sprite2D, texture: Texture2D, anchor: Vector2, left: bool) -> void:
     sprite.texture = texture
@@ -203,7 +219,7 @@ func _shadow(spec: Dictionary, left: bool) -> void:
     shadow.offset = Vector2.ZERO
     shadow.modulate.a = factor
 
-func _draw() -> void:
+func _draw_debug() -> void:
     if not active or not get_node("/root/Sensacao").debug_controls: return
     var canvas := get_viewport().get_canvas_transform()
     if hurt_node != null and not hurt_node.disabled and hurt_node.shape is CapsuleShape2D:
@@ -211,21 +227,19 @@ func _draw() -> void:
         var radius: float = hurt_node.shape.radius * canvas.x.length()
         var half: float = hurt_node.shape.height * canvas.y.length()*.5-radius
         var cyan := Color(.2,1,1,.95)
-        draw_arc(center-Vector2(0,half),radius,PI,TAU,16,cyan,1)
-        draw_arc(center+Vector2(0,half),radius,0,PI,16,cyan,1)
-        for sign_ in [-1,1]: draw_line(center+Vector2(sign_*radius,-half),center+Vector2(sign_*radius,half),cyan,1)
-    draw_circle(Vector2.ZERO,2,Color.CYAN)
-    var room: Node = get_tree().current_scene
-    # Cemetery already draws the common melee polygons; add them here in Bosque.
-    if room == null or not "debug_geometry" in room or not room.debug_geometry:
-        var box: Hitbox2D = actor.get_node("Attack").hitbox
-        for part: PackedVector2Array in box.current_world_parts():
-            var points := PackedVector2Array()
-            for p in part: points.append(to_local(p))
-            draw_colored_polygon(points,Color(.6,.2,1,.25))
-            points.append(points[0])
-            draw_polyline(points,Color(.8,.5,1),1)
+        debug_overlay.draw_arc(center-Vector2(0,half),radius,PI,TAU,16,cyan,1)
+        debug_overlay.draw_arc(center+Vector2(0,half),radius,0,PI,16,cyan,1)
+        for sign_ in [-1,1]: debug_overlay.draw_line(center+Vector2(sign_*radius,-half),center+Vector2(sign_*radius,half),cyan,1)
+    debug_overlay.draw_circle(Vector2.ZERO,2,Color.CYAN)
+    # Package geometry must remain visible above its opaque body and arc FX.
+    var box: Hitbox2D = actor.get_node("Attack").hitbox
+    for part: PackedVector2Array in box.current_world_parts():
+        var points := PackedVector2Array()
+        for p in part: points.append(to_local(p))
+        debug_overlay.draw_colored_polygon(points,Color(.6,.2,1,.25))
+        points.append(points[0])
+        debug_overlay.draw_polyline(points,Color(.8,.5,1),1)
     var text := "%s f%d %s" % [current_anim,frame_index,current_phase]
     var font := ThemeDB.fallback_font
-    draw_string_outline(font,Vector2(-40,-88),text,HORIZONTAL_ALIGNMENT_LEFT,-1,10,3,Color.BLACK)
-    draw_string(font,Vector2(-40,-88),text,HORIZONTAL_ALIGNMENT_LEFT,-1,10,Color.WHITE)
+    debug_overlay.draw_string_outline(font,Vector2(-40,-88),text,HORIZONTAL_ALIGNMENT_LEFT,-1,10,3,Color.BLACK)
+    debug_overlay.draw_string(font,Vector2(-40,-88),text,HORIZONTAL_ALIGNMENT_LEFT,-1,10,Color.WHITE)

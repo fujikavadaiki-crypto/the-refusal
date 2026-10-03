@@ -1,0 +1,218 @@
+{
+  "attacks": [
+    {
+      "attack": "carrasco_heavy",
+      "damage": 70,
+      "facing": 1,
+      "frame": 4
+    },
+    {
+      "attack": "carrasco_heavy",
+      "damage": 70,
+      "facing": -1,
+      "frame": 4
+    },
+    {
+      "attack": "carrasco_heavy",
+      "damage": 70,
+      "facing": 1,
+      "frame": 5
+    },
+    {
+      "attack": "carrasco_heavy",
+      "damage": 70,
+      "facing": -1,
+      "frame": 5
+    },
+    {
+      "attack": "carrasco_light_1",
+      "damage": 36,
+      "facing": 1,
+      "frame": 2
+    },
+    {
+      "attack": "carrasco_light_1",
+      "damage": 36,
+      "facing": -1,
+      "frame": 2
+    },
+    {
+      "attack": "carrasco_light_1",
+      "damage": 36,
+      "facing": 1,
+      "frame": 3
+    },
+    {
+      "attack": "carrasco_light_1",
+      "damage": 36,
+      "facing": -1,
+      "frame": 3
+    },
+    {
+      "attack": "carrasco_light_2",
+      "damage": 41,
+      "facing": 1,
+      "frame": 3
+    },
+    {
+      "attack": "carrasco_light_2",
+      "damage": 41,
+      "facing": -1,
+      "frame": 3
+    },
+    {
+      "attack": "carrasco_light_2",
+      "damage": 41,
+      "facing": 1,
+      "frame": 4
+    },
+    {
+      "attack": "carrasco_light_2",
+      "damage": 41,
+      "facing": -1,
+      "frame": 4
+    },
+    {
+      "attack": "carrasco_light_3",
+      "damage": 53,
+      "facing": 1,
+      "frame": 3
+    },
+    {
+      "attack": "carrasco_light_3",
+      "damage": 53,
+      "facing": -1,
+      "frame": 3
+    },
+    {
+      "attack": "carrasco_light_3",
+      "damage": 53,
+      "facing": 1,
+      "frame": 4
+    },
+    {
+      "attack": "carrasco_light_3",
+      "damage": 53,
+      "facing": -1,
+      "frame": 4
+    },
+    {
+      "attack": "carrasco_post_dodge",
+      "damage": 38,
+      "facing": 1,
+      "frame": 2
+    },
+    {
+      "attack": "carrasco_post_dodge",
+      "damage": 38,
+      "facing": -1,
+      "frame": 2
+    },
+    {
+      "attack": "carrasco_post_dodge",
+      "damage": 38,
+      "facing": 1,
+      "frame": 3
+    },
+    {
+      "attack": "carrasco_post_dodge",
+      "damage": 38,
+      "facing": -1,
+      "frame": 3
+    },
+    {
+      "attack": "carrasco_air_light",
+      "damage": 41,
+      "facing": 1,
+      "frame": 2
+    },
+    {
+      "attack": "carrasco_air_light",
+      "damage": 41,
+      "facing": -1,
+      "frame": 2
+    },
+    {
+      "attack": "carrasco_air_light",
+      "damage": 41,
+      "facing": 1,
+      "frame": 3
+    },
+    {
+      "attack": "carrasco_air_light",
+      "damage": 41,
+      "facing": -1,
+      "frame": 3
+    },
+    {
+      "attack": "carrasco_air_heavy",
+      "damage": 62,
+      "facing": 1,
+      "frame": 3
+    },
+    {
+      "attack": "carrasco_air_heavy",
+      "damage": 62,
+      "facing": -1,
+      "frame": 3
+    },
+    {
+      "attack": "carrasco_air_heavy",
+      "damage": 62,
+      "facing": 1,
+      "frame": 4
+    },
+    {
+      "attack": "carrasco_air_heavy",
+      "damage": 62,
+      "facing": -1,
+      "frame": 4
+    },
+    {
+      "attack": "carrasco_charged_heavy",
+      "damage": 94,
+      "facing": 1,
+      "frame": 2
+    },
+    {
+      "attack": "carrasco_charged_heavy",
+      "damage": 94,
+      "facing": -1,
+      "frame": 2
+    },
+    {
+      "attack": "carrasco_charged_heavy",
+      "damage": 94,
+      "facing": 1,
+      "frame": 3
+    },
+    {
+      "attack": "carrasco_charged_heavy",
+      "damage": 94,
+      "facing": -1,
+      "frame": 3
+    }
+  ],
+  "checks": 795,
+  "failures": 0,
+  "physics_hz": 60,
+  "running": {
+    "braking_world": 6.70048522949219,
+    "px_per_frame": 6,
+    "stop_seconds": 0.116666666666667,
+    "stop_ticks": 7
+  },
+  "shadow": {
+    "apex_factor": 0.5,
+    "ground_screen": [
+      10.0,
+      12.0
+    ]
+  },
+  "zoom": {
+    "art_native_scale": 1.0,
+    "damage_projection_ratio_at_zoom_1": 1.11111120567057,
+    "damage_reference_zoom": 0.9,
+    "review": "Passo 12: uniformizar zoom das salas; área física continua independente da câmera."
+  }
+}

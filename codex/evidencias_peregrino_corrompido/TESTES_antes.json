@@ -1,0 +1,231 @@
+[
+  {
+    "teste": "tests/verify_approved_bosque_surfaces.gd",
+    "exit": 0,
+    "pass": 0,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 8.14,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_bosque_initial_step.gd",
+    "exit": 0,
+    "pass": 0,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 2.83,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_bosque_room.gd",
+    "exit": 0,
+    "pass": 0,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 8.14,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_bosque_trecho_01_playable.gd",
+    "exit": 0,
+    "pass": 0,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 10.55,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_carrasco_gif_test.gd",
+    "exit": -2,
+    "pass": 1,
+    "fail": 0,
+    "falhas": [
+      "SCRIPT ERROR: Invalid access to property or key 'texture_filter' on a base object of type 'null instance'."
+    ],
+    "segundos": 4.33,
+    "aprovado": false
+  },
+  {
+    "teste": "tests/verify_milestone2.gd",
+    "exit": 0,
+    "pass": 33,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 21.48,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone3.gd",
+    "exit": 0,
+    "pass": 68,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 14.86,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone4.gd",
+    "exit": 0,
+    "pass": 43,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 134.84,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone4_1.gd",
+    "exit": 0,
+    "pass": 59,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 11.66,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone5.gd",
+    "exit": 0,
+    "pass": 50,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 204.64,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone6.gd",
+    "exit": 0,
+    "pass": 51,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 198.33,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone7.gd",
+    "exit": 0,
+    "pass": 43,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 304.75,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone7_1.gd",
+    "exit": 0,
+    "pass": 18,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 11.23,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone8.gd",
+    "exit": 0,
+    "pass": 66,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 4.73,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone8_1.gd",
+    "exit": 0,
+    "pass": 59,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 9.64,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone8_2.gd",
+    "exit": -2,
+    "pass": 1,
+    "fail": 0,
+    "falhas": [
+      "SCRIPT ERROR: Invalid access to property or key 'sprite' on a base object of type 'Node2D (carrasco_base_official.gd)'."
+    ],
+    "segundos": 4.33,
+    "aprovado": false
+  },
+  {
+    "teste": "tests/verify_milestone8_3.gd",
+    "exit": 0,
+    "pass": 56,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 1.92,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_vertical_second_encounter.gd",
+    "exit": 0,
+    "pass": 7,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 9.14,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_vertical_slice.gd",
+    "exit": 0,
+    "pass": 13,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 28.5,
+    "aprovado": true
+  },
+  {
+    "teste": "codex/testes/verify_integracao_p40_f1.gd",
+    "exit": 0,
+    "pass": 228,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 14.45,
+    "aprovado": true
+  },
+  {
+    "teste": "codex/testes/verify_integracao_p40_f2.gd",
+    "exit": 0,
+    "pass": 85,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 41.34,
+    "aprovado": true
+  },
+  {
+    "teste": "codex/testes/verify_integracao_p40_f3.gd",
+    "exit": 0,
+    "pass": 795,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 6.94,
+    "aprovado": true
+  },
+  {
+    "teste": "codex/testes/verify_integracao_p40_f4.gd",
+    "exit": 0,
+    "pass": 119,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 4.33,
+    "aprovado": true
+  },
+  {
+    "teste": "codex/testes/verify_integracao_p40_f5.gd",
+    "exit": 0,
+    "pass": 70,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 3.02,
+    "aprovado": true
+  },
+  {
+    "teste": "codex/testes/verify_integracao_p40_f6.gd",
+    "exit": 0,
+    "pass": 204,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 79.45,
+    "aprovado": true
+  }
+]

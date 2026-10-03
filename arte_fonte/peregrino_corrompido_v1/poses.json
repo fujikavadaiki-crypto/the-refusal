@@ -1,0 +1,1559 @@
+{
+  "idle": [
+    {
+      "bob": 0,
+      "lag": 0,
+      "head_y": 0,
+      "secondary": {
+        "lean": 0,
+        "bob": 0,
+        "crouch": 0
+      }
+    },
+    {
+      "bob": -1,
+      "lag": 0,
+      "head_y": 0,
+      "secondary": {
+        "lean": 0,
+        "bob": 0,
+        "crouch": 0
+      }
+    },
+    {
+      "bob": -1,
+      "lag": 1,
+      "head_y": -1,
+      "secondary": {
+        "lean": 0,
+        "bob": -1,
+        "crouch": 0
+      }
+    },
+    {
+      "bob": 0,
+      "lag": 1,
+      "head_y": -1,
+      "secondary": {
+        "lean": 0,
+        "bob": -1,
+        "crouch": 0
+      }
+    },
+    {
+      "bob": 1,
+      "lag": 0,
+      "head_y": 0,
+      "secondary": {
+        "lean": 0,
+        "bob": 0,
+        "crouch": 0
+      }
+    },
+    {
+      "bob": 0,
+      "lag": 0,
+      "head_y": 0,
+      "secondary": {
+        "lean": 0,
+        "bob": 1,
+        "crouch": 0
+      }
+    }
+  ],
+  "patrulha": [
+    {
+      "gait": 0,
+      "lean": 0,
+      "bob": -1,
+      "lag": -1,
+      "secondary": {
+        "lean": 0,
+        "bob": -1,
+        "crouch": 0
+      }
+    },
+    {
+      "gait": 1,
+      "lean": 0,
+      "bob": 0,
+      "lag": -1,
+      "secondary": {
+        "lean": 0,
+        "bob": -1,
+        "crouch": 0
+      }
+    },
+    {
+      "gait": 2,
+      "lean": 0,
+      "bob": 0,
+      "lag": 0,
+      "secondary": {
+        "lean": 0,
+        "bob": 0,
+        "crouch": 0
+      }
+    },
+    {
+      "gait": 3,
+      "lean": 0,
+      "bob": -1,
+      "lag": 1,
+      "secondary": {
+        "lean": 0,
+        "bob": 0,
+        "crouch": 0
+      }
+    },
+    {
+      "gait": 4,
+      "lean": 0,
+      "bob": -1,
+      "lag": 1,
+      "secondary": {
+        "lean": 0,
+        "bob": -1,
+        "crouch": 0
+      }
+    },
+    {
+      "gait": 5,
+      "lean": 0,
+      "bob": 0,
+      "lag": 1,
+      "secondary": {
+        "lean": 0,
+        "bob": -1,
+        "crouch": 0
+      }
+    },
+    {
+      "gait": 6,
+      "lean": 0,
+      "bob": 0,
+      "lag": 0,
+      "secondary": {
+        "lean": 0,
+        "bob": 0,
+        "crouch": 0
+      }
+    },
+    {
+      "gait": 7,
+      "lean": 0,
+      "bob": -1,
+      "lag": -1,
+      "secondary": {
+        "lean": 0,
+        "bob": 0,
+        "crouch": 0
+      }
+    }
+  ],
+  "perseguicao": [
+    {
+      "gait": 0,
+      "lean": 3,
+      "bob": -1,
+      "lag": -1,
+      "secondary": {
+        "lean": 3,
+        "bob": -1,
+        "crouch": 0
+      }
+    },
+    {
+      "gait": 1,
+      "lean": 3,
+      "bob": 0,
+      "lag": -1,
+      "secondary": {
+        "lean": 3,
+        "bob": -1,
+        "crouch": 0
+      }
+    },
+    {
+      "gait": 2,
+      "lean": 3,
+      "bob": 0,
+      "lag": 0,
+      "secondary": {
+        "lean": 3,
+        "bob": 0,
+        "crouch": 0
+      }
+    },
+    {
+      "gait": 3,
+      "lean": 3,
+      "bob": -1,
+      "lag": 1,
+      "secondary": {
+        "lean": 3,
+        "bob": 0,
+        "crouch": 0
+      }
+    },
+    {
+      "gait": 4,
+      "lean": 3,
+      "bob": -1,
+      "lag": 1,
+      "secondary": {
+        "lean": 3,
+        "bob": -1,
+        "crouch": 0
+      }
+    },
+    {
+      "gait": 5,
+      "lean": 3,
+      "bob": 0,
+      "lag": 1,
+      "secondary": {
+        "lean": 3,
+        "bob": -1,
+        "crouch": 0
+      }
+    },
+    {
+      "gait": 6,
+      "lean": 3,
+      "bob": 0,
+      "lag": 0,
+      "secondary": {
+        "lean": 3,
+        "bob": 0,
+        "crouch": 0
+      }
+    },
+    {
+      "gait": 7,
+      "lean": 3,
+      "bob": -1,
+      "lag": -1,
+      "secondary": {
+        "lean": 3,
+        "bob": 0,
+        "crouch": 0
+      }
+    }
+  ],
+  "alerta": [
+    {
+      "lean": -2,
+      "head_x": -1,
+      "secondary": {
+        "lean": -2,
+        "bob": 0,
+        "crouch": 0
+      }
+    },
+    {
+      "lean": -1,
+      "bob": -1,
+      "secondary": {
+        "lean": -2,
+        "bob": 0,
+        "crouch": 0
+      }
+    },
+    {
+      "lean": 1,
+      "head_y": -1,
+      "secondary": {
+        "lean": -1,
+        "bob": -1,
+        "crouch": 0
+      }
+    }
+  ],
+  "dano": [
+    {
+      "lean": -5,
+      "head_x": -2,
+      "head_y": -1,
+      "lag": -2,
+      "secondary": {
+        "lean": -5,
+        "bob": 0,
+        "crouch": 0
+      }
+    },
+    {
+      "lean": -2,
+      "bob": 1,
+      "lag": -1,
+      "secondary": {
+        "lean": -5,
+        "bob": 0,
+        "crouch": 0
+      }
+    }
+  ],
+  "ruptura": [
+    {
+      "lean": -3,
+      "crouch": 2,
+      "head_y": 1,
+      "lag": 0,
+      "secondary": {
+        "lean": -3,
+        "bob": 0,
+        "crouch": 9
+      }
+    },
+    {
+      "lean": -4,
+      "crouch": 5,
+      "head_y": 1,
+      "lag": 1,
+      "secondary": {
+        "lean": -3,
+        "bob": 0,
+        "crouch": 2
+      }
+    },
+    {
+      "lean": -3,
+      "crouch": 8,
+      "head_y": 1,
+      "lag": 0,
+      "secondary": {
+        "lean": -4,
+        "bob": 0,
+        "crouch": 5
+      }
+    },
+    {
+      "lean": -3,
+      "crouch": 9,
+      "head_y": 1,
+      "lag": 1,
+      "secondary": {
+        "lean": -3,
+        "bob": 0,
+        "crouch": 8
+      }
+    },
+    {
+      "lean": -2,
+      "crouch": 10,
+      "head_y": 1,
+      "lag": 0,
+      "secondary": {
+        "lean": -3,
+        "bob": 0,
+        "crouch": 9
+      }
+    },
+    {
+      "lean": -3,
+      "crouch": 10,
+      "head_y": 1,
+      "lag": 1,
+      "secondary": {
+        "lean": -2,
+        "bob": 0,
+        "crouch": 10
+      }
+    },
+    {
+      "lean": -3,
+      "crouch": 9,
+      "head_y": 1,
+      "lag": 0,
+      "secondary": {
+        "lean": -3,
+        "bob": 0,
+        "crouch": 10
+      }
+    }
+  ],
+  "morte": [
+    {
+      "lean": -3,
+      "crouch": 3,
+      "secondary": {
+        "lean": -3,
+        "bob": 0,
+        "crouch": 3
+      }
+    },
+    {
+      "lean": 3,
+      "crouch": 9,
+      "secondary": {
+        "lean": -3,
+        "bob": 0,
+        "crouch": 3
+      }
+    },
+    {
+      "lean": 7,
+      "crouch": 13,
+      "secondary": {
+        "lean": 3,
+        "bob": 0,
+        "crouch": 9
+      }
+    },
+    {
+      "fallen": true,
+      "lag": -1,
+      "secondary": {
+        "lean": 7,
+        "bob": 0,
+        "crouch": 13
+      }
+    },
+    {
+      "fallen": true,
+      "lag": 0,
+      "secondary": {
+        "lean": 0,
+        "bob": 0,
+        "crouch": 0
+      }
+    },
+    {
+      "fallen": true,
+      "lag": 1,
+      "secondary": {
+        "lean": 0,
+        "bob": 0,
+        "crouch": 0
+      }
+    },
+    {
+      "fallen": true,
+      "lag": 0,
+      "secondary": {
+        "lean": 0,
+        "bob": 0,
+        "crouch": 0
+      }
+    },
+    {
+      "fallen": true,
+      "lag": 0,
+      "secondary": {
+        "lean": 0,
+        "bob": 0,
+        "crouch": 0
+      }
+    }
+  ],
+  "ataque_corte": [
+    {
+      "lean": 0,
+      "bob": 1,
+      "staff": [
+        [
+          6,
+          -29
+        ],
+        [
+          20,
+          -40
+        ]
+      ],
+      "warn": 0,
+      "lag": 0,
+      "secondary": {
+        "lean": 0,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    },
+    {
+      "lean": -1,
+      "bob": 1,
+      "staff": [
+        [
+          5,
+          -32
+        ],
+        [
+          18,
+          -45
+        ]
+      ],
+      "warn": 1,
+      "lag": -1,
+      "secondary": {
+        "lean": 0,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": 1
+    },
+    {
+      "lean": -2,
+      "bob": 1,
+      "staff": [
+        [
+          4,
+          -35
+        ],
+        [
+          16,
+          -50
+        ]
+      ],
+      "warn": 2,
+      "lag": -1,
+      "secondary": {
+        "lean": -1,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": 1
+    },
+    {
+      "lean": 2,
+      "staff": [
+        [
+          12,
+          -31
+        ],
+        [
+          42,
+          -43
+        ]
+      ],
+      "lag": 1,
+      "arc": [
+        [
+          4,
+          -28
+        ],
+        43,
+        -100,
+        -5,
+        13
+      ],
+      "secondary": {
+        "lean": -2,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": -1
+    },
+    {
+      "lean": 4,
+      "staff": [
+        [
+          12,
+          -23
+        ],
+        [
+          42,
+          -8
+        ]
+      ],
+      "lag": 0,
+      "arc": [
+        [
+          4,
+          -28
+        ],
+        44,
+        -100,
+        48,
+        16
+      ],
+      "secondary": {
+        "lean": 2,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    },
+    {
+      "lean": 3,
+      "staff": [
+        [
+          13,
+          -22
+        ],
+        [
+          31,
+          -8
+        ]
+      ],
+      "lag": 1,
+      "secondary": {
+        "lean": 4,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": 1
+    },
+    {
+      "lean": 2,
+      "staff": [
+        [
+          13,
+          -22
+        ],
+        [
+          31,
+          -12
+        ]
+      ],
+      "lag": 1,
+      "secondary": {
+        "lean": 3,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    },
+    {
+      "lean": 1,
+      "staff": [
+        [
+          13,
+          -22
+        ],
+        [
+          31,
+          -16
+        ]
+      ],
+      "lag": 0,
+      "secondary": {
+        "lean": 2,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    }
+  ],
+  "ataque_estocada": [
+    {
+      "lean": 0,
+      "bob": 1,
+      "staff": [
+        [
+          6,
+          -29
+        ],
+        [
+          20,
+          -40
+        ]
+      ],
+      "warn": 0,
+      "lag": 0,
+      "secondary": {
+        "lean": 0,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    },
+    {
+      "lean": -1,
+      "bob": 1,
+      "staff": [
+        [
+          5,
+          -32
+        ],
+        [
+          18,
+          -45
+        ]
+      ],
+      "warn": 1,
+      "lag": -1,
+      "secondary": {
+        "lean": 0,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": 1
+    },
+    {
+      "lean": -2,
+      "bob": 1,
+      "staff": [
+        [
+          4,
+          -35
+        ],
+        [
+          16,
+          -50
+        ]
+      ],
+      "warn": 2,
+      "lag": -1,
+      "secondary": {
+        "lean": -1,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": 1
+    },
+    {
+      "lean": 3,
+      "staff": [
+        [
+          17,
+          -26
+        ],
+        [
+          48,
+          -26
+        ]
+      ],
+      "lag": 0,
+      "arc": [
+        [
+          25,
+          -4
+        ],
+        35,
+        -140,
+        -40,
+        13
+      ],
+      "secondary": {
+        "lean": -2,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": -1
+    },
+    {
+      "lean": 4,
+      "staff": [
+        [
+          20,
+          -26
+        ],
+        [
+          53,
+          -26
+        ]
+      ],
+      "lag": -1,
+      "arc": [
+        [
+          25,
+          -4
+        ],
+        38,
+        -140,
+        -40,
+        13
+      ],
+      "secondary": {
+        "lean": 3,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": -1
+    },
+    {
+      "lean": 3,
+      "staff": [
+        [
+          13,
+          -22
+        ],
+        [
+          31,
+          -8
+        ]
+      ],
+      "lag": 1,
+      "secondary": {
+        "lean": 4,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": 1
+    },
+    {
+      "lean": 2,
+      "staff": [
+        [
+          13,
+          -22
+        ],
+        [
+          31,
+          -12
+        ]
+      ],
+      "lag": 1,
+      "secondary": {
+        "lean": 3,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    },
+    {
+      "lean": 1,
+      "staff": [
+        [
+          13,
+          -22
+        ],
+        [
+          31,
+          -16
+        ]
+      ],
+      "lag": 0,
+      "secondary": {
+        "lean": 2,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    }
+  ],
+  "ataque_investida": [
+    {
+      "lean": 0,
+      "bob": 1,
+      "staff": [
+        [
+          6,
+          -29
+        ],
+        [
+          20,
+          -40
+        ]
+      ],
+      "warn": 0,
+      "lag": 0,
+      "secondary": {
+        "lean": 0,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    },
+    {
+      "lean": -1,
+      "bob": 1,
+      "staff": [
+        [
+          5,
+          -32
+        ],
+        [
+          18,
+          -45
+        ]
+      ],
+      "warn": 1,
+      "lag": -1,
+      "secondary": {
+        "lean": 0,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": 1
+    },
+    {
+      "lean": -2,
+      "bob": 1,
+      "staff": [
+        [
+          4,
+          -35
+        ],
+        [
+          16,
+          -50
+        ]
+      ],
+      "warn": 2,
+      "lag": -1,
+      "secondary": {
+        "lean": -1,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": 1
+    },
+    {
+      "lean": -3,
+      "bob": 1,
+      "staff": [
+        [
+          3,
+          -38
+        ],
+        [
+          14,
+          -55
+        ]
+      ],
+      "warn": 3,
+      "lag": -1,
+      "secondary": {
+        "lean": -2,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": 1
+    },
+    {
+      "lean": 3,
+      "staff": [
+        [
+          17,
+          -26
+        ],
+        [
+          48,
+          -26
+        ]
+      ],
+      "lag": 0,
+      "arc": [
+        [
+          25,
+          -4
+        ],
+        35,
+        -140,
+        -40,
+        13
+      ],
+      "secondary": {
+        "lean": -3,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": -1
+    },
+    {
+      "lean": 4,
+      "staff": [
+        [
+          20,
+          -26
+        ],
+        [
+          53,
+          -26
+        ]
+      ],
+      "lag": -1,
+      "arc": [
+        [
+          25,
+          -4
+        ],
+        38,
+        -140,
+        -40,
+        13
+      ],
+      "secondary": {
+        "lean": 3,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": -1
+    },
+    {
+      "lean": 3,
+      "staff": [
+        [
+          13,
+          -22
+        ],
+        [
+          31,
+          -8
+        ]
+      ],
+      "lag": 1,
+      "secondary": {
+        "lean": 4,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": 1
+    },
+    {
+      "lean": 2,
+      "staff": [
+        [
+          13,
+          -22
+        ],
+        [
+          31,
+          -12
+        ]
+      ],
+      "lag": 1,
+      "secondary": {
+        "lean": 3,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    },
+    {
+      "lean": 1,
+      "staff": [
+        [
+          13,
+          -22
+        ],
+        [
+          31,
+          -16
+        ]
+      ],
+      "lag": 0,
+      "secondary": {
+        "lean": 2,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    }
+  ],
+  "ataque_penitencia": [
+    {
+      "lean": -1,
+      "bob": 1,
+      "staff": [
+        [
+          9,
+          -30
+        ],
+        [
+          19,
+          -51
+        ]
+      ],
+      "warn": 0,
+      "lag": -1,
+      "secondary": {
+        "lean": -1,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    },
+    {
+      "lean": -1,
+      "bob": 1,
+      "staff": [
+        [
+          9,
+          -33
+        ],
+        [
+          19,
+          -54
+        ]
+      ],
+      "warn": 1,
+      "lag": -1,
+      "secondary": {
+        "lean": -1,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    },
+    {
+      "lean": -1,
+      "bob": 1,
+      "staff": [
+        [
+          9,
+          -36
+        ],
+        [
+          19,
+          -57
+        ]
+      ],
+      "warn": 2,
+      "lag": -1,
+      "secondary": {
+        "lean": -1,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    },
+    {
+      "lean": -1,
+      "bob": 1,
+      "staff": [
+        [
+          9,
+          -39
+        ],
+        [
+          19,
+          -60
+        ]
+      ],
+      "warn": 3,
+      "lag": -1,
+      "secondary": {
+        "lean": -1,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    },
+    {
+      "lean": 3,
+      "crouch": 5,
+      "staff": [
+        [
+          24,
+          -28
+        ],
+        [
+          24,
+          -2
+        ]
+      ],
+      "lag": 0,
+      "arc": [
+        [
+          7,
+          -25
+        ],
+        40,
+        -75,
+        38,
+        14
+      ],
+      "secondary": {
+        "lean": -1,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": -1
+    },
+    {
+      "lean": 3,
+      "crouch": 5,
+      "staff": [
+        [
+          24,
+          -28
+        ],
+        [
+          24,
+          -2
+        ]
+      ],
+      "lag": 1,
+      "arc": [
+        [
+          7,
+          -25
+        ],
+        40,
+        -95,
+        38,
+        17
+      ],
+      "secondary": {
+        "lean": 3,
+        "bob": 0,
+        "crouch": 5
+      },
+      "bell_lag": 0
+    },
+    {
+      "lean": 3,
+      "staff": [
+        [
+          13,
+          -22
+        ],
+        [
+          31,
+          -8
+        ]
+      ],
+      "lag": 1,
+      "secondary": {
+        "lean": 3,
+        "bob": 0,
+        "crouch": 5
+      },
+      "bell_lag": -1
+    },
+    {
+      "lean": 2,
+      "staff": [
+        [
+          13,
+          -22
+        ],
+        [
+          31,
+          -12
+        ]
+      ],
+      "lag": 1,
+      "secondary": {
+        "lean": 3,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    },
+    {
+      "lean": 1,
+      "staff": [
+        [
+          13,
+          -22
+        ],
+        [
+          31,
+          -16
+        ]
+      ],
+      "lag": 0,
+      "secondary": {
+        "lean": 2,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    }
+  ],
+  "ataque_corte_duplo": [
+    {
+      "lean": 0,
+      "bob": 1,
+      "staff": [
+        [
+          6,
+          -29
+        ],
+        [
+          20,
+          -40
+        ]
+      ],
+      "warn": 0,
+      "lag": 0,
+      "secondary": {
+        "lean": 0,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    },
+    {
+      "lean": -1,
+      "bob": 1,
+      "staff": [
+        [
+          5,
+          -32
+        ],
+        [
+          18,
+          -45
+        ]
+      ],
+      "warn": 1,
+      "lag": -1,
+      "secondary": {
+        "lean": 0,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": 1
+    },
+    {
+      "lean": -2,
+      "bob": 1,
+      "staff": [
+        [
+          4,
+          -35
+        ],
+        [
+          16,
+          -50
+        ]
+      ],
+      "warn": 2,
+      "lag": -1,
+      "secondary": {
+        "lean": -1,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": 1
+    },
+    {
+      "lean": 2,
+      "staff": [
+        [
+          12,
+          -31
+        ],
+        [
+          42,
+          -43
+        ]
+      ],
+      "lag": 1,
+      "arc": [
+        [
+          4,
+          -28
+        ],
+        43,
+        -100,
+        -5,
+        13
+      ],
+      "secondary": {
+        "lean": -2,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": -1
+    },
+    {
+      "lean": 4,
+      "staff": [
+        [
+          12,
+          -23
+        ],
+        [
+          42,
+          -8
+        ]
+      ],
+      "lag": 0,
+      "arc": [
+        [
+          4,
+          -28
+        ],
+        44,
+        -100,
+        48,
+        16
+      ],
+      "secondary": {
+        "lean": 2,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    },
+    {
+      "lean": 3,
+      "staff": [
+        [
+          13,
+          -22
+        ],
+        [
+          31,
+          -8
+        ]
+      ],
+      "lag": 1,
+      "secondary": {
+        "lean": 4,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": 1
+    },
+    {
+      "lean": 0,
+      "bob": 1,
+      "staff": [
+        [
+          6,
+          -29
+        ],
+        [
+          20,
+          -40
+        ]
+      ],
+      "warn": 0,
+      "lag": 0,
+      "secondary": {
+        "lean": 3,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": 1
+    },
+    {
+      "lean": -1,
+      "bob": 1,
+      "staff": [
+        [
+          5,
+          -32
+        ],
+        [
+          18,
+          -45
+        ]
+      ],
+      "warn": 1,
+      "lag": -1,
+      "secondary": {
+        "lean": 0,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": 1
+    },
+    {
+      "lean": 4,
+      "staff": [
+        [
+          12,
+          -23
+        ],
+        [
+          42,
+          -8
+        ]
+      ],
+      "lag": 0,
+      "arc": [
+        [
+          4,
+          -28
+        ],
+        44,
+        -100,
+        48,
+        16
+      ],
+      "secondary": {
+        "lean": -1,
+        "bob": 1,
+        "crouch": 0
+      },
+      "bell_lag": -1
+    },
+    {
+      "lean": 2,
+      "staff": [
+        [
+          12,
+          -31
+        ],
+        [
+          42,
+          -43
+        ]
+      ],
+      "lag": 1,
+      "arc": [
+        [
+          4,
+          -28
+        ],
+        43,
+        -100,
+        -5,
+        13
+      ],
+      "secondary": {
+        "lean": 4,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    },
+    {
+      "lean": 3,
+      "staff": [
+        [
+          13,
+          -22
+        ],
+        [
+          31,
+          -8
+        ]
+      ],
+      "lag": 1,
+      "secondary": {
+        "lean": 2,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": 1
+    },
+    {
+      "lean": 2,
+      "staff": [
+        [
+          13,
+          -22
+        ],
+        [
+          31,
+          -12
+        ]
+      ],
+      "lag": 1,
+      "secondary": {
+        "lean": 3,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    },
+    {
+      "lean": 1,
+      "staff": [
+        [
+          13,
+          -22
+        ],
+        [
+          31,
+          -16
+        ]
+      ],
+      "lag": 0,
+      "secondary": {
+        "lean": 2,
+        "bob": 0,
+        "crouch": 0
+      },
+      "bell_lag": 0
+    }
+  ]
+}

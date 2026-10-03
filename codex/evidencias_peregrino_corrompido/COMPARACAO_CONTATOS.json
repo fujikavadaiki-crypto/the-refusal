@@ -1,0 +1,254 @@
+{
+  "ensaios": 108,
+  "acertos_profanado": 45,
+  "acertos_corrompido": 60,
+  "resultados_alterados": 15,
+  "hurtbox": {
+    "body_height_world": 31.0,
+    "center_y_world": -11.1666660308838,
+    "feet_y_world": 15.5,
+    "height_world": 53.3333320617676,
+    "radius_world": 7.77777767181396
+  },
+  "sondas": [
+    {
+      "hit": true,
+      "y_px": -8.0
+    },
+    {
+      "hit": true,
+      "y_px": -24.0
+    },
+    {
+      "hit": true,
+      "y_px": -30.0
+    },
+    {
+      "hit": true,
+      "y_px": -36.0
+    },
+    {
+      "hit": true,
+      "y_px": -43.0
+    },
+    {
+      "hit": true,
+      "y_px": -47.0
+    },
+    {
+      "hit": false,
+      "y_px": -49.0
+    }
+  ],
+  "alteracoes": [
+    {
+      "ensaio": {
+        "attack": "corte",
+        "distance_px": 8.0,
+        "distance_m": 0.25,
+        "raised_px": 24.0,
+        "facing": 1
+      },
+      "profanado": false,
+      "corrompido": true
+    },
+    {
+      "ensaio": {
+        "attack": "corte",
+        "distance_px": 50.0,
+        "distance_m": 1.5625,
+        "raised_px": 24.0,
+        "facing": 1
+      },
+      "profanado": false,
+      "corrompido": true
+    },
+    {
+      "ensaio": {
+        "attack": "estocada",
+        "distance_px": 8.0,
+        "distance_m": 0.25,
+        "raised_px": 0.0,
+        "facing": 1
+      },
+      "profanado": false,
+      "corrompido": true
+    },
+    {
+      "ensaio": {
+        "attack": "estocada",
+        "distance_px": 8.0,
+        "distance_m": 0.25,
+        "raised_px": 24.0,
+        "facing": 1
+      },
+      "profanado": false,
+      "corrompido": true
+    },
+    {
+      "ensaio": {
+        "attack": "estocada",
+        "distance_px": 18.0,
+        "distance_m": 0.5625,
+        "raised_px": 24.0,
+        "facing": 1
+      },
+      "profanado": false,
+      "corrompido": true
+    },
+    {
+      "ensaio": {
+        "attack": "estocada",
+        "distance_px": 30.0,
+        "distance_m": 0.9375,
+        "raised_px": 24.0,
+        "facing": 1
+      },
+      "profanado": false,
+      "corrompido": true
+    },
+    {
+      "ensaio": {
+        "attack": "corte_duplo_1",
+        "distance_px": 8.0,
+        "distance_m": 0.25,
+        "raised_px": 24.0,
+        "facing": 1
+      },
+      "profanado": false,
+      "corrompido": true
+    },
+    {
+      "ensaio": {
+        "attack": "corte_duplo_1",
+        "distance_px": 50.0,
+        "distance_m": 1.5625,
+        "raised_px": 24.0,
+        "facing": 1
+      },
+      "profanado": false,
+      "corrompido": true
+    },
+    {
+      "ensaio": {
+        "attack": "corte_duplo_2",
+        "distance_px": 8.0,
+        "distance_m": 0.25,
+        "raised_px": 24.0,
+        "facing": 1
+      },
+      "profanado": false,
+      "corrompido": true
+    },
+    {
+      "ensaio": {
+        "attack": "corte_duplo_2",
+        "distance_px": 50.0,
+        "distance_m": 1.5625,
+        "raised_px": 24.0,
+        "facing": 1
+      },
+      "profanado": false,
+      "corrompido": true
+    },
+    {
+      "ensaio": {
+        "attack": "investida",
+        "distance_px": 8.0,
+        "distance_m": 0.25,
+        "raised_px": 0.0,
+        "facing": 1
+      },
+      "profanado": false,
+      "corrompido": true
+    },
+    {
+      "ensaio": {
+        "attack": "investida",
+        "distance_px": 8.0,
+        "distance_m": 0.25,
+        "raised_px": 24.0,
+        "facing": 1
+      },
+      "profanado": false,
+      "corrompido": true
+    },
+    {
+      "ensaio": {
+        "attack": "investida",
+        "distance_px": 18.0,
+        "distance_m": 0.5625,
+        "raised_px": 24.0,
+        "facing": 1
+      },
+      "profanado": false,
+      "corrompido": true
+    },
+    {
+      "ensaio": {
+        "attack": "penitencia",
+        "distance_px": 8.0,
+        "distance_m": 0.25,
+        "raised_px": 0.0,
+        "facing": 1
+      },
+      "profanado": false,
+      "corrompido": true
+    },
+    {
+      "ensaio": {
+        "attack": "penitencia",
+        "distance_px": 8.0,
+        "distance_m": 0.25,
+        "raised_px": 24.0,
+        "facing": 1
+      },
+      "profanado": false,
+      "corrompido": true
+    }
+  ],
+  "alcance_chao": {
+    "corte": [
+      8.0,
+      18.0,
+      30.0,
+      40.0,
+      50.0
+    ],
+    "estocada": [
+      8.0,
+      18.0,
+      30.0,
+      40.0,
+      50.0
+    ],
+    "corte_duplo_1": [
+      8.0,
+      18.0,
+      30.0,
+      40.0,
+      50.0
+    ],
+    "corte_duplo_2": [
+      8.0,
+      18.0,
+      30.0,
+      40.0,
+      50.0
+    ],
+    "investida": [
+      8.0,
+      18.0,
+      30.0,
+      40.0,
+      50.0
+    ],
+    "penitencia": [
+      8.0,
+      18.0,
+      30.0,
+      40.0,
+      50.0
+    ]
+  }
+}

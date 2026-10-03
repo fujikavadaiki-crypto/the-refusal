@@ -3,6 +3,8 @@ const ROOM := preload("res://scenes/biomes/cemiterio/sala_cemiterio.tscn")
 const PACKAGE := preload("res://scripts/enemies/presentation/enemy_package.gd")
 const OUT := "res://codex/evidencias_integracao_p40_f6/"
 const DT := 1.0 / 60.0
+# F6 verifies the archived Profanado package independently of the live outfit.
+const ARCHIVED_MAP := "res://codex/fixtures/peregrino_profanado_mapa.json"
 var baseline := false
 var checks := 0
 var failures := 0
@@ -195,7 +197,7 @@ func package_checks() -> void:
     view._process(0)
     check(not view.package.valid and not view.active and enemy.visual.visible and enemy.get_node("AttackPivot").visible, "mapeamento ausente restaura apresentação/arma antigas")
     check(enemy.hurt_shape.shape.height == 31 and enemy.hurt_shape.position == Vector2.ZERO, "fallback restaura hurtbox anterior sem deixar pacote parcialmente equipado")
-    view.bind_actor(enemy,"res://data/enemies/peregrino_mapa.json")
+    view.bind_actor(enemy,ARCHIVED_MAP)
     view._process(0)
     check(view.active and absf(enemy.hurt_shape.shape.height*.9-44)<.001, "reequipar pacote válido restaura arte e hurtbox sugerida")
     for e in room.enemies.slice(1):
@@ -212,6 +214,7 @@ func package_checks() -> void:
     var found: Array[Node] = room.find_children("Peregrino*", "CharacterBody2D", true, false)
     for e in found:
         var v: Node = e.get_node("ApresentadorPacote")
+        v.bind_actor(e,ARCHIVED_MAP)
         if v.package.valid and absf(e.get_node("Hurtbox/CollisionShape2D").shape.height*.9-44)<.001: equipped += 1
     check(equipped > 0, "Bosque F9 também equipa pacote e hurtbox reais")
     measurements.bosque_peregrinos = equipped
@@ -224,6 +227,7 @@ func run() -> void:
     p = room.player
     enemy = room.enemies[0]
     view = enemy.get_node("ApresentadorPacote")
+    view.bind_actor(enemy,ARCHIVED_MAP)
     freeze(p)
     for e in room.enemies: freeze(e)
     room.enemies[1].global_position = Vector2(10000,-10000)

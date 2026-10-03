@@ -1,0 +1,14 @@
+{
+  "teste": "codex/testes/verify_peregrino_corrompido.gd",
+  "exit": 1,
+  "pass": 196,
+  "fail": 4,
+  "falhas": [
+    "FAIL: 8 px percorridos avançam dois quadros de 4 px",
+    "FAIL: virada espelha sem avançar marcha",
+    "FAIL: teleporte de reset não conta como passo",
+    "FAIL: perseguição conserva cadência por distância"
+  ],
+  "segundos": 79.61,
+  "aprovado": false
+}
