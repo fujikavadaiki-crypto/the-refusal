@@ -1,0 +1,9 @@
+{
+  "aprovado": true,
+  "quadros_comparados": 600,
+  "posicao_velocidade_distancia_fase_solas_iguais": true,
+  "eventos_troca_iguais": true,
+  "duracao_s": 20,
+  "oscilacao_6px_preservada": true,
+  "arte_instalada": false
+}

@@ -1,0 +1,4 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+BOSQUE_TRECHO_01_EXIT_REACHED falls=0
+BOSQUE_PLAYTEST checks=[true, true, true, true] falls=0 x=1816.9 exit=true

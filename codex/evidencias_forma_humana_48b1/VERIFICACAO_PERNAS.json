@@ -1,0 +1,664 @@
+{
+  "aprovado": true,
+  "quadros": [
+    {
+      "quadro": 0,
+      "componentes": 1,
+      "cores_isoladas": 0,
+      "fora_mascara_rgba_identico": true,
+      "botas_rgba_identicas": true,
+      "replay_rgba_identico": true,
+      "pixels_alterados": 91,
+      "mascara_sha256": "832840625fe91896742dc761fed46e7a3b5c24b4959b51c8cec798d7c399d9f3"
+    },
+    {
+      "quadro": 1,
+      "componentes": 1,
+      "cores_isoladas": 0,
+      "fora_mascara_rgba_identico": true,
+      "botas_rgba_identicas": true,
+      "replay_rgba_identico": true,
+      "pixels_alterados": 42,
+      "mascara_sha256": "c16d0ef27726f01bfc3d7e5cd1a81b9516311ffc8ecef06f777b9e195b19066b"
+    },
+    {
+      "quadro": 2,
+      "componentes": 1,
+      "cores_isoladas": 0,
+      "fora_mascara_rgba_identico": true,
+      "botas_rgba_identicas": true,
+      "replay_rgba_identico": true,
+      "pixels_alterados": 29,
+      "mascara_sha256": "14ed11f8be43a6471960413e2d1ea4ab394f0b3d8b27baf6e86d521b997792ce"
+    },
+    {
+      "quadro": 3,
+      "componentes": 1,
+      "cores_isoladas": 0,
+      "fora_mascara_rgba_identico": true,
+      "botas_rgba_identicas": true,
+      "replay_rgba_identico": true,
+      "pixels_alterados": 53,
+      "mascara_sha256": "e802d432f4cc9ba181636ce331402d0833704c96b076b8fca87fcd19af7437a2"
+    },
+    {
+      "quadro": 4,
+      "componentes": 1,
+      "cores_isoladas": 0,
+      "fora_mascara_rgba_identico": true,
+      "botas_rgba_identicas": true,
+      "replay_rgba_identico": true,
+      "pixels_alterados": 48,
+      "mascara_sha256": "e3356e10a1685fe7b947a53b38c85d334fe83cba8884e815834fa5ef9bce51d9"
+    },
+    {
+      "quadro": 5,
+      "componentes": 1,
+      "cores_isoladas": 0,
+      "fora_mascara_rgba_identico": true,
+      "botas_rgba_identicas": true,
+      "replay_rgba_identico": true,
+      "pixels_alterados": 26,
+      "mascara_sha256": "414b48ffdd51f326a1c05aeb8d65b270e330fab58a1be084a3390deb20388ed7"
+    },
+    {
+      "quadro": 6,
+      "componentes": 1,
+      "cores_isoladas": 0,
+      "fora_mascara_rgba_identico": true,
+      "botas_rgba_identicas": true,
+      "replay_rgba_identico": true,
+      "pixels_alterados": 51,
+      "mascara_sha256": "8ac045bbf0d38ba3c7e910d9e8b3ca97162aaba6e273d2fd1503733f222b569a"
+    },
+    {
+      "quadro": 7,
+      "componentes": 1,
+      "cores_isoladas": 0,
+      "fora_mascara_rgba_identico": true,
+      "botas_rgba_identicas": true,
+      "replay_rgba_identico": true,
+      "pixels_alterados": 83,
+      "mascara_sha256": "ee79650c11461de021479217f069c5678e5c7245e9fc116712f6d779f6b4ee89"
+    }
+  ],
+  "mestre_sha256": "204432d31a2d8890c6def7b6fd81b56972ce482b5eca82fa3de878ebe2dcf988",
+  "paleta": "paleta_bosque_v1",
+  "alpha": [
+    0,
+    255
+  ],
+  "ancora": [
+    40,
+    56
+  ],
+  "ms_iguais": true,
+  "px_por_quadro": 6,
+  "articulacoes_modificadas": [
+    "joelho"
+  ],
+  "trajetorias_solas_iguais": true,
+  "corpo_capa_arma_iguais": true,
+  "idle_neutra_mestre_preservados": true,
+  "arte_instalada": false,
+  "variantes_orientadas": [
+    {
+      "parte": "coxa_frente_run_f0",
+      "sha256": "bcce93c365a91bdf16c83cae9c8cbbafccd739ebca0d7a4681b42028c0df4987",
+      "pivo": [
+        44,
+        43
+      ]
+    },
+    {
+      "parte": "canela_frente_run_f0",
+      "sha256": "7b4edb46d728e785130c5187faa8472ae6991c6857a0e5f9c06d9aef382e737d",
+      "pivo": [
+        46,
+        47
+      ]
+    },
+    {
+      "parte": "coxa_tras_run_f0",
+      "sha256": "64abf76c75a5f42273d2389dca4e66d1c0f0ca3fd5cbbc52728bf95f64418da1",
+      "pivo": [
+        41,
+        43
+      ]
+    },
+    {
+      "parte": "canela_tras_run_f0",
+      "sha256": "1feb470d4839469790a7b733caa310f91078e724325d4c1b2264565271393eef",
+      "pivo": [
+        36,
+        46
+      ]
+    },
+    {
+      "parte": "coxa_frente_run_f1",
+      "sha256": "f53e94a6bad3c013875dec8a0ff8f06d67cdcd6a6fc95ded56a4f6a5c809ecdc",
+      "pivo": [
+        44,
+        42
+      ]
+    },
+    {
+      "parte": "canela_frente_run_f1",
+      "sha256": "9bb424e046db37b56dc81a337390f9f960b6f7b0f2783447c69f382850895a73",
+      "pivo": [
+        47,
+        46
+      ]
+    },
+    {
+      "parte": "coxa_tras_run_f1",
+      "sha256": "4cfedfc0ae4276209839577b8048330c49ebca5924b448373a56b400d5cc1f55",
+      "pivo": [
+        41,
+        42
+      ]
+    },
+    {
+      "parte": "canela_tras_run_f1",
+      "sha256": "af9dc322c38784465c92bf3df08c6ea41e68dd11fc779bef1b551e55ef13e58d",
+      "pivo": [
+        42,
+        46
+      ]
+    },
+    {
+      "parte": "coxa_frente_run_f2",
+      "sha256": "886d9243d141ee8b6d0989f5a2c9157dfa0c80eed9822d454e3e0124ea964504",
+      "pivo": [
+        44,
+        43
+      ]
+    },
+    {
+      "parte": "canela_frente_run_f2",
+      "sha256": "dfa5fbeb6cc10e15c985919bc98f4ecce4da71debcea35d9c672f9663c25c81f",
+      "pivo": [
+        42,
+        47
+      ]
+    },
+    {
+      "parte": "coxa_tras_run_f2",
+      "sha256": "78d302bdc3cd1004efdf06ea832afe82475a6b4948d45533746f34a3d441e8c0",
+      "pivo": [
+        41,
+        43
+      ]
+    },
+    {
+      "parte": "canela_tras_run_f2",
+      "sha256": "d26f4d76c4b4d06bc9221bdf3c47cf734d0084617c6b28a365d55cc9257996d3",
+      "pivo": [
+        47,
+        42
+      ]
+    },
+    {
+      "parte": "coxa_frente_run_f3",
+      "sha256": "ecd54eb847b8d353d3b63abb92c6fe4efa87b8f726c1cab58d1c39853cacc267",
+      "pivo": [
+        44,
+        44
+      ]
+    },
+    {
+      "parte": "canela_frente_run_f3",
+      "sha256": "8de4ef6b6b1304438c0b94d82c5181aca41b1dd7d61f5e23d0ccc806d0de1080",
+      "pivo": [
+        38,
+        48
+      ]
+    },
+    {
+      "parte": "coxa_tras_run_f3",
+      "sha256": "9073bd1605ef38a5983d0234512397f9b6d58ce9a9d56908427adbb3ddf85283",
+      "pivo": [
+        41,
+        44
+      ]
+    },
+    {
+      "parte": "canela_tras_run_f3",
+      "sha256": "7c57431184932e5a4135e260762faa543cfe57c43e5bd1271a426c6d458b1ee9",
+      "pivo": [
+        47,
+        46
+      ]
+    },
+    {
+      "parte": "coxa_frente_run_f4",
+      "sha256": "942c11128d013d1d56228783955a35e7c3d50e6a64105dba0d554e4348ae4ea0",
+      "pivo": [
+        44,
+        43
+      ]
+    },
+    {
+      "parte": "canela_frente_run_f4",
+      "sha256": "9342f414330b71f293bccd7974615ecfef896c65ea0b705532a7cdfb4854f5ef",
+      "pivo": [
+        37,
+        45
+      ]
+    },
+    {
+      "parte": "coxa_tras_run_f4",
+      "sha256": "67db7862280fb2dcd5a2db3ad5f895750040ffd3d864977b9e54571911a4a1e6",
+      "pivo": [
+        41,
+        43
+      ]
+    },
+    {
+      "parte": "canela_tras_run_f4",
+      "sha256": "ff58344ce5e48475d22f919e6e8e1708c3150ad2c6f91b93b7ff91d4003a0dd0",
+      "pivo": [
+        46,
+        47
+      ]
+    },
+    {
+      "parte": "coxa_frente_run_f5",
+      "sha256": "091c36df9e2297fbe2ea618ea0096d432ecb48343f464d0b9a801946dddeba4d",
+      "pivo": [
+        44,
+        42
+      ]
+    },
+    {
+      "parte": "canela_frente_run_f5",
+      "sha256": "ad71add056d0661768372c1b62abdcb8efc39dfcc6a35bd84274b445278e5cc2",
+      "pivo": [
+        43,
+        46
+      ]
+    },
+    {
+      "parte": "coxa_tras_run_f5",
+      "sha256": "0ee02e117c22ca96129918016e423d59af195610ee4f605ab41c314eb8c1023a",
+      "pivo": [
+        41,
+        42
+      ]
+    },
+    {
+      "parte": "canela_tras_run_f5",
+      "sha256": "d340af6873a03fb711703bb27072a450a69cf5dcb4c58e7f70d9720e2ba3699b",
+      "pivo": [
+        45,
+        46
+      ]
+    },
+    {
+      "parte": "coxa_frente_run_f6",
+      "sha256": "f3bc60c9a22cbf4d28e4286aeba0f7788c5675740c08cb08e05409d2f10847d8",
+      "pivo": [
+        44,
+        43
+      ]
+    },
+    {
+      "parte": "canela_frente_run_f6",
+      "sha256": "a4c962551f11d2b7d9d30a2abe47ceff6aaaec529096fd52e03f754b25243ce1",
+      "pivo": [
+        49,
+        42
+      ]
+    },
+    {
+      "parte": "coxa_tras_run_f6",
+      "sha256": "5ab14e86a1af1dbaa43ee4abe4de9aba767c4b0a655006f10cd1c235e29da654",
+      "pivo": [
+        41,
+        43
+      ]
+    },
+    {
+      "parte": "canela_tras_run_f6",
+      "sha256": "12a9037071bc16ba11c59eea3fa17eda9a8f2748a34755da1f805f4af84a4827",
+      "pivo": [
+        40,
+        47
+      ]
+    },
+    {
+      "parte": "coxa_frente_run_f7",
+      "sha256": "391e87d76ef650e9136f664f377927b80de086f77337aede480d2ea181bc1fdf",
+      "pivo": [
+        44,
+        44
+      ]
+    },
+    {
+      "parte": "canela_frente_run_f7",
+      "sha256": "2ebff55fe1e640a2f772c0b69c8bb1c8e0c9660053ca219b0b37ab6767fe90fb",
+      "pivo": [
+        49,
+        45
+      ]
+    },
+    {
+      "parte": "coxa_tras_run_f7",
+      "sha256": "6310e1b1505e5a6413ae773e057a3a63790550599e05583ec779b1f28dce36ad",
+      "pivo": [
+        41,
+        44
+      ]
+    },
+    {
+      "parte": "canela_tras_run_f7",
+      "sha256": "0f9747e1aff640ce6dec852aba0a6809242565464f405e89a49ccbbfe862e330",
+      "pivo": [
+        37,
+        48
+      ]
+    }
+  ],
+  "solas": [
+    {
+      "quadro": 0,
+      "perna": "frente",
+      "fase": 0,
+      "apoio": true,
+      "pe_antes": [
+        10,
+        0
+      ],
+      "pe_depois": [
+        10,
+        0
+      ],
+      "linha_sola_antes": 55,
+      "linha_sola_depois": 55,
+      "mascara_sola_sha256": "16e12a33b85b83f3c0b7b30dde648acff952a79c985c096fe40b93eaf9fe23ed",
+      "pixels_sola_rgba_identicos": true
+    },
+    {
+      "quadro": 0,
+      "perna": "tras",
+      "fase": 4,
+      "apoio": false,
+      "pe_antes": [
+        -10,
+        -3
+      ],
+      "pe_depois": [
+        -10,
+        -3
+      ],
+      "linha_sola_antes": 52,
+      "linha_sola_depois": 52,
+      "mascara_sola_sha256": "d37393443f2d3905a359171b71ab270ed7cb3c9018fc27881103bbdb6f3a6289",
+      "pixels_sola_rgba_identicos": true
+    },
+    {
+      "quadro": 1,
+      "perna": "frente",
+      "fase": 1,
+      "apoio": true,
+      "pe_antes": [
+        4,
+        0
+      ],
+      "pe_depois": [
+        4,
+        0
+      ],
+      "linha_sola_antes": 55,
+      "linha_sola_depois": 55,
+      "mascara_sola_sha256": "98dde69af75f544e8d6f122189bc5099c8d81ca30182be23a122f75d6f25f54e",
+      "pixels_sola_rgba_identicos": true
+    },
+    {
+      "quadro": 1,
+      "perna": "tras",
+      "fase": 5,
+      "apoio": false,
+      "pe_antes": [
+        -2,
+        -5
+      ],
+      "pe_depois": [
+        -2,
+        -5
+      ],
+      "linha_sola_antes": 50,
+      "linha_sola_depois": 50,
+      "mascara_sola_sha256": "2ed7fcfecd0fba5a85ee250fcdda4e7b31c2621ccaf56986c6c07aaf043c726d",
+      "pixels_sola_rgba_identicos": true
+    },
+    {
+      "quadro": 2,
+      "perna": "frente",
+      "fase": 2,
+      "apoio": true,
+      "pe_antes": [
+        -2,
+        0
+      ],
+      "pe_depois": [
+        -2,
+        0
+      ],
+      "linha_sola_antes": 55,
+      "linha_sola_depois": 55,
+      "mascara_sola_sha256": "c14c9f5ced81bc1b709379fda0735676d86ce368ef4dfbef6f84b6c056e07a10",
+      "pixels_sola_rgba_identicos": true
+    },
+    {
+      "quadro": 2,
+      "perna": "tras",
+      "fase": 6,
+      "apoio": false,
+      "pe_antes": [
+        6,
+        -5
+      ],
+      "pe_depois": [
+        6,
+        -5
+      ],
+      "linha_sola_antes": 50,
+      "linha_sola_depois": 50,
+      "mascara_sola_sha256": "e79d4d3a6b9f530b8d2984ffe81be6e2bbb93e91565081a64f7ded96c7c33ad3",
+      "pixels_sola_rgba_identicos": true
+    },
+    {
+      "quadro": 3,
+      "perna": "frente",
+      "fase": 3,
+      "apoio": true,
+      "pe_antes": [
+        -8,
+        0
+      ],
+      "pe_depois": [
+        -8,
+        0
+      ],
+      "linha_sola_antes": 55,
+      "linha_sola_depois": 55,
+      "mascara_sola_sha256": "870c3d0cdfb6cadeb8b9ed318a9d2f72562e6de2b357b33b240d26ebbfdcace9",
+      "pixels_sola_rgba_identicos": true
+    },
+    {
+      "quadro": 3,
+      "perna": "tras",
+      "fase": 7,
+      "apoio": false,
+      "pe_antes": [
+        12,
+        -2
+      ],
+      "pe_depois": [
+        12,
+        -2
+      ],
+      "linha_sola_antes": 53,
+      "linha_sola_depois": 53,
+      "mascara_sola_sha256": "e5a22595f65f080432b23818fe7ea82d7e6d9b4bfff6cbd5ec4f71a2e3560e57",
+      "pixels_sola_rgba_identicos": true
+    },
+    {
+      "quadro": 4,
+      "perna": "frente",
+      "fase": 4,
+      "apoio": false,
+      "pe_antes": [
+        -10,
+        -3
+      ],
+      "pe_depois": [
+        -10,
+        -3
+      ],
+      "linha_sola_antes": 52,
+      "linha_sola_depois": 52,
+      "mascara_sola_sha256": "89f5f37524b83851880583b6b6c484264663079fe09b48083b6547a31b394080",
+      "pixels_sola_rgba_identicos": true
+    },
+    {
+      "quadro": 4,
+      "perna": "tras",
+      "fase": 0,
+      "apoio": true,
+      "pe_antes": [
+        10,
+        0
+      ],
+      "pe_depois": [
+        10,
+        0
+      ],
+      "linha_sola_antes": 55,
+      "linha_sola_depois": 55,
+      "mascara_sola_sha256": "1a3773086954f6e50ada5f529623319ef2b00d84152c7f63880b919b3a4c4485",
+      "pixels_sola_rgba_identicos": true
+    },
+    {
+      "quadro": 5,
+      "perna": "frente",
+      "fase": 5,
+      "apoio": false,
+      "pe_antes": [
+        -2,
+        -5
+      ],
+      "pe_depois": [
+        -2,
+        -5
+      ],
+      "linha_sola_antes": 50,
+      "linha_sola_depois": 50,
+      "mascara_sola_sha256": "2715084d3a0f81722200243c2940c8f0d1cfd87e407acf76c516f55c2ebe5281",
+      "pixels_sola_rgba_identicos": true
+    },
+    {
+      "quadro": 5,
+      "perna": "tras",
+      "fase": 1,
+      "apoio": true,
+      "pe_antes": [
+        4,
+        0
+      ],
+      "pe_depois": [
+        4,
+        0
+      ],
+      "linha_sola_antes": 55,
+      "linha_sola_depois": 55,
+      "mascara_sola_sha256": "f80459a2a1274c79ec87559ef29717e5658b1a65a1eaea3daaf76cdf977bec3e",
+      "pixels_sola_rgba_identicos": true
+    },
+    {
+      "quadro": 6,
+      "perna": "frente",
+      "fase": 6,
+      "apoio": false,
+      "pe_antes": [
+        6,
+        -5
+      ],
+      "pe_depois": [
+        6,
+        -5
+      ],
+      "linha_sola_antes": 50,
+      "linha_sola_depois": 50,
+      "mascara_sola_sha256": "1d2c451a94ce699d47908e803972b27acfedd6fb10e45a8da5c2fbdfd854507b",
+      "pixels_sola_rgba_identicos": true
+    },
+    {
+      "quadro": 6,
+      "perna": "tras",
+      "fase": 2,
+      "apoio": true,
+      "pe_antes": [
+        -2,
+        0
+      ],
+      "pe_depois": [
+        -2,
+        0
+      ],
+      "linha_sola_antes": 55,
+      "linha_sola_depois": 55,
+      "mascara_sola_sha256": "739d60e5db8f7d295966cf044e8691471f728f34040056d26e72e49c1fe9445c",
+      "pixels_sola_rgba_identicos": true
+    },
+    {
+      "quadro": 7,
+      "perna": "frente",
+      "fase": 7,
+      "apoio": false,
+      "pe_antes": [
+        12,
+        -2
+      ],
+      "pe_depois": [
+        12,
+        -2
+      ],
+      "linha_sola_antes": 53,
+      "linha_sola_depois": 53,
+      "mascara_sola_sha256": "7a93110c80b35aa62c20f61628670c0284f5ebc5c8b6853438715a6b5ac3b93a",
+      "pixels_sola_rgba_identicos": true
+    },
+    {
+      "quadro": 7,
+      "perna": "tras",
+      "fase": 3,
+      "apoio": true,
+      "pe_antes": [
+        -8,
+        0
+      ],
+      "pe_depois": [
+        -8,
+        0
+      ],
+      "linha_sola_antes": 55,
+      "linha_sola_depois": 55,
+      "mascara_sola_sha256": "61f9d041000878b7e2e8da8ff1b348d3ec8ac3f6a1a692154152280d500808ee",
+      "pixels_sola_rgba_identicos": true
+    }
+  ],
+  "replay_rig_poses_8_quadros_rgba_identico": true,
+  "gif_quadros_ms_antes_depois": [
+    40,
+    40,
+    50,
+    40,
+    40,
+    40,
+    40,
+    40
+  ],
+  "gif_antes_copia_sha256_identica": true
+}

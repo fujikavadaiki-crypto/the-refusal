@@ -1,0 +1,1078 @@
+{
+  "idle": [
+    {
+      "quadro": 0,
+      "pose_rig": {
+        "dx": 0,
+        "dy": 0,
+        "fixas": [
+          "coxa_tras",
+          "canela_tras",
+          "bota_tras",
+          "coxa_frente",
+          "canela_frente",
+          "bota_frente",
+          "cabeca_cabelo"
+        ],
+        "partes": {
+          "capa": {
+            "dy": 0
+          }
+        }
+      },
+      "cabeca_fixa": true,
+      "pes_fixos": true,
+      "capa_origem_quadro": 7
+    },
+    {
+      "quadro": 1,
+      "pose_rig": {
+        "dx": 0,
+        "dy": 0,
+        "fixas": [
+          "coxa_tras",
+          "canela_tras",
+          "bota_tras",
+          "coxa_frente",
+          "canela_frente",
+          "bota_frente",
+          "cabeca_cabelo"
+        ],
+        "partes": {
+          "capa": {
+            "dy": 0
+          }
+        }
+      },
+      "cabeca_fixa": true,
+      "pes_fixos": true,
+      "capa_origem_quadro": 0
+    },
+    {
+      "quadro": 2,
+      "pose_rig": {
+        "dx": 0,
+        "dy": -1,
+        "fixas": [
+          "coxa_tras",
+          "canela_tras",
+          "bota_tras",
+          "coxa_frente",
+          "canela_frente",
+          "bota_frente",
+          "cabeca_cabelo"
+        ],
+        "partes": {
+          "capa": {
+            "dy": 1
+          }
+        }
+      },
+      "cabeca_fixa": true,
+      "pes_fixos": true,
+      "capa_origem_quadro": 1
+    },
+    {
+      "quadro": 3,
+      "pose_rig": {
+        "dx": 0,
+        "dy": -1,
+        "fixas": [
+          "coxa_tras",
+          "canela_tras",
+          "bota_tras",
+          "coxa_frente",
+          "canela_frente",
+          "bota_frente",
+          "cabeca_cabelo"
+        ],
+        "partes": {
+          "capa": {
+            "dy": 0
+          }
+        }
+      },
+      "cabeca_fixa": true,
+      "pes_fixos": true,
+      "capa_origem_quadro": 2
+    },
+    {
+      "quadro": 4,
+      "pose_rig": {
+        "dx": 0,
+        "dy": -1,
+        "fixas": [
+          "coxa_tras",
+          "canela_tras",
+          "bota_tras",
+          "coxa_frente",
+          "canela_frente",
+          "bota_frente",
+          "cabeca_cabelo"
+        ],
+        "partes": {
+          "capa": {
+            "dy": 0
+          }
+        }
+      },
+      "cabeca_fixa": true,
+      "pes_fixos": true,
+      "capa_origem_quadro": 3
+    },
+    {
+      "quadro": 5,
+      "pose_rig": {
+        "dx": 0,
+        "dy": 0,
+        "fixas": [
+          "coxa_tras",
+          "canela_tras",
+          "bota_tras",
+          "coxa_frente",
+          "canela_frente",
+          "bota_frente",
+          "cabeca_cabelo"
+        ],
+        "partes": {
+          "capa": {
+            "dy": -1
+          }
+        }
+      },
+      "cabeca_fixa": true,
+      "pes_fixos": true,
+      "capa_origem_quadro": 4
+    },
+    {
+      "quadro": 6,
+      "pose_rig": {
+        "dx": 0,
+        "dy": 0,
+        "fixas": [
+          "coxa_tras",
+          "canela_tras",
+          "bota_tras",
+          "coxa_frente",
+          "canela_frente",
+          "bota_frente",
+          "cabeca_cabelo"
+        ],
+        "partes": {
+          "capa": {
+            "dy": 0
+          }
+        }
+      },
+      "cabeca_fixa": true,
+      "pes_fixos": true,
+      "capa_origem_quadro": 5
+    },
+    {
+      "quadro": 7,
+      "pose_rig": {
+        "dx": 0,
+        "dy": 0,
+        "fixas": [
+          "coxa_tras",
+          "canela_tras",
+          "bota_tras",
+          "coxa_frente",
+          "canela_frente",
+          "bota_frente",
+          "cabeca_cabelo"
+        ],
+        "partes": {
+          "capa": {
+            "dy": 0
+          }
+        }
+      },
+      "cabeca_fixa": true,
+      "pes_fixos": true,
+      "capa_origem_quadro": 6
+    }
+  ],
+  "run": [
+    {
+      "quadro": 0,
+      "pose_rig": {
+        "dx": 2,
+        "dy": 2,
+        "partes": {
+          "capa": {
+            "ang": 10,
+            "dy": 1
+          },
+          "braco_proximo": {
+            "dy": -3
+          },
+          "mao_espada": {
+            "dy": -3
+          }
+        }
+      },
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 0,
+          "apoio": true,
+          "quadril": [
+            4,
+            -13
+          ],
+          "joelho": [
+            6,
+            -9
+          ],
+          "tornozelo": [
+            10,
+            -6
+          ],
+          "pe": [
+            10,
+            0
+          ],
+          "partes": {
+            "coxa_frente": {
+              "dx": 1,
+              "dy": 1,
+              "ang": 0,
+              "variante": "coxa_frente_run_f0"
+            },
+            "canela_frente": {
+              "dx": 0,
+              "dy": -1,
+              "ang": 0,
+              "variante": "canela_frente_run_f0"
+            },
+            "bota_frente": {
+              "dx": 3,
+              "dy": 0,
+              "ang": 0
+            }
+          },
+          "joelho_anterior": [
+            11,
+            -13
+          ]
+        },
+        {
+          "perna": "tras",
+          "fase": 4,
+          "apoio": false,
+          "quadril": [
+            1,
+            -13
+          ],
+          "joelho": [
+            -4,
+            -10
+          ],
+          "tornozelo": [
+            -10,
+            -9
+          ],
+          "pe": [
+            -10,
+            -3
+          ],
+          "partes": {
+            "coxa_tras": {
+              "dx": 2,
+              "dy": 1,
+              "ang": 0,
+              "variante": "coxa_tras_run_f0"
+            },
+            "canela_tras": {
+              "dx": 2,
+              "dy": -1,
+              "ang": 0,
+              "variante": "canela_tras_run_f0"
+            },
+            "bota_tras": {
+              "dx": -3,
+              "dy": -3,
+              "ang": 0
+            }
+          },
+          "joelho_anterior": [
+            -3,
+            -7
+          ]
+        }
+      ],
+      "capa_origem_quadro": 7
+    },
+    {
+      "quadro": 1,
+      "pose_rig": {
+        "dx": 2,
+        "dy": 1,
+        "partes": {
+          "capa": {
+            "ang": 8,
+            "dy": 1
+          },
+          "braco_proximo": {
+            "dy": -3
+          },
+          "mao_espada": {
+            "dy": -3
+          }
+        }
+      },
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 1,
+          "apoio": true,
+          "quadril": [
+            4,
+            -14
+          ],
+          "joelho": [
+            7,
+            -10
+          ],
+          "tornozelo": [
+            4,
+            -6
+          ],
+          "pe": [
+            4,
+            0
+          ],
+          "partes": {
+            "coxa_frente": {
+              "dx": 1,
+              "dy": 0,
+              "ang": 0,
+              "variante": "coxa_frente_run_f1"
+            },
+            "canela_frente": {
+              "dx": 1,
+              "dy": -2,
+              "ang": 0,
+              "variante": "canela_frente_run_f1"
+            },
+            "bota_frente": {
+              "dx": -3,
+              "dy": 0,
+              "ang": 0
+            }
+          },
+          "joelho_anterior": [
+            10,
+            -10
+          ]
+        },
+        {
+          "perna": "tras",
+          "fase": 5,
+          "apoio": false,
+          "quadril": [
+            1,
+            -14
+          ],
+          "joelho": [
+            2,
+            -10
+          ],
+          "tornozelo": [
+            -2,
+            -11
+          ],
+          "pe": [
+            -2,
+            -5
+          ],
+          "partes": {
+            "coxa_tras": {
+              "dx": 2,
+              "dy": 0,
+              "ang": 0,
+              "variante": "coxa_tras_run_f1"
+            },
+            "canela_tras": {
+              "dx": 8,
+              "dy": -1,
+              "ang": 0,
+              "variante": "canela_tras_run_f1"
+            },
+            "bota_tras": {
+              "dx": 5,
+              "dy": -5,
+              "ang": 0
+            }
+          },
+          "joelho_anterior": [
+            4,
+            -8
+          ]
+        }
+      ],
+      "capa_origem_quadro": 0
+    },
+    {
+      "quadro": 2,
+      "pose_rig": {
+        "dx": 2,
+        "dy": 2,
+        "partes": {
+          "capa": {
+            "ang": 10,
+            "dy": -1
+          },
+          "braco_proximo": {
+            "dy": -3
+          },
+          "mao_espada": {
+            "dy": -3
+          }
+        }
+      },
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 2,
+          "apoio": true,
+          "quadril": [
+            4,
+            -13
+          ],
+          "joelho": [
+            2,
+            -9
+          ],
+          "tornozelo": [
+            -2,
+            -6
+          ],
+          "pe": [
+            -2,
+            0
+          ],
+          "partes": {
+            "coxa_frente": {
+              "dx": 1,
+              "dy": 1,
+              "ang": 0,
+              "variante": "coxa_frente_run_f2"
+            },
+            "canela_frente": {
+              "dx": -4,
+              "dy": -1,
+              "ang": 0,
+              "variante": "canela_frente_run_f2"
+            },
+            "bota_frente": {
+              "dx": -9,
+              "dy": 0,
+              "ang": 0
+            }
+          },
+          "joelho_anterior": [
+            5,
+            -6
+          ]
+        },
+        {
+          "perna": "tras",
+          "fase": 6,
+          "apoio": false,
+          "quadril": [
+            1,
+            -13
+          ],
+          "joelho": [
+            7,
+            -14
+          ],
+          "tornozelo": [
+            6,
+            -11
+          ],
+          "pe": [
+            6,
+            -5
+          ],
+          "partes": {
+            "coxa_tras": {
+              "dx": 2,
+              "dy": 1,
+              "ang": 0,
+              "variante": "coxa_tras_run_f2"
+            },
+            "canela_tras": {
+              "dx": 13,
+              "dy": -5,
+              "ang": 0,
+              "variante": "canela_tras_run_f2"
+            },
+            "bota_tras": {
+              "dx": 13,
+              "dy": -5,
+              "ang": 0
+            }
+          },
+          "joelho_anterior": [
+            6,
+            -18
+          ]
+        }
+      ],
+      "capa_origem_quadro": 1
+    },
+    {
+      "quadro": 3,
+      "pose_rig": {
+        "dx": 2,
+        "dy": 3,
+        "partes": {
+          "capa": {
+            "ang": 12,
+            "dy": -1
+          },
+          "braco_proximo": {
+            "dy": -3
+          },
+          "mao_espada": {
+            "dy": -3
+          }
+        }
+      },
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 3,
+          "apoio": true,
+          "quadril": [
+            4,
+            -12
+          ],
+          "joelho": [
+            -2,
+            -8
+          ],
+          "tornozelo": [
+            -8,
+            -6
+          ],
+          "pe": [
+            -8,
+            0
+          ],
+          "partes": {
+            "coxa_frente": {
+              "dx": 1,
+              "dy": 2,
+              "ang": 0,
+              "variante": "coxa_frente_run_f3"
+            },
+            "canela_frente": {
+              "dx": -8,
+              "dy": 0,
+              "ang": 0,
+              "variante": "canela_frente_run_f3"
+            },
+            "bota_frente": {
+              "dx": -15,
+              "dy": 0,
+              "ang": 0
+            }
+          },
+          "joelho_anterior": [
+            -1,
+            -7
+          ]
+        },
+        {
+          "perna": "tras",
+          "fase": 7,
+          "apoio": false,
+          "quadril": [
+            1,
+            -12
+          ],
+          "joelho": [
+            7,
+            -10
+          ],
+          "tornozelo": [
+            12,
+            -8
+          ],
+          "pe": [
+            12,
+            -2
+          ],
+          "partes": {
+            "coxa_tras": {
+              "dx": 2,
+              "dy": 2,
+              "ang": 0,
+              "variante": "coxa_tras_run_f3"
+            },
+            "canela_tras": {
+              "dx": 13,
+              "dy": -1,
+              "ang": 0,
+              "variante": "canela_tras_run_f3"
+            },
+            "bota_tras": {
+              "dx": 19,
+              "dy": -2,
+              "ang": 0
+            }
+          },
+          "joelho_anterior": [
+            8,
+            -14
+          ]
+        }
+      ],
+      "capa_origem_quadro": 2
+    },
+    {
+      "quadro": 4,
+      "pose_rig": {
+        "dx": 2,
+        "dy": 2,
+        "partes": {
+          "capa": {
+            "ang": 10,
+            "dy": 1
+          },
+          "braco_proximo": {
+            "dy": -3
+          },
+          "mao_espada": {
+            "dy": -3
+          }
+        }
+      },
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 4,
+          "apoio": false,
+          "quadril": [
+            4,
+            -13
+          ],
+          "joelho": [
+            -3,
+            -11
+          ],
+          "tornozelo": [
+            -10,
+            -9
+          ],
+          "pe": [
+            -10,
+            -3
+          ],
+          "partes": {
+            "coxa_frente": {
+              "dx": 1,
+              "dy": 1,
+              "ang": 0,
+              "variante": "coxa_frente_run_f4"
+            },
+            "canela_frente": {
+              "dx": -9,
+              "dy": -3,
+              "ang": 0,
+              "variante": "canela_frente_run_f4"
+            },
+            "bota_frente": {
+              "dx": -17,
+              "dy": -3,
+              "ang": 0
+            }
+          },
+          "joelho_anterior": [
+            -3,
+            -11
+          ]
+        },
+        {
+          "perna": "tras",
+          "fase": 0,
+          "apoio": true,
+          "quadril": [
+            1,
+            -13
+          ],
+          "joelho": [
+            6,
+            -9
+          ],
+          "tornozelo": [
+            10,
+            -6
+          ],
+          "pe": [
+            10,
+            0
+          ],
+          "partes": {
+            "coxa_tras": {
+              "dx": 2,
+              "dy": 1,
+              "ang": 0,
+              "variante": "coxa_tras_run_f4"
+            },
+            "canela_tras": {
+              "dx": 12,
+              "dy": 0,
+              "ang": 0,
+              "variante": "canela_tras_run_f4"
+            },
+            "bota_tras": {
+              "dx": 17,
+              "dy": 0,
+              "ang": 0
+            }
+          },
+          "joelho_anterior": [
+            8,
+            -13
+          ]
+        }
+      ],
+      "capa_origem_quadro": 3
+    },
+    {
+      "quadro": 5,
+      "pose_rig": {
+        "dx": 2,
+        "dy": 1,
+        "partes": {
+          "capa": {
+            "ang": 8,
+            "dy": 1
+          },
+          "braco_proximo": {
+            "dy": -3
+          },
+          "mao_espada": {
+            "dy": -3
+          }
+        }
+      },
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 5,
+          "apoio": false,
+          "quadril": [
+            4,
+            -14
+          ],
+          "joelho": [
+            3,
+            -10
+          ],
+          "tornozelo": [
+            -2,
+            -11
+          ],
+          "pe": [
+            -2,
+            -5
+          ],
+          "partes": {
+            "coxa_frente": {
+              "dx": 1,
+              "dy": 0,
+              "ang": 0,
+              "variante": "coxa_frente_run_f5"
+            },
+            "canela_frente": {
+              "dx": -3,
+              "dy": -2,
+              "ang": 0,
+              "variante": "canela_frente_run_f5"
+            },
+            "bota_frente": {
+              "dx": -9,
+              "dy": -5,
+              "ang": 0
+            }
+          },
+          "joelho_anterior": [
+            4,
+            -7
+          ]
+        },
+        {
+          "perna": "tras",
+          "fase": 1,
+          "apoio": true,
+          "quadril": [
+            1,
+            -14
+          ],
+          "joelho": [
+            5,
+            -10
+          ],
+          "tornozelo": [
+            4,
+            -6
+          ],
+          "pe": [
+            4,
+            0
+          ],
+          "partes": {
+            "coxa_tras": {
+              "dx": 2,
+              "dy": 0,
+              "ang": 0,
+              "variante": "coxa_tras_run_f5"
+            },
+            "canela_tras": {
+              "dx": 11,
+              "dy": -1,
+              "ang": 0,
+              "variante": "canela_tras_run_f5"
+            },
+            "bota_tras": {
+              "dx": 11,
+              "dy": 0,
+              "ang": 0
+            }
+          },
+          "joelho_anterior": [
+            8,
+            -12
+          ]
+        }
+      ],
+      "capa_origem_quadro": 4
+    },
+    {
+      "quadro": 6,
+      "pose_rig": {
+        "dx": 2,
+        "dy": 2,
+        "partes": {
+          "capa": {
+            "ang": 10,
+            "dy": -1
+          },
+          "braco_proximo": {
+            "dy": -3
+          },
+          "mao_espada": {
+            "dy": -3
+          }
+        }
+      },
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 6,
+          "apoio": false,
+          "quadril": [
+            4,
+            -13
+          ],
+          "joelho": [
+            9,
+            -14
+          ],
+          "tornozelo": [
+            6,
+            -11
+          ],
+          "pe": [
+            6,
+            -5
+          ],
+          "partes": {
+            "coxa_frente": {
+              "dx": 1,
+              "dy": 1,
+              "ang": 0,
+              "variante": "coxa_frente_run_f6"
+            },
+            "canela_frente": {
+              "dx": 3,
+              "dy": -6,
+              "ang": 0,
+              "variante": "canela_frente_run_f6"
+            },
+            "bota_frente": {
+              "dx": -1,
+              "dy": -5,
+              "ang": 0
+            }
+          },
+          "joelho_anterior": [
+            10,
+            -17
+          ]
+        },
+        {
+          "perna": "tras",
+          "fase": 2,
+          "apoio": true,
+          "quadril": [
+            1,
+            -13
+          ],
+          "joelho": [
+            0,
+            -9
+          ],
+          "tornozelo": [
+            -2,
+            -6
+          ],
+          "pe": [
+            -2,
+            0
+          ],
+          "partes": {
+            "coxa_tras": {
+              "dx": 2,
+              "dy": 1,
+              "ang": 0,
+              "variante": "coxa_tras_run_f6"
+            },
+            "canela_tras": {
+              "dx": 6,
+              "dy": 0,
+              "ang": 0,
+              "variante": "canela_tras_run_f6"
+            },
+            "bota_tras": {
+              "dx": 5,
+              "dy": 0,
+              "ang": 0
+            }
+          },
+          "joelho_anterior": [
+            5,
+            -7
+          ]
+        }
+      ],
+      "capa_origem_quadro": 5
+    },
+    {
+      "quadro": 7,
+      "pose_rig": {
+        "dx": 2,
+        "dy": 3,
+        "partes": {
+          "capa": {
+            "ang": 12,
+            "dy": -1
+          },
+          "braco_proximo": {
+            "dy": -3
+          },
+          "mao_espada": {
+            "dy": -3
+          }
+        }
+      },
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 7,
+          "apoio": false,
+          "quadril": [
+            4,
+            -12
+          ],
+          "joelho": [
+            9,
+            -11
+          ],
+          "tornozelo": [
+            12,
+            -8
+          ],
+          "pe": [
+            12,
+            -2
+          ],
+          "partes": {
+            "coxa_frente": {
+              "dx": 1,
+              "dy": 2,
+              "ang": 0,
+              "variante": "coxa_frente_run_f7"
+            },
+            "canela_frente": {
+              "dx": 3,
+              "dy": -3,
+              "ang": 0,
+              "variante": "canela_frente_run_f7"
+            },
+            "bota_frente": {
+              "dx": 5,
+              "dy": -2,
+              "ang": 0
+            }
+          },
+          "joelho_anterior": [
+            10,
+            -15
+          ]
+        },
+        {
+          "perna": "tras",
+          "fase": 3,
+          "apoio": true,
+          "quadril": [
+            1,
+            -12
+          ],
+          "joelho": [
+            -3,
+            -8
+          ],
+          "tornozelo": [
+            -8,
+            -6
+          ],
+          "pe": [
+            -8,
+            0
+          ],
+          "partes": {
+            "coxa_tras": {
+              "dx": 2,
+              "dy": 2,
+              "ang": 0,
+              "variante": "coxa_tras_run_f7"
+            },
+            "canela_tras": {
+              "dx": 3,
+              "dy": 1,
+              "ang": 0,
+              "variante": "canela_tras_run_f7"
+            },
+            "bota_tras": {
+              "dx": -1,
+              "dy": 0,
+              "ang": 0
+            }
+          },
+          "joelho_anterior": [
+            -1,
+            -5
+          ]
+        }
+      ],
+      "capa_origem_quadro": 6
+    }
+  ]
+}

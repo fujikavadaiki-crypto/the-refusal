@@ -1,0 +1,596 @@
+{
+  "fonte": "arte_fonte/forma_humana_v1/forma_humana_mestre_x1.png",
+  "altura_px": 48,
+  "ancora_mestre": [
+    24,
+    50
+  ],
+  "camadas": [
+    "coxa_tras",
+    "canela_tras",
+    "bota_tras",
+    "braco_distante",
+    "capa",
+    "tronco",
+    "coxa_frente",
+    "canela_frente",
+    "bota_frente",
+    "capuz",
+    "cabeca_cabelo",
+    "braco_proximo",
+    "mao_espada"
+  ],
+  "partes": {
+    "cabeca_cabelo": {
+      "pivo": [
+        27,
+        20
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/cabeca_cabelo.png",
+      "sha256": "1f79d370f0230e887085d0890c6f03a07e7353bbb7bd28e41ff3f2685bfaad80"
+    },
+    "mao_espada": {
+      "pivo": [
+        23,
+        34
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/mao_espada.png",
+      "sha256": "26b58ff2c153ef92903322ad07e084ecb49b0674c7f52bfd8406a1bb7ba1afa7"
+    },
+    "braco_distante": {
+      "pivo": [
+        29,
+        26
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/braco_distante.png",
+      "sha256": "d8899a3653f39cb1b64919063707a586ef33918552e6389952a7c2a356cafb31"
+    },
+    "braco_proximo": {
+      "pivo": [
+        20,
+        24
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/braco_proximo.png",
+      "sha256": "b971b3a88ed074926a6f95845b5e921676f2dce27f2829a3eed03fb58e844d74"
+    },
+    "capa": {
+      "pivo": [
+        15,
+        23
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/capa.png",
+      "sha256": "3c5cfed35fdb4b64d3c4e664a80ba1c4f5cbf508f6e87433032be5c766ac2a5e"
+    },
+    "bota_tras": {
+      "pivo": [
+        17,
+        44
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/bota_tras.png",
+      "sha256": "c269849e97dd1e76e3667df694b09f2e03facfb8f983ab5e80ab55359e0e0592"
+    },
+    "bota_frente": {
+      "pivo": [
+        31,
+        44
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/bota_frente.png",
+      "sha256": "df540930038519c66d0b5dec228e1978db0004a30d0bda4b51d5f7a90d5c9347"
+    },
+    "canela_tras": {
+      "pivo": [
+        18,
+        41
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/canela_tras.png",
+      "sha256": "be3b1a4093cf9cb3aedc7b4674f7cf96703e96c214ffae8f6dca0edf7d2a523a"
+    },
+    "coxa_tras": {
+      "pivo": [
+        23,
+        36
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/coxa_tras.png",
+      "sha256": "c93628a2482f95fbced27bf619137cf4d5e2a12cba6f3b7727e5dccd5d9aab53"
+    },
+    "canela_frente": {
+      "pivo": [
+        30,
+        42
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/canela_frente.png",
+      "sha256": "aff8ca5f14884216658f1bb3007a73d551e53eb42e381807161bb334e000b79e"
+    },
+    "coxa_frente": {
+      "pivo": [
+        27,
+        36
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/coxa_frente.png",
+      "sha256": "cdd2220720530986716e1bce4d7e1da934a8fdcee1bb14411479de7396657b70"
+    },
+    "capuz": {
+      "pivo": [
+        24,
+        22
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/capuz.png",
+      "sha256": "928ea3544a121ebefb97b00ccfd68ac679c072dbf29cb716f38ce9e9d6522369"
+    },
+    "tronco": {
+      "pivo": [
+        25,
+        33
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/tronco.png",
+      "sha256": "0440fd9c7adcfac578ab97246f6958f7a6311df23123dd3a97e0dc85066d0fdd"
+    },
+    "coxa_frente_run_f0": {
+      "arquivo": "variantes/coxa_frente_run_f0.png",
+      "pivo": [
+        44,
+        43
+      ],
+      "variante": true,
+      "variante_de": "coxa_frente",
+      "sha256": "bcce93c365a91bdf16c83cae9c8cbbafccd739ebca0d7a4681b42028c0df4987"
+    },
+    "canela_frente_run_f0": {
+      "arquivo": "variantes/canela_frente_run_f0.png",
+      "pivo": [
+        46,
+        47
+      ],
+      "variante": true,
+      "variante_de": "canela_frente",
+      "sha256": "7b4edb46d728e785130c5187faa8472ae6991c6857a0e5f9c06d9aef382e737d"
+    },
+    "coxa_tras_run_f0": {
+      "arquivo": "variantes/coxa_tras_run_f0.png",
+      "pivo": [
+        41,
+        43
+      ],
+      "variante": true,
+      "variante_de": "coxa_tras",
+      "sha256": "64abf76c75a5f42273d2389dca4e66d1c0f0ca3fd5cbbc52728bf95f64418da1"
+    },
+    "canela_tras_run_f0": {
+      "arquivo": "variantes/canela_tras_run_f0.png",
+      "pivo": [
+        36,
+        46
+      ],
+      "variante": true,
+      "variante_de": "canela_tras",
+      "sha256": "1feb470d4839469790a7b733caa310f91078e724325d4c1b2264565271393eef"
+    },
+    "coxa_frente_run_f1": {
+      "arquivo": "variantes/coxa_frente_run_f1.png",
+      "pivo": [
+        44,
+        42
+      ],
+      "variante": true,
+      "variante_de": "coxa_frente",
+      "sha256": "f53e94a6bad3c013875dec8a0ff8f06d67cdcd6a6fc95ded56a4f6a5c809ecdc"
+    },
+    "canela_frente_run_f1": {
+      "arquivo": "variantes/canela_frente_run_f1.png",
+      "pivo": [
+        47,
+        46
+      ],
+      "variante": true,
+      "variante_de": "canela_frente",
+      "sha256": "9bb424e046db37b56dc81a337390f9f960b6f7b0f2783447c69f382850895a73"
+    },
+    "coxa_tras_run_f1": {
+      "arquivo": "variantes/coxa_tras_run_f1.png",
+      "pivo": [
+        41,
+        42
+      ],
+      "variante": true,
+      "variante_de": "coxa_tras",
+      "sha256": "4cfedfc0ae4276209839577b8048330c49ebca5924b448373a56b400d5cc1f55"
+    },
+    "canela_tras_run_f1": {
+      "arquivo": "variantes/canela_tras_run_f1.png",
+      "pivo": [
+        42,
+        46
+      ],
+      "variante": true,
+      "variante_de": "canela_tras",
+      "sha256": "af9dc322c38784465c92bf3df08c6ea41e68dd11fc779bef1b551e55ef13e58d"
+    },
+    "coxa_frente_run_f2": {
+      "arquivo": "variantes/coxa_frente_run_f2.png",
+      "pivo": [
+        44,
+        43
+      ],
+      "variante": true,
+      "variante_de": "coxa_frente",
+      "sha256": "886d9243d141ee8b6d0989f5a2c9157dfa0c80eed9822d454e3e0124ea964504"
+    },
+    "canela_frente_run_f2": {
+      "arquivo": "variantes/canela_frente_run_f2.png",
+      "pivo": [
+        42,
+        47
+      ],
+      "variante": true,
+      "variante_de": "canela_frente",
+      "sha256": "dfa5fbeb6cc10e15c985919bc98f4ecce4da71debcea35d9c672f9663c25c81f"
+    },
+    "coxa_tras_run_f2": {
+      "arquivo": "variantes/coxa_tras_run_f2.png",
+      "pivo": [
+        41,
+        43
+      ],
+      "variante": true,
+      "variante_de": "coxa_tras",
+      "sha256": "78d302bdc3cd1004efdf06ea832afe82475a6b4948d45533746f34a3d441e8c0"
+    },
+    "canela_tras_run_f2": {
+      "arquivo": "variantes/canela_tras_run_f2.png",
+      "pivo": [
+        47,
+        42
+      ],
+      "variante": true,
+      "variante_de": "canela_tras",
+      "sha256": "d26f4d76c4b4d06bc9221bdf3c47cf734d0084617c6b28a365d55cc9257996d3"
+    },
+    "coxa_frente_run_f3": {
+      "arquivo": "variantes/coxa_frente_run_f3.png",
+      "pivo": [
+        44,
+        44
+      ],
+      "variante": true,
+      "variante_de": "coxa_frente",
+      "sha256": "ecd54eb847b8d353d3b63abb92c6fe4efa87b8f726c1cab58d1c39853cacc267"
+    },
+    "canela_frente_run_f3": {
+      "arquivo": "variantes/canela_frente_run_f3.png",
+      "pivo": [
+        38,
+        48
+      ],
+      "variante": true,
+      "variante_de": "canela_frente",
+      "sha256": "8de4ef6b6b1304438c0b94d82c5181aca41b1dd7d61f5e23d0ccc806d0de1080"
+    },
+    "coxa_tras_run_f3": {
+      "arquivo": "variantes/coxa_tras_run_f3.png",
+      "pivo": [
+        41,
+        44
+      ],
+      "variante": true,
+      "variante_de": "coxa_tras",
+      "sha256": "9073bd1605ef38a5983d0234512397f9b6d58ce9a9d56908427adbb3ddf85283"
+    },
+    "canela_tras_run_f3": {
+      "arquivo": "variantes/canela_tras_run_f3.png",
+      "pivo": [
+        47,
+        46
+      ],
+      "variante": true,
+      "variante_de": "canela_tras",
+      "sha256": "7c57431184932e5a4135e260762faa543cfe57c43e5bd1271a426c6d458b1ee9"
+    },
+    "coxa_frente_run_f4": {
+      "arquivo": "variantes/coxa_frente_run_f4.png",
+      "pivo": [
+        44,
+        43
+      ],
+      "variante": true,
+      "variante_de": "coxa_frente",
+      "sha256": "942c11128d013d1d56228783955a35e7c3d50e6a64105dba0d554e4348ae4ea0"
+    },
+    "canela_frente_run_f4": {
+      "arquivo": "variantes/canela_frente_run_f4.png",
+      "pivo": [
+        37,
+        45
+      ],
+      "variante": true,
+      "variante_de": "canela_frente",
+      "sha256": "9342f414330b71f293bccd7974615ecfef896c65ea0b705532a7cdfb4854f5ef"
+    },
+    "coxa_tras_run_f4": {
+      "arquivo": "variantes/coxa_tras_run_f4.png",
+      "pivo": [
+        41,
+        43
+      ],
+      "variante": true,
+      "variante_de": "coxa_tras",
+      "sha256": "67db7862280fb2dcd5a2db3ad5f895750040ffd3d864977b9e54571911a4a1e6"
+    },
+    "canela_tras_run_f4": {
+      "arquivo": "variantes/canela_tras_run_f4.png",
+      "pivo": [
+        46,
+        47
+      ],
+      "variante": true,
+      "variante_de": "canela_tras",
+      "sha256": "ff58344ce5e48475d22f919e6e8e1708c3150ad2c6f91b93b7ff91d4003a0dd0"
+    },
+    "coxa_frente_run_f5": {
+      "arquivo": "variantes/coxa_frente_run_f5.png",
+      "pivo": [
+        44,
+        42
+      ],
+      "variante": true,
+      "variante_de": "coxa_frente",
+      "sha256": "091c36df9e2297fbe2ea618ea0096d432ecb48343f464d0b9a801946dddeba4d"
+    },
+    "canela_frente_run_f5": {
+      "arquivo": "variantes/canela_frente_run_f5.png",
+      "pivo": [
+        43,
+        46
+      ],
+      "variante": true,
+      "variante_de": "canela_frente",
+      "sha256": "ad71add056d0661768372c1b62abdcb8efc39dfcc6a35bd84274b445278e5cc2"
+    },
+    "coxa_tras_run_f5": {
+      "arquivo": "variantes/coxa_tras_run_f5.png",
+      "pivo": [
+        41,
+        42
+      ],
+      "variante": true,
+      "variante_de": "coxa_tras",
+      "sha256": "0ee02e117c22ca96129918016e423d59af195610ee4f605ab41c314eb8c1023a"
+    },
+    "canela_tras_run_f5": {
+      "arquivo": "variantes/canela_tras_run_f5.png",
+      "pivo": [
+        45,
+        46
+      ],
+      "variante": true,
+      "variante_de": "canela_tras",
+      "sha256": "d340af6873a03fb711703bb27072a450a69cf5dcb4c58e7f70d9720e2ba3699b"
+    },
+    "coxa_frente_run_f6": {
+      "arquivo": "variantes/coxa_frente_run_f6.png",
+      "pivo": [
+        44,
+        43
+      ],
+      "variante": true,
+      "variante_de": "coxa_frente",
+      "sha256": "f3bc60c9a22cbf4d28e4286aeba0f7788c5675740c08cb08e05409d2f10847d8"
+    },
+    "canela_frente_run_f6": {
+      "arquivo": "variantes/canela_frente_run_f6.png",
+      "pivo": [
+        49,
+        42
+      ],
+      "variante": true,
+      "variante_de": "canela_frente",
+      "sha256": "a4c962551f11d2b7d9d30a2abe47ceff6aaaec529096fd52e03f754b25243ce1"
+    },
+    "coxa_tras_run_f6": {
+      "arquivo": "variantes/coxa_tras_run_f6.png",
+      "pivo": [
+        41,
+        43
+      ],
+      "variante": true,
+      "variante_de": "coxa_tras",
+      "sha256": "5ab14e86a1af1dbaa43ee4abe4de9aba767c4b0a655006f10cd1c235e29da654"
+    },
+    "canela_tras_run_f6": {
+      "arquivo": "variantes/canela_tras_run_f6.png",
+      "pivo": [
+        40,
+        47
+      ],
+      "variante": true,
+      "variante_de": "canela_tras",
+      "sha256": "12a9037071bc16ba11c59eea3fa17eda9a8f2748a34755da1f805f4af84a4827"
+    },
+    "coxa_frente_run_f7": {
+      "arquivo": "variantes/coxa_frente_run_f7.png",
+      "pivo": [
+        44,
+        44
+      ],
+      "variante": true,
+      "variante_de": "coxa_frente",
+      "sha256": "391e87d76ef650e9136f664f377927b80de086f77337aede480d2ea181bc1fdf"
+    },
+    "canela_frente_run_f7": {
+      "arquivo": "variantes/canela_frente_run_f7.png",
+      "pivo": [
+        49,
+        45
+      ],
+      "variante": true,
+      "variante_de": "canela_frente",
+      "sha256": "2ebff55fe1e640a2f772c0b69c8bb1c8e0c9660053ca219b0b37ab6767fe90fb"
+    },
+    "coxa_tras_run_f7": {
+      "arquivo": "variantes/coxa_tras_run_f7.png",
+      "pivo": [
+        41,
+        44
+      ],
+      "variante": true,
+      "variante_de": "coxa_tras",
+      "sha256": "6310e1b1505e5a6413ae773e057a3a63790550599e05583ec779b1f28dce36ad"
+    },
+    "canela_tras_run_f7": {
+      "arquivo": "variantes/canela_tras_run_f7.png",
+      "pivo": [
+        37,
+        48
+      ],
+      "variante": true,
+      "variante_de": "canela_tras",
+      "sha256": "0f9747e1aff640ce6dec852aba0a6809242565464f405e89a49ccbbfe862e330"
+    }
+  },
+  "rotacao_maxima_graus": 20.0,
+  "mestre_sha256": "204432d31a2d8890c6def7b6fd81b56972ce482b5eca82fa3de878ebe2dcf988",
+  "biblioteca": "arte_fonte/kit_rig/kitrig",
+  "uso": "somente rig e idle/run para avaliação; não é pacote final",
+  "articulacao_run": "quadril/joelho/tornozelo via ik2; botas nativas sem escala ou giro",
+  "sobreposicao_run": "perna distante atrás; pano/tronco cobre a raiz da perna próxima; arma na frente",
+  "juntas_mestre": {
+    "quadril_tras": [
+      23,
+      36
+    ],
+    "quadril_frente": [
+      27,
+      36
+    ],
+    "joelho_tras": [
+      18,
+      41
+    ],
+    "joelho_frente": [
+      30,
+      42
+    ],
+    "tornozelo_tras": [
+      17,
+      44
+    ],
+    "tornozelo_frente": [
+      31,
+      44
+    ],
+    "ombro_proximo": [
+      20,
+      24
+    ],
+    "mao_espada": [
+      23,
+      34
+    ]
+  },
+  "completar": {
+    "somente_regioes_escondidas": true,
+    "tronco": [
+      {
+        "poligono": [
+          [
+            18,
+            24
+          ],
+          [
+            22,
+            24
+          ],
+          [
+            23,
+            29
+          ],
+          [
+            24,
+            34
+          ],
+          [
+            19,
+            35
+          ]
+        ],
+        "cor": 8
+      },
+      {
+        "poligono": [
+          [
+            22,
+            28
+          ],
+          [
+            24,
+            27
+          ],
+          [
+            25,
+            30
+          ],
+          [
+            23,
+            32
+          ]
+        ],
+        "cor": 10
+      }
+    ]
+  },
+  "revisao": "4.8b1: somente coxas/joelhos/canelas de run",
+  "rig_anterior_sha256": "2d7f6a8592ebff88fd96abdd76251559122ae6506bf005adc9c84ae1ef2cf67d",
+  "variantes_run": "geometria orientada; seção compartilhada no joelho; luz próxima/distante",
+  "botas_e_movimento": "originais 4.8b; sem escala, giro, alteração de trajetória ou cadência"
+}

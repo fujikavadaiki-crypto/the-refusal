@@ -1,0 +1,474 @@
+{
+  "quadros": [
+    {
+      "quadro": 0,
+      "pixels_alterados": 91,
+      "pixels_fora_da_mascara_alterados": 0,
+      "pixels_das_botas_alterados": 0,
+      "mascara_edicao": "mascaras_edicao/run_f0.png",
+      "diferenca_rgba": "mascaras_edicao/diferenca_f0.png",
+      "quadris_joelhos_tornozelos": [
+        {
+          "perna": "frente",
+          "quadril": [
+            4,
+            -13
+          ],
+          "joelho_antes": [
+            11,
+            -13
+          ],
+          "joelho_depois": [
+            6,
+            -9
+          ],
+          "tornozelo": [
+            10,
+            -6
+          ],
+          "pe": [
+            10,
+            0
+          ],
+          "apoio": true
+        },
+        {
+          "perna": "tras",
+          "quadril": [
+            1,
+            -13
+          ],
+          "joelho_antes": [
+            -3,
+            -7
+          ],
+          "joelho_depois": [
+            -4,
+            -10
+          ],
+          "tornozelo": [
+            -10,
+            -9
+          ],
+          "pe": [
+            -10,
+            -3
+          ],
+          "apoio": false
+        }
+      ]
+    },
+    {
+      "quadro": 1,
+      "pixels_alterados": 42,
+      "pixels_fora_da_mascara_alterados": 0,
+      "pixels_das_botas_alterados": 0,
+      "mascara_edicao": "mascaras_edicao/run_f1.png",
+      "diferenca_rgba": "mascaras_edicao/diferenca_f1.png",
+      "quadris_joelhos_tornozelos": [
+        {
+          "perna": "frente",
+          "quadril": [
+            4,
+            -14
+          ],
+          "joelho_antes": [
+            10,
+            -10
+          ],
+          "joelho_depois": [
+            7,
+            -10
+          ],
+          "tornozelo": [
+            4,
+            -6
+          ],
+          "pe": [
+            4,
+            0
+          ],
+          "apoio": true
+        },
+        {
+          "perna": "tras",
+          "quadril": [
+            1,
+            -14
+          ],
+          "joelho_antes": [
+            4,
+            -8
+          ],
+          "joelho_depois": [
+            2,
+            -10
+          ],
+          "tornozelo": [
+            -2,
+            -11
+          ],
+          "pe": [
+            -2,
+            -5
+          ],
+          "apoio": false
+        }
+      ]
+    },
+    {
+      "quadro": 2,
+      "pixels_alterados": 29,
+      "pixels_fora_da_mascara_alterados": 0,
+      "pixels_das_botas_alterados": 0,
+      "mascara_edicao": "mascaras_edicao/run_f2.png",
+      "diferenca_rgba": "mascaras_edicao/diferenca_f2.png",
+      "quadris_joelhos_tornozelos": [
+        {
+          "perna": "frente",
+          "quadril": [
+            4,
+            -13
+          ],
+          "joelho_antes": [
+            5,
+            -6
+          ],
+          "joelho_depois": [
+            2,
+            -9
+          ],
+          "tornozelo": [
+            -2,
+            -6
+          ],
+          "pe": [
+            -2,
+            0
+          ],
+          "apoio": true
+        },
+        {
+          "perna": "tras",
+          "quadril": [
+            1,
+            -13
+          ],
+          "joelho_antes": [
+            6,
+            -18
+          ],
+          "joelho_depois": [
+            7,
+            -14
+          ],
+          "tornozelo": [
+            6,
+            -11
+          ],
+          "pe": [
+            6,
+            -5
+          ],
+          "apoio": false
+        }
+      ]
+    },
+    {
+      "quadro": 3,
+      "pixels_alterados": 53,
+      "pixels_fora_da_mascara_alterados": 0,
+      "pixels_das_botas_alterados": 0,
+      "mascara_edicao": "mascaras_edicao/run_f3.png",
+      "diferenca_rgba": "mascaras_edicao/diferenca_f3.png",
+      "quadris_joelhos_tornozelos": [
+        {
+          "perna": "frente",
+          "quadril": [
+            4,
+            -12
+          ],
+          "joelho_antes": [
+            -1,
+            -7
+          ],
+          "joelho_depois": [
+            -2,
+            -8
+          ],
+          "tornozelo": [
+            -8,
+            -6
+          ],
+          "pe": [
+            -8,
+            0
+          ],
+          "apoio": true
+        },
+        {
+          "perna": "tras",
+          "quadril": [
+            1,
+            -12
+          ],
+          "joelho_antes": [
+            8,
+            -14
+          ],
+          "joelho_depois": [
+            7,
+            -10
+          ],
+          "tornozelo": [
+            12,
+            -8
+          ],
+          "pe": [
+            12,
+            -2
+          ],
+          "apoio": false
+        }
+      ]
+    },
+    {
+      "quadro": 4,
+      "pixels_alterados": 48,
+      "pixels_fora_da_mascara_alterados": 0,
+      "pixels_das_botas_alterados": 0,
+      "mascara_edicao": "mascaras_edicao/run_f4.png",
+      "diferenca_rgba": "mascaras_edicao/diferenca_f4.png",
+      "quadris_joelhos_tornozelos": [
+        {
+          "perna": "frente",
+          "quadril": [
+            4,
+            -13
+          ],
+          "joelho_antes": [
+            -3,
+            -11
+          ],
+          "joelho_depois": [
+            -3,
+            -11
+          ],
+          "tornozelo": [
+            -10,
+            -9
+          ],
+          "pe": [
+            -10,
+            -3
+          ],
+          "apoio": false
+        },
+        {
+          "perna": "tras",
+          "quadril": [
+            1,
+            -13
+          ],
+          "joelho_antes": [
+            8,
+            -13
+          ],
+          "joelho_depois": [
+            6,
+            -9
+          ],
+          "tornozelo": [
+            10,
+            -6
+          ],
+          "pe": [
+            10,
+            0
+          ],
+          "apoio": true
+        }
+      ]
+    },
+    {
+      "quadro": 5,
+      "pixels_alterados": 26,
+      "pixels_fora_da_mascara_alterados": 0,
+      "pixels_das_botas_alterados": 0,
+      "mascara_edicao": "mascaras_edicao/run_f5.png",
+      "diferenca_rgba": "mascaras_edicao/diferenca_f5.png",
+      "quadris_joelhos_tornozelos": [
+        {
+          "perna": "frente",
+          "quadril": [
+            4,
+            -14
+          ],
+          "joelho_antes": [
+            4,
+            -7
+          ],
+          "joelho_depois": [
+            3,
+            -10
+          ],
+          "tornozelo": [
+            -2,
+            -11
+          ],
+          "pe": [
+            -2,
+            -5
+          ],
+          "apoio": false
+        },
+        {
+          "perna": "tras",
+          "quadril": [
+            1,
+            -14
+          ],
+          "joelho_antes": [
+            8,
+            -12
+          ],
+          "joelho_depois": [
+            5,
+            -10
+          ],
+          "tornozelo": [
+            4,
+            -6
+          ],
+          "pe": [
+            4,
+            0
+          ],
+          "apoio": true
+        }
+      ]
+    },
+    {
+      "quadro": 6,
+      "pixels_alterados": 51,
+      "pixels_fora_da_mascara_alterados": 0,
+      "pixels_das_botas_alterados": 0,
+      "mascara_edicao": "mascaras_edicao/run_f6.png",
+      "diferenca_rgba": "mascaras_edicao/diferenca_f6.png",
+      "quadris_joelhos_tornozelos": [
+        {
+          "perna": "frente",
+          "quadril": [
+            4,
+            -13
+          ],
+          "joelho_antes": [
+            10,
+            -17
+          ],
+          "joelho_depois": [
+            9,
+            -14
+          ],
+          "tornozelo": [
+            6,
+            -11
+          ],
+          "pe": [
+            6,
+            -5
+          ],
+          "apoio": false
+        },
+        {
+          "perna": "tras",
+          "quadril": [
+            1,
+            -13
+          ],
+          "joelho_antes": [
+            5,
+            -7
+          ],
+          "joelho_depois": [
+            0,
+            -9
+          ],
+          "tornozelo": [
+            -2,
+            -6
+          ],
+          "pe": [
+            -2,
+            0
+          ],
+          "apoio": true
+        }
+      ]
+    },
+    {
+      "quadro": 7,
+      "pixels_alterados": 83,
+      "pixels_fora_da_mascara_alterados": 0,
+      "pixels_das_botas_alterados": 0,
+      "mascara_edicao": "mascaras_edicao/run_f7.png",
+      "diferenca_rgba": "mascaras_edicao/diferenca_f7.png",
+      "quadris_joelhos_tornozelos": [
+        {
+          "perna": "frente",
+          "quadril": [
+            4,
+            -12
+          ],
+          "joelho_antes": [
+            10,
+            -15
+          ],
+          "joelho_depois": [
+            9,
+            -11
+          ],
+          "tornozelo": [
+            12,
+            -8
+          ],
+          "pe": [
+            12,
+            -2
+          ],
+          "apoio": false
+        },
+        {
+          "perna": "tras",
+          "quadril": [
+            1,
+            -12
+          ],
+          "joelho_antes": [
+            -1,
+            -5
+          ],
+          "joelho_depois": [
+            -3,
+            -8
+          ],
+          "tornozelo": [
+            -8,
+            -6
+          ],
+          "pe": [
+            -8,
+            0
+          ],
+          "apoio": true
+        }
+      ]
+    }
+  ],
+  "alteracao_local_joelho_permitida": true,
+  "poses_movimento_original_sha256": "76e1f9e64ca624b8ec6f1af5b41e2666911fc2a311af2deb2f1866c9eee8121e",
+  "pes_apoio_passagem_iguais": true,
+  "corpo_capa_arma_iguais": true,
+  "botas_rgba_iguais": true,
+  "fora_das_pernas_rgba_iguais": true
+}

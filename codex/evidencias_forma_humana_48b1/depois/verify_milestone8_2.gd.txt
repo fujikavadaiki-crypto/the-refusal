@@ -1,0 +1,9 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: Carrasco loads independent visual scene
+SCRIPT ERROR: Invalid access to property or key 'sprite' on a base object of type 'Node2D (carrasco_base_official.gd)'.
+   at: run_checks (res://.godot/forma_humana_48b1/depois/fixtures/verify_milestone8_2.gd:41)
+   GDScript backtrace (most recent call first):
+       [0] run_checks (res://.godot/forma_humana_48b1/depois/fixtures/verify_milestone8_2.gd:41)
+       [1] frames (res://.godot/forma_humana_48b1/depois/fixtures/verify_milestone8_2.gd:13)
+ABORT_SCRIPT_ERROR: fatal script error; suite cannot complete.

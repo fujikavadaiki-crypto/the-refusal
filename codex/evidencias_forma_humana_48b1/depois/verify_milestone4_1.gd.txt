@@ -1,0 +1,62 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: controles existentes continuam no Input Map
+PASS: pós-esquiva canônico 22/10
+PASS: Air Light canônico 18/7
+PASS: Air Heavy canônico 32/28
+PASS: dash terrestre e aéreo P40 duram 350 ms
+PASS: i-frames proporcionais entre 61,25 e 218,75 ms
+PASS: Light antes da janela mínima não cancela Ground Dodge
+PASS: janela ofensiva abre após 80 ms
+PASS: Ground Dodge → Dash Light próprio
+PASS: Ground Dash Light entra no estado ofensivo terrestre
+PASS: i-frames terminam no mesmo frame do cancelamento ofensivo
+PASS: ataque iniciado no dash já pode receber dano
+PASS: Ground Dodge → Heavy normal 35/25
+PASS: pulo deixa Air Dash disponível
+PASS: Air Dash inicia e consome a única carga
+PASS: máquina de estados distingue Air Dash
+PASS: Air Dash direito move e possui i-frames
+PASS: i-frames do Air Dash evitam HP e Postura
+PASS: câmera acompanha sem snap brusco
+PASS: Air Dash termina no ar
+PASS: segundo Air Dash na mesma permanência no ar é recusado
+PASS: aterrissagem real restaura a carga
+PASS: novo salto após aterrissar permite novo Air Dash
+PASS: Air Dash esquerdo usa input e facing
+PASS: Air Dash direito usa input e facing
+PASS: jogador apoiado na plataforma
+PASS: cair da plataforma preserva o Air Dash
+PASS: queda da plataforma permite Air Dash sem pulo
+PASS: Air Dash respeita parede sólida
+PASS: colisão lateral com parede não restaura carga
+PASS: Parry bloqueado durante Air Dash
+PASS: Parry bloqueado durante Ground Dodge
+PASS: Parry volta após fim do Ground Dodge
+PASS: Air Dash → Air Light direto
+PASS: máquina de estados distingue ataque aéreo
+PASS: cancelar Air Dash elimina i-frame e não restaura carga
+PASS: Air Light mantém aproximadamente 65% do momentum inicial
+PASS: receber dano no ar não restaura Air Dash
+PASS: ataque aéreo não restaura Air Dash
+PASS: Air Dash → Light não permite segundo Dash no ar
+PASS: Heavy antes da janela mínima não cancela Air Dash
+PASS: Heavy cancela Air Dash após a janela mínima
+PASS: Air Dash → Air Heavy direto
+PASS: Air Heavy preserva menos momentum que Air Light
+PASS: Air Heavy não restaura carga nem mantém i-frame
+PASS: Air Light funciona sem Dash
+PASS: Air Heavy funciona sem Dash
+PASS: Air Dash colide com o corpo do Peregrino
+PASS: colisão com inimigo não restaura Air Dash
+PASS: Ground Dash Light acerta Peregrino: 22 HP / 10 Postura
+PASS: Dash Light usa Hitbox, um contato por ação
+PASS: Ground Dash Heavy acerta Peregrino: Heavy normal 35/25
+PASS: Air Dash ofensivo perde i-frames contra Peregrino
+PASS: Air Dash Light acerta Peregrino: 18 HP / 7 Postura
+PASS: acertar Peregrino no ar não recarrega Air Dash
+PASS: Air Dash Heavy acerta Peregrino: 32 HP / 28 Postura
+PASS: Air Dash i-frame evita Corte real do Peregrino
+PASS: Peregrino não causa HP durante i-frame aéreo
+PASS: Peregrino conserva detecção e perseguição após reset
+MILESTONE 4.1: PASS
