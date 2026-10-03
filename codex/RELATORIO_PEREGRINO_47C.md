@@ -1,0 +1,15 @@
+# Tarefa 4.7c — botas do Peregrino Corrompido
+
+Corrigidos somente os **16 quadros de patrulha/perseguição**. As botas usam recortes rígidos do mestre limpo aprovado (13×13 px), com cano, sola e faixas de couro iluminado/escuro. Quadril, joelho e tornozelo mudam de posição; nenhuma bota é escalada ou esticada em ponta.
+
+O apoio recua **4 px por quadro**, compensando os 4 px de avanço do personagem. As solas visíveis dos quadros de apoio foram comparadas pixel a pixel com a peça do mestre: permanecem rígidas. O pé de passagem sobe 4/7 px; a troca de apoio aparece em f0/f4. Mantidos a oscilação de 1 px do corpo e o atraso de um quadro de manto/musgo/sinos. O manto permanece sobre as pernas.
+
+**Preservação visual:** máscaras de edição e comparação de cada PNG confirmam zero pixels alterados fora das pernas/botas. Capuz, rosto, corpo, barra do manto, musgo e sinos são exatamente os pixels da 4.7b. Morte, ruptura, ataques, FX, sombras e todos os outros arquivos do pacote ficaram iguais por SHA256. O manifesto muda apenas os 16 hashes: âncoras, 8 quadros, tempos, 4 px/quadro, escala, hurtbox e áreas de dano permanecem iguais. Nenhum arquivo de IA, física, mapa ou outro personagem mudou.
+
+**Evidências:** `codex/evidencias_peregrino_47c/COMPARACAO.md` reúne os quatro GIFs ×4 (4.7b × 4.7c), comparação com o mestre, foto ×1, print F3 e clipe de **20 s/600 quadros/30 fps** no cemitério. O clipe usa a IA original e entradas do jogador: 8 s reservados à patrulha e 12 s à perseguição, com o jogador colocado no começo de cada tomada. Os oito quadros de cada marcha aparecem, com os pés visíveis; foram inspecionadas amostras nativas de cada pose no jogo. Foto/F3 são tomadas estáticas após o clipe. A leitura recupera a bota compacta e sombreada, especialmente em f0/f4.
+
+**Testes:** antes/depois, **23/25 suítes e 2.069 PASS em cada rodada**, sem regressões. Continuam somente `verify_carrasco_gif_test` (texture_filter de instância antiga ausente) e `verify_milestone8_2` (sprite antigo), falhas aceitas pelo manual. Pacote real: **200 PASS**. Verificador de arte passou em hashes, paleta, componentes, pixels isolados, regiões protegidas, solas rígidas, apoio e tempos dos seis ataques. Reprodução do rig: **16/16 PNGs idênticos por hash**. Vídeo decodificado integralmente: 20 s/600 quadros.
+
+**Auditoria SHA256:** 2.478 arquivos protegidos desta cópia, 1.550 de prova, 1.578 do P40, 770 do checkout original, três pacotes aprovados e histórico intactos. Evidências anteriores, mestres, paleta e peças 4.7b preservados. O diário do Diretor é auditado e separado das demais diferenças: **nenhuma alteração externa registrada nesta rodada**, nenhuma outra diferença. `kit_rig/` e `codex/diretor/` permanecem fora do commit. Main e checkout original intocados.
+
+O comando público `python arte_fonte/ferramentas/gerar_peregrino_corrompido.py --verify` agora verifica a revisão 4.7c sem regravar evidências antigas. O rig específico está em `arte_fonte/peregrino_corrompido_v1/ajuste_47c/`; testes em `codex/verificar_peregrino_47c.py` (`after`/`new`). Commit e push restritos a `feature/integracao-p40`. Entrega encerrada para avaliação do Diretor.

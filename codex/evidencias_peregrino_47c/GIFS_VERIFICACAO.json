@@ -1,0 +1,74 @@
+[
+  {
+    "arquivo": "antes_gifs_x4/patrulha_x4.gif",
+    "quadros": 8,
+    "duracoes_ms_gif": [
+      150,
+      150,
+      150,
+      150,
+      150,
+      150,
+      150,
+      150
+    ],
+    "dimensoes": [
+      640,
+      416
+    ]
+  },
+  {
+    "arquivo": "antes_gifs_x4/perseguicao_x4.gif",
+    "quadros": 8,
+    "duracoes_ms_gif": [
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60
+    ],
+    "dimensoes": [
+      640,
+      416
+    ]
+  },
+  {
+    "arquivo": "depois_gifs_x4/patrulha_x4.gif",
+    "quadros": 8,
+    "duracoes_ms_gif": [
+      150,
+      150,
+      150,
+      150,
+      150,
+      150,
+      150,
+      150
+    ],
+    "dimensoes": [
+      640,
+      416
+    ]
+  },
+  {
+    "arquivo": "depois_gifs_x4/perseguicao_x4.gif",
+    "quadros": 8,
+    "duracoes_ms_gif": [
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60
+    ],
+    "dimensoes": [
+      640,
+      416
+    ]
+  }
+]

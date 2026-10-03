@@ -1,0 +1,38 @@
+{
+  "gerador": "arte_fonte/ferramentas/ajustar_peregrino_47c.py",
+  "escala": 1,
+  "mestre_sha256": "5d0a6fd1f4fb18a716f2fe1c23e0228be87235e87977adcdc2c0e503e05affdd",
+  "botas": "recortes rigidos do mestre, sem escala; pernas por quadril/joelho/tornozelo",
+  "cadencia_px_por_quadro": 4,
+  "upper": "pixels protegidos da 4.7b; barra do manto acima das pernas",
+  "partes": {
+    "bota_frente_recorte_mestre.png": {
+      "sha256": "00050eedbe81b8fe498b382d421606a6d1a12c922ce47ad660927db231050fe4",
+      "dimensoes": [
+        13,
+        13
+      ]
+    },
+    "bota_frente_rig.png": {
+      "sha256": "a9fdd2796fb188e037f85297cbccf299d827f4fde2383734be8e0c35cd921599",
+      "dimensoes": [
+        13,
+        13
+      ]
+    },
+    "bota_tras_recorte_mestre.png": {
+      "sha256": "2ea19490c7006d4d27cd38c94d34c760000da472eae32e219218efc500b829bb",
+      "dimensoes": [
+        13,
+        13
+      ]
+    },
+    "bota_tras_rig.png": {
+      "sha256": "00b1b5203e9b5633f8b14100167aa8c6b7882484216afc8032b0ca95ff1288b7",
+      "dimensoes": [
+        13,
+        13
+      ]
+    }
+  }
+}

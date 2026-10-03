@@ -1,0 +1,36 @@
+{
+  "protegidos_preservados": true,
+  "preservacao_integral": true,
+  "metadados": {
+    "branch": true,
+    "main": true,
+    "original_head": true,
+    "original_status": true
+  },
+  "contrato_preservado": true,
+  "alteracoes_todas": {
+    "integracao_protegida": [],
+    "prova": [],
+    "P40": [],
+    "original": [],
+    "pacotes_aprovados": [],
+    "historico": []
+  },
+  "alteracoes_externas_autorizadas_diario": [],
+  "outras_diferencas": {
+    "integracao_protegida": [],
+    "prova": [],
+    "P40": [],
+    "original": [],
+    "pacotes_aprovados": [],
+    "historico": []
+  },
+  "arquivos": {
+    "integracao_protegida": 2478,
+    "prova": 1550,
+    "P40": 1578,
+    "original": 770,
+    "pacotes_aprovados": 3,
+    "historico": 1
+  }
+}

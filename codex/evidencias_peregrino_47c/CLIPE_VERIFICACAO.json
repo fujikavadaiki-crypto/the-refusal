@@ -1,0 +1,10 @@
+{
+  "decode_ok": true,
+  "frames": 600,
+  "duration_s": 20,
+  "fps": 30,
+  "viewport": [
+    960,
+    540
+  ]
+}

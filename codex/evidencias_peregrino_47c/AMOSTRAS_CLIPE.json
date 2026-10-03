@@ -1,0 +1,98 @@
+[
+  {
+    "anim": "patrulha",
+    "quadro": 0,
+    "video_frame": 16,
+    "tick": 34
+  },
+  {
+    "anim": "patrulha",
+    "quadro": 1,
+    "video_frame": 20,
+    "tick": 42
+  },
+  {
+    "anim": "patrulha",
+    "quadro": 2,
+    "video_frame": 25,
+    "tick": 52
+  },
+  {
+    "anim": "patrulha",
+    "quadro": 3,
+    "video_frame": 30,
+    "tick": 62
+  },
+  {
+    "anim": "patrulha",
+    "quadro": 4,
+    "video_frame": 34,
+    "tick": 70
+  },
+  {
+    "anim": "patrulha",
+    "quadro": 5,
+    "video_frame": 39,
+    "tick": 80
+  },
+  {
+    "anim": "patrulha",
+    "quadro": 6,
+    "video_frame": 43,
+    "tick": 88
+  },
+  {
+    "anim": "patrulha",
+    "quadro": 7,
+    "video_frame": 48,
+    "tick": 98
+  },
+  {
+    "anim": "perseguicao",
+    "quadro": 0,
+    "video_frame": 289,
+    "tick": 580
+  },
+  {
+    "anim": "perseguicao",
+    "quadro": 1,
+    "video_frame": 292,
+    "tick": 586
+  },
+  {
+    "anim": "perseguicao",
+    "quadro": 2,
+    "video_frame": 294,
+    "tick": 590
+  },
+  {
+    "anim": "perseguicao",
+    "quadro": 3,
+    "video_frame": 296,
+    "tick": 594
+  },
+  {
+    "anim": "perseguicao",
+    "quadro": 4,
+    "video_frame": 298,
+    "tick": 598
+  },
+  {
+    "anim": "perseguicao",
+    "quadro": 5,
+    "video_frame": 300,
+    "tick": 602
+  },
+  {
+    "anim": "perseguicao",
+    "quadro": 6,
+    "video_frame": 302,
+    "tick": 606
+  },
+  {
+    "anim": "perseguicao",
+    "quadro": 7,
+    "video_frame": 304,
+    "tick": 610
+  }
+]

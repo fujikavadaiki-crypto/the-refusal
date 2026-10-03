@@ -1,0 +1,499 @@
+{
+  "quadros_marcha": 16,
+  "pixels_upper_protegidos": true,
+  "outros_arquivos_pacote_intactos": 106,
+  "contrato_integral_preservado": true,
+  "quadros": [
+    {
+      "arquivo": "sprites/patrulha_f00.png",
+      "pixels_alterados": 265,
+      "fora_das_pernas": 0,
+      "componentes": 1,
+      "pixels_isolados": 0
+    },
+    {
+      "arquivo": "sprites/patrulha_f01.png",
+      "pixels_alterados": 171,
+      "fora_das_pernas": 0,
+      "componentes": 1,
+      "pixels_isolados": 0
+    },
+    {
+      "arquivo": "sprites/patrulha_f02.png",
+      "pixels_alterados": 111,
+      "fora_das_pernas": 0,
+      "componentes": 1,
+      "pixels_isolados": 0
+    },
+    {
+      "arquivo": "sprites/patrulha_f03.png",
+      "pixels_alterados": 192,
+      "fora_das_pernas": 0,
+      "componentes": 1,
+      "pixels_isolados": 0
+    },
+    {
+      "arquivo": "sprites/patrulha_f04.png",
+      "pixels_alterados": 258,
+      "fora_das_pernas": 0,
+      "componentes": 1,
+      "pixels_isolados": 0
+    },
+    {
+      "arquivo": "sprites/patrulha_f05.png",
+      "pixels_alterados": 169,
+      "fora_das_pernas": 0,
+      "componentes": 1,
+      "pixels_isolados": 0
+    },
+    {
+      "arquivo": "sprites/patrulha_f06.png",
+      "pixels_alterados": 129,
+      "fora_das_pernas": 0,
+      "componentes": 1,
+      "pixels_isolados": 0
+    },
+    {
+      "arquivo": "sprites/patrulha_f07.png",
+      "pixels_alterados": 200,
+      "fora_das_pernas": 0,
+      "componentes": 1,
+      "pixels_isolados": 0
+    },
+    {
+      "arquivo": "sprites/perseguicao_f00.png",
+      "pixels_alterados": 254,
+      "fora_das_pernas": 0,
+      "componentes": 1,
+      "pixels_isolados": 0
+    },
+    {
+      "arquivo": "sprites/perseguicao_f01.png",
+      "pixels_alterados": 160,
+      "fora_das_pernas": 0,
+      "componentes": 1,
+      "pixels_isolados": 0
+    },
+    {
+      "arquivo": "sprites/perseguicao_f02.png",
+      "pixels_alterados": 105,
+      "fora_das_pernas": 0,
+      "componentes": 1,
+      "pixels_isolados": 0
+    },
+    {
+      "arquivo": "sprites/perseguicao_f03.png",
+      "pixels_alterados": 169,
+      "fora_das_pernas": 0,
+      "componentes": 1,
+      "pixels_isolados": 0
+    },
+    {
+      "arquivo": "sprites/perseguicao_f04.png",
+      "pixels_alterados": 254,
+      "fora_das_pernas": 0,
+      "componentes": 1,
+      "pixels_isolados": 0
+    },
+    {
+      "arquivo": "sprites/perseguicao_f05.png",
+      "pixels_alterados": 166,
+      "fora_das_pernas": 0,
+      "componentes": 1,
+      "pixels_isolados": 0
+    },
+    {
+      "arquivo": "sprites/perseguicao_f06.png",
+      "pixels_alterados": 124,
+      "fora_das_pernas": 0,
+      "componentes": 1,
+      "pixels_isolados": 0
+    },
+    {
+      "arquivo": "sprites/perseguicao_f07.png",
+      "pixels_alterados": 188,
+      "fora_das_pernas": 0,
+      "componentes": 1,
+      "pixels_isolados": 0
+    }
+  ],
+  "tempos_ataques_iguais_tres": true,
+  "solas_e_apoio": [
+    {
+      "anim": "patrulha",
+      "quadro": 0,
+      "perna": "frente",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "patrulha",
+      "quadro": 0,
+      "perna": "tras",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "patrulha",
+      "quadro": 1,
+      "perna": "frente",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "patrulha",
+      "quadro": 2,
+      "perna": "frente",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "patrulha",
+      "quadro": 3,
+      "perna": "frente",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "patrulha",
+      "quadro": 4,
+      "perna": "frente",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "patrulha",
+      "quadro": 4,
+      "perna": "tras",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "patrulha",
+      "quadro": 5,
+      "perna": "tras",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "patrulha",
+      "quadro": 6,
+      "perna": "tras",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "patrulha",
+      "quadro": 7,
+      "perna": "tras",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "patrulha",
+      "transicao": [
+        0,
+        1
+      ],
+      "perna": "frente",
+      "avanco_personagem_px": 4,
+      "recuo_sola_px": -4,
+      "deriva_no_apoio_por_quadro_px": 0
+    },
+    {
+      "anim": "patrulha",
+      "transicao": [
+        1,
+        2
+      ],
+      "perna": "frente",
+      "avanco_personagem_px": 4,
+      "recuo_sola_px": -4,
+      "deriva_no_apoio_por_quadro_px": 0
+    },
+    {
+      "anim": "patrulha",
+      "transicao": [
+        2,
+        3
+      ],
+      "perna": "frente",
+      "avanco_personagem_px": 4,
+      "recuo_sola_px": -4,
+      "deriva_no_apoio_por_quadro_px": 0
+    },
+    {
+      "anim": "patrulha",
+      "transicao": [
+        3,
+        4
+      ],
+      "perna": "frente",
+      "avanco_personagem_px": 4,
+      "recuo_sola_px": -4,
+      "deriva_no_apoio_por_quadro_px": 0
+    },
+    {
+      "anim": "patrulha",
+      "transicao": [
+        4,
+        5
+      ],
+      "perna": "tras",
+      "avanco_personagem_px": 4,
+      "recuo_sola_px": -4,
+      "deriva_no_apoio_por_quadro_px": 0
+    },
+    {
+      "anim": "patrulha",
+      "transicao": [
+        5,
+        6
+      ],
+      "perna": "tras",
+      "avanco_personagem_px": 4,
+      "recuo_sola_px": -4,
+      "deriva_no_apoio_por_quadro_px": 0
+    },
+    {
+      "anim": "patrulha",
+      "transicao": [
+        6,
+        7
+      ],
+      "perna": "tras",
+      "avanco_personagem_px": 4,
+      "recuo_sola_px": -4,
+      "deriva_no_apoio_por_quadro_px": 0
+    },
+    {
+      "anim": "patrulha",
+      "transicao": [
+        7,
+        0
+      ],
+      "perna": "tras",
+      "avanco_personagem_px": 4,
+      "recuo_sola_px": -4,
+      "deriva_no_apoio_por_quadro_px": 0
+    },
+    {
+      "anim": "perseguicao",
+      "quadro": 0,
+      "perna": "frente",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "perseguicao",
+      "quadro": 0,
+      "perna": "tras",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "perseguicao",
+      "quadro": 1,
+      "perna": "frente",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "perseguicao",
+      "quadro": 2,
+      "perna": "frente",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "perseguicao",
+      "quadro": 3,
+      "perna": "frente",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "perseguicao",
+      "quadro": 4,
+      "perna": "frente",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "perseguicao",
+      "quadro": 4,
+      "perna": "tras",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "perseguicao",
+      "quadro": 5,
+      "perna": "tras",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "perseguicao",
+      "quadro": 6,
+      "perna": "tras",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "perseguicao",
+      "quadro": 7,
+      "perna": "tras",
+      "sola_rigida": true,
+      "bota_px": [
+        13,
+        13
+      ]
+    },
+    {
+      "anim": "perseguicao",
+      "transicao": [
+        0,
+        1
+      ],
+      "perna": "frente",
+      "avanco_personagem_px": 4,
+      "recuo_sola_px": -4,
+      "deriva_no_apoio_por_quadro_px": 0
+    },
+    {
+      "anim": "perseguicao",
+      "transicao": [
+        1,
+        2
+      ],
+      "perna": "frente",
+      "avanco_personagem_px": 4,
+      "recuo_sola_px": -4,
+      "deriva_no_apoio_por_quadro_px": 0
+    },
+    {
+      "anim": "perseguicao",
+      "transicao": [
+        2,
+        3
+      ],
+      "perna": "frente",
+      "avanco_personagem_px": 4,
+      "recuo_sola_px": -4,
+      "deriva_no_apoio_por_quadro_px": 0
+    },
+    {
+      "anim": "perseguicao",
+      "transicao": [
+        3,
+        4
+      ],
+      "perna": "frente",
+      "avanco_personagem_px": 4,
+      "recuo_sola_px": -4,
+      "deriva_no_apoio_por_quadro_px": 0
+    },
+    {
+      "anim": "perseguicao",
+      "transicao": [
+        4,
+        5
+      ],
+      "perna": "tras",
+      "avanco_personagem_px": 4,
+      "recuo_sola_px": -4,
+      "deriva_no_apoio_por_quadro_px": 0
+    },
+    {
+      "anim": "perseguicao",
+      "transicao": [
+        5,
+        6
+      ],
+      "perna": "tras",
+      "avanco_personagem_px": 4,
+      "recuo_sola_px": -4,
+      "deriva_no_apoio_por_quadro_px": 0
+    },
+    {
+      "anim": "perseguicao",
+      "transicao": [
+        6,
+        7
+      ],
+      "perna": "tras",
+      "avanco_personagem_px": 4,
+      "recuo_sola_px": -4,
+      "deriva_no_apoio_por_quadro_px": 0
+    },
+    {
+      "anim": "perseguicao",
+      "transicao": [
+        7,
+        0
+      ],
+      "perna": "tras",
+      "avanco_personagem_px": 4,
+      "recuo_sola_px": -4,
+      "deriva_no_apoio_por_quadro_px": 0
+    }
+  ]
+}

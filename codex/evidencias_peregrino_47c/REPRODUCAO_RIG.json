@@ -1,0 +1,85 @@
+{
+  "quadros": [
+    {
+      "arquivo": "patrulha_f00.png",
+      "sha256": "c9619521ae1aaf6641161bc50bba31e0d482b8468c47c5903454aae3358fc5e5",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "patrulha_f01.png",
+      "sha256": "afeb74e8d567bd72bf62d5d8b6205dd6725ffd4ebed92f67af602c1a1ba4d398",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "patrulha_f02.png",
+      "sha256": "fd59618a0dcef9525ba61b23fdab08cae59e85a53ab34bfc662b4cd81eb8a400",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "patrulha_f03.png",
+      "sha256": "cb395e025b1695b0f89a4632c9943ce42b0864d2d742c5443165e91eb35ab62f",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "patrulha_f04.png",
+      "sha256": "903c631e698f34981f74ab785fbb36938f05a723b2f6e72fff63cd7d4638ad21",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "patrulha_f05.png",
+      "sha256": "9777f18ecb1775589afc81d6faab1cb2c0689f03b0788fba1ff38fcaf572e17d",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "patrulha_f06.png",
+      "sha256": "8ff39a3146e112e5a68320dba7313bff6efbb3fafc14dab9d36d27be33ba66a6",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "patrulha_f07.png",
+      "sha256": "a1c35bd397330f6645b95bc308e1bf8d050d70bbc76c0592ec4d01b50c1f28af",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "perseguicao_f00.png",
+      "sha256": "17393cd2dc3559ca11ca928372bc81e629842b3fa3f9b610080c4e6020dc49d8",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "perseguicao_f01.png",
+      "sha256": "424b04e738807a4af091a7592f22f833c811ed0a992819199ba343c8d17fda6b",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "perseguicao_f02.png",
+      "sha256": "a7505631b87c9f0dd6fadcc0ddf0729698fcba3adef8f7fe78bd712adc1c73ab",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "perseguicao_f03.png",
+      "sha256": "6fe9c2d8dfe1cd059d6b7ccae5ffc1d385d0231c0e3c4cd81b4a162237643ba9",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "perseguicao_f04.png",
+      "sha256": "7f04c535b840437d194ff295b858f87aff6c4af7dbed3db8a8f0e262d7cec3bc",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "perseguicao_f05.png",
+      "sha256": "fee07b05d4c63b1bb55ef35a50c10735826ff6dfc5e7edb8c62c4acfdb2d1984",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "perseguicao_f06.png",
+      "sha256": "5f6b0efb4d6fb5a6b440bf3ce63c9a0cf429205b5c87b62a63ac7651522ac286",
+      "reproducao_exata": true
+    },
+    {
+      "arquivo": "perseguicao_f07.png",
+      "sha256": "8431dbb7055ad9a7132753b1fa09c999cfbf64c8eba1d789c38cc0ee47f72cc6",
+      "reproducao_exata": true
+    }
+  ],
+  "manifesto_intacto": true
+}

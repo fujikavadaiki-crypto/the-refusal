@@ -1,0 +1,234 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+PASS: cena principal configurada continua carregável
+PASS: cena principal conserva o jogador de produção
+PASS: cena principal aplica Carrasco a 160 world units/s
+PASS: cena principal captura a base humana antes da máscara
+PASS: cena principal usa o pulo P40 integrado na fase 2
+PASS: vertical slice herda o pulo P40 sem override -380
+PASS: fixture física encontra o piso real
+PASS: base humana é 160 / 0,92
+PASS: máscara Carrasco conserva multiplicador 0,92
+PASS: caminhada conserva proporção 0,55
+PASS: aceleração de solo usa a mesma proporção da corrida
+PASS: desaceleração de solo usa a mesma proporção da corrida
+PASS: aceleração aérea usa a mesma proporção da corrida
+PASS: fixture de produção usa gravidade/impulso P40 da fase 2
+PASS: dash absoluto é 320 / 0,9 world units/s
+PASS: dash solo/ar dura 350 ms
+PASS: i-frame configurado de 61,25 a 218,75 ms
+PASS: cancel em 80 ms e cooldown de 280 ms
+PASS: reset estabelece humano / solo
+PASS: 12 trocas reais alternam 160/base humana sem acumular multiplicador
+PASS: trocas preservam as três taxas de resposta
+PASS: reset estabelece humano / solo
+PASS: humano run alcança velocidade física 173.913043
+PASS: humano run preserva tempo de aceleração anterior
+PASS: humano run mede 173.913043 world units/s pelo deslocamento
+PASS: humano run preserva tempo de parada anterior
+PASS: humano run permanece parado sem drift
+PASS: reset estabelece humano / solo
+PASS: humano walk alcança velocidade física 95.652174
+PASS: humano walk preserva tempo de aceleração anterior
+PASS: humano walk mede 95.652174 world units/s pelo deslocamento
+PASS: humano walk preserva tempo de parada anterior
+PASS: humano walk permanece parado sem drift
+PASS: reset estabelece Carrasco / solo
+PASS: Carrasco run alcança velocidade física 160.000000
+PASS: Carrasco run preserva tempo de aceleração anterior
+PASS: Carrasco run mede 160.000000 world units/s pelo deslocamento
+PASS: Carrasco run preserva tempo de parada anterior
+PASS: Carrasco run permanece parado sem drift
+PASS: reset estabelece Carrasco / solo
+PASS: Carrasco walk alcança velocidade física 88.000000
+PASS: Carrasco walk preserva tempo de aceleração anterior
+PASS: Carrasco walk mede 88.000000 world units/s pelo deslocamento
+PASS: Carrasco walk preserva tempo de parada anterior
+PASS: Carrasco walk permanece parado sem drift
+PASS: reset estabelece humano / ar
+PASS: humano preserva velocidade e tempo de aceleração aérea
+PASS: reset estabelece Carrasco / ar
+PASS: Carrasco preserva velocidade e tempo de aceleração aérea
+PASS: reset estabelece humano / solo
+PASS: dash humano solo esquerda Shift=false mede velocidade absoluta 355,555556
+PASS: dash humano solo esquerda Shift=false encerra em 350 ms com tolerância de um frame
+PASS: dash humano solo esquerda Shift=false integra distância nominal 124.444444 ± 6.418760
+PASS: dash humano solo esquerda Shift=false conserva cooldown e contato/altura
+PASS: reset estabelece humano / solo
+PASS: dash humano solo esquerda Shift=true mede velocidade absoluta 355,555556
+PASS: dash humano solo esquerda Shift=true encerra em 350 ms com tolerância de um frame
+PASS: dash humano solo esquerda Shift=true integra distância nominal 124.444444 ± 6.418760
+PASS: dash humano solo esquerda Shift=true conserva cooldown e contato/altura
+PASS: reset estabelece humano / solo
+PASS: dash humano solo direita Shift=false mede velocidade absoluta 355,555556
+PASS: dash humano solo direita Shift=false encerra em 350 ms com tolerância de um frame
+PASS: dash humano solo direita Shift=false integra distância nominal 124.444444 ± 6.418760
+PASS: dash humano solo direita Shift=false conserva cooldown e contato/altura
+PASS: reset estabelece humano / solo
+PASS: dash humano solo direita Shift=true mede velocidade absoluta 355,555556
+PASS: dash humano solo direita Shift=true encerra em 350 ms com tolerância de um frame
+PASS: dash humano solo direita Shift=true integra distância nominal 124.444444 ± 6.418760
+PASS: dash humano solo direita Shift=true conserva cooldown e contato/altura
+PASS: reset estabelece humano / ar
+PASS: dash humano ar esquerda Shift=false mede velocidade absoluta 355,555556
+PASS: dash humano ar esquerda Shift=false encerra em 350 ms com tolerância de um frame
+PASS: dash humano ar esquerda Shift=false integra distância nominal 124.444444 ± 6.418760
+PASS: dash humano ar esquerda Shift=false conserva cooldown e contato/altura
+PASS: dash humano ar esquerda Shift=false consome uma carga aérea
+PASS: reset estabelece humano / ar
+PASS: dash humano ar esquerda Shift=true mede velocidade absoluta 355,555556
+PASS: dash humano ar esquerda Shift=true encerra em 350 ms com tolerância de um frame
+PASS: dash humano ar esquerda Shift=true integra distância nominal 124.444444 ± 6.418760
+PASS: dash humano ar esquerda Shift=true conserva cooldown e contato/altura
+PASS: dash humano ar esquerda Shift=true consome uma carga aérea
+PASS: reset estabelece humano / ar
+PASS: dash humano ar direita Shift=false mede velocidade absoluta 355,555556
+PASS: dash humano ar direita Shift=false encerra em 350 ms com tolerância de um frame
+PASS: dash humano ar direita Shift=false integra distância nominal 124.444444 ± 6.418760
+PASS: dash humano ar direita Shift=false conserva cooldown e contato/altura
+PASS: dash humano ar direita Shift=false consome uma carga aérea
+PASS: reset estabelece humano / ar
+PASS: dash humano ar direita Shift=true mede velocidade absoluta 355,555556
+PASS: dash humano ar direita Shift=true encerra em 350 ms com tolerância de um frame
+PASS: dash humano ar direita Shift=true integra distância nominal 124.444444 ± 6.418760
+PASS: dash humano ar direita Shift=true conserva cooldown e contato/altura
+PASS: dash humano ar direita Shift=true consome uma carga aérea
+PASS: reset estabelece Carrasco / solo
+PASS: dash Carrasco solo esquerda Shift=false mede velocidade absoluta 355,555556
+PASS: dash Carrasco solo esquerda Shift=false encerra em 350 ms com tolerância de um frame
+PASS: dash Carrasco solo esquerda Shift=false integra distância nominal 124.444444 ± 6.418760
+PASS: dash Carrasco solo esquerda Shift=false conserva cooldown e contato/altura
+PASS: reset estabelece Carrasco / solo
+PASS: dash Carrasco solo esquerda Shift=true mede velocidade absoluta 355,555556
+PASS: dash Carrasco solo esquerda Shift=true encerra em 350 ms com tolerância de um frame
+PASS: dash Carrasco solo esquerda Shift=true integra distância nominal 124.444444 ± 6.418760
+PASS: dash Carrasco solo esquerda Shift=true conserva cooldown e contato/altura
+PASS: reset estabelece Carrasco / solo
+PASS: dash Carrasco solo direita Shift=false mede velocidade absoluta 355,555556
+PASS: dash Carrasco solo direita Shift=false encerra em 350 ms com tolerância de um frame
+PASS: dash Carrasco solo direita Shift=false integra distância nominal 124.444444 ± 6.418760
+PASS: dash Carrasco solo direita Shift=false conserva cooldown e contato/altura
+PASS: reset estabelece Carrasco / solo
+PASS: dash Carrasco solo direita Shift=true mede velocidade absoluta 355,555556
+PASS: dash Carrasco solo direita Shift=true encerra em 350 ms com tolerância de um frame
+PASS: dash Carrasco solo direita Shift=true integra distância nominal 124.444444 ± 6.418760
+PASS: dash Carrasco solo direita Shift=true conserva cooldown e contato/altura
+PASS: reset estabelece Carrasco / ar
+PASS: dash Carrasco ar esquerda Shift=false mede velocidade absoluta 355,555556
+PASS: dash Carrasco ar esquerda Shift=false encerra em 350 ms com tolerância de um frame
+PASS: dash Carrasco ar esquerda Shift=false integra distância nominal 124.444444 ± 6.418760
+PASS: dash Carrasco ar esquerda Shift=false conserva cooldown e contato/altura
+PASS: dash Carrasco ar esquerda Shift=false consome uma carga aérea
+PASS: reset estabelece Carrasco / ar
+PASS: dash Carrasco ar esquerda Shift=true mede velocidade absoluta 355,555556
+PASS: dash Carrasco ar esquerda Shift=true encerra em 350 ms com tolerância de um frame
+PASS: dash Carrasco ar esquerda Shift=true integra distância nominal 124.444444 ± 6.418760
+PASS: dash Carrasco ar esquerda Shift=true conserva cooldown e contato/altura
+PASS: dash Carrasco ar esquerda Shift=true consome uma carga aérea
+PASS: reset estabelece Carrasco / ar
+PASS: dash Carrasco ar direita Shift=false mede velocidade absoluta 355,555556
+PASS: dash Carrasco ar direita Shift=false encerra em 350 ms com tolerância de um frame
+PASS: dash Carrasco ar direita Shift=false integra distância nominal 124.444444 ± 6.418760
+PASS: dash Carrasco ar direita Shift=false conserva cooldown e contato/altura
+PASS: dash Carrasco ar direita Shift=false consome uma carga aérea
+PASS: reset estabelece Carrasco / ar
+PASS: dash Carrasco ar direita Shift=true mede velocidade absoluta 355,555556
+PASS: dash Carrasco ar direita Shift=true encerra em 350 ms com tolerância de um frame
+PASS: dash Carrasco ar direita Shift=true integra distância nominal 124.444444 ± 6.418760
+PASS: dash Carrasco ar direita Shift=true conserva cooldown e contato/altura
+PASS: dash Carrasco ar direita Shift=true consome uma carga aérea
+PASS: reset estabelece humano / solo
+PASS: dash sem eixo respeita facing -1
+PASS: reset estabelece humano / solo
+PASS: dash sem eixo respeita facing 1
+PASS: reset estabelece Carrasco / solo
+PASS: dash solo mantém velocidade absoluta com run_speed=0.0 e Shift
+PASS: reset estabelece Carrasco / solo
+PASS: dash solo mantém velocidade absoluta com run_speed=80.0 e Shift
+PASS: reset estabelece Carrasco / solo
+PASS: dash solo mantém velocidade absoluta com run_speed=500.0 e Shift
+PASS: reset estabelece Carrasco / ar
+PASS: dash ar mantém velocidade absoluta com run_speed=0.0 e Shift
+PASS: reset estabelece Carrasco / ar
+PASS: dash ar mantém velocidade absoluta com run_speed=80.0 e Shift
+PASS: reset estabelece Carrasco / ar
+PASS: dash ar mantém velocidade absoluta com run_speed=500.0 e Shift
+PASS: reset estabelece humano / solo
+PASS: i-frame solo t=0.061249 resolve contato HP/Postura: dano
+PASS: i-frame solo t=0.061250 resolve contato HP/Postura: miss
+PASS: i-frame solo t=0.140000 resolve contato HP/Postura: miss
+PASS: i-frame solo t=0.218749 resolve contato HP/Postura: miss
+PASS: i-frame solo t=0.218750 resolve contato HP/Postura: dano
+PASS: i-frame ar t=0.061249 resolve contato HP/Postura: dano
+PASS: i-frame ar t=0.061250 resolve contato HP/Postura: miss
+PASS: i-frame ar t=0.140000 resolve contato HP/Postura: miss
+PASS: i-frame ar t=0.218749 resolve contato HP/Postura: miss
+PASS: i-frame ar t=0.218750 resolve contato HP/Postura: dano
+PASS: fim/cancel do dash não deixa invulnerabilidade residual
+PASS: reset estabelece humano / solo
+PASS: cancel antes de 80 ms é bloqueado (false/false/false)
+PASS: cancel em 80 ms aceita ataque correto (false/false/false)
+PASS: cancel preserva momentum 0.45 e direção (false/false/false)
+PASS: cancel encerra iframe e preserva carga/cooldown (false/false/false)
+PASS: reset estabelece humano / solo
+PASS: cancel antes de 80 ms é bloqueado (false/false/true)
+PASS: cancel em 80 ms aceita ataque correto (false/false/true)
+PASS: cancel preserva momentum 0.45 e direção (false/false/true)
+PASS: cancel encerra iframe e preserva carga/cooldown (false/false/true)
+PASS: reset estabelece humano / ar
+PASS: cancel antes de 80 ms é bloqueado (false/true/false)
+PASS: cancel em 80 ms aceita ataque correto (false/true/false)
+PASS: cancel preserva momentum 0.65 e direção (false/true/false)
+PASS: cancel encerra iframe e preserva carga/cooldown (false/true/false)
+PASS: reset estabelece humano / ar
+PASS: cancel antes de 80 ms é bloqueado (false/true/true)
+PASS: cancel em 80 ms aceita ataque correto (false/true/true)
+PASS: cancel preserva momentum 0.40 e direção (false/true/true)
+PASS: cancel encerra iframe e preserva carga/cooldown (false/true/true)
+PASS: reset estabelece Carrasco / solo
+PASS: cancel antes de 80 ms é bloqueado (true/false/false)
+PASS: cancel em 80 ms aceita ataque correto (true/false/false)
+PASS: cancel preserva momentum 0.45 e direção (true/false/false)
+PASS: cancel encerra iframe e preserva carga/cooldown (true/false/false)
+PASS: reset estabelece Carrasco / solo
+PASS: cancel antes de 80 ms é bloqueado (true/false/true)
+PASS: cancel em 80 ms aceita ataque correto (true/false/true)
+PASS: cancel preserva momentum 0.45 e direção (true/false/true)
+PASS: cancel encerra iframe e preserva carga/cooldown (true/false/true)
+PASS: reset estabelece Carrasco / ar
+PASS: cancel antes de 80 ms é bloqueado (true/true/false)
+PASS: cancel em 80 ms aceita ataque correto (true/true/false)
+PASS: cancel preserva momentum 0.65 e direção (true/true/false)
+PASS: cancel encerra iframe e preserva carga/cooldown (true/true/false)
+PASS: reset estabelece Carrasco / ar
+PASS: cancel antes de 80 ms é bloqueado (true/true/true)
+PASS: cancel em 80 ms aceita ataque correto (true/true/true)
+PASS: cancel preserva momentum 0.40 e direção (true/true/true)
+PASS: cancel encerra iframe e preserva carga/cooldown (true/true/true)
+PASS: reset estabelece Carrasco / solo
+PASS: input Light precoce não cancela nem fica enfileirado (solo)
+PASS: input Light após 80 ms cancela pelo roteamento real (solo)
+PASS: reset estabelece Carrasco / ar
+PASS: input Light precoce não cancela nem fica enfileirado (ar)
+PASS: input Light após 80 ms cancela pelo roteamento real (ar)
+PASS: reset estabelece humano / solo
+PASS: cooldown bloqueia repetição terrestre imediata
+PASS: cooldown ainda bloqueia um microssegundo antes de 280 ms
+PASS: dash terrestre volta após os 280 ms completos
+PASS: reset estabelece Carrasco / ar
+PASS: dash aéreo completo não recarrega nem repete antes de pousar
+PASS: colisão real com piso recarrega dash aéreo
+PASS: pulo original continua retirando o corpo do piso
+PASS: nova decolagem disponibiliza exatamente uma carga aérea
+PASS: reset estabelece Carrasco / solo
+PASS: dash solo/esquerda colide com parede sem atravessar ou travar ação
+PASS: reset estabelece Carrasco / solo
+PASS: dash solo/direita colide com parede sem atravessar ou travar ação
+PASS: reset estabelece Carrasco / ar
+PASS: dash ar/esquerda colide com parede sem atravessar ou travar ação
+PASS: reset estabelece Carrasco / ar
+PASS: dash ar/direita colide com parede sem atravessar ou travar ação
+INTEGRACAO P40 F1: PASS (228 checks)
+P40_MEASUREMENTS_JSON: [{"acceleration_seconds":0.133333333333333,"form":"human","kind":"locomotion","legacy_acceleration_seconds":0.133333333333333,"legacy_stop_seconds":0.109090909090909,"measured_speed":173.913078308105,"nominal_speed":173.913043478261,"stop_seconds":0.116666666666667,"walk":false},{"acceleration_seconds":0.0833333333333333,"form":"human","kind":"locomotion","legacy_acceleration_seconds":0.0733333333333333,"legacy_stop_seconds":0.06,"measured_speed":95.6510066986084,"nominal_speed":95.6521739130435,"stop_seconds":0.0666666666666667,"walk":true},{"acceleration_seconds":0.133333333333333,"form":"Carrasco","kind":"locomotion","legacy_acceleration_seconds":0.122666666666667,"legacy_stop_seconds":0.100363636363636,"measured_speed":159.999656677246,"nominal_speed":160.0,"stop_seconds":0.116666666666667,"walk":false},{"acceleration_seconds":0.0833333333333333,"form":"Carrasco","kind":"locomotion","legacy_acceleration_seconds":0.0674666666666667,"legacy_stop_seconds":0.0552,"measured_speed":88.0005121231079,"nominal_speed":88.0,"stop_seconds":0.0666666666666667,"walk":true},{"acceleration_seconds":0.2,"form":"human","kind":"air_acceleration","legacy_acceleration_seconds":0.184615384615385,"measured_speed":173.913040161133,"nominal_speed":173.913043478261},{"acceleration_seconds":0.183333333333333,"form":"Carrasco","kind":"air_acceleration","legacy_acceleration_seconds":0.169846153846154,"measured_speed":160.0,"nominal_speed":160.0},{"airborne":false,"direction":-1,"distance_tolerance":6.41876006441224,"form":"human","kind":"dash","measured_distance":124.08194732666,"measured_seconds":0.35,"nominal_distance":124.444444444444,"nominal_seconds":0.35,"nominal_speed":355.555555555556,"speed_samples_passed":true,"walk":false},{"airborne":false,"direction":-1,"distance_tolerance":6.41876006441224,"form":"human","kind":"dash","measured_distance":124.08194732666,"measured_seconds":0.35,"nominal_distance":124.444444444444,"nominal_seconds":0.35,"nominal_speed":355.555555555556,"speed_samples_passed":true,"walk":true},{"airborne":false,"direction":1,"distance_tolerance":6.41876006441224,"form":"human","kind":"dash","measured_distance":124.08186340332,"measured_seconds":0.35,"nominal_distance":124.444444444444,"nominal_seconds":0.35,"nominal_speed":355.555555555556,"speed_samples_passed":true,"walk":false},{"airborne":false,"direction":1,"distance_tolerance":6.41876006441224,"form":"human","kind":"dash","measured_distance":124.08186340332,"measured_seconds":0.35,"nominal_distance":124.444444444444,"nominal_seconds":0.35,"nominal_speed":355.555555555556,"speed_samples_passed":true,"walk":true},{"airborne":true,"direction":-1,"distance_tolerance":6.41876006441224,"form":"human","kind":"dash","measured_distance":124.182777404785,"measured_seconds":0.35,"nominal_distance":124.444444444444,"nominal_seconds":0.35,"nominal_speed":355.555555555556,"speed_samples_passed":true,"walk":false},{"airborne":true,"direction":-1,"distance_tolerance":6.41876006441224,"form":"human","kind":"dash","measured_distance":124.182777404785,"measured_seconds":0.35,"nominal_distance":124.444444444444,"nominal_seconds":0.35,"nominal_speed":355.555555555556,"speed_samples_passed":true,"walk":true},{"airborne":true,"direction":1,"distance_tolerance":6.41876006441224,"form":"human","kind":"dash","measured_distance":124.182777404785,"measured_seconds":0.35,"nominal_distance":124.444444444444,"nominal_seconds":0.35,"nominal_speed":355.555555555556,"speed_samples_passed":true,"walk":false},{"airborne":true,"direction":1,"distance_tolerance":6.41876006441224,"form":"human","kind":"dash","measured_distance":124.182777404785,"measured_seconds":0.35,"nominal_distance":124.444444444444,"nominal_seconds":0.35,"nominal_speed":355.555555555556,"speed_samples_passed":true,"walk":true},{"airborne":false,"direction":-1,"distance_tolerance":6.41876006441224,"form":"Carrasco","kind":"dash","measured_distance":124.08194732666,"measured_seconds":0.35,"nominal_distance":124.444444444444,"nominal_seconds":0.35,"nominal_speed":355.555555555556,"speed_samples_passed":true,"walk":false},{"airborne":false,"direction":-1,"distance_tolerance":6.41876006441224,"form":"Carrasco","kind":"dash","measured_distance":124.08194732666,"measured_seconds":0.35,"nominal_distance":124.444444444444,"nominal_seconds":0.35,"nominal_speed":355.555555555556,"speed_samples_passed":true,"walk":true},{"airborne":false,"direction":1,"distance_tolerance":6.41876006441224,"form":"Carrasco","kind":"dash","measured_distance":124.08186340332,"measured_seconds":0.35,"nominal_distance":124.444444444444,"nominal_seconds":0.35,"nominal_speed":355.555555555556,"speed_samples_passed":true,"walk":false},{"airborne":false,"direction":1,"distance_tolerance":6.41876006441224,"form":"Carrasco","kind":"dash","measured_distance":124.08186340332,"measured_seconds":0.35,"nominal_distance":124.444444444444,"nominal_seconds":0.35,"nominal_speed":355.555555555556,"speed_samples_passed":true,"walk":true},{"airborne":true,"direction":-1,"distance_tolerance":6.41876006441224,"form":"Carrasco","kind":"dash","measured_distance":124.182777404785,"measured_seconds":0.35,"nominal_distance":124.444444444444,"nominal_seconds":0.35,"nominal_speed":355.555555555556,"speed_samples_passed":true,"walk":false},{"airborne":true,"direction":-1,"distance_tolerance":6.41876006441224,"form":"Carrasco","kind":"dash","measured_distance":124.182777404785,"measured_seconds":0.35,"nominal_distance":124.444444444444,"nominal_seconds":0.35,"nominal_speed":355.555555555556,"speed_samples_passed":true,"walk":true},{"airborne":true,"direction":1,"distance_tolerance":6.41876006441224,"form":"Carrasco","kind":"dash","measured_distance":124.182777404785,"measured_seconds":0.35,"nominal_distance":124.444444444444,"nominal_seconds":0.35,"nominal_speed":355.555555555556,"speed_samples_passed":true,"walk":false},{"airborne":true,"direction":1,"distance_tolerance":6.41876006441224,"form":"Carrasco","kind":"dash","measured_distance":124.182777404785,"measured_seconds":0.35,"nominal_distance":124.444444444444,"nominal_seconds":0.35,"nominal_speed":355.555555555556,"speed_samples_passed":true,"walk":true},{"airborne":false,"base_speed":0.0,"kind":"dash_changed_base","measured_speed":-355.550918579102,"nominal_speed":-355.555555555556,"walk":true},{"airborne":false,"base_speed":80.0,"kind":"dash_changed_base","measured_speed":-355.550918579102,"nominal_speed":-355.555555555556,"walk":true},{"airborne":false,"base_speed":500.0,"kind":"dash_changed_base","measured_speed":-355.550918579102,"nominal_speed":-355.555555555556,"walk":true},{"airborne":true,"base_speed":0.0,"kind":"dash_changed_base","measured_speed":-355.555572509766,"nominal_speed":-355.555555555556,"walk":true},{"airborne":true,"base_speed":80.0,"kind":"dash_changed_base","measured_speed":-355.555572509766,"nominal_speed":-355.555555555556,"walk":true},{"airborne":true,"base_speed":500.0,"kind":"dash_changed_base","measured_speed":-355.555572509766,"nominal_speed":-355.555555555556,"walk":true}]

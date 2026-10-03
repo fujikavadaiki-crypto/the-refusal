@@ -212,6 +212,10 @@ def descriptor(p,anchor=ANCHOR):
     return {'arquivo':p.relative_to(PACK).as_posix(),'sha256':sha(p),'largura':w,'altura':h,'ancora':anchor}
 
 def build():
+    if (ART/'ajuste_47c/rig.json').exists():
+        import runpy
+        revised=runpy.run_path(str(ROOT/'arte_fonte/ferramentas/ajustar_peregrino_47c.py'))
+        revised['build'](apply=True);revised['verify']();return
     # Once 4.7b is installed, keep its four revised animations when rerunning
     # the public generator. All other approved 4.7 artwork remains archived.
     if (ART/'ajuste_47b/rig.json').exists():
@@ -309,6 +313,9 @@ def build():
     verify()
 
 def verify():
+    if (ART/'ajuste_47c/rig.json').exists():
+        import runpy
+        runpy.run_path(str(ROOT/'arte_fonte/ferramentas/ajustar_peregrino_47c.py'))['verify']();return
     if (ART/'ajuste_47b/rig.json').exists():
         import runpy
         runpy.run_path(str(ROOT/'arte_fonte/ferramentas/ajustar_peregrino_47b.py'))['verify']();return

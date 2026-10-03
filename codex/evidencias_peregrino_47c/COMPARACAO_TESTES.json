@@ -1,0 +1,14 @@
+{
+  "suites_antes": 25,
+  "suites_depois": 25,
+  "aprovadas_antes": 23,
+  "aprovadas_depois": 23,
+  "pass_antes": 2069,
+  "pass_depois": 2069,
+  "novas_falhas": [],
+  "falhas_antigas": [
+    "tests/verify_carrasco_gif_test.gd",
+    "tests/verify_milestone8_2.gd"
+  ],
+  "pacote_real_pass": 200
+}
