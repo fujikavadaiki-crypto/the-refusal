@@ -1,0 +1,9 @@
+{
+  "branch": "feature/integracao-p40",
+  "head_antes": "f884c497a628f86d6e52f59ff0ee0fb26bd2abaa",
+  "origin_branch_antes": "f884c497a628f86d6e52f59ff0ee0fb26bd2abaa",
+  "main_local_antes": "ef24b5561cacb823d1f719370c29d82522cb5b58",
+  "main_remoto_antes": "ef24b5561cacb823d1f719370c29d82522cb5b58",
+  "push_autorizado": "git push -u origin feature/integracao-p40",
+  "escopo": "arte_fonte/; codex/MANUAL_CODEX.md; relatorio e evidencias de registro 4.6"
+}

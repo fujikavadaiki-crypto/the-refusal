@@ -1,0 +1,627 @@
+{
+ "nome": "paleta_bosque_v1",
+ "n_cores": 62,
+ "descricao": "C5.1 travada (44 cores, ids 0-43, iguais ao Carrasco pequeno A) + extensao do Bosque (18 cores, ids 44-61: musgo/oliva, casca, bronze dos sinos, pele, osso quente, nevoa verde), tirada das folhas de inimigos de referencia v2. NAO inclui o roxo do vazio (so da mascara Corvo, ids proprios no pacote dela).",
+ "cores": [
+  {
+   "id": 0,
+   "rgb": [
+    22,
+    19,
+    21
+   ],
+   "origem": "C5.1",
+   "papel": "carvao"
+  },
+  {
+   "id": 1,
+   "rgb": [
+    38,
+    31,
+    33
+   ],
+   "origem": "C5.1",
+   "papel": "carvao"
+  },
+  {
+   "id": 2,
+   "rgb": [
+    59,
+    47,
+    49
+   ],
+   "origem": "C5.1",
+   "papel": "carvao"
+  },
+  {
+   "id": 3,
+   "rgb": [
+    7,
+    4,
+    5
+   ],
+   "origem": "C5.1",
+   "papel": "contorno"
+  },
+  {
+   "id": 4,
+   "rgb": [
+    25,
+    1,
+    2
+   ],
+   "origem": "C5.1",
+   "papel": "couro"
+  },
+  {
+   "id": 5,
+   "rgb": [
+    20,
+    4,
+    4
+   ],
+   "origem": "C5.1",
+   "papel": "couro"
+  },
+  {
+   "id": 6,
+   "rgb": [
+    42,
+    6,
+    8
+   ],
+   "origem": "C5.1",
+   "papel": "couro"
+  },
+  {
+   "id": 7,
+   "rgb": [
+    34,
+    17,
+    17
+   ],
+   "origem": "C5.1",
+   "papel": "couro"
+  },
+  {
+   "id": 8,
+   "rgb": [
+    60,
+    38,
+    37
+   ],
+   "origem": "C5.1",
+   "papel": "couro"
+  },
+  {
+   "id": 9,
+   "rgb": [
+    77,
+    47,
+    52
+   ],
+   "origem": "C5.1",
+   "papel": "couro medio (C5.1)"
+  },
+  {
+   "id": 10,
+   "rgb": [
+    85,
+    55,
+    53
+   ],
+   "origem": "C5.1",
+   "papel": "couro"
+  },
+  {
+   "id": 11,
+   "rgb": [
+    99,
+    65,
+    58
+   ],
+   "origem": "C5.1",
+   "papel": "couro medio (C5.1)"
+  },
+  {
+   "id": 12,
+   "rgb": [
+    118,
+    75,
+    70
+   ],
+   "origem": "C5.1",
+   "papel": "couro"
+  },
+  {
+   "id": 13,
+   "rgb": [
+    129,
+    76,
+    58
+   ],
+   "origem": "C5.1",
+   "papel": "couro"
+  },
+  {
+   "id": 14,
+   "rgb": [
+    88,
+    71,
+    72
+   ],
+   "origem": "C5.1",
+   "papel": "aco"
+  },
+  {
+   "id": 15,
+   "rgb": [
+    128,
+    107,
+    108
+   ],
+   "origem": "C5.1",
+   "papel": "aco"
+  },
+  {
+   "id": 16,
+   "rgb": [
+    179,
+    153,
+    148
+   ],
+   "origem": "C5.1",
+   "papel": "aco"
+  },
+  {
+   "id": 17,
+   "rgb": [
+    216,
+    186,
+    179
+   ],
+   "origem": "C5.1",
+   "papel": "aco"
+  },
+  {
+   "id": 18,
+   "rgb": [
+    243,
+    232,
+    224
+   ],
+   "origem": "C5.1",
+   "papel": "aco"
+  },
+  {
+   "id": 19,
+   "rgb": [
+    67,
+    4,
+    7
+   ],
+   "origem": "C5.1",
+   "papel": "sangue"
+  },
+  {
+   "id": 20,
+   "rgb": [
+    86,
+    3,
+    6
+   ],
+   "origem": "C5.1",
+   "papel": "sangue"
+  },
+  {
+   "id": 21,
+   "rgb": [
+    64,
+    11,
+    14
+   ],
+   "origem": "C5.1",
+   "papel": "sangue"
+  },
+  {
+   "id": 22,
+   "rgb": [
+    116,
+    3,
+    6
+   ],
+   "origem": "C5.1",
+   "papel": "sangue"
+  },
+  {
+   "id": 23,
+   "rgb": [
+    64,
+    21,
+    24
+   ],
+   "origem": "C5.1",
+   "papel": "sangue"
+  },
+  {
+   "id": 24,
+   "rgb": [
+    61,
+    29,
+    27
+   ],
+   "origem": "C5.1",
+   "papel": "sangue"
+  },
+  {
+   "id": 25,
+   "rgb": [
+    110,
+    21,
+    26
+   ],
+   "origem": "C5.1",
+   "papel": "sangue"
+  },
+  {
+   "id": 26,
+   "rgb": [
+    174,
+    9,
+    16
+   ],
+   "origem": "C5.1",
+   "papel": "olho/sangue vivo"
+  },
+  {
+   "id": 27,
+   "rgb": [
+    150,
+    20,
+    28
+   ],
+   "origem": "C5.1",
+   "papel": "sangue"
+  },
+  {
+   "id": 28,
+   "rgb": [
+    105,
+    35,
+    37
+   ],
+   "origem": "C5.1",
+   "papel": "sangue"
+  },
+  {
+   "id": 29,
+   "rgb": [
+    88,
+    43,
+    37
+   ],
+   "origem": "C5.1",
+   "papel": "sangue"
+  },
+  {
+   "id": 30,
+   "rgb": [
+    124,
+    62,
+    54
+   ],
+   "origem": "C5.1",
+   "papel": "sangue"
+  },
+  {
+   "id": 31,
+   "rgb": [
+    187,
+    54,
+    56
+   ],
+   "origem": "C5.1",
+   "papel": "sangue"
+  },
+  {
+   "id": 32,
+   "rgb": [
+    185,
+    94,
+    81
+   ],
+   "origem": "C5.1",
+   "papel": "sangue"
+  },
+  {
+   "id": 33,
+   "rgb": [
+    157,
+    98,
+    89
+   ],
+   "origem": "C5.1",
+   "papel": "pele"
+  },
+  {
+   "id": 34,
+   "rgb": [
+    166,
+    124,
+    114
+   ],
+   "origem": "C5.1",
+   "papel": "pele"
+  },
+  {
+   "id": 35,
+   "rgb": [
+    188,
+    122,
+    101
+   ],
+   "origem": "C5.1",
+   "papel": "pele"
+  },
+  {
+   "id": 36,
+   "rgb": [
+    217,
+    128,
+    126
+   ],
+   "origem": "C5.1",
+   "papel": "pele"
+  },
+  {
+   "id": 37,
+   "rgb": [
+    231,
+    157,
+    131
+   ],
+   "origem": "C5.1",
+   "papel": "pele"
+  },
+  {
+   "id": 38,
+   "rgb": [
+    212,
+    162,
+    152
+   ],
+   "origem": "C5.1",
+   "papel": "pele"
+  },
+  {
+   "id": 39,
+   "rgb": [
+    242,
+    199,
+    174
+   ],
+   "origem": "C5.1",
+   "papel": "pele"
+  },
+  {
+   "id": 40,
+   "rgb": [
+    120,
+    22,
+    24
+   ],
+   "origem": "C5.1",
+   "papel": "rosto C3.1"
+  },
+  {
+   "id": 41,
+   "rgb": [
+    238,
+    40,
+    36
+   ],
+   "origem": "C5.1",
+   "papel": "rosto C3.1"
+  },
+  {
+   "id": 42,
+   "rgb": [
+    98,
+    84,
+    75
+   ],
+   "origem": "C5.1",
+   "papel": "rosto C3.1"
+  },
+  {
+   "id": 43,
+   "rgb": [
+    146,
+    129,
+    111
+   ],
+   "origem": "C5.1",
+   "papel": "rosto C3.1"
+  },
+  {
+   "id": 44,
+   "rgb": [
+    38,
+    30,
+    19
+   ],
+   "origem": "extensao_bosque_v1",
+   "papel": "casca_escura"
+  },
+  {
+   "id": 45,
+   "rgb": [
+    52,
+    43,
+    24
+   ],
+   "origem": "extensao_bosque_v1",
+   "papel": "musgo_sombra"
+  },
+  {
+   "id": 46,
+   "rgb": [
+    71,
+    52,
+    35
+   ],
+   "origem": "extensao_bosque_v1",
+   "papel": "casca_media"
+  },
+  {
+   "id": 47,
+   "rgb": [
+    68,
+    58,
+    31
+   ],
+   "origem": "extensao_bosque_v1",
+   "papel": "musgo_escuro"
+  },
+  {
+   "id": 48,
+   "rgb": [
+    92,
+    68,
+    43
+   ],
+   "origem": "extensao_bosque_v1",
+   "papel": "casca_clara"
+  },
+  {
+   "id": 49,
+   "rgb": [
+    85,
+    72,
+    37
+   ],
+   "origem": "extensao_bosque_v1",
+   "papel": "musgo_medio"
+  },
+  {
+   "id": 50,
+   "rgb": [
+    86,
+    86,
+    45
+   ],
+   "origem": "extensao_bosque_v1",
+   "papel": "musgo_oliva"
+  },
+  {
+   "id": 51,
+   "rgb": [
+    104,
+    88,
+    45
+   ],
+   "origem": "extensao_bosque_v1",
+   "papel": "musgo_claro_sombra"
+  },
+  {
+   "id": 52,
+   "rgb": [
+    134,
+    88,
+    53
+   ],
+   "origem": "extensao_bosque_v1",
+   "papel": "bronze_escuro"
+  },
+  {
+   "id": 53,
+   "rgb": [
+    128,
+    100,
+    88
+   ],
+   "origem": "extensao_bosque_v1",
+   "papel": "pele_cinza"
+  },
+  {
+   "id": 54,
+   "rgb": [
+    125,
+    108,
+    55
+   ],
+   "origem": "extensao_bosque_v1",
+   "papel": "musgo_claro"
+  },
+  {
+   "id": 55,
+   "rgb": [
+    150,
+    108,
+    87
+   ],
+   "origem": "extensao_bosque_v1",
+   "papel": "pele_media"
+  },
+  {
+   "id": 56,
+   "rgb": [
+    171,
+    120,
+    74
+   ],
+   "origem": "extensao_bosque_v1",
+   "papel": "bronze_medio"
+  },
+  {
+   "id": 57,
+   "rgb": [
+    204,
+    163,
+    127
+   ],
+   "origem": "extensao_bosque_v1",
+   "papel": "osso_quente"
+  },
+  {
+   "id": 58,
+   "rgb": [
+    118,
+    122,
+    56
+   ],
+   "origem": "extensao_bosque_v1",
+   "papel": "musgo_luz"
+  },
+  {
+   "id": 59,
+   "rgb": [
+    150,
+    156,
+    78
+   ],
+   "origem": "extensao_bosque_v1",
+   "papel": "musgo_brilho"
+  },
+  {
+   "id": 60,
+   "rgb": [
+    172,
+    186,
+    98
+   ],
+   "origem": "extensao_bosque_v1",
+   "papel": "nevoa_verde"
+  },
+  {
+   "id": 61,
+   "rgb": [
+    198,
+    152,
+    82
+   ],
+   "origem": "extensao_bosque_v1",
+   "papel": "bronze_brilho"
+  }
+ ]
+}

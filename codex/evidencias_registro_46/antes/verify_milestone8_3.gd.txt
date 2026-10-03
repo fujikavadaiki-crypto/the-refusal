@@ -1,0 +1,65 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+PASS: native body is 31 px versus 27 px human visual
+PASS: 104 native-size frames with fixed 64x48 cells
+PASS: frames for idle
+PASS: frames for run
+PASS: frames for jump
+PASS: frames for fall
+PASS: frames for ground_dash
+PASS: frames for air_dash
+PASS: frames for carrasco_light_1
+PASS: frames for carrasco_light_2
+PASS: frames for carrasco_light_3
+PASS: frames for carrasco_heavy
+PASS: frames for charge
+PASS: frames for charge_ready
+PASS: frames for carrasco_charged_heavy
+PASS: frames for carrasco_post_dodge
+PASS: frames for carrasco_air_light
+PASS: frames for carrasco_air_heavy
+PASS: frames for carrasco_quebra_selos
+PASS: frames for carrasco_marca
+PASS: frames for tribunal_activate
+PASS: frames for execution
+PASS: frames for execution_strike
+PASS: frames for hit
+PASS: frames for ruptured
+PASS: frames for death
+PASS: frames for parry
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/characters/carrasco_base_gameplay/atlas.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] run_checks (res://.godot/registro_46/antes/fixtures/verify_milestone8_3.gd:42)
+PASS: idle uses distinct authored frames
+PASS: run uses distinct authored frames
+PASS: carrasco_light_1 uses distinct authored frames
+PASS: carrasco_light_2 uses distinct authored frames
+PASS: carrasco_light_3 uses distinct authored frames
+PASS: carrasco_heavy uses distinct authored frames
+PASS: approved idle GIF uses native pixels and shares the body's ground plane
+PASS: runtime displays the native 56x56 idle frame
+PASS: all authored actions are available to the interchangeable Mask visual
+PASS: Carrasco keeps small height and human radius, independently of legacy visual
+PASS: hitbox starts inactive
+PASS: visual windup keeps hitbox inactive
+PASS: distinct active frame follows existing attack timing
+PASS: Tribunal has a short activation animation
+PASS: Tribunal returns to ordinary combat poses with aura
+PASS: elite Execution Strike has a separate nonlethal visual
+PASS: empty slot retains human visual
+PASS: Carrasco visual reloads after swap
+PASS: F3 hides technical HUD
+PASS: F3 restores technical HUD
+PASS: unchanged damage and Posture for carrasco_light_1
+PASS: unchanged damage and Posture for carrasco_light_2
+PASS: unchanged damage and Posture for carrasco_light_3
+PASS: unchanged damage and Posture for carrasco_heavy
+PASS: unchanged damage and Posture for carrasco_charged_heavy
+PASS: unchanged damage and Posture for carrasco_post_dodge
+PASS: unchanged damage and Posture for carrasco_air_light
+PASS: unchanged damage and Posture for carrasco_air_heavy
+PASS: unchanged damage and Posture for carrasco_quebra_selos
+MILESTONE 8.3: PASS

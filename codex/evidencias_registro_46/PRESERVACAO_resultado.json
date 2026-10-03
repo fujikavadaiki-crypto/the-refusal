@@ -1,0 +1,29 @@
+{
+  "preservado": true,
+  "metadados": {
+    "branch": true,
+    "main": true,
+    "checkout_head": true,
+    "checkout_status": true
+  },
+  "alteracoes": {
+    "arte_fonte": [],
+    "referencia_P40": [],
+    "prova": [],
+    "checkout_original": [],
+    "pacotes_aprovados": [],
+    "integracao_anterior": [],
+    "manual": [],
+    "historico": []
+  },
+  "arquivos": {
+    "arte_fonte": 51,
+    "referencia_P40": 1578,
+    "prova": 1550,
+    "checkout_original": 770,
+    "pacotes_aprovados": 3,
+    "integracao_anterior": 1839,
+    "manual": 1,
+    "historico": 1
+  }
+}

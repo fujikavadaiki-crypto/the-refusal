@@ -1,0 +1,66 @@
+GIMP Palette
+Name: THE REFUSAL - paleta_bosque_v1
+Columns: 8
+#
+ 22  19  21	0 carvao
+ 38  31  33	1 carvao
+ 59  47  49	2 carvao
+  7   4   5	3 contorno
+ 25   1   2	4 couro
+ 20   4   4	5 couro
+ 42   6   8	6 couro
+ 34  17  17	7 couro
+ 60  38  37	8 couro
+ 77  47  52	9 couro medio (C5.1)
+ 85  55  53	10 couro
+ 99  65  58	11 couro medio (C5.1)
+118  75  70	12 couro
+129  76  58	13 couro
+ 88  71  72	14 aco
+128 107 108	15 aco
+179 153 148	16 aco
+216 186 179	17 aco
+243 232 224	18 aco
+ 67   4   7	19 sangue
+ 86   3   6	20 sangue
+ 64  11  14	21 sangue
+116   3   6	22 sangue
+ 64  21  24	23 sangue
+ 61  29  27	24 sangue
+110  21  26	25 sangue
+174   9  16	26 olho/sangue vivo
+150  20  28	27 sangue
+105  35  37	28 sangue
+ 88  43  37	29 sangue
+124  62  54	30 sangue
+187  54  56	31 sangue
+185  94  81	32 sangue
+157  98  89	33 pele
+166 124 114	34 pele
+188 122 101	35 pele
+217 128 126	36 pele
+231 157 131	37 pele
+212 162 152	38 pele
+242 199 174	39 pele
+120  22  24	40 rosto C3.1
+238  40  36	41 rosto C3.1
+ 98  84  75	42 rosto C3.1
+146 129 111	43 rosto C3.1
+ 38  30  19	44 casca_escura
+ 52  43  24	45 musgo_sombra
+ 71  52  35	46 casca_media
+ 68  58  31	47 musgo_escuro
+ 92  68  43	48 casca_clara
+ 85  72  37	49 musgo_medio
+ 86  86  45	50 musgo_oliva
+104  88  45	51 musgo_claro_sombra
+134  88  53	52 bronze_escuro
+128 100  88	53 pele_cinza
+125 108  55	54 musgo_claro
+150 108  87	55 pele_media
+171 120  74	56 bronze_medio
+204 163 127	57 osso_quente
+118 122  56	58 musgo_luz
+150 156  78	59 musgo_brilho
+172 186  98	60 nevoa_verde
+198 152  82	61 bronze_brilho

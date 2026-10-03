@@ -1,0 +1,16 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+ERROR: Node not found: "Sprite" (relative to "/root/CarrascoArena/TestRoom/Player/VisualRoot/CarrascoModular").
+   at: get_node (scene/main/node.cpp:1975)
+   GDScript backtrace (most recent call first):
+       [0] run_checks (res://.godot/registro_46/depois/fixtures/verify_carrasco_gif_test.gd:56)
+       [1] frames (res://.godot/registro_46/depois/fixtures/verify_carrasco_gif_test.gd:12)
+PASS: walk action exists
+SCRIPT ERROR: Invalid access to property or key 'texture_filter' on a base object of type 'null instance'.
+   at: run_checks (res://.godot/registro_46/depois/fixtures/verify_carrasco_gif_test.gd:60)
+   GDScript backtrace (most recent call first):
+       [0] run_checks (res://.godot/registro_46/depois/fixtures/verify_carrasco_gif_test.gd:60)
+       [1] frames (res://.godot/registro_46/depois/fixtures/verify_carrasco_gif_test.gd:12)
+ABORT_SCRIPT_ERROR: fatal script error; suite cannot complete.

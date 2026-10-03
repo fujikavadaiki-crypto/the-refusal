@@ -1,0 +1,1368 @@
+{
+  "comando": "python arte_fonte/ferramentas/reduzir_referencia.py lote arte_fonte/referencias/inimigos_v2/recortes arte_fonte/inimigos_mestre_x1/alturas_alvo.json .godot/registro_46/reproducao",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pillow": "12.3.0",
+  "dependencia_scipy": "1.18.1 (isolada em .godot/registro_46/deps)",
+  "arquivos_arte_fonte": 51,
+  "gdignore": true,
+  "cores_paleta": 62,
+  "mestres_x1": 12,
+  "previas_x4": 12,
+  "pixels_identicos": 24,
+  "sha256_identicos": 0,
+  "mestres_altura_paleta_alfa_corretos": true,
+  "resultados": [
+    {
+      "arquivo": "inimigos_mestre_x1/peregrino_corrompido_x1.png",
+      "dimensoes": [
+        56,
+        52
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "2188841e60a9123c885649da45849b9b77d46768d6d002db9f9b5ddd23f3bb74",
+      "sha256_reproduzido": "668117580923f3762128a126efad137df19ba81b3c999e007e2581f908f0ee31",
+      "sha256_identico": false,
+      "altura_alvo": 52,
+      "altura_correta": true,
+      "alfa_binario": true,
+      "somente_paleta": true,
+      "sha256_rgba_original": "cb52bcfe6fdcd66c135d370a45e6de1e741a830136232c8d9b7cedb54cec4d13",
+      "sha256_rgba_reproduzido": "cb52bcfe6fdcd66c135d370a45e6de1e741a830136232c8d9b7cedb54cec4d13",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "f83fd9c6dfea64f4a671c13404638ce1f7d5092cfa91a112ff8d4134f9861bc8"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "d89324595963a9d90d33dab064d7a9d9539583205b4498a3d58ae980d014abba"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 3228,
+          "sha256": "07fe90dcc44309c471d539dc6bd60aec0501b0654e20bd593629422d60755a4f"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "f83fd9c6dfea64f4a671c13404638ce1f7d5092cfa91a112ff8d4134f9861bc8"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 2729,
+          "sha256": "7b9fc1c2695066c40ee0106c18f6e326ee04865a940ed884e064e81e7fb6c864"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/peregrino_corrompido_x1_previa_x4.png",
+      "dimensoes": [
+        256,
+        240
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "226b0bba8657fd6d3c34788a8b63707cf5fb58221e59bfe582a19daeb0b6d89d",
+      "sha256_reproduzido": "686e7a78f66bcbdae1512bdc52c53180d26682ef92110cc2c0e3c408e71da68d",
+      "sha256_identico": false,
+      "sha256_rgba_original": "57ede9c9a0ae4d967e6ed0a17255c33fa9b94a75281f3fa025800cbbb6e49a01",
+      "sha256_rgba_reproduzido": "57ede9c9a0ae4d967e6ed0a17255c33fa9b94a75281f3fa025800cbbb6e49a01",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "b48e82c504e658144b369e6d02f838f25b6e9fe5de9eb3d2d2bdd0f67e826fe2"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "50215f81f62aee9a4958d2f7801e076924d04ee4c419a8bda4fdc097f5614631"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 4931,
+          "sha256": "5f4c7b2cf62b456f3b6bdf15553ec7f356b373edd6f42b3a52fed9c2e457e92d"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "b48e82c504e658144b369e6d02f838f25b6e9fe5de9eb3d2d2bdd0f67e826fe2"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 4737,
+          "sha256": "8c5bfbb19d2c64a58db2f3eb1fedafddb42129ef345940c1dbe5bfd279037ab4"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/raiz_faminta_x1.png",
+      "dimensoes": [
+        52,
+        38
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "3978279667b8c31f6a5fe80dbd3333d058417998c24dd7e1383b9ca6c73de15b",
+      "sha256_reproduzido": "d275bcbdf86c0b0aaff489cd4ac2fc78dae9534a591c5c372ed8906257b761e1",
+      "sha256_identico": false,
+      "altura_alvo": 38,
+      "altura_correta": true,
+      "alfa_binario": true,
+      "somente_paleta": true,
+      "sha256_rgba_original": "0723d4084c626b68bd0cc4b59588f2d7513688bb3f09034372468821fbb4e9d5",
+      "sha256_rgba_reproduzido": "0723d4084c626b68bd0cc4b59588f2d7513688bb3f09034372468821fbb4e9d5",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "c931765b2b513494634e734a41ac2397f307d5dc03ab1e81caa9df380fdc83da"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "25e73c9e89c7775121441c6d79acc32654c1f2e3d7adacb50c8bfa59b7398400"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 2173,
+          "sha256": "2904d148c905470f922413d00198a0528351115b1ead7a0ca774e86c993442b7"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "c931765b2b513494634e734a41ac2397f307d5dc03ab1e81caa9df380fdc83da"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 1827,
+          "sha256": "4e5dd5cd80c35a366c77ccb068a58e0bca4e2470a84b605b4e57a1d9c9135982"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/raiz_faminta_x1_previa_x4.png",
+      "dimensoes": [
+        240,
+        184
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "96192b074159fc52e6028f56160a649fa61118c1b8420a3cdf9e8b3db16e2850",
+      "sha256_reproduzido": "060e129d475c8893b70d26ff729bc9b01f794a430e4deb74b49b8f6c922d33f3",
+      "sha256_identico": false,
+      "sha256_rgba_original": "f10760502644301ba64d53541f68248b1745cf07739d824d6cac1c32af9428dd",
+      "sha256_rgba_reproduzido": "f10760502644301ba64d53541f68248b1745cf07739d824d6cac1c32af9428dd",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "261515cea0024a47835bdefb5ff7bf6abc7f6c66d6e9a057ecc296042a7ee97c"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "659c2f52c9977e0160f549d53a1fb7e4220dd6548305eb659d2c9de2dbfe56b9"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 3227,
+          "sha256": "b9b5b34525e4cdae72f4e0946318fdc4bb2dc083a24f54233426585f7712daf6"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "261515cea0024a47835bdefb5ff7bf6abc7f6c66d6e9a057ecc296042a7ee97c"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 3140,
+          "sha256": "8c67ec5d5a4f879dbe72037afd62d10061aef15a82edcc9a8442d718e500a019"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/corvo_da_praga_x1.png",
+      "dimensoes": [
+        61,
+        40
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "4409a5c7a4e38494a62f56a1f4e81d5e74fb35123982d1d668da9485b86a5574",
+      "sha256_reproduzido": "48a6a9edca1e4173728bb529983713867cddf29f255404595c27c500f854361c",
+      "sha256_identico": false,
+      "altura_alvo": 40,
+      "altura_correta": true,
+      "alfa_binario": true,
+      "somente_paleta": true,
+      "sha256_rgba_original": "490772af68228a3731ae7b583b9cb6c22338c6765f44356c5990096d52abcd46",
+      "sha256_rgba_reproduzido": "490772af68228a3731ae7b583b9cb6c22338c6765f44356c5990096d52abcd46",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "71b10a8bf003f45092fc4d4b1edc666bee618653a5f4f2a24a7b812f184e18d5"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "b65eb2d9b865baf81f13bed13d8e37da5e3466d7265f8f6417d1cd76f39cfbe3"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 2388,
+          "sha256": "5f42d167c5cfb239c43be50c8ad5d127b19aa25c9957299352acb0dc14c6e524"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "71b10a8bf003f45092fc4d4b1edc666bee618653a5f4f2a24a7b812f184e18d5"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 2053,
+          "sha256": "9f7929012083423ae11eda8a822a5168cd63a2a28c56527284d10182e2d154a9"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/corvo_da_praga_x1_previa_x4.png",
+      "dimensoes": [
+        276,
+        192
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "7309bc9d94d4a21b031dbc3efa0c40de9282bdf61c866e5353400e4fbf6b1409",
+      "sha256_reproduzido": "681a2eca29f4d10adac66adbf8c3a2183f9989e725db71945a1ecf8166b4745e",
+      "sha256_identico": false,
+      "sha256_rgba_original": "b61d7bfe820745e7a4ac47677049fe95c35e59ac5c57752d39f6601857a18638",
+      "sha256_rgba_reproduzido": "b61d7bfe820745e7a4ac47677049fe95c35e59ac5c57752d39f6601857a18638",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "87f61341dfe39530186bc4d10a5783917ccadf351c3d4179dfb55cd8d520995a"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "f61dbe1b04a3ebc60eb7f6758d68f00f055c2e0e43d331837c75441ad45653ed"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 3671,
+          "sha256": "c7dbea3ce43a195bad6b59ca690f61cc8cd0cfbab98887d5875c72f850cb7efb"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "87f61341dfe39530186bc4d10a5783917ccadf351c3d4179dfb55cd8d520995a"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 3545,
+          "sha256": "1c67720be2d366fee2eebe4f1a361e3f3bf4f7e64ab1ab38d6c86e3319974f4b"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/mascara_vazia_x1.png",
+      "dimensoes": [
+        45,
+        58
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "ace9952c0f115cb05ad95673d2de0e5060288c2ec32f934201b89e1327e93c15",
+      "sha256_reproduzido": "3dc75c34443247589c941cd1145067f3ec2f38393df20efdb0f4f5aecb747d62",
+      "sha256_identico": false,
+      "altura_alvo": 58,
+      "altura_correta": true,
+      "alfa_binario": true,
+      "somente_paleta": true,
+      "sha256_rgba_original": "392d267a36a7de84a04e5fb9ccc98c25fdee4ea9936cf1109e5b4e9dfe5c2372",
+      "sha256_rgba_reproduzido": "392d267a36a7de84a04e5fb9ccc98c25fdee4ea9936cf1109e5b4e9dfe5c2372",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "596e0bc18d3797f65f100aa55c0c6ac69ee3ed7800df432cb7c7b5a623e99b64"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "792c21b152f2c7b49785e40fa51ecd0bda8af1f08978af1ad7f4b478b2aa05f0"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 2380,
+          "sha256": "755d9da49b3af0d1733a0b88a0071dd1ac60103fa0931bbcf58df14ea07cb097"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "596e0bc18d3797f65f100aa55c0c6ac69ee3ed7800df432cb7c7b5a623e99b64"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 2079,
+          "sha256": "fb000bfae0ead9b2be99132a356a5324c01164bc01974dbc96356934690456de"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/mascara_vazia_x1_previa_x4.png",
+      "dimensoes": [
+        212,
+        264
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "dad2d8e2570eb554f4e2799a5369a38b20732abedcd22ec27860674e16232dde",
+      "sha256_reproduzido": "848bb7ba064f49b6d3835d6f379058b78ff5e5938534866023f5bf17b99d5275",
+      "sha256_identico": false,
+      "sha256_rgba_original": "f37880a921743750c291d6e91572c171bc87cb0875e0d942d6811acc7b5e87a0",
+      "sha256_rgba_reproduzido": "f37880a921743750c291d6e91572c171bc87cb0875e0d942d6811acc7b5e87a0",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "97f2f78cc9da1b42217d49bad4794bb00f8ed6344f33208a7f1acde241671396"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "6d38a32b16b31617c80885212c7b256c641b2b72444af0b8d04863ddb3baa6e9"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 3795,
+          "sha256": "76e8cf631b450cb13c3b559786d354a4023e801c1ad3401faffbfa32cb24ffa1"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "97f2f78cc9da1b42217d49bad4794bb00f8ed6344f33208a7f1acde241671396"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 3652,
+          "sha256": "6373f0f0052447933bbabc88268f8668de0a2915490a6a9894aa96bc405c9381"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/acolito_do_lamento_x1.png",
+      "dimensoes": [
+        49,
+        58
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "38e5176ab56b937968b6946f6389e9eeadd32f50a45c1f60724723da087c1771",
+      "sha256_reproduzido": "9eb65a89278f8f96b487b32400ef3a2b6385a5740b1c4cc4234ee360c5c32cc0",
+      "sha256_identico": false,
+      "altura_alvo": 58,
+      "altura_correta": true,
+      "alfa_binario": true,
+      "somente_paleta": true,
+      "sha256_rgba_original": "9e150bea6ca6f0495a48172ae8f47255882a7b5c31d552a25cdb770697b26a41",
+      "sha256_rgba_reproduzido": "9e150bea6ca6f0495a48172ae8f47255882a7b5c31d552a25cdb770697b26a41",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "5f0ba15529eb23281db19153b90ddc128f36487920e70e3229353a9ce6b9200f"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "5130e4a0551eccaab3141ae6165439b6165907b53e3addfd54729dda990a452e"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 2843,
+          "sha256": "ee2355d86f2d69e23cb43d387c805e53520235a4aadc03756ce662de824fb8dd"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "5f0ba15529eb23281db19153b90ddc128f36487920e70e3229353a9ce6b9200f"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 2483,
+          "sha256": "dac50db6c8ce141e7941a3e955466930d0691b2e2a8122de1a51fe997f4f90a9"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/acolito_do_lamento_x1_previa_x4.png",
+      "dimensoes": [
+        228,
+        264
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "29250f4c9bdbaaaf367776434ce0ad6b18b7cf99550f3446c8767ed199907108",
+      "sha256_reproduzido": "40d9aa3928fbe81cb0542d20a3ecf58540c8c32ca3da1d797af79833196fab3e",
+      "sha256_identico": false,
+      "sha256_rgba_original": "d3480de02f4e0158a1ee63b2619d3445adc4668173a2e6fe5d117f1e511d5167",
+      "sha256_rgba_reproduzido": "d3480de02f4e0158a1ee63b2619d3445adc4668173a2e6fe5d117f1e511d5167",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "1343427a69457992f33da7ebf6b4c8d137f1442c1fbd5ff59e485a1d247f9cbe"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "1a31c58c4024fe89bd6218e1ddd4c6c401ecff0b4163345f1afc8660c9fd1950"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 4569,
+          "sha256": "0fd2491acf30eedb8f5dd9dda2a454da5eb6d7e41e7e41e8c2a3ad9fe47257ce"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "1343427a69457992f33da7ebf6b4c8d137f1442c1fbd5ff59e485a1d247f9cbe"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 4398,
+          "sha256": "feba5f1ad57b76b69fad1ccee4e4bbf15725ad31f51432a768fbf67efd684d54"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/lenhador_purificado_x1.png",
+      "dimensoes": [
+        51,
+        54
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "16d82b378df557ff0f65462e4b73aad1caa4f83dba1047a4c7946aad6d96ee1f",
+      "sha256_reproduzido": "935a9814bb5d23482409c33da48998ec1a2a7c154cece41eefcef5caf5f48a79",
+      "sha256_identico": false,
+      "altura_alvo": 54,
+      "altura_correta": true,
+      "alfa_binario": true,
+      "somente_paleta": true,
+      "sha256_rgba_original": "6a2704d791399269bf76eab4399a157dd8067a4c5c2af1a2e33eab6de270f768",
+      "sha256_rgba_reproduzido": "6a2704d791399269bf76eab4399a157dd8067a4c5c2af1a2e33eab6de270f768",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "b8601d046d1e0c26306c4d9530d9fb49eabd9dd59b86426874bbef410fd96aff"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "d4502c88768c625d06b71697edf8d6e7e256fd1ab59dac39d06f658af09d85b0"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 3290,
+          "sha256": "0192c9f1393bb74536829d096931da31057ec73dc8ada2563afade0552b8e103"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "b8601d046d1e0c26306c4d9530d9fb49eabd9dd59b86426874bbef410fd96aff"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 2828,
+          "sha256": "e7b683431806e03b97a1a1bd4d8261954ec5f09f5300128be2f9e843759866f0"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/lenhador_purificado_x1_previa_x4.png",
+      "dimensoes": [
+        236,
+        248
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "23233aae21c3ae2ac878873d6110dfc0722469f77af88e2dccb2bc6c92868ab3",
+      "sha256_reproduzido": "aad26dc395575daeb0e98859bd1ed85ae934483d6e83e1cc70948aaeab0b9f3b",
+      "sha256_identico": false,
+      "sha256_rgba_original": "edfdcecd9cb32943ed85137d8d62dedf795dce345d80b0b2ec4e7b22d95f8a54",
+      "sha256_rgba_reproduzido": "edfdcecd9cb32943ed85137d8d62dedf795dce345d80b0b2ec4e7b22d95f8a54",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "a46af26b232c1773dc40291bd7bff1adb5d586eeed3203463bd6a5f14ce4deea"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "6bd9e69b0d43fa5c1637a8ec4b5f70fc1d74f15c8aa8794b35705154b7b5e9a9"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 4865,
+          "sha256": "6f05ce4be21ba673024191e96d572a2e14c1384834519e9a66a4411d3352c658"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "a46af26b232c1773dc40291bd7bff1adb5d586eeed3203463bd6a5f14ce4deea"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 4690,
+          "sha256": "27d71b155520a36a95fdf73605474578ca126d5448099435f9aa29cce1ec0e2a"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/sentinela_do_sepulcro_x1.png",
+      "dimensoes": [
+        82,
+        70
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "83c1accc30e8ac7f9580da5e359ab920e486e0774bfc214e9a5682b9d0d5d66a",
+      "sha256_reproduzido": "9f56b20eb6623c5d825be007c12b8bb6f5eb26873e6afb8c036cc1308038dd1c",
+      "sha256_identico": false,
+      "altura_alvo": 70,
+      "altura_correta": true,
+      "alfa_binario": true,
+      "somente_paleta": true,
+      "sha256_rgba_original": "c57008879a1a8b5bcfa93f71311e39d6c2507317859a456c1b19de3cfbc25103",
+      "sha256_rgba_reproduzido": "c57008879a1a8b5bcfa93f71311e39d6c2507317859a456c1b19de3cfbc25103",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "8785ddbcd477f9a996ff4771955465d6bfea6ef566d7fb29918d6fc1f351ccaa"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "31fa8d6ce47857abf8ea18d2eb99a9e82cfa0b553c9a1e14a77c2361535137c7"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 5336,
+          "sha256": "e637766a08869a47f7a3669344e69e8a31de32fb29e5f013e73869326bdde0a3"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "8785ddbcd477f9a996ff4771955465d6bfea6ef566d7fb29918d6fc1f351ccaa"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 4468,
+          "sha256": "e6ff0022caae49c328b2e0b9308f9fd6935469092311e08c2dcbb0025765b5b3"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/sentinela_do_sepulcro_x1_previa_x4.png",
+      "dimensoes": [
+        360,
+        312
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "a7610bafe04232b54f06ab23ddb619be0a41e6a3686da014603d7f785dc83a72",
+      "sha256_reproduzido": "1bf43971d484ef051efb3c495ba74d7b32e7f3e1ea45b2e58f0d95883ac5b3e2",
+      "sha256_identico": false,
+      "sha256_rgba_original": "d758fc03c2c9f42b1ee2ae6cb7f3e186961fd7e72198a171de7aaed61e322a5f",
+      "sha256_rgba_reproduzido": "d758fc03c2c9f42b1ee2ae6cb7f3e186961fd7e72198a171de7aaed61e322a5f",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "516c3b3fb08b41beaac5be4d8b05f6fbb43e0f7c2a8e9abff89be5d34000f5ac"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "9bebdc8e079d13e2c900e40c81a935a7cfa8a2a391c158632b13999066ddd9e2"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 8234,
+          "sha256": "03e6addf0d7b14f6216f47769c961a41daaa16dcb1d470029e705a132e726a18"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "516c3b3fb08b41beaac5be4d8b05f6fbb43e0f7c2a8e9abff89be5d34000f5ac"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 7860,
+          "sha256": "9720e7a6e28961bf153d8264360ba0aa04057d23478510aab6e973560e8651d0"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/maceiro_profanado_x1.png",
+      "dimensoes": [
+        84,
+        72
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "f8fa8247fb56374acc58231df7faf7e1ec9eb001c2fd2bf05f161b5fb7d53d3c",
+      "sha256_reproduzido": "54a5b8c45dbe33357a0e23b496111a37d8f5c990a4019098de10b746ae3d5ee1",
+      "sha256_identico": false,
+      "altura_alvo": 72,
+      "altura_correta": true,
+      "alfa_binario": true,
+      "somente_paleta": true,
+      "sha256_rgba_original": "b7c34afcfd3264e9e73bbbee7d7d2d954b52f91619b364ec0297b7df52a5dbe7",
+      "sha256_rgba_reproduzido": "b7c34afcfd3264e9e73bbbee7d7d2d954b52f91619b364ec0297b7df52a5dbe7",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "886ede8eea41cf9ee3189ea4a49ddcfbce23c18617491fcd9cd94c47c1ac7b6d"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "9625f9c9f1fd4b90b1bf20f5b255b0f4fc06c0590c12bc231db199bce9f07e44"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 5591,
+          "sha256": "52a946f14f7a4ced200e78d8fdd2d6c0cd78a9131bf9358d37f23cfc90e20b5a"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "886ede8eea41cf9ee3189ea4a49ddcfbce23c18617491fcd9cd94c47c1ac7b6d"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 4832,
+          "sha256": "c78b7d15e515050cf9e938c6ffe838a49945571af18658eb7dc0714e82a0cd5e"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/maceiro_profanado_x1_previa_x4.png",
+      "dimensoes": [
+        368,
+        320
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "edb9d6f2db35033f57fe79afeeae2154bb57fae0a1a2525b995ae56a5f6cd25f",
+      "sha256_reproduzido": "edbc285e98c276fa219867df1d5bc1377c50c5443896cebf89da650f040d1813",
+      "sha256_identico": false,
+      "sha256_rgba_original": "dc3dac448b46cb77e6a3a182b6e28abb12f047d833dd06e8db7cef5021e909b0",
+      "sha256_rgba_reproduzido": "dc3dac448b46cb77e6a3a182b6e28abb12f047d833dd06e8db7cef5021e909b0",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "6a47d1cb297d35fb90b9c1aeaae49d438eb7af88b488d728e854cef4a6351740"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "cccfb7ffb58c8c1e4d71cdee212e6f39e65c24597a2a8dd4751522832bc55b27"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 8601,
+          "sha256": "73e99596df25b34a1d173c0d7fc91550c0d8c2ae838b136c14d18dcf7e24fdbe"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "6a47d1cb297d35fb90b9c1aeaae49d438eb7af88b488d728e854cef4a6351740"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 8248,
+          "sha256": "61b7e786b7842eaa2d4e8b9055fc9267efed644ab8c9496d7ace5dd1274da004"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/sino_funebre_x1.png",
+      "dimensoes": [
+        94,
+        88
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "585f36798d0bf7aa9af8aad7ed0cb8a278c67128af5ede543997228997ddc8d9",
+      "sha256_reproduzido": "7253e156080c03ba44e251b76fe47bbdd274d2c6f3d73b7655ce7c7494138603",
+      "sha256_identico": false,
+      "altura_alvo": 88,
+      "altura_correta": true,
+      "alfa_binario": true,
+      "somente_paleta": true,
+      "sha256_rgba_original": "0ab732e62ad7ad4e4eed479976519879369182c075908a5097c1f46803a574ff",
+      "sha256_rgba_reproduzido": "0ab732e62ad7ad4e4eed479976519879369182c075908a5097c1f46803a574ff",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "d64355223ea0621f359a910a5bfda097a8ea5b0a14c4e1044e231a8589d02ef0"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "9cf7bbcbe8838c7d95a60b7adf8c16adfbec5b832c262b9614f0656cdaae455d"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 7073,
+          "sha256": "bbeb2a482fa511c0dc70c9606a236ca94dac0166d902bd613d918f23a6bc4f60"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "d64355223ea0621f359a910a5bfda097a8ea5b0a14c4e1044e231a8589d02ef0"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 6236,
+          "sha256": "9c375cb4291d787c768ba8607a2f0458f3e576d20c5833fcfe9250602a8ead5d"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/sino_funebre_x1_previa_x4.png",
+      "dimensoes": [
+        408,
+        384
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "039a75e1148e177e79bb9070e4521284c438b1a5197b5d86497b4a743d806d09",
+      "sha256_reproduzido": "1e75566b015e90764dac5b8c428486993e6fa15ec1b57972f7ee5302005b8f2b",
+      "sha256_identico": false,
+      "sha256_rgba_original": "5377ea705315d296df27ed81452cda8c185ef6e24a7f01528f84e036e82d3ef7",
+      "sha256_rgba_reproduzido": "5377ea705315d296df27ed81452cda8c185ef6e24a7f01528f84e036e82d3ef7",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "edc284d406d5e3cd42590782986c589e09acd498c2b6d54d8b3f14f035a13730"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "b3edc70fcf3536678a6387abf5c12f166893a7464ac0360dea23678cc790f0c8"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 11220,
+          "sha256": "477749af6e846d4d31cbd9ce92fbac94093578cbb7e8fd977974a57659fd6e5e"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "edc284d406d5e3cd42590782986c589e09acd498c2b6d54d8b3f14f035a13730"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 10718,
+          "sha256": "91066c260b3d21c96fe6679f0cc0148a20f6d321667bf1f3fb3d9a2948b64600"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/devorarraiz_x1.png",
+      "dimensoes": [
+        125,
+        72
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "4b4eebcff4414207c135f779453eb0c1950e448fd5150541acff98c154bd5619",
+      "sha256_reproduzido": "0301c2909f08a68c4ea9936ea2d32a86881e8722923fcb45b1b35656b25434d0",
+      "sha256_identico": false,
+      "altura_alvo": 72,
+      "altura_correta": true,
+      "alfa_binario": true,
+      "somente_paleta": true,
+      "sha256_rgba_original": "6de037b759e6c5540f3c05c27d2924bd8f95e3d15ff2efc29d09c0c162d9151d",
+      "sha256_rgba_reproduzido": "6de037b759e6c5540f3c05c27d2924bd8f95e3d15ff2efc29d09c0c162d9151d",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "fd7ba31de71e3797a390f1315104245877579d5437301caa8731ab4cc8bf3663"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "bc524287e1dc917b89f7b314170475ecf0233a91dbf607c542545ae790a713da"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 9077,
+          "sha256": "984bb968b5ec1bef1879933488f061a4b6753118c0f2a3dec6ca515fa36915da"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "fd7ba31de71e3797a390f1315104245877579d5437301caa8731ab4cc8bf3663"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 8056,
+          "sha256": "f72451fabeb8d39b981b6af38bd06e6b7d8dcf09b9e9fc5c1a2a7f16d646fcf1"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/devorarraiz_x1_previa_x4.png",
+      "dimensoes": [
+        532,
+        320
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "b34566a59d36f3a55bf02d81e6176f25b80c71bad80496c887ead74702f2d93e",
+      "sha256_reproduzido": "eb373af4fee6b24c2e19efdabde859806b3e1461fcd57e31106911bbe5ffc96e",
+      "sha256_identico": false,
+      "sha256_rgba_original": "27ba47e35b60c837e05865a7a7377c4ae933d7f7626c440d84471da601ce7b36",
+      "sha256_rgba_reproduzido": "27ba47e35b60c837e05865a7a7377c4ae933d7f7626c440d84471da601ce7b36",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "b55c606a5bbfcfc193abf944e7c06e9f5daf09b2b0dd48fba3c5852b839af916"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "570386425aa303d35ff188553956d1b2541d80c102efbc9d9e0af9936bd2edbd"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 13992,
+          "sha256": "25602fbf294ec20c372a4316b12d7d94134d227c20f8d13bc162adca0346798e"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "b55c606a5bbfcfc193abf944e7c06e9f5daf09b2b0dd48fba3c5852b839af916"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 13322,
+          "sha256": "eda52a292019a871ac1da011777936cd0b6d1cf6f22a3beb3e81d908aa8ff651"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/lenhador_corrompido_x1.png",
+      "dimensoes": [
+        221,
+        150
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "588f065549b1e8bf560af07a927b97fc5215845debf6baa2ca8d93bf07abccd8",
+      "sha256_reproduzido": "f3e56932bff8a8430d5115ad68f65d0bbbce39133c71713e99b5018d0fbd0b5b",
+      "sha256_identico": false,
+      "altura_alvo": 150,
+      "altura_correta": true,
+      "alfa_binario": true,
+      "somente_paleta": true,
+      "sha256_rgba_original": "2e2878ef570cb7dc05f9860d06805a77d56a9a6e69b7b21f5ffb1ba30e231d8d",
+      "sha256_rgba_reproduzido": "2e2878ef570cb7dc05f9860d06805a77d56a9a6e69b7b21f5ffb1ba30e231d8d",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "eee884b9c34e4bdd616c1935d5f25033ca13c37968ad1322f23687775a0ff19b"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "ef58a2d598eaa14b9cb1bac90c757c4539a497a7f237908488916434c4c542d1"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 21748,
+          "sha256": "286fba5f35957db5501702f4d9a736ace00a431eab34af4a295a19c48c8cb8af"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "eee884b9c34e4bdd616c1935d5f25033ca13c37968ad1322f23687775a0ff19b"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 19627,
+          "sha256": "ed175ab2976c03ba4270e28b7cfbe0ebf0f76ca685b8c1ba7c7c1e4bb71ccd81"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/lenhador_corrompido_x1_previa_x4.png",
+      "dimensoes": [
+        916,
+        632
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "87482132f3063a47fd0fddcb01b5b60275949869622c82effcd6a4402f8dffdd",
+      "sha256_reproduzido": "2e0b64713bd14673281b1e9f16f51c8f84cb99ca57f1ef5aa011d610455363f7",
+      "sha256_identico": false,
+      "sha256_rgba_original": "cae1b7ce7f00543987b2bd6d0ee1fb3d68dda9b59564b590416368612153aac3",
+      "sha256_rgba_reproduzido": "cae1b7ce7f00543987b2bd6d0ee1fb3d68dda9b59564b590416368612153aac3",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "d6c0b56f398d6f62c55b4e0bb234bdea855a85005f3af5416ad80303e1244d19"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "b890996cfb1f5c9c0d47382f8d460cb923bb43baa4b7162ced769c5fb3c9bbee"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 34810,
+          "sha256": "6d49a8119640c9513500237f14d7d6c72a3dff49b35d3ff462f1a5749d5f5efc"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "d6c0b56f398d6f62c55b4e0bb234bdea855a85005f3af5416ad80303e1244d19"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 33249,
+          "sha256": "2a4e460e8af7b0b6c38f37fc346f0f497de90f89aa9ec689c13a69aac15b6143"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/abadessa_enraizada_x1.png",
+      "dimensoes": [
+        170,
+        168
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "019f6c6860d9715c4bef69d4e84fe0bc15c00f7ac9ddbb6702a90eada3a31806",
+      "sha256_reproduzido": "7b8cccb5db99b335de6f687fb6bfe921819473f1da877ddcb9c5823bbd57f4cc",
+      "sha256_identico": false,
+      "altura_alvo": 168,
+      "altura_correta": true,
+      "alfa_binario": true,
+      "somente_paleta": true,
+      "sha256_rgba_original": "920de5070a79615e66b8ef7d00cb5bc54a0f5d3db56930b7b1d863aa8f6e6d65",
+      "sha256_rgba_reproduzido": "920de5070a79615e66b8ef7d00cb5bc54a0f5d3db56930b7b1d863aa8f6e6d65",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "47a7f9a5e94dcf7f1f072cd746c7d0f334ee8857093cc24ab2bced52e6328508"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "47177e46a6edd830c74ff3d886fd09b29363f7880adf572b00fdef292c8b5d06"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 20200,
+          "sha256": "57494fa5cf7568fdac5208eb6bd2ba661ce73f2c5356663fb554b53e3368e35e"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "47a7f9a5e94dcf7f1f072cd746c7d0f334ee8857093cc24ab2bced52e6328508"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 18077,
+          "sha256": "6939a0dba7f34e88e9bb6ecccb464016cc0e1c05c3df82265b36c2af3d05d9af"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/abadessa_enraizada_x1_previa_x4.png",
+      "dimensoes": [
+        712,
+        704
+      ],
+      "pixels_identicos": true,
+      "sha256_original": "b059cc011e4111684fe86e0c824e6c2b589830614164d71f886af72f9d8de123",
+      "sha256_reproduzido": "968ac99109058294c670c2cfd311c1bcb7a0ad30d3343f931e6e947e90e4ce89",
+      "sha256_identico": false,
+      "sha256_rgba_original": "c5fc50917a16a89d199da0a30c03b56e8d76534143e1a5d3d38fc0a7ac05c275",
+      "sha256_rgba_reproduzido": "c5fc50917a16a89d199da0a30c03b56e8d76534143e1a5d3d38fc0a7ac05c275",
+      "sha256_rgba_identico": true,
+      "chunks_original": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "79b33917cd12615d88a05299e7a26edf566164c75e0674e21ab17b511989b9e9"
+        },
+        {
+          "tipo": "caBX",
+          "bytes": 5758,
+          "sha256": "049e57c0c798b45af2b9b48dcfd8bc1f4b92bc3b4f7d1acda79bd3500b9c1b61"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 32996,
+          "sha256": "b7ee3ad490ee2bd68c80476f3c1991ae9eaa403ebf9491384a52a43e10af1f3d"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "chunks_reproduzido": [
+        {
+          "tipo": "IHDR",
+          "bytes": 13,
+          "sha256": "79b33917cd12615d88a05299e7a26edf566164c75e0674e21ab17b511989b9e9"
+        },
+        {
+          "tipo": "IDAT",
+          "bytes": 31438,
+          "sha256": "cfa22cdd7f268f9d504034667ba77ee5f44632beebe8fc108532d34d9354d060"
+        },
+        {
+          "tipo": "IEND",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "somente_idat_diferente": false
+    }
+  ],
+  "sha256_rgba_identicos": 24,
+  "somente_idat_diferente": false,
+  "paleta_c51_44_cores_preservadas": true,
+  "id_paleta_sequencial": true,
+  "diferencas_png": "Pixels RGBA e dimensoes identicos; PNGs originais conservam metadados caBX ausentes na exportacao da ferramenta. O bloco IDAT tambem tem codificacao/compressao diferente. Nenhum PNG fornecido foi substituido.",
+  "metadados_cabx_originais": 24,
+  "metadados_cabx_reproduzidos": 0
+}

@@ -1,0 +1,31 @@
+{
+  "suites_antes": 25,
+  "suites_depois": 25,
+  "aprovadas_antes": 23,
+  "aprovadas_depois": 23,
+  "pass_antes": 2069,
+  "pass_depois": 2069,
+  "regressoes": [],
+  "falhas_preexistentes": [
+    {
+      "teste": "tests/verify_carrasco_gif_test.gd",
+      "exit": -2,
+      "pass": 1,
+      "fail": 0,
+      "falhas": [
+        "SCRIPT ERROR: Invalid access to property or key 'texture_filter' on a base object of type 'null instance'."
+      ],
+      "aprovado": false
+    },
+    {
+      "teste": "tests/verify_milestone8_2.gd",
+      "exit": -2,
+      "pass": 1,
+      "fail": 0,
+      "falhas": [
+        "SCRIPT ERROR: Invalid access to property or key 'sprite' on a base object of type 'Node2D (carrasco_base_official.gd)'."
+      ],
+      "aprovado": false
+    }
+  ]
+}

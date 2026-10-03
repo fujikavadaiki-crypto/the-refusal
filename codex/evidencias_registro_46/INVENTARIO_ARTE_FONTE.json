@@ -1,0 +1,308 @@
+[
+  {
+    "arquivo": ".gdignore",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "crlf": null
+  },
+  {
+    "arquivo": "ferramentas/reduzir_referencia.py",
+    "bytes": 8116,
+    "sha256": "6af5f1be5c53612d2cba70245b3889380558714a36a5e784cbd6f1e8551e4eaf",
+    "crlf": 0
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/abadessa_enraizada_x1.png",
+    "bytes": 26027,
+    "sha256": "019f6c6860d9715c4bef69d4e84fe0bc15c00f7ac9ddbb6702a90eada3a31806",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/abadessa_enraizada_x1_previa_x4.png",
+    "bytes": 38823,
+    "sha256": "b059cc011e4111684fe86e0c824e6c2b589830614164d71f886af72f9d8de123",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/acolito_do_lamento_x1.png",
+    "bytes": 8670,
+    "sha256": "38e5176ab56b937968b6946f6389e9eeadd32f50a45c1f60724723da087c1771",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/acolito_do_lamento_x1_previa_x4.png",
+    "bytes": 10396,
+    "sha256": "29250f4c9bdbaaaf367776434ce0ad6b18b7cf99550f3446c8767ed199907108",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/alturas_alvo.json",
+    "bytes": 425,
+    "sha256": "a8b3c488df2c274eb2d1a800630ba51f1e7dee63ecb3e7f25aaf2b6781b26081",
+    "crlf": 0
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/corvo_da_praga_x1.png",
+    "bytes": 8215,
+    "sha256": "4409a5c7a4e38494a62f56a1f4e81d5e74fb35123982d1d668da9485b86a5574",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/corvo_da_praga_x1_previa_x4.png",
+    "bytes": 9498,
+    "sha256": "7309bc9d94d4a21b031dbc3efa0c40de9282bdf61c866e5353400e4fbf6b1409",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/devorarraiz_x1.png",
+    "bytes": 14904,
+    "sha256": "4b4eebcff4414207c135f779453eb0c1950e448fd5150541acff98c154bd5619",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/devorarraiz_x1_previa_x4.png",
+    "bytes": 19819,
+    "sha256": "b34566a59d36f3a55bf02d81e6176f25b80c71bad80496c887ead74702f2d93e",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/escala_A_comuns_x1.png",
+    "bytes": 22907,
+    "sha256": "b32d34d945ca17787473e6b16304e6030c83a1cde134fa2b5038b69b4c29cda6",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/escala_A_comuns_x3.png",
+    "bytes": 29494,
+    "sha256": "6e6aeed71845993692e7118ccb801f7a9fb79a784512298eac009a49216339b7",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/escala_B_pesados_x1.png",
+    "bytes": 34216,
+    "sha256": "2c03f85d74599ccea8c785a28ae43b8073683a3f87228ab5bce1b51944495cf8",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/escala_B_pesados_x3.png",
+    "bytes": 46465,
+    "sha256": "00ec867d91926bec325416ba9dff347d1e733a3c9178702e2090b9fcce1cc184",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/escala_C_chefes_x1.png",
+    "bytes": 50335,
+    "sha256": "2cf094a8d4ef3613bf44a9c5aa90968a036ebb4902feeec35458e14d229f806f",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/escala_C_chefes_x3.png",
+    "bytes": 60070,
+    "sha256": "580a75bd990cb56258acbfbc382ac2e29a25bb4fb903b3291e2552e1daf1d51b",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/lenhador_corrompido_x1.png",
+    "bytes": 27575,
+    "sha256": "588f065549b1e8bf560af07a927b97fc5215845debf6baa2ca8d93bf07abccd8",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/lenhador_corrompido_x1_previa_x4.png",
+    "bytes": 40637,
+    "sha256": "87482132f3063a47fd0fddcb01b5b60275949869622c82effcd6a4402f8dffdd",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/lenhador_purificado_x1.png",
+    "bytes": 9117,
+    "sha256": "16d82b378df557ff0f65462e4b73aad1caa4f83dba1047a4c7946aad6d96ee1f",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/lenhador_purificado_x1_previa_x4.png",
+    "bytes": 10692,
+    "sha256": "23233aae21c3ae2ac878873d6110dfc0722469f77af88e2dccb2bc6c92868ab3",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/maceiro_profanado_x1.png",
+    "bytes": 11418,
+    "sha256": "f8fa8247fb56374acc58231df7faf7e1ec9eb001c2fd2bf05f161b5fb7d53d3c",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/maceiro_profanado_x1_previa_x4.png",
+    "bytes": 14428,
+    "sha256": "edb9d6f2db35033f57fe79afeeae2154bb57fae0a1a2525b995ae56a5f6cd25f",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/mascara_vazia_x1.png",
+    "bytes": 8207,
+    "sha256": "ace9952c0f115cb05ad95673d2de0e5060288c2ec32f934201b89e1327e93c15",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/mascara_vazia_x1_previa_x4.png",
+    "bytes": 9622,
+    "sha256": "dad2d8e2570eb554f4e2799a5369a38b20732abedcd22ec27860674e16232dde",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/peregrino_corrompido_x1.png",
+    "bytes": 9055,
+    "sha256": "2188841e60a9123c885649da45849b9b77d46768d6d002db9f9b5ddd23f3bb74",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/peregrino_corrompido_x1_previa_x4.png",
+    "bytes": 10758,
+    "sha256": "226b0bba8657fd6d3c34788a8b63707cf5fb58221e59bfe582a19daeb0b6d89d",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/raiz_faminta_x1.png",
+    "bytes": 8000,
+    "sha256": "3978279667b8c31f6a5fe80dbd3333d058417998c24dd7e1383b9ca6c73de15b",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/raiz_faminta_x1_previa_x4.png",
+    "bytes": 9054,
+    "sha256": "96192b074159fc52e6028f56160a649fa61118c1b8420a3cdf9e8b3db16e2850",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/sentinela_do_sepulcro_x1.png",
+    "bytes": 11163,
+    "sha256": "83c1accc30e8ac7f9580da5e359ab920e486e0774bfc214e9a5682b9d0d5d66a",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/sentinela_do_sepulcro_x1_previa_x4.png",
+    "bytes": 14061,
+    "sha256": "a7610bafe04232b54f06ab23ddb619be0a41e6a3686da014603d7f785dc83a72",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/sino_funebre_x1.png",
+    "bytes": 12900,
+    "sha256": "585f36798d0bf7aa9af8aad7ed0cb8a278c67128af5ede543997228997ddc8d9",
+    "crlf": null
+  },
+  {
+    "arquivo": "inimigos_mestre_x1/sino_funebre_x1_previa_x4.png",
+    "bytes": 17047,
+    "sha256": "039a75e1148e177e79bb9070e4521284c438b1a5197b5d86497b4a743d806d09",
+    "crlf": null
+  },
+  {
+    "arquivo": "paleta/paleta_bosque_v1.gpl",
+    "bytes": 1534,
+    "sha256": "791a62a5b214e42251d964579e217bfcc704dad49b912cd1221f71d483540ca8",
+    "crlf": 0
+  },
+  {
+    "arquivo": "paleta/paleta_bosque_v1.json",
+    "bytes": 7304,
+    "sha256": "9678161f917103d1d177f9af8b965c664f153ae502de35dcb63af8917081742b",
+    "crlf": 0
+  },
+  {
+    "arquivo": "referencias/inimigos_v2/folhas/folha_inimigos_v2_1_sentinela_maceiro_devorarraiz.png",
+    "bytes": 1005148,
+    "sha256": "fa7638f5b4a5aa6a69483d876c10b42c53b2ac2306c5f8f1fbcb24e297e56a19",
+    "crlf": null
+  },
+  {
+    "arquivo": "referencias/inimigos_v2/folhas/folha_inimigos_v2_2_mascara_sino_acolito.png",
+    "bytes": 1081174,
+    "sha256": "355144442201ff17712b4620c70e90e2926120622da54c6c25e17d9f7115f085",
+    "crlf": null
+  },
+  {
+    "arquivo": "referencias/inimigos_v2/folhas/folha_inimigos_v2_3_peregrino_corvo_raiz.png",
+    "bytes": 945018,
+    "sha256": "624700b1da1fc0a269faf4e4d56df63e4baf41189839aa470b949a04e0c94f32",
+    "crlf": null
+  },
+  {
+    "arquivo": "referencias/inimigos_v2/folhas/folha_inimigos_v2_4_lenhador_abadessa_purificado.png",
+    "bytes": 1215094,
+    "sha256": "41440b23743cc927e37cf6179499931831a77c89bd66a159d73fff1f4078048f",
+    "crlf": null
+  },
+  {
+    "arquivo": "referencias/inimigos_v2/recortes/abadessa_enraizada.png",
+    "bytes": 421293,
+    "sha256": "d7ef4d24152727f64c250847ef1ca5097fd2a8382c6a03335fa9208bcfb2f7a2",
+    "crlf": null
+  },
+  {
+    "arquivo": "referencias/inimigos_v2/recortes/acolito_do_lamento.png",
+    "bytes": 303453,
+    "sha256": "c4c1655c730b78fba86111c5c5518e71605e7fc632c5a0e14135ef4f0090684e",
+    "crlf": null
+  },
+  {
+    "arquivo": "referencias/inimigos_v2/recortes/corvo_da_praga.png",
+    "bytes": 337591,
+    "sha256": "7d107cf44e516b1ac262ea0f7fc87077dbeb4f92abd7ea5bb19e2ef52f8453a8",
+    "crlf": null
+  },
+  {
+    "arquivo": "referencias/inimigos_v2/recortes/devorarraiz.png",
+    "bytes": 348757,
+    "sha256": "f9b34847de32c1e0a4b70f2b60e6373971463a7263a3090fb9fa2c0602b199a4",
+    "crlf": null
+  },
+  {
+    "arquivo": "referencias/inimigos_v2/recortes/lenhador_corrompido.png",
+    "bytes": 511612,
+    "sha256": "e8436d97983423788906e5c7e1ab216cc4ed2962a04b40848fc6aa6da33c9d2b",
+    "crlf": null
+  },
+  {
+    "arquivo": "referencias/inimigos_v2/recortes/lenhador_purificado.png",
+    "bytes": 161880,
+    "sha256": "fa6866bf78d1682de80ebb58d663b94516a0a7ecc688b12509b016a775c16445",
+    "crlf": null
+  },
+  {
+    "arquivo": "referencias/inimigos_v2/recortes/maceiro_profanado.png",
+    "bytes": 282449,
+    "sha256": "0aaf4f6c5ff876b76f12a679f5c79e9bc52b6c1bebcd64309e2ad680ce3bd6c3",
+    "crlf": null
+  },
+  {
+    "arquivo": "referencias/inimigos_v2/recortes/mascara_vazia.png",
+    "bytes": 280065,
+    "sha256": "28b60d50ef5bc387b2eafe7bb9bb7a78c50ab66e7de0587b829dbf45833fbd75",
+    "crlf": null
+  },
+  {
+    "arquivo": "referencias/inimigos_v2/recortes/peregrino_corrompido.png",
+    "bytes": 260159,
+    "sha256": "e23e8b68af7864bb2f43a2426145c06bfc573c748149102e0f57edc41d021a85",
+    "crlf": null
+  },
+  {
+    "arquivo": "referencias/inimigos_v2/recortes/raiz_faminta.png",
+    "bytes": 210613,
+    "sha256": "3509ccaaff683e7303e8eda4844cd901f6aebc1f7f2b4c568e684e5947cd716e",
+    "crlf": null
+  },
+  {
+    "arquivo": "referencias/inimigos_v2/recortes/sentinela_do_sepulcro.png",
+    "bytes": 266168,
+    "sha256": "beef5701f4c981b1b0cbf68e28701ffe3b07799348e7650f9f24d0eca517766b",
+    "crlf": null
+  },
+  {
+    "arquivo": "referencias/inimigos_v2/recortes/sino_funebre.png",
+    "bytes": 366366,
+    "sha256": "d55465db5650a2690e0122faab8f234849225e1101b41e156b9cc7290f2e8a60",
+    "crlf": null
+  }
+]

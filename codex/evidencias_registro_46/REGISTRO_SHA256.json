@@ -1,0 +1,947 @@
+{
+  "arquivos_fornecidos": 52,
+  "identicos_no_git": 52,
+  "escopo_correto": true,
+  "arquivos_novos_preparados": 125,
+  "sha256": [
+    {
+      "arquivo": "arte_fonte/.gdignore",
+      "sha256_fornecido": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_git": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/ferramentas/reduzir_referencia.py",
+      "sha256_fornecido": "6af5f1be5c53612d2cba70245b3889380558714a36a5e784cbd6f1e8551e4eaf",
+      "sha256_git": "6af5f1be5c53612d2cba70245b3889380558714a36a5e784cbd6f1e8551e4eaf",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/abadessa_enraizada_x1.png",
+      "sha256_fornecido": "019f6c6860d9715c4bef69d4e84fe0bc15c00f7ac9ddbb6702a90eada3a31806",
+      "sha256_git": "019f6c6860d9715c4bef69d4e84fe0bc15c00f7ac9ddbb6702a90eada3a31806",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/abadessa_enraizada_x1_previa_x4.png",
+      "sha256_fornecido": "b059cc011e4111684fe86e0c824e6c2b589830614164d71f886af72f9d8de123",
+      "sha256_git": "b059cc011e4111684fe86e0c824e6c2b589830614164d71f886af72f9d8de123",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/acolito_do_lamento_x1.png",
+      "sha256_fornecido": "38e5176ab56b937968b6946f6389e9eeadd32f50a45c1f60724723da087c1771",
+      "sha256_git": "38e5176ab56b937968b6946f6389e9eeadd32f50a45c1f60724723da087c1771",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/acolito_do_lamento_x1_previa_x4.png",
+      "sha256_fornecido": "29250f4c9bdbaaaf367776434ce0ad6b18b7cf99550f3446c8767ed199907108",
+      "sha256_git": "29250f4c9bdbaaaf367776434ce0ad6b18b7cf99550f3446c8767ed199907108",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/alturas_alvo.json",
+      "sha256_fornecido": "a8b3c488df2c274eb2d1a800630ba51f1e7dee63ecb3e7f25aaf2b6781b26081",
+      "sha256_git": "a8b3c488df2c274eb2d1a800630ba51f1e7dee63ecb3e7f25aaf2b6781b26081",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/corvo_da_praga_x1.png",
+      "sha256_fornecido": "4409a5c7a4e38494a62f56a1f4e81d5e74fb35123982d1d668da9485b86a5574",
+      "sha256_git": "4409a5c7a4e38494a62f56a1f4e81d5e74fb35123982d1d668da9485b86a5574",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/corvo_da_praga_x1_previa_x4.png",
+      "sha256_fornecido": "7309bc9d94d4a21b031dbc3efa0c40de9282bdf61c866e5353400e4fbf6b1409",
+      "sha256_git": "7309bc9d94d4a21b031dbc3efa0c40de9282bdf61c866e5353400e4fbf6b1409",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/devorarraiz_x1.png",
+      "sha256_fornecido": "4b4eebcff4414207c135f779453eb0c1950e448fd5150541acff98c154bd5619",
+      "sha256_git": "4b4eebcff4414207c135f779453eb0c1950e448fd5150541acff98c154bd5619",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/devorarraiz_x1_previa_x4.png",
+      "sha256_fornecido": "b34566a59d36f3a55bf02d81e6176f25b80c71bad80496c887ead74702f2d93e",
+      "sha256_git": "b34566a59d36f3a55bf02d81e6176f25b80c71bad80496c887ead74702f2d93e",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/escala_A_comuns_x1.png",
+      "sha256_fornecido": "b32d34d945ca17787473e6b16304e6030c83a1cde134fa2b5038b69b4c29cda6",
+      "sha256_git": "b32d34d945ca17787473e6b16304e6030c83a1cde134fa2b5038b69b4c29cda6",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/escala_A_comuns_x3.png",
+      "sha256_fornecido": "6e6aeed71845993692e7118ccb801f7a9fb79a784512298eac009a49216339b7",
+      "sha256_git": "6e6aeed71845993692e7118ccb801f7a9fb79a784512298eac009a49216339b7",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/escala_B_pesados_x1.png",
+      "sha256_fornecido": "2c03f85d74599ccea8c785a28ae43b8073683a3f87228ab5bce1b51944495cf8",
+      "sha256_git": "2c03f85d74599ccea8c785a28ae43b8073683a3f87228ab5bce1b51944495cf8",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/escala_B_pesados_x3.png",
+      "sha256_fornecido": "00ec867d91926bec325416ba9dff347d1e733a3c9178702e2090b9fcce1cc184",
+      "sha256_git": "00ec867d91926bec325416ba9dff347d1e733a3c9178702e2090b9fcce1cc184",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/escala_C_chefes_x1.png",
+      "sha256_fornecido": "2cf094a8d4ef3613bf44a9c5aa90968a036ebb4902feeec35458e14d229f806f",
+      "sha256_git": "2cf094a8d4ef3613bf44a9c5aa90968a036ebb4902feeec35458e14d229f806f",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/escala_C_chefes_x3.png",
+      "sha256_fornecido": "580a75bd990cb56258acbfbc382ac2e29a25bb4fb903b3291e2552e1daf1d51b",
+      "sha256_git": "580a75bd990cb56258acbfbc382ac2e29a25bb4fb903b3291e2552e1daf1d51b",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/lenhador_corrompido_x1.png",
+      "sha256_fornecido": "588f065549b1e8bf560af07a927b97fc5215845debf6baa2ca8d93bf07abccd8",
+      "sha256_git": "588f065549b1e8bf560af07a927b97fc5215845debf6baa2ca8d93bf07abccd8",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/lenhador_corrompido_x1_previa_x4.png",
+      "sha256_fornecido": "87482132f3063a47fd0fddcb01b5b60275949869622c82effcd6a4402f8dffdd",
+      "sha256_git": "87482132f3063a47fd0fddcb01b5b60275949869622c82effcd6a4402f8dffdd",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/lenhador_purificado_x1.png",
+      "sha256_fornecido": "16d82b378df557ff0f65462e4b73aad1caa4f83dba1047a4c7946aad6d96ee1f",
+      "sha256_git": "16d82b378df557ff0f65462e4b73aad1caa4f83dba1047a4c7946aad6d96ee1f",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/lenhador_purificado_x1_previa_x4.png",
+      "sha256_fornecido": "23233aae21c3ae2ac878873d6110dfc0722469f77af88e2dccb2bc6c92868ab3",
+      "sha256_git": "23233aae21c3ae2ac878873d6110dfc0722469f77af88e2dccb2bc6c92868ab3",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/maceiro_profanado_x1.png",
+      "sha256_fornecido": "f8fa8247fb56374acc58231df7faf7e1ec9eb001c2fd2bf05f161b5fb7d53d3c",
+      "sha256_git": "f8fa8247fb56374acc58231df7faf7e1ec9eb001c2fd2bf05f161b5fb7d53d3c",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/maceiro_profanado_x1_previa_x4.png",
+      "sha256_fornecido": "edb9d6f2db35033f57fe79afeeae2154bb57fae0a1a2525b995ae56a5f6cd25f",
+      "sha256_git": "edb9d6f2db35033f57fe79afeeae2154bb57fae0a1a2525b995ae56a5f6cd25f",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/mascara_vazia_x1.png",
+      "sha256_fornecido": "ace9952c0f115cb05ad95673d2de0e5060288c2ec32f934201b89e1327e93c15",
+      "sha256_git": "ace9952c0f115cb05ad95673d2de0e5060288c2ec32f934201b89e1327e93c15",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/mascara_vazia_x1_previa_x4.png",
+      "sha256_fornecido": "dad2d8e2570eb554f4e2799a5369a38b20732abedcd22ec27860674e16232dde",
+      "sha256_git": "dad2d8e2570eb554f4e2799a5369a38b20732abedcd22ec27860674e16232dde",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/peregrino_corrompido_x1.png",
+      "sha256_fornecido": "2188841e60a9123c885649da45849b9b77d46768d6d002db9f9b5ddd23f3bb74",
+      "sha256_git": "2188841e60a9123c885649da45849b9b77d46768d6d002db9f9b5ddd23f3bb74",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/peregrino_corrompido_x1_previa_x4.png",
+      "sha256_fornecido": "226b0bba8657fd6d3c34788a8b63707cf5fb58221e59bfe582a19daeb0b6d89d",
+      "sha256_git": "226b0bba8657fd6d3c34788a8b63707cf5fb58221e59bfe582a19daeb0b6d89d",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/raiz_faminta_x1.png",
+      "sha256_fornecido": "3978279667b8c31f6a5fe80dbd3333d058417998c24dd7e1383b9ca6c73de15b",
+      "sha256_git": "3978279667b8c31f6a5fe80dbd3333d058417998c24dd7e1383b9ca6c73de15b",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/raiz_faminta_x1_previa_x4.png",
+      "sha256_fornecido": "96192b074159fc52e6028f56160a649fa61118c1b8420a3cdf9e8b3db16e2850",
+      "sha256_git": "96192b074159fc52e6028f56160a649fa61118c1b8420a3cdf9e8b3db16e2850",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/sentinela_do_sepulcro_x1.png",
+      "sha256_fornecido": "83c1accc30e8ac7f9580da5e359ab920e486e0774bfc214e9a5682b9d0d5d66a",
+      "sha256_git": "83c1accc30e8ac7f9580da5e359ab920e486e0774bfc214e9a5682b9d0d5d66a",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/sentinela_do_sepulcro_x1_previa_x4.png",
+      "sha256_fornecido": "a7610bafe04232b54f06ab23ddb619be0a41e6a3686da014603d7f785dc83a72",
+      "sha256_git": "a7610bafe04232b54f06ab23ddb619be0a41e6a3686da014603d7f785dc83a72",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/sino_funebre_x1.png",
+      "sha256_fornecido": "585f36798d0bf7aa9af8aad7ed0cb8a278c67128af5ede543997228997ddc8d9",
+      "sha256_git": "585f36798d0bf7aa9af8aad7ed0cb8a278c67128af5ede543997228997ddc8d9",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/inimigos_mestre_x1/sino_funebre_x1_previa_x4.png",
+      "sha256_fornecido": "039a75e1148e177e79bb9070e4521284c438b1a5197b5d86497b4a743d806d09",
+      "sha256_git": "039a75e1148e177e79bb9070e4521284c438b1a5197b5d86497b4a743d806d09",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/paleta/paleta_bosque_v1.gpl",
+      "sha256_fornecido": "791a62a5b214e42251d964579e217bfcc704dad49b912cd1221f71d483540ca8",
+      "sha256_git": "791a62a5b214e42251d964579e217bfcc704dad49b912cd1221f71d483540ca8",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/paleta/paleta_bosque_v1.json",
+      "sha256_fornecido": "9678161f917103d1d177f9af8b965c664f153ae502de35dcb63af8917081742b",
+      "sha256_git": "9678161f917103d1d177f9af8b965c664f153ae502de35dcb63af8917081742b",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/referencias/inimigos_v2/folhas/folha_inimigos_v2_1_sentinela_maceiro_devorarraiz.png",
+      "sha256_fornecido": "fa7638f5b4a5aa6a69483d876c10b42c53b2ac2306c5f8f1fbcb24e297e56a19",
+      "sha256_git": "fa7638f5b4a5aa6a69483d876c10b42c53b2ac2306c5f8f1fbcb24e297e56a19",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/referencias/inimigos_v2/folhas/folha_inimigos_v2_2_mascara_sino_acolito.png",
+      "sha256_fornecido": "355144442201ff17712b4620c70e90e2926120622da54c6c25e17d9f7115f085",
+      "sha256_git": "355144442201ff17712b4620c70e90e2926120622da54c6c25e17d9f7115f085",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/referencias/inimigos_v2/folhas/folha_inimigos_v2_3_peregrino_corvo_raiz.png",
+      "sha256_fornecido": "624700b1da1fc0a269faf4e4d56df63e4baf41189839aa470b949a04e0c94f32",
+      "sha256_git": "624700b1da1fc0a269faf4e4d56df63e4baf41189839aa470b949a04e0c94f32",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/referencias/inimigos_v2/folhas/folha_inimigos_v2_4_lenhador_abadessa_purificado.png",
+      "sha256_fornecido": "41440b23743cc927e37cf6179499931831a77c89bd66a159d73fff1f4078048f",
+      "sha256_git": "41440b23743cc927e37cf6179499931831a77c89bd66a159d73fff1f4078048f",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/abadessa_enraizada.png",
+      "sha256_fornecido": "d7ef4d24152727f64c250847ef1ca5097fd2a8382c6a03335fa9208bcfb2f7a2",
+      "sha256_git": "d7ef4d24152727f64c250847ef1ca5097fd2a8382c6a03335fa9208bcfb2f7a2",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/acolito_do_lamento.png",
+      "sha256_fornecido": "c4c1655c730b78fba86111c5c5518e71605e7fc632c5a0e14135ef4f0090684e",
+      "sha256_git": "c4c1655c730b78fba86111c5c5518e71605e7fc632c5a0e14135ef4f0090684e",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/corvo_da_praga.png",
+      "sha256_fornecido": "7d107cf44e516b1ac262ea0f7fc87077dbeb4f92abd7ea5bb19e2ef52f8453a8",
+      "sha256_git": "7d107cf44e516b1ac262ea0f7fc87077dbeb4f92abd7ea5bb19e2ef52f8453a8",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/devorarraiz.png",
+      "sha256_fornecido": "f9b34847de32c1e0a4b70f2b60e6373971463a7263a3090fb9fa2c0602b199a4",
+      "sha256_git": "f9b34847de32c1e0a4b70f2b60e6373971463a7263a3090fb9fa2c0602b199a4",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/lenhador_corrompido.png",
+      "sha256_fornecido": "e8436d97983423788906e5c7e1ab216cc4ed2962a04b40848fc6aa6da33c9d2b",
+      "sha256_git": "e8436d97983423788906e5c7e1ab216cc4ed2962a04b40848fc6aa6da33c9d2b",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/lenhador_purificado.png",
+      "sha256_fornecido": "fa6866bf78d1682de80ebb58d663b94516a0a7ecc688b12509b016a775c16445",
+      "sha256_git": "fa6866bf78d1682de80ebb58d663b94516a0a7ecc688b12509b016a775c16445",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/maceiro_profanado.png",
+      "sha256_fornecido": "0aaf4f6c5ff876b76f12a679f5c79e9bc52b6c1bebcd64309e2ad680ce3bd6c3",
+      "sha256_git": "0aaf4f6c5ff876b76f12a679f5c79e9bc52b6c1bebcd64309e2ad680ce3bd6c3",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/mascara_vazia.png",
+      "sha256_fornecido": "28b60d50ef5bc387b2eafe7bb9bb7a78c50ab66e7de0587b829dbf45833fbd75",
+      "sha256_git": "28b60d50ef5bc387b2eafe7bb9bb7a78c50ab66e7de0587b829dbf45833fbd75",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/peregrino_corrompido.png",
+      "sha256_fornecido": "e23e8b68af7864bb2f43a2426145c06bfc573c748149102e0f57edc41d021a85",
+      "sha256_git": "e23e8b68af7864bb2f43a2426145c06bfc573c748149102e0f57edc41d021a85",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/raiz_faminta.png",
+      "sha256_fornecido": "3509ccaaff683e7303e8eda4844cd901f6aebc1f7f2b4c568e684e5947cd716e",
+      "sha256_git": "3509ccaaff683e7303e8eda4844cd901f6aebc1f7f2b4c568e684e5947cd716e",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/sentinela_do_sepulcro.png",
+      "sha256_fornecido": "beef5701f4c981b1b0cbf68e28701ffe3b07799348e7650f9f24d0eca517766b",
+      "sha256_git": "beef5701f4c981b1b0cbf68e28701ffe3b07799348e7650f9f24d0eca517766b",
+      "identico": true
+    },
+    {
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/sino_funebre.png",
+      "sha256_fornecido": "d55465db5650a2690e0122faab8f234849225e1101b41e156b9cc7290f2e8a60",
+      "sha256_git": "d55465db5650a2690e0122faab8f234849225e1101b41e156b9cc7290f2e8a60",
+      "identico": true
+    },
+    {
+      "arquivo": "codex/MANUAL_CODEX.md",
+      "sha256_fornecido": "a84c5ebe20148d724399656e26bdd8dff69d6da06d847a2962df3182cb710aa8",
+      "sha256_git": "a84c5ebe20148d724399656e26bdd8dff69d6da06d847a2962df3182cb710aa8",
+      "identico": true
+    }
+  ],
+  "escopo": [
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/.gdignore",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/ferramentas/reduzir_referencia.py",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/abadessa_enraizada_x1.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/abadessa_enraizada_x1_previa_x4.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/acolito_do_lamento_x1.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/acolito_do_lamento_x1_previa_x4.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/alturas_alvo.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/corvo_da_praga_x1.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/corvo_da_praga_x1_previa_x4.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/devorarraiz_x1.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/devorarraiz_x1_previa_x4.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/escala_A_comuns_x1.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/escala_A_comuns_x3.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/escala_B_pesados_x1.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/escala_B_pesados_x3.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/escala_C_chefes_x1.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/escala_C_chefes_x3.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/lenhador_corrompido_x1.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/lenhador_corrompido_x1_previa_x4.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/lenhador_purificado_x1.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/lenhador_purificado_x1_previa_x4.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/maceiro_profanado_x1.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/maceiro_profanado_x1_previa_x4.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/mascara_vazia_x1.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/mascara_vazia_x1_previa_x4.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/peregrino_corrompido_x1.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/peregrino_corrompido_x1_previa_x4.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/raiz_faminta_x1.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/raiz_faminta_x1_previa_x4.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/sentinela_do_sepulcro_x1.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/sentinela_do_sepulcro_x1_previa_x4.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/sino_funebre_x1.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/inimigos_mestre_x1/sino_funebre_x1_previa_x4.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/paleta/paleta_bosque_v1.gpl",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/paleta/paleta_bosque_v1.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/referencias/inimigos_v2/folhas/folha_inimigos_v2_1_sentinela_maceiro_devorarraiz.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/referencias/inimigos_v2/folhas/folha_inimigos_v2_2_mascara_sino_acolito.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/referencias/inimigos_v2/folhas/folha_inimigos_v2_3_peregrino_corvo_raiz.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/referencias/inimigos_v2/folhas/folha_inimigos_v2_4_lenhador_abadessa_purificado.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/abadessa_enraizada.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/acolito_do_lamento.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/corvo_da_praga.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/devorarraiz.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/lenhador_corrompido.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/lenhador_purificado.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/maceiro_profanado.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/mascara_vazia.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/peregrino_corrompido.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/raiz_faminta.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/sentinela_do_sepulcro.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "arte_fonte/referencias/inimigos_v2/recortes/sino_funebre.png",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/MANUAL_CODEX.md",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/RELATORIO_REGISTRO_46.md",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/CONFERENCIA_ARTE_FONTE.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/GIT_antes.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/INVENTARIO_ARTE_FONTE.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/PRESERVACAO_antes.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/PRESERVACAO_depois.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/PRESERVACAO_resultado.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/REPRODUCAO_dependencia_inicial.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/REPRODUCAO_lote.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/REPRODUCAO_resultado.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/TESTES_antes.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/TESTES_comparacao.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/TESTES_depois.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/MEDIDAS.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/MEDIDAS_F3.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/MEDIDAS_SALA.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/MEDIDAS_depois.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/REGRESSAO_F2_MEDIDAS_depois.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_approved_bosque_surfaces.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_bosque_initial_step.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_bosque_room.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_bosque_trecho_01_playable.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_carrasco_gif_test.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_integracao_p40_f1.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_integracao_p40_f2.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_integracao_p40_f3.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_integracao_p40_f4.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_integracao_p40_f5.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_integracao_p40_f6.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_milestone2.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_milestone3.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_milestone4.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_milestone4_1.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_milestone5.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_milestone6.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_milestone7.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_milestone7_1.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_milestone8.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_milestone8_1.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_milestone8_2.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_milestone8_3.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_vertical_second_encounter.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/antes/verify_vertical_slice.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/MEDIDAS.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/MEDIDAS_F3.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/MEDIDAS_SALA.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/MEDIDAS_depois.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/REGRESSAO_F2_MEDIDAS_depois.json",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_approved_bosque_surfaces.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_bosque_initial_step.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_bosque_room.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_bosque_trecho_01_playable.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_carrasco_gif_test.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_integracao_p40_f1.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_integracao_p40_f2.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_integracao_p40_f3.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_integracao_p40_f4.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_integracao_p40_f5.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_integracao_p40_f6.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_milestone2.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_milestone3.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_milestone4.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_milestone4_1.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_milestone5.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_milestone6.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_milestone7.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_milestone7_1.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_milestone8.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_milestone8_1.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_milestone8_2.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_milestone8_3.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_vertical_second_encounter.gd.txt",
+      "escopo_correto": true
+    },
+    {
+      "status": "A",
+      "arquivo": "codex/evidencias_registro_46/depois/verify_vertical_slice.gd.txt",
+      "escopo_correto": true
+    }
+  ]
+}

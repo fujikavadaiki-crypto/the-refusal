@@ -1,0 +1,380 @@
+{
+  "png_validos": 46,
+  "folhas_v2": 4,
+  "recortes": 12,
+  "comparativos_de_escala": 6,
+  "gdignore_presente": true,
+  "gdignore_bytes": 0,
+  "paleta_gpl_igual_json": true,
+  "ferramenta_sintaxe_valida": true,
+  "png": [
+    {
+      "arquivo": "inimigos_mestre_x1/abadessa_enraizada_x1.png",
+      "dimensoes": [
+        170,
+        168
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/abadessa_enraizada_x1_previa_x4.png",
+      "dimensoes": [
+        712,
+        704
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/acolito_do_lamento_x1.png",
+      "dimensoes": [
+        49,
+        58
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/acolito_do_lamento_x1_previa_x4.png",
+      "dimensoes": [
+        228,
+        264
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/corvo_da_praga_x1.png",
+      "dimensoes": [
+        61,
+        40
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/corvo_da_praga_x1_previa_x4.png",
+      "dimensoes": [
+        276,
+        192
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/devorarraiz_x1.png",
+      "dimensoes": [
+        125,
+        72
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/devorarraiz_x1_previa_x4.png",
+      "dimensoes": [
+        532,
+        320
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/escala_A_comuns_x1.png",
+      "dimensoes": [
+        451,
+        88
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/escala_A_comuns_x3.png",
+      "dimensoes": [
+        1353,
+        264
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/escala_B_pesados_x1.png",
+      "dimensoes": [
+        502,
+        118
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/escala_B_pesados_x3.png",
+      "dimensoes": [
+        1506,
+        354
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/escala_C_chefes_x1.png",
+      "dimensoes": [
+        488,
+        198
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/escala_C_chefes_x3.png",
+      "dimensoes": [
+        976,
+        396
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/lenhador_corrompido_x1.png",
+      "dimensoes": [
+        221,
+        150
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/lenhador_corrompido_x1_previa_x4.png",
+      "dimensoes": [
+        916,
+        632
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/lenhador_purificado_x1.png",
+      "dimensoes": [
+        51,
+        54
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/lenhador_purificado_x1_previa_x4.png",
+      "dimensoes": [
+        236,
+        248
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/maceiro_profanado_x1.png",
+      "dimensoes": [
+        84,
+        72
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/maceiro_profanado_x1_previa_x4.png",
+      "dimensoes": [
+        368,
+        320
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/mascara_vazia_x1.png",
+      "dimensoes": [
+        45,
+        58
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/mascara_vazia_x1_previa_x4.png",
+      "dimensoes": [
+        212,
+        264
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/peregrino_corrompido_x1.png",
+      "dimensoes": [
+        56,
+        52
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/peregrino_corrompido_x1_previa_x4.png",
+      "dimensoes": [
+        256,
+        240
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/raiz_faminta_x1.png",
+      "dimensoes": [
+        52,
+        38
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/raiz_faminta_x1_previa_x4.png",
+      "dimensoes": [
+        240,
+        184
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/sentinela_do_sepulcro_x1.png",
+      "dimensoes": [
+        82,
+        70
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/sentinela_do_sepulcro_x1_previa_x4.png",
+      "dimensoes": [
+        360,
+        312
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/sino_funebre_x1.png",
+      "dimensoes": [
+        94,
+        88
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "inimigos_mestre_x1/sino_funebre_x1_previa_x4.png",
+      "dimensoes": [
+        408,
+        384
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "referencias/inimigos_v2/folhas/folha_inimigos_v2_1_sentinela_maceiro_devorarraiz.png",
+      "dimensoes": [
+        2172,
+        724
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "referencias/inimigos_v2/folhas/folha_inimigos_v2_2_mascara_sino_acolito.png",
+      "dimensoes": [
+        1774,
+        887
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "referencias/inimigos_v2/folhas/folha_inimigos_v2_3_peregrino_corvo_raiz.png",
+      "dimensoes": [
+        2172,
+        724
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "referencias/inimigos_v2/folhas/folha_inimigos_v2_4_lenhador_abadessa_purificado.png",
+      "dimensoes": [
+        2172,
+        724
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "referencias/inimigos_v2/recortes/abadessa_enraizada.png",
+      "dimensoes": [
+        647,
+        638
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "referencias/inimigos_v2/recortes/acolito_do_lamento.png",
+      "dimensoes": [
+        520,
+        616
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "referencias/inimigos_v2/recortes/corvo_da_praga.png",
+      "dimensoes": [
+        803,
+        528
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "referencias/inimigos_v2/recortes/devorarraiz.png",
+      "dimensoes": [
+        774,
+        447
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "referencias/inimigos_v2/recortes/lenhador_corrompido.png",
+      "dimensoes": [
+        916,
+        621
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "referencias/inimigos_v2/recortes/lenhador_purificado.png",
+      "dimensoes": [
+        395,
+        417
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "referencias/inimigos_v2/recortes/maceiro_profanado.png",
+      "dimensoes": [
+        642,
+        552
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "referencias/inimigos_v2/recortes/mascara_vazia.png",
+      "dimensoes": [
+        470,
+        607
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "referencias/inimigos_v2/recortes/peregrino_corrompido.png",
+      "dimensoes": [
+        573,
+        529
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "referencias/inimigos_v2/recortes/raiz_faminta.png",
+      "dimensoes": [
+        569,
+        413
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "referencias/inimigos_v2/recortes/sentinela_do_sepulcro.png",
+      "dimensoes": [
+        622,
+        533
+      ],
+      "modo": "RGBA"
+    },
+    {
+      "arquivo": "referencias/inimigos_v2/recortes/sino_funebre.png",
+      "dimensoes": [
+        631,
+        588
+      ],
+      "modo": "RGBA"
+    }
+  ]
+}

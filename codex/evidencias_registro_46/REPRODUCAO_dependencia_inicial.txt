@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\daiki\Documents\Codex\The Refusal\integracao-p40\arte_fonte\ferramentas\reduzir_referencia.py", line 29, in <module>
+    from scipy import ndimage as ndi
+ImportError: cannot import name 'ndimage' from 'scipy' (unknown location)
