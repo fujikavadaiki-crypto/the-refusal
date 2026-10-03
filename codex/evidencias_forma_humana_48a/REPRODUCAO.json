@@ -1,0 +1,6 @@
+{
+  "reducao_reproduzida": true,
+  "mestre_reproduzido": true,
+  "ferramenta_original_intacta": true,
+  "dependencia_scipy": "1.18.1, isolada em .godot/forma_humana_48a/deps"
+}

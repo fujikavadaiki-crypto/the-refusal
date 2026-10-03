@@ -1,0 +1,31 @@
+{
+  "previa": true,
+  "arte_instalada": false,
+  "captura_base": "codex/evidencias_peregrino_47c/marcha_na_sala_x1.png",
+  "captura_sha256": "4c0e69c6e47f5595f7c6aa5e9dd43a62865707182d8db91e420f92b5f5900815",
+  "zoom_captura": 0.9,
+  "escala_da_montagem": 1,
+  "ancora_tela": [
+    430,
+    309
+  ],
+  "posicao_inteira": [
+    406,
+    259
+  ],
+  "formula_chao": "GROUND_TOPS [610,414]-[720,417]; ART_X .6154, ART_Y .6156, offset Y 86",
+  "alinhamento_escala": {
+    "humana": [
+      24,
+      50
+    ],
+    "carrasco": [
+      25,
+      50
+    ],
+    "peregrino": [
+      26,
+      52
+    ]
+  }
+}

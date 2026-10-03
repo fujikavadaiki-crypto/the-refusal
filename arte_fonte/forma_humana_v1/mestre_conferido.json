@@ -1,0 +1,245 @@
+{
+  "aprovado": true,
+  "arquivo": "arte_fonte/forma_humana_v1/forma_humana_mestre_x1.png",
+  "sha256": "c7f501c30f0f5dd2201ac8651a7c1a4c513500c5a4b90122a0b3ad6089dcf856",
+  "canvas_px": [
+    50,
+    52
+  ],
+  "altura_cabelo_solas_px": 48,
+  "bbox_alpha": [
+    2,
+    2,
+    48,
+    50
+  ],
+  "ancora_pes": [
+    24,
+    50
+  ],
+  "chao_apos_sola": 50,
+  "olhando_para": "direita",
+  "alpha": [
+    0,
+    255
+  ],
+  "componentes": 1,
+  "pixels_isolados_sem_mesma_cor_em_8_vizinhos": 0,
+  "botas_distintas": 2,
+  "cores_usadas": 23,
+  "paleta": "paleta_bosque_v1",
+  "cores": [
+    {
+      "id": 0,
+      "rgb": [
+        22,
+        19,
+        21
+      ],
+      "pixels": 34
+    },
+    {
+      "id": 1,
+      "rgb": [
+        38,
+        31,
+        33
+      ],
+      "pixels": 99
+    },
+    {
+      "id": 2,
+      "rgb": [
+        59,
+        47,
+        49
+      ],
+      "pixels": 98
+    },
+    {
+      "id": 3,
+      "rgb": [
+        7,
+        4,
+        5
+      ],
+      "pixels": 246
+    },
+    {
+      "id": 5,
+      "rgb": [
+        20,
+        4,
+        4
+      ],
+      "pixels": 2
+    },
+    {
+      "id": 7,
+      "rgb": [
+        34,
+        17,
+        17
+      ],
+      "pixels": 46
+    },
+    {
+      "id": 8,
+      "rgb": [
+        60,
+        38,
+        37
+      ],
+      "pixels": 109
+    },
+    {
+      "id": 10,
+      "rgb": [
+        85,
+        55,
+        53
+      ],
+      "pixels": 98
+    },
+    {
+      "id": 11,
+      "rgb": [
+        99,
+        65,
+        58
+      ],
+      "pixels": 102
+    },
+    {
+      "id": 12,
+      "rgb": [
+        118,
+        75,
+        70
+      ],
+      "pixels": 33
+    },
+    {
+      "id": 14,
+      "rgb": [
+        88,
+        71,
+        72
+      ],
+      "pixels": 24
+    },
+    {
+      "id": 15,
+      "rgb": [
+        128,
+        107,
+        108
+      ],
+      "pixels": 16
+    },
+    {
+      "id": 17,
+      "rgb": [
+        216,
+        186,
+        179
+      ],
+      "pixels": 4
+    },
+    {
+      "id": 18,
+      "rgb": [
+        243,
+        232,
+        224
+      ],
+      "pixels": 30
+    },
+    {
+      "id": 21,
+      "rgb": [
+        64,
+        11,
+        14
+      ],
+      "pixels": 5
+    },
+    {
+      "id": 25,
+      "rgb": [
+        110,
+        21,
+        26
+      ],
+      "pixels": 8
+    },
+    {
+      "id": 28,
+      "rgb": [
+        105,
+        35,
+        37
+      ],
+      "pixels": 2
+    },
+    {
+      "id": 29,
+      "rgb": [
+        88,
+        43,
+        37
+      ],
+      "pixels": 2
+    },
+    {
+      "id": 35,
+      "rgb": [
+        188,
+        122,
+        101
+      ],
+      "pixels": 40
+    },
+    {
+      "id": 37,
+      "rgb": [
+        231,
+        157,
+        131
+      ],
+      "pixels": 33
+    },
+    {
+      "id": 39,
+      "rgb": [
+        242,
+        199,
+        174
+      ],
+      "pixels": 9
+    },
+    {
+      "id": 56,
+      "rgb": [
+        171,
+        120,
+        74
+      ],
+      "pixels": 6
+    },
+    {
+      "id": 61,
+      "rgb": [
+        198,
+        152,
+        82
+      ],
+      "pixels": 4
+    }
+  ],
+  "arte_instalada": false,
+  "rig_animacoes_pacote_criados": false,
+  "conceito_sha256": "a06f367146b26b5e77a635c4af63d8510b152dc2ea6f3f5fd566c7afa2e7c279",
+  "prompt_sha256": "2b87ac1e4f6f85a9aebb08d26069d45b48787ca196ae94e25af4c5d9ea026b1b",
+  "reducao_automatica_sha256": "ee01e010f0f29113be199b5720941effd4a9b27778b1345849a8473a1a0ac5ed"
+}

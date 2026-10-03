@@ -1,0 +1,26 @@
+TAREFA 4.8 — conceito estático da Forma Humana
+Modo: ferramenta integrada image_gen; fundo transparente.
+Referências somente para leitura:
+- C:/Users/daiki/Documents/Codex/carrasco_25d_test/referencias/elenco/elenco_formas_jogaveis_v2.png (identidade, canto superior esquerdo)
+- C:/Users/daiki/Documents/Codex/The Refusal/integracao-p40/arte_fonte/referencias/inimigos_v2/recortes/peregrino_corrompido.png (estilo)
+Escopo: uma imagem de conceito; não instalada no jogo.
+
+PROMPT EXATO:
+
+Use case: stylized-concept.
+Asset type: ONE static pixel-art character concept for the 2D game THE REFUSAL.
+
+Input images:
+1. Identity reference: use ONLY the young Human Form character in the UPPER LEFT of the character sheet. Ignore every other character and all lettering. Preserve his unmasked human identity, dark hair, dark cloak with the hood lowered behind his neck, brown leather clothes, belt, compact boots, and simple straight sword.
+2. Style reference ONLY: the Peregrino. Match its chibi proportions, large head with small body, muted materials, readable volume and shading in deliberate chunky pixel clusters. Do NOT transfer its skull, moss, vegetation, corruption, staff, bells, or hood covering the head.
+
+Primary request: create exactly one full-body young human male, strict side view facing RIGHT, in a calm neutral combat-ready stance. Head visibly larger, body small and agile. Dark tousled hair, uncovered living human face with a clearly readable nose and eye, warm muted skin. Dark charcoal cloak, hood visibly folded back behind the shoulders rather than worn. Matte brown leather tunic, belt with simple buckle, fitted trousers. Show BOTH compact, solid boots, with short rounded toes, distinct shafts, dark soles and a few light/shadow pixel clusters; feet staggered just enough for both to read.
+
+Hold one simple straight sword in a human hand ahead of the body, blade light gray, understated small guard, pointed diagonally forward/down to the right. Keep the sword, visible hands, and bent forearms clearly separated from the torso with transparent gaps, suitable for cutting into rig parts later. The blade must be straight and unobstructed. No exaggerated attack or motion.
+
+Style/medium: authentic coarse-grid game pixel art, crisp hard square pixel clusters, dark outline one logical pixel thick, limited matte brown and gray shades. Design detail and silhouette to remain readable at approximately 48 pixels of character height; use substantial pixel groups instead of fine noise or tiny decorative details. A clean enlarged nearest-neighbor presentation of the pixel grid is appropriate.
+Lighting: from ABOVE RIGHT, indicated only by discrete highlight and shadow pixel clusters.
+Composition: entire single character and entire sword centered with comfortable transparent margin; no cropping.
+Background: genuinely TRANSPARENT alpha.
+Constraints: ONLY the one stationary character and his sword. No text, labels, watermark, other characters, animation sheet, alternate views, scenery, floor, ground shadow, cast shadow, floating effects, motion streaks, glow, blur, smooth gradients, anti-aliased edges, mask, skull face, vegetable corruption, or long stretched boot tips. Preserve a youthful human appearance.
+
