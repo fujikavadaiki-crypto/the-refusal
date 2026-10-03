@@ -1,0 +1,9 @@
+{
+  "teste": "codex/testes/verify_integracao_p40_f4.gd",
+  "exit": 0,
+  "pass": 119,
+  "fail": 0,
+  "falhas": [],
+  "segundos": 3.42,
+  "aprovado": true
+}

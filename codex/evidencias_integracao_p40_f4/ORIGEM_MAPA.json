@@ -1,0 +1,195 @@
+{
+  "images": {
+    "reference_p40": {
+      "path": "C:\\Users\\daiki\\Documents\\Codex\\carrasco_25d_test\\jogavel\\prototipo_40\\assets\\teste\\fundo_congelado.png",
+      "sha256": "56bf78665821823c8d36f881aafa4e34a35c0ef6a85f43c709aa231aafae32a8",
+      "rgb_sha256": "ee96b5e87bb74bf522ce450f7a42a19f4d88038d086f08075e61dc95718a42ba",
+      "size": [
+        960,
+        540
+      ]
+    },
+    "frozen_A11": {
+      "path": "C:\\Users\\daiki\\Documents\\Codex\\carrasco_25d_test\\prova\\a1_inicio\\imagens\\A11_quadro_A11_960x540.png",
+      "sha256": "56bf78665821823c8d36f881aafa4e34a35c0ef6a85f43c709aa231aafae32a8",
+      "rgb_sha256": "ee96b5e87bb74bf522ce450f7a42a19f4d88038d086f08075e61dc95718a42ba",
+      "size": [
+        960,
+        540
+      ]
+    },
+    "delivery_R4": {
+      "path": "C:\\Users\\daiki\\Documents\\Codex\\carrasco_25d_test\\prova\\entrega_r4\\prova_R4_960x540.png",
+      "sha256": "135521653ee35e890133eabc1ae975bc660a381a1634dd612aa49fb8cd314dc7",
+      "rgb_sha256": "c047bbd81d3408d0f9e3317e89da6a31b15aeb2b35117e9f463e91bddfdad1b4",
+      "size": [
+        960,
+        540
+      ]
+    },
+    "integration_copy": {
+      "path": "C:\\Users\\daiki\\Documents\\Codex\\The Refusal\\integracao-p40\\assets\\biomes\\cemiterio\\fundo_congelado_p40.png",
+      "sha256": "56bf78665821823c8d36f881aafa4e34a35c0ef6a85f43c709aa231aafae32a8",
+      "rgb_sha256": "ee96b5e87bb74bf522ce450f7a42a19f4d88038d086f08075e61dc95718a42ba",
+      "size": [
+        960,
+        540
+      ]
+    }
+  },
+  "byte_identical_p40_A11_copy": true,
+  "R4_is_different": true,
+  "background_decision": "Preservado exatamente o mapa usado no P40, conforme decisão principal do pedido; identificação correta A1.1, não R4 original. Divergência foi apresentada ao usuário.",
+  "geometry": {
+    "GROUND_TOPS": [
+      [
+        [
+          0,
+          320
+        ],
+        [
+          80,
+          321
+        ],
+        [
+          160,
+          322
+        ],
+        [
+          166,
+          322
+        ],
+        [
+          166,
+          390
+        ],
+        [
+          340,
+          390
+        ]
+      ],
+      [
+        [
+          340,
+          390
+        ],
+        [
+          410,
+          401
+        ],
+        [
+          500,
+          410
+        ],
+        [
+          610,
+          414
+        ],
+        [
+          720,
+          417
+        ],
+        [
+          850,
+          420
+        ]
+      ],
+      [
+        [
+          850,
+          420
+        ],
+        [
+          940,
+          423
+        ],
+        [
+          1050,
+          425
+        ],
+        [
+          1150,
+          433
+        ],
+        [
+          1250,
+          445
+        ],
+        [
+          1340,
+          447
+        ]
+      ],
+      [
+        [
+          1340,
+          447
+        ],
+        [
+          1430,
+          444
+        ],
+        [
+          1500,
+          442
+        ],
+        [
+          1568,
+          445
+        ]
+      ]
+    ],
+    "PLATFORMS": [
+      [
+        718,
+        820,
+        316
+      ],
+      [
+        945,
+        1070,
+        378
+      ],
+      [
+        1245,
+        1300,
+        318
+      ],
+      [
+        1352,
+        1435,
+        345
+      ]
+    ],
+    "PLATFORM_NAMES": [
+      "pedra flutuante",
+      "bloco da ruína",
+      "coluna",
+      "pilar"
+    ]
+  },
+  "geometry_identical_p40": true,
+  "screen_px_per_m": 32,
+  "camera_zoom": 0.9,
+  "room_world_translation": [
+    0,
+    -150
+  ],
+  "translation_reason": "Câmera e geometria juntas: conserva projeção ×1 e atende limites absolutos 92–186 do Corvo original, sem editar IA/tuning.",
+  "background_atlas_patch": {
+    "target": [
+      162,
+      224,
+      39,
+      69
+    ],
+    "source": [
+      203,
+      224,
+      39,
+      69
+    ],
+    "same_as_p40": true
+  },
+  "reference_source_sha256": "cef2938fe48c6acec0af7773a3bf84db714d5f80cdac9285d3319f12fa616dc2"
+}

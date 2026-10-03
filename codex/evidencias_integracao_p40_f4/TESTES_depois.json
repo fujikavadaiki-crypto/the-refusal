@@ -1,0 +1,204 @@
+[
+  {
+    "teste": "tests/verify_approved_bosque_surfaces.gd",
+    "exit": 0,
+    "pass": 0,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 7.64,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_bosque_initial_step.gd",
+    "exit": 0,
+    "pass": 0,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 2.92,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_bosque_room.gd",
+    "exit": 0,
+    "pass": 0,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 9.05,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_bosque_trecho_01_playable.gd",
+    "exit": 0,
+    "pass": 0,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 10.55,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_carrasco_gif_test.gd",
+    "exit": -2,
+    "pass": 1,
+    "fail": 0,
+    "falhas": [
+      "SCRIPT ERROR: Invalid access to property or key 'texture_filter' on a base object of type 'null instance'."
+    ],
+    "segundos": 4.01,
+    "aprovado": false
+  },
+  {
+    "teste": "tests/verify_milestone2.gd",
+    "exit": 0,
+    "pass": 33,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 21.08,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone3.gd",
+    "exit": 0,
+    "pass": 68,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 14.75,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone4.gd",
+    "exit": 0,
+    "pass": 43,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 134.31,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone4_1.gd",
+    "exit": 0,
+    "pass": 59,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 11.34,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone5.gd",
+    "exit": 0,
+    "pass": 50,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 204.52,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone6.gd",
+    "exit": 0,
+    "pass": 51,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 198.2,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone7.gd",
+    "exit": 0,
+    "pass": 43,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 303.8,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone7_1.gd",
+    "exit": 0,
+    "pass": 18,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 10.34,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone8.gd",
+    "exit": 0,
+    "pass": 66,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 5.16,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone8_1.gd",
+    "exit": 0,
+    "pass": 59,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 9.23,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_milestone8_2.gd",
+    "exit": -2,
+    "pass": 1,
+    "fail": 0,
+    "falhas": [
+      "SCRIPT ERROR: Invalid access to property or key 'sprite' on a base object of type 'Node2D (carrasco_base_official.gd)'."
+    ],
+    "segundos": 3.92,
+    "aprovado": false
+  },
+  {
+    "teste": "tests/verify_milestone8_3.gd",
+    "exit": 0,
+    "pass": 56,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 1.62,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_vertical_second_encounter.gd",
+    "exit": 0,
+    "pass": 7,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 8.55,
+    "aprovado": true
+  },
+  {
+    "teste": "tests/verify_vertical_slice.gd",
+    "exit": 0,
+    "pass": 13,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 27.91,
+    "aprovado": true
+  },
+  {
+    "teste": "codex/testes/verify_integracao_p40_f1.gd",
+    "exit": 0,
+    "pass": 228,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 13.86,
+    "aprovado": true
+  },
+  {
+    "teste": "codex/testes/verify_integracao_p40_f2.gd",
+    "exit": 0,
+    "pass": 85,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 39.81,
+    "aprovado": true
+  },
+  {
+    "teste": "codex/testes/verify_integracao_p40_f3.gd",
+    "exit": 0,
+    "pass": 795,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 6.33,
+    "aprovado": true
+  }
+]

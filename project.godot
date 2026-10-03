@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="The Refusal"
-run/main_scene="res://scenes/biomes/forest/bosque_room_aprovada.tscn"
+run/main_scene="res://scenes/biomes/cemiterio/sala_cemiterio.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 HitStop="*res://scripts/combat/hit_stop.gd"
+IntegrationRooms="*res://scripts/debug/integration_rooms.gd"
 
 [display]
 

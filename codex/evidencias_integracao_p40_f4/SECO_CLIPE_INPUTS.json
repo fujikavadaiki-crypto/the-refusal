@@ -1,0 +1,311 @@
+[
+  {
+    "event": "start",
+    "frame": 0,
+    "scene": "res://scenes/biomes/cemiterio/sala_cemiterio.tscn"
+  },
+  {
+    "action": "move_right",
+    "frame": 35,
+    "pressed": true
+  },
+  {
+    "action": "jump",
+    "frame": 70,
+    "pressed": true
+  },
+  {
+    "action": "jump",
+    "frame": 80,
+    "pressed": false
+  },
+  {
+    "action": "dodge",
+    "frame": 88,
+    "pressed": true
+  },
+  {
+    "action": "dodge",
+    "frame": 90,
+    "pressed": false
+  },
+  {
+    "action": "move_right",
+    "frame": 200,
+    "pressed": false
+  },
+  {
+    "action": "parry",
+    "frame": 205,
+    "pressed": true
+  },
+  {
+    "action": "parry",
+    "frame": 207,
+    "pressed": false
+  },
+  {
+    "action": "move_left",
+    "frame": 230,
+    "pressed": true
+  },
+  {
+    "action": "move_left",
+    "frame": 321,
+    "pressed": false
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 321,
+    "pressed": true
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 323,
+    "pressed": false
+  },
+  {
+    "active_frame": 4,
+    "attack": "carrasco_heavy",
+    "damage": 70,
+    "event": "hit",
+    "frame": 344,
+    "target": "Peregrino"
+  },
+  {
+    "action": "attack_light",
+    "frame": 391,
+    "pressed": true
+  },
+  {
+    "action": "attack_light",
+    "frame": 393,
+    "pressed": false
+  },
+  {
+    "active_frame": 2,
+    "attack": "carrasco_light_1",
+    "damage": 30,
+    "event": "hit",
+    "frame": 399,
+    "target": "Peregrino"
+  },
+  {
+    "event": "next_encounter",
+    "frame": 600,
+    "player_position": [
+      771.811401367188,
+      340.732971191406
+    ],
+    "target": "Corvo"
+  },
+  {
+    "action": "move_right",
+    "frame": 600,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 624,
+    "pressed": false
+  },
+  {
+    "action": "move_right",
+    "frame": 644,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 646,
+    "pressed": false
+  },
+  {
+    "action": "move_right",
+    "frame": 648,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 650,
+    "pressed": false
+  },
+  {
+    "action": "jump",
+    "frame": 650,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 652,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 654,
+    "pressed": false
+  },
+  {
+    "action": "move_right",
+    "frame": 655,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 656,
+    "pressed": false
+  },
+  {
+    "action": "move_right",
+    "frame": 658,
+    "pressed": true
+  },
+  {
+    "action": "jump",
+    "frame": 660,
+    "pressed": false
+  },
+  {
+    "action": "move_right",
+    "frame": 661,
+    "pressed": false
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 664,
+    "pressed": true
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 666,
+    "pressed": false
+  },
+  {
+    "active_frame": 3,
+    "attack": "carrasco_air_heavy",
+    "damage": 62,
+    "event": "hit",
+    "frame": 682,
+    "target": "Corvo"
+  },
+  {
+    "action": "move_right",
+    "frame": 714,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 722,
+    "pressed": false
+  },
+  {
+    "action": "attack_light",
+    "frame": 750,
+    "pressed": true
+  },
+  {
+    "action": "attack_light",
+    "frame": 752,
+    "pressed": false
+  },
+  {
+    "active_frame": 2,
+    "attack": "carrasco_light_1",
+    "damage": 3,
+    "event": "hit",
+    "frame": 758,
+    "target": "Corvo"
+  },
+  {
+    "event": "next_encounter",
+    "frame": 1200,
+    "player_position": [
+      749.148498535156,
+      338.919342041016
+    ],
+    "target": "Raiz"
+  },
+  {
+    "action": "move_right",
+    "frame": 1200,
+    "pressed": true
+  },
+  {
+    "action": "move_right",
+    "frame": 1223,
+    "pressed": false
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 1250,
+    "pressed": true
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 1252,
+    "pressed": false
+  },
+  {
+    "action": "attack_light",
+    "frame": 1320,
+    "pressed": true
+  },
+  {
+    "action": "attack_light",
+    "frame": 1322,
+    "pressed": false
+  },
+  {
+    "active_frame": 2,
+    "attack": "carrasco_light_1",
+    "damage": 36,
+    "event": "hit",
+    "frame": 1328,
+    "target": "Raiz"
+  },
+  {
+    "action": "attack_light",
+    "frame": 1343,
+    "pressed": true
+  },
+  {
+    "action": "attack_light",
+    "frame": 1345,
+    "pressed": false
+  },
+  {
+    "active_frame": 3,
+    "attack": "carrasco_light_2",
+    "damage": 41,
+    "event": "hit",
+    "frame": 1361,
+    "target": "Raiz"
+  },
+  {
+    "action": "attack_light",
+    "frame": 1368,
+    "pressed": true
+  },
+  {
+    "action": "attack_light",
+    "frame": 1370,
+    "pressed": false
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 1420,
+    "pressed": true
+  },
+  {
+    "action": "attack_heavy",
+    "frame": 1490,
+    "pressed": false
+  },
+  {
+    "active_frame": 2,
+    "attack": "carrasco_charged_heavy",
+    "damage": 8,
+    "event": "hit",
+    "frame": 1501,
+    "target": "Raiz"
+  }
+]

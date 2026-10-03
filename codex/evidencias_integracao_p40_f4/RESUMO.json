@@ -1,0 +1,117 @@
+{
+  "suites": 22,
+  "passed_before": 20,
+  "passed_after": 20,
+  "assertions_before": 1676,
+  "assertions_after": 1676,
+  "new_suite": {
+    "teste": "codex/testes/verify_integracao_p40_f4.gd",
+    "exit": 0,
+    "pass": 119,
+    "fail": 0,
+    "falhas": [],
+    "segundos": 3.42,
+    "aprovado": true
+  },
+  "preexisting_failures": [
+    {
+      "teste": "tests/verify_carrasco_gif_test.gd",
+      "exit": -2,
+      "pass": 1,
+      "fail": 0,
+      "falhas": [
+        "SCRIPT ERROR: Invalid access to property or key 'texture_filter' on a base object of type 'null instance'."
+      ],
+      "segundos": 3.92,
+      "aprovado": false
+    },
+    {
+      "teste": "tests/verify_milestone8_2.gd",
+      "exit": -2,
+      "pass": 1,
+      "fail": 0,
+      "falhas": [
+        "SCRIPT ERROR: Invalid access to property or key 'sprite' on a base object of type 'Node2D (carrasco_base_official.gd)'."
+      ],
+      "segundos": 3.92,
+      "aprovado": false
+    }
+  ],
+  "new_failures": [],
+  "sources_preserved": {
+    "main_preservado": true,
+    "checkout_head_preservado": true,
+    "checkout_status_preservado": true,
+    "alteracoes": {
+      "reference_p40": [],
+      "prova": [],
+      "primary_checkout": [],
+      "bosque_scenes": [],
+      "bosque_scripts": [],
+      "enemy_scenes": [],
+      "enemy_scripts": [],
+      "enemy_tuning": [],
+      "attacks": [],
+      "pequeno_v34A": []
+    },
+    "arquivos": {
+      "reference_p40": 1583,
+      "prova": 1550,
+      "primary_checkout": 770,
+      "bosque_scenes": 7,
+      "bosque_scripts": 41,
+      "enemy_scenes": 4,
+      "enemy_scripts": 28,
+      "enemy_tuning": 3,
+      "attacks": 29,
+      "pequeno_v34A": 407
+    }
+  },
+  "capture": {
+    "dry_run": false,
+    "duration_s": 30.0,
+    "fps": 30,
+    "frames": 900,
+    "method": "Inputs programados; IA e dano reais, jogador reposicionado entre 3 encontros de 10 s, sem ajuste de IA ou dano artificial; hitstop em relógio virtual 60 Hz só na exportação.",
+    "real_combat_verified": true,
+    "stats": {
+      "animations": {
+        "air_heavy": 49,
+        "attack_exit": 24,
+        "charge_full": 11,
+        "charge_loop": 52,
+        "charge_start": 11,
+        "charged_heavy": 52,
+        "dash_ar": 20,
+        "fall_loop": 21,
+        "heavy": 102,
+        "hurt": 48,
+        "idle": 930,
+        "jump_up": 32,
+        "land": 6,
+        "light1": 90,
+        "light2": 34,
+        "parry": 22,
+        "run": 257,
+        "run_start": 30,
+        "run_stop": 9
+      },
+      "enemy_deaths": [
+        "Peregrino",
+        "Corvo",
+        "Raiz"
+      ],
+      "hits": {
+        "Corvo": 2,
+        "Peregrino": 2,
+        "Raiz": 3
+      },
+      "incoming_damage": 44,
+      "max_ghosts": 3
+    },
+    "viewport": [
+      960,
+      540
+    ]
+  }
+}

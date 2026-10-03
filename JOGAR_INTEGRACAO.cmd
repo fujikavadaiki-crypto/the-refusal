@@ -15,5 +15,5 @@ set "TMP=%TEMP%"
 if not exist "%APPDATA%" mkdir "%APPDATA%"
 if not exist "%LOCALAPPDATA%" mkdir "%LOCALAPPDATA%"
 if not exist "%TEMP%" mkdir "%TEMP%"
-"%GODOT%" --path "%~dp0." res://scenes/biomes/forest/bosque_integracao_p40.tscn
+"%GODOT%" --path "%~dp0." res://scenes/biomes/cemiterio/sala_cemiterio.tscn
 endlocal
