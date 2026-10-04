@@ -1,0 +1,371 @@
+{
+  "somente_propostas_estaticas": true,
+  "quadros_propostos": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "poses": [
+    {
+      "quadro": 0,
+      "pose_corpo_original": {
+        "dx": 2,
+        "dy": 2,
+        "partes": {
+          "capa": {
+            "ang": 10,
+            "dy": 1
+          },
+          "braco_proximo": {
+            "dy": -3
+          },
+          "mao_espada": {
+            "dy": -3
+          }
+        }
+      },
+      "capa_origem_quadro": 7,
+      "pernas": [
+        {
+          "perna": "frente",
+          "variante": "perna_frente_f0",
+          "transformacao": {
+            "parte_base": "coxa_frente",
+            "dx": 1,
+            "dy": 1,
+            "ang": 0
+          },
+          "articulacoes": {
+            "quadril": [
+              44,
+              43
+            ],
+            "joelho": [
+              46,
+              48
+            ],
+            "tornozelo": [
+              50,
+              50
+            ],
+            "ponto_sola": [
+              52,
+              55
+            ]
+          },
+          "pe_original": [
+            10,
+            0
+          ],
+          "fase_original": 0,
+          "apoio_original": true
+        },
+        {
+          "perna": "tras",
+          "variante": "perna_tras_f0",
+          "transformacao": {
+            "parte_base": "coxa_tras",
+            "dx": 2,
+            "dy": 1,
+            "ang": 0
+          },
+          "articulacoes": {
+            "quadril": [
+              41,
+              43
+            ],
+            "joelho": [
+              37,
+              49
+            ],
+            "tornozelo": [
+              30,
+              47
+            ],
+            "ponto_sola": [
+              29,
+              52
+            ]
+          },
+          "pe_original": [
+            -10,
+            -3
+          ],
+          "fase_original": 4,
+          "apoio_original": false
+        }
+      ]
+    },
+    {
+      "quadro": 2,
+      "pose_corpo_original": {
+        "dx": 2,
+        "dy": 2,
+        "partes": {
+          "capa": {
+            "ang": 10,
+            "dy": -1
+          },
+          "braco_proximo": {
+            "dy": -3
+          },
+          "mao_espada": {
+            "dy": -3
+          }
+        }
+      },
+      "capa_origem_quadro": 1,
+      "pernas": [
+        {
+          "perna": "frente",
+          "variante": "perna_frente_f2",
+          "transformacao": {
+            "parte_base": "coxa_frente",
+            "dx": 1,
+            "dy": 1,
+            "ang": 0
+          },
+          "articulacoes": {
+            "quadril": [
+              44,
+              43
+            ],
+            "joelho": [
+              41,
+              47
+            ],
+            "tornozelo": [
+              40,
+              50
+            ],
+            "ponto_sola": [
+              40,
+              55
+            ]
+          },
+          "pe_original": [
+            -2,
+            0
+          ],
+          "fase_original": 2,
+          "apoio_original": true
+        },
+        {
+          "perna": "tras",
+          "variante": "perna_tras_f2",
+          "transformacao": {
+            "parte_base": "coxa_tras",
+            "dx": 2,
+            "dy": 1,
+            "ang": 0
+          },
+          "articulacoes": {
+            "quadril": [
+              41,
+              43
+            ],
+            "joelho": [
+              51,
+              47
+            ],
+            "tornozelo": [
+              43,
+              47
+            ],
+            "ponto_sola": [
+              45,
+              50
+            ]
+          },
+          "pe_original": [
+            6,
+            -5
+          ],
+          "fase_original": 6,
+          "apoio_original": false
+        }
+      ]
+    },
+    {
+      "quadro": 4,
+      "pose_corpo_original": {
+        "dx": 2,
+        "dy": 2,
+        "partes": {
+          "capa": {
+            "ang": 10,
+            "dy": 1
+          },
+          "braco_proximo": {
+            "dy": -3
+          },
+          "mao_espada": {
+            "dy": -3
+          }
+        }
+      },
+      "capa_origem_quadro": 3,
+      "pernas": [
+        {
+          "perna": "frente",
+          "variante": "perna_frente_f4",
+          "transformacao": {
+            "parte_base": "coxa_frente",
+            "dx": 1,
+            "dy": 1,
+            "ang": 0
+          },
+          "articulacoes": {
+            "quadril": [
+              44,
+              43
+            ],
+            "joelho": [
+              40,
+              49
+            ],
+            "tornozelo": [
+              33,
+              47
+            ],
+            "ponto_sola": [
+              32,
+              52
+            ]
+          },
+          "pe_original": [
+            -10,
+            -3
+          ],
+          "fase_original": 4,
+          "apoio_original": false
+        },
+        {
+          "perna": "tras",
+          "variante": "perna_tras_f4",
+          "transformacao": {
+            "parte_base": "coxa_tras",
+            "dx": 2,
+            "dy": 1,
+            "ang": 0
+          },
+          "articulacoes": {
+            "quadril": [
+              41,
+              43
+            ],
+            "joelho": [
+              43,
+              48
+            ],
+            "tornozelo": [
+              47,
+              50
+            ],
+            "ponto_sola": [
+              49,
+              55
+            ]
+          },
+          "pe_original": [
+            10,
+            0
+          ],
+          "fase_original": 0,
+          "apoio_original": true
+        }
+      ]
+    },
+    {
+      "quadro": 6,
+      "pose_corpo_original": {
+        "dx": 2,
+        "dy": 2,
+        "partes": {
+          "capa": {
+            "ang": 10,
+            "dy": -1
+          },
+          "braco_proximo": {
+            "dy": -3
+          },
+          "mao_espada": {
+            "dy": -3
+          }
+        }
+      },
+      "capa_origem_quadro": 5,
+      "pernas": [
+        {
+          "perna": "frente",
+          "variante": "perna_frente_f6",
+          "transformacao": {
+            "parte_base": "coxa_frente",
+            "dx": 1,
+            "dy": 1,
+            "ang": 0
+          },
+          "articulacoes": {
+            "quadril": [
+              44,
+              43
+            ],
+            "joelho": [
+              54,
+              47
+            ],
+            "tornozelo": [
+              46,
+              47
+            ],
+            "ponto_sola": [
+              48,
+              50
+            ]
+          },
+          "pe_original": [
+            6,
+            -5
+          ],
+          "fase_original": 6,
+          "apoio_original": false
+        },
+        {
+          "perna": "tras",
+          "variante": "perna_tras_f6",
+          "transformacao": {
+            "parte_base": "coxa_tras",
+            "dx": 2,
+            "dy": 1,
+            "ang": 0
+          },
+          "articulacoes": {
+            "quadril": [
+              41,
+              43
+            ],
+            "joelho": [
+              38,
+              47
+            ],
+            "tornozelo": [
+              37,
+              50
+            ],
+            "ponto_sola": [
+              37,
+              55
+            ]
+          },
+          "pe_original": [
+            -2,
+            0
+          ],
+          "fase_original": 2,
+          "apoio_original": true
+        }
+      ]
+    }
+  ]
+}

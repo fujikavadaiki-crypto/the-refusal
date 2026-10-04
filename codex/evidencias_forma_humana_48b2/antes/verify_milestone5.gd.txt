@@ -1,0 +1,53 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: Corvo tem HP canônico 65
+PASS: Corvo tem Postura canônica 20
+PASS: Rasante canônico 11/7 e parryável
+PASS: Cuspe 8 HP, sem Parry e com hook de Praga pendente
+PASS: Postura do projétil centralizada como provisória
+PASS: componentes genéricos de contato reaproveitados
+PASS: fora do alcance patrulha/paíra sem ler comandos
+PASS: patrulha aérea curta
+PASS: detecção por mundo real chega a ALERT/POSITIONING
+PASS: voo controlado muda altura sem cair como humanoide
+PASS: IA executa WINDUP/ACTIVE/RECOVERY do mergulho
+PASS: IA executa preparo/disparo/recuperação do projétil
+PASS: alvo do mergulho fica travado antes do ACTIVE
+PASS: altura de voo permanece na área útil da câmera
+PASS: sem estado travado em três minutos de IA
+PASS: cadência finita sem spam de contato
+PASS: cadência contextual não alterna em padrão fixo
+PASS: câmera continua seguindo o jogador, sem perseguir o Corvo
+PASS: Air Light real causa 18 HP/7 Postura ao Corvo
+PASS: Air Light produz um contato por ação
+PASS: Air Heavy real causa 32 HP/28 Postura e rompe o Corvo
+PASS: Ruptura aérea derruba o corpo
+PASS: Ruptura recupera ~50% e decola gradualmente
+PASS: Light terrestre continua acertando Corvo baixo
+PASS: Heavy terrestre continua acertando Corvo baixo
+PASS: projétil real causa 8 HP/5 Postura uma vez
+PASS: projétil some depois do contato
+PASS: projétil sem contato expira
+PASS: Parry real do Rasante retorna 20 Postura e derruba o Corvo
+PASS: i-frame do Dodge evita contato real do Rasante
+PASS: Dodge abre i-frame antes de contato de projétil
+PASS: Dodge evita HP e Postura do projétil real
+PASS: Air Dash → Light alcança Corvo em recuperação
+PASS: Air Dash → Heavy abre Ruptura do Corvo em recuperação
+PASS: Ground Dash Light continua acertando Corvo baixo
+PASS: pulo → Air Dash escapa da trajetória já comprometida
+PASS: Parry não bloqueia Cuspe não parryável
+PASS: disparo cria objeto independente
+PASS: projétil lançado prossegue e atinge após morte do Corvo
+PASS: reset encontra dois projéteis ativos
+PASS: reset remove todos os projéteis ativos
+PASS: dano compartilhado rompe 20 Postura sem alterar valor canônico
+PASS: Corvo em Ruptura cai e colide com o piso
+PASS: alvo rompido recebe vulnerabilidade geral de +20%
+PASS: recuperação da Ruptura restaura cerca de metade
+PASS: morte no WINDUP cancela disparo
+PASS: morte aérea cai em vez de flutuar
+PASS: reset restaura posição/estado/cooldowns/projéteis
+PASS: reset restaura HP/Postura/Ruptura
+PASS: IA não consulta comandos do jogador
+MILESTONE 5: PASS

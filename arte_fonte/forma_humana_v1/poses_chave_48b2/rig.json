@@ -1,0 +1,497 @@
+{
+  "fonte": "arte_fonte/forma_humana_v1/forma_humana_mestre_x1.png",
+  "altura_px": 48,
+  "ancora_mestre": [
+    24,
+    50
+  ],
+  "camadas": [
+    "coxa_tras",
+    "canela_tras",
+    "bota_tras",
+    "braco_distante",
+    "capa",
+    "tronco",
+    "coxa_frente",
+    "canela_frente",
+    "bota_frente",
+    "capuz",
+    "cabeca_cabelo",
+    "braco_proximo",
+    "mao_espada"
+  ],
+  "partes": {
+    "cabeca_cabelo": {
+      "pivo": [
+        27,
+        20
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/cabeca_cabelo.png",
+      "sha256": "1f79d370f0230e887085d0890c6f03a07e7353bbb7bd28e41ff3f2685bfaad80"
+    },
+    "mao_espada": {
+      "pivo": [
+        23,
+        34
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/mao_espada.png",
+      "sha256": "26b58ff2c153ef92903322ad07e084ecb49b0674c7f52bfd8406a1bb7ba1afa7"
+    },
+    "braco_distante": {
+      "pivo": [
+        29,
+        26
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/braco_distante.png",
+      "sha256": "d8899a3653f39cb1b64919063707a586ef33918552e6389952a7c2a356cafb31"
+    },
+    "braco_proximo": {
+      "pivo": [
+        20,
+        24
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/braco_proximo.png",
+      "sha256": "b971b3a88ed074926a6f95845b5e921676f2dce27f2829a3eed03fb58e844d74"
+    },
+    "capa": {
+      "pivo": [
+        15,
+        23
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/capa.png",
+      "sha256": "3c5cfed35fdb4b64d3c4e664a80ba1c4f5cbf508f6e87433032be5c766ac2a5e"
+    },
+    "bota_tras": {
+      "pivo": [
+        17,
+        44
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/bota_tras.png",
+      "sha256": "c269849e97dd1e76e3667df694b09f2e03facfb8f983ab5e80ab55359e0e0592"
+    },
+    "bota_frente": {
+      "pivo": [
+        31,
+        44
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/bota_frente.png",
+      "sha256": "df540930038519c66d0b5dec228e1978db0004a30d0bda4b51d5f7a90d5c9347"
+    },
+    "canela_tras": {
+      "pivo": [
+        18,
+        41
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/canela_tras.png",
+      "sha256": "be3b1a4093cf9cb3aedc7b4674f7cf96703e96c214ffae8f6dca0edf7d2a523a"
+    },
+    "coxa_tras": {
+      "pivo": [
+        23,
+        36
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/coxa_tras.png",
+      "sha256": "c93628a2482f95fbced27bf619137cf4d5e2a12cba6f3b7727e5dccd5d9aab53"
+    },
+    "canela_frente": {
+      "pivo": [
+        30,
+        42
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/canela_frente.png",
+      "sha256": "aff8ca5f14884216658f1bb3007a73d551e53eb42e381807161bb334e000b79e"
+    },
+    "coxa_frente": {
+      "pivo": [
+        27,
+        36
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/coxa_frente.png",
+      "sha256": "cdd2220720530986716e1bce4d7e1da934a8fdcee1bb14411479de7396657b70"
+    },
+    "capuz": {
+      "pivo": [
+        24,
+        22
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/capuz.png",
+      "sha256": "928ea3544a121ebefb97b00ccfd68ac679c072dbf29cb716f38ce9e9d6522369"
+    },
+    "tronco": {
+      "pivo": [
+        25,
+        33
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "../rig_48b/partes/tronco.png",
+      "sha256": "0440fd9c7adcfac578ab97246f6958f7a6311df23123dd3a97e0dc85066d0fdd"
+    },
+    "perna_frente_f0": {
+      "arquivo": "variantes/perna_frente_f0.png",
+      "pivo": [
+        44,
+        43
+      ],
+      "variante": true,
+      "variante_de": "coxa_frente",
+      "sha256": "4f9fe196938d18e56ae08b55f1c4324b5a377149205a6aee6eb0a77fe37f51e2",
+      "articulacoes": {
+        "quadril": [
+          44,
+          43
+        ],
+        "joelho": [
+          46,
+          48
+        ],
+        "tornozelo": [
+          50,
+          50
+        ],
+        "ponto_sola": [
+          52,
+          55
+        ]
+      }
+    },
+    "perna_tras_f0": {
+      "arquivo": "variantes/perna_tras_f0.png",
+      "pivo": [
+        41,
+        43
+      ],
+      "variante": true,
+      "variante_de": "coxa_tras",
+      "sha256": "f3ce7d5a89c35b1c14ca1e251123b39212746e252960142ec02c219adc35470c",
+      "articulacoes": {
+        "quadril": [
+          41,
+          43
+        ],
+        "joelho": [
+          37,
+          49
+        ],
+        "tornozelo": [
+          30,
+          47
+        ],
+        "ponto_sola": [
+          29,
+          52
+        ]
+      }
+    },
+    "perna_frente_f2": {
+      "arquivo": "variantes/perna_frente_f2.png",
+      "pivo": [
+        44,
+        43
+      ],
+      "variante": true,
+      "variante_de": "coxa_frente",
+      "sha256": "32d802f0051fbc2cedaff49c30b079dab4449aa2bf484bd959d5bde1d3024826",
+      "articulacoes": {
+        "quadril": [
+          44,
+          43
+        ],
+        "joelho": [
+          41,
+          47
+        ],
+        "tornozelo": [
+          40,
+          50
+        ],
+        "ponto_sola": [
+          40,
+          55
+        ]
+      }
+    },
+    "perna_tras_f2": {
+      "arquivo": "variantes/perna_tras_f2.png",
+      "pivo": [
+        41,
+        43
+      ],
+      "variante": true,
+      "variante_de": "coxa_tras",
+      "sha256": "e46408eedca9f63e12855a5b00c1497e94f2cf8e828866701188c2270b7b6eea",
+      "articulacoes": {
+        "quadril": [
+          41,
+          43
+        ],
+        "joelho": [
+          51,
+          47
+        ],
+        "tornozelo": [
+          43,
+          47
+        ],
+        "ponto_sola": [
+          45,
+          50
+        ]
+      }
+    },
+    "perna_frente_f4": {
+      "arquivo": "variantes/perna_frente_f4.png",
+      "pivo": [
+        44,
+        43
+      ],
+      "variante": true,
+      "variante_de": "coxa_frente",
+      "sha256": "7fe9c1f103b70ab6a4d50c35eaea343c2cf8060574a07287566136c44e2a2f2f",
+      "articulacoes": {
+        "quadril": [
+          44,
+          43
+        ],
+        "joelho": [
+          40,
+          49
+        ],
+        "tornozelo": [
+          33,
+          47
+        ],
+        "ponto_sola": [
+          32,
+          52
+        ]
+      }
+    },
+    "perna_tras_f4": {
+      "arquivo": "variantes/perna_tras_f4.png",
+      "pivo": [
+        41,
+        43
+      ],
+      "variante": true,
+      "variante_de": "coxa_tras",
+      "sha256": "f4dc42a1f518161e029d4cd24236049d1d82db8a4156806a33cf86dbad0e6cc5",
+      "articulacoes": {
+        "quadril": [
+          41,
+          43
+        ],
+        "joelho": [
+          43,
+          48
+        ],
+        "tornozelo": [
+          47,
+          50
+        ],
+        "ponto_sola": [
+          49,
+          55
+        ]
+      }
+    },
+    "perna_frente_f6": {
+      "arquivo": "variantes/perna_frente_f6.png",
+      "pivo": [
+        44,
+        43
+      ],
+      "variante": true,
+      "variante_de": "coxa_frente",
+      "sha256": "fcf4d7312d94df23b38e37f3816ad593c97781fc292d02ee0f229e0b2e4f3b3c",
+      "articulacoes": {
+        "quadril": [
+          44,
+          43
+        ],
+        "joelho": [
+          54,
+          47
+        ],
+        "tornozelo": [
+          46,
+          47
+        ],
+        "ponto_sola": [
+          48,
+          50
+        ]
+      }
+    },
+    "perna_tras_f6": {
+      "arquivo": "variantes/perna_tras_f6.png",
+      "pivo": [
+        41,
+        43
+      ],
+      "variante": true,
+      "variante_de": "coxa_tras",
+      "sha256": "4f76bff53c144aa240c2095edbe1a35384209a26cc2e8b390f2e8785580a265d",
+      "articulacoes": {
+        "quadril": [
+          41,
+          43
+        ],
+        "joelho": [
+          38,
+          47
+        ],
+        "tornozelo": [
+          37,
+          50
+        ],
+        "ponto_sola": [
+          37,
+          55
+        ]
+      }
+    }
+  },
+  "rotacao_maxima_graus": 20.0,
+  "mestre_sha256": "204432d31a2d8890c6def7b6fd81b56972ce482b5eca82fa3de878ebe2dcf988",
+  "biblioteca": "arte_fonte/kit_rig/kitrig",
+  "uso": "somente rig e idle/run para avaliação; não é pacote final",
+  "articulacao_run": "quadril/joelho/tornozelo via ik2; botas nativas sem escala ou giro",
+  "sobreposicao_run": "perna distante atrás; pano/tronco cobre a raiz da perna próxima; arma na frente",
+  "juntas_mestre": {
+    "quadril_tras": [
+      23,
+      36
+    ],
+    "quadril_frente": [
+      27,
+      36
+    ],
+    "joelho_tras": [
+      18,
+      41
+    ],
+    "joelho_frente": [
+      30,
+      42
+    ],
+    "tornozelo_tras": [
+      17,
+      44
+    ],
+    "tornozelo_frente": [
+      31,
+      44
+    ],
+    "ombro_proximo": [
+      20,
+      24
+    ],
+    "mao_espada": [
+      23,
+      34
+    ]
+  },
+  "completar": {
+    "somente_regioes_escondidas": true,
+    "tronco": [
+      {
+        "poligono": [
+          [
+            18,
+            24
+          ],
+          [
+            22,
+            24
+          ],
+          [
+            23,
+            29
+          ],
+          [
+            24,
+            34
+          ],
+          [
+            19,
+            35
+          ]
+        ],
+        "cor": 8
+      },
+      {
+        "poligono": [
+          [
+            22,
+            28
+          ],
+          [
+            24,
+            27
+          ],
+          [
+            25,
+            30
+          ],
+          [
+            23,
+            32
+          ]
+        ],
+        "cor": 10
+      }
+    ]
+  },
+  "revisao": "4.8b2: quatro poses-chave estáticas; pernas/botas redesenhadas"
+}

@@ -1,0 +1,494 @@
+{
+  "escopo": "somente quatro propostas estáticas 4.8b2, ferramenta, verificação e evidências",
+  "exclusao_autorreferencia": "codex/evidencias_forma_humana_48b2/SHA256_ENTREGAS.json",
+  "arquivos": {
+    "arte_fonte/ferramentas/propor_pernas_forma_humana_48b2.py": {
+      "sha256": "85c637b37e7ee81a06987c8483d278e6138505f7327d82a67a995bad1e31846c",
+      "bytes": 17069
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/.gdignore": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/.gitattributes": {
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "bytes": 8
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/desenhos_pixels.json": {
+      "sha256": "241dddcb999b09540ee3a91914c4c15ceb4a6dfbe2286da9bf9ee6f601d7b3db",
+      "bytes": 16213
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/LEIAME.md": {
+      "sha256": "d48b69d227a343f1991643af11dca52e6f697038b0e71848229655a6ceb0b43f",
+      "bytes": 2696
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/mascaras/corpo_protegido_f0.png": {
+      "sha256": "54d017812b0e961f230324ca7b8b3379b29b393107e2f8d57ec2b0d9d622fa89",
+      "bytes": 325
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/mascaras/corpo_protegido_f2.png": {
+      "sha256": "b66f57158a20f686ca614cbf387ba103f368f91198d02b501008370f27b1795d",
+      "bytes": 321
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/mascaras/corpo_protegido_f4.png": {
+      "sha256": "54d017812b0e961f230324ca7b8b3379b29b393107e2f8d57ec2b0d9d622fa89",
+      "bytes": 325
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/mascaras/corpo_protegido_f6.png": {
+      "sha256": "b66f57158a20f686ca614cbf387ba103f368f91198d02b501008370f27b1795d",
+      "bytes": 321
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/mascaras/diferenca_f0.png": {
+      "sha256": "381d4b156051a0a4012d932b78ca1cde105bd4b0e17b8388cbcd015980a19390",
+      "bytes": 199
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/mascaras/diferenca_f2.png": {
+      "sha256": "b9dd4e59f472ecb58f32ac284d1463e0dc57e11adb514cd9c550e2ded0145a59",
+      "bytes": 175
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/mascaras/diferenca_f4.png": {
+      "sha256": "a554fb556e227dfe905191d1fe5ab072ba6c0962faf20b38b2973205504eb1e4",
+      "bytes": 192
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/mascaras/diferenca_f6.png": {
+      "sha256": "4e7b8ee0fee9edeafe5995ba3ae5c707ad4d7028e54599461423da21fce22558",
+      "bytes": 187
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/mascaras/pernas_botas_f0.png": {
+      "sha256": "1267ab4ce72f0bd9c530ef542fd67defe6598b7de89c073aa7f78fa9bc6097dd",
+      "bytes": 179
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/mascaras/pernas_botas_f2.png": {
+      "sha256": "468fb103f8ba35b4322ec4a05d90b43652024efa71645a13e9ef8b80641806ea",
+      "bytes": 157
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/mascaras/pernas_botas_f4.png": {
+      "sha256": "cf880f87201f3ea306d152a955601515d3c3b8b4de8bc8e312be7ea33a910af9",
+      "bytes": 171
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/mascaras/pernas_botas_f6.png": {
+      "sha256": "e44d4eaa3d161305c0984157b5a32e108f3cbb4c87ff988b9dcc756afd846088",
+      "bytes": 162
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/poses.json": {
+      "sha256": "26777c6c156140c859d326823e9fafc14f19b97e96d52424b3c9177d09bcf2b5",
+      "bytes": 7374
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/quadros/run_f0.png": {
+      "sha256": "5012a94269776bd839bb0350a69f600fe1ab4328a5a4d2d6465ebc56d9d58eac",
+      "bytes": 1735
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/quadros/run_f2.png": {
+      "sha256": "1a027f1bec2833602d930dc0c3da1a172f2c0aef6d163a5b8ed4f5f48ffb1e22",
+      "bytes": 1676
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/quadros/run_f4.png": {
+      "sha256": "1dafe160238030bb76f0645319c9b3d0ab847068c9c4dfc25982c4a1968538e6",
+      "bytes": 1707
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/quadros/run_f6.png": {
+      "sha256": "82c80d982a305f33f0ee55f5a4965be58b6e1406f739cd568eddda1a621656ce",
+      "bytes": 1663
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/REFERENCIA_MOVIMENTO.json": {
+      "sha256": "8abe074709187a41a33edbea85eb8e0be7e195f86faf2011f9b8ff54229c0e73",
+      "bytes": 815
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/rig.json": {
+      "sha256": "b5bda89cce646ec7882e67ecc29f4dda0faf9744fed4423ce72a51b5595a567f",
+      "bytes": 9845
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/variantes/perna_frente_f0.png": {
+      "sha256": "4f9fe196938d18e56ae08b55f1c4324b5a377149205a6aee6eb0a77fe37f51e2",
+      "bytes": 335
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/variantes/perna_frente_f2.png": {
+      "sha256": "32d802f0051fbc2cedaff49c30b079dab4449aa2bf484bd959d5bde1d3024826",
+      "bytes": 304
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/variantes/perna_frente_f4.png": {
+      "sha256": "7fe9c1f103b70ab6a4d50c35eaea343c2cf8060574a07287566136c44e2a2f2f",
+      "bytes": 356
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/variantes/perna_frente_f6.png": {
+      "sha256": "fcf4d7312d94df23b38e37f3816ad593c97781fc292d02ee0f229e0b2e4f3b3c",
+      "bytes": 320
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/variantes/perna_tras_f0.png": {
+      "sha256": "f3ce7d5a89c35b1c14ca1e251123b39212746e252960142ec02c219adc35470c",
+      "bytes": 339
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/variantes/perna_tras_f2.png": {
+      "sha256": "e46408eedca9f63e12855a5b00c1497e94f2cf8e828866701188c2270b7b6eea",
+      "bytes": 319
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/variantes/perna_tras_f4.png": {
+      "sha256": "f4dc42a1f518161e029d4cd24236049d1d82db8a4156806a33cf86dbad0e6cc5",
+      "bytes": 330
+    },
+    "arte_fonte/forma_humana_v1/poses_chave_48b2/variantes/perna_tras_f6.png": {
+      "sha256": "4f76bff53c144aa240c2095edbe1a35384209a26cc2e8b390f2e8785580a265d",
+      "bytes": 320
+    },
+    "codex/evidencias_forma_humana_48b2/.gitattributes": {
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "bytes": 8
+    },
+    "codex/evidencias_forma_humana_48b2/antes/MEDIDAS.json": {
+      "sha256": "088bf6f6c5649bde721adf590fa7f7925cb0f8a00f95c10bf6a33dee43a405f0",
+      "bytes": 321
+    },
+    "codex/evidencias_forma_humana_48b2/antes/MEDIDAS_depois.json": {
+      "sha256": "f83f23355ccb5a83ca799d9c1d56325832dfe784ca96573203ed00bd44d5c25d",
+      "bytes": 21285
+    },
+    "codex/evidencias_forma_humana_48b2/antes/MEDIDAS_F3.json": {
+      "sha256": "475efe678e9b0a9515eefff31a9d95c7eff2b2f40f81c3da5af4bf144aac49d2",
+      "bytes": 3973
+    },
+    "codex/evidencias_forma_humana_48b2/antes/MEDIDAS_SALA.json": {
+      "sha256": "00b69f4fe131d17b0e58dea51b54d91fc117e6e24bc94b51f75e953976573d76",
+      "bytes": 12058
+    },
+    "codex/evidencias_forma_humana_48b2/antes/REGRESSAO_F2_MEDIDAS_depois.json": {
+      "sha256": "a288f6a4e97d64066ec8d0a99f79c1bf2878615a3ceb4bbbf63156a5a75dff81",
+      "bytes": 40520
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_approved_bosque_surfaces.gd.txt": {
+      "sha256": "76b43181724abc44da15ae18370fbd89acd8e3a3da571c560f0d0ccf5e01eb15",
+      "bytes": 521
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_bosque_initial_step.gd.txt": {
+      "sha256": "23a1b170aaa75dbd9ee619a62a2bec9f4052ad2ec7d0749c8361570c8b2a71df",
+      "bytes": 195
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_bosque_room.gd.txt": {
+      "sha256": "e0c627715dcacd87e581039ebafefe33eee6f7fd8f35e749509959092b555615",
+      "bytes": 842
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_bosque_trecho_01_playable.gd.txt": {
+      "sha256": "0235fe62c2c8762f1d24f722f8e4612acd374a9884c5285248ad3c9d0d6cc583",
+      "bytes": 186
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_carrasco_gif_test.gd.txt": {
+      "sha256": "852216b3990d8d5af1b077e773a17748b28421327a81739ecfe098dd5890bdf0",
+      "bytes": 1012
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_integracao_p40_f1.gd.txt": {
+      "sha256": "698c969b1a8bb08aa379f373b932d7bd2aaa07069b5672e375f35fe80100901c",
+      "bytes": 21440
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_integracao_p40_f2.gd.txt": {
+      "sha256": "ec981f543f88ba9fa158e95b8ec07a11cbefa95f035c46bf7212fd52c9c9d022",
+      "bytes": 9362
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_integracao_p40_f3.gd.txt": {
+      "sha256": "75d27ea19efe0ec2006daf3f3cde4231cbfa2ad6ea66c98441956a28072c406d",
+      "bytes": 40261
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_integracao_p40_f4.gd.txt": {
+      "sha256": "e688cec4a0043512aacd79d109cf4ab08ac26638d34022dcdd99c0cdeb700a03",
+      "bytes": 5778
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_integracao_p40_f5.gd.txt": {
+      "sha256": "4952af952da736eed2228895e3f02e12bb9f362801e4e6914bf7d5cb122abd18",
+      "bytes": 3501
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_integracao_p40_f6.gd.txt": {
+      "sha256": "263132ffd0eb68a38ef5d650f6ddc4995457e57e4f03eb16ff8a7fbedf7a6166",
+      "bytes": 10378
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_milestone2.gd.txt": {
+      "sha256": "8478cb95f59e43a538ff9d11c1d7fa1ab8851fcd8974c1f57fe9633ef6ea9249",
+      "bytes": 1364
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_milestone3.gd.txt": {
+      "sha256": "6cee02f9bc9fe06cdba8d25d066a33e7a15e3cdc1ced3ad009fde751a5c1f977",
+      "bytes": 3378
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_milestone4.gd.txt": {
+      "sha256": "a07a5abcad2059f3539f30617a89c08416be47294b071af0b39ac6d8cbd4a4ef",
+      "bytes": 2548
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_milestone4_1.gd.txt": {
+      "sha256": "94edacef9d5fc1e79058f7379d384cb07b8dc7af5829aabf6dfb760bddda1ed3",
+      "bytes": 2940
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_milestone5.gd.txt": {
+      "sha256": "3f38310f25791d86d60a3026b365380ce9cfaa4faec067db1f497cd309781e5b",
+      "bytes": 2628
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_milestone6.gd.txt": {
+      "sha256": "58af82e8c2cf35d150aa78ebc23a31a561753a04a23da156be1d7ae750cca732",
+      "bytes": 2462
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_milestone7.gd.txt": {
+      "sha256": "544e795b917d900bc7d74ae5504b2b8c4176efad83c7e3616f635bf63236b843",
+      "bytes": 2316
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_milestone7_1.gd.txt": {
+      "sha256": "8861d9372eae129804b549242814eec3ae6c5af15e1a2ffe5d4962b02ddb5bac",
+      "bytes": 1095
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_milestone8.gd.txt": {
+      "sha256": "b7c693713e9804383bf6f16ac57be7638d0b4dc8c0eef368d641b747693876db",
+      "bytes": 2918
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_milestone8_1.gd.txt": {
+      "sha256": "d5bbf4ffa4d30151e574a20323bd6cbb6017e832a2caf0ff506222795f423662",
+      "bytes": 3095
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_milestone8_2.gd.txt": {
+      "sha256": "071fa4a204afc72f80f29fde46fced46292e728dfdd6ee0142da1fbf4a7c2a3f",
+      "bytes": 630
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_milestone8_3.gd.txt": {
+      "sha256": "4a0dd48e41100522cf08f3a4e5013ac746bbf3dc452b4a3c30e995486950c50c",
+      "bytes": 2882
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_vertical_second_encounter.gd.txt": {
+      "sha256": "860a757280e224cc33805d07167f7d89c95e35dd039f600ebd28c76a4f419138",
+      "bytes": 532
+    },
+    "codex/evidencias_forma_humana_48b2/antes/verify_vertical_slice.gd.txt": {
+      "sha256": "d03fde7e687901f2f71044f1b21f5140e3e2bfe8fc6658aa9c331a2ea9afa6e3",
+      "bytes": 795
+    },
+    "codex/evidencias_forma_humana_48b2/antes_pacote_real/MEDIDAS_depois.json": {
+      "sha256": "c8cceea82920af0d2466a215f4b585fbaa5c7d65847c163f2f8ce7231799e4cd",
+      "bytes": 21337
+    },
+    "codex/evidencias_forma_humana_48b2/antes_pacote_real/verify_peregrino_corrompido.gd.txt": {
+      "sha256": "d1dcc31c97920ee92e1880e3ff0c64c20d4a812ffb73cd7c126eebeb8876f13d",
+      "bytes": 10198
+    },
+    "codex/evidencias_forma_humana_48b2/ARTICULACOES_AUXILIAR.png": {
+      "sha256": "3b653e92d8a5d69694b09a9f98b80009173984ada35baafcda6041ce394ff6b6",
+      "bytes": 17463
+    },
+    "codex/evidencias_forma_humana_48b2/AUDITORIA_ARTE_ANTERIOR.json": {
+      "sha256": "44871592fc915697a47a31020eacb322befaa7a226de45acb8ea2d6284b88ed9",
+      "bytes": 39898
+    },
+    "codex/evidencias_forma_humana_48b2/COMPARACAO_COMPLETA_x1.png": {
+      "sha256": "244f7ea53417d6cfa5a2f83bd56c62694990967b1e435995315dde2c9cfa922d",
+      "bytes": 6920
+    },
+    "codex/evidencias_forma_humana_48b2/COMPARACAO_COMPLETA_x4.png": {
+      "sha256": "f62c8dcc1058902222ff07b8d632dff9b306708b13a5ed726b422a45674d063c",
+      "bytes": 15783
+    },
+    "codex/evidencias_forma_humana_48b2/depois/MEDIDAS.json": {
+      "sha256": "088bf6f6c5649bde721adf590fa7f7925cb0f8a00f95c10bf6a33dee43a405f0",
+      "bytes": 321
+    },
+    "codex/evidencias_forma_humana_48b2/depois/MEDIDAS_depois.json": {
+      "sha256": "f83f23355ccb5a83ca799d9c1d56325832dfe784ca96573203ed00bd44d5c25d",
+      "bytes": 21285
+    },
+    "codex/evidencias_forma_humana_48b2/depois/MEDIDAS_F3.json": {
+      "sha256": "475efe678e9b0a9515eefff31a9d95c7eff2b2f40f81c3da5af4bf144aac49d2",
+      "bytes": 3973
+    },
+    "codex/evidencias_forma_humana_48b2/depois/MEDIDAS_SALA.json": {
+      "sha256": "00b69f4fe131d17b0e58dea51b54d91fc117e6e24bc94b51f75e953976573d76",
+      "bytes": 12058
+    },
+    "codex/evidencias_forma_humana_48b2/depois/REGRESSAO_F2_MEDIDAS_depois.json": {
+      "sha256": "a288f6a4e97d64066ec8d0a99f79c1bf2878615a3ceb4bbbf63156a5a75dff81",
+      "bytes": 40520
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_approved_bosque_surfaces.gd.txt": {
+      "sha256": "76b43181724abc44da15ae18370fbd89acd8e3a3da571c560f0d0ccf5e01eb15",
+      "bytes": 521
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_bosque_initial_step.gd.txt": {
+      "sha256": "23a1b170aaa75dbd9ee619a62a2bec9f4052ad2ec7d0749c8361570c8b2a71df",
+      "bytes": 195
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_bosque_room.gd.txt": {
+      "sha256": "e0c627715dcacd87e581039ebafefe33eee6f7fd8f35e749509959092b555615",
+      "bytes": 842
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_bosque_trecho_01_playable.gd.txt": {
+      "sha256": "0235fe62c2c8762f1d24f722f8e4612acd374a9884c5285248ad3c9d0d6cc583",
+      "bytes": 186
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_carrasco_gif_test.gd.txt": {
+      "sha256": "690bcd6a1c1b987fbca6313c24853c61d4c3fa48877397ca96a1b9d78678aace",
+      "bytes": 1017
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_integracao_p40_f1.gd.txt": {
+      "sha256": "698c969b1a8bb08aa379f373b932d7bd2aaa07069b5672e375f35fe80100901c",
+      "bytes": 21440
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_integracao_p40_f2.gd.txt": {
+      "sha256": "ec981f543f88ba9fa158e95b8ec07a11cbefa95f035c46bf7212fd52c9c9d022",
+      "bytes": 9362
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_integracao_p40_f3.gd.txt": {
+      "sha256": "75d27ea19efe0ec2006daf3f3cde4231cbfa2ad6ea66c98441956a28072c406d",
+      "bytes": 40261
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_integracao_p40_f4.gd.txt": {
+      "sha256": "e688cec4a0043512aacd79d109cf4ab08ac26638d34022dcdd99c0cdeb700a03",
+      "bytes": 5778
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_integracao_p40_f5.gd.txt": {
+      "sha256": "4952af952da736eed2228895e3f02e12bb9f362801e4e6914bf7d5cb122abd18",
+      "bytes": 3501
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_integracao_p40_f6.gd.txt": {
+      "sha256": "263132ffd0eb68a38ef5d650f6ddc4995457e57e4f03eb16ff8a7fbedf7a6166",
+      "bytes": 10378
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_milestone2.gd.txt": {
+      "sha256": "8478cb95f59e43a538ff9d11c1d7fa1ab8851fcd8974c1f57fe9633ef6ea9249",
+      "bytes": 1364
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_milestone3.gd.txt": {
+      "sha256": "6cee02f9bc9fe06cdba8d25d066a33e7a15e3cdc1ced3ad009fde751a5c1f977",
+      "bytes": 3378
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_milestone4.gd.txt": {
+      "sha256": "5238b2787b5c1487b7ea8f1311cb5edc6e28e65df80bec6a6f3252699ee0c223",
+      "bytes": 2550
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_milestone4_1.gd.txt": {
+      "sha256": "94edacef9d5fc1e79058f7379d384cb07b8dc7af5829aabf6dfb760bddda1ed3",
+      "bytes": 2940
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_milestone5.gd.txt": {
+      "sha256": "3f38310f25791d86d60a3026b365380ce9cfaa4faec067db1f497cd309781e5b",
+      "bytes": 2628
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_milestone6.gd.txt": {
+      "sha256": "58af82e8c2cf35d150aa78ebc23a31a561753a04a23da156be1d7ae750cca732",
+      "bytes": 2462
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_milestone7.gd.txt": {
+      "sha256": "544e795b917d900bc7d74ae5504b2b8c4176efad83c7e3616f635bf63236b843",
+      "bytes": 2316
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_milestone7_1.gd.txt": {
+      "sha256": "8861d9372eae129804b549242814eec3ae6c5af15e1a2ffe5d4962b02ddb5bac",
+      "bytes": 1095
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_milestone8.gd.txt": {
+      "sha256": "b7c693713e9804383bf6f16ac57be7638d0b4dc8c0eef368d641b747693876db",
+      "bytes": 2918
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_milestone8_1.gd.txt": {
+      "sha256": "d5bbf4ffa4d30151e574a20323bd6cbb6017e832a2caf0ff506222795f423662",
+      "bytes": 3095
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_milestone8_2.gd.txt": {
+      "sha256": "dcccedbe2fdc0c77907533868d3fc0a00fd25c1b8a324ef1b3d4acf56dba8c83",
+      "bytes": 633
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_milestone8_3.gd.txt": {
+      "sha256": "0e7f65de887139276eaba1e424e315579a0e63f369a776e15facad3f02633322",
+      "bytes": 2883
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_vertical_second_encounter.gd.txt": {
+      "sha256": "860a757280e224cc33805d07167f7d89c95e35dd039f600ebd28c76a4f419138",
+      "bytes": 532
+    },
+    "codex/evidencias_forma_humana_48b2/depois/verify_vertical_slice.gd.txt": {
+      "sha256": "7ac14fcfda6093126160599e7c44c3087b38f6fe6e38e3cf67a5e6d1af828610",
+      "bytes": 794
+    },
+    "codex/evidencias_forma_humana_48b2/depois_pacote_real/MEDIDAS_depois.json": {
+      "sha256": "c8cceea82920af0d2466a215f4b585fbaa5c7d65847c163f2f8ce7231799e4cd",
+      "bytes": 21337
+    },
+    "codex/evidencias_forma_humana_48b2/depois_pacote_real/verify_peregrino_corrompido.gd.txt": {
+      "sha256": "d1dcc31c97920ee92e1880e3ff0c64c20d4a812ffb73cd7c126eebeb8876f13d",
+      "bytes": 10198
+    },
+    "codex/evidencias_forma_humana_48b2/PERNAS_MESTRE_ANTES_PROPOSTA.png": {
+      "sha256": "6c3c1a4f59aebf6b2aeacb99eb9823c664de7ca9b8d1f8470e3249a2801fed59",
+      "bytes": 21605
+    },
+    "codex/evidencias_forma_humana_48b2/PRESERVACAO_antes.json": {
+      "sha256": "1359ac0eb013febf3e13fc770e32b58066d7afcc39cdb12bdf5db31144ef1d7b",
+      "bytes": 917132
+    },
+    "codex/evidencias_forma_humana_48b2/PRESERVACAO_depois.json": {
+      "sha256": "1359ac0eb013febf3e13fc770e32b58066d7afcc39cdb12bdf5db31144ef1d7b",
+      "bytes": 917132
+    },
+    "codex/evidencias_forma_humana_48b2/PRESERVACAO_resultado.json": {
+      "sha256": "f468042689120f575eb40d8dd1b53c755565359aeb1e08914fcf27df2ee6919d",
+      "bytes": 837
+    },
+    "codex/evidencias_forma_humana_48b2/PROPOSTA_f0_x1.png": {
+      "sha256": "6295a9b4e9d0c3c6ee9a37baf068f1d510456c94807fe2ab4380598158775e67",
+      "bytes": 1884
+    },
+    "codex/evidencias_forma_humana_48b2/PROPOSTA_f0_x4.png": {
+      "sha256": "8bb83c9fd61cd986af7f73e4be0a73cdc8fc24489e3422684e53b655bf34645f",
+      "bytes": 3111
+    },
+    "codex/evidencias_forma_humana_48b2/PROPOSTA_f2_x1.png": {
+      "sha256": "47c00c29e4701d0a51b445240d008d9144acd3d2a944d9b293688cea27da7161",
+      "bytes": 1789
+    },
+    "codex/evidencias_forma_humana_48b2/PROPOSTA_f2_x4.png": {
+      "sha256": "db0d21cd9a804e2ad0a2e8c2a41c7ad116494e364e13e7306fdad35dd009929e",
+      "bytes": 3053
+    },
+    "codex/evidencias_forma_humana_48b2/PROPOSTA_f4_x1.png": {
+      "sha256": "87dfa3b2b4110bf938616a48a5672b16ce8310e2ab82c4f47db1276d84b2fd53",
+      "bytes": 1863
+    },
+    "codex/evidencias_forma_humana_48b2/PROPOSTA_f4_x4.png": {
+      "sha256": "5cd01458044daef65a3e49c76ed5ba88844bf5971995976c3e49b5188a1e94ec",
+      "bytes": 3118
+    },
+    "codex/evidencias_forma_humana_48b2/PROPOSTA_f6_x1.png": {
+      "sha256": "a6c6e59833f2c6b9e8fe2a84bb940b2c2d7850f4102e1cd51df17ce390beeef9",
+      "bytes": 1788
+    },
+    "codex/evidencias_forma_humana_48b2/PROPOSTA_f6_x4.png": {
+      "sha256": "59c6790748e5e54499e72b6d6cba6bae9ac4b4ed0118f14ea7793a7bdabe3b5c",
+      "bytes": 3040
+    },
+    "codex/evidencias_forma_humana_48b2/REPRODUCAO.json": {
+      "sha256": "2add37bdad7ef3bd35e70bd5887af701af73fcc08bdfde9349d4ebff8aeafe73",
+      "bytes": 6298
+    },
+    "codex/evidencias_forma_humana_48b2/TESTE_PACOTE_REAL_antes.json": {
+      "sha256": "38ca1a06bb53719d1ce80ad54ff8954c24a2b05a16fd619563646cf70ace271a",
+      "bytes": 159
+    },
+    "codex/evidencias_forma_humana_48b2/TESTE_PACOTE_REAL_depois.json": {
+      "sha256": "af48101ea94cf4dd63d931c598076d3c339cce3ca1854f5257df41d8b5457b95",
+      "bytes": 159
+    },
+    "codex/evidencias_forma_humana_48b2/TESTES_antes.json": {
+      "sha256": "fbdd6bcb52f46932141a118615c191df79edf257cd119913ab1b7f05349ea97f",
+      "bytes": 4407
+    },
+    "codex/evidencias_forma_humana_48b2/TESTES_COMPARACAO.json": {
+      "sha256": "c122ac837ba575547314c32f6c36e170d35b4ef6cf7b03e241c069f9570fb827",
+      "bytes": 3985
+    },
+    "codex/evidencias_forma_humana_48b2/TESTES_depois.json": {
+      "sha256": "cce70d6b1499b9818dda736f503a0a99c9e83b1c1873c38b94dd43ddd6ce3e34",
+      "bytes": 4408
+    },
+    "codex/evidencias_forma_humana_48b2/VERIFICACAO_POSES.json": {
+      "sha256": "0341fd79159e57d238be50b03701b6d6e9117c358ccb656219a35f6e11c88fad",
+      "bytes": 1738
+    },
+    "codex/RELATORIO_FORMA_HUMANA_48B2.md": {
+      "sha256": "0c21e4519c38847d3dedfa8e98cf57b740957f15633b9c9b98edc6c91eae5795",
+      "bytes": 3006
+    },
+    "codex/verificar_forma_humana_48b2.py": {
+      "sha256": "741e1bd7bacfdb3655b3680d87893f9fc61e424dfa62c3f647c1dbc37955bb8a",
+      "bytes": 5606
+    }
+  }
+}
