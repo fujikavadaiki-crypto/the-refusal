@@ -1,0 +1,800 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+PASS: v34A carrega sem erros: []
+PASS: 26 animações do manifesto disponíveis
+PASS: manifesto copiado conserva SHA256 da fonte
+PASS: 190 PNGs referenciados validados por SHA256/raw ou caBX
+PASS: idle: quadros e tempos carregados
+PASS: idle: textura e âncora inteira
+PASS: idle: textura e âncora inteira
+PASS: idle: textura e âncora inteira
+PASS: idle: textura e âncora inteira
+PASS: idle: textura e âncora inteira
+PASS: idle: textura e âncora inteira
+PASS: idle: textura e âncora inteira
+PASS: idle: textura e âncora inteira
+PASS: run: quadros e tempos carregados
+PASS: run: textura e âncora inteira
+PASS: run: textura e âncora inteira
+PASS: run: textura e âncora inteira
+PASS: run: textura e âncora inteira
+PASS: run: textura e âncora inteira
+PASS: run: textura e âncora inteira
+PASS: run: textura e âncora inteira
+PASS: run: textura e âncora inteira
+PASS: run_start: quadros e tempos carregados
+PASS: run_start: textura e âncora inteira
+PASS: run_stop: quadros e tempos carregados
+PASS: run_stop: textura e âncora inteira
+PASS: turn: quadros e tempos carregados
+PASS: turn: textura e âncora inteira
+PASS: attack_exit: quadros e tempos carregados
+PASS: attack_exit: textura e âncora inteira
+PASS: dash: quadros e tempos carregados
+PASS: dash: textura e âncora inteira
+PASS: dash: textura e âncora inteira
+PASS: dash: textura e âncora inteira
+PASS: dash: textura e âncora inteira
+PASS: dash_ar: quadros e tempos carregados
+PASS: dash_ar: textura e âncora inteira
+PASS: dash_ar: textura e âncora inteira
+PASS: dash_ar: textura e âncora inteira
+PASS: dash_ar: textura e âncora inteira
+PASS: jump_up: quadros e tempos carregados
+PASS: jump_up: textura e âncora inteira
+PASS: jump_up: textura e âncora inteira
+PASS: fall_start: quadros e tempos carregados
+PASS: fall_start: textura e âncora inteira
+PASS: fall_start: textura e âncora inteira
+PASS: fall_loop: quadros e tempos carregados
+PASS: fall_loop: textura e âncora inteira
+PASS: fall_loop: textura e âncora inteira
+PASS: fall_loop: textura e âncora inteira
+PASS: land: quadros e tempos carregados
+PASS: land: textura e âncora inteira
+PASS: land: textura e âncora inteira
+PASS: hurt: quadros e tempos carregados
+PASS: hurt: textura e âncora inteira
+PASS: hurt: textura e âncora inteira
+PASS: hurt: textura e âncora inteira
+PASS: heavy: quadros e tempos carregados
+PASS: heavy: textura e âncora inteira
+PASS: heavy: textura e âncora inteira
+PASS: heavy: textura e âncora inteira
+PASS: heavy: textura e âncora inteira
+PASS: heavy: textura e âncora inteira
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: textura e âncora inteira
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: peça convexa somente à frente
+PASS: heavy: textura e âncora inteira
+PASS: heavy: textura e âncora inteira
+PASS: heavy: textura e âncora inteira
+PASS: light1: quadros e tempos carregados
+PASS: light1: textura e âncora inteira
+PASS: light1: textura e âncora inteira
+PASS: light1: textura e âncora inteira
+PASS: light1: peça convexa somente à frente
+PASS: light1: peça convexa somente à frente
+PASS: light1: peça convexa somente à frente
+PASS: light1: peça convexa somente à frente
+PASS: light1: peça convexa somente à frente
+PASS: light1: peça convexa somente à frente
+PASS: light1: peça convexa somente à frente
+PASS: light1: peça convexa somente à frente
+PASS: light1: peça convexa somente à frente
+PASS: light1: textura e âncora inteira
+PASS: light1: peça convexa somente à frente
+PASS: light1: peça convexa somente à frente
+PASS: light1: peça convexa somente à frente
+PASS: light1: peça convexa somente à frente
+PASS: light1: peça convexa somente à frente
+PASS: light1: peça convexa somente à frente
+PASS: light1: peça convexa somente à frente
+PASS: light1: peça convexa somente à frente
+PASS: light1: peça convexa somente à frente
+PASS: light1: peça convexa somente à frente
+PASS: light1: textura e âncora inteira
+PASS: light1: textura e âncora inteira
+PASS: light1: textura e âncora inteira
+PASS: light2: quadros e tempos carregados
+PASS: light2: textura e âncora inteira
+PASS: light2: textura e âncora inteira
+PASS: light2: textura e âncora inteira
+PASS: light2: textura e âncora inteira
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: textura e âncora inteira
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: peça convexa somente à frente
+PASS: light2: textura e âncora inteira
+PASS: light2: textura e âncora inteira
+PASS: light2: textura e âncora inteira
+PASS: light3: quadros e tempos carregados
+PASS: light3: textura e âncora inteira
+PASS: light3: textura e âncora inteira
+PASS: light3: textura e âncora inteira
+PASS: light3: textura e âncora inteira
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: textura e âncora inteira
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: peça convexa somente à frente
+PASS: light3: textura e âncora inteira
+PASS: light3: textura e âncora inteira
+PASS: light3: textura e âncora inteira
+PASS: light3: textura e âncora inteira
+PASS: post_dash: quadros e tempos carregados
+PASS: post_dash: textura e âncora inteira
+PASS: post_dash: textura e âncora inteira
+PASS: post_dash: textura e âncora inteira
+PASS: post_dash: peça convexa somente à frente
+PASS: post_dash: peça convexa somente à frente
+PASS: post_dash: peça convexa somente à frente
+PASS: post_dash: textura e âncora inteira
+PASS: post_dash: peça convexa somente à frente
+PASS: post_dash: peça convexa somente à frente
+PASS: post_dash: peça convexa somente à frente
+PASS: post_dash: peça convexa somente à frente
+PASS: post_dash: peça convexa somente à frente
+PASS: post_dash: textura e âncora inteira
+PASS: post_dash: textura e âncora inteira
+PASS: post_dash: textura e âncora inteira
+PASS: air_light: quadros e tempos carregados
+PASS: air_light: textura e âncora inteira
+PASS: air_light: textura e âncora inteira
+PASS: air_light: textura e âncora inteira
+PASS: air_light: peça convexa somente à frente
+PASS: air_light: peça convexa somente à frente
+PASS: air_light: peça convexa somente à frente
+PASS: air_light: peça convexa somente à frente
+PASS: air_light: peça convexa somente à frente
+PASS: air_light: peça convexa somente à frente
+PASS: air_light: peça convexa somente à frente
+PASS: air_light: peça convexa somente à frente
+PASS: air_light: peça convexa somente à frente
+PASS: air_light: peça convexa somente à frente
+PASS: air_light: peça convexa somente à frente
+PASS: air_light: textura e âncora inteira
+PASS: air_light: peça convexa somente à frente
+PASS: air_light: peça convexa somente à frente
+PASS: air_light: peça convexa somente à frente
+PASS: air_light: peça convexa somente à frente
+PASS: air_light: peça convexa somente à frente
+PASS: air_light: peça convexa somente à frente
+PASS: air_light: peça convexa somente à frente
+PASS: air_light: peça convexa somente à frente
+PASS: air_light: textura e âncora inteira
+PASS: air_light: textura e âncora inteira
+PASS: air_light: textura e âncora inteira
+PASS: air_heavy: quadros e tempos carregados
+PASS: air_heavy: textura e âncora inteira
+PASS: air_heavy: textura e âncora inteira
+PASS: air_heavy: textura e âncora inteira
+PASS: air_heavy: textura e âncora inteira
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: textura e âncora inteira
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: peça convexa somente à frente
+PASS: air_heavy: textura e âncora inteira
+PASS: air_heavy: textura e âncora inteira
+PASS: air_heavy: textura e âncora inteira
+PASS: air_heavy: textura e âncora inteira
+PASS: air_heavy: textura e âncora inteira
+PASS: charge_start: quadros e tempos carregados
+PASS: charge_start: textura e âncora inteira
+PASS: charge_start: textura e âncora inteira
+PASS: charge_loop: quadros e tempos carregados
+PASS: charge_loop: textura e âncora inteira
+PASS: charge_loop: textura e âncora inteira
+PASS: charge_loop: textura e âncora inteira
+PASS: charge_loop: textura e âncora inteira
+PASS: charge_full: quadros e tempos carregados
+PASS: charge_full: textura e âncora inteira
+PASS: charge_full: textura e âncora inteira
+PASS: charge_full: textura e âncora inteira
+PASS: charge_full: textura e âncora inteira
+PASS: charged_heavy: quadros e tempos carregados
+PASS: charged_heavy: textura e âncora inteira
+PASS: charged_heavy: textura e âncora inteira
+PASS: charged_heavy: textura e âncora inteira
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: textura e âncora inteira
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: peça convexa somente à frente
+PASS: charged_heavy: textura e âncora inteira
+PASS: charged_heavy: textura e âncora inteira
+PASS: charged_heavy: textura e âncora inteira
+PASS: charged_heavy: textura e âncora inteira
+PASS: charged_heavy: textura e âncora inteira
+PASS: parry: quadros e tempos carregados
+PASS: parry: textura e âncora inteira
+PASS: parry: textura e âncora inteira
+PASS: parry: textura e âncora inteira
+PASS: parry: textura e âncora inteira
+PASS: parry_spark: quadros e tempos carregados
+PASS: parry_spark: textura e âncora inteira
+PASS: parry_spark: textura e âncora inteira
+PASS: parry_spark: textura e âncora inteira
+PASS: leitor recusa caminho fora do pacote
+PASS: PNG truncado não passa na normalização
+PASS: retângulo opcional também é aceito
+PASS: retângulo cruzando os pés é recortado na frente
+PASS: lista de retângulos inválida é rejeitada
+PASS: modo pequeno é o apresentador e provedor de dano ativos
+PASS: arte ×1 mesmo com zoom .9 e facing 1
+PASS: âncora coincide com pés arredondados, facing 1
+PASS: um espelhamento horizontal; corpo nunca escalado
+PASS: amostragem NEAREST
+PASS: arte ×1 mesmo com zoom .9 e facing -1
+PASS: âncora coincide com pés arredondados, facing -1
+PASS: um espelhamento horizontal; corpo nunca escalado
+PASS: amostragem NEAREST
+PASS: idle: quadro espelhado conserva a âncora
+PASS: idle: quadro espelhado conserva a âncora
+PASS: idle: quadro espelhado conserva a âncora
+PASS: idle: quadro espelhado conserva a âncora
+PASS: idle: quadro espelhado conserva a âncora
+PASS: idle: quadro espelhado conserva a âncora
+PASS: idle: quadro espelhado conserva a âncora
+PASS: idle: quadro espelhado conserva a âncora
+PASS: idle: quadro espelhado conserva a âncora
+PASS: idle: quadro espelhado conserva a âncora
+PASS: idle: quadro espelhado conserva a âncora
+PASS: idle: quadro espelhado conserva a âncora
+PASS: idle: quadro espelhado conserva a âncora
+PASS: idle: quadro espelhado conserva a âncora
+PASS: idle: quadro espelhado conserva a âncora
+PASS: idle: quadro espelhado conserva a âncora
+PASS: run: quadro espelhado conserva a âncora
+PASS: run: quadro espelhado conserva a âncora
+PASS: run: quadro espelhado conserva a âncora
+PASS: run: quadro espelhado conserva a âncora
+PASS: run: quadro espelhado conserva a âncora
+PASS: run: quadro espelhado conserva a âncora
+PASS: run: quadro espelhado conserva a âncora
+PASS: run: quadro espelhado conserva a âncora
+PASS: run: quadro espelhado conserva a âncora
+PASS: run: quadro espelhado conserva a âncora
+PASS: run: quadro espelhado conserva a âncora
+PASS: run: quadro espelhado conserva a âncora
+PASS: run: quadro espelhado conserva a âncora
+PASS: run: quadro espelhado conserva a âncora
+PASS: run: quadro espelhado conserva a âncora
+PASS: run: quadro espelhado conserva a âncora
+PASS: run_start: quadro espelhado conserva a âncora
+PASS: run_start: quadro espelhado conserva a âncora
+PASS: run_stop: quadro espelhado conserva a âncora
+PASS: run_stop: quadro espelhado conserva a âncora
+PASS: turn: quadro espelhado conserva a âncora
+PASS: turn: quadro espelhado conserva a âncora
+PASS: attack_exit: quadro espelhado conserva a âncora
+PASS: attack_exit: quadro espelhado conserva a âncora
+PASS: dash: quadro espelhado conserva a âncora
+PASS: dash: quadro espelhado conserva a âncora
+PASS: dash: quadro espelhado conserva a âncora
+PASS: dash: quadro espelhado conserva a âncora
+PASS: dash: quadro espelhado conserva a âncora
+PASS: dash: quadro espelhado conserva a âncora
+PASS: dash: quadro espelhado conserva a âncora
+PASS: dash: quadro espelhado conserva a âncora
+PASS: dash_ar: quadro espelhado conserva a âncora
+PASS: dash_ar: quadro espelhado conserva a âncora
+PASS: dash_ar: quadro espelhado conserva a âncora
+PASS: dash_ar: quadro espelhado conserva a âncora
+PASS: dash_ar: quadro espelhado conserva a âncora
+PASS: dash_ar: quadro espelhado conserva a âncora
+PASS: dash_ar: quadro espelhado conserva a âncora
+PASS: dash_ar: quadro espelhado conserva a âncora
+PASS: jump_up: quadro espelhado conserva a âncora
+PASS: jump_up: quadro espelhado conserva a âncora
+PASS: jump_up: quadro espelhado conserva a âncora
+PASS: jump_up: quadro espelhado conserva a âncora
+PASS: fall_start: quadro espelhado conserva a âncora
+PASS: fall_start: quadro espelhado conserva a âncora
+PASS: fall_start: quadro espelhado conserva a âncora
+PASS: fall_start: quadro espelhado conserva a âncora
+PASS: fall_loop: quadro espelhado conserva a âncora
+PASS: fall_loop: quadro espelhado conserva a âncora
+PASS: fall_loop: quadro espelhado conserva a âncora
+PASS: fall_loop: quadro espelhado conserva a âncora
+PASS: fall_loop: quadro espelhado conserva a âncora
+PASS: fall_loop: quadro espelhado conserva a âncora
+PASS: land: quadro espelhado conserva a âncora
+PASS: land: quadro espelhado conserva a âncora
+PASS: land: quadro espelhado conserva a âncora
+PASS: land: quadro espelhado conserva a âncora
+PASS: hurt: quadro espelhado conserva a âncora
+PASS: hurt: quadro espelhado conserva a âncora
+PASS: hurt: quadro espelhado conserva a âncora
+PASS: hurt: quadro espelhado conserva a âncora
+PASS: hurt: quadro espelhado conserva a âncora
+PASS: hurt: quadro espelhado conserva a âncora
+PASS: heavy: quadro espelhado conserva a âncora
+PASS: heavy: quadro espelhado conserva a âncora
+PASS: heavy: quadro espelhado conserva a âncora
+PASS: heavy: quadro espelhado conserva a âncora
+PASS: heavy: quadro espelhado conserva a âncora
+PASS: heavy: quadro espelhado conserva a âncora
+PASS: heavy: quadro espelhado conserva a âncora
+PASS: heavy: quadro espelhado conserva a âncora
+PASS: heavy: quadro espelhado conserva a âncora
+PASS: heavy: quadro espelhado conserva a âncora
+PASS: heavy: quadro espelhado conserva a âncora
+PASS: heavy: quadro espelhado conserva a âncora
+PASS: heavy: quadro espelhado conserva a âncora
+PASS: heavy: quadro espelhado conserva a âncora
+PASS: heavy: quadro espelhado conserva a âncora
+PASS: heavy: quadro espelhado conserva a âncora
+PASS: heavy: quadro espelhado conserva a âncora
+PASS: heavy: quadro espelhado conserva a âncora
+PASS: light1: quadro espelhado conserva a âncora
+PASS: light1: quadro espelhado conserva a âncora
+PASS: light1: quadro espelhado conserva a âncora
+PASS: light1: quadro espelhado conserva a âncora
+PASS: light1: quadro espelhado conserva a âncora
+PASS: light1: quadro espelhado conserva a âncora
+PASS: light1: quadro espelhado conserva a âncora
+PASS: light1: quadro espelhado conserva a âncora
+PASS: light1: quadro espelhado conserva a âncora
+PASS: light1: quadro espelhado conserva a âncora
+PASS: light1: quadro espelhado conserva a âncora
+PASS: light1: quadro espelhado conserva a âncora
+PASS: light1: quadro espelhado conserva a âncora
+PASS: light1: quadro espelhado conserva a âncora
+PASS: light2: quadro espelhado conserva a âncora
+PASS: light2: quadro espelhado conserva a âncora
+PASS: light2: quadro espelhado conserva a âncora
+PASS: light2: quadro espelhado conserva a âncora
+PASS: light2: quadro espelhado conserva a âncora
+PASS: light2: quadro espelhado conserva a âncora
+PASS: light2: quadro espelhado conserva a âncora
+PASS: light2: quadro espelhado conserva a âncora
+PASS: light2: quadro espelhado conserva a âncora
+PASS: light2: quadro espelhado conserva a âncora
+PASS: light2: quadro espelhado conserva a âncora
+PASS: light2: quadro espelhado conserva a âncora
+PASS: light2: quadro espelhado conserva a âncora
+PASS: light2: quadro espelhado conserva a âncora
+PASS: light2: quadro espelhado conserva a âncora
+PASS: light2: quadro espelhado conserva a âncora
+PASS: light3: quadro espelhado conserva a âncora
+PASS: light3: quadro espelhado conserva a âncora
+PASS: light3: quadro espelhado conserva a âncora
+PASS: light3: quadro espelhado conserva a âncora
+PASS: light3: quadro espelhado conserva a âncora
+PASS: light3: quadro espelhado conserva a âncora
+PASS: light3: quadro espelhado conserva a âncora
+PASS: light3: quadro espelhado conserva a âncora
+PASS: light3: quadro espelhado conserva a âncora
+PASS: light3: quadro espelhado conserva a âncora
+PASS: light3: quadro espelhado conserva a âncora
+PASS: light3: quadro espelhado conserva a âncora
+PASS: light3: quadro espelhado conserva a âncora
+PASS: light3: quadro espelhado conserva a âncora
+PASS: light3: quadro espelhado conserva a âncora
+PASS: light3: quadro espelhado conserva a âncora
+PASS: light3: quadro espelhado conserva a âncora
+PASS: light3: quadro espelhado conserva a âncora
+PASS: post_dash: quadro espelhado conserva a âncora
+PASS: post_dash: quadro espelhado conserva a âncora
+PASS: post_dash: quadro espelhado conserva a âncora
+PASS: post_dash: quadro espelhado conserva a âncora
+PASS: post_dash: quadro espelhado conserva a âncora
+PASS: post_dash: quadro espelhado conserva a âncora
+PASS: post_dash: quadro espelhado conserva a âncora
+PASS: post_dash: quadro espelhado conserva a âncora
+PASS: post_dash: quadro espelhado conserva a âncora
+PASS: post_dash: quadro espelhado conserva a âncora
+PASS: post_dash: quadro espelhado conserva a âncora
+PASS: post_dash: quadro espelhado conserva a âncora
+PASS: post_dash: quadro espelhado conserva a âncora
+PASS: post_dash: quadro espelhado conserva a âncora
+PASS: air_light: quadro espelhado conserva a âncora
+PASS: air_light: quadro espelhado conserva a âncora
+PASS: air_light: quadro espelhado conserva a âncora
+PASS: air_light: quadro espelhado conserva a âncora
+PASS: air_light: quadro espelhado conserva a âncora
+PASS: air_light: quadro espelhado conserva a âncora
+PASS: air_light: quadro espelhado conserva a âncora
+PASS: air_light: quadro espelhado conserva a âncora
+PASS: air_light: quadro espelhado conserva a âncora
+PASS: air_light: quadro espelhado conserva a âncora
+PASS: air_light: quadro espelhado conserva a âncora
+PASS: air_light: quadro espelhado conserva a âncora
+PASS: air_light: quadro espelhado conserva a âncora
+PASS: air_light: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: air_heavy: quadro espelhado conserva a âncora
+PASS: charge_start: quadro espelhado conserva a âncora
+PASS: charge_start: quadro espelhado conserva a âncora
+PASS: charge_start: quadro espelhado conserva a âncora
+PASS: charge_start: quadro espelhado conserva a âncora
+PASS: charge_loop: quadro espelhado conserva a âncora
+PASS: charge_loop: quadro espelhado conserva a âncora
+PASS: charge_loop: quadro espelhado conserva a âncora
+PASS: charge_loop: quadro espelhado conserva a âncora
+PASS: charge_loop: quadro espelhado conserva a âncora
+PASS: charge_loop: quadro espelhado conserva a âncora
+PASS: charge_loop: quadro espelhado conserva a âncora
+PASS: charge_loop: quadro espelhado conserva a âncora
+PASS: charge_full: quadro espelhado conserva a âncora
+PASS: charge_full: quadro espelhado conserva a âncora
+PASS: charge_full: quadro espelhado conserva a âncora
+PASS: charge_full: quadro espelhado conserva a âncora
+PASS: charge_full: quadro espelhado conserva a âncora
+PASS: charge_full: quadro espelhado conserva a âncora
+PASS: charge_full: quadro espelhado conserva a âncora
+PASS: charge_full: quadro espelhado conserva a âncora
+PASS: charged_heavy: quadro espelhado conserva a âncora
+PASS: charged_heavy: quadro espelhado conserva a âncora
+PASS: charged_heavy: quadro espelhado conserva a âncora
+PASS: charged_heavy: quadro espelhado conserva a âncora
+PASS: charged_heavy: quadro espelhado conserva a âncora
+PASS: charged_heavy: quadro espelhado conserva a âncora
+PASS: charged_heavy: quadro espelhado conserva a âncora
+PASS: charged_heavy: quadro espelhado conserva a âncora
+PASS: charged_heavy: quadro espelhado conserva a âncora
+PASS: charged_heavy: quadro espelhado conserva a âncora
+PASS: charged_heavy: quadro espelhado conserva a âncora
+PASS: charged_heavy: quadro espelhado conserva a âncora
+PASS: charged_heavy: quadro espelhado conserva a âncora
+PASS: charged_heavy: quadro espelhado conserva a âncora
+PASS: charged_heavy: quadro espelhado conserva a âncora
+PASS: charged_heavy: quadro espelhado conserva a âncora
+PASS: charged_heavy: quadro espelhado conserva a âncora
+PASS: charged_heavy: quadro espelhado conserva a âncora
+PASS: parry: quadro espelhado conserva a âncora
+PASS: parry: quadro espelhado conserva a âncora
+PASS: parry: quadro espelhado conserva a âncora
+PASS: parry: quadro espelhado conserva a âncora
+PASS: parry: quadro espelhado conserva a âncora
+PASS: parry: quadro espelhado conserva a âncora
+PASS: parry: quadro espelhado conserva a âncora
+PASS: parry: quadro espelhado conserva a âncora
+PASS: parry_spark: quadro espelhado conserva a âncora
+PASS: parry_spark: quadro espelhado conserva a âncora
+PASS: parry_spark: quadro espelhado conserva a âncora
+PASS: parry_spark: quadro espelhado conserva a âncora
+PASS: parry_spark: quadro espelhado conserva a âncora
+PASS: parry_spark: quadro espelhado conserva a âncora
+PASS: heavy FX respeita fase 1
+PASS: heavy FX respeita fase 2
+PASS: heavy FX respeita fase 3
+PASS: rastro e névoa conservam tempos/limites do P42b
+PASS: uma sombra: antiga desligada somente no modo novo
+PASS: no pulo, sombra permanece no piso e reduz a 50%
+PASS: sombra clareia; corpo mantém ×1
+PASS: inimigo sob o jogador não vira chão para a sombra
+PASS: sem chão embaixo não desenha sombra
+PASS: humano restaura sombra e contato legados
+PASS: arte humana preservada
+PASS: corrida conta distância resolvida pelo corpo
+PASS: corrida escolhe floor(distância/6) mod 8
+PASS: soltar direção para com desaceleração normal, sem andar até apoio
+PASS: parada escolhe somente apoio visual 1/5
+PASS: apoio/freio visual retornam ao idle sem deslocamento
+PASS: movimento da câmera não avança corrida
+PASS: parede impede avanço da animação por distância
+PASS: teleporte reinicia fase e rastro
+PASS: carrasco_heavy mantém duração .tres e manifesto
+PASS: carrasco_heavy/4: geometria só no ACTIVE
+PASS: carrasco_heavy/4: arte e dano selecionam mesmo quadro
+PASS: carrasco_heavy/4: contato à frente, nunca atrás (1)
+PASS: carrasco_heavy: peças/scans deduplicam contato por ação
+PASS: carrasco_heavy: recuperação não produz dano
+PASS: carrasco_heavy/4: geometria só no ACTIVE
+PASS: carrasco_heavy/4: arte e dano selecionam mesmo quadro
+PASS: carrasco_heavy/4: contato à frente, nunca atrás (-1)
+PASS: carrasco_heavy: peças/scans deduplicam contato por ação
+PASS: carrasco_heavy: recuperação não produz dano
+PASS: carrasco_heavy/5: geometria só no ACTIVE
+PASS: carrasco_heavy/5: arte e dano selecionam mesmo quadro
+PASS: carrasco_heavy/5: contato à frente, nunca atrás (1)
+PASS: carrasco_heavy: peças/scans deduplicam contato por ação
+PASS: carrasco_heavy: recuperação não produz dano
+PASS: carrasco_heavy/5: geometria só no ACTIVE
+PASS: carrasco_heavy/5: arte e dano selecionam mesmo quadro
+PASS: carrasco_heavy/5: contato à frente, nunca atrás (-1)
+PASS: carrasco_heavy: peças/scans deduplicam contato por ação
+PASS: carrasco_heavy: recuperação não produz dano
+PASS: carrasco_light_1 mantém duração .tres e manifesto
+PASS: carrasco_light_1/2: geometria só no ACTIVE
+PASS: carrasco_light_1/2: arte e dano selecionam mesmo quadro
+PASS: carrasco_light_1/2: contato à frente, nunca atrás (1)
+PASS: carrasco_light_1: peças/scans deduplicam contato por ação
+PASS: carrasco_light_1: recuperação não produz dano
+PASS: carrasco_light_1/2: geometria só no ACTIVE
+PASS: carrasco_light_1/2: arte e dano selecionam mesmo quadro
+PASS: carrasco_light_1/2: contato à frente, nunca atrás (-1)
+PASS: carrasco_light_1: peças/scans deduplicam contato por ação
+PASS: carrasco_light_1: recuperação não produz dano
+PASS: carrasco_light_1/3: geometria só no ACTIVE
+PASS: carrasco_light_1/3: arte e dano selecionam mesmo quadro
+PASS: carrasco_light_1/3: contato à frente, nunca atrás (1)
+PASS: carrasco_light_1: peças/scans deduplicam contato por ação
+PASS: carrasco_light_1: recuperação não produz dano
+PASS: carrasco_light_1/3: geometria só no ACTIVE
+PASS: carrasco_light_1/3: arte e dano selecionam mesmo quadro
+PASS: carrasco_light_1/3: contato à frente, nunca atrás (-1)
+PASS: carrasco_light_1: peças/scans deduplicam contato por ação
+PASS: carrasco_light_1: recuperação não produz dano
+PASS: carrasco_light_2 mantém duração .tres e manifesto
+PASS: carrasco_light_2/3: geometria só no ACTIVE
+PASS: carrasco_light_2/3: arte e dano selecionam mesmo quadro
+PASS: carrasco_light_2/3: contato à frente, nunca atrás (1)
+PASS: carrasco_light_2: peças/scans deduplicam contato por ação
+PASS: carrasco_light_2: recuperação não produz dano
+PASS: carrasco_light_2/3: geometria só no ACTIVE
+PASS: carrasco_light_2/3: arte e dano selecionam mesmo quadro
+PASS: carrasco_light_2/3: contato à frente, nunca atrás (-1)
+PASS: carrasco_light_2: peças/scans deduplicam contato por ação
+PASS: carrasco_light_2: recuperação não produz dano
+PASS: carrasco_light_2/4: geometria só no ACTIVE
+PASS: carrasco_light_2/4: arte e dano selecionam mesmo quadro
+PASS: carrasco_light_2/4: contato à frente, nunca atrás (1)
+PASS: carrasco_light_2: peças/scans deduplicam contato por ação
+PASS: carrasco_light_2: recuperação não produz dano
+PASS: carrasco_light_2/4: geometria só no ACTIVE
+PASS: carrasco_light_2/4: arte e dano selecionam mesmo quadro
+PASS: carrasco_light_2/4: contato à frente, nunca atrás (-1)
+PASS: carrasco_light_2: peças/scans deduplicam contato por ação
+PASS: carrasco_light_2: recuperação não produz dano
+PASS: carrasco_light_3 mantém duração .tres e manifesto
+PASS: carrasco_light_3/3: geometria só no ACTIVE
+PASS: carrasco_light_3/3: arte e dano selecionam mesmo quadro
+PASS: carrasco_light_3/3: contato à frente, nunca atrás (1)
+PASS: carrasco_light_3: peças/scans deduplicam contato por ação
+PASS: carrasco_light_3: recuperação não produz dano
+PASS: carrasco_light_3/3: geometria só no ACTIVE
+PASS: carrasco_light_3/3: arte e dano selecionam mesmo quadro
+PASS: carrasco_light_3/3: contato à frente, nunca atrás (-1)
+PASS: carrasco_light_3: peças/scans deduplicam contato por ação
+PASS: carrasco_light_3: recuperação não produz dano
+PASS: carrasco_light_3/4: geometria só no ACTIVE
+PASS: carrasco_light_3/4: arte e dano selecionam mesmo quadro
+PASS: carrasco_light_3/4: contato à frente, nunca atrás (1)
+PASS: carrasco_light_3: peças/scans deduplicam contato por ação
+PASS: carrasco_light_3: recuperação não produz dano
+PASS: carrasco_light_3/4: geometria só no ACTIVE
+PASS: carrasco_light_3/4: arte e dano selecionam mesmo quadro
+PASS: carrasco_light_3/4: contato à frente, nunca atrás (-1)
+PASS: carrasco_light_3: peças/scans deduplicam contato por ação
+PASS: carrasco_light_3: recuperação não produz dano
+PASS: carrasco_post_dodge mantém duração .tres e manifesto
+PASS: carrasco_post_dodge/2: geometria só no ACTIVE
+PASS: carrasco_post_dodge/2: arte e dano selecionam mesmo quadro
+PASS: carrasco_post_dodge/2: contato à frente, nunca atrás (1)
+PASS: carrasco_post_dodge: peças/scans deduplicam contato por ação
+PASS: carrasco_post_dodge: recuperação não produz dano
+PASS: carrasco_post_dodge/2: geometria só no ACTIVE
+PASS: carrasco_post_dodge/2: arte e dano selecionam mesmo quadro
+PASS: carrasco_post_dodge/2: contato à frente, nunca atrás (-1)
+PASS: carrasco_post_dodge: peças/scans deduplicam contato por ação
+PASS: carrasco_post_dodge: recuperação não produz dano
+PASS: carrasco_post_dodge/3: geometria só no ACTIVE
+PASS: carrasco_post_dodge/3: arte e dano selecionam mesmo quadro
+PASS: carrasco_post_dodge/3: contato à frente, nunca atrás (1)
+PASS: carrasco_post_dodge: peças/scans deduplicam contato por ação
+PASS: carrasco_post_dodge: recuperação não produz dano
+PASS: carrasco_post_dodge/3: geometria só no ACTIVE
+PASS: carrasco_post_dodge/3: arte e dano selecionam mesmo quadro
+PASS: carrasco_post_dodge/3: contato à frente, nunca atrás (-1)
+PASS: carrasco_post_dodge: peças/scans deduplicam contato por ação
+PASS: carrasco_post_dodge: recuperação não produz dano
+PASS: carrasco_air_light mantém duração .tres e manifesto
+PASS: carrasco_air_light/2: geometria só no ACTIVE
+PASS: carrasco_air_light/2: arte e dano selecionam mesmo quadro
+PASS: carrasco_air_light/2: contato à frente, nunca atrás (1)
+PASS: carrasco_air_light: peças/scans deduplicam contato por ação
+PASS: carrasco_air_light: recuperação não produz dano
+PASS: carrasco_air_light/2: geometria só no ACTIVE
+PASS: carrasco_air_light/2: arte e dano selecionam mesmo quadro
+PASS: carrasco_air_light/2: contato à frente, nunca atrás (-1)
+PASS: carrasco_air_light: peças/scans deduplicam contato por ação
+PASS: carrasco_air_light: recuperação não produz dano
+PASS: carrasco_air_light/3: geometria só no ACTIVE
+PASS: carrasco_air_light/3: arte e dano selecionam mesmo quadro
+PASS: carrasco_air_light/3: contato à frente, nunca atrás (1)
+PASS: carrasco_air_light: peças/scans deduplicam contato por ação
+PASS: carrasco_air_light: recuperação não produz dano
+PASS: carrasco_air_light/3: geometria só no ACTIVE
+PASS: carrasco_air_light/3: arte e dano selecionam mesmo quadro
+PASS: carrasco_air_light/3: contato à frente, nunca atrás (-1)
+PASS: carrasco_air_light: peças/scans deduplicam contato por ação
+PASS: carrasco_air_light: recuperação não produz dano
+PASS: carrasco_air_heavy mantém duração .tres e manifesto
+PASS: carrasco_air_heavy/3: geometria só no ACTIVE
+PASS: carrasco_air_heavy/3: arte e dano selecionam mesmo quadro
+PASS: carrasco_air_heavy/3: contato à frente, nunca atrás (1)
+PASS: carrasco_air_heavy: peças/scans deduplicam contato por ação
+PASS: carrasco_air_heavy: recuperação não produz dano
+PASS: carrasco_air_heavy/3: geometria só no ACTIVE
+PASS: carrasco_air_heavy/3: arte e dano selecionam mesmo quadro
+PASS: carrasco_air_heavy/3: contato à frente, nunca atrás (-1)
+PASS: carrasco_air_heavy: peças/scans deduplicam contato por ação
+PASS: carrasco_air_heavy: recuperação não produz dano
+PASS: carrasco_air_heavy/4: geometria só no ACTIVE
+PASS: carrasco_air_heavy/4: arte e dano selecionam mesmo quadro
+PASS: carrasco_air_heavy/4: contato à frente, nunca atrás (1)
+PASS: carrasco_air_heavy: peças/scans deduplicam contato por ação
+PASS: carrasco_air_heavy: recuperação não produz dano
+PASS: carrasco_air_heavy/4: geometria só no ACTIVE
+PASS: carrasco_air_heavy/4: arte e dano selecionam mesmo quadro
+PASS: carrasco_air_heavy/4: contato à frente, nunca atrás (-1)
+PASS: carrasco_air_heavy: peças/scans deduplicam contato por ação
+PASS: carrasco_air_heavy: recuperação não produz dano
+PASS: carrasco_charged_heavy mantém duração .tres e manifesto
+PASS: carrasco_charged_heavy/2: geometria só no ACTIVE
+PASS: carrasco_charged_heavy/2: arte e dano selecionam mesmo quadro
+PASS: carrasco_charged_heavy/2: contato à frente, nunca atrás (1)
+PASS: carrasco_charged_heavy: peças/scans deduplicam contato por ação
+PASS: carrasco_charged_heavy: recuperação não produz dano
+PASS: carrasco_charged_heavy/2: geometria só no ACTIVE
+PASS: carrasco_charged_heavy/2: arte e dano selecionam mesmo quadro
+PASS: carrasco_charged_heavy/2: contato à frente, nunca atrás (-1)
+PASS: carrasco_charged_heavy: peças/scans deduplicam contato por ação
+PASS: carrasco_charged_heavy: recuperação não produz dano
+PASS: carrasco_charged_heavy/3: geometria só no ACTIVE
+PASS: carrasco_charged_heavy/3: arte e dano selecionam mesmo quadro
+PASS: carrasco_charged_heavy/3: contato à frente, nunca atrás (1)
+PASS: carrasco_charged_heavy: peças/scans deduplicam contato por ação
+PASS: carrasco_charged_heavy: recuperação não produz dano
+PASS: carrasco_charged_heavy/3: geometria só no ACTIVE
+PASS: carrasco_charged_heavy/3: arte e dano selecionam mesmo quadro
+PASS: carrasco_charged_heavy/3: contato à frente, nunca atrás (-1)
+PASS: carrasco_charged_heavy: peças/scans deduplicam contato por ação
+PASS: carrasco_charged_heavy: recuperação não produz dano
+PASS: primeiro ACTIVE usa pés após movimento do tick
+PASS: arte mantém ×1 também na sala com zoom 1
+PASS: área física conserva escala fixa; diferença de projeção em zoom 1 medida
+PASS: pose hurt cobrindo ataque suprime dano
+PASS: interrupção elimina dano imediatamente
+PASS: habilidade sem dados conserva pivô/fallback
+PASS: heavy real: colado/ponta/atrás/fora, dx 12.0 px
+PASS: heavy real: colado/ponta/atrás/fora, dx 57.0 px
+PASS: heavy real: colado/ponta/atrás/fora, dx -20.0 px
+PASS: heavy real: colado/ponta/atrás/fora, dx 95.0 px
+PASS: dano por quadro não atravessa parede sólida
+PASS: Bosque jogável instancia Peregrino, Corvo e Raiz
+PASS: Peregrino usa alvo real com IA original
+PASS: Corvo usa alvo real com IA original
+PASS: Raiz usa alvo real com IA original
+PASS: Bosque usa Pequeno A v34A
+PASS: R restaura vida/estado e reinicia encontro
+F3_RESULT checks=795 failures=0

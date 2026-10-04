@@ -1,0 +1,221 @@
+{
+  "somente_propostas_estaticas": true,
+  "quadros_propostos": [
+    0,
+    4
+  ],
+  "poses": [
+    {
+      "quadro": 0,
+      "pose_corpo_original": {
+        "dx": 2,
+        "dy": 2,
+        "partes": {
+          "capa": {
+            "ang": 10,
+            "dy": 1
+          },
+          "braco_proximo": {
+            "dy": -3
+          },
+          "mao_espada": {
+            "dy": -3
+          }
+        }
+      },
+      "capa_origem_quadro": 7,
+      "pernas": [
+        {
+          "perna": "frente",
+          "variante": "perna_frente_f0",
+          "transformacao": {
+            "parte_base": "coxa_frente",
+            "dx": 1,
+            "dy": 1,
+            "ang": 0
+          },
+          "articulacoes": {
+            "quadril": [
+              44,
+              43
+            ],
+            "joelho": [
+              49,
+              48
+            ],
+            "tornozelo": [
+              50,
+              50
+            ],
+            "ponto_sola": [
+              52,
+              55
+            ]
+          },
+          "pe_original": [
+            10,
+            0
+          ],
+          "fase_original": 0,
+          "apoio_original": true,
+          "sola_48b2": [
+            52,
+            55
+          ],
+          "deslocamento_sola_48b2": [
+            0,
+            0
+          ]
+        },
+        {
+          "perna": "tras",
+          "variante": "perna_tras_f0",
+          "transformacao": {
+            "parte_base": "coxa_tras",
+            "dx": 2,
+            "dy": 1,
+            "ang": 0
+          },
+          "articulacoes": {
+            "quadril": [
+              41,
+              43
+            ],
+            "joelho": [
+              40,
+              52
+            ],
+            "tornozelo": [
+              34,
+              47
+            ],
+            "ponto_sola": [
+              31,
+              51
+            ]
+          },
+          "pe_original": [
+            -10,
+            -3
+          ],
+          "fase_original": 4,
+          "apoio_original": false,
+          "sola_48b2": [
+            29,
+            52
+          ],
+          "deslocamento_sola_48b2": [
+            2,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "quadro": 4,
+      "pose_corpo_original": {
+        "dx": 2,
+        "dy": 2,
+        "partes": {
+          "capa": {
+            "ang": 10,
+            "dy": 1
+          },
+          "braco_proximo": {
+            "dy": -3
+          },
+          "mao_espada": {
+            "dy": -3
+          }
+        }
+      },
+      "capa_origem_quadro": 3,
+      "pernas": [
+        {
+          "perna": "frente",
+          "variante": "perna_frente_f4",
+          "transformacao": {
+            "parte_base": "coxa_frente",
+            "dx": 1,
+            "dy": 1,
+            "ang": 0
+          },
+          "articulacoes": {
+            "quadril": [
+              44,
+              43
+            ],
+            "joelho": [
+              43,
+              52
+            ],
+            "tornozelo": [
+              37,
+              47
+            ],
+            "ponto_sola": [
+              34,
+              51
+            ]
+          },
+          "pe_original": [
+            -10,
+            -3
+          ],
+          "fase_original": 4,
+          "apoio_original": false,
+          "sola_48b2": [
+            32,
+            52
+          ],
+          "deslocamento_sola_48b2": [
+            2,
+            -1
+          ]
+        },
+        {
+          "perna": "tras",
+          "variante": "perna_tras_f4",
+          "transformacao": {
+            "parte_base": "coxa_tras",
+            "dx": 2,
+            "dy": 1,
+            "ang": 0
+          },
+          "articulacoes": {
+            "quadril": [
+              41,
+              43
+            ],
+            "joelho": [
+              46,
+              48
+            ],
+            "tornozelo": [
+              47,
+              50
+            ],
+            "ponto_sola": [
+              49,
+              55
+            ]
+          },
+          "pe_original": [
+            10,
+            0
+          ],
+          "fase_original": 0,
+          "apoio_original": true,
+          "sola_48b2": [
+            49,
+            55
+          ],
+          "deslocamento_sola_48b2": [
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

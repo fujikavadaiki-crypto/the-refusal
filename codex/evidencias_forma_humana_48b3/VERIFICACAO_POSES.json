@@ -1,0 +1,125 @@
+{
+  "conferencia_tecnica_aprovada": true,
+  "avaliacao_visual": "pendente de avaliação do usuário",
+  "mestre_sha256": "204432d31a2d8890c6def7b6fd81b56972ce482b5eca82fa3de878ebe2dcf988",
+  "quadros": [
+    {
+      "quadro": 0,
+      "pixels_alterados": 135,
+      "pixels_do_corpo_alterados": 0,
+      "pixels_fora_pernas_botas_alterados": 0,
+      "componentes": 1,
+      "tamanhos": [
+        1008
+      ],
+      "cores_isoladas": 0,
+      "quadris_preservados": true,
+      "apoio_preservado": true,
+      "solas": [
+        {
+          "perna": "frente",
+          "apoio": true,
+          "antes": [
+            52,
+            55
+          ],
+          "depois": [
+            52,
+            55
+          ],
+          "delta": [
+            0,
+            0
+          ]
+        },
+        {
+          "perna": "tras",
+          "apoio": false,
+          "antes": [
+            29,
+            52
+          ],
+          "depois": [
+            31,
+            51
+          ],
+          "delta": [
+            2,
+            -1
+          ]
+        }
+      ],
+      "replay_rgba_identico": true
+    },
+    {
+      "quadro": 4,
+      "pixels_alterados": 116,
+      "pixels_do_corpo_alterados": 0,
+      "pixels_fora_pernas_botas_alterados": 0,
+      "componentes": 1,
+      "tamanhos": [
+        1002
+      ],
+      "cores_isoladas": 0,
+      "quadris_preservados": true,
+      "apoio_preservado": true,
+      "solas": [
+        {
+          "perna": "frente",
+          "apoio": false,
+          "antes": [
+            32,
+            52
+          ],
+          "depois": [
+            34,
+            51
+          ],
+          "delta": [
+            2,
+            -1
+          ]
+        },
+        {
+          "perna": "tras",
+          "apoio": true,
+          "antes": [
+            49,
+            55
+          ],
+          "depois": [
+            49,
+            55
+          ],
+          "delta": [
+            0,
+            0
+          ]
+        }
+      ],
+      "replay_rgba_identico": true
+    }
+  ],
+  "somente_estaticas": [
+    0,
+    4
+  ],
+  "animacao_gif_video_gerados": false,
+  "paleta": "paleta_bosque_v1",
+  "alpha": [
+    0,
+    255
+  ],
+  "ancora": [
+    40,
+    56
+  ],
+  "pixels_do_corpo_preservados": true,
+  "botas_redesenhadas": true,
+  "f2_f6_nao_regerados": {
+    "run_f2.png": "1a027f1bec2833602d930dc0c3da1a172f2c0aef6d163a5b8ed4f5f48ffb1e22",
+    "run_f6.png": "82c80d982a305f33f0ee55f5a4965be58b6e1406f739cd568eddda1a621656ce"
+  },
+  "sombra_embutida": false,
+  "quadro_neutro_recomposto_rgba_identico": true
+}
