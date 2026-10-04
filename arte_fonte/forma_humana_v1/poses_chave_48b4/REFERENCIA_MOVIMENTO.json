@@ -1,0 +1,22 @@
+{
+  "nao_e_manifesto_de_animacao": true,
+  "referencia": "../rig_48b/contrato_ciclos.json",
+  "sha256": "f7fab9e84549a50d21b1b5b0859c515b8a9189f1dc0243a8abf43cbd5e1cf033",
+  "quadros_do_ciclo_preservado": 8,
+  "ms_por_quadro": 41.67,
+  "px_por_quadro": 6,
+  "velocidades_humanas_preservadas": {
+    "fonte": "scripts/player/player_locomotion.gd",
+    "fonte_sha256": "5eebe7bd381b98edd481afd9a7294d5b71f21920a8d2f4ad152e88186fe535ef",
+    "corrida_unidades_s": 173.91304347826087,
+    "caminhada_unidades_s": 95.65217391304348,
+    "corrida_m_s": 4.891304347826087,
+    "caminhada_m_s": 2.6902173913043477,
+    "corrida_px_s": 156.52173913043478,
+    "caminhada_px_s": 86.08695652173914,
+    "aceleracao_px_s2": 1173.913043478261,
+    "zoom_referencia": 0.9,
+    "pixel_arte": 1
+  },
+  "animacoes_geradas": false
+}

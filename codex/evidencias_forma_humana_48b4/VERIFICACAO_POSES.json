@@ -1,0 +1,198 @@
+{
+  "conferencia_tecnica_aprovada": true,
+  "avaliacao_visual": "pendente de avaliação do usuário",
+  "mestre_sha256": "204432d31a2d8890c6def7b6fd81b56972ce482b5eca82fa3de878ebe2dcf988",
+  "quadros": [
+    {
+      "quadro": 0,
+      "pixels_alterados": 79,
+      "pixels_do_corpo_alterados": 0,
+      "pixels_fora_pernas_botas_alterados": 0,
+      "componentes": 1,
+      "tamanhos": [
+        972
+      ],
+      "cores_isoladas": 0,
+      "quadris_preservados": true,
+      "apoio_preservado": true,
+      "solas": [
+        {
+          "perna": "frente",
+          "apoio": true,
+          "antes": [
+            52,
+            55
+          ],
+          "depois": [
+            52,
+            55
+          ],
+          "delta": [
+            0,
+            0
+          ]
+        },
+        {
+          "perna": "tras",
+          "apoio": false,
+          "antes": [
+            31,
+            51
+          ],
+          "depois": [
+            32,
+            49
+          ],
+          "delta": [
+            1,
+            -2
+          ]
+        }
+      ],
+      "replay_rgba_identico": true,
+      "pixels_perna_apoio_alterados": 0,
+      "altura_joelho_recolhido_acima_do_chao_px": 7,
+      "altura_sola_elevada_acima_do_chao_px": 6,
+      "pontos": [
+        {
+          "perna": "frente",
+          "antes": {
+            "quadril": [
+              44,
+              43
+            ],
+            "joelho": [
+              49,
+              48
+            ],
+            "tornozelo": [
+              50,
+              50
+            ],
+            "ponto_sola": [
+              52,
+              55
+            ]
+          },
+          "depois": {
+            "quadril": [
+              44,
+              43
+            ],
+            "joelho": [
+              49,
+              48
+            ],
+            "tornozelo": [
+              50,
+              50
+            ],
+            "ponto_sola": [
+              52,
+              55
+            ]
+          },
+          "diferencas": {
+            "quadril": [
+              0,
+              0
+            ],
+            "joelho": [
+              0,
+              0
+            ],
+            "tornozelo": [
+              0,
+              0
+            ],
+            "ponto_sola": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "perna": "tras",
+          "antes": {
+            "quadril": [
+              41,
+              43
+            ],
+            "joelho": [
+              40,
+              52
+            ],
+            "tornozelo": [
+              34,
+              47
+            ],
+            "ponto_sola": [
+              31,
+              51
+            ]
+          },
+          "depois": {
+            "quadril": [
+              41,
+              43
+            ],
+            "joelho": [
+              39,
+              48
+            ],
+            "tornozelo": [
+              33,
+              44
+            ],
+            "ponto_sola": [
+              32,
+              49
+            ]
+          },
+          "diferencas": {
+            "quadril": [
+              0,
+              0
+            ],
+            "joelho": [
+              -1,
+              -4
+            ],
+            "tornozelo": [
+              -1,
+              -3
+            ],
+            "ponto_sola": [
+              1,
+              -2
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "somente_estaticas": [
+    0
+  ],
+  "animacao_gif_video_gerados": false,
+  "paleta": "paleta_bosque_v1",
+  "alpha": [
+    0,
+    255
+  ],
+  "ancora": [
+    40,
+    56
+  ],
+  "pixels_do_corpo_preservados": true,
+  "botas_redesenhadas": true,
+  "f2_f6_nao_regerados": {
+    "run_f2.png": "1a027f1bec2833602d930dc0c3da1a172f2c0aef6d163a5b8ed4f5f48ffb1e22",
+    "run_f6.png": "82c80d982a305f33f0ee55f5a4965be58b6e1406f739cd568eddda1a621656ce"
+  },
+  "f4_nao_regerado": "ca06ef49a807cf6dbf1da59719de555fb0ead758043f931f209f105e461180a0",
+  "sombra_embutida": false,
+  "quadro_neutro_recomposto_rgba_identico": true,
+  "limite_anterior_de_2px_revogado": true,
+  "trajetoria_identica_a_anterior": false
+}

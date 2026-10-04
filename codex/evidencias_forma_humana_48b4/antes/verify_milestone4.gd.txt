@@ -1,0 +1,60 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+PASS: Peregrino: 100 HP canônicos
+PASS: Peregrino: 40 Postura canônica
+PASS: fora da percepção, patrulha sem atacar
+PASS: fora de alcance, jogador intacto
+PASS: entrada em alcance gera ALERT
+PASS: ALERT progride para CHASE
+PASS: ataque entra em WINDUP
+PASS: ataque entra em ACTIVE
+PASS: ataque entra em RECOVERY
+PASS: Corte causa 12 HP / 8 Postura
+PASS: um contato por janela ofensiva
+PASS: reset restaura HP, Postura e IA
+PASS: reset desativa Hitbox
+PASS: afastar-se durante WINDUP evita golpe comprometido
+PASS: Parry evita HP e Postura
+PASS: Parry retorna 8 Postura ao Peregrino
+PASS: Dodge em i-frame evita ambos os danos
+PASS: Dodge resolvido pelo sistema genérico
+PASS: sem i-frame/Parry, ataque causa dano normal
+PASS: scan repetido não duplica hit
+PASS: Light 1 aplica 20 HP / 8 Postura via Hitbox
+PASS: Heavy aplica 35 HP / 25 Postura via Hitbox
+PASS: Peregrino recebe Light 1/2/3: 20+22+28 HP e 8+9+14 Postura
+PASS: Postura zero inicia RUPTURE
+PASS: Ruptura cancela Hitbox
+PASS: Ruptura aplica vulnerabilidade canônica +20%
+PASS: recupera aproximadamente 50% da Postura
+PASS: morte prevalece sobre Ruptura simultânea
+PASS: morte neutraliza ataque
+PASS: tecla R restaura o Peregrino após morte
+PASS: reset ressuscita Peregrino
+PASS: dados canônicos: peregrino_corte
+PASS: dados canônicos: peregrino_estocada
+PASS: dados canônicos: peregrino_investida
+PASS: dados canônicos: peregrino_corte_duplo_1
+PASS: dados canônicos: peregrino_corte_duplo_2
+PASS: dados canônicos: peregrino_penitencia
+PASS: Corte Duplo aplica 10+12 HP e 6+8 Postura
+PASS: Corte Duplo registra uma vez por golpe
+PASS: Golpe da Penitência atravessa Parry, 25 HP / 22 Postura
+PASS: Golpe da Penitência não é parryable
+SOAK frame=0 state=ALERT x=1300.0
+SOAK frame=600 state=ATTACK_WINDUP x=1192.83654785156
+SOAK frame=1200 state=ATTACK_RECOVERY x=1180.41552734375
+SOAK frame=1800 state=ATTACK_RECOVERY x=1168.18408203125
+SOAK frame=2400 state=ATTACK_RECOVERY x=1143.53161621094
+SOAK frame=3000 state=ATTACK_RECOVERY x=1131.30017089844
+SOAK frame=3600 state=CHASE x=1119.06872558594
+SOAK frame=4200 state=ATTACK_ACTIVE x=1106.83728027344
+SOAK frame=4800 state=ALERT x=1094.60583496094
+SOAK frame=5400 state=ALERT x=1094.60583496094
+SOAK frame=6000 state=ALERT x=1094.60583496094
+SOAK frame=6600 state=PATROL x=1094.60583496094
+PASS: 2 minutos simulados: IA combate sem estado impossível
+PASS: IA percorre os cinco golpes canônicos, incluindo as duas janelas do Corte Duplo
+MILESTONE 4: PASS

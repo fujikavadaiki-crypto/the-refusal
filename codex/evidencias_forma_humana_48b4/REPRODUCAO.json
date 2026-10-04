@@ -1,0 +1,28 @@
+{
+  "aprovado": true,
+  "arquivos_conferidos": 20,
+  "diferencas": [],
+  "segunda_geracao_sha256_identica": true,
+  "sha256": {
+    "arte_fonte/forma_humana_v1/poses_chave_48b4/.gdignore": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "arte_fonte/forma_humana_v1/poses_chave_48b4/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "arte_fonte/forma_humana_v1/poses_chave_48b4/desenhos_pixels.json": "11e69ae2f7e3c9f5eb1db7e13da8400557db25d2b81feedd9d3baa6d635eb52b",
+    "arte_fonte/forma_humana_v1/poses_chave_48b4/mascaras/corpo_protegido_f0.png": "54d017812b0e961f230324ca7b8b3379b29b393107e2f8d57ec2b0d9d622fa89",
+    "arte_fonte/forma_humana_v1/poses_chave_48b4/mascaras/diferenca_f0.png": "3b0201601b92ba57ed5506b5dbd1a00cf9214a92c4583672b1741e7176cc6f1d",
+    "arte_fonte/forma_humana_v1/poses_chave_48b4/mascaras/pernas_botas_f0.png": "223870eddea4f95aa3ee96702b8edf8f99d61b86ae3c3889df2089a40ca495ca",
+    "arte_fonte/forma_humana_v1/poses_chave_48b4/poses.json": "2b8fbe4c5b4e3eae24e45d8094b3eeb6725df7889eeb8c89a77a24fb8904f80a",
+    "arte_fonte/forma_humana_v1/poses_chave_48b4/quadros/run_f0.png": "21f527db001fe0568de7102e5182fb5aa1303285835d3473576e8a23271519be",
+    "arte_fonte/forma_humana_v1/poses_chave_48b4/README.md": "a6ea7f8a0da9c38fb3b8a7563d48379adc55cef87cbb2ed64c777b90eb299935",
+    "arte_fonte/forma_humana_v1/poses_chave_48b4/REFERENCIA_MOVIMENTO.json": "8abe074709187a41a33edbea85eb8e0be7e195f86faf2011f9b8ff54229c0e73",
+    "arte_fonte/forma_humana_v1/poses_chave_48b4/rig.json": "10cacd4daaf685531f0884bef4e6e5be20e286f0d862dfe14c794a100f8454e4",
+    "arte_fonte/forma_humana_v1/poses_chave_48b4/variantes/perna_frente_f0.png": "1d675087c7406142c8ca10b1163fde75921cb840a327175e9feeeb93f4503dae",
+    "arte_fonte/forma_humana_v1/poses_chave_48b4/variantes/perna_tras_f0.png": "fdd60a5e37d5ad15a58007a2092aebdff0744c334da34b24c6399d39a772e81c",
+    "codex/evidencias_forma_humana_48b4/ARTICULACOES_AUXILIAR.png": "cc5ba7971e98a2ee8071432dc88c3d7b637bd18a64e25f8330d6d09cb76119a2",
+    "codex/evidencias_forma_humana_48b4/COMPARACAO_COMPLETA_x1.png": "f5969eab1dba1feddd49c638b89d75076cebfbe6758b95f8b6083d90fb93ad37",
+    "codex/evidencias_forma_humana_48b4/COMPARACAO_COMPLETA_x4.png": "29f2c3cb4b0086cef5d5d70a9f9ad3d6e3764479b14f8b6ceb3ea7d46778abc9",
+    "codex/evidencias_forma_humana_48b4/PERNAS_MESTRE_ANTES_PROPOSTA.png": "b8f66b92583699f978680b26a33ef1669c29d24781ccf897b66245a9b9d850c8",
+    "codex/evidencias_forma_humana_48b4/PROPOSTA_f0_x1.png": "2ae9a9568fcac3f9bf42a728f7f947dd5430b75a998831da3bf1a394b00ab76f",
+    "codex/evidencias_forma_humana_48b4/PROPOSTA_f0_x4.png": "6a1d5ca2a545e63a618ad2d10cfe655bc62d3550db186da35fa809cf53af88a4",
+    "codex/evidencias_forma_humana_48b4/VERIFICACAO_POSES.json": "35f78dcecd5c860155b6576a56868236ffd7739532a1a2f852211d59002f191c"
+  }
+}
