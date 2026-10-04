@@ -1,0 +1,177 @@
+[
+  {
+    "teste": "tests/verify_approved_bosque_surfaces.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 0,
+    "pass_depois": 0
+  },
+  {
+    "teste": "tests/verify_bosque_initial_step.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 0,
+    "pass_depois": 0
+  },
+  {
+    "teste": "tests/verify_bosque_room.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 0,
+    "pass_depois": 0
+  },
+  {
+    "teste": "tests/verify_bosque_trecho_01_playable.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 0,
+    "pass_depois": 0
+  },
+  {
+    "teste": "tests/verify_carrasco_gif_test.gd",
+    "aprovado_antes": false,
+    "aprovado_depois": false,
+    "pass_antes": 1,
+    "pass_depois": 1
+  },
+  {
+    "teste": "tests/verify_milestone2.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 33,
+    "pass_depois": 33
+  },
+  {
+    "teste": "tests/verify_milestone3.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 68,
+    "pass_depois": 68
+  },
+  {
+    "teste": "tests/verify_milestone4.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 43,
+    "pass_depois": 43
+  },
+  {
+    "teste": "tests/verify_milestone4_1.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 59,
+    "pass_depois": 59
+  },
+  {
+    "teste": "tests/verify_milestone5.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 50,
+    "pass_depois": 50
+  },
+  {
+    "teste": "tests/verify_milestone6.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 51,
+    "pass_depois": 51
+  },
+  {
+    "teste": "tests/verify_milestone7.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 43,
+    "pass_depois": 43
+  },
+  {
+    "teste": "tests/verify_milestone7_1.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 18,
+    "pass_depois": 18
+  },
+  {
+    "teste": "tests/verify_milestone8.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 66,
+    "pass_depois": 66
+  },
+  {
+    "teste": "tests/verify_milestone8_1.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 59,
+    "pass_depois": 59
+  },
+  {
+    "teste": "tests/verify_milestone8_2.gd",
+    "aprovado_antes": false,
+    "aprovado_depois": false,
+    "pass_antes": 1,
+    "pass_depois": 1
+  },
+  {
+    "teste": "tests/verify_milestone8_3.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 56,
+    "pass_depois": 56
+  },
+  {
+    "teste": "tests/verify_vertical_second_encounter.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 7,
+    "pass_depois": 7
+  },
+  {
+    "teste": "tests/verify_vertical_slice.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 13,
+    "pass_depois": 13
+  },
+  {
+    "teste": "codex/testes/verify_integracao_p40_f1.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 228,
+    "pass_depois": 228
+  },
+  {
+    "teste": "codex/testes/verify_integracao_p40_f2.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 85,
+    "pass_depois": 85
+  },
+  {
+    "teste": "codex/testes/verify_integracao_p40_f3.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 795,
+    "pass_depois": 795
+  },
+  {
+    "teste": "codex/testes/verify_integracao_p40_f4.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 119,
+    "pass_depois": 119
+  },
+  {
+    "teste": "codex/testes/verify_integracao_p40_f5.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 70,
+    "pass_depois": 70
+  },
+  {
+    "teste": "codex/testes/verify_integracao_p40_f6.gd",
+    "aprovado_antes": true,
+    "aprovado_depois": true,
+    "pass_antes": 204,
+    "pass_depois": 204
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "base_sha256": "28d0f2438a34e78ccef3676432a522dd2e35ecff381ad52a016d95b571813852",
+  "pixels_diferentes_rgba": 0,
+  "rgba_identico": true,
+  "partes_base": 9,
+  "camadas": [
+    "perna_tras",
+    "braco_distante",
+    "capa",
+    "tronco",
+    "perna_frente",
+    "capuz",
+    "cabeca_cabelo",
+    "braco_proximo",
+    "mao_espada"
+  ],
+  "completar": "somente pixels ocultos dentro da silhueta da base"
+}

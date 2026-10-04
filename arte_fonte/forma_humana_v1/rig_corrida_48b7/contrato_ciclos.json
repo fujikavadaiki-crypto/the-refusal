@@ -1,0 +1,121 @@
+{
+  "referencia": "assets/characters/pequeno_v34A/manifesto_sprites.json",
+  "referencia_sha256": "0a61e24f68a2d5ed2ebbdfc666c504d2851fa8f66316cae5d9c8f33c114d9a64",
+  "base_sha256": "28d0f2438a34e78ccef3676432a522dd2e35ecff381ad52a016d95b571813852",
+  "nao_e_pacote_final": true,
+  "arte_instalada": false,
+  "canvas": [
+    96,
+    64
+  ],
+  "ancora": [
+    40,
+    56
+  ],
+  "chao_y": 55,
+  "paleta": "paleta_bosque_v1",
+  "sem_walk": true,
+  "caminhada_usa": "run",
+  "somente_run": true,
+  "animacoes": [
+    {
+      "id": "run",
+      "quadros": [
+        {
+          "quadro": 0,
+          "arquivo": "quadros/run/run_f0.png",
+          "sha256": "28d0f2438a34e78ccef3676432a522dd2e35ecff381ad52a016d95b571813852",
+          "ms": 41.67,
+          "ancora": [
+            40,
+            56
+          ],
+          "nome_referencia": "quadros/run/run_f0.png"
+        },
+        {
+          "quadro": 1,
+          "arquivo": "quadros/run/run_f1.png",
+          "sha256": "756f2c947d98dc6c70c3e4fe2ca364a3538e6ea7c5483859a270be9610b4bb3c",
+          "ms": 41.67,
+          "ancora": [
+            40,
+            56
+          ],
+          "nome_referencia": "quadros/run/run_f1.png"
+        },
+        {
+          "quadro": 2,
+          "arquivo": "quadros/run/run_f2.png",
+          "sha256": "c8a255ea006005c68738ec540664a97ba798ef6bfdfa6e6c3d8a05fcdf08d43d",
+          "ms": 41.67,
+          "ancora": [
+            40,
+            56
+          ],
+          "nome_referencia": "quadros/run/run_f2.png"
+        },
+        {
+          "quadro": 3,
+          "arquivo": "quadros/run/run_f3.png",
+          "sha256": "ba6e1a9748e39c1fbaa8ae92e888688daa96b2462f40a05e9548e14b935f82b3",
+          "ms": 41.67,
+          "ancora": [
+            40,
+            56
+          ],
+          "nome_referencia": "quadros/run/run_f3.png"
+        },
+        {
+          "quadro": 4,
+          "arquivo": "quadros/run/run_f4.png",
+          "sha256": "4a9e1c62098f0c58b7bd57bab01b783295f3cd8f1aeac914d91c2dac193be4ec",
+          "ms": 41.67,
+          "ancora": [
+            40,
+            56
+          ],
+          "nome_referencia": "quadros/run/run_f4.png"
+        },
+        {
+          "quadro": 5,
+          "arquivo": "quadros/run/run_f5.png",
+          "sha256": "2e8a1d696f5e752f4ad85d29c729681918873d188e29534ec24304c5010ebb6a",
+          "ms": 41.67,
+          "ancora": [
+            40,
+            56
+          ],
+          "nome_referencia": "quadros/run/run_f5.png"
+        },
+        {
+          "quadro": 6,
+          "arquivo": "quadros/run/run_f6.png",
+          "sha256": "0365fb5616729ae4c98aba8541b1cf9ba0915ef16cfa129425f643f7940b01bd",
+          "ms": 41.67,
+          "ancora": [
+            40,
+            56
+          ],
+          "nome_referencia": "quadros/run/run_f6.png"
+        },
+        {
+          "quadro": 7,
+          "arquivo": "quadros/run/run_f7.png",
+          "sha256": "947ef49ec0821c8e284b1beee2dbde163ae251abc5a524287c71f2dc98868030",
+          "ms": 41.67,
+          "ancora": [
+            40,
+            56
+          ],
+          "nome_referencia": "quadros/run/run_f7.png"
+        }
+      ],
+      "px_por_quadro": 6,
+      "loop": true,
+      "duracao_soma_ms": 333.36,
+      "duracao_nominal_referencia_ms": 333.33
+    }
+  ],
+  "selecao": "floor(distancia_px / 6) mod 8",
+  "sem_sombra_embutida": true
+}

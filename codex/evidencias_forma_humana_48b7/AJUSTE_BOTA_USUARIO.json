@@ -1,0 +1,112 @@
+{
+  "somente_pernas_botas": true,
+  "f0_preservada": true,
+  "quadros": [
+    {
+      "quadro": 0,
+      "pixels_alterados": 0,
+      "bbox": null,
+      "antes_sha256": "28d0f2438a34e78ccef3676432a522dd2e35ecff381ad52a016d95b571813852",
+      "depois_sha256": "28d0f2438a34e78ccef3676432a522dd2e35ecff381ad52a016d95b571813852",
+      "cabeca_tronco_bracos_arma_preservados": true
+    },
+    {
+      "quadro": 1,
+      "pixels_alterados": 68,
+      "bbox": [
+        26,
+        40,
+        39,
+        55
+      ],
+      "antes_sha256": "bd609dff05b687f4c03be8c24686b0802f61f0d153c3bb824c369817f9419022",
+      "depois_sha256": "756f2c947d98dc6c70c3e4fe2ca364a3538e6ea7c5483859a270be9610b4bb3c",
+      "cabeca_tronco_bracos_arma_preservados": true
+    },
+    {
+      "quadro": 2,
+      "pixels_alterados": 82,
+      "bbox": [
+        24,
+        39,
+        37,
+        55
+      ],
+      "antes_sha256": "aa5b9896e14c72dc9e16c3f389d71e5ca484451f7a0a515262e376cd53f85224",
+      "depois_sha256": "c8a255ea006005c68738ec540664a97ba798ef6bfdfa6e6c3d8a05fcdf08d43d",
+      "cabeca_tronco_bracos_arma_preservados": true
+    },
+    {
+      "quadro": 3,
+      "pixels_alterados": 113,
+      "bbox": [
+        18,
+        40,
+        43,
+        55
+      ],
+      "antes_sha256": "eb8d99e5b608b42f85be7234ff18d688e5844706c034bb54d0f798ef09e4a1e6",
+      "depois_sha256": "ba6e1a9748e39c1fbaa8ae92e888688daa96b2462f40a05e9548e14b935f82b3",
+      "cabeca_tronco_bracos_arma_preservados": true
+    },
+    {
+      "quadro": 4,
+      "pixels_alterados": 15,
+      "bbox": [
+        36,
+        40,
+        42,
+        55
+      ],
+      "antes_sha256": "7d2467984373a52871a5d076ce8aa88517392a5bd65671662cc2e4d4c8d7685d",
+      "depois_sha256": "4a9e1c62098f0c58b7bd57bab01b783295f3cd8f1aeac914d91c2dac193be4ec",
+      "cabeca_tronco_bracos_arma_preservados": true
+    },
+    {
+      "quadro": 5,
+      "pixels_alterados": 63,
+      "bbox": [
+        26,
+        40,
+        39,
+        55
+      ],
+      "antes_sha256": "8653e182a75f91d1836c103d6af7a7baa70f3cff8cba243191cba63705bf8e88",
+      "depois_sha256": "2e8a1d696f5e752f4ad85d29c729681918873d188e29534ec24304c5010ebb6a",
+      "cabeca_tronco_bracos_arma_preservados": true
+    },
+    {
+      "quadro": 6,
+      "pixels_alterados": 55,
+      "bbox": [
+        24,
+        40,
+        36,
+        55
+      ],
+      "antes_sha256": "e628ccbee01926bb276ff20835acd1ef9c02e39ccafb33052dd46442a88239f8",
+      "depois_sha256": "0365fb5616729ae4c98aba8541b1cf9ba0915ef16cfa129425f643f7940b01bd",
+      "cabeca_tronco_bracos_arma_preservados": true
+    },
+    {
+      "quadro": 7,
+      "pixels_alterados": 112,
+      "bbox": [
+        18,
+        41,
+        42,
+        55
+      ],
+      "antes_sha256": "f304db0f1bc26e571009ca6fd4fd1c01acf8852d4f8063567c9820dfa319ee27",
+      "depois_sha256": "947ef49ec0821c8e284b1beee2dbde163ae251abc5a524287c71f2dc98868030",
+      "cabeca_tronco_bracos_arma_preservados": true
+    }
+  ],
+  "apoios_tempos_cadencia_preservados": true,
+  "referencia_sha256": "13b9c81745cfb38ec7add746c39ef97005a981d58f6cac1d3bd12f75120e518c",
+  "calca": "carvão oficial 0/1/2",
+  "bota": "couro oficial 7/8/10/11/13",
+  "cano_px": 6,
+  "canela_min_px": 6,
+  "sola_nativa_apoio_px": 9
+}

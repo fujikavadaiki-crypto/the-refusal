@@ -1,0 +1,429 @@
+{
+  "fonte": "arte_fonte/forma_humana_v1/pose_corrida_48b6/run_f0_x1.png",
+  "altura_px": 48,
+  "ancora_mestre": [
+    40,
+    56
+  ],
+  "camadas": [
+    "perna_tras",
+    "braco_distante",
+    "capa",
+    "tronco",
+    "perna_frente",
+    "capuz",
+    "cabeca_cabelo",
+    "braco_proximo",
+    "mao_espada"
+  ],
+  "partes": {
+    "cabeca_cabelo": {
+      "pivo": [
+        36,
+        24
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "partes/cabeca_cabelo.png",
+      "sha256": "b12df305f5e4c4d9e7de69bb2526bc91df09ed26fc34669c227214c389505fab"
+    },
+    "mao_espada": {
+      "pivo": [
+        31,
+        38
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "partes/mao_espada.png",
+      "sha256": "1ac8af4997d9f35a4608d20d3060151cd229bb2e51c771ba15a5efee48ac1982"
+    },
+    "braco_distante": {
+      "pivo": [
+        36,
+        31
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "partes/braco_distante.png",
+      "sha256": "babbd33bfeb5da50808ae6af15e016f355e5e373e2bd1500174c0a068d277af9"
+    },
+    "braco_proximo": {
+      "pivo": [
+        28,
+        31
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "partes/braco_proximo.png",
+      "sha256": "90583a6d5f732adf2994c81f6b51c20b3500a5b2e9dfae01b04ac6d858ab22df"
+    },
+    "perna_tras": {
+      "pivo": [
+        28,
+        40
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "partes/perna_tras.png",
+      "sha256": "bea1bb77fcd570caf07434b072737a453b81a31c60f5b15aa7a239d9137523b2"
+    },
+    "perna_frente": {
+      "pivo": [
+        34,
+        40
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "partes/perna_frente.png",
+      "sha256": "7864d6519c8eb51c3829d739d3736cb2174e2b66c88d15a0536eb404e5ed67a8"
+    },
+    "capa": {
+      "pivo": [
+        23,
+        29
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "partes/capa.png",
+      "sha256": "82ff2c30e0d9ee07dfe3beed736c3d3d765c18859986585fad16e564aad050df"
+    },
+    "capuz": {
+      "pivo": [
+        32,
+        27
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "partes/capuz.png",
+      "sha256": "34cb3cd1501168a15e14ecba7dcbf2ca18fe3c12e5cc4698e800025baa7343ea"
+    },
+    "tronco": {
+      "pivo": [
+        32,
+        34
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ],
+      "arquivo": "partes/tronco.png",
+      "sha256": "e4ace5f2cc8dfe85b00a3c540d9aa5cff6c113f568ae6f716ac17672dc3eccdb"
+    },
+    "perna_frente_q0": {
+      "pivo": [
+        34,
+        40
+      ],
+      "arquivo": "partes/perna_frente_q0.png",
+      "sha256": "7864d6519c8eb51c3829d739d3736cb2174e2b66c88d15a0536eb404e5ed67a8",
+      "variante": true,
+      "variante_de": "perna_frente",
+      "origem_mestre_calculada": [
+        0,
+        0
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ]
+    },
+    "perna_frente_q1": {
+      "pivo": [
+        34,
+        40
+      ],
+      "arquivo": "partes/perna_frente_q1.png",
+      "sha256": "776e764d336f76f7549da97d75bcb9af52cd63baf1efa26cd8fa79c03f10df8e",
+      "variante": true,
+      "variante_de": "perna_frente",
+      "origem_mestre_calculada": [
+        0,
+        0
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ]
+    },
+    "perna_frente_q2": {
+      "pivo": [
+        34,
+        40
+      ],
+      "arquivo": "partes/perna_frente_q2.png",
+      "sha256": "089d8cafa262bcc3f8c8a1788934985a7628c1c5c5f8c1c1983bcc688f4ad826",
+      "variante": true,
+      "variante_de": "perna_frente",
+      "origem_mestre_calculada": [
+        0,
+        0
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ]
+    },
+    "perna_frente_q3": {
+      "pivo": [
+        34,
+        40
+      ],
+      "arquivo": "partes/perna_frente_q3.png",
+      "sha256": "723a41c0772fcf5eeb67053a2aacd2145508f7133a6742babbd1e5c4d4108ef3",
+      "variante": true,
+      "variante_de": "perna_frente",
+      "origem_mestre_calculada": [
+        0,
+        0
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ]
+    },
+    "perna_frente_q4": {
+      "pivo": [
+        34,
+        40
+      ],
+      "arquivo": "partes/perna_frente_q4.png",
+      "sha256": "80be34790ed64dd741426504c6d56d5d321672694204aa0f23469ba099378373",
+      "variante": true,
+      "variante_de": "perna_frente",
+      "origem_mestre_calculada": [
+        0,
+        0
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ]
+    },
+    "perna_frente_q5": {
+      "pivo": [
+        34,
+        40
+      ],
+      "arquivo": "partes/perna_frente_q5.png",
+      "sha256": "2ca6ad3e398bd439e27eb183c394b798a17d137c4ea6697dbd05fa35d28c5977",
+      "variante": true,
+      "variante_de": "perna_frente",
+      "origem_mestre_calculada": [
+        0,
+        0
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ]
+    },
+    "perna_frente_q6": {
+      "pivo": [
+        34,
+        40
+      ],
+      "arquivo": "partes/perna_frente_q6.png",
+      "sha256": "7ce71aef3595bf39413ea00ed02d4f502e564ecaa9acdda75e7bb7a8f04d54ab",
+      "variante": true,
+      "variante_de": "perna_frente",
+      "origem_mestre_calculada": [
+        0,
+        0
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ]
+    },
+    "perna_frente_q7": {
+      "pivo": [
+        34,
+        40
+      ],
+      "arquivo": "partes/perna_frente_q7.png",
+      "sha256": "fbeab19035133584cfddecf5e99f4d1f24f6a476d7e4a3b1904e2882a3499a25",
+      "variante": true,
+      "variante_de": "perna_frente",
+      "origem_mestre_calculada": [
+        0,
+        0
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ]
+    },
+    "perna_tras_q0": {
+      "pivo": [
+        28,
+        40
+      ],
+      "arquivo": "partes/perna_tras_q0.png",
+      "sha256": "63d005b153316abc14fe9c6b6cc99ecfe5711ae22b8fed0864fd4d73bb8f68e0",
+      "variante": true,
+      "variante_de": "perna_tras",
+      "origem_mestre_calculada": [
+        0,
+        0
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ]
+    },
+    "perna_tras_q1": {
+      "pivo": [
+        28,
+        40
+      ],
+      "arquivo": "partes/perna_tras_q1.png",
+      "sha256": "2c1de28244efe6c6f6bc56912a01162912869e85a69afdb957cea7b8b09b7e0d",
+      "variante": true,
+      "variante_de": "perna_tras",
+      "origem_mestre_calculada": [
+        0,
+        0
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ]
+    },
+    "perna_tras_q2": {
+      "pivo": [
+        28,
+        40
+      ],
+      "arquivo": "partes/perna_tras_q2.png",
+      "sha256": "cf6da78a9ea2534b5f5d124620f1a34e7372f5bcf3b8cc1ecea26f8cb634b344",
+      "variante": true,
+      "variante_de": "perna_tras",
+      "origem_mestre_calculada": [
+        0,
+        0
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ]
+    },
+    "perna_tras_q3": {
+      "pivo": [
+        28,
+        40
+      ],
+      "arquivo": "partes/perna_tras_q3.png",
+      "sha256": "9d6dbfde5b96d646de95ba0863ca4b0d463ed3e9bc30a52158f87e282c89481a",
+      "variante": true,
+      "variante_de": "perna_tras",
+      "origem_mestre_calculada": [
+        0,
+        0
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ]
+    },
+    "perna_tras_q4": {
+      "pivo": [
+        28,
+        40
+      ],
+      "arquivo": "partes/perna_tras_q4.png",
+      "sha256": "bea1bb77fcd570caf07434b072737a453b81a31c60f5b15aa7a239d9137523b2",
+      "variante": true,
+      "variante_de": "perna_tras",
+      "origem_mestre_calculada": [
+        0,
+        0
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ]
+    },
+    "perna_tras_q5": {
+      "pivo": [
+        28,
+        40
+      ],
+      "arquivo": "partes/perna_tras_q5.png",
+      "sha256": "d063d2b2951ed1f34c0b5fe7cfb6d8ccf97aae6ab296fcabe6992f4336610eaf",
+      "variante": true,
+      "variante_de": "perna_tras",
+      "origem_mestre_calculada": [
+        0,
+        0
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ]
+    },
+    "perna_tras_q6": {
+      "pivo": [
+        28,
+        40
+      ],
+      "arquivo": "partes/perna_tras_q6.png",
+      "sha256": "2f92c4400829883ca594d68d94789e5a0884d711d3bdae03a8debd6fcebfaa12",
+      "variante": true,
+      "variante_de": "perna_tras",
+      "origem_mestre_calculada": [
+        0,
+        0
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ]
+    },
+    "perna_tras_q7": {
+      "pivo": [
+        28,
+        40
+      ],
+      "arquivo": "partes/perna_tras_q7.png",
+      "sha256": "b1f978c8f69722becd008b974777ef1e2426a4c16649dd5d59a9007b1fc3dded",
+      "variante": true,
+      "variante_de": "perna_tras",
+      "origem_mestre_calculada": [
+        0,
+        0
+      ],
+      "origem_mestre": [
+        0,
+        0
+      ]
+    }
+  },
+  "rotacao_maxima_graus": 20.0,
+  "fixas_no_chao": [
+    "perna_tras",
+    "perna_frente"
+  ],
+  "base_sha256": "28d0f2438a34e78ccef3676432a522dd2e35ecff381ad52a016d95b571813852",
+  "biblioteca": "arte_fonte/kit_rig/kitrig",
+  "uso": "somente run para avaliação, sem instalação ou pacote final",
+  "variantes": "silhuetas contínuas desenhadas por flexão; botas compactas sem escala",
+  "camada_pano_cobre_raiz_perna_proxima": true,
+  "atraso_capa_quadros": 1,
+  "cabeca_arma": "translação rígida, sem rotação ou escala"
+}

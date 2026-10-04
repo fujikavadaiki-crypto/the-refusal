@@ -1,0 +1,17 @@
+{
+  "aprovado": true,
+  "frames_decodificados": 600,
+  "duracao_s": 20,
+  "fps": 30,
+  "dimensoes": [
+    960,
+    820
+  ],
+  "arte_instalada": false,
+  "selecao_distancia_conferida_em_600_quadros": true,
+  "max_oscilacao_sola_durante_apoio_px": 6,
+  "sem_deriva_acumulada_alem_de_um_quadro": true,
+  "nota": "PNG fixo acompanha o corpo entre eventos de 6 px; a oscilação discreta permanece visível na prévia.",
+  "video_sha256": "36f561751d93297f974eec2ae1249a8086f083f0b884cf32ff75c482da6de6da",
+  "contrato_ciclos_sha256": "992b714bcf78741a233a1dbc71006683cad6576d05be2aab52cfb3087965e91f"
+}
