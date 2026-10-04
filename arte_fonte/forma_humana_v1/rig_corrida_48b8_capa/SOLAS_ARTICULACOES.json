@@ -1,0 +1,399 @@
+{
+  "coordenadas": "canvas inteiro, âncora (40,56)",
+  "chao_y": 55,
+  "desenho_novo_sem_trajetorias_rejeitadas": true,
+  "quadros": [
+    {
+      "quadro": 0,
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 0,
+          "apoio": true,
+          "quadril": [
+            34,
+            40
+          ],
+          "joelho": [
+            36,
+            47
+          ],
+          "tornozelo": [
+            39,
+            51
+          ],
+          "sola": [
+            40,
+            55
+          ],
+          "variante": "perna_frente_q0"
+        },
+        {
+          "perna": "tras",
+          "fase": 4,
+          "apoio": false,
+          "quadril": [
+            28,
+            40
+          ],
+          "joelho": [
+            26,
+            45
+          ],
+          "tornozelo": [
+            18,
+            44
+          ],
+          "sola": [
+            15,
+            49
+          ],
+          "variante": "perna_tras_q4"
+        }
+      ]
+    },
+    {
+      "quadro": 1,
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 1,
+          "apoio": true,
+          "quadril": [
+            34,
+            39
+          ],
+          "joelho": [
+            34,
+            46
+          ],
+          "tornozelo": [
+            33,
+            51
+          ],
+          "sola": [
+            34,
+            55
+          ],
+          "variante": "perna_frente_q1"
+        },
+        {
+          "perna": "tras",
+          "fase": 5,
+          "apoio": false,
+          "quadril": [
+            28,
+            39
+          ],
+          "joelho": [
+            33,
+            44
+          ],
+          "tornozelo": [
+            27,
+            43
+          ],
+          "sola": [
+            24,
+            48
+          ],
+          "variante": "perna_tras_q5"
+        }
+      ]
+    },
+    {
+      "quadro": 2,
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 2,
+          "apoio": true,
+          "quadril": [
+            34,
+            40
+          ],
+          "joelho": [
+            31,
+            46
+          ],
+          "tornozelo": [
+            27,
+            51
+          ],
+          "sola": [
+            28,
+            55
+          ],
+          "variante": "perna_frente_q2"
+        },
+        {
+          "perna": "tras",
+          "fase": 6,
+          "apoio": false,
+          "quadril": [
+            28,
+            40
+          ],
+          "joelho": [
+            36,
+            43
+          ],
+          "tornozelo": [
+            34,
+            45
+          ],
+          "sola": [
+            35,
+            50
+          ],
+          "variante": "perna_tras_q6"
+        }
+      ]
+    },
+    {
+      "quadro": 3,
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 3,
+          "apoio": true,
+          "quadril": [
+            32,
+            41
+          ],
+          "joelho": [
+            28,
+            46
+          ],
+          "tornozelo": [
+            22,
+            51
+          ],
+          "sola": [
+            22,
+            55
+          ],
+          "variante": "perna_frente_q3"
+        },
+        {
+          "perna": "tras",
+          "fase": 7,
+          "apoio": false,
+          "quadril": [
+            28,
+            41
+          ],
+          "joelho": [
+            36,
+            45
+          ],
+          "tornozelo": [
+            40,
+            48
+          ],
+          "sola": [
+            41,
+            53
+          ],
+          "variante": "perna_tras_q7"
+        }
+      ]
+    },
+    {
+      "quadro": 4,
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 4,
+          "apoio": false,
+          "quadril": [
+            28,
+            40
+          ],
+          "joelho": [
+            26,
+            45
+          ],
+          "tornozelo": [
+            18,
+            44
+          ],
+          "sola": [
+            15,
+            49
+          ],
+          "variante": "perna_frente_q4"
+        },
+        {
+          "perna": "tras",
+          "fase": 0,
+          "apoio": true,
+          "quadril": [
+            34,
+            40
+          ],
+          "joelho": [
+            36,
+            47
+          ],
+          "tornozelo": [
+            39,
+            51
+          ],
+          "sola": [
+            40,
+            55
+          ],
+          "variante": "perna_tras_q0"
+        }
+      ]
+    },
+    {
+      "quadro": 5,
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 5,
+          "apoio": false,
+          "quadril": [
+            28,
+            39
+          ],
+          "joelho": [
+            33,
+            44
+          ],
+          "tornozelo": [
+            27,
+            43
+          ],
+          "sola": [
+            24,
+            48
+          ],
+          "variante": "perna_frente_q5"
+        },
+        {
+          "perna": "tras",
+          "fase": 1,
+          "apoio": true,
+          "quadril": [
+            34,
+            39
+          ],
+          "joelho": [
+            34,
+            46
+          ],
+          "tornozelo": [
+            33,
+            51
+          ],
+          "sola": [
+            34,
+            55
+          ],
+          "variante": "perna_tras_q1"
+        }
+      ]
+    },
+    {
+      "quadro": 6,
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 6,
+          "apoio": false,
+          "quadril": [
+            28,
+            40
+          ],
+          "joelho": [
+            36,
+            43
+          ],
+          "tornozelo": [
+            34,
+            45
+          ],
+          "sola": [
+            35,
+            50
+          ],
+          "variante": "perna_frente_q6"
+        },
+        {
+          "perna": "tras",
+          "fase": 2,
+          "apoio": true,
+          "quadril": [
+            34,
+            40
+          ],
+          "joelho": [
+            31,
+            46
+          ],
+          "tornozelo": [
+            27,
+            51
+          ],
+          "sola": [
+            28,
+            55
+          ],
+          "variante": "perna_tras_q2"
+        }
+      ]
+    },
+    {
+      "quadro": 7,
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 7,
+          "apoio": false,
+          "quadril": [
+            28,
+            41
+          ],
+          "joelho": [
+            36,
+            45
+          ],
+          "tornozelo": [
+            40,
+            48
+          ],
+          "sola": [
+            41,
+            53
+          ],
+          "variante": "perna_frente_q7"
+        },
+        {
+          "perna": "tras",
+          "fase": 3,
+          "apoio": true,
+          "quadril": [
+            32,
+            41
+          ],
+          "joelho": [
+            28,
+            46
+          ],
+          "tornozelo": [
+            22,
+            51
+          ],
+          "sola": [
+            22,
+            55
+          ],
+          "variante": "perna_tras_q3"
+        }
+      ]
+    }
+  ]
+}

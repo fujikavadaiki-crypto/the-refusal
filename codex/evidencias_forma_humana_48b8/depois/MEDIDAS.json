@@ -1,0 +1,19 @@
+{
+  "checks": 70,
+  "failures": 0,
+  "held": {
+    "apex_ticks": 20,
+    "height_m": 2.31490345001221,
+    "landed_ticks": 41
+  },
+  "off": {
+    "apex_ticks": 20,
+    "height_m": 2.31490345001221,
+    "landed_ticks": 41
+  },
+  "tap": {
+    "apex_ticks": 13,
+    "height_m": 1.00039958953857,
+    "landed_ticks": 26
+  }
+}

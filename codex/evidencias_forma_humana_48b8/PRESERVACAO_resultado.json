@@ -1,0 +1,187 @@
+{
+  "preservado": true,
+  "preservacao_integral_sem_excecoes": false,
+  "metadados": {
+    "branch": true,
+    "main": true,
+    "original_head": true,
+    "original_status": true,
+    "conceito_original": true,
+    "mestre_aprovado": true,
+    "base_run_f0": true
+  },
+  "alteracoes_todas": {
+    "integracao_protegida": [
+      {
+        "arquivo": "codex/diretor/DIARIO_DIRETOR.md",
+        "antes": "e7965ae8b60d30de686e08d50a38d960c67c0cba11f48bf256307d02b4ea7e9c",
+        "depois": "c253a37137e984882a2a12a38bba5bc9732d8bfd8f0fada5b730fe6ca9e010a2"
+      },
+      {
+        "arquivo": "codex/diretor/REFERENCIA_PRINCIPAL.md",
+        "antes": "82cfc4492d2675ebd454a77d9c5d14226c08746b499af0f90cea391d2af3212d",
+        "depois": "42b922126c4e6acfabc4a36495201fd1a85bef84baeaf458c465274d0f43164d"
+      },
+      {
+        "arquivo": "codex/diretor/referencias/skul/INVENTARIO.json",
+        "antes": "658f0e995e4b12f0a9b82b639f62345f9aa45e9d2981e16a1477e208e509b558",
+        "depois": "88d777b228f6997dc8924fbdacc724f423755ae0c0093fb2207ebe2b29bd1d3e"
+      },
+      {
+        "arquivo": "codex/diretor/referencias/skul/folhas/148009.png",
+        "antes": null,
+        "depois": "fa0834c6f56c30baa8f3b537fdc16ec7c25e63225c888449cbe4f19cf7e159ba"
+      },
+      {
+        "arquivo": "codex/diretor/referencias/skul/folhas/148013.png",
+        "antes": null,
+        "depois": "a65aa6f43acb458cd77feebfb7dc50c2eb207d2591bf6f830ac958934bf88798"
+      },
+      {
+        "arquivo": "codex/diretor/referencias/skul/folhas/148019.png",
+        "antes": null,
+        "depois": "900e3bc058a75faf343a617d05436ebff2a26fa860a003dcff02810c60ae0d26"
+      },
+      {
+        "arquivo": "codex/diretor/referencias/skul/folhas/148045.png",
+        "antes": null,
+        "depois": "2de0f85d49c9bebf10476e8295ea684b0b82e14bacc2c8d3e86338a44331f323"
+      },
+      {
+        "arquivo": "codex/diretor/referencias/skul/folhas/148051.png",
+        "antes": null,
+        "depois": "a3696684295fc10dea2486b1c3b3628d9388b2f480c25e93e38806dc89862d39"
+      },
+      {
+        "arquivo": "codex/diretor/referencias/skul/folhas/148058.png",
+        "antes": null,
+        "depois": "40e65e2d665d05e3aac6fd68361ada2d36063a16b0b7345db62b3d32bab1a813"
+      },
+      {
+        "arquivo": "codex/diretor/referencias/skul/folhas/148063.png",
+        "antes": null,
+        "depois": "695a1e2c67c63379c3fda9d4879bbb00ff5c55afe371cbf5acf380a52c10bb90"
+      },
+      {
+        "arquivo": "codex/diretor/referencias/skul/folhas/148099.png",
+        "antes": null,
+        "depois": "e4f114d74742fb1982029fd4375cc440cc6bd2ce396747e96c494551898f922f"
+      },
+      {
+        "arquivo": "codex/diretor/referencias/skul/folhas/148103.png",
+        "antes": null,
+        "depois": "27b32bd82e0cc9334951b685db7f2fae992efbdd90ed60424fb918156c00da2b"
+      },
+      {
+        "arquivo": "codex/diretor/referencias/skul/folhas/148105.png",
+        "antes": null,
+        "depois": "6bbde6e1ba81308729d50936291e2f801db21bc349be6043b5afc43b8aa57212"
+      },
+      {
+        "arquivo": "codex/diretor/referencias/skul/folhas/148140.png",
+        "antes": null,
+        "depois": "7821265f8914d8d8fc0554a2e256a9b8985b8af609a1369dd8464e63d1c8875b"
+      }
+    ],
+    "prova": [],
+    "P40": [],
+    "original": [],
+    "pacotes_aprovados": [],
+    "referencias_elenco": [],
+    "historico": []
+  },
+  "alteracoes_externas_diretor": [
+    {
+      "arquivo": "codex/diretor/DIARIO_DIRETOR.md",
+      "antes": "e7965ae8b60d30de686e08d50a38d960c67c0cba11f48bf256307d02b4ea7e9c",
+      "depois": "c253a37137e984882a2a12a38bba5bc9732d8bfd8f0fada5b730fe6ca9e010a2"
+    },
+    {
+      "arquivo": "codex/diretor/REFERENCIA_PRINCIPAL.md",
+      "antes": "82cfc4492d2675ebd454a77d9c5d14226c08746b499af0f90cea391d2af3212d",
+      "depois": "42b922126c4e6acfabc4a36495201fd1a85bef84baeaf458c465274d0f43164d"
+    },
+    {
+      "arquivo": "codex/diretor/referencias/skul/INVENTARIO.json",
+      "antes": "658f0e995e4b12f0a9b82b639f62345f9aa45e9d2981e16a1477e208e509b558",
+      "depois": "88d777b228f6997dc8924fbdacc724f423755ae0c0093fb2207ebe2b29bd1d3e"
+    },
+    {
+      "arquivo": "codex/diretor/referencias/skul/folhas/148009.png",
+      "antes": null,
+      "depois": "fa0834c6f56c30baa8f3b537fdc16ec7c25e63225c888449cbe4f19cf7e159ba"
+    },
+    {
+      "arquivo": "codex/diretor/referencias/skul/folhas/148013.png",
+      "antes": null,
+      "depois": "a65aa6f43acb458cd77feebfb7dc50c2eb207d2591bf6f830ac958934bf88798"
+    },
+    {
+      "arquivo": "codex/diretor/referencias/skul/folhas/148019.png",
+      "antes": null,
+      "depois": "900e3bc058a75faf343a617d05436ebff2a26fa860a003dcff02810c60ae0d26"
+    },
+    {
+      "arquivo": "codex/diretor/referencias/skul/folhas/148045.png",
+      "antes": null,
+      "depois": "2de0f85d49c9bebf10476e8295ea684b0b82e14bacc2c8d3e86338a44331f323"
+    },
+    {
+      "arquivo": "codex/diretor/referencias/skul/folhas/148051.png",
+      "antes": null,
+      "depois": "a3696684295fc10dea2486b1c3b3628d9388b2f480c25e93e38806dc89862d39"
+    },
+    {
+      "arquivo": "codex/diretor/referencias/skul/folhas/148058.png",
+      "antes": null,
+      "depois": "40e65e2d665d05e3aac6fd68361ada2d36063a16b0b7345db62b3d32bab1a813"
+    },
+    {
+      "arquivo": "codex/diretor/referencias/skul/folhas/148063.png",
+      "antes": null,
+      "depois": "695a1e2c67c63379c3fda9d4879bbb00ff5c55afe371cbf5acf380a52c10bb90"
+    },
+    {
+      "arquivo": "codex/diretor/referencias/skul/folhas/148099.png",
+      "antes": null,
+      "depois": "e4f114d74742fb1982029fd4375cc440cc6bd2ce396747e96c494551898f922f"
+    },
+    {
+      "arquivo": "codex/diretor/referencias/skul/folhas/148103.png",
+      "antes": null,
+      "depois": "27b32bd82e0cc9334951b685db7f2fae992efbdd90ed60424fb918156c00da2b"
+    },
+    {
+      "arquivo": "codex/diretor/referencias/skul/folhas/148105.png",
+      "antes": null,
+      "depois": "6bbde6e1ba81308729d50936291e2f801db21bc349be6043b5afc43b8aa57212"
+    },
+    {
+      "arquivo": "codex/diretor/referencias/skul/folhas/148140.png",
+      "antes": null,
+      "depois": "7821265f8914d8d8fc0554a2e256a9b8985b8af609a1369dd8464e63d1c8875b"
+    }
+  ],
+  "alteracoes_nao_autorizadas": {
+    "integracao_protegida": [],
+    "prova": [],
+    "P40": [],
+    "original": [],
+    "pacotes_aprovados": [],
+    "referencias_elenco": [],
+    "historico": []
+  },
+  "arquivos": {
+    "integracao_protegida": 3919,
+    "prova": 1550,
+    "P40": 1578,
+    "original": 770,
+    "pacotes_aprovados": 3,
+    "referencias_elenco": 11,
+    "historico": 1
+  },
+  "conceito_original": {
+    "forma_humana_conceito_v1.png": "a06f367146b26b5e77a635c4af63d8510b152dc2ea6f3f5fd566c7afa2e7c279",
+    "PROMPT.txt": "2b87ac1e4f6f85a9aebb08d26069d45b48787ca196ae94e25af4c5d9ea026b1b"
+  }
+}

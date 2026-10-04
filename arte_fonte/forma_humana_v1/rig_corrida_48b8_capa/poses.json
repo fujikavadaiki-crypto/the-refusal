@@ -1,0 +1,2246 @@
+{
+  "run": [
+    {
+      "quadro": 0,
+      "pose_rig": {
+        "dx": 0,
+        "dy": 0,
+        "fixas": [
+          "perna_tras",
+          "perna_frente"
+        ],
+        "partes": {
+          "perna_frente": {
+            "variante": "perna_frente_q0"
+          },
+          "perna_tras": {
+            "variante": "perna_tras_q4"
+          },
+          "capa": {
+            "variante": "capa_onda_f0",
+            "dx": 0,
+            "dy": 0,
+            "ang": 0
+          },
+          "braco_proximo": {
+            "dx": 0
+          },
+          "mao_espada": {
+            "dx": 0
+          },
+          "braco_distante": {
+            "dx": 0
+          }
+        }
+      },
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 0,
+          "apoio": true,
+          "quadril": [
+            34,
+            40
+          ],
+          "joelho": [
+            36,
+            47
+          ],
+          "tornozelo": [
+            39,
+            51
+          ],
+          "sola": [
+            40,
+            55
+          ],
+          "variante": "perna_frente_q0"
+        },
+        {
+          "perna": "tras",
+          "fase": 4,
+          "apoio": false,
+          "quadril": [
+            28,
+            40
+          ],
+          "joelho": [
+            26,
+            45
+          ],
+          "tornozelo": [
+            18,
+            44
+          ],
+          "sola": [
+            15,
+            49
+          ],
+          "variante": "perna_tras_q4"
+        }
+      ],
+      "capa_origem_quadro": 7,
+      "oscilacao_corpo_y": 0,
+      "oscilacao_capa_y": 0,
+      "ajustes_pixels": [],
+      "capa_variante": "capa_onda_f0",
+      "capa_fase_material": 7,
+      "capa_colunas_dy": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "compositor": "primeiro preserva todas as peças da 4.8b7; depois substitui somente tecido visível"
+    },
+    {
+      "quadro": 1,
+      "pose_rig": {
+        "dx": 0,
+        "dy": -1,
+        "fixas": [
+          "perna_tras",
+          "perna_frente"
+        ],
+        "partes": {
+          "perna_frente": {
+            "variante": "perna_frente_q1"
+          },
+          "perna_tras": {
+            "variante": "perna_tras_q5"
+          },
+          "capa": {
+            "variante": "capa_onda_f1",
+            "dx": 0,
+            "dy": 0,
+            "ang": 0
+          },
+          "braco_proximo": {
+            "dx": 0
+          },
+          "mao_espada": {
+            "dx": 0
+          },
+          "braco_distante": {
+            "dx": 0
+          }
+        }
+      },
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 1,
+          "apoio": true,
+          "quadril": [
+            34,
+            39
+          ],
+          "joelho": [
+            34,
+            46
+          ],
+          "tornozelo": [
+            33,
+            51
+          ],
+          "sola": [
+            34,
+            55
+          ],
+          "variante": "perna_frente_q1"
+        },
+        {
+          "perna": "tras",
+          "fase": 5,
+          "apoio": false,
+          "quadril": [
+            28,
+            39
+          ],
+          "joelho": [
+            33,
+            44
+          ],
+          "tornozelo": [
+            27,
+            43
+          ],
+          "sola": [
+            24,
+            48
+          ],
+          "variante": "perna_tras_q5"
+        }
+      ],
+      "capa_origem_quadro": 0,
+      "oscilacao_corpo_y": -1,
+      "oscilacao_capa_y": 0,
+      "ajustes_pixels": [
+        [
+          26,
+          26,
+          3
+        ],
+        [
+          27,
+          26,
+          1
+        ],
+        [
+          24,
+          27,
+          3
+        ],
+        [
+          23,
+          28,
+          2
+        ],
+        [
+          24,
+          30,
+          3
+        ],
+        [
+          23,
+          31,
+          3
+        ],
+        [
+          25,
+          31,
+          3
+        ],
+        [
+          25,
+          34,
+          3
+        ],
+        [
+          24,
+          35,
+          3
+        ],
+        [
+          26,
+          35,
+          3
+        ],
+        [
+          25,
+          36,
+          3
+        ],
+        [
+          22,
+          38,
+          1
+        ],
+        [
+          24,
+          38,
+          3
+        ],
+        [
+          26,
+          38,
+          3
+        ],
+        [
+          14,
+          39,
+          3
+        ],
+        [
+          17,
+          39,
+          3
+        ],
+        [
+          18,
+          39,
+          3
+        ],
+        [
+          19,
+          39,
+          3
+        ],
+        [
+          20,
+          39,
+          3
+        ],
+        [
+          21,
+          39,
+          3
+        ],
+        [
+          22,
+          39,
+          3
+        ],
+        [
+          23,
+          39,
+          3
+        ]
+      ],
+      "capa_variante": "capa_onda_f1",
+      "capa_fase_material": 0,
+      "capa_colunas_dy": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "compositor": "primeiro preserva todas as peças da 4.8b7; depois substitui somente tecido visível"
+    },
+    {
+      "quadro": 2,
+      "pose_rig": {
+        "dx": 0,
+        "dy": 0,
+        "fixas": [
+          "perna_tras",
+          "perna_frente"
+        ],
+        "partes": {
+          "perna_frente": {
+            "variante": "perna_frente_q2"
+          },
+          "perna_tras": {
+            "variante": "perna_tras_q6"
+          },
+          "capa": {
+            "variante": "capa_onda_f2",
+            "dx": 0,
+            "dy": 0,
+            "ang": 0
+          },
+          "braco_proximo": {
+            "dx": 0
+          },
+          "mao_espada": {
+            "dx": 0
+          },
+          "braco_distante": {
+            "dx": 0
+          }
+        }
+      },
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 2,
+          "apoio": true,
+          "quadril": [
+            34,
+            40
+          ],
+          "joelho": [
+            31,
+            46
+          ],
+          "tornozelo": [
+            27,
+            51
+          ],
+          "sola": [
+            28,
+            55
+          ],
+          "variante": "perna_frente_q2"
+        },
+        {
+          "perna": "tras",
+          "fase": 6,
+          "apoio": false,
+          "quadril": [
+            28,
+            40
+          ],
+          "joelho": [
+            36,
+            43
+          ],
+          "tornozelo": [
+            34,
+            45
+          ],
+          "sola": [
+            35,
+            50
+          ],
+          "variante": "perna_tras_q6"
+        }
+      ],
+      "capa_origem_quadro": 1,
+      "oscilacao_corpo_y": 0,
+      "oscilacao_capa_y": -1,
+      "ajustes_pixels": [
+        [
+          23,
+          27,
+          3
+        ],
+        [
+          25,
+          27,
+          3
+        ],
+        [
+          24,
+          28,
+          3
+        ],
+        [
+          26,
+          28,
+          3
+        ],
+        [
+          24,
+          29,
+          3
+        ],
+        [
+          25,
+          29,
+          3
+        ],
+        [
+          23,
+          30,
+          3
+        ],
+        [
+          25,
+          30,
+          3
+        ],
+        [
+          24,
+          31,
+          3
+        ],
+        [
+          23,
+          35,
+          1
+        ],
+        [
+          25,
+          35,
+          3
+        ],
+        [
+          24,
+          36,
+          3
+        ],
+        [
+          26,
+          36,
+          3
+        ],
+        [
+          22,
+          37,
+          1
+        ],
+        [
+          24,
+          37,
+          3
+        ],
+        [
+          25,
+          37,
+          3
+        ],
+        [
+          14,
+          38,
+          3
+        ],
+        [
+          17,
+          38,
+          3
+        ],
+        [
+          18,
+          38,
+          3
+        ],
+        [
+          19,
+          38,
+          3
+        ],
+        [
+          20,
+          38,
+          3
+        ],
+        [
+          21,
+          38,
+          3
+        ],
+        [
+          22,
+          38,
+          3
+        ],
+        [
+          23,
+          38,
+          3
+        ],
+        [
+          24,
+          39,
+          3
+        ],
+        [
+          26,
+          39,
+          3
+        ]
+      ],
+      "capa_variante": "capa_onda_f2",
+      "capa_fase_material": 1,
+      "capa_colunas_dy": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -2,
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -2,
+        -2,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "compositor": "primeiro preserva todas as peças da 4.8b7; depois substitui somente tecido visível"
+    },
+    {
+      "quadro": 3,
+      "pose_rig": {
+        "dx": 0,
+        "dy": 1,
+        "fixas": [
+          "perna_tras",
+          "perna_frente"
+        ],
+        "partes": {
+          "perna_frente": {
+            "variante": "perna_frente_q3"
+          },
+          "perna_tras": {
+            "variante": "perna_tras_q7"
+          },
+          "capa": {
+            "variante": "capa_onda_f3",
+            "dx": 0,
+            "dy": 0,
+            "ang": 0
+          },
+          "braco_proximo": {
+            "dx": 0
+          },
+          "mao_espada": {
+            "dx": 0
+          },
+          "braco_distante": {
+            "dx": 0
+          }
+        }
+      },
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 3,
+          "apoio": true,
+          "quadril": [
+            32,
+            41
+          ],
+          "joelho": [
+            28,
+            46
+          ],
+          "tornozelo": [
+            22,
+            51
+          ],
+          "sola": [
+            22,
+            55
+          ],
+          "variante": "perna_frente_q3"
+        },
+        {
+          "perna": "tras",
+          "fase": 7,
+          "apoio": false,
+          "quadril": [
+            28,
+            41
+          ],
+          "joelho": [
+            36,
+            45
+          ],
+          "tornozelo": [
+            40,
+            48
+          ],
+          "sola": [
+            41,
+            53
+          ],
+          "variante": "perna_tras_q7"
+        }
+      ],
+      "capa_origem_quadro": 2,
+      "oscilacao_corpo_y": 1,
+      "oscilacao_capa_y": 0,
+      "ajustes_pixels": [
+        [
+          23,
+          28,
+          3
+        ],
+        [
+          25,
+          28,
+          3
+        ],
+        [
+          24,
+          29,
+          3
+        ],
+        [
+          26,
+          29,
+          3
+        ],
+        [
+          24,
+          30,
+          3
+        ],
+        [
+          25,
+          30,
+          3
+        ],
+        [
+          23,
+          31,
+          3
+        ],
+        [
+          25,
+          31,
+          3
+        ],
+        [
+          24,
+          32,
+          3
+        ],
+        [
+          23,
+          36,
+          1
+        ],
+        [
+          25,
+          36,
+          3
+        ],
+        [
+          24,
+          37,
+          3
+        ],
+        [
+          26,
+          37,
+          3
+        ],
+        [
+          22,
+          38,
+          1
+        ],
+        [
+          24,
+          38,
+          3
+        ],
+        [
+          25,
+          38,
+          3
+        ],
+        [
+          14,
+          39,
+          3
+        ],
+        [
+          17,
+          39,
+          3
+        ],
+        [
+          18,
+          39,
+          3
+        ],
+        [
+          19,
+          39,
+          3
+        ],
+        [
+          20,
+          39,
+          3
+        ],
+        [
+          21,
+          39,
+          3
+        ],
+        [
+          22,
+          39,
+          3
+        ],
+        [
+          23,
+          39,
+          3
+        ],
+        [
+          24,
+          40,
+          3
+        ],
+        [
+          26,
+          40,
+          3
+        ]
+      ],
+      "capa_variante": "capa_onda_f3",
+      "capa_fase_material": 2,
+      "capa_colunas_dy": [
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -2,
+        -1,
+        -1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "compositor": "primeiro preserva todas as peças da 4.8b7; depois substitui somente tecido visível"
+    },
+    {
+      "quadro": 4,
+      "pose_rig": {
+        "dx": 0,
+        "dy": 0,
+        "fixas": [
+          "perna_tras",
+          "perna_frente"
+        ],
+        "partes": {
+          "perna_frente": {
+            "variante": "perna_frente_q4"
+          },
+          "perna_tras": {
+            "variante": "perna_tras_q0"
+          },
+          "capa": {
+            "variante": "capa_onda_f4",
+            "dx": 0,
+            "dy": 0,
+            "ang": 0
+          },
+          "braco_proximo": {
+            "dx": 0
+          },
+          "mao_espada": {
+            "dx": 0
+          },
+          "braco_distante": {
+            "dx": 0
+          }
+        }
+      },
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 4,
+          "apoio": false,
+          "quadril": [
+            28,
+            40
+          ],
+          "joelho": [
+            26,
+            45
+          ],
+          "tornozelo": [
+            18,
+            44
+          ],
+          "sola": [
+            15,
+            49
+          ],
+          "variante": "perna_frente_q4"
+        },
+        {
+          "perna": "tras",
+          "fase": 0,
+          "apoio": true,
+          "quadril": [
+            34,
+            40
+          ],
+          "joelho": [
+            36,
+            47
+          ],
+          "tornozelo": [
+            39,
+            51
+          ],
+          "sola": [
+            40,
+            55
+          ],
+          "variante": "perna_tras_q0"
+        }
+      ],
+      "capa_origem_quadro": 3,
+      "oscilacao_corpo_y": 0,
+      "oscilacao_capa_y": 1,
+      "ajustes_pixels": [
+        [
+          26,
+          27,
+          3
+        ],
+        [
+          27,
+          27,
+          1
+        ],
+        [
+          24,
+          28,
+          3
+        ],
+        [
+          23,
+          29,
+          2
+        ],
+        [
+          24,
+          31,
+          3
+        ],
+        [
+          23,
+          32,
+          3
+        ],
+        [
+          25,
+          32,
+          3
+        ],
+        [
+          25,
+          35,
+          3
+        ],
+        [
+          24,
+          36,
+          3
+        ],
+        [
+          26,
+          36,
+          3
+        ],
+        [
+          25,
+          37,
+          3
+        ],
+        [
+          24,
+          39,
+          1
+        ],
+        [
+          14,
+          40,
+          3
+        ],
+        [
+          17,
+          40,
+          3
+        ],
+        [
+          18,
+          40,
+          3
+        ],
+        [
+          19,
+          40,
+          3
+        ]
+      ],
+      "capa_variante": "capa_onda_f4",
+      "capa_fase_material": 3,
+      "capa_colunas_dy": [
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "compositor": "primeiro preserva todas as peças da 4.8b7; depois substitui somente tecido visível"
+    },
+    {
+      "quadro": 5,
+      "pose_rig": {
+        "dx": 0,
+        "dy": -1,
+        "fixas": [
+          "perna_tras",
+          "perna_frente"
+        ],
+        "partes": {
+          "perna_frente": {
+            "variante": "perna_frente_q5"
+          },
+          "perna_tras": {
+            "variante": "perna_tras_q1"
+          },
+          "capa": {
+            "variante": "capa_onda_f5",
+            "dx": 0,
+            "dy": 0,
+            "ang": 0
+          },
+          "braco_proximo": {
+            "dx": 0
+          },
+          "mao_espada": {
+            "dx": 0
+          },
+          "braco_distante": {
+            "dx": 0
+          }
+        }
+      },
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 5,
+          "apoio": false,
+          "quadril": [
+            28,
+            39
+          ],
+          "joelho": [
+            33,
+            44
+          ],
+          "tornozelo": [
+            27,
+            43
+          ],
+          "sola": [
+            24,
+            48
+          ],
+          "variante": "perna_frente_q5"
+        },
+        {
+          "perna": "tras",
+          "fase": 1,
+          "apoio": true,
+          "quadril": [
+            34,
+            39
+          ],
+          "joelho": [
+            34,
+            46
+          ],
+          "tornozelo": [
+            33,
+            51
+          ],
+          "sola": [
+            34,
+            55
+          ],
+          "variante": "perna_tras_q1"
+        }
+      ],
+      "capa_origem_quadro": 4,
+      "oscilacao_corpo_y": -1,
+      "oscilacao_capa_y": 0,
+      "ajustes_pixels": [
+        [
+          26,
+          26,
+          3
+        ],
+        [
+          27,
+          26,
+          1
+        ],
+        [
+          24,
+          27,
+          3
+        ],
+        [
+          23,
+          28,
+          2
+        ],
+        [
+          24,
+          30,
+          3
+        ],
+        [
+          23,
+          31,
+          3
+        ],
+        [
+          25,
+          31,
+          3
+        ],
+        [
+          25,
+          34,
+          3
+        ],
+        [
+          24,
+          35,
+          3
+        ],
+        [
+          26,
+          35,
+          3
+        ],
+        [
+          25,
+          36,
+          3
+        ],
+        [
+          22,
+          38,
+          1
+        ],
+        [
+          24,
+          38,
+          3
+        ],
+        [
+          26,
+          38,
+          3
+        ],
+        [
+          14,
+          39,
+          3
+        ],
+        [
+          17,
+          39,
+          3
+        ],
+        [
+          18,
+          39,
+          3
+        ],
+        [
+          19,
+          39,
+          3
+        ],
+        [
+          20,
+          39,
+          3
+        ],
+        [
+          21,
+          39,
+          3
+        ],
+        [
+          22,
+          39,
+          3
+        ],
+        [
+          23,
+          39,
+          3
+        ],
+        [
+          35,
+          46,
+          3
+        ]
+      ],
+      "capa_variante": "capa_onda_f5",
+      "capa_fase_material": 4,
+      "capa_colunas_dy": [
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -3,
+        -2,
+        -2,
+        -1,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "compositor": "primeiro preserva todas as peças da 4.8b7; depois substitui somente tecido visível"
+    },
+    {
+      "quadro": 6,
+      "pose_rig": {
+        "dx": 0,
+        "dy": 0,
+        "fixas": [
+          "perna_tras",
+          "perna_frente"
+        ],
+        "partes": {
+          "perna_frente": {
+            "variante": "perna_frente_q6"
+          },
+          "perna_tras": {
+            "variante": "perna_tras_q2"
+          },
+          "capa": {
+            "variante": "capa_onda_f6",
+            "dx": 0,
+            "dy": 0,
+            "ang": 0
+          },
+          "braco_proximo": {
+            "dx": 0
+          },
+          "mao_espada": {
+            "dx": 0
+          },
+          "braco_distante": {
+            "dx": 0
+          }
+        }
+      },
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 6,
+          "apoio": false,
+          "quadril": [
+            28,
+            40
+          ],
+          "joelho": [
+            36,
+            43
+          ],
+          "tornozelo": [
+            34,
+            45
+          ],
+          "sola": [
+            35,
+            50
+          ],
+          "variante": "perna_frente_q6"
+        },
+        {
+          "perna": "tras",
+          "fase": 2,
+          "apoio": true,
+          "quadril": [
+            34,
+            40
+          ],
+          "joelho": [
+            31,
+            46
+          ],
+          "tornozelo": [
+            27,
+            51
+          ],
+          "sola": [
+            28,
+            55
+          ],
+          "variante": "perna_tras_q2"
+        }
+      ],
+      "capa_origem_quadro": 5,
+      "oscilacao_corpo_y": 0,
+      "oscilacao_capa_y": -1,
+      "ajustes_pixels": [
+        [
+          23,
+          27,
+          3
+        ],
+        [
+          25,
+          27,
+          3
+        ],
+        [
+          24,
+          28,
+          3
+        ],
+        [
+          26,
+          28,
+          3
+        ],
+        [
+          24,
+          29,
+          3
+        ],
+        [
+          25,
+          29,
+          3
+        ],
+        [
+          23,
+          30,
+          3
+        ],
+        [
+          25,
+          30,
+          3
+        ],
+        [
+          24,
+          31,
+          3
+        ],
+        [
+          23,
+          35,
+          1
+        ],
+        [
+          25,
+          35,
+          3
+        ],
+        [
+          24,
+          36,
+          3
+        ],
+        [
+          26,
+          36,
+          3
+        ],
+        [
+          22,
+          37,
+          1
+        ],
+        [
+          24,
+          37,
+          3
+        ],
+        [
+          25,
+          37,
+          3
+        ],
+        [
+          14,
+          38,
+          3
+        ],
+        [
+          17,
+          38,
+          3
+        ],
+        [
+          18,
+          38,
+          3
+        ],
+        [
+          19,
+          38,
+          3
+        ],
+        [
+          20,
+          38,
+          3
+        ],
+        [
+          21,
+          38,
+          3
+        ],
+        [
+          22,
+          38,
+          3
+        ],
+        [
+          23,
+          38,
+          3
+        ],
+        [
+          24,
+          39,
+          3
+        ],
+        [
+          26,
+          39,
+          3
+        ]
+      ],
+      "capa_variante": "capa_onda_f6",
+      "capa_fase_material": 5,
+      "capa_colunas_dy": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5,
+        -5,
+        -5,
+        -5,
+        -5,
+        -4,
+        -3,
+        -3,
+        -2,
+        -1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "compositor": "primeiro preserva todas as peças da 4.8b7; depois substitui somente tecido visível"
+    },
+    {
+      "quadro": 7,
+      "pose_rig": {
+        "dx": 0,
+        "dy": 0,
+        "fixas": [
+          "perna_tras",
+          "perna_frente"
+        ],
+        "partes": {
+          "perna_frente": {
+            "variante": "perna_frente_q7"
+          },
+          "perna_tras": {
+            "variante": "perna_tras_q3"
+          },
+          "capa": {
+            "variante": "capa_onda_f7",
+            "dx": 0,
+            "dy": 0,
+            "ang": 0
+          },
+          "braco_proximo": {
+            "dx": 0
+          },
+          "mao_espada": {
+            "dx": 0
+          },
+          "braco_distante": {
+            "dx": 0
+          }
+        }
+      },
+      "pernas": [
+        {
+          "perna": "frente",
+          "fase": 7,
+          "apoio": false,
+          "quadril": [
+            28,
+            41
+          ],
+          "joelho": [
+            36,
+            45
+          ],
+          "tornozelo": [
+            40,
+            48
+          ],
+          "sola": [
+            41,
+            53
+          ],
+          "variante": "perna_frente_q7"
+        },
+        {
+          "perna": "tras",
+          "fase": 3,
+          "apoio": true,
+          "quadril": [
+            32,
+            41
+          ],
+          "joelho": [
+            28,
+            46
+          ],
+          "tornozelo": [
+            22,
+            51
+          ],
+          "sola": [
+            22,
+            55
+          ],
+          "variante": "perna_tras_q3"
+        }
+      ],
+      "capa_origem_quadro": 6,
+      "oscilacao_corpo_y": 0,
+      "oscilacao_capa_y": 0,
+      "ajustes_pixels": [
+        [
+          22,
+          38,
+          1
+        ],
+        [
+          24,
+          38,
+          3
+        ],
+        [
+          14,
+          39,
+          3
+        ],
+        [
+          17,
+          39,
+          3
+        ],
+        [
+          18,
+          39,
+          3
+        ],
+        [
+          19,
+          39,
+          3
+        ],
+        [
+          20,
+          39,
+          3
+        ],
+        [
+          21,
+          39,
+          3
+        ],
+        [
+          22,
+          39,
+          3
+        ],
+        [
+          23,
+          39,
+          3
+        ],
+        [
+          24,
+          39,
+          3
+        ],
+        [
+          26,
+          39,
+          3
+        ]
+      ],
+      "capa_variante": "capa_onda_f7",
+      "capa_fase_material": 6,
+      "capa_colunas_dy": [
+        -2,
+        -2,
+        -2,
+        -2,
+        -2,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "compositor": "primeiro preserva todas as peças da 4.8b7; depois substitui somente tecido visível"
+    }
+  ]
+}

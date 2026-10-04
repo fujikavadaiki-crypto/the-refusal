@@ -1,0 +1,9 @@
+{
+  "teste": "codex/testes/verify_peregrino_corrompido.gd",
+  "exit": 0,
+  "pass": 200,
+  "fail": 0,
+  "falhas": [],
+  "segundos": 79.73,
+  "aprovado": true
+}

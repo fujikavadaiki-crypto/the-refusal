@@ -1,0 +1,92 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+PASS: sala_cemiterio.tscn: spawn sem interpenetração física
+PASS: sala_cemiterio.tscn herda o pulo P40 sem override -380
+PASS: forest_vertical_slice.tscn: spawn sem interpenetração física
+PASS: forest_vertical_slice.tscn herda o pulo P40 sem override -380
+PASS: bosque_trecho_01_playable.tscn: spawn sem interpenetração física
+PASS: bosque_trecho_01_playable.tscn herda o pulo P40 sem override -380
+PASS: corpo humano: raio/altura corretos
+PASS: hurtbox acompanha a cápsula false
+PASS: troca de corpo preserva os pés Y=13
+PASS: pivô false usa a altura esperada
+PASS: corpo false apoiado não penetra no chão
+PASS: corpo Carrasco: raio/altura corretos
+PASS: hurtbox acompanha a cápsula true
+PASS: troca de corpo preserva os pés Y=13
+PASS: pivô true usa a altura esperada
+PASS: corpo true apoiado não penetra no chão
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: troca de forma em espaço livre
+PASS: troca não desloca os pés
+PASS: outra instância humana mantém a cápsula original
+PASS: instâncias não compartilham a cápsula mutável
+PASS: medição feita a 60 Hz
+PASS: F5: coyote 100 ms e buffer 100 ms configurados
+MEASURE: jump {"apex_s":0.333333333333333,"apex_tick":20,"flight_s":0.683333333333333,"form":"human","gravity":1481.13083497699,"height_m":2.31490331590176,"height_px":74.0769061088562,"height_world":82.3076734542847,"impulse":-481.367521367521,"landing_tick":41,"trace":[{"tick":1,"vy":-481.367523193359,"y":-21.095422744751},{"tick":2,"vy":-456.682006835938,"y":-28.7067909240723},{"tick":3,"vy":-431.996490478516,"y":-35.9067344665527},{"tick":4,"vy":-407.310974121094,"y":-42.6952514648438},{"tick":5,"vy":-382.625457763672,"y":-49.0723419189453},{"tick":6,"vy":-357.93994140625,"y":-55.0380096435547},{"tick":7,"vy":-333.254425048828,"y":-60.5922508239746},{"tick":8,"vy":-308.568908691406,"y":-65.7350692749023},{"tick":9,"vy":-283.883392333984,"y":-70.4664611816406},{"tick":10,"vy":-259.197875976563,"y":-74.7864227294922},{"tick":11,"vy":-234.512359619141,"y":-78.6949615478516},{"tick":12,"vy":-209.826843261719,"y":-82.1920776367188},{"tick":13,"vy":-185.141326904297,"y":-85.2777633666992},{"tick":14,"vy":-160.455810546875,"y":-87.9520263671875},{"tick":15,"vy":-135.770294189453,"y":-90.2148666381836},{"tick":16,"vy":-111.084777832031,"y":-92.066276550293},{"tick":17,"vy":-86.3992614746094,"y":-93.5062637329102},{"tick":18,"vy":-61.7137489318848,"y":-94.5348281860352},{"tick":19,"vy":-37.0282363891602,"y":-95.1519622802734},{"tick":20,"vy":-12.3427228927612,"y":-95.3576736450195},{"tick":21,"vy":12.3427906036377,"y":-95.1519622802734},{"tick":22,"vy":37.0283050537109,"y":-94.5348205566406},{"tick":23,"vy":61.7138175964355,"y":-93.5062561035156},{"tick":24,"vy":86.3993301391602,"y":-92.0662689208984},{"tick":25,"vy":111.084846496582,"y":-90.2148513793945},{"tick":26,"vy":135.770355224609,"y":-87.9520111083984},{"tick":27,"vy":160.455871582031,"y":-85.2777481079102},{"tick":28,"vy":185.141387939453,"y":-82.1920547485352},{"tick":29,"vy":209.826904296875,"y":-78.694938659668},{"tick":30,"vy":234.512420654297,"y":-74.7863998413086},{"tick":31,"vy":259.197937011719,"y":-70.4664306640625},{"tick":32,"vy":283.883453369141,"y":-65.7350387573242},{"tick":33,"vy":308.568969726563,"y":-60.5922241210938},{"tick":34,"vy":333.254486083984,"y":-55.0379829406738},{"tick":35,"vy":357.940002441406,"y":-49.0723152160645},{"tick":36,"vy":382.625518798828,"y":-42.6952209472656},{"tick":37,"vy":407.31103515625,"y":-35.9067039489746},{"tick":38,"vy":431.996551513672,"y":-28.7067604064941},{"tick":39,"vy":456.682067871094,"y":-21.0953922271729},{"tick":40,"vy":481.367584228516,"y":-13.0725984573364},{"tick":41,"vy":0.0,"y":-13.0725984573364}]}
+PASS: pulo sobe e retorna ao piso
+PASS: altura jogada ~2,32 m em human
+PASS: ápice em 20 ticks / 333,333 ms
+PASS: coyote permite pulo após 83 ms fora do piso
+PASS: coyote expira depois de 100 ms
+PASS: buffer transforma entrada anterior ao pouso em pulo
+MEASURE: jump {"apex_s":0.333333333333333,"apex_tick":20,"flight_s":0.683333333333333,"form":"Carrasco","gravity":1481.13083497699,"height_m":2.31490331590176,"height_px":74.0769061088562,"height_world":82.3076734542847,"impulse":-481.367521367521,"landing_tick":41,"trace":[{"tick":1,"vy":-481.367523193359,"y":-21.0954246520996},{"tick":2,"vy":-456.682006835938,"y":-28.7067909240723},{"tick":3,"vy":-431.996490478516,"y":-35.9067344665527},{"tick":4,"vy":-407.310974121094,"y":-42.6952514648438},{"tick":5,"vy":-382.625457763672,"y":-49.0723419189453},{"tick":6,"vy":-357.93994140625,"y":-55.0380096435547},{"tick":7,"vy":-333.254425048828,"y":-60.5922508239746},{"tick":8,"vy":-308.568908691406,"y":-65.7350692749023},{"tick":9,"vy":-283.883392333984,"y":-70.4664611816406},{"tick":10,"vy":-259.197875976563,"y":-74.7864227294922},{"tick":11,"vy":-234.512359619141,"y":-78.6949615478516},{"tick":12,"vy":-209.826843261719,"y":-82.1920776367188},{"tick":13,"vy":-185.141326904297,"y":-85.2777633666992},{"tick":14,"vy":-160.455810546875,"y":-87.9520263671875},{"tick":15,"vy":-135.770294189453,"y":-90.2148666381836},{"tick":16,"vy":-111.084777832031,"y":-92.066276550293},{"tick":17,"vy":-86.3992614746094,"y":-93.5062637329102},{"tick":18,"vy":-61.7137489318848,"y":-94.5348281860352},{"tick":19,"vy":-37.0282363891602,"y":-95.1519622802734},{"tick":20,"vy":-12.3427228927612,"y":-95.3576736450195},{"tick":21,"vy":12.3427906036377,"y":-95.1519622802734},{"tick":22,"vy":37.0283050537109,"y":-94.5348205566406},{"tick":23,"vy":61.7138175964355,"y":-93.5062561035156},{"tick":24,"vy":86.3993301391602,"y":-92.0662689208984},{"tick":25,"vy":111.084846496582,"y":-90.2148513793945},{"tick":26,"vy":135.770355224609,"y":-87.9520111083984},{"tick":27,"vy":160.455871582031,"y":-85.2777481079102},{"tick":28,"vy":185.141387939453,"y":-82.1920547485352},{"tick":29,"vy":209.826904296875,"y":-78.694938659668},{"tick":30,"vy":234.512420654297,"y":-74.7863998413086},{"tick":31,"vy":259.197937011719,"y":-70.4664306640625},{"tick":32,"vy":283.883453369141,"y":-65.7350387573242},{"tick":33,"vy":308.568969726563,"y":-60.5922241210938},{"tick":34,"vy":333.254486083984,"y":-55.0379829406738},{"tick":35,"vy":357.940002441406,"y":-49.0723152160645},{"tick":36,"vy":382.625518798828,"y":-42.6952209472656},{"tick":37,"vy":407.31103515625,"y":-35.9067039489746},{"tick":38,"vy":431.996551513672,"y":-28.7067604064941},{"tick":39,"vy":456.682067871094,"y":-21.0953922271729},{"tick":40,"vy":481.367584228516,"y":-13.0725984573364},{"tick":41,"vy":0.0,"y":-13.0725984573364}]}
+PASS: pulo sobe e retorna ao piso
+PASS: altura jogada ~2,32 m em Carrasco
+PASS: ápice em 20 ticks / 333,333 ms
+PASS: coyote permite pulo após 83 ms fora do piso
+PASS: coyote expira depois de 100 ms
+PASS: buffer transforma entrada anterior ao pouso em pulo
+PASS: Carrasco passa sob teto de 55 unidades / 1,546875 m
+PASS: pulo sob teto colide sem penetrar e limita subida à folga real
+PASS: troca para humano é recusada quando a cápsula maior não cabe
+PASS: recusa preserva pés, máscara e cooldown
+PASS: troca para humano permitida após sair da passagem
+PASS: humano conserva altura e é barrado pelo mesmo teto
+PASS: humano de 14 unidades cabe no vão de 15 / 0,421875 m
+PASS: Carrasco de 14 unidades também cabe no vão de 15
+PASS: troca no vão mantém pés e não penetra nas paredes
+PASS: peregrino/corte acerta humano em altura normal
+PASS: peregrino/corte acerta Carrasco em altura normal
+PASS: peregrino/estocada acerta humano em altura normal
+PASS: peregrino/estocada acerta Carrasco em altura normal
+PASS: raiz_faminta/garra_subterranea acerta humano em altura normal
+PASS: raiz_faminta/garra_subterranea acerta Carrasco em altura normal
+PASS: raiz_faminta/mordida acerta humano em altura normal
+PASS: raiz_faminta/mordida acerta Carrasco em altura normal
+PASS: corvo/rasante acerta humano em altura normal
+PASS: corvo/rasante acerta Carrasco em altura normal
+PASS: projétil horizontal a 4.0 unidades dos pés: acerta
+PASS: projétil horizontal a 20.0 unidades dos pés: acerta
+PASS: projétil horizontal a 40.0 unidades dos pés: acerta
+PASS: projétil horizontal a 58.0 unidades dos pés: acerta
+PASS: projétil horizontal a 70.0 unidades dos pés: passa acima
+PASS: projétil horizontal a 4.0 unidades dos pés: acerta
+PASS: projétil horizontal a 20.0 unidades dos pés: acerta
+PASS: projétil horizontal a 40.0 unidades dos pés: acerta
+PASS: projétil horizontal a 58.0 unidades dos pés: passa acima
+PASS: projétil horizontal a 70.0 unidades dos pés: passa acima
+PHASE2: 85 checks / 0 failures

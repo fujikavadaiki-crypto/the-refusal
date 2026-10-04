@@ -1,0 +1,97 @@
+{
+  "somente_capa": true,
+  "f0_sha256": "28d0f2438a34e78ccef3676432a522dd2e35ecff381ad52a016d95b571813852",
+  "f0_recomposta_sha256": "28d0f2438a34e78ccef3676432a522dd2e35ecff381ad52a016d95b571813852",
+  "quadros": [
+    {
+      "quadro": 0,
+      "pixels_diferentes": 0,
+      "fora_uniao": 0,
+      "outras_pecas_visiveis_modificadas": 0,
+      "tecido_retirado_revela_fundo": 0,
+      "tecido_retirado_revela_peca_original": 0,
+      "tecido_novo_sobre_fundo": 0,
+      "raiz_no_ombro": true,
+      "fase_material": 7
+    },
+    {
+      "quadro": 1,
+      "pixels_diferentes": 112,
+      "fora_uniao": 0,
+      "outras_pecas_visiveis_modificadas": 0,
+      "tecido_retirado_revela_fundo": 11,
+      "tecido_retirado_revela_peca_original": 1,
+      "tecido_novo_sobre_fundo": 23,
+      "raiz_no_ombro": true,
+      "fase_material": 0
+    },
+    {
+      "quadro": 2,
+      "pixels_diferentes": 126,
+      "fora_uniao": 0,
+      "outras_pecas_visiveis_modificadas": 0,
+      "tecido_retirado_revela_fundo": 19,
+      "tecido_retirado_revela_peca_original": 2,
+      "tecido_novo_sobre_fundo": 32,
+      "raiz_no_ombro": true,
+      "fase_material": 1
+    },
+    {
+      "quadro": 3,
+      "pixels_diferentes": 139,
+      "fora_uniao": 0,
+      "outras_pecas_visiveis_modificadas": 0,
+      "tecido_retirado_revela_fundo": 29,
+      "tecido_retirado_revela_peca_original": 2,
+      "tecido_novo_sobre_fundo": 42,
+      "raiz_no_ombro": true,
+      "fase_material": 2
+    },
+    {
+      "quadro": 4,
+      "pixels_diferentes": 107,
+      "fora_uniao": 0,
+      "outras_pecas_visiveis_modificadas": 0,
+      "tecido_retirado_revela_fundo": 29,
+      "tecido_retirado_revela_peca_original": 1,
+      "tecido_novo_sobre_fundo": 36,
+      "raiz_no_ombro": true,
+      "fase_material": 3
+    },
+    {
+      "quadro": 5,
+      "pixels_diferentes": 118,
+      "fora_uniao": 0,
+      "outras_pecas_visiveis_modificadas": 0,
+      "tecido_retirado_revela_fundo": 26,
+      "tecido_retirado_revela_peca_original": 1,
+      "tecido_novo_sobre_fundo": 38,
+      "raiz_no_ombro": true,
+      "fase_material": 4
+    },
+    {
+      "quadro": 6,
+      "pixels_diferentes": 148,
+      "fora_uniao": 0,
+      "outras_pecas_visiveis_modificadas": 0,
+      "tecido_retirado_revela_fundo": 29,
+      "tecido_retirado_revela_peca_original": 1,
+      "tecido_novo_sobre_fundo": 41,
+      "raiz_no_ombro": true,
+      "fase_material": 5
+    },
+    {
+      "quadro": 7,
+      "pixels_diferentes": 86,
+      "fora_uniao": 0,
+      "outras_pecas_visiveis_modificadas": 0,
+      "tecido_retirado_revela_fundo": 10,
+      "tecido_retirado_revela_peca_original": 0,
+      "tecido_novo_sobre_fundo": 21,
+      "raiz_no_ombro": true,
+      "fase_material": 6
+    }
+  ],
+  "solas_sha256": "34c79ab22c7eb30fd6bb82d88b6356ecc8ddb27cf9b312bb085ccb977358c44a",
+  "solas_base_sha256": "34c79ab22c7eb30fd6bb82d88b6356ecc8ddb27cf9b312bb085ccb977358c44a"
+}
