@@ -1,0 +1,73 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+PASS: Dodge and Parry keyboard/controller mappings
+PASS: canonical player HP and Posture
+PASS: configured player Posture recovery
+PASS: P40 Dodge and proportional i-frame durations
+PASS: Parry window and recovery
+PASS: 100 magical with 30% Defense and 20% Resistance = 56
+PASS: physical Resistance also follows Defense multiplicatively
+PASS: 25 Posture with 20% Posture Resistance = 20
+PASS: Defense and physical resistance do not reduce Posture
+PASS: Defense bonuses add within their attribute
+PASS: normal Defense cap is 70%
+PASS: temporary Defense respects 85% safety ceiling
+PASS: +40% Posture damage scales 25 to 35
+PASS: Defense bypass can retain compatible magical Resistance
+PASS: direct life loss stays distinct from mitigated damage
+PASS: player loses Posture independently of HP
+PASS: no regeneration before 1.5 seconds
+PASS: new Posture hit resets delay
+PASS: Posture regenerates near 25 per second after delay
+PASS: player Rupture enters stagger
+PASS: stagger blocks attack, Dodge and Parry
+PASS: stagger ends and restores about half Posture
+PASS: brief post-rupture protection stops immediate re-break
+PASS: new Rupture is possible after protection ends
+PASS: Heavy starts before interruption
+PASS: Dodge and Parry cannot cancel committed attack
+PASS: Rupture interrupts active player attack
+PASS: player Rupture grants no automatic 20% vulnerability
+PASS: Dodge starts in left input direction
+PASS: Dodge startup is hittable
+PASS: i-frame starts and Dodge moves left
+PASS: camera keeps tracking during Dodge
+PASS: eligible attack during i-frame is a true miss
+PASS: Dodge tail is outside i-frames
+PASS: Dodge tail receives HP and Posture damage
+PASS: Dodge ends with repeat delay
+PASS: repeat delay blocks immediate Dodge
+PASS: Dodge becomes available after repeat delay
+PASS: player is airborne before Air Dash check
+PASS: airborne Dodge now starts the one-use Air Dash
+PASS: Parry opens within its active window
+PASS: valid Parry negates both HP and Posture
+PASS: Parry returns attack Posture pressure to attacker
+PASS: Parry uses dominant 80 ms hit stop
+PASS: weaker simultaneous hit stop cannot replace Parry feedback
+PASS: Parry resolves one hit, not a whole multi-hit sequence
+PASS: attacker Posture Resistance mitigates Parry return
+PASS: early Parry enters recovery
+PASS: attack in Parry recovery hits normally
+PASS: Parry cannot spam during recovery
+PASS: Parry recovery ends
+PASS: non-parryable Heavy bypasses Parry without extra penalty
+PASS: failed Heavy Parry does not damage attacker Posture
+PASS: late Parry cannot retroactively cancel impact
+PASS: dummy enters Rupture at zero Posture
+PASS: Rupture adds 20% vulnerability without changing Defense
+PASS: dummy Rupture lasts about two seconds and restores half Posture
+PASS: simultaneous HP/Posture zero resolves as death
+PASS: player death also precedes Rupture
+PASS: training device starts parryable attack
+PASS: parryable telegraph is localized
+PASS: real hitbox/hurtbox Parry integration
+PASS: training device starts heavy non-parryable attack
+PASS: heavy telegraph and low cue stay local
+PASS: real non-parryable hitbox defeats Parry
+PASS: real hitbox misses during Dodge i-frame
+PASS: player sword applies separate HP and Posture to training target
+PASS: existing Heavy deals 35 HP and 25 Posture to dummy
+FINAL: PASSED

@@ -1,0 +1,129 @@
+{
+  "linhas_variantes": [
+    {
+      "parte": "recolhida",
+      "paleta": {
+        "#": 3,
+        "s": 7,
+        "b": 8,
+        "m": 11,
+        "l": 13,
+        "c": 10
+      },
+      "linhas": [],
+      "origem_regiao_reducao": [
+        14,
+        41,
+        31,
+        50
+      ],
+      "recorte_enviado_usuario": "REFERENCIA_AJUSTE_USUARIO.png"
+    },
+    {
+      "parte": "apoio",
+      "paleta": {
+        "#": 3,
+        "s": 7,
+        "b": 8,
+        "m": 11,
+        "l": 13,
+        "c": 10
+      },
+      "linhas": [
+        [
+          40,
+          32,
+          "##bmll#"
+        ],
+        [
+          41,
+          32,
+          "#sbmll#"
+        ],
+        [
+          42,
+          33,
+          "#sbmll#"
+        ],
+        [
+          43,
+          33,
+          "#sbmll#"
+        ],
+        [
+          44,
+          34,
+          "#sbmll#"
+        ],
+        [
+          45,
+          34,
+          "#sbmll#"
+        ],
+        [
+          46,
+          34,
+          "#sbmll#"
+        ],
+        [
+          47,
+          34,
+          "#sbmll#"
+        ],
+        [
+          48,
+          35,
+          "#sbmll#"
+        ],
+        [
+          49,
+          35,
+          "#sbmll#"
+        ],
+        [
+          50,
+          36,
+          "#ccmml#"
+        ],
+        [
+          51,
+          36,
+          "#bcmlm#"
+        ],
+        [
+          52,
+          36,
+          "#bbmlm#"
+        ],
+        [
+          53,
+          36,
+          "#bbmll##"
+        ],
+        [
+          54,
+          36,
+          "#sbbmlll#"
+        ],
+        [
+          55,
+          36,
+          "#########"
+        ]
+      ],
+      "origem_regiao_reducao": null,
+      "recorte_enviado_usuario": null
+    }
+  ],
+  "origem_reducao": [
+    8,
+    8
+  ],
+  "cabeca_translacao": [
+    9,
+    6
+  ],
+  "espada": "x32..52; topo y39+(x-32)//2; espessura vertical 4 px; ponta x53..56",
+  "contorno": "borda interna de 1 px, cor 3",
+  "receita": "arte_fonte/ferramentas/adaptar_corrida_forma_humana_48b6.py"
+}

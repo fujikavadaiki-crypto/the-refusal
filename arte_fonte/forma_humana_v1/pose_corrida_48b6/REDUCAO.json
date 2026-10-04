@@ -1,0 +1,22 @@
+{
+  "ferramenta": "arte_fonte/ferramentas/reduzir_referencia.py",
+  "ferramenta_sha256": "6af5f1be5c53612d2cba70245b3889380558714a36a5e784cbd6f1e8551e4eaf",
+  "fonte_sha256": "865cbaa85e2ad02a4d072b2b3bd4bd77858442c03888f077f4d0fdd50c5b4b2d",
+  "paleta_sha256": "9678161f917103d1d177f9af8b965c664f153ae502de35dcb63af8917081742b",
+  "fundo_tolerancia_l1_rgb": 30,
+  "bbox_fonte": [
+    93,
+    125,
+    1161,
+    1163
+  ],
+  "escala_proporcional": 0.046242774566473986,
+  "altura_alvo": 48,
+  "recorte_reduzido": [
+    49,
+    48
+  ],
+  "reamostragem_reducao": "BOX premultiplicado (ferramenta do projeto)",
+  "previas": "NEAREST",
+  "fundo_removido": true
+}

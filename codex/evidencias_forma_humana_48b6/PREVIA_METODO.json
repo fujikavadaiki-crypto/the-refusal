@@ -1,0 +1,16 @@
+{
+  "previa": true,
+  "arte_instalada": false,
+  "captura_base": "codex/evidencias_peregrino_47c/marcha_na_sala_x1.png",
+  "captura_sha256": "4c0e69c6e47f5595f7c6aa5e9dd43a62865707182d8db91e420f92b5f5900815",
+  "zoom": 0.9,
+  "escala_arte_tela": 1,
+  "ancora_tela": [
+    430,
+    309
+  ],
+  "posicao_inteira": [
+    390,
+    253
+  ]
+}

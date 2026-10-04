@@ -1,0 +1,32 @@
+TAREFA 4.8b5 — referência estática, gerada com a ferramenta integrada imagegen.
+Imagem final: referencia_corrida_pernas_espada.png
+Entrada de identidade: ../forma_humana_mestre_x4.png
+SHA256 do mestre x1: 204432d31a2d8890c6def7b6fd81b56972ce482b5eca82fa3de878ebe2dcf988
+Somente referência; não é sprite final e não está instalada no jogo.
+
+PROMPT INICIAL
+Use case: stylized-concept.
+Asset type: UMA imagem de referência estática de corrida para pixel art 2D; não é sprite final nem folha de animação.
+Input image 1: referência obrigatória de identidade, proporções, roupa, cabelo, rosto, paleta, espada e linguagem de pixels. Crie uma nova pose deste mesmo personagem, mantendo-o reconhecível.
+
+Cena: fundo cinza médio completamente liso e uniforme. Apenas UM personagem, corpo inteiro e espada inteira visíveis, vista LATERAL, olhando para a DIREITA, centralizado com margem simples. Sem cenário, chão desenhado ou sombra no chão.
+
+Identidade: preserve exatamente o jovem humano de cabelo castanho escuro volumoso, perfil e rosto humanos descobertos, proporções chibi com cabeça maior e corpo pequeno, capa escura com capuz recuado, roupa de couro marrom, cinto e pequeno detalhe vermelho já presente, botas compactas. Preserve volume por grupos de pixels, marrons e cinzas foscos e a iluminação do mestre. Nenhuma máscara, caveira, corrupção, adorno ou acessório novo.
+
+Pose de corrida clara e anatomicamente coerente: uma perna à FRENTE, com bota apoiada e joelho levemente flexionado; outra ATRÁS, elevada e dobrada naturalmente. Na perna de trás, a coxa desce do quadril até UM joelho em altura intermediária entre quadril e solo; a canela retorna inclinada para uma bota elevada atrás do corpo. O joelho elevado deve ficar claramente bem acima da sola apoiada, nunca quase no chão. Coxa, joelho, canela, tornozelo e bota devem ser rastreáveis na silhueta inteira. Faça as duas pernas distintas e com comprimentos e espessuras proporcionais ao mestre. Botas curtas, com cano, pé e sola separados, volume e sombreamento. Sem nós no joelho, dobra invertida, membros torcidos, canelas horizontais, U comprido ou perna comprimida sob a capa. A capa continua reconhecível e recuada para trás, deixando as pernas legíveis.
+
+Espada: preserve aproximadamente a posição da mão, a empunhadura, o comprimento original e a direção diagonal para baixo e à direita. A lâmina é UMA forma reta, contínua, de bordas quase paralelas e largura uniforme ao longo de cerca de 85% de seu comprimento; só os últimos 15% afunilam gradualmente para uma ponta fina. Não estreitar no meio, não fazer cintura, degraus bruscos de largura, ponta engrossada, ondulação ou quebra. Separar visualmente a mão humana, a guarda simples discreta e a lâmina. Cinza metálico claro com uma faixa de luz e sombra discreta contínua, sem brilho ou efeitos soltos. A lâmina inteira fica separada do tronco e não cobre o rosto.
+
+Linguagem de imagem: pixel art nítida com pixels quadrados claramente definidos e agrupados; contorno escuro da espessura de um pixel lógico. Desenho compacto pensado para preservar rosto, mão, botas, flexão das pernas e espada quando reduzido para aproximadamente 48 pixels de altura do cabelo à sola apoiada. Pode apresentar o pixel art ampliado em NEAREST para avaliação, mantendo aparência de resolução baixa. Sem antialiasing, borrão, suavização, gradientes pintados ou microdetalhes ruidosos.
+
+Saída: apenas UMA pose e UM personagem sobre cinza liso. Sem texto, rótulos, anotações, grid, comparações, diagramas, quadros adicionais, efeitos, sombra no chão ou animações.
+
+REFINO DA IMAGEM GERADA
+Edite ESTA imagem mantendo a mesma única pose de corrida e o mesmo personagem inteiro em pixel art, olhando para a DIREITA. Preserve cabelo, rosto, cabeça, braços, roupa, capa, pernas, botas, proporções, empunhadura, comprimento e direção da espada. Não recrie o personagem e não adicione elementos.
+
+Faça somente estes acabamentos:
+1. Lâmina: deixe-a rigorosamente reta e contínua, com espessura constante, bordas quase paralelas e cinza metálico claro em toda a região da guarda até cerca de 85% do comprimento. Não existe cintura no meio. Nos últimos 15%, afunile as DUAS bordas progressivamente para uma ponta fina única, alinhada ao eixo reto da lâmina. Remova o aspecto de ponta arredondada, quadrada ou engrossada. O último pixel lógico da ponta deve ser escuro e estreito; não deixar uma bolinha branca larga na extremidade. Preserve aproximadamente o mesmo comprimento e ângulo diagonal para baixo/direita. Use blocos de pixels nítidos com destaque e sombra discretos; sem brilho ou efeitos.
+2. Fundo: uma única cor cinza médio uniforme #606060, totalmente lisa, sem gradiente, vinheta, textura, manchas, sombra ou objetos.
+
+UMA imagem com UM personagem, corpo inteiro e espada inteira visíveis. Sem texto, marcas, rótulos, diagramas, quadros adicionais, acessórios novos, efeitos nem sombra no chão. Pixel art com pixels quadrados nítidos, contorno escuro, mesma identidade e mesma legibilidade em cerca de 48 pixels de altura. Esta é somente uma referência estática, não uma folha de animação.
+

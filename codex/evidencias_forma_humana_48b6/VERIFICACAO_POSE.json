@@ -1,0 +1,82 @@
+{
+  "aprovado_tecnicamente": true,
+  "avaliacao_visual": "pendente do usuário",
+  "canvas": [
+    96,
+    64
+  ],
+  "altura_cabelo_sola_px": 48,
+  "ancora": [
+    40,
+    56
+  ],
+  "chao_y": 55,
+  "bbox_alpha": [
+    8,
+    8,
+    57,
+    56
+  ],
+  "paleta": "paleta_bosque_v1",
+  "cores_usadas": 26,
+  "ids_cores": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    24,
+    27,
+    29,
+    32,
+    35,
+    37,
+    40,
+    43,
+    46,
+    56,
+    57
+  ],
+  "alpha": [
+    0,
+    255
+  ],
+  "componentes": 1,
+  "cores_isoladas": 0,
+  "contorno_continuo": true,
+  "cabeca_rgba_identica_ao_mestre": true,
+  "mestre_sha256": "204432d31a2d8890c6def7b6fd81b56972ce482b5eca82fa3de878ebe2dcf988",
+  "fonte_sha256": "865cbaa85e2ad02a4d072b2b3bd4bd77858442c03888f077f4d0fdd50c5b4b2d",
+  "prompt_sha256": "cac745bd34889b348d3ef476c97462e96c4dde05a5a2714fb8631a3a83cd0541",
+  "proposta_sha256": "28d0f2438a34e78ccef3676432a522dd2e35ecff381ad52a016d95b571813852",
+  "paleta_sha256": "9678161f917103d1d177f9af8b965c664f153ae502de35dcb63af8917081742b",
+  "pixels_cabeca_reutilizados": 329,
+  "largura_vertical_lamina_maior_parte_px": 4,
+  "afunilamento_somente_ponta_x": [
+    53,
+    56
+  ],
+  "sola_apoio": [
+    40,
+    55
+  ],
+  "sola_elevada": [
+    15,
+    49
+  ],
+  "silhueta_perna_recolhida_igual_ao_recorte_usuario": true,
+  "recorte_usuario_sha256": "477daa3f2bd7c1cbee2517549471378dbe5534f9f1a03e10bfd7a1ad753385db",
+  "arte_instalada": false,
+  "somente_f0": true,
+  "rig_ou_ciclo_atualizado": false
+}
